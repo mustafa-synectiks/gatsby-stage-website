@@ -79,15 +79,6 @@ const Layout = ({ children }) => {
 		// /Case Study Ends
 		// OWL V1.3
 		$(document).ready(function() {
-			// $('h6').removeClass('pointerDown arrow-down');
-			// $('a#tab1:not(.active)').find('h6').addClass('pointerDown arrow-down');
-			// $('a#tab1.active').find('h6').removeClass('arrow-down');
-			// $('a#tab2:not(.active)').find('h6').addClass('pointerDown arrow-down');
-			// $('a#tab2.active').find('h6').removeClass('arrow-down');
-			// $('a#tab3:not(.active)').find('h6').addClass('pointerDown arrow-down');
-			// $('a#tab3.active').find('h6').removeClass('arrow-down');
-		});
-		$(document).ready(function() {
 			// function fadeInLeftReset() {
 			// 	if (!dragging) {
 			// 		$($elem + ' .caption .fadeInLeft-1, ' + $elem + ' .caption .fadeInLeft-2, ')
@@ -128,9 +119,17 @@ const Layout = ({ children }) => {
 					if (owl) {
 						var item = owl.currentItem;
 						$('h3').removeClass('animated fadeInRight');
-						$('.owl-item').not('.cloned').eq(item).find('h3').addClass('animated fadeInRight');
+						$('.owl-item')
+							.not('.cloned')
+							.eq(item)
+							.find('h3')
+							.addClass('animated delay-2s slower fadeInRight');
 						$('p').removeClass('animated fadeInRight');
-						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInRight delay-5s');
+						$('.owl-item')
+							.not('.cloned')
+							.eq(item)
+							.find('p')
+							.addClass('animated delay-3s slower fadeInRight');
 					}
 				}
 			});

@@ -34,10 +34,7 @@ export default function HTML(props) {
 					integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN'
 					crossOrigin='anonymous'
 				/>
-				<link
-					rel='stylesheet'
-					href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'
-				/>
+				<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css' />
 				<script src='https://maps.google.com/maps/api/js?key=AIzaSyDzf6Gmc9u7rr2JHijOERAmC_j0gWYtR2c' />
 				<script
 					src='https://code.jquery.com/jquery-3.2.1.slim.min.js'

@@ -74,16 +74,16 @@ const Slider = () => {
 					<div className='item'>
 						<div className='caption'>
 							{/* <div className='caption animated fadeInLeft'> */}
-							<h3 className='animated fadeInRight'>
+							<h3 className='animated delay-2s fadeInRight'>
 								Accelerate your migration <br />& modernization Journey
 							</h3>
-							<p className='animated fadeInRight'>
+							<p className='animated delay-3s fadeInRight'>
 								synectiks open xformation Platform and <br />
 								deep expertise make your cloud transformation <br />
 								safe and agile.
 							</p>
 						</div>
-						<img src={Slider1} alt='The Last of us' />
+						<img src={Slider1} alt='Accelerate your migration and moderanization journey' />
 					</div>
 					<div className='item'>
 						<div className='caption'>
