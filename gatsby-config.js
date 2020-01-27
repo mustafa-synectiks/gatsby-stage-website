@@ -30,14 +30,6 @@ module.exports = {
 				path: `${__dirname}/src/pages`
 			}
 		},
-		// {
-		// 	resolve: `gatsby-plugin-s3`,
-		// 	options: {
-		// 		bucketName: 'synectiks-latest-website',
-		// 		protocol: 'https',
-		// 		hostname: 'synectiks.com'
-		// 	}
-		// },
 
 		{
 			resolve: `gatsby-plugin-manifest`,
