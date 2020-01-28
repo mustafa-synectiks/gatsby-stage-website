@@ -323,27 +323,29 @@ const Slider = () => {
 					<h2 className='text-capitalize textWhite pb-3 text-center'>Our Partners</h2>
 					<div className='row'>
 						<div className='col-md-3'>
-							<div className='w-75 mx-auto'>
-								<img src={aws} className='fheight' />
+							<div className='w-75 mx-auto mb-2 mb-md-0'>
+								<img src={aws} className='w-100' />
 							</div>
 						</div>
 						<div className='col-md-3'>
-							<div className='w-75 mx-auto'>
-								<img src={gle} className='fheight' />
+							<div className='w-75 mx-auto mb-2 mb-md-0'>
+								<img src={gle} className='w-100' />
 							</div>
 						</div>
 						<div className='col-md-3'>
-							<div className='w-75 mx-auto'>
-								<img src={msa} className='fheight' />
+							<div className='w-75 mx-auto mb-2 mb-md-0'>
+								<img src={msa} className='w-100' />
 							</div>
 						</div>
 						<div className='col-md-3'>
-							<div className='w-75 mx-auto'>{/* <img src={acro} className='fheight' /> */}</div>
+							<div className='w-75 mx-auto mb-2 mb-md-0'>
+								<img src={acro} className='w-100' />
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div className='container-fluid bgWhiteGradient px-5 py-4'>
+				{/* <div className='container-fluid bgWhiteGradient px-5 py-4'>
 					<div className='row'>
 						<div className='content'>
 							<div className='col-md-3'>
@@ -387,8 +389,7 @@ const Slider = () => {
 										<div className='text-group align-self-center p-2 bgWhite'>
 											<h3 className=''>Realtime Monitoring</h3>
 											<p className='pr-5'>
-												Highly Scalable extremely customizable realtime monitoring platform
-												{/* for a large telco. */}
+												Highly Scalable extremely customizable realtime monitoring platform.
 											</p>{' '}
 											<a href='/networkdesign/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
@@ -453,10 +454,10 @@ const Slider = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
-				<div className='row bgWhite p-5 cstrip'>
-					<div className='container bgBlue p-4 d-flex justify-content-around align-items-baseline'>
+				<div className='row bgWhite   p-md-5 cstrip'>
+					<div className='container bgBlue p-md-4 d-flex justify-content-around align-items-baseline'>
 						<div className='cstrip_text'>
 							<h3 className='text-white'>Want to know how to evaluate your business?</h3>
 						</div>
