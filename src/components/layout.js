@@ -73,7 +73,16 @@ const Layout = ({ children }) => {
 				slidesToScroll: 1,
 				speed: 400,
 				nextArrow: $('.prevbtn'),
-				prevArrow: $('.nextbtn')
+				prevArrow: $('.nextbtn'),
+				responsive: [
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
 			});
 		});
 		// /Case Study Ends
@@ -119,9 +128,13 @@ const Layout = ({ children }) => {
 					if (owl) {
 						var item = owl.currentItem;
 						$('h3').removeClass('animated fadeInRight');
-						$('.owl-item').not('.cloned').eq(item).find('h3').addClass('animated delay-1s   fadeInRight');
+						$('.owl-item')
+							.not('.cloned')
+							.eq(item)
+							.find('h3')
+							.addClass('animated delay-1s slow fadeInRight');
 						$('p').removeClass('animated fadeInRight');
-						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s  fadeInRight');
+						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
 					}
 				}
 			});

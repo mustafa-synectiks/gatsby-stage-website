@@ -74,10 +74,10 @@ const Slider = () => {
 					<div className='item'>
 						<div className='caption'>
 							{/* <div className='caption animated fadeInLeft'> */}
-							<h3 className='animated delay-1s   fadeInRight'>
+							<h3 className='animated delay-1s slow fadeInRight'>
 								Accelerate your migration <br />& modernization Journey
 							</h3>
-							<p className='animated delay-2s   fadeInRight'>
+							<p className='animated delay-2s slow fadeInRight'>
 								synectiks open xformation Platform and <br />
 								deep expertise make your cloud transformation <br />
 								safe and agile.
@@ -115,9 +115,9 @@ const Slider = () => {
 				</div>
 			</div>
 			<div className='container-fluid bgBlue'>
-				<div className='row px-5'>
-					<div className='col-md-12 my-3'>
-						<h2 className='p7-4 textWhite'>
+				<div className='row'>
+					<div className='col heading1'>
+						<h2 className='textWhite'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h2>
 						<div className='circleFlex'>
@@ -131,28 +131,25 @@ const Slider = () => {
 								<img src={circle3} alt='' />
 							</div>
 						</div>
-						<p className='text-left textWhite'>
+						<p className='text-light'>
 							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
 							public & private cloud and its infinite resources to migrate and modernize their business so
 							that they outperform their peers by becoming truly disruptive.
 						</p>
 					</div>
-					{/* <div className='col-md-7 my-5'>
-						<img src={vdo} alt='' className='' />
-					</div> */}
 				</div>
 			</div>
 			<div className='bgMain'>
 				<div className='row'>
-					<div className='container-fluid p-5'>
+					<div className='container-fluid p-2 p-md-5'>
 						<div>
-							<div className='text-center mt-card'>
-								<h2 className='py-3'>Area Of Expertise For Outcome-based Solution Offerings</h2>
+							<div className='tabsHeading'>
+								<h2 className=''>Area Of Expertise For Outcome-Based Solution Offerings</h2>
 							</div>
 						</div>
 						<div className='row'>
-							<div className='container-fluid px-5'>
-								<Nav tabs className='d-flex justify-content-between'>
+							<div className='container-fluid px-2 px-md-5'>
+								<Nav tabs className='tabsFlex'>
 									<NavItem className='p-0'>
 										<NavLink
 											id='tab1'
@@ -161,7 +158,7 @@ const Slider = () => {
 												toggle('1');
 											}}>
 											<div className='Homecard-shadow card'>
-												<div className='circletab bgOrange ct2'>
+												<div className='bgOrange ct2'>
 													<img className='card-img-top' src={tab2} alt='Foundation' />
 												</div>
 												<div className='card-body'>
@@ -179,7 +176,7 @@ const Slider = () => {
 												toggle('2');
 											}}>
 											<div className='Homecard-shadow card'>
-												<div className='circletab bgRed ct3'>
+												<div className='bgRed ct3'>
 													<img className='card-img-top' src={tab1} alt='Transformation' />
 												</div>
 												<div className='card-body'>
@@ -196,8 +193,8 @@ const Slider = () => {
 											onClick={() => {
 												toggle('3');
 											}}>
-											<div className='Homecard-shadow card'>
-												<div className='circletab bgBlue ct1'>
+											<div className='Homecard-shadow  card'>
+												<div className='bgBlue ct1'>
 													<img className='card-img-top' src={tab3} alt='Operation' />
 												</div>
 												<div className='card-body'>
@@ -212,7 +209,7 @@ const Slider = () => {
 									<TabPane tabId='1' className='borderHomePageTab1'>
 										<Row>
 											<Col sm='12'>
-												<div className='p-4'>
+												<div className='p-2 p-md-4'>
 													<img
 														src={PoweredBySynectiks}
 														width='100%'
@@ -238,7 +235,7 @@ const Slider = () => {
 										<Row>
 											<Col sm='12'>
 												<h2 className='text-center'>Transformation Services </h2>
-												<p className='py-3'>
+												<p className='py-1 py-md-3'>
 													Synectiks Transformation services elevate your business by
 													optimizing every aspect of your operations for the public cloud or
 													Hybrid cloud – your people, infrastructure, applications and data.
@@ -247,12 +244,12 @@ const Slider = () => {
 										</Row>
 										<Row>
 											<Col sm='12' md='3' className='p-1'>
-												<div className='py-3 h-100'>
+												<div className='py-1 py-md-3 h-100'>
 													<div className='border-right'>
 														<h3 className='text-center heading-h3'>
 															Data <br />Transformation
 														</h3>
-														<p className='text-justify f-14 px-4'>
+														<p className='text-justify f-14 px-2 px-md-4'>
 															Consolidate your unstructured, semi structure and strtucture
 															data and get maximum business insights & real time with
 															minimal TCO of data management and its governance.
@@ -263,12 +260,12 @@ const Slider = () => {
 												</div>
 											</Col>
 											<Col sm='12' md='3' className='p-1'>
-												<div className='py-3 h-100'>
+												<div className='py-1 py-md-3 h-100'>
 													<div className='border-right'>
 														<h3 className='text-center heading-h3'>
 															DevOps Transformation
 														</h3>
-														<p className='text-justify f-14 px-4'>
+														<p className='text-justify f-14 px-1 px-md-4'>
 															Adopting a DevOps culture starts by transforming your
 															people, tech and processes. Accelerate your DevOps adaption
 															by using our open Automation platform and skilled resources.
@@ -279,12 +276,12 @@ const Slider = () => {
 												</div>
 											</Col>
 											<Col sm='12' md='3' className='p-1'>
-												<div className='py-3 h-100'>
+												<div className='py-1 py-md-3 h-100'>
 													<div className='border-right'>
 														<h3 className='text-center heading-h3'>
 															Infrastructure Transformation
 														</h3>
-														<p className='text-justify f-14 px-4 border-right'>
+														<p className='text-justify f-14 px-2 px-md-4 border-right'>
 															Make sure that every bit of your hardware environment is
 															directly supporting your business objectives. Transition
 															from a hardware centric to a software Defined organisation
@@ -341,9 +338,7 @@ const Slider = () => {
 							</div>
 						</div>
 						<div className='col-md-3'>
-							<div className='w-75 mx-auto'>
-								<img src={acro} />
-							</div>
+							<div className='w-75 mx-auto'>{/* <img src={acro} className='fheight' /> */}</div>
 						</div>
 					</div>
 				</div>
@@ -480,6 +475,21 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+.heading1 {
+	h2{
+	text-align: left;
+	font-size:36px;
+	line-height: 44px;
+}
+p{
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	margin-top:1rem;
+	margin-bottom:1rem;
+}
+}
+
 .circleFlex{
 	display: flex;
 	flex-direction: column;
@@ -494,18 +504,44 @@ const HomeWrapper = styled.section`
 		}
 	}
 }
-
+.tabsHeading{
+	h2{
+		text-align: left;
+	}
+}
+.tabsFlex{
+	display:flex;
+	flex-direction: column;
+}
+	.Homecard-shadow {
+			width:auto;
+			/* padding: 1.5rem 1.5rem 0rem 1.5rem; */
+			/* border-bottom: 5rem solid white !important; */
+			border-radius: 25px;
+			-webkit-border-radius: 25px  ;
+			-moz-border-radius: 25px ;
+			-ms-border-radius: 25px ;
+			-o-border-radius: 25px ;
+			padding-top:1rem;
+			cursor: pointer;
+		}
+.ct1,.ct2,.ct3{
+	width:0rem;
+	height:0rem;
+	padding:0;
+	img{
+		display:none;
+	}
+}
+/*
 .owl-carousel{
 	display:none !important;
-}
+} */
 	background: var(--bgMain);
 	.border {
 		border: 1px solid var(--synectiksBlue) !important;
 	}
-	.px5 {
-		padding-right: 5px;
-		padding-left: 5px;
-	}
+
 	.JumboHeight {
 		width: 100vw;
 		height: 25vh;
@@ -517,9 +553,46 @@ const HomeWrapper = styled.section`
 }
 	}
 	@media (min-width: 576px) {
-		.owl-carousel{
-			display:block;
+		.heading1{
+	 h2{
+	font-size:36px;
+	line-height: 44px;
+	margin:2rem 0rem;
+}
+p{
+	font-size: 20px;
+	line-height: 28px;
+	text-align: left;
+	margin-top:4rem;
+	margin-bottom:3rem;
+}
+}
+
+.tabsFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tabsHeading{
+	h2{
+		text-align: center;
+	}
+}
+.circleFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.circle{
+			width:20rem;
+			height:20rem;
+			border-radius: 50%;
+			img{
+				border-radius: 60%;
+				box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
+			}
 		}
+	}
+}
 		.h46{
 			height: 46vh;
 		}
@@ -527,9 +600,11 @@ const HomeWrapper = styled.section`
     padding: 3rem;
     border-radius: 50%;
     width: 10rem;
-    display: block;
     margin: 0 auto;
-    height: 10rem;
+				height: 10rem;
+				img{
+					display:block
+				}
 }
 .ct-cent{
 	transform: rotate(-30deg);
@@ -544,9 +619,7 @@ transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 .cstrip:hover .cstrip_text{
 transform: translateX(15px);
 }
-.ct1 img{
-	width: 5rem;
-}
+
 .card-body {
 	padding :1rem 0rem 0rem 0rem;
 	h2 {
@@ -567,16 +640,7 @@ transform: translateX(15px);
 	margin-top: 0rem;
 	text-align:center;
 }
-		.circle{
-			width:20rem;
-			height:20rem;
-			border-radius: 50%;
-			/* background: var(--synectiksOrange); */
-			img{
-				border-radius: 60%;
-				box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
-			}
-		}
+
 		.fw300 {
 			font-weight: 300;
 		}
@@ -830,10 +894,7 @@ transform: translateX(15px);
 		.border {
 			border: 1px solid var(--synectiksBlue) !important;
 		}
-		.px-5 {
-			padding-left: 3.75rem !important;
-			padding-right: 3.75rem !important;
-		}
+
 		.JumboHeight {
 			width: 100vw;
 			height: auto;
@@ -890,8 +951,6 @@ transform: translateX(15px);
 
 		.Homecard-shadow {
 			width:18rem;
-			/* padding: 1.5rem 1.5rem 0rem 1.5rem; */
-			/* border-bottom: 5rem solid white !important; */
 			border-radius: 25px;
 			-webkit-border-radius: 25px  ;
 			-moz-border-radius: 25px ;
