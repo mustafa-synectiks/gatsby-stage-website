@@ -119,17 +119,9 @@ const Layout = ({ children }) => {
 					if (owl) {
 						var item = owl.currentItem;
 						$('h3').removeClass('animated fadeInRight');
-						$('.owl-item')
-							.not('.cloned')
-							.eq(item)
-							.find('h3')
-							.addClass('animated delay-2s slower fadeInRight');
+						$('.owl-item').not('.cloned').eq(item).find('h3').addClass('animated delay-1s   fadeInRight');
 						$('p').removeClass('animated fadeInRight');
-						$('.owl-item')
-							.not('.cloned')
-							.eq(item)
-							.find('p')
-							.addClass('animated delay-3s slower fadeInRight');
+						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s  fadeInRight');
 					}
 				}
 			});

@@ -74,16 +74,16 @@ const Slider = () => {
 					<div className='item'>
 						<div className='caption'>
 							{/* <div className='caption animated fadeInLeft'> */}
-							<h3 className='animated delay-2s fadeInRight'>
+							<h3 className='animated delay-1s   fadeInRight'>
 								Accelerate your migration <br />& modernization Journey
 							</h3>
-							<p className='animated delay-3s fadeInRight'>
+							<p className='animated delay-2s   fadeInRight'>
 								synectiks open xformation Platform and <br />
 								deep expertise make your cloud transformation <br />
 								safe and agile.
 							</p>
 						</div>
-						<img src={Slider1} alt='Accelerate your migration and moderanization journey' />
+						<img src={Slider1} alt='Accelerate your migration and modernization journey' />
 					</div>
 					<div className='item'>
 						<div className='caption'>
@@ -95,7 +95,7 @@ const Slider = () => {
 								resources.
 							</p>
 						</div>
-						<img src={Slider2} alt='GTA V' />
+						<img src={Slider2} alt='Optimize Devops Transformation' />
 					</div>
 					<div className='item'>
 						<div className='caption'>
@@ -107,7 +107,10 @@ const Slider = () => {
 								<br />across clouds.
 							</p>
 						</div>
-						<img src={Slider3} alt='Mirror Edge' />
+						<img
+							src={Slider3}
+							alt='modernize your business, adopt cloud native microservices architecture'
+						/>
 					</div>
 				</div>
 			</div>

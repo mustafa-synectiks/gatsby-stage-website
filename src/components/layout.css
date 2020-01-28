@@ -106,7 +106,44 @@ font-style: normal; */
 .hx6 {
 	background: rgb(129, 55, 108);
 }
+@-webkit-keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(50px, 0 0, 0);
+		transform: translate3d(50px, 0 0, 0);
+		-moz-transform: translate3d(50px, 0 0, 0);
+		-ms-transform: translate3d(50px, 0 0, 0);
+		-o-transform: translate3d(50px, 0 0, 0);
+	}
 
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(50px, 0, 0);
+		transform: translate3d(50px, 0, 0);
+		-moz-transform: translate3d(50px, 0, 0);
+		-ms-transform: translate3d(50px, 0, 0);
+		-o-transform: translate3d(50px, 0, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
 /* MainColors */
 .bgRed {
 	background: var(--synectiksRed);
@@ -128,7 +165,7 @@ font-style: normal; */
 .bgDark {
 	background: var(--textColor);
 }
-.brclr{
+.brclr {
 	border: 3px solid var(--textColor) !important;
 }
 .bgBlue {
@@ -195,7 +232,7 @@ h4 {
 	letter-spacing: normal;
 	/* color: #007cc2 !important; */
 }
-.fw6{
+.fw6 {
 	font-weight: 600;
 }
 h5,
@@ -2380,7 +2417,7 @@ textarea.has-error {
 .tw {
 	width: 27% !important;
 }
-.w-37{
+.w-37 {
 	width: 37%;
 }
 .w-22 {
