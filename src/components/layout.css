@@ -422,41 +422,6 @@ a.dropdown-toggle.nav-link {
 	background: white;
 }
 
-@media (max-width: 47px) {
-	.card-margin {
-		margin-top: 5em !important;
-	}
-	.tab-content {
-		padding: 0;
-	}
-	.himage {
-		width: 100%;
-		margin: 10px;
-	}
-}
-@media (max-width: 320px) {
-	#root {
-		width: 113%;
-	}
-	.tab-content {
-		padding: 0;
-	}
-	.himage {
-		width: 100%;
-		margin: 10px;
-	}
-
-	.card-deck {
-		padding-right: 33px !important;
-	}
-	.topCont {
-		font-size: 9px;
-	}
-	.topFont {
-		font-size: 9px;
-		-webkit-text-fill-color: #fff;
-	}
-}
 @media (max-width: 420px) {
 	.tab-content {
 		padding: 0;

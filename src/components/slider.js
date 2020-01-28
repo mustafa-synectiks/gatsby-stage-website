@@ -120,7 +120,7 @@ const Slider = () => {
 						<h2 className='p7-4 textWhite'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h2>
-						<div className='d-flex justify-content-around my-5'>
+						<div className='circleFlex'>
 							<div className='circle'>
 								<img src={circle1} alt='' />
 							</div>
@@ -480,6 +480,24 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+.circleFlex{
+	display: flex;
+	flex-direction: column;
+	.circle {
+		width:100%;
+			border-radius: 50%;
+		img{
+			width:100%;
+			border-radius: 60%;
+			box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
+			margin-top: 1rem;
+		}
+	}
+}
+
+.owl-carousel{
+	display:none !important;
+}
 	background: var(--bgMain);
 	.border {
 		border: 1px solid var(--synectiksBlue) !important;
@@ -499,6 +517,9 @@ const HomeWrapper = styled.section`
 }
 	}
 	@media (min-width: 576px) {
+		.owl-carousel{
+			display:block;
+		}
 		.h46{
 			height: 46vh;
 		}
@@ -1039,14 +1060,6 @@ color:var(--synectiksBlue);
 
 }
 
-/* HEX CONTENT */
-/* #categories li img{
-  left:-100%; right:-100%;
-  width: 75%;
-    height: auto;
-    margin: 35px auto;
-    transform: rotate(-30deg);
-} */
 
 #categories div h1, #categories div p{
   width:100%;

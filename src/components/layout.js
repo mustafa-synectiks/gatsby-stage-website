@@ -125,6 +125,9 @@ const Layout = ({ children }) => {
 					}
 				}
 			});
+			if (window.innerWidth > 768) {
+				$('.owl-carousel').owlCarousel();
+			}
 			var owl = $('#owl-demo').data('owlCarousel');
 			// owl.on('changed.owl.carousel', function(event) {
 			// 	var item = event.item.index - 2; // Position of the current item
