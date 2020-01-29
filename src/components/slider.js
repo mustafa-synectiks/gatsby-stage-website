@@ -456,14 +456,14 @@ const Slider = () => {
 					</div>
 				</div> */}
 
-				<div className='row bgWhite   p-md-5 cstrip'>
-					<div className='container bgBlue p-md-4 d-flex justify-content-around align-items-baseline'>
+				<div className='bgWhite p-1 p-md-5 cstrip'>
+					<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
 						<div className='cstrip_text'>
 							<h3 className='text-white'>Want to know how to evaluate your business?</h3>
 						</div>
 						<a
 							href='https://synectiks.com/contactus/index.html'
-							className='textColor btn btn-cnt btn-lg btn-rnd px-5'>
+							className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
 							Get In Touch
 						</a>
 					</div>
@@ -511,7 +511,8 @@ p{
 	}
 }
 .tabsFlex{
-	display:flex;
+	/* display:flex; */
+	display:none;
 	flex-direction: column;
 }
 	.Homecard-shadow {
@@ -538,6 +539,11 @@ p{
 .owl-carousel{
 	display:none !important;
 } */
+.cstrip {
+.btn-width{
+	width: 100%;
+}}
+
 	background: var(--bgMain);
 	.border {
 		border: 1px solid var(--synectiksBlue) !important;
@@ -620,7 +626,10 @@ transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 .cstrip:hover .cstrip_text{
 transform: translateX(15px);
 }
-
+.cstrip{
+.btn-width{
+	width: auto;
+}}
 .card-body {
 	padding :1rem 0rem 0rem 0rem;
 	h2 {

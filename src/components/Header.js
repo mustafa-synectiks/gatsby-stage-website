@@ -13,10 +13,10 @@ const Header = () => {
 	return (
 		<HeaderNav>
 			<div className='FixedHeader'>
-				<div className='bg-top'>
+				<div className='bg-top pl-2 py-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
-				<Navbar expand='lg' className='z px-5'>
+				<Navbar expand='lg' className='z pl-0 pr-3 px-md-5'>
 					<Container fluid={true}>
 						<Navbar.Brand href='/'>
 							<img src={logo} alt='synectiks' />
@@ -95,10 +95,6 @@ const Header = () => {
 export default Header;
 
 const HeaderNav = styled.div`
-	.px-5 {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
 	@media (min-width: 576px) {
 		.nav-item > a.active,
 		.nav-item > a:active {
@@ -108,8 +104,6 @@ const HeaderNav = styled.div`
 		}
 		.bg-top {
 			background: var(--synectiksBlue) !important;
-			padding-top: 5px;
-			padding-bottom: 5px;
 			height: auto;
 		}
 		.px-5 {

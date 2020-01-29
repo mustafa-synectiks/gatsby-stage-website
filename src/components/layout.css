@@ -923,10 +923,7 @@ a.dropdown-toggle.nav-link {
 	}
 }
 @media (max-width: 1190px) {
-	.navbar {
-		padding-right: 8em !important;
-		float: left !important;
-	}
+
 	.card-margin {
 		margin-top: 18em !important;
 	}
@@ -1532,11 +1529,6 @@ body {
 #navbardrop.active {
 	background-color: rgba(0, 0, 0, 0) !important;
 } */
-
-.navbar {
-	padding-left: 0px !important;
-	z-index: 99999;
-}
 
 .header-title {
 	background-color: rgb(238, 235, 235);

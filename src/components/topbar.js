@@ -6,10 +6,10 @@ import styled from 'styled-components';
 const Topbar = () => {
 	return (
 		<TopBarWrapper>
-			<a href='/contactus/index.html' className=''>
+			<a href='/contactus/index.html' className='mb-2 mb-md-0'>
 				CONTACT
 			</a>
-			<h6 className='bl br mn4'>QUESTIONS? &emsp; 609 608 0429 X 102</h6>
+			<h6 className='bl br mn4 mb-0 mb-md-1'>QUESTIONS? &emsp; 609 608 0429 X 102</h6>
 			<h6 className='br'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
 			</h6>
