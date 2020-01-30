@@ -44,7 +44,8 @@ import hx3 from '../images/HomePage/3.png';
 import hx4 from '../images/HomePage/4.png';
 import hx5 from '../images/HomePage/5.png';
 import hx6 from '../images/HomePage/6.png';
-import Hexagon from '../pages/Hexagon.js';
+import Hexagon from './Home/Hexagon';
+import HomeTabs from './Home/HomeTabs';
 import {
 	TabContent,
 	TabPane,
@@ -142,12 +143,11 @@ const Slider = () => {
 			<div className='bgMain'>
 				<div className='row'>
 					<div className='container-fluid p-2 p-md-5'>
-						<div>
-							<div className='tabsHeading'>
-								<h2 className=''>Area Of Expertise For Outcome-Based Solution Offerings</h2>
-							</div>
+						<div className='tabsHeading p-3'>
+							<h2 className=''>Area Of Expertise For Outcome-Based Solution Offerings</h2>
 						</div>
 						<div className='row'>
+						<HomeTabs/>
 							<div className='container-fluid px-2 px-md-5'>
 								<Nav tabs className='tabsFlex'>
 									<NavItem className='p-0'>

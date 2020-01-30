@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
-import hx1 from '../images/HomePage/1.png';
-import hx2 from '../images/HomePage/2.png';
-import hx3 from '../images/HomePage/3.png';
-import hx4 from '../images/HomePage/4.png';
-import hx5 from '../images/HomePage/5.png';
-import hx6 from '../images/HomePage/6.png';
-import hx7 from '../images/HomePage/22.png';
+import hx1 from '../../images/HomePage/1.png';
+import hx2 from '../../images/HomePage/2.png';
+import hx3 from '../../images/HomePage/3.png';
+import hx4 from '../../images/HomePage/4.png';
+import hx5 from '../../images/HomePage/5.png';
+import hx6 from '../../images/HomePage/6.png';
+import hx7 from '../../images/HomePage/22.png';
 import classnames from 'classnames';
-import Layout from '../components/layout';
 
 const Hexagon = () => {
 	const [ activeTab, setActiveTab ] = useState('');

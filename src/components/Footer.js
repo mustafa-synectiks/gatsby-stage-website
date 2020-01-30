@@ -25,7 +25,7 @@ export class Footer extends React.Component {
 					</p>
 				</div> */}
 
-				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-between d-lg-flex justify-content-lg-between d-xl-flex justify-content-xl-between bgFooter px-5 pt-5'>
+				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-between d-lg-flex justify-content-lg-between d-xl-flex justify-content-xl-between bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='col'>
 						<h3 className='text-light text-capitalize'>Synectiks</h3>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}

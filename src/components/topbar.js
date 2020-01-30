@@ -9,8 +9,10 @@ const Topbar = () => {
 			<a href='/contactus/index.html' className='mb-2 mb-md-0'>
 				CONTACT
 			</a>
-			<h6 className='bl br mn4 mb-0 mb-md-1'>QUESTIONS? &emsp; 609 608 0429 X 102</h6>
-			<h6 className='br'>
+			<h6 className='bl br'>
+				QUESTIONS? <span className='mr-1 mr-md-3'> 609 608 0429 X 102</span>
+			</h6>
+			<h6 className='br infoMail'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
 			</h6>
 			<div className='ts'>
@@ -29,28 +31,80 @@ const Topbar = () => {
 export default Topbar;
 
 const TopBarWrapper = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	.infoMail {
+		display: none;
+	}
+	display: flex;
 	width: 100vw;
-	/* padding-left: 2%; */
+	align-items: baseline;
+	justify-content: space-around;
 	a,
 	h6 {
 		text-decoration: none !important;
 		padding-left: 1%;
 		padding-right: 1%;
-		font-size: 11px;
+		font-size: 9px;
 		-webkit-text-fill-color: #fff;
 	}
-	.mn4 {
-		margin-left: -1.5rem;
-	}
+
 	.ts {
 		display: flex;
-		width: 55vw;
+		width: auto;
 		justify-content: flex-start;
+		a {
+			width: auto;
+		}
 	}
+	.br {
+		border-right: 1px solid rgba(255, 255, 255, 1);
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	.bl {
+		border-left: 1px solid rgba(255, 255, 255, 1);
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	@media (min-width: 378px) {
+		.infoMail {
+			display: none;
+		}
+		display: flex;
+		width: 100vw;
+		align-items: baseline;
+		justify-content: space-around;
+		a,
+		h6 {
+			text-decoration: none !important;
+			padding-left: 1%;
+			padding-right: 1%;
+			font-size: 11px;
+			-webkit-text-fill-color: #fff;
+		}
 
+		.ts {
+			display: flex;
+			width: auto;
+			justify-content: flex-start;
+			a {
+				width: auto;
+			}
+		}
+		.br {
+			border-right: 1px solid rgba(255, 255, 255, 1);
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		.bl {
+			border-left: 1px solid rgba(255, 255, 255, 1);
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+	}
 	@media (min-width: 768px) {
+		.infoMail {
+			display: block;
+		}
 		display: flex;
 		justify-content: flex-end;
 		align-items: baseline;
@@ -63,10 +117,9 @@ const TopBarWrapper = styled.div`
 			color: #fff;
 			font-size: 11px;
 			-webkit-text-fill-color: white;
+			width: auto;
 		}
-		.mn4 {
-			margin-left: 0rem;
-		}
+
 		.ts {
 			width: 10vw;
 			padding-left: 2%;
@@ -74,9 +127,13 @@ const TopBarWrapper = styled.div`
 		}
 		.br {
 			border-right: 1px solid rgba(255, 255, 255, 1);
+			padding-top: 3px;
+			padding-bottom: 3px;
 		}
 		.bl {
 			border-left: 1px solid rgba(255, 255, 255, 1);
+			padding-top: 3px;
+			padding-bottom: 3px;
 		}
 	}
 	@media (min-width: 1024px) {

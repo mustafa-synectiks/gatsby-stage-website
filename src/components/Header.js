@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 		<HeaderNav>
 			<div className='FixedHeader'>
-				<div className='bg-top pl-2 py-2 pl-md-0 py-md-1'>
+				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
 				<Navbar expand='lg' className='z pl-0 pr-3 px-md-5'>
@@ -21,8 +21,10 @@ const Header = () => {
 						<Navbar.Brand href='/'>
 							<img src={logo} alt='synectiks' />
 						</Navbar.Brand>
-						<Navbar.Toggle className='ml-auto' aria-controls='basic-navbar-nav'>
-							<FaBars />
+						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
+							{/* <span className='navbar-toggler-icon' /> */}
+							<FaBars className='navbar-toggler-icon' />
+							<span className='my-1 mx-2 close'>X</span>
 						</Navbar.Toggle>
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='ml-auto'>
@@ -95,6 +97,21 @@ const Header = () => {
 export default Header;
 
 const HeaderNav = styled.div`
+	.navbar-toggler > .close {
+		display: inline;
+	}
+	.navbar-toggler > .navbar-toggler-icon {
+		display: none;
+	}
+	/* .navbar-toggler.collapsed > .close {
+		display: none;
+	} */
+	.navbar-toggler:not(.collapsed) > .close {
+		display: none;
+	}
+	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+		display: inline;
+	}
 	@media (min-width: 576px) {
 		.nav-item > a.active,
 		.nav-item > a:active {
