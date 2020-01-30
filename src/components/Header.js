@@ -103,14 +103,14 @@ const HeaderNav = styled.div`
 	.navbar-toggler > .navbar-toggler-icon {
 		display: none;
 	}
-	/* .navbar-toggler.collapsed > .close {
-		display: none;
-	} */
 	.navbar-toggler:not(.collapsed) > .close {
 		display: none;
 	}
 	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
 		display: inline;
+	}
+	.card-header {
+		padding: .75rem 9.25rem !important;
 	}
 	@media (min-width: 576px) {
 		.nav-item > a.active,

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Hexagon from '../Home/Hexagon';
 import classnames from 'classnames';
 import { Accordion, Card } from 'react-bootstrap/Accordion';
 const Tabs = () => {
@@ -36,7 +36,7 @@ const Tabs = () => {
 						role='tabpanel'
 						aria-labelledby='headingOne'
 						data-parent='#accordion'>
-						<div className='pl-2 pr-1'>
+						<div className='card-body pl-2 pr-1'>
 							<div className=''>
 								{/* <img
 														src={PoweredBySynectiks}
@@ -76,12 +76,75 @@ const Tabs = () => {
 						role='tabpanel'
 						aria-labelledby='headingTwo'
 						data-parent='#accordion'>
-						<div>
-							<p className='pl-2 pr-1'>
-								Synectiks Transformation services elevate your business by optimizing every aspect of
-								your operations for the public cloud or Hybrid cloud – your people, infrastructure,
-								applications and data.
-							</p>
+						<div className='card-body'>
+							<div className='row'>
+								<div className='col-sm-12'>
+									<h2 className='text-center'>Transformation Services </h2>
+									<p className='py-1 py-md-3'>
+										Synectiks Transformation services elevate your business by optimizing every
+										aspect of your operations for the public cloud or Hybrid cloud – your people,
+										infrastructure, applications and data.
+									</p>
+								</div>
+							</div>
+							<div className='row'>
+								<div className='col-sm-12 col-md-3 p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right'>
+											<h3 className='text-center heading-h3'>
+												Data <br />Transformation
+											</h3>
+											<p className='text-justify f-14 px-2 px-md-4'>
+												Consolidate your unstructured, semi structure and strtucture data and
+												get maximum business insights & real time with minimal TCO of data
+												management and its governance.
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className='col-sm-12 col-md-3 p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right'>
+											<h3 className='text-center heading-h3'>DevOps Transformation</h3>
+											<p className='text-justify f-14 px-1 px-md-4'>
+												Adopting a DevOps culture starts by transforming your people, tech and
+												processes. Accelerate your DevOps adaption by using our open Automation
+												platform and skilled resources.
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className='col-sm-12 col-md-3 p-1'>
+									<div className='py-1 py-md-3 h-100'>
+										<div className='border-right'>
+											<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
+											<p className='text-justify f-14 px-2 px-md-4 border-right'>
+												Make sure that every bit of your hardware environment is directly
+												supporting your business objectives. Transition from a hardware centric
+												to a software Defined organisation make huge difference in CapEx and
+												Opex.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className='col-sm-12 col-md-3 p-1'>
+									<div className='py-3 h-100'>
+										<div className=''>
+											<h3 className='text-center heading-h3'>Application Transformation</h3>
+											<p className='text-justify f-14 px-4'>
+												Applications that power your enterprise are key to generating a strong
+												competitive advantage. Bring innovation, agility and outstanding
+												customer experience through moderm architectures and cloud first
+												approach.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -105,13 +168,7 @@ const Tabs = () => {
 						aria-labelledby='headingThree'
 						data-parent='#accordion'>
 						<div className='card-body'>
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-							nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-							single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-							beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-							lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-							probably haven't heard of them accusamus labore sustainable VHS.
+							<Hexagon />
 						</div>
 					</div>
 				</div>
@@ -122,6 +179,7 @@ const Tabs = () => {
 export default Tabs;
 
 const TabsWrapper = styled.section`
+	width: 100%;
 	#accordion {
 		display: block;
 	}

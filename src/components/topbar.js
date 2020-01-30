@@ -10,7 +10,10 @@ const Topbar = () => {
 				CONTACT
 			</a>
 			<h6 className='bl br'>
-				QUESTIONS? <span className='mr-1 mr-md-3'> 609 608 0429 X 102</span>
+				QUESTIONS?
+				<span id='quest' className='mr-1 mr-md-1'>
+					609 608 0429X102
+				</span>
 			</h6>
 			<h6 className='br infoMail'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
@@ -81,7 +84,11 @@ const TopBarWrapper = styled.div`
 			font-size: 11px;
 			-webkit-text-fill-color: #fff;
 		}
-
+		#quest {
+			cursor: none;
+			pointer-event: none;
+			text-decoration: none;
+		}
 		.ts {
 			display: flex;
 			width: auto;

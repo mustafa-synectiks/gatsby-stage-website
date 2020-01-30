@@ -146,8 +146,8 @@ const Slider = () => {
 						<div className='tabsHeading p-3'>
 							<h2 className=''>Area Of Expertise For Outcome-Based Solution Offerings</h2>
 						</div>
+						<HomeTabs />
 						<div className='row'>
-						<HomeTabs/>
 							<div className='container-fluid px-2 px-md-5'>
 								<Nav tabs className='tabsFlex'>
 									<NavItem className='p-0'>
@@ -564,7 +564,7 @@ p{
 	 h2{
 	font-size:36px;
 	line-height: 44px;
-	margin:2rem 0rem;
+	margin:1.5rem 0rem;
 }
 p{
 	font-size: 20px;
