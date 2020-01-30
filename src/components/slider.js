@@ -150,7 +150,7 @@ const Slider = () => {
 			<div className='bgMain'>
 				<div className='row'>
 					<div className='container-fluid p-2 p-md-5'>
-						<div className='tabsHeading p-3'>
+						<div className='tabsHeading'>
 							<h2 className=''>Area Of Expertise For Outcome-Based Solution Offerings</h2>
 						</div>
 						<HomeTabs />
@@ -352,12 +352,12 @@ const Slider = () => {
 					</div>
 				</div>
 
-				{/* <div className='container-fluid bgWhiteGradient px-5 py-4'>
+				<div className='container-fluid bgWhiteGradient px-3 py-2 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content'>
-							<div className='col-md-3'>
-								<div className='my-5'>
-									<h2 className='mb-3'>Success Stories </h2>
+							<div className='col col-sm-12 col-md-3'>
+								<div className='my-2 my-md-5 '>
+									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
 									<a href='' className='text-capitalize'>
 										View all success stories &nbsp; >{' '}
 									</a>
@@ -377,7 +377,7 @@ const Slider = () => {
 									</div>
 								</div>
 							</div>
-							<div className='col-md-9 h70vh'>
+							<div className='col col-sm-12 col-md-9 h70vh'>
 								<div className='slider'>
 									<div className='w-450 bshad'>
 										<img src={SDFT} alt='Disaster Recovery' />
@@ -395,7 +395,7 @@ const Slider = () => {
 										<img src={RM} alt='NetworkDesign' />{' '}
 										<div className='text-group align-self-center p-2 bgWhite'>
 											<h3 className=''>Realtime Monitoring</h3>
-											<p className='pr-5'>
+											<p className='pr-2 pr-md-5'>
 												Highly Scalable extremely customizable realtime monitoring platform.
 											</p>{' '}
 											<a href='/networkdesign/index.html' className='noLine fw300'>
@@ -406,7 +406,7 @@ const Slider = () => {
 
 									<div className='w-450 bshad'>
 										<img src={SM} alt='StorageTier' />{' '}
-										<div className='text-group align-self-center p-2 bgWhite'>
+										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Migration</h3>
 											<p className='pr-5'>
 												Petabytes of storage migration for a large financial company with zero
@@ -420,7 +420,7 @@ const Slider = () => {
 
 									<div className='w-450 bshad'>
 										<img src={ND} alt='Enterprise-Transformation' />{' '}
-										<div className='text-group align-self-center p-2 bgWhite'>
+										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Network Design</h3>
 											<p className='pr-5'>
 												Complete network Backbone design with highest security for retail.
@@ -434,7 +434,7 @@ const Slider = () => {
 									<div className='w-450 bshad'>
 										<img src={ST} alt='StorageTier' className='h46' />
 
-										<div className='text-group align-self-center p-2 bgWhite'>
+										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Tier</h3>
 											<p className='pr-5'>
 												Moving Bigdata workloads to aggregated platform for a large telco.
@@ -447,7 +447,7 @@ const Slider = () => {
 
 									<div className='w-450 bshad'>
 										<img src={DR} alt='StorageTier' />
-										<div className='text-group align-self-center p-2 bgWhite'>
+										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Disaster Recovery</h3>
 											<p className='pr-5'>
 												Lightweight disaster recovery platform for indian Defense.
@@ -461,7 +461,7 @@ const Slider = () => {
 							</div>
 						</div>
 					</div>
-				</div> */}
+				</div>
 
 				<div className='bgWhite p-1 p-md-5 cstrip'>
 					<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
@@ -483,6 +483,22 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+.slider .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    left: 0rem;
+}
+.slider .slick-slide {
+    padding: 0 0px;
+    margin: 0px 0px;
+}
+	.w-450 {
+			width: 150px;
+		}
+
 p {
 			word-break: keep-all;
 			text-rendering: optimizeLegibility;
@@ -508,6 +524,8 @@ p{
 	h2{
 		font-size:28px;
 		text-align: left;
+		padding: 0rem 0rem 0rem 2.5rem;
+		margin-bottom: 0rem;
 	}
 }
 .circleFlex{
@@ -611,6 +629,8 @@ p{
 .tabsHeading{
 	h2{
 		text-align: center;
+		padding: 0rem;
+		margin-bottom:2rem
 	}
 }
 .circleFlex{
