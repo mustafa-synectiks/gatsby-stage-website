@@ -494,6 +494,7 @@ p {
 	font-size:32px;
 	line-height: 44px;
 }
+
 p{
 	font-size: 18px;
 	line-height: 28px;
@@ -640,11 +641,7 @@ p{
 					display:block
 				}
 }
-.ct-cent{
-	transform: rotate(-30deg);
-				margin: 2.99rem 0px;
-				font-size: 28px;
-}
+
 .cstrip_text{
 	transform: none;
 	-webkit-transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;

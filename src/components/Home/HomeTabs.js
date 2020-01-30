@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import hx1 from '../../images/HomePage/1.png';
+import thc1 from '../../images/HomePage/1.png';
 import hx2 from '../../images/HomePage/2.png';
 import hx3 from '../../images/HomePage/3.png';
 import hx4 from '../../images/HomePage/4.png';
@@ -19,89 +19,89 @@ const Tabs = () => {
 	// 		document.head.appendChild(msViewportStyle);
 	// 	}
 	// })();
-	const hex1 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'show');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'hide');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'hide');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'hide');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'hide');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'hide');
+	const tabHex1 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'show');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'hide');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'hide');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'hide');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'hide');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'hide');
 	};
-	const hex2 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'hide');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'show');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'hide');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'hide');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'hide');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'hide');
+	const tabHex2 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'hide');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'show');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'hide');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'hide');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'hide');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'hide');
 	};
-	const hex3 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'hide');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'hide');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'hide');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'hide');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'hide');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'show');
+	const tabHex3 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'hide');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'hide');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'hide');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'hide');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'hide');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'show');
 	};
-	const hex4 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'hide');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'hide');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'show');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'hide');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'hide');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'hide');
+	const tabHex4 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'hide');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'hide');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'show');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'hide');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'hide');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'hide');
 	};
-	const hex5 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'hide');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'hide');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'hide');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'hide');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'show');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'hide');
+	const tabHex5 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'hide');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'hide');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'hide');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'hide');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'show');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'hide');
 	};
-	const hex6 = () => {
-		let hx1 = document.querySelector('#hc1');
-		hx1.setAttribute('class', 'hide');
-		let hc2 = document.querySelector('#hc2');
-		hc2.setAttribute('class', 'hide');
-		let hc3 = document.querySelector('#hc3');
-		hc3.setAttribute('class', 'hide');
-		let hc4 = document.querySelector('#hc4');
-		hc4.setAttribute('class', 'show');
-		let hc5 = document.querySelector('#hc5');
-		hc5.setAttribute('class', 'hide');
-		let hc6 = document.querySelector('#hc6');
-		hc6.setAttribute('class', 'hide');
+	const tabHex6 = () => {
+		let thc1 = document.querySelector('#thc1');
+		thc1.setAttribute('class', 'hide');
+		let thc2 = document.querySelector('#thc2');
+		thc2.setAttribute('class', 'hide');
+		let thc3 = document.querySelector('#thc3');
+		thc3.setAttribute('class', 'hide');
+		let thc4 = document.querySelector('#thc4');
+		thc4.setAttribute('class', 'show');
+		let thc5 = document.querySelector('#thc5');
+		thc5.setAttribute('class', 'hide');
+		let thc6 = document.querySelector('#thc6');
+		thc6.setAttribute('class', 'hide');
 	};
 	return (
 		<TabsWrapper>
@@ -258,38 +258,38 @@ const Tabs = () => {
 									<ul id='categories' class='clr ml-n5'>
 										<li class='pusher' />
 										<li>
-											<div className='hx1' onClick={hex1}>
-												<img src={hx1} alt='' />
+											<div className='thx1' onClick={tabHex1}>
+												<img src={thc1} alt='' />
 											</div>
 										</li>
 										<li>
-											<div className='hx2' onClick={hex2}>
+											<div className='thx2' onClick={tabHex2}>
 												<img src={hx7} alt='' />
 											</div>
 										</li>
 										<li>
-											<div className='hx3' onClick={hex3}>
+											<div className='thx3' onClick={tabHex3}>
 												<img src={hx6} alt='' />
 											</div>
 										</li>
 										<li>
 											<div>
-												<h3 className='heading-h3 ct-cent'>Area Of Expertise</h3>
+												<h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3>
 											</div>
 										</li>
 										<li>
-											<div className='hx4' onClick={hex4}>
+											<div className='thx4' onClick={tabHex4}>
 												<img src={hx3} alt='' />
 											</div>
 										</li>
 										<li class='pusher' />
 										<li>
-											<div className='hx5' onClick={hex5}>
+											<div className='thx5' onClick={tabHex5}>
 												<img src={hx5} alt='' />
 											</div>
 										</li>
 										<li>
-											<div className='hx6' onClick={hex6}>
+											<div className='thx6' onClick={tabHex6}>
 												<img src={hx4} alt='' />
 											</div>
 										</li>
@@ -302,41 +302,41 @@ const Tabs = () => {
 									</p>
 								</div>
 								<div className='col order-2'>
-									<div className='show' id='hc1'>
-										<h2 className=' text-center'>Microservices</h2>
+									<div className='show' id='thc1'>
+										<h2 className=' text-center text-light'>Microservices</h2>
 										<p className=' text-center'>
 											Modernization traditional application and legacy infrastructure.
 										</p>
 									</div>
-									<div className='hide' id='hc2'>
-										<h2 className=' text-center'>Devops</h2>
+									<div className='hide' id='thc2'>
+										<h2 className=' text-center text-light'>Devops</h2>
 										<p className=' text-center'>
 											Empowering Organization to adopt Devops culture with through specialized
 											people, tools and training.
 										</p>
 									</div>
-									<div className='hide' id='hc3'>
-										<h2 className=' text-center'>Cloud</h2>
+									<div className='hide' id='thc3'>
+										<h2 className=' text-center text-light'>Cloud</h2>
 										<p className=' text-center'>
 											Accelerating cloud adoption and software defined transformation through open
 											tools and frameworks.
 										</p>
 									</div>
-									<div className='hide' id='hc4'>
-										<h2 className=' text-center'>Monitoring</h2>
+									<div className='hide' id='thc4'>
+										<h2 className=' text-center text-light'>Monitoring</h2>
 										<p className=' text-center'>
 											Develop purpose-build monitoring solutions based on proven open frameworks.
 										</p>
 									</div>
-									<div className='hide' id='hc5'>
-										<h2 className=' text-center'>Analytics</h2>
+									<div className='hide' id='thc5'>
+										<h2 className=' text-center text-light'>Analytics</h2>
 										<p className=' text-center'>
 											Develop purpose-built Fast Data and Big Data solutions based on proven open
 											frameworks.
 										</p>
 									</div>
-									<div className='hide' id='hc6'>
-										<h2 className=' text-center'>RAD</h2>
+									<div className='hide' id='thc6'>
+										<h2 className=' text-center text-light'>RAD</h2>
 										<p className=' text-center'>
 											Rapidly build App Blocks based business application in predictable and
 											deterministic way.
@@ -368,6 +368,24 @@ const TabsWrapper = styled.section`
 	h3 {
 		font-size: 22px;
 	}
+	.show {
+		display: block;
+	}
+	#categories {
+		overflow: hidden;
+		width: 100%;
+		transform: rotate(30deg);
+		/* margin:0 auto; */
+	}
+	.hide {
+		display: none;
+	}
+	.ctc-cent {
+		transform: rotate(-30deg);
+		margin: 1.8rem 0px;
+		font-size: 14px;
+	}
+	/* Hexagons */
 	.show {
 		display: block;
 	}
@@ -438,98 +456,180 @@ const TabsWrapper = styled.section`
 
 		-webkit-backface-visibility: hidden;
 	}
-	.hx1 > img {
+
+	/* HEX CONTENT */
+	.thx1 > img {
 		left: -100%;
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.3rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	.hx2 > img {
+	.thx2 > img {
 		left: -100%;
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.3rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	.hx3 > img {
+	.thx3 > img {
 		left: -100%;
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.1rem 5.4rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	.hx4 > img {
+	.thx4 > img {
 		left: -100%;
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.5rem 5.6rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	.hx5 > img {
+	.thx5 > img {
 		left: -100%;
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.3rem 5.6rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	.hx6 > img {
+	.thx6 > img {
 		left: -100%;
 		right: -100%;
 		width: 58%;
 		height: auto;
-		margin: 1.3rem 5.6rem;
+		margin: 1.2rem 5.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
-	#hc1,
-	#hc2,
-	#hc3,
-	#hc4,
-	#hc5,
-	#hc6 {
+
+	#categories div h1,
+	#categories div p {
+		width: 100%;
+		padding: 0 5%;
+		background-color: #008080;
+		background-color: rgba(0, 128, 128, 0.8);
+
+		-webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+		-ms-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+		transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+	}
+	#categories li h1 {
+		bottom: 110%;
+		font-style: italic;
+		font-weight: normal;
+		font-size: 1.5em;
+		padding-top: 100%;
+		padding-bottom: 100%;
+	}
+	#categories li h1:after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -1px;
+		left: 45%;
+		width: 10%;
+		text-align: center;
+		z-index: 1;
+		border-bottom: 2px solid #fff;
+	}
+	#categories li p {
+		padding-top: 50%;
+		top: 110%;
+		padding-bottom: 50%;
+	}
+
+	/* HOVER EFFECT  */
+
+	#categories li div:hover h1 {
+		bottom: 50%;
+		padding-bottom: 10%;
+	}
+
+	#categories li div:hover p {
+		top: 50%;
+		padding-top: 10%;
+	}
+	#fork {
+		position: fixed;
+		top: 0;
+		left: 0;
+		color: #000;
+		text-decoration: none;
+		border: 1px solid #000;
+		padding: .5em .7em;
+		margin: 1%;
+		transition: color .5s;
+		overflow: hidden;
+	}
+	#fork:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 130%;
+		height: 100%;
+		background: #000;
+		z-index: -1;
+		transform-origin: 0 0;
+		transform: translateX(-100%) skewX(-45deg);
+		transition: transform .5s;
+	}
+	#fork:hover {
+		color: #fff;
+	}
+	#fork:hover:before {
+		transform: translateX(0) skewX(-45deg);
+	}
+	/* Hexagons */
+	#thc1,
+	#thc2,
+	#thc3,
+	#thc4,
+	#thc5,
+	#thc6 {
 		padding: 1rem;
 		text-align: center;
 	}
-	#hc1 {
+	#thc1 {
 		background: rgb(44, 117, 162);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
-	#hc2 {
+	#thc2 {
 		background: rgb(233, 109, 37);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
-	#hc3 {
+	#thc3 {
 		background: rgb(203, 32, 41);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
-	#hc4 {
+	#thc4 {
 		background: rgb(129, 55, 108);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
-	#hc5 {
+	#thc5 {
 		background: rgb(43, 123, 120);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
-	#hc6 {
+	#thc6 {
 		background: rgb(103, 135, 60);
 		color: var(--synectiksWhite);
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 	}
 	@media (min-width: 576px) {
 		#accordion {
