@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './layout.css';
 // import "bootstrap/dist/css/bootstrap.min.css"
 // import Carousel from 'react-bootstrap/Carousel';
@@ -69,13 +70,13 @@ const Slider = () => {
 	};
 	return (
 		<HomeWrapper>
-			<div className='row'>
-				<div id='owl-demo' className='owl-carousel owl-theme'>
+			{/* <div className='row'> */}
+			{/* <div id='owl-demo' className='owl-carousel owl-theme'>
 					{/* <div id='owl-demo' className='owl-carousel owl-theme'> */}
-					<div className='item'>
-						<div className='caption'>
-							{/* <div className='caption animated fadeInLeft'> */}
-							<h3 className='animated delay-1s slow fadeInRight'>
+			{/* <div className='item'>
+						<div className='caption'> */}
+			{/* <div className='caption animated fadeInLeft'> */}
+			{/* <h3 className='animated delay-1s slow fadeInRight'>
 								Accelerate your migration <br />& modernization Journey
 							</h3>
 							<p className='animated delay-2s slow fadeInRight'>
@@ -113,24 +114,30 @@ const Slider = () => {
 							alt='modernize your business, adopt cloud native microservices architecture'
 						/>
 					</div>
-				</div>
-			</div>
+				</div> */}
+			{/* </div> */}
 			<div className='container-fluid bgBlue'>
 				<div className='row'>
-					<div className='col heading1'>
+					<div className='col heading1 mt-3 mt-md-0'>
 						<h2 className='textWhite'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h2>
 						<div className='circleFlex'>
-							<div className='circle'>
-								<img src={circle1} alt='' />
-							</div>
-							<div className='circle'>
-								<img src={circle2} alt='' />
-							</div>
-							<div className='circle'>
-								<img src={circle3} alt='' />
-							</div>
+							<ScrollAnimation animateIn='fadeInUp'>
+								<div className='circle'>
+									<img src={circle1} alt='' />
+								</div>
+							</ScrollAnimation>
+							<ScrollAnimation animateIn='fadeInUp'>
+								<div className='circle'>
+									<img src={circle2} alt='' />
+								</div>
+							</ScrollAnimation>
+							<ScrollAnimation animateIn='fadeInUp'>
+								<div className='circle'>
+									<img src={circle3} alt='' />
+								</div>
+							</ScrollAnimation>
 						</div>
 						<p className='text-light'>
 							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
@@ -476,21 +483,32 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+p {
+			word-break: keep-all;
+			text-rendering: optimizeLegibility;
+			text-align: left;
+		}
 .heading1 {
 	h2{
 	text-align: left;
-	font-size:36px;
+	font-size:32px;
 	line-height: 44px;
 }
 p{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 28px;
 	text-align: left;
 	margin-top:1rem;
 	margin-bottom:1rem;
+	word-break: keep-all;
 }
 }
-
+.tabsHeading {
+	h2{
+		font-size:28px;
+		text-align: left;
+	}
+}
 .circleFlex{
 	display: flex;
 	flex-direction: column;
@@ -505,11 +523,7 @@ p{
 		}
 	}
 }
-.tabsHeading{
-	h2{
-		text-align: left;
-	}
-}
+
 .tabsFlex{
 	/* display:flex; */
 	display:none;
@@ -541,8 +555,14 @@ p{
 } */
 .cstrip {
 .btn-width{
-	width: 100%;
-}}
+	width: 75%;
+}
+.cstrip_text{
+	h3{
+		font-size:22px;
+	}
+}
+}
 
 	background: var(--bgMain);
 	.border {
@@ -556,10 +576,11 @@ p{
 	.tab-content {
 		padding: 0px;
   border: 0px solid white;
-  border-radius: 25px;
+		border-radius: 25px;
+		display:none;
 }
 	}
-	@media (min-width: 576px) {
+	@media screen and  (min-width: 576px) {
 		.heading1{
 	 h2{
 	font-size:36px;
@@ -579,6 +600,12 @@ p{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+.tab-content {
+		padding: 0px;
+  border: 0px solid white;
+		border-radius: 25px;
+		display:block;
 }
 .tabsHeading{
 	h2{
@@ -1207,7 +1234,7 @@ color:var(--synectiksBlue);
 }
 		/* Hexagons */
 	}
-	@media (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		background: var(--bgMain);
 	}
 `;

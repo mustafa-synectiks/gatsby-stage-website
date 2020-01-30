@@ -112,6 +112,9 @@ const HeaderNav = styled.div`
 	.card-header {
 		padding: .75rem 9.25rem !important;
 	}
+	.bg-top {
+		background: var(--synectiksBlue) !important;
+	}
 	@media (min-width: 576px) {
 		.nav-item > a.active,
 		.nav-item > a:active {

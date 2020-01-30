@@ -109,22 +109,16 @@ const Hexagon = () => {
 						<li>
 							<div className='hx1' onClick={hex1}>
 								<img src={hx1} alt='' />
-								{/* <h1>This is a title 1</h1> */}
-								{/*		<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 						<li>
 							<div className='hx2' onClick={hex2}>
 								<img src={hx7} alt='' />
-								{/* <h1>This is a title2</h1> */}
-								{/*	<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 						<li>
 							<div className='hx3' onClick={hex3}>
 								<img src={hx6} alt='' />
-								{/* <h1>This is a title6</h1> */}
-								{/*<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 						<li>
@@ -135,23 +129,17 @@ const Hexagon = () => {
 						<li>
 							<div className='hx4' onClick={hex4}>
 								<img src={hx3} alt='' />
-								{/* <h1>This is a title3</h1> */}
-								{/* 	<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 						<li class='pusher' />
 						<li>
 							<div className='hx5' onClick={hex5}>
 								<img src={hx5} alt='' />
-								{/* <h1>This is a title5</h1> */}
-								{/*	<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 						<li>
 							<div className='hx6' onClick={hex6}>
 								<img src={hx4} alt='' />
-								{/* <h1>This is a title4</h1> */}
-								{/*		<p>Some sample text about the article this hexagon leads to</p> */}
 							</div>
 						</li>
 					</ul>
@@ -213,12 +201,13 @@ const HexagonWrapper = styled.section`
 		overflow: hidden;
 		width: 100%;
 		transform: rotate(30deg);
-		margin-bottom: 3rem;
+		margin-left: -3rem;
 		/* margin:0 auto; */
 	}
 	.hide {
 		display: none;
 	}
+
 	.clr:after {
 		content: "";
 		display: block;
@@ -316,7 +305,7 @@ const HexagonWrapper = styled.section`
 	.hx4 > img {
 		left: -100%;
 		right: -100%;
-		width: 58%;
+		width: 65%;
 		height: auto;
 		margin: 40px auto;
 		transform: rotate(-30deg);
@@ -347,7 +336,6 @@ const HexagonWrapper = styled.section`
 		padding: 0 5%;
 		background-color: #008080;
 		background-color: rgba(0, 128, 128, 0.8);
-		font-family: 'Raleway', sans-serif;
 
 		-webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
 		-ms-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
