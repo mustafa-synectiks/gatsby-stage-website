@@ -32,12 +32,7 @@ import OpenPlatform from '../images/OpenPlatform.png';
 import Transformation from '../images/Transformation.png';
 import Solutions from '../images/Solutions.png';
 import PoweredBySynectiks from '../images/PoweredBySynectiks.png';
-import SM from '../images/CS_Software_Migration.jpg';
-import RM from '../images/CS_Realtime_Monitoring.jpg';
-import SDFT from '../images/CS_SoftwareDefinedTransformation.jpg';
-import ND from '../images/CS_NetworkDesign.jpg';
-import ST from '../images/CS_StorageTier.jpg';
-import DR from '../images/CS_DisasterRecovery.jpg';
+
 import Mcc from '../images/mcc.png';
 import hx1 from '../images/HomePage/1.png';
 import hx2 from '../images/HomePage/Picture3.png';
@@ -47,6 +42,7 @@ import hx5 from '../images/HomePage/5.png';
 import hx6 from '../images/HomePage/6.png';
 import Hexagon from './Home/Hexagon';
 import HomeTabs from './Home/HomeTabs';
+import CaseStudies from './Home/CaseStudies';
 import {
 	TabContent,
 	TabPane,
@@ -70,13 +66,11 @@ const Slider = () => {
 	};
 	return (
 		<HomeWrapper>
-			{/* <div className='row'> */}
-			{/* <div id='owl-demo' className='owl-carousel owl-theme'>
-					{/* <div id='owl-demo' className='owl-carousel owl-theme'> */}
-			{/* <div className='item'>
-						<div className='caption'> */}
-			{/* <div className='caption animated fadeInLeft'> */}
-			{/* <h3 className='animated delay-1s slow fadeInRight'>
+			<div className='row'>
+				<div id='owl-demo' className='owl-carousel owl-theme'>
+					<div className='item'>
+						<div className='caption'>
+							<h3 className='animated delay-1s slow fadeInRight'>
 								Accelerate your migration <br />& modernization Journey
 							</h3>
 							<p className='animated delay-2s slow fadeInRight'>
@@ -114,8 +108,8 @@ const Slider = () => {
 							alt='modernize your business, adopt cloud native microservices architecture'
 						/>
 					</div>
-				</div> */}
-			{/* </div> */}
+				</div>
+			</div>
 			<div className='container-fluid bgBlue'>
 				<div className='row'>
 					<div className='col heading1 mt-3 mt-md-0'>
@@ -351,118 +345,7 @@ const Slider = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className='container-fluid bgWhiteGradient px-3 py-2 px-md-5 py-md-4'>
-					<div className='row'>
-						<div className='content'>
-							<div className='col col-sm-12 col-md-3'>
-								<div className='my-2 my-md-5 '>
-									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
-									<a href='' className='text-capitalize'>
-										View all success stories &nbsp; >{' '}
-									</a>
-								</div>
-								<div className='progressnumb'>
-									<ul className='progress' role='progressbar' aria-valuemin='0' aria-valuemax='100'>
-										<li>01</li>
-										<li className='slider__label sr-only' /> <li>06</li>
-									</ul>
-								</div>
-								<div className='slickbtns'>
-									<div className='prevbtn'>
-										<MdArrowBack className='fa-2x' />
-									</div>
-									<div className='nextbtn'>
-										<MdArrowForward className='fa-2x' />
-									</div>
-								</div>
-							</div>
-							<div className='col col-sm-12 col-md-9 h70vh'>
-								<div className='slider'>
-									<div className='w-450 bshad'>
-										<img src={SDFT} alt='Disaster Recovery' />
-
-										<div className='text-group align-self-center p-2 bgWhite'>
-											<h3 className=''>Software Defined Transformation</h3>
-											<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-
-									<div className='w-450 bshad'>
-										<img src={RM} alt='NetworkDesign' />{' '}
-										<div className='text-group align-self-center p-2 bgWhite'>
-											<h3 className=''>Realtime Monitoring</h3>
-											<p className='pr-2 pr-md-5'>
-												Highly Scalable extremely customizable realtime monitoring platform.
-											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-
-									<div className='w-450 bshad'>
-										<img src={SM} alt='StorageTier' />{' '}
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Storage Migration</h3>
-											<p className='pr-5'>
-												Petabytes of storage migration for a large financial company with zero
-												down time.
-											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-
-									<div className='w-450 bshad'>
-										<img src={ND} alt='Enterprise-Transformation' />{' '}
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Network Design</h3>
-											<p className='pr-5'>
-												Complete network Backbone design with highest security for retail.
-											</p>
-											<a href='/storagemigration/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-
-									<div className='w-450 bshad'>
-										<img src={ST} alt='StorageTier' className='h46' />
-
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Storage Tier</h3>
-											<p className='pr-5'>
-												Moving Bigdata workloads to aggregated platform for a large telco.
-											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-
-									<div className='w-450 bshad'>
-										<img src={DR} alt='StorageTier' />
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Disaster Recovery</h3>
-											<p className='pr-5'>
-												Lightweight disaster recovery platform for indian Defense.
-											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				<CaseStudies />
 				<div className='bgWhite p-1 p-md-5 cstrip'>
 					<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
 						<div className='cstrip_text'>

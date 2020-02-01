@@ -115,29 +115,6 @@ const Layout = ({ children }) => {
 		// /Case Study Ends
 		// OWL V1.3
 		$(document).ready(function() {
-			// function fadeInLeftReset() {
-			// 	if (!dragging) {
-			// 		$($elem + ' .caption .fadeInLeft-1, ' + $elem + ' .caption .fadeInLeft-2, ')
-			// 			.stop()
-			// 			.delay(800)
-			// 			.animate({ opacity: 0, left: '15px' }, { duration: 400, easing: 'easeInCubic' });
-			// 	} else {
-			// 		$($elem + ' .caption .fadeInLeft-1, ' + $elem + ' .caption .fadeInLeft-2, ').css({
-			// 			opacity: 0,
-			// 			left: '15px'
-			// 		});
-			// 	}
-			// }
-			// function fadeInLeft() {
-			// 	$($elem + ' .active .caption .fadeInLeft-1')
-			// 		.stop()
-			// 		.delay(500)
-			// 		.animate({ opacity: 1, left: '0' }, { duration: 800, easing: 'easeOutCubic' });
-			// 	$($elem + ' .active .caption .fadeInLeft-2')
-			// 		.stop()
-			// 		.delay(700)
-			// 		.animate({ opacity: 1, left: '0' }, { duration: 800, easing: 'easeOutCubic' });
-			// }
 			var time = 6; // time in seconds
 
 			var $progressBar, $bar, $elem, isPause, tick, percentTime;
@@ -169,11 +146,7 @@ const Layout = ({ children }) => {
 				$('.owl-carousel').owlCarousel();
 			}
 			var owl = $('#owl-demo').data('owlCarousel');
-			// owl.on('changed.owl.carousel', function(event) {
-			// 	var item = event.item.index - 2; // Position of the current item
-			// 	$('h3').removeClass('animated fadeInLeft');
-			// 	$('.owl-item').not('.cloned').eq(item).find('h3').addClass('animated fadeInLeft');
-			// });
+
 			//Init progressBar where elem is $("#owl-demo")
 			function progressBar(elem) {
 				$elem = elem;
