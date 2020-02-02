@@ -126,4 +126,5 @@ const CaseStudies = () => {
 };
 export default CaseStudies;
 
-const CaseStudiesWrapper = styled.div``;
+const CaseStudiesWrapper = styled.div`
+`;

@@ -6,6 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import Layout from "../../components/layout"
 import CloudCommon from "../../images/CloudCommon.png"
 import HybridCloud from "../../images/hybrid/Hybrid Cloud.jpg"
+import hybridIma from '../../images/hybrid/HybridCloud.jpg'
 import {
   TabContent,
   TabPane,
@@ -77,10 +78,10 @@ const Hybridcloud=()=> {
       <HybridWrapper>
 
         <div className="container-fluid ">
-          <div className="px-5 py-2 text-justify"></div>
+          <div className="px-1 px-md-5 py-2 py-md-2 text-justify"></div>
           <div className="">
             <Row className="position-relative">
-            <div className='col-md-12'>
+            <div className='col-sm-12 col-md-12'>
               <div className="">
               {/* <div className="hybridFixed"> */}
               <button onClick={toggleTab} className='logo-btn'>
@@ -88,7 +89,7 @@ const Hybridcloud=()=> {
               </button>
 <div>
 {/* <div className={isOpen?`tabsHide`:`tabList`}> */}
-                <Nav className='d-flex my-4 mx-auto w-85'>
+                <Nav className='d-flex my-2 my-md-4 mx-auto w-85'>
                 {/* <Nav className='sidetabs'> */}
                 {/* <Nav vertical className='sidetabs'> */}
                   <NavItem className="one">
@@ -143,17 +144,16 @@ const Hybridcloud=()=> {
                   <TabPane tabId="1">
                     <div>
                       <div className="">
-                        <div className="w-100">
+                        <div className="w-100 hybJumbo">
                           <img
                             className="himage "
                             height="auto"
-                            src={HybridCloud}
+                            src={hybridIma}
                             alt="Hybrid Cloud"
                           />
-                          {/* </div>
-                        <div className="hp ml-5"> */}
+
                           <h2 className=''>Why Hybrid Cloud?</h2>
-                          <h4 className='py-3'>Public, Private, and Hybrid Clouds</h4>
+                          <h4 className='py-1 py-md-3'>Public, Private, and Hybrid Clouds</h4>
                           <p>
                             Public cloud is what people think of when they hear
                             the word “cloud.” It’s ideal for application
@@ -194,10 +194,10 @@ const Hybridcloud=()=> {
                         </div>
                       </div>
                     </div>
-                    <div className="shadow p-4 bgWhite">
+                    <div className="shadow p-4 p-md-4 bgWhite">
                       <h3>Key Drivers for Hybrid cloud adoption is:</h3>
                       <div className="">
-                        <div className="my-3 d-flex flex-row justify-content-around align-items-center">
+                        <div className="my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
                           <img src={AI} alt="" className="w15" />
                           <p className="marHybrid">
                             Experiment with new ideas on the cloud. Build once
@@ -211,7 +211,7 @@ const Hybridcloud=()=> {
                             performance and cost savings.
                           </p>
                         </div>
-                        <div className="my-3 d-flex flex-row justify-content-around align-items-center">
+                        <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
                           <img src={RC} alt="" className="w15" />
                           <p className="marHybrid">
                             Choose the best cloud to meet cost, performance,
@@ -230,7 +230,7 @@ const Hybridcloud=()=> {
                             are no longer needed.
                           </p>
                         </div>
-                        <div className="my-3 d-flex flex-row justify-content-around align-items-center">
+                        <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
                           <img src={BCC} alt="" className="w15" />
                           <p className="marHybrid">
                             Choose the best cloud to meet cost, performance,
@@ -249,7 +249,7 @@ const Hybridcloud=()=> {
                             are no longer needed.
                           </p>
                         </div>
-                        <div className="my-3 d-flex flex-row justify-content-around align-items-center">
+                        <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
                           <img src={EVL} alt="" className="w15" />
                           <p className="marHybrid">
                             Reduce dependency on proprietary services,
@@ -289,7 +289,7 @@ const Hybridcloud=()=> {
                         </p>
                        </div>
                       </div>
-                      <div className='textColor text-center p-5'>
+                      <div className='textColor text-center p-2 p-md-5'>
                       <h3>Hybrid Cloud Challenges</h3>
                       <p>
                         Migration of workloads and integration between the
@@ -381,8 +381,8 @@ const Hybridcloud=()=> {
 
                       <div className='row'>
                      <div className="col-md-6">
-                        <div className="d-flex align-items-center my-3">
-                          <img src={DSCR} alt="" className="w-25 mr-3 my-3" />
+                        <div className="d-flex align-items-center my-2 my-md-3">
+                          <img src={DSCR} alt="" className="w-25 mr-2 mr-md-3 my-3 my-md-3" />
                           <h4>Disaster Recovery/Backup</h4>
                         </div>
                         <div>
@@ -398,7 +398,7 @@ const Hybridcloud=()=> {
                         </div>
                         </div>
                          <div className="col-md-6">
-                        <img src={scr} className='imgBx wimg w-75' alt="" />
+                        <img src={scr} className='imgBx wimg w-sm-100 my-3 my-md-2' alt="" />
                       </div>
                       </div>
 
@@ -408,7 +408,7 @@ const Hybridcloud=()=> {
                           <img
                             src={ADT}
                             alt=""
-                            className="w15 mr-3 my-3"
+                            className="w15 mr-2 mr-md-3 my-2 my-md-3"
                           />
                           <h4>Application Development and Testing</h4>
                         </div>
@@ -424,7 +424,7 @@ const Hybridcloud=()=> {
                       </div>
                       <div>
                         <div className="d-flex align-items-center">
-                          <img src={WS} alt="" className="whbd9 mr-3 my-3" />
+                          <img src={WS} alt="" className="whbd9 mr-2 mr-md-3 my-2 my-md-3" />
                           <h4>Web Servers</h4>
                         </div>
                         <p>
@@ -442,14 +442,14 @@ const Hybridcloud=()=> {
                         </p>
                       </div>
                       <div className="text-center">
-                        <img src={SCR5} className='imgBx wimg w-75 mx-auto' alt="" />
+                        <img src={SCR5} className='imgBx wimg w-sm-100 mx-auto my-3 my-md-4' alt="" />
                       </div>
                       <div>
                         <div className="d-flex align-items-center">
                           <img
                             src={ETL}
                             alt=""
-                            className="whbd7 mr-3 my-3"
+                            className="whbd7 mr-2 mr-md-3 my-2 my-md-3"
                           />
                           <h4>
                             Data Extract, Transform, and Load (ETL) processes
@@ -465,7 +465,7 @@ const Hybridcloud=()=> {
                       </div>
                       <div>
                         <div className="d-flex align-items-center">
-                          <img src={HRP} alt="" className="whbd9 mr-3 my-3" />
+                          <img src={HRP} alt="" className="whbd9  mr-2 mr-md-3 my-2 my-md-3" />
                           <h4>HR, Payroll, Productivity Applications</h4>
                         </div>
                         <p>
@@ -499,7 +499,7 @@ const Hybridcloud=()=> {
                       </div>
                       <div>
                         <div className="d-flex align-items-center">
-                          <img src={SLDR} alt="" className="whbd7 mr-3 my-3" />
+                          <img src={SLDR} alt="" className="whbd7 mr-2 mr-md-3 my-2 my-md-3" />
                           <h4>Supporting Local Data Regulations</h4>
                         </div>
                         <p>
@@ -518,7 +518,7 @@ const Hybridcloud=()=> {
                       </div>
                       <div>
                         <div className="d-flex align-items-center">
-                          <img src={GGEC} alt="" className="whbd9 mr-3 my-3" />
+                          <img src={GGEC} alt="" className="whbd9  mr-2 mr-md-3 my-2 my-md-3" />
                           <h4>Go Global and edge computing </h4>
                         </div>
                         <p>
@@ -681,11 +681,11 @@ const Hybridcloud=()=> {
                   <TabPane tabId="3">
                     <div>
                       <p className="">
-                      <h2 className='hybmt'>HOW SYNECTIKS CAN HELP</h2>
+                      <h2 className=''>HOW SYNECTIKS CAN HELP</h2>
                         Synectiks can enable your enterprise journey to hybrid
                         IT, regardless of your starting point.
                       </p>
-                      <div className="row my-5">
+                      <div className="row my-2 my-md-5">
                         <div className="col-md-4 text-center d-flex align-items-center flex-column">
                           <img src={DRB} alt="" className="w-25 mt-n5" />
                           <h4>Discovery & Assessment</h4>
@@ -703,7 +703,7 @@ const Hybridcloud=()=> {
                       </div>
                       <div className="row">
                         <div className="col-md-4 text-center d-flex align-items-center flex-column">
-                          <img src={TS} alt="" className="w-25 mt-3" />
+                          <img src={TS} alt="" className="w-25 mt-2 mt-md-3" />
                           <h4>Transformation Services</h4>
                         </div>
                         <div className="col-md-8">
@@ -723,17 +723,17 @@ const Hybridcloud=()=> {
                           </p>
                         </div>
                       </div>
-                      <blockquote className="blockquote blockquote-custom bg-white p-5 shadow rounded my-5">
+                      <blockquote className="blockquote blockquote-custom bg-white p-5 shadow rounded my-2 my-md-5">
                         <div className="blockquote-custom-icon bg-info shadow-sm">
                           <i className="fa fa-quote-left text-white"></i>
                         </div>
-                        <p className="mb-0 mt-2 font-italic">
+                        <p className="mb-0 mt-1 mt-md-2 font-italic">
                           "Synectiks managed services helped us to consolidate
                           our entire business from 4 different DC’s to a hybrid
                           cloud that is fully software defined and microservices
                           based ensuring our scalability and performance SLA."
                         </p>
-                        <footer className="blockquote-footer pt-4 mt-4 border-top">
+                        <footer className="blockquote-footer pt-2 mt-2 pt-md-4 mt-md-4 border-top">
                           Top 2 Motor Industry
                           <br />
                           <cite title="Source Title">
@@ -761,19 +761,19 @@ const Hybridcloud=()=> {
                         </h4>
                       </div>
 
-                      <div className="my-4">
+                      <div className="my-2 my-md-4">
                         <div className="row">
                           <div className="col-sm-4 col-md-4 text-center d-flex align-items-center flex-column">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={EX} alt="" className="tw m-0" />
-                              <h4 className="my-3">Experience</h4>
+                              <h4 className="my-2 my-md-3">Experience</h4>
                             </div>
                             <p> 10+ Large Scale Hybrid Cloud Transformation</p>
                           </div>
                           <div className="col-sm-4 col-md-4 text-center d-flex align-items-center flex-column">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={EXP} alt="" className="tw m-0" />
-                              <h4 className="my-4">Expertise</h4>
+                              <h4 className="my-2 my-md-4">Expertise</h4>
                             </div>
                             <p>
                               Experience Team with proven track record of
@@ -784,7 +784,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center d-flex align-items-center flex-column">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={TM} alt="" className="tw m-0" />
-                              <h4 className="my-3">Time & Money</h4>
+                              <h4 className="my-2 my-md-3">Time & Money</h4>
                             </div>
                             <p>
                               {" "}
@@ -819,7 +819,7 @@ const Hybridcloud=()=> {
                           l-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={CS} alt="" className="tw m-0" />
-                              <h4 className="my-4">Compliance & Security</h4>
+                              <h4 className="my-2 my-md-4">Compliance & Security</h4>
                             </div>
                             <p>
                               Our compliance and security assessment tools makes
@@ -835,7 +835,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={EA} alt="" className="tw m-0" />
-                              <h4 className="my-3">Extreme Automation</h4>
+                              <h4 className="my-2 my-md-3">Extreme Automation</h4>
                             </div>
                             <p>
                               {" "}
@@ -847,7 +847,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={PCP} alt="" className="tw m-0" />
-                              <h4 className="my-4">Public Cloud Partnership</h4>
+                              <h4 className="my-2 my-md-4">Public Cloud Partnership</h4>
                             </div>
                             <p>
                               Our advanced partnership with major public cloud
@@ -859,7 +859,7 @@ const Hybridcloud=()=> {
                               <div>
                                 <div className='d-flex align-items-center flex-column'>
                                   <img src={DE} alt="" className="tw m-0" />
-                                  <h4 className="my-3">Demo Environment</h4>
+                                  <h4 className="my-2 my-md-3">Demo Environment</h4>
                                 </div>
                                 <p>
                                   Avail the opportunity to quickly create demo
@@ -877,7 +877,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={WO} alt="" className="tw m-0" />
-                              <h4 className="my-4">Optimization Service</h4>
+                              <h4 className="my-2 my-md-4">Optimization Service</h4>
                             </div>
                             <p>
                               We do optimal resource pooling from multiple
@@ -887,7 +887,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={EM} alt="" className="tw m-0" />
-                              <h4 className="my-3">Engagement Model</h4>
+                              <h4 className="my-2 my-md-3">Engagement Model</h4>
                             </div>
                             <p>
                               Our every engagement focused on empowerment – not
@@ -897,7 +897,7 @@ const Hybridcloud=()=> {
                           <div className="col-sm-4 col-md-4 text-center">
                             <div className='d-flex align-items-center flex-column'>
                               <img src={LTR} alt="" className="tw m-0" />
-                              <h4 className="my-4">Long Term Retention</h4>
+                              <h4 className="my-2 my-md-4">Long Term Retention</h4>
                             </div>
                             <p>100% Customer Retention Rate.</p>
                           </div>
@@ -937,6 +937,28 @@ const Hybridcloud=()=> {
 export default Hybridcloud
 
 const HybridWrapper = styled.div`
+h1,h2,h3,h4,h5,h5,p{
+  text-align: left;
+}
+.hybJumbo{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  .himage {
+		width: 100%;
+    height: auto;
+    float: none;
+		box-shadow: 5px 5px 5px #789;
+		margin-bottom: 10px;
+    margin-left:0rem;
+  }
+}
+.marHybrid{
+  margin-left: 0rem;
+}
+.w-sm-100{
+  width: 100%;
+}
 .hybridFixed{
   position: fixed;
   top:6rem;
@@ -975,13 +997,7 @@ a#bgLLL.active  {
 }
 .one {
 	z-index: 99999;
-	/* display: flex; */
 	background: white;
-	/* box-shadow: 5px 5px 5px lightgray; */
-  /* padding: 5px 2px 2px 2px; */
-  /* border-bottom: 1px solid lightgrey; */
-  /* width:100%; */
-  /* background:rgba(0,0,0,0.5); */
 }
 ul.tabList.nav.flex-column {
 		position: relative;
@@ -991,12 +1007,6 @@ ul.tabList.nav.flex-column {
 	}
 	.tabList {
     display:block;
-		/* width: 100%;
-		color: rgba(0, 0, 0, 0.8);
-		height: 10vh;
-		font-size:15px;
-		cursor: pointer; */
-		/* padding-left: 3.2rem; */
   }
   .tabsHide {
     display: none;
@@ -1036,10 +1046,43 @@ h4{
       cursor: pointer;
     }
       .tab-content>.active{
-        padding:0rem 4rem;
+        padding:0rem 0.5rem;
       }
+      	.whbd9 {
+		width: 25%;
+  }
+  	.whbd7 {
+		width:25%;
+  }
+ .w20{
+		width:25%;
+  }
+  .w15 {
+	width: 25%;
+}
+
 
 @media (min-width: 576px){
+  .hybJumbo{
+    display:block;
+    	.himage {
+		width: 50%;
+		height: auto;
+		box-shadow: 5px 5px 5px #789;
+		float: right;
+		margin-left: 2rem;
+		margin-bottom: 10px;
+  }
+  }
+  .w15 {
+	width: 9%;
+}
+  	.whbd7 {
+		width: 7%;
+	}
+  	.whbd9 {
+		width: 9%;
+	}
   .w20{
     width: 20%;
   }
@@ -1082,15 +1125,10 @@ h4{
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{
-    /* padding: 0.5rem 0.5rem !important; */
     background: bgBlue !important;
     text-align: left;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
      font-size: 14px;
      cursor: pointer;
-
   }
   a#bgL.active:after{
     top: 100%;
@@ -1158,14 +1196,7 @@ a#bgLLL.active:after{
    .logo-btn {
     display: none;
   }
-  	.himage {
-		width: 50%;
-		height: auto;
-		box-shadow: 5px 5px 5px #789;
-		float: right;
-		margin-left: 2rem;
-		margin-bottom: 10px;
-  }
+
   .bxshd{
     box-shadow: 0px 0px 0px 0px lightgray;
   }
@@ -1198,6 +1229,9 @@ h4{
 }
 }
 @media(min-width:768px){
+  .w-sm-100{
+  width: 75%;
+}
   	.himage {
 		width: 100%;
 		height: auto;
@@ -1214,7 +1248,6 @@ h4{
 		width: 50%;
 		height: auto;
 		box-shadow: 5px 5px 5px #789;
-		float: right;
 		margin-left: 2rem;
 		margin-bottom: 10px;
   }

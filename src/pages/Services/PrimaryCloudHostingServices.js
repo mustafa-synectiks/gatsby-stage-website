@@ -44,7 +44,7 @@ const PrimaryCloudHostingServices = () => {
 										<FaBars />
 									</button>
 									<div>
-									{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
+										{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
 										{/* <Nav className='sidetabs'>
 											<NavItem className='one'>
 												<NavLink
@@ -92,7 +92,7 @@ const PrimaryCloudHostingServices = () => {
 														toggle('1');
 														toggleTab();
 													}}>
-													UNDERSTANDING THE HYBRID CLOUD
+													UNDERSTANDING THE HYBRID CLOUD primary
 												</NavLink>
 											</NavItem>
 
@@ -142,11 +142,11 @@ const PrimaryCloudHostingServices = () => {
 
 									<TabPane tabId='2'>
 										<div>
-											<div className='row pt-4 mx-auto'>
+											<div className='row pt-2 pt-md-4  mx-auto'>
 												<img src={cloudImaged} alt='' className='w-100 h-50 mx-auto' />
 												{/* <div className='bg-imageCloudManageBackup' /> */}
 											</div>
-											<h2 className='py-4'>
+											<h2 className='py-2 py-md-4'>
 												Secure, Reliable & Very Affordable Cloud Backup Solutions Ok it
 											</h2>
 											<p>
@@ -159,9 +159,11 @@ const PrimaryCloudHostingServices = () => {
 												management solutions for any system setup: physical servers, virtual
 												machines, PCs, business-critical applications, Databases and more.
 											</p>
-											<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution?</h2>
+											<h2 className='py-2 py-md-4'>
+												Why choose SYNECTIKS Cloud Backup Solution?
+											</h2>
 											<div className='row'>
-												<div className='d-flex py-4'>
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
 													<div className='w-25 mr-3'>
 														<img src={security} alt='security' className='w-100' />
 													</div>
@@ -186,7 +188,7 @@ const PrimaryCloudHostingServices = () => {
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
+												<div className='py-2 py-md-4'>
 													<div>
 														<img src={backupStorage} alt='security' className='imgSize' />
 													</div>

@@ -45,7 +45,7 @@ const CloudManagedBackup = () => {
 										<FaBars />
 									</button>
 									<div>
-									{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
+										{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
 										{/* <Nav className='sidetabs'>
 											<NavItem className='one'>
 												<NavLink
@@ -162,7 +162,7 @@ const CloudManagedBackup = () => {
 											</p>
 											<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution?</h2>
 											<div className='row'>
-												<div className='d-flex py-4'>
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
 													<div className='w-25 mr-3'>
 														<img src={security} alt='security' className='w-100' />
 													</div>
@@ -187,9 +187,9 @@ const CloudManagedBackup = () => {
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
-													<div>
-														<img src={backupStorage} alt='security' className='imgSize' />
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
+														<img src={backupStorage} alt='security' className='w-25' />
 													</div>
 													<div>
 														<h3>Different Modes of Backup Storage available: </h3>
@@ -199,9 +199,9 @@ const CloudManagedBackup = () => {
 											</div>
 
 											<div className='row'>
-												<div className='py-4'>
-													<div>
-														<img src={price} alt='Affordable Price' className='imgSize' />
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
+														<img src={price} alt='Affordable Price' className='w-25' />
 													</div>
 													<div>
 														<h3>Affordable Price:</h3>
@@ -213,28 +213,30 @@ const CloudManagedBackup = () => {
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
-													<div>
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
 														<img
 															src={efficientStorage}
 															alt='Efficient Backup storage usage'
-															className='imgSize'
+															className='w-25'
 														/>
 													</div>
-													<h3>Efficient Backup Storage Usage:</h3>{' '}
-													<p>
-														De-duplication and Compression technologies optimize backup
-														storage capacity.
-													</p>
+													<div>
+														<h3>Efficient Backup Storage Usage:</h3>{' '}
+														<p>
+															De-duplication and Compression technologies optimize backup
+															storage capacity.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row'>
-												<div className='d-flex py-4'>
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
 													<div className='w-25 mr-3'>
 														<img
 															src={geolocation}
 															alt='Multi Secure Geo Location'
-															className='w-100'
+															className='w-25'
 														/>
 													</div>
 													<div>
@@ -254,26 +256,28 @@ const CloudManagedBackup = () => {
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
-													<div>
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
 														<img
 															src={protection}
 															alt='protection for any workload'
-															className='w-10'
+															className='w-25'
 														/>
-														<h3>Protection for any workload:</h3>
 													</div>
-													<p>
-														Protect Windows, Linux, Macs, eight major hypervisors, iOS,
-														Android, Complete Office 365 Protection, all Major Applications
-														and Databases.
-													</p>
+													<div>
+														<h3>Protection for any workload:</h3>
+														<p>
+															Protect Windows, Linux, Macs, eight major hypervisors, iOS,
+															Android, Complete Office 365 Protection, all Major
+															Applications and Databases.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
-													<div>
-														<img src={support} alt='support' className='wsprt' />
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
+														<img src={support} alt='support' className='w-25' />
 														<h3>Support:</h3>
 													</div>
 													<p>
@@ -283,9 +287,9 @@ const CloudManagedBackup = () => {
 												</div>
 											</div>
 											<div className='row'>
-												<div className='py-4'>
-													<div>
-														<img src={restore} alt='restore' className='w-15' />
+												<div className='d-flex flex-column flex-md-row py-2 py-md-4'>
+													<div className='w-25 mr-3'>
+														<img src={restore} alt='restore' className='w-25' />
 														<h3>Restore:</h3>
 													</div>
 													<p>Faster Restore up to 500MB/sec</p>
@@ -417,9 +421,9 @@ const CloudManagedBackupWrapper = styled.div`
 	.logo-btn:hover {
 		cursor: pointer;
 	}
-	 .tab-content>.active{
-        padding:0rem 4rem 2rem 4rem;
-      }
+	.tab-content > .active {
+		padding: 0rem 4rem 2rem 4rem;
+	}
 
 	@media (min-width: 576px) {
 		.nav-link.active {
@@ -485,9 +489,9 @@ const CloudManagedBackupWrapper = styled.div`
 			font-size: 15px;
 			cursor: pointer;
 		}
-		 .tab-content>.active{
-        padding:0rem 4rem 2rem 4rem;
-      }
+		.tab-content > .active {
+			padding: 0rem 4rem 2rem 4rem;
+		}
 		a#bgL,
 		a#bgLL,
 		a#bgLLL {
