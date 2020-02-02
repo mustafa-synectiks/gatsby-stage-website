@@ -205,21 +205,21 @@ const Devops = () => {
 										<div className='text-center '>
 											<h4 className='my-5'>Where do you find your current DevOps Maturity?</h4>
 											<div className='w-75 mx-auto'>
-												<img src={six} alt='' className='boxshdd' />
+												<img src={six} alt='' className='boxshdd w-100' />
 											</div>
 											<div>
 												<h4 className='text-center my-5'>
 													Our DevOps Gap analysis process briefly as follows:
 												</h4>
 
-												<div className='text-center'>
-													<h2 className='fw6'>Gap Analysis</h2>
-													<h6>4 Phased - 5 days</h6>
+												<div>
+													<h2 className='fw6 text-center'>Gap Analysis</h2>
+													<h6 className='text-center'>4 Phased - 5 days</h6>
 												</div>
 
 												<div className='row py-3'>
 													<div className='container-fluid'>
-														<div className='d-flex justify-content-around'>
+														<div className='d-flex flex-column flex-md-row justify-content-around'>
 															<div className='col-md-3 p-0 mx-3 border boxshd'>
 																<div className='count bgOrange'>
 																	<div className='counters brclr'>1</div>
@@ -281,8 +281,8 @@ const Devops = () => {
 																		Day 4 <br />Presentation
 																	</h6>
 																</div>
-																<h6 className='mt-4'>Presentation</h6>
-																<ul className='text-left f14 pr-2'>
+																<h6 className='mt-1 mt-md-4'>Presentation</h6>
+																<ul className='text-left f14 pr-1 pr-md-2'>
 																	<li>
 																		Presentation of the report and plans to
 																		stakeholders, following plans are deliverd.
@@ -296,7 +296,7 @@ const Devops = () => {
 													</div>
 												</div>
 											</div>
-											<h5 className='py-5'>
+											<h5 className='py-2 py-md-5'>
 												For your self-assessment, please refer{' '}
 												<a href=''>DevOps assessment Questionnaires:</a>
 											</h5>
@@ -366,13 +366,13 @@ const Devops = () => {
 												Product Based Professional Services partner who understand your
 												requirements for:
 											</p>
-											<div className='my-3'>
-												<div className='my-3 d-flex align-items-center'>
-													<div className='w125px text-center mr-5'>
+											<div className='my-1 my-md-3'>
+												<div className='my-1 my-md-3 d-flex flex-column flex-md-row align-items-center'>
+													<div className='w125px text-center mr-1 mr-md-5'>
 														<img src={speed} alt='' className='w125px' />
 													</div>
 													<div className=''>
-														<h4 className='my-3'>Speed</h4>
+														<h4 className='my-1 my-md-3'>Speed</h4>
 														<p>
 															Introduction of New products or transforming your existing
 															legacy monolith application to microservices faster While
@@ -380,12 +380,12 @@ const Devops = () => {
 														</p>
 													</div>
 												</div>
-												<div className=' my-3 d-flex align-items-center'>
-													<div className=' w125px text-center mr-5'>
+												<div className=' my-3 d-flex flex-column flex-md-row align-items-center'>
+													<div className=' w125px text-center mr-1 mr-md-5'>
 														<img src={scale} alt='' className='w125px' />
 													</div>
 													<div>
-														<h4 className='my-3'>Scale</h4>
+														<h5 className='my-1 my-md-3'>Scale</h5>
 														<p>
 															Grow cost-effectively to meet new organizational and
 															business requirements across the enterprise using a highly
@@ -395,12 +395,12 @@ const Devops = () => {
 														</p>
 													</div>
 												</div>
-												<div className='my-3 d-flex align-items-center'>
-													<div className='w125px text-center mr-5'>
+												<div className='my-3 d-flex flex-column flex-md-row align-items-center'>
+													<div className='w125px text-center mr-1 mr-md-5'>
 														<img src={security} alt='' className=' w125px' />
 													</div>
 													<div className=''>
-														<h4 className='my-3'>Security</h4>
+														<h5 className='my-1 my-md-3'>Security</h5>
 														<p>
 															Provision and Manage infrastructure, application services in
 															complete software defined way with maximum automation so
@@ -417,7 +417,7 @@ const Devops = () => {
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
 												</h4>
-												<div className='d-flex align-items-center'>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={four} className='w15 mr-4' />
 													<div>
 														<h5>Discover & Assessment</h5>
@@ -431,7 +431,7 @@ const Devops = () => {
 														</p>
 													</div>
 												</div>
-												<div className='d-flex align-items-center'>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={five} className='w9 mr-5' />
 													<div>
 														<h5>Transformation Services</h5>
@@ -568,48 +568,48 @@ const Devops = () => {
 									<TabPane tabId='5'>
 										<div>
 											<h3>Key benefits you get by choosing Synectiks as DevOps partner:</h3>
-											<div className='d-flex justify-content-around align-items-end my-4'>
+											<div className='d-flex flex-column flex-md-row justify-content-around align-items-end my-1 my-md-4'>
 												<div className='d-flex flex-column align-items-center'>
 													<img src={maxFac} alt='maximum facility' className='w-37' />
 													<h5>Maximum Flexibility</h5>
 												</div>
-												<p className='mb-4'>
+												<p className='mb-1 mb-md-4'>
 													Synectiks xformation platform coupled with its Hybrid cross cloud
 													infrastructure delivers you the maximum flexibility to run/move your
 													high performant workloads across clouds and manage them through a
 													single pane of glass.
 												</p>
 											</div>
-											<div className='d-flex justify-content-around align-items-end my-4'>
+											<div className='d-flex justify-content-around flex-column flex-md-row align-items-end my-1 my-md-4'>
 												<div className='d-flex flex-column align-items-center'>
 													<img src={fastDeliv} alt='fast delivery' className='w-37' />
 													<h5>Faster Delivery</h5>
 												</div>
-												<p className='ml-3 mb-4'>
+												<p className='ml-0 ml-3 mb-1 mb-4'>
 													Synectiks xformation platform enabled infrastructure and application
 													provisioning in complete software defined manner with regulatory
 													compliant architectures. The existing assets and best practices
 													enable project delivery in weeks than months.
 												</p>
 											</div>
-											<div className='d-flex justify-content-around align-items-end my-4'>
+											<div className='d-flex flex-column flex-md-row justify-content-around align-items-end my-2 my-md-4'>
 												<div className='d-flex flex-column align-items-center'>
 													<img src={betterQual} alt='better quality' className='w-37' />
 													<h5>Better Quality</h5>
 												</div>
-												<p className='ml-3 mb-4'>
+												<p className='ml-0 ml-md-3 mb-1 mb-4'>
 													Through Synectiks Xformation platform, you can continuously deliver
 													containerized and serverless microservices verified through
 													stringent quality gates that run across clouds and geographies
 													ensuring 100% availability and maximum performance.
 												</p>
 											</div>
-											<div className='d-flex justify-content-around align-items-center my-4'>
+											<div className='d-flex flex-column flex-md-row justify-content-around align-items-center my-2 my-md-4'>
 												<div className='d-flex flex-column align-items-center'>
 													<img src={lowCost} alt='low cost' className='w-50' />
 													<h5>Lower Costs</h5>
 												</div>
-												<p className='ml-5'>
+												<p className='ml-0 ml-md-5'>
 													Everything software defined and maximum automation ensure lowest
 													TCO. A successful Digital Modernization project delivers 10X
 													agility,30X reliability and 10X operational efficiency. At least 50
@@ -637,6 +637,13 @@ const Devops = () => {
 export default Devops;
 
 const DevopsWrapper = styled.div`
+
+h1,h2,h3,h4,p{
+	text-align: left;
+}
+h5{
+	text-align:center;
+}
 .hybridFixed{
   position: fixed;
   top:6rem;
@@ -736,10 +743,31 @@ h4{
       cursor: pointer;
     }
       .tab-content>.active{
-        padding:0rem 4rem 2rem 4rem;
-      }
-
+        padding:0rem 1rem;
+						}
+						.w125px{
+		width: 50%;
+	}
+.w15 {
+	width: 25%;
+}
+.w9{
+	width: 25%;
+}
+.counters{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    border: 3px solid #f5f5f5;
+    padding: 18px 25px;
+    text-align: center;
+				font-weight:700;
+				margin: 0 auto;
+}
 @media (min-width: 576px){
+	.w15 {
+	width: 9%;
+}
 	.w125px{
 		width: 115px;
 	}

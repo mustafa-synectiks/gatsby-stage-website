@@ -418,8 +418,8 @@ const CloudManagedBackupWrapper = styled.div`
 	.logo-btn:hover {
 		cursor: pointer;
 	}
-	.tab-content {
-		padding-top: 4rem;
+	.tab-content > .active {
+		padding: 2rem 0rem;
 	}
 
 	@media (min-width: 576px) {
@@ -462,7 +462,6 @@ const CloudManagedBackupWrapper = styled.div`
 			position: relative;
 			z-index: 99999;
 			width: 100%;
-			/* width: 25vw; */
 			left: 0rem;
 		}
 		.tabList {
@@ -477,7 +476,6 @@ const CloudManagedBackupWrapper = styled.div`
 			height: 10vh;
 			font-size: 14px;
 			cursor: pointer;
-			/* padding-left: 3.2rem; */
 		}
 		ul.nav.flex-column > li > a {
 			width: 100%;
@@ -486,39 +484,18 @@ const CloudManagedBackupWrapper = styled.div`
 			font-size: 15px;
 			cursor: pointer;
 		}
-		.tab-content {
-			padding-top: 4rem;
-			padding-left: 3rem;
-			padding-right: 3rem;
+		.tab-content > .active {
+			padding: 4rem;
 			text-align: justify;
 		}
 		a#bgL,
 		a#bgLL,
 		a#bgLLL {
 			padding: 0.5rem 0.5rem !important;
-			/* background: white !important; */
 			text-align: left;
-			/* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
 			font-size: 14px;
 		}
-		/* a#bgL.active {
-			border-right: 5px solid #007cc2;
-			background: white !important;
-			font-size: 14px;
-		}
-		a#bgLL.active {
-			border-right: 5px solid #007cc2;
-			background: white !important;
-			font-size: 14px;
-		}
-		a#bgLLL.active {
-			border-right: 5px solid #007cc2;
 
-			background: white !important;
-			font-size: 14px;
-		} */
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;

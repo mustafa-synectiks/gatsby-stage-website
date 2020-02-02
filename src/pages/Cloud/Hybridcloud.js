@@ -84,9 +84,9 @@ const Hybridcloud=()=> {
             <div className='col-sm-12 col-md-12'>
               <div className="">
               {/* <div className="hybridFixed"> */}
-              <button onClick={toggleTab} className='logo-btn'>
+              {/* <button onClick={toggleTab} className='logo-btn'>
               <FaBars />
-              </button>
+              </button> */}
 <div>
 {/* <div className={isOpen?`tabsHide`:`tabList`}> */}
                 <Nav className='d-flex my-2 my-md-4 mx-auto w-85'>
@@ -937,6 +937,7 @@ const Hybridcloud=()=> {
 export default Hybridcloud
 
 const HybridWrapper = styled.div`
+
 h1,h2,h3,h4,h5,h5,p{
   text-align: left;
 }

@@ -41,9 +41,9 @@ const CloudManagedBackup = () => {
 						<Row className='position-relative'>
 							<div className='col-md-12'>
 								<div className=''>
-									<button onClick={toggleTab} className='logo-btn'>
+									{/* <button onClick={toggleTab} className='logo-btn'>
 										<FaBars />
-									</button>
+									</button> */}
 									<div>
 										{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
 										{/* <Nav className='sidetabs'>
@@ -164,7 +164,7 @@ const CloudManagedBackup = () => {
 											<div className='row'>
 												<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4'>
 													<div className='w-2vh'>
-														<img src={security} alt='security' className='w-8' />
+														<img src={security} alt='security' className='w-7' />
 													</div>
 													<div className='w-8vh'>
 														<h3> Security: </h3>
@@ -189,7 +189,7 @@ const CloudManagedBackup = () => {
 											<div className='row'>
 												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
 													<div className='w-2vh'>
-														<img src={backupStorage} alt='security' className='w-8' />
+														<img src={backupStorage} alt='security' className='w-7' />
 													</div>
 													<div className='w-8vh'>
 														<h3>Different Modes of Backup Storage available: </h3>
@@ -261,7 +261,7 @@ const CloudManagedBackup = () => {
 														<img
 															src={protection}
 															alt='protection for any workload'
-															className='w-7'
+															className='w-6'
 														/>
 													</div>
 													<div className='w-8vh'>
@@ -277,7 +277,7 @@ const CloudManagedBackup = () => {
 											<div className='row'>
 												<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
 													<div className='w-2vh'>
-														<img src={support} alt='support' className='w-7' />
+														<img src={support} alt='support' className='w-6' />
 													</div>
 													<div className='w-8vh'>
 														<h3>Support:</h3>
@@ -328,6 +328,18 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default CloudManagedBackup;
 
 const CloudManagedBackupWrapper = styled.div`
+	h1,
+	h2,
+	h4,
+	h5,
+	h6,
+	p {
+		text-align: left;
+	}
+	h3 {
+		text-align: center;
+	}
+
 	.w-sm-100 {
 		width: 100%;
 	}
@@ -343,18 +355,12 @@ const CloudManagedBackupWrapper = styled.div`
 		padding: 0.5rem 1.5rem;
 		font-size: 12px;
 		height: auto;
-		/* background: white !important; */
 		text-align: left;
-		/* display:flex;
-    justify-content: space-between; */
 	}
 	a#bgL.active,
 	a#bgLL.active,
 	a#bgLLL.active {
-		/* border-right: 5px solid #007cc2; */
-		/* background: white !important; */
 		text-align: left;
-		/* color: #007cc2; */
 		border-radius: 0px;
 		padding: 0.5rem 1.5rem;
 		font-size: 12px;
@@ -369,13 +375,7 @@ const CloudManagedBackupWrapper = styled.div`
 	}
 	.one {
 		z-index: 99999;
-		/* display: flex; */
 		background: white;
-		/* box-shadow: 5px 5px 5px lightgray; */
-		/* padding: 5px 2px 2px 2px; */
-		/* border-bottom: 1px solid lightgrey; */
-		/* width:100%; */
-		/* background:rgba(0,0,0,0.5); */
 	}
 	ul.tabList.nav.flex-column {
 		position: relative;
@@ -385,12 +385,6 @@ const CloudManagedBackupWrapper = styled.div`
 	}
 	.tabList {
 		display: block;
-		/* width: 100%;
-		color: rgba(0, 0, 0, 0.8);
-		height: 10vh;
-		font-size:15px;
-		cursor: pointer; */
-		/* padding-left: 3.2rem; */
 	}
 	.tabsHide {
 		display: none;
@@ -429,7 +423,7 @@ const CloudManagedBackupWrapper = styled.div`
 		cursor: pointer;
 	}
 	.tab-content > .active {
-		padding: 0rem 4rem 2rem 4rem;
+		padding: 0rem 2rem;
 	}
 	.w-6 {
 		width: 6rem;
@@ -520,29 +514,10 @@ const CloudManagedBackupWrapper = styled.div`
 		a#bgLL,
 		a#bgLLL {
 			padding: 0.5rem 0.5rem !important;
-			/* background: white !important; */
 			text-align: left;
-			/* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
 			font-size: 14px;
 		}
-		/* a#bgL.active {
-			border-right: 5px solid #007cc2;
-			background: white !important;
-			font-size: 14px;
-		}
-		a#bgLL.active {
-			border-right: 5px solid #007cc2;
-			background: white !important;
-			font-size: 14px;
-		}
-		a#bgLLL.active {
-			border-right: 5px solid #007cc2;
 
-			background: white !important;
-			font-size: 14px;
-		} */
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;
