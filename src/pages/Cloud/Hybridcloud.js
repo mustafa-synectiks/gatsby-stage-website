@@ -78,7 +78,7 @@ const Hybridcloud = () => {
 								<Navbar color='light' light expand='md'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 									<Collapse isOpen={!collapsed} navbar>
-										<Nav className='d-flex my-2 my-md-4 mx-auto w-85'>
+										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'

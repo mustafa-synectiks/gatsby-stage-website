@@ -39,235 +39,227 @@ const CloudManagedBackup = () => {
 		<Layout>
 			<CloudManagedBackupWrapper>
 				<div className='bg-lightgrey container-fluid'>
-					<div className=''>
-						<Row className=''>
-							{/* <Row className='position-relative'> */}
-							<div className='col-md-12'>
-								<Navbar color='light' light expand='md'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
-									<Collapse isOpen={!collapsed} navbar>
-										<Nav navbar className='d-flex my-4 mx-auto w-85'>
-											<NavItem className='one'>
-												<NavLink
-													id='bgL'
-													className={classnames({ active: activeTab === '1' })}
-													onClick={() => {
-														toggle('1');
-														toggleTab();
-													}}>
-													UNDERSTANDING THE CLOUD MANAGED BACKUP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLL'
-													className={classnames({ active: activeTab === '2' })}
-													onClick={() => {
-														toggle('2');
-														toggleTab();
-													}}>
-													GETTING STARTED TO CLOUD MANAGED BACKUP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '3' })}
-													onClick={() => {
-														toggle('3');
-														toggleTab();
-													}}>
-													HOW SYNECTIKS CAN HELP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '4' })}
-													onClick={() => {
-														toggle('4');
-														toggleTab();
-													}}>
-													{/* <span>
+					<Row className=''>
+						<Navbar color='light' light expand='md'>
+							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
+							<Collapse isOpen={!collapsed} navbar>
+								<Nav navbar className='bgWhite d-flex my-4 mx-auto w-85'>
+									<NavItem className='one'>
+										<NavLink
+											id='bgL'
+											className={classnames({ active: activeTab === '1' })}
+											onClick={() => {
+												toggle('1');
+												toggleTab();
+											}}>
+											UNDERSTANDING THE CLOUD MANAGED BACKUP
+										</NavLink>
+									</NavItem>
+									<NavItem className='one'>
+										<NavLink
+											id='bgLL'
+											className={classnames({ active: activeTab === '2' })}
+											onClick={() => {
+												toggle('2');
+												toggleTab();
+											}}>
+											GETTING STARTED TO CLOUD MANAGED BACKUP
+										</NavLink>
+									</NavItem>
+									<NavItem className='one'>
+										<NavLink
+											id='bgLLL'
+											className={classnames({ active: activeTab === '3' })}
+											onClick={() => {
+												toggle('3');
+												toggleTab();
+											}}>
+											HOW SYNECTIKS CAN HELP
+										</NavLink>
+									</NavItem>
+									<NavItem className='one'>
+										<NavLink
+											id='bgLLL'
+											className={classnames({ active: activeTab === '4' })}
+											onClick={() => {
+												toggle('4');
+												toggleTab();
+											}}>
+											{/* <span>
                       <img src={SD} alt="" className='imgHyb'/>
                     </span> */}
-													SYNECTIKS DIFFERENTIATOR
-												</NavLink>
-											</NavItem>
-										</Nav>
-									</Collapse>
-								</Navbar>
-							</div>
-							<div className='px-1 mb-3 col-md-12'>
-								<TabContent activeTab={activeTab}>
-									<TabPane tabId='1' />
+											SYNECTIKS DIFFERENTIATOR
+										</NavLink>
+									</NavItem>
+								</Nav>
+							</Collapse>
+						</Navbar>
+						<div className='px-1 mb-3 col-md-12'>
+							<TabContent activeTab={activeTab}>
+								<TabPane tabId='1' />
 
-									<TabPane tabId='2'>
-										<div>
-											<div className='row pt-4'>
-												<img src={cloudImaged} alt='' className='w-sm-100 h-50 mx-auto' />
-												{/* <div className='bg-imageCloudManageBackup' /> */}
-											</div>
-											<h2 className='py-4'>
-												Secure, Reliable & Very Affordable Cloud Backup Solution:
-											</h2>
-											<p>
-												At Synectiks, Data Protection is at the topmost priority and is
-												monitored with utmost vigilance. Synectiks Cloud Backup with front line
-												innovation reinforcement arrangements offers a simple, secure and
-												moderate cloud offsite backup needs. You can have your backup offsite
-												with sureness at Synectiks Cloud establishment at Preferred Geo
-												Locations. Synectiks backup solutions provide exceptional, customizable
-												backup and storage management solutions for any system setup: physical
-												servers, virtual machines, PCs, business-critical applications,
-												Databases and more.
-											</p>
-											<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
-											<div className='row'>
-												<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img src={security} alt='security' className='w-7' />
-													</div>
-													<div className='w-8vh'>
-														<h3> Security: </h3>
-														<p>
-															Make sure your vendor offers strong security, including
-															encryption. It doesn't matter how well you have protected
-															your primary systems if your backup systems present an easy
-															target for attackers. Any cloud backup service you use needs
-															to have the same level of security that your primary systems
-															have
-														</p>
-														<ul>
-															<li>
-																END to END Encryption: In-Flight and Data-At-Rest
-																Encryption
-															</li>
-															<li>AI-based ransomware protection </li>
-														</ul>
-													</div>
+								<TabPane tabId='2'>
+									<div>
+										<div className='row pt-4'>
+											<img src={cloudImaged} alt='' className='w-sm-100 h-50 mx-auto' />
+											{/* <div className='bg-imageCloudManageBackup' /> */}
+										</div>
+										<h2 className='py-4'>
+											Secure, Reliable & Very Affordable Cloud Backup Solution:
+										</h2>
+										<p>
+											At Synectiks, Data Protection is at the topmost priority and is monitored
+											with utmost vigilance. Synectiks Cloud Backup with front line innovation
+											reinforcement arrangements offers a simple, secure and moderate cloud
+											offsite backup needs. You can have your backup offsite with sureness at
+											Synectiks Cloud establishment at Preferred Geo Locations. Synectiks backup
+											solutions provide exceptional, customizable backup and storage management
+											solutions for any system setup: physical servers, virtual machines, PCs,
+											business-critical applications, Databases and more.
+										</p>
+										<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
+										<div className='row'>
+											<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img src={security} alt='security' className='w-7' />
 												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img src={backupStorage} alt='security' className='w-7' />
-													</div>
-													<div className='w-8vh'>
-														<h3>Different Modes of Backup Storage available: </h3>
-														<p>S3, NAS, SAN, ABGP.</p>
-													</div>
-												</div>
-											</div>
-
-											<div className='row'>
-												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img src={price} alt='Affordable Price' className='w-7' />
-													</div>
-													<div className='w-8vh'>
-														<h3>Affordable Price:</h3>
-														<p>
-															Cloud Backup storage as low as $0.018/GB per Month (only
-															charged for the storage consumed).
-														</p>
-													</div>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img
-															src={efficientStorage}
-															alt='Efficient Backup storage usage'
-															className='w-8'
-														/>
-													</div>
-													<div className='w-8vh'>
-														<h3>Efficient Backup Storage Usage:</h3>{' '}
-														<p>
-															De-duplication and Compression technologies optimize backup
-															storage capacity.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img
-															src={geolocation}
-															alt='Multi Secure Geo Location'
-															className='w-7'
-														/>
-													</div>
-													<div className='w-8vh'>
-														<h3>Multi Secure Geo Locations: </h3>
-														<p>
-															We at Synectiks aim for 3-2-1 rule of Thumb to protect the
-															Data, which implies that you should always have three copies
-															of your data, that you keep it backed up on at least two
-															different types of storage media, and that you have at least
-															one copy of the data offsite.
-															<br />
-															Synectiks have different backup Secure Geo locations with
-															different power grids to make sure your data is available
-															when disaster strike in one location.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img
-															src={protection}
-															alt='protection for any workload'
-															className='w-6'
-														/>
-													</div>
-													<div className='w-8vh'>
-														<h3>Protection for any workload:</h3>
-														<p>
-															Protect Windows, Linux, Macs, eight major hypervisors, iOS,
-															Android, Complete Office 365 Protection, all Major
-															Applications and Databases.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
-													<div className='w-2vh'>
-														<img src={support} alt='support' className='w-6' />
-													</div>
-													<div className='w-8vh'>
-														<h3>Support:</h3>
-														<p>
-															Follow the Sun model - 24/7/365 days support from both
-															onshore and offshore Teams
-														</p>
-													</div>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4 mx-auto'>
-													<div className='w-2vh'>
-														<img src={restore} alt='restore' className='w-7' />
-													</div>
-													<div className='w-8vh'>
-														<h3>Fast Recovery:</h3>
-														<p>Recover the Data faster, transfer rate up to 1GB/sec </p>
-													</div>
+												<div className='w-8vh'>
+													<h3> Security: </h3>
+													<p>
+														Make sure your vendor offers strong security, including
+														encryption. It doesn't matter how well you have protected your
+														primary systems if your backup systems present an easy target
+														for attackers. Any cloud backup service you use needs to have
+														the same level of security that your primary systems have
+													</p>
+													<ul>
+														<li>
+															END to END Encryption: In-Flight and Data-At-Rest Encryption
+														</li>
+														<li>AI-based ransomware protection </li>
+													</ul>
 												</div>
 											</div>
 										</div>
-									</TabPane>
-									<TabPane tabId='3' />
-								</TabContent>
-							</div>
-						</Row>
-					</div>
+										<div className='row'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img src={backupStorage} alt='security' className='w-7' />
+												</div>
+												<div className='w-8vh'>
+													<h3>Different Modes of Backup Storage available: </h3>
+													<p>S3, NAS, SAN, ABGP.</p>
+												</div>
+											</div>
+										</div>
+
+										<div className='row'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img src={price} alt='Affordable Price' className='w-7' />
+												</div>
+												<div className='w-8vh'>
+													<h3>Affordable Price:</h3>
+													<p>
+														Cloud Backup storage as low as $0.018/GB per Month (only charged
+														for the storage consumed).
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img
+														src={efficientStorage}
+														alt='Efficient Backup storage usage'
+														className='w-8'
+													/>
+												</div>
+												<div className='w-8vh'>
+													<h3>Efficient Backup Storage Usage:</h3>{' '}
+													<p>
+														De-duplication and Compression technologies optimize backup
+														storage capacity.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img
+														src={geolocation}
+														alt='Multi Secure Geo Location'
+														className='w-7'
+													/>
+												</div>
+												<div className='w-8vh'>
+													<h3>Multi Secure Geo Locations: </h3>
+													<p>
+														We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
+														which implies that you should always have three copies of your
+														data, that you keep it backed up on at least two different types
+														of storage media, and that you have at least one copy of the
+														data offsite.
+														<br />
+														Synectiks have different backup Secure Geo locations with
+														different power grids to make sure your data is available when
+														disaster strike in one location.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img
+														src={protection}
+														alt='protection for any workload'
+														className='w-6'
+													/>
+												</div>
+												<div className='w-8vh'>
+													<h3>Protection for any workload:</h3>
+													<p>
+														Protect Windows, Linux, Macs, eight major hypervisors, iOS,
+														Android, Complete Office 365 Protection, all Major Applications
+														and Databases.
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
+												<div className='w-2vh'>
+													<img src={support} alt='support' className='w-6' />
+												</div>
+												<div className='w-8vh'>
+													<h3>Support:</h3>
+													<p>
+														Follow the Sun model - 24/7/365 days support from both onshore
+														and offshore Teams
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4 mx-auto'>
+												<div className='w-2vh'>
+													<img src={restore} alt='restore' className='w-7' />
+												</div>
+												<div className='w-8vh'>
+													<h3>Fast Recovery:</h3>
+													<p>Recover the Data faster, transfer rate up to 1GB/sec </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</TabPane>
+								<TabPane tabId='3' />
+							</TabContent>
+						</div>
+					</Row>
 				</div>
 				<Helmet>
 					<script
