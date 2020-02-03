@@ -41,11 +41,11 @@ const CloudManagedBackup = () => {
 						<Row className='position-relative'>
 							<div className='col-md-12'>
 								<div className=''>
-									{/* <button onClick={toggleTab} className='logo-btn'>
+									<button onClick={toggleTab} className='logo-btn'>
 										<FaBars />
-									</button> */}
+									</button>
 									<div>
-										{/* <div className={isOpen ? `tabsHide` : `tabList`}> */}
+										<div className={isOpen ? `tabsHide` : `tabList`}>
 										{/* <Nav className='sidetabs'>
 											<NavItem className='one'>
 												<NavLink
@@ -93,7 +93,7 @@ const CloudManagedBackup = () => {
 														toggle('1');
 														toggleTab();
 													}}>
-													UNDERSTANDING THE HYBRID CLOUD
+													UNDERSTANDING THE CLOUD MANAGED BACKUP
 												</NavLink>
 											</NavItem>
 
@@ -105,7 +105,7 @@ const CloudManagedBackup = () => {
 														toggle('2');
 														toggleTab();
 													}}>
-													GETTING STARTED TO HYBRID CLOUD
+													GETTING STARTED TO CLOUD MANAGED BACKUP
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -135,6 +135,7 @@ const CloudManagedBackup = () => {
 											</NavItem>
 										</Nav>
 									</div>
+									</div>
 								</div>
 							</div>
 							<div className='px-1 mb-3 col-md-12'>
@@ -148,19 +149,20 @@ const CloudManagedBackup = () => {
 												{/* <div className='bg-imageCloudManageBackup' /> */}
 											</div>
 											<h2 className='py-4'>
-												Secure, Reliable & Very Affordable Cloud Backup Solutions:
+												Secure, Reliable & Very Affordable Cloud Backup Solution:
 											</h2>
 											<p>
-												At Synectiks, Data Protection is the topmost priority and is taken very
-												seriously. Synectiks Cloud Backup with cutting edge technology backup
-												solutions offers an easy, secure and affordable cloud offsite backup
-												needs. you can have your backup offsite with confidence at Synectiks
-												Cloud infrastructure at preferred Geo locations. Synectiks backup
-												solutions provide exceptional, customizable backup and storage
-												management solutions for any system setup: physical servers, virtual
-												machines, PCs, business-critical applications, Databases and more.
+												At Synectiks, Data Protection is at the topmost priority and is
+												monitored with utmost vigilance. Synectiks Cloud Backup with front line
+												innovation reinforcement arrangements offers a simple, secure and
+												moderate cloud offsite backup needs. You can have your backup offsite
+												with sureness at Synectiks Cloud establishment at Preferred Geo
+												Locations. Synectiks backup solutions provide exceptional, customizable
+												backup and storage management solutions for any system setup: physical
+												servers, virtual machines, PCs, business-critical applications,
+												Databases and more.
 											</p>
-											<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution?</h2>
+											<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
 											<div className='row'>
 												<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4'>
 													<div className='w-2vh'>
@@ -170,10 +172,10 @@ const CloudManagedBackup = () => {
 														<h3> Security: </h3>
 														<p>
 															Make sure your vendor offers strong security, including
-															encryption. It doesn't matter how well you have protected
+															encryption. It doesn't matter how well you have protected
 															your primary systems if your backup systems present an easy
 															target for attackers. Any cloud backup service you use needs
-															to have the same level of security that your other systems
+															to have the same level of security that your primary systems
 															have
 														</p>
 														<ul>
@@ -181,7 +183,7 @@ const CloudManagedBackup = () => {
 																END to END Encryption: In-Flight and Data-At-Rest
 																Encryption
 															</li>
-															<li>AI-based ransomware protection</li>
+															<li>AI-based ransomware protection </li>
 														</ul>
 													</div>
 												</div>
@@ -193,7 +195,7 @@ const CloudManagedBackup = () => {
 													</div>
 													<div className='w-8vh'>
 														<h3>Different Modes of Backup Storage available: </h3>
-														<p> S3, NAS, ABGP, SAN</p>
+														<p>S3, NAS, SAN, ABGP.</p>
 													</div>
 												</div>
 											</div>
@@ -207,7 +209,7 @@ const CloudManagedBackup = () => {
 														<h3>Affordable Price:</h3>
 														<p>
 															Cloud Backup storage as low as $0.018/GB per Month (only
-															charged for the storage consumed by backup)
+															charged for the storage consumed).
 														</p>
 													</div>
 												</div>
@@ -242,15 +244,15 @@ const CloudManagedBackup = () => {
 													<div className='w-8vh'>
 														<h3>Multi Secure Geo Locations: </h3>
 														<p>
-															We at Synectiks we aim for 3-2-1 rule of Thumb to protect
-															the Data, which implies that you should always have three
-															copies of your data, that you keep it backed up on at least
-															two different types of storage media, and that you have at
-															least one copy of the data offsite.
+															We at Synectiks aim for 3-2-1 rule of Thumb to protect the
+															Data, which implies that you should always have three copies
+															of your data, that you keep it backed up on at least two
+															different types of storage media, and that you have at least
+															one copy of the data offsite.
 															<br />
 															Synectiks have different backup Secure Geo locations with
 															different power grids to make sure your data is available
-															when disaster strike in one location
+															when disaster strike in one location.
 														</p>
 													</div>
 												</div>
@@ -294,8 +296,8 @@ const CloudManagedBackup = () => {
 														<img src={restore} alt='restore' className='w-7' />
 													</div>
 													<div className='w-8vh'>
-														<h3>Restore:</h3>
-														<p>Faster Restore up to 500MB/sec</p>
+														<h3>Fast Recovery:</h3>
+														<p>Recover the Data faster, transfer rate up to 1GB/sec </p>
 													</div>
 												</div>
 											</div>
@@ -385,9 +387,11 @@ const CloudManagedBackupWrapper = styled.div`
 	}
 	.tabList {
 		display: block;
+		margin-bottom:4rem;
 	}
 	.tabsHide {
 		display: none;
+		margin-bottom:4rem;
 	}
 	h1 {
 		font-size: 1.4rem;
@@ -434,7 +438,13 @@ const CloudManagedBackupWrapper = styled.div`
 	.w-8 {
 		width: 8rem;
 	}
+	.position-relative{
+		top:2rem;
+	}
 	@media (min-width: 576px) {
+		h3 {
+			text-align: left;
+		}
 		.w-sm-100 {
 			width: 75%;
 		}
@@ -442,14 +452,14 @@ const CloudManagedBackupWrapper = styled.div`
 			width: 15vw;
 		}
 		.w-8vh {
-			width: 85vw;
+			width: 75vw;
 		}
 		.nav-link.active {
 			background: var(--synectiksBlue);
 			color: var(--synectiksWhite);
 		}
 		.w-85 {
-			width: 87vw;
+			width: 100%;
 			border: 1px solid var(--textColor);
 			background: var(--synectiksWhite);
 			justify-content: space-between;
@@ -508,7 +518,10 @@ const CloudManagedBackupWrapper = styled.div`
 			cursor: pointer;
 		}
 		.tab-content > .active {
-			padding: 0rem 4rem 2rem 4rem;
+			padding-top: 0rem;
+			padding-right: 4rem;
+			padding-left: 4rem;
+			padding-bottom: 2rem;
 		}
 		a#bgL,
 		a#bgLL,

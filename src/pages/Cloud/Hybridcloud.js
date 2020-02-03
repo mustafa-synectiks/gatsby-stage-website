@@ -198,7 +198,7 @@ const Hybridcloud=()=> {
                       <h3>Key Drivers for Hybrid cloud adoption is:</h3>
                       <div className="">
                         <div className="my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
-                          <img src={AI} alt="" className="w15" />
+                          <img src={AI} alt="" className="w15 mr-0 mr-md-3" />
                           <p className="marHybrid">
                             Experiment with new ideas on the cloud. Build once
                             and run anywhere. With secure, easily managed,
@@ -212,7 +212,7 @@ const Hybridcloud=()=> {
                           </p>
                         </div>
                         <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
-                          <img src={RC} alt="" className="w15" />
+                          <img src={RC} alt="" className="w15 mr-0 mr-md-3" />
                           <p className="marHybrid">
                             Choose the best cloud to meet cost, performance,
                             regulatory, or data governance requirements.
@@ -231,7 +231,7 @@ const Hybridcloud=()=> {
                           </p>
                         </div>
                         <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
-                          <img src={BCC} alt="" className="w15" />
+                          <img src={BCC} alt="" className="w15 mr-0 mr-md-3" />
                           <p className="marHybrid">
                             Choose the best cloud to meet cost, performance,
                             regulatory, or data governance requirements.
@@ -250,7 +250,7 @@ const Hybridcloud=()=> {
                           </p>
                         </div>
                         <div className="my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center">
-                          <img src={EVL} alt="" className="w15" />
+                          <img src={EVL} alt="" className="w15 mr-0 mr-md-3" />
                           <p className="marHybrid">
                             Reduce dependency on proprietary services,
                             application tools, and cloud providers. To support
@@ -382,7 +382,7 @@ const Hybridcloud=()=> {
                       <div className='row'>
                      <div className="col-md-6">
                         <div className="d-flex align-items-center my-2 my-md-3">
-                          <img src={DSCR} alt="" className="w-25 mr-2 mr-md-3 my-3 my-md-3" />
+                          <img src={DSCR} alt="" className="w20 mr-2 mr-md-3 my-3 my-md-3" />
                           <h4>Disaster Recovery/Backup</h4>
                         </div>
                         <div>
@@ -1076,16 +1076,19 @@ h4{
   }
   }
   .w15 {
-	width: 9%;
+	width: 8%;
 }
   	.whbd7 {
 		width: 7%;
 	}
   	.whbd9 {
-		width: 9%;
-	}
+		width: 8%;
+  }
+  .w18{
+    width:
+  }
   .w20{
-    width: 20%;
+    width: 16%;
   }
 .w-85{
   width: 87vw;

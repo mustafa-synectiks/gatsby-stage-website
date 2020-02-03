@@ -108,15 +108,9 @@ const Tabs = () => {
 			<div id='accordion' role='tablist'>
 				<div className='card'>
 					<div className='card-header' role='tab' id='headingOne'>
-						<h5 className='mb-0'>
-							<a
-								data-toggle='collapse'
-								href='#collapseOne'
-								aria-expanded='true'
-								aria-controls='collapseOne'>
-								Open Platform
-							</a>
-						</h5>
+						<a data-toggle='collapse' href='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>
+							Open Platform
+						</a>
 					</div>
 
 					<div
@@ -148,16 +142,14 @@ const Tabs = () => {
 				</div>
 				<div className='card'>
 					<div className='card-header' role='tab' id='headingTwo'>
-						<h5 className='mb-0'>
-							<a
-								className='collapsed'
-								data-toggle='collapse'
-								href='#collapseTwo'
-								aria-expanded='false'
-								aria-controls='collapseTwo'>
-								Transformation
-							</a>
-						</h5>
+						<a
+							className='collapsed'
+							data-toggle='collapse'
+							href='#collapseTwo'
+							aria-expanded='false'
+							aria-controls='collapseTwo'>
+							Transformation
+						</a>
 					</div>
 					<div
 						id='collapseTwo'
@@ -235,16 +227,14 @@ const Tabs = () => {
 				</div>
 				<div className='card'>
 					<div className='card-header' role='tab' id='headingThree'>
-						<h5 className='mb-0'>
-							<a
-								className='collapsed'
-								data-toggle='collapse'
-								href='#collapseThree'
-								aria-expanded='false'
-								aria-controls='collapseThree'>
-								Solutions
-							</a>
-						</h5>
+						<a
+							className='collapsed'
+							data-toggle='collapse'
+							href='#collapseThree'
+							aria-expanded='false'
+							aria-controls='collapseThree'>
+							Solutions
+						</a>
 					</div>
 					<div
 						id='collapseThree'
@@ -358,7 +348,42 @@ const TabsWrapper = styled.section`
 
 	#accordion {
 		display: block;
+		.card-header {
+			margin: 8px auto;
+			box-shadow: 2px 3px 5px -1px lightgrey;
+			padding: 6px 0;
+			height: 6vh;
+			width: 19rem;
+		}
+		h5 {
+			text-align: center;
+		}
+		#headingOne {
+			a {
+				padding: 1rem 5rem;
+				/* background: var(--synectiksOrange); */
+				color: var(--synectiksOrange);
+				text-decoration: none;
+			}
+		}
+		#headingTwo {
+			a {
+				padding: 1rem 5rem;
+				/* background: var(--synectiksRed); */
+				color: var(--synectiksRed);
+				text-decoration: none;
+			}
+		}
+		#headingThree {
+			a {
+				padding: 1rem 6.7rem;
+				/* background: var(--synectiksBlue); */
+				color: var(--synectiksBlue);
+				text-decoration: none;
+			}
+		}
 	}
+
 	h1 {
 		font-size: 32px;
 	}

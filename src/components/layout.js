@@ -113,6 +113,34 @@ const Layout = ({ children }) => {
 				]
 			});
 		});
+
+		// Logo Slider
+		$(document).ready(function() {
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 520,
+						settings: {
+							slidesToShow: 2
+						}
+					}
+				]
+			});
+		});
+		// Logo Slider
 		// /Case Study Ends
 		// OWL V1.3
 		$(document).ready(function() {

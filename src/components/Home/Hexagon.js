@@ -102,84 +102,91 @@ const Hexagon = () => {
 	};
 	return (
 		<HexagonWrapper>
-			<div className='row bg-white mx-auto'>
-				<div className='col-md-6'>
-					<ul id='categories' class='clr'>
-						<li class='pusher' />
-						<li>
-							<div className='hx1' onClick={hex1}>
-								<img src={hx1} alt='' />
-							</div>
-						</li>
-						<li>
-							<div className='hx2' onClick={hex2}>
-								<img src={hx7} alt='' />
-							</div>
-						</li>
-						<li>
-							<div className='hx3' onClick={hex3}>
-								<img src={hx6} alt='' />
-							</div>
-						</li>
-						<li>
-							<div>
-								<h3 className='heading-h3 ct-cent'>Area Of Expertise</h3>
-							</div>
-						</li>
-						<li>
-							<div className='hx4' onClick={hex4}>
-								<img src={hx3} alt='' />
-							</div>
-						</li>
-						<li class='pusher' />
-						<li>
-							<div className='hx5' onClick={hex5}>
-								<img src={hx5} alt='' />
-							</div>
-						</li>
-						<li>
-							<div className='hx6' onClick={hex6}>
-								<img src={hx4} alt='' />
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div className='col-md-6 pr-7'>
-					<div className='text-center my-4'>
-						<h2>Expertise</h2>
-						<p className='text-uppercase mb-4'>
-							Delivering purpose-built solutions based on open products and frameworks
-						</p>
+			<div className='container-fluid'>
+				<div className='row bg-white mx-auto'>
+					<div className='col-md-6'>
+						<ul id='categories' class='clr'>
+							<li class='pusher' />
+							<li>
+								<div className='hx1' onClick={hex1}>
+									<img src={hx1} alt='' />
+								</div>
+							</li>
+							<li>
+								<div className='hx2' onClick={hex2}>
+									<img src={hx7} alt='' />
+								</div>
+							</li>
+							<li>
+								<div className='hx3' onClick={hex3}>
+									<img src={hx6} alt='' />
+								</div>
+							</li>
+							<li>
+								<div>
+									<h3 className='heading-h3 ct-cent'>Area Of Expertise</h3>
+								</div>
+							</li>
+							<li>
+								<div className='hx4' onClick={hex4}>
+									<img src={hx3} alt='' />
+								</div>
+							</li>
+							<li class='pusher' />
+							<li>
+								<div className='hx5' onClick={hex5}>
+									<img src={hx5} alt='' />
+								</div>
+							</li>
+							<li>
+								<div className='hx6' onClick={hex6}>
+									<img src={hx4} alt='' />
+								</div>
+							</li>
+						</ul>
 					</div>
-					<div className='show' id='hc1'>
-						<h2>Microservices</h2>
-						<p>Modernization traditional application and legacy infrastructure.</p>
-					</div>
-					<div className='hide' id='hc2'>
-						<h2>Devops</h2>
-						<p>
-							Empowering Organization to adopt Devops culture with through specialized people, tools and
-							training.
-						</p>
-					</div>
-					<div className='hide' id='hc3'>
-						<h2>Cloud</h2>
-						<p>
-							Accelerating cloud adoption and software defined transformation through open tools and
-							frameworks.
-						</p>
-					</div>
-					<div className='hide' id='hc4'>
-						<h2>Monitoring</h2>
-						<p>Develop purpose-build monitoring solutions based on proven open frameworks.</p>
-					</div>
-					<div className='hide' id='hc5'>
-						<h2>Analytics</h2>
-						<p>Develop purpose-built Fast Data and Big Data solutions based on proven open frameworks.</p>
-					</div>
-					<div className='hide' id='hc6'>
-						<h2>RAD</h2>
-						<p>Rapidly build App Blocks based business application in predictable and deterministic way.</p>
+					<div className='col-md-6 pr-7'>
+						<div className='text-center my-4'>
+							<h2>Expertise</h2>
+							<p className='text-uppercase mb-4'>
+								Delivering purpose-built solutions based on open products and frameworks
+							</p>
+						</div>
+						<div className='show' id='hc1'>
+							<h2>Microservices</h2>
+							<p>Modernization traditional application and legacy infrastructure.</p>
+						</div>
+						<div className='hide' id='hc2'>
+							<h2>Devops</h2>
+							<p>
+								Empowering Organization to adopt Devops culture with through specialized people, tools
+								and training.
+							</p>
+						</div>
+						<div className='hide' id='hc3'>
+							<h2>Cloud</h2>
+							<p>
+								Accelerating cloud adoption and software defined transformation through open tools and
+								frameworks.
+							</p>
+						</div>
+						<div className='hide' id='hc4'>
+							<h2>Monitoring</h2>
+							<p>Develop purpose-build monitoring solutions based on proven open frameworks.</p>
+						</div>
+						<div className='hide' id='hc5'>
+							<h2>Analytics</h2>
+							<p>
+								Develop purpose-built Fast Data and Big Data solutions based on proven open frameworks.
+							</p>
+						</div>
+						<div className='hide' id='hc6'>
+							<h2>RAD</h2>
+							<p>
+								Rapidly build App Blocks based business application in predictable and deterministic
+								way.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -195,7 +202,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.3rem;
+		margin: 1.2rem 7.3rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -204,7 +211,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.3rem;
+		margin: 1.2rem 7.3rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -213,7 +220,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.1rem 5.4rem;
+		margin: 1.1rem 7.4rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -222,7 +229,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.5rem 5.6rem;
+		margin: 1.5rem 7.6rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -231,7 +238,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.3rem 5.6rem;
+		margin: 1.3rem 7.6rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -240,7 +247,7 @@ const HexagonWrapper = styled.section`
 		right: -100%;
 		width: 58%;
 		height: auto;
-		margin: 1.3rem 5.6rem;
+		margin: 1.3rem 7.6rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}

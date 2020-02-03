@@ -413,7 +413,7 @@ const Devops = () => {
 											</div>
 
 											<div className='row'>
-												<h4>
+												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
 												</h4>
@@ -720,6 +720,9 @@ h3{
 }
 h4{
   font-size:1.1rem;
+}
+h5{
+	text-align: left;
 }
 .hybmt{
   margin-top: 2.5rem;
