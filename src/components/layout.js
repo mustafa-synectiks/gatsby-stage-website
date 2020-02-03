@@ -102,10 +102,11 @@ const Layout = ({ children }) => {
 					{
 						breakpoint: 480,
 						settings: {
+							centerMode: false,
 							slidesToShow: 1,
 							slidesToScroll: 1,
 							infinite: true,
-							autoplay: true,
+							autoplay: false,
 							autoplaySpeed: 2000
 						}
 					}

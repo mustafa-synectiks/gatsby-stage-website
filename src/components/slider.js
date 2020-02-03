@@ -353,7 +353,7 @@ const Slider = () => {
 
 				<div className='container-fluid bgWhiteGradient px-3 py-2 px-md-5 py-md-4'>
 					<div className='row'>
-						<div className='content'>
+						<div className='content d-flex flex-column flex-md-row align-items-center'>
 							<div className='col col-sm-12 col-md-3'>
 								<div className='my-2 my-md-5 '>
 									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
@@ -378,7 +378,7 @@ const Slider = () => {
 							</div>
 							<div className='col col-sm-12 col-md-9 h70vh'>
 								<div className='slider'>
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={SDFT} alt='Disaster Recovery' />
 
 										<div className='text-group align-self-center p-2 bgWhite'>
@@ -390,7 +390,7 @@ const Slider = () => {
 										</div>
 									</div>
 
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={RM} alt='NetworkDesign' />{' '}
 										<div className='text-group align-self-center p-2 bgWhite'>
 											<h3 className=''>Realtime Monitoring</h3>
@@ -403,7 +403,7 @@ const Slider = () => {
 										</div>
 									</div>
 
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={SM} alt='StorageTier' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Migration</h3>
@@ -417,7 +417,7 @@ const Slider = () => {
 										</div>
 									</div>
 
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={ND} alt='Enterprise-Transformation' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Network Design</h3>
@@ -430,7 +430,7 @@ const Slider = () => {
 										</div>
 									</div>
 
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={ST} alt='StorageTier' className='h46' />
 
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -444,7 +444,7 @@ const Slider = () => {
 										</div>
 									</div>
 
-									<div className='w-450 bshad'>
+									<div className='case-studies w-450 bshad'>
 										<img src={DR} alt='StorageTier' />
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Disaster Recovery</h3>
@@ -482,35 +482,38 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
-
-.marquee {
-  height: 25px;
-  width: 420px;
-  overflow: hidden;
-  position: relative;
+.case-studies{
+	img{
+		height: 20vh;
+	}
+	h3{
+		font-size: 18px;
+	}
+	p{
+		font-size: 14px;
+		min-height:75px;
+		max-height:75px;
+	}
+}
+.h70vh{
+	height:52vh;
 }
 
-.marquee div {
-  display: block;
-  width: 200%;
-  height: 30px;
-
-  position: absolute;
-  overflow: hidden;
-
-  animation: marquee 5s linear infinite;
+.slider .slick-slide img{
+	width: 100%;
 }
+	.progressnumb {
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+			position:relative;
+			left:11%;
 
-.marquee article {
-  float: left;
-  width: 50%;
-}
-
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-
+	.progress {
+			display: block;
+			width: 45%;
+			}
+	}
 .slider .slick-list {
     position: relative;
     display: block;
@@ -519,12 +522,19 @@ const HomeWrapper = styled.section`
     padding: 0px;
     left: 0rem;
 }
+	.slickbtns {
+			display: grid;
+			grid-template-columns: 50px 50px;
+			grid-gap: 2.4rem;
+			margin-left: 13%;
+			margin-top: 4%;
+		}
 .slider .slick-slide {
-    padding: 0 0px;
-    margin: 0px 0px;
+    padding: 0px;
+    margin: 0px;
 }
 	.w-450 {
-			width: 150px;
+			width: 200px;
 		}
 
 p {
@@ -679,6 +689,11 @@ p{
 		}
 	}
 }
+.case-studies{
+	img{
+		height:46vh;
+	}
+}
 		.h46{
 			height: 46vh;
 		}
@@ -731,7 +746,7 @@ transform: translateX(15px);
 		}
 		background: var(--bgMain);
 		.w-450 {
-			width: 450px;
+			width: 400px;
 		}
 
 		p {
@@ -756,6 +771,7 @@ transform: translateX(15px);
 .slider .slick-slide {
     padding: 0 0px;
     margin: 0px 20px;
+				/* max-width:400px; */
 }
 		.h70vh {
 			height: 70vh;
@@ -773,9 +789,9 @@ transform: translateX(15px);
 			font-size: 1.4rem;
 		}
 
-		.slick-slide img {
+		.slider .slick-slide img {
 			display: block;
-			max-width: 440px;
+			width: 100%;
 		}
 
 		.slick-dots {
@@ -811,10 +827,17 @@ transform: translateX(15px);
 			padding: 0;
 			cursor: pointer;
 		}
-		.slick-slide {
+	.slider	.slick-slide {
 			margin-top: 2rem;
-			width: 440px !important;
+			width: 400px;
 		}
+			.progressnumb {
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+			position:relative;
+			left:11%;
+
 		.progress {
 			display: block;
 			width: 55%;
@@ -829,6 +852,7 @@ transform: translateX(15px);
 			-webkit-transition: background-size .4s ease-in-out;
 			transition: background-size .4s ease-in-out;
 		}
+			}
 
 		.content {
 			/* margin: auto; */
@@ -859,13 +883,7 @@ transform: translateX(15px);
 .f-14{
 	font-size: 14px;
 }
-		.progressnumb {
-			display: flex;
-			justify-content: flex-start;
-			align-items: baseline;
-			position:relative;
-			left:11%;
-		}
+
 
 		.nextbtn:hover {
 			border: 1px solid var(--synectiksOrange);

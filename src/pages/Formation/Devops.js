@@ -615,13 +615,14 @@ const Devops = () => {
 													agility,30X reliability and 10X operational efficiency. At least 50
 													% TCO is reduced because of 80% operation, 50% hardware and 100%
 													license cost savings.
-													<br />
-													Now is the time to act. Don’t be disrupted — be the disruptor. Let
-													us help you innovate and transform to differentiate with speed and
-													quality. That’s Synectiks. That’s transformation Delivered in open
-													product based solutioning model.
 												</p>
 											</div>
+											<p>
+												Now is the time to act. Don’t be disrupted — be the disruptor. Let us
+												help you innovate and transform to differentiate with speed and quality.
+												That’s Synectiks. That’s transformation Delivered in open product based
+												solutioning model.
+											</p>
 										</div>
 									</TabPane>
 								</TabContent>

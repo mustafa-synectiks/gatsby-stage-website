@@ -17,11 +17,10 @@ const Partners = () => {
 export default Partners;
 
 const PartnerWrapper = styled.section`
-	.slider {
+	.Partnerslider {
 		width: auto;
-		margin: 30px 50px 50px;
 	}
-	.slider .slick-slide {
+	.Partnerslider .slick-slide {
 		background: #292e3e;
 		color: white;
 		padding: 40px 0;
@@ -29,14 +28,14 @@ const PartnerWrapper = styled.section`
 		font-family: "Arial", "Helvetica";
 		text-align: center;
 	}
-	.slider .slick-prev:before,
-	.slider .slick-next:before {
+	.Partnerslider .slick-prev:before,
+	.Partnerslider .slick-next:before {
 		color: #292e3e;
 	}
-	.slider .slick-dots {
+	.Partnerslider .slick-dots {
 		bottom: -30px;
 	}
-	.slider .slick-slide:nth-child(odd) {
+	.Partnerslider .slick-slide:nth-child(odd) {
 		background: #57c09f;
 	}
 `;
