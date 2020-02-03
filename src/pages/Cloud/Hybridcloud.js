@@ -76,7 +76,10 @@ const Hybridcloud = () => {
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light expand='md'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
+									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
+										<FaBars className='navbar-toggler-icon' />
+										<span className='my-1 mx-2 close'>X</span>
+									</NavbarToggler>
 									<Collapse isOpen={!collapsed} navbar>
 										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
 											<NavItem className='one'>
@@ -888,7 +891,22 @@ const Hybridcloud = () => {
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
-
+.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: rgba(0, 0, 0, 0);
+  }
+  .navbar-toggler > .close {
+		display: inline;
+	}
+	.navbar-toggler > .navbar-toggler-icon {
+		display: none;
+	}
+	.navbar-toggler:not(.collapsed) > .close {
+		display: none;
+	}
+	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+		display: inline;
+	}
 h1,h2,h3,h4,h5,h5,p{
   text-align: left;
 }

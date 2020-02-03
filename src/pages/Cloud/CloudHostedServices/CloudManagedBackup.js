@@ -97,7 +97,6 @@ const CloudManagedBackup = () => {
 						<div className='px-1 mb-3 col-md-12'>
 							<TabContent activeTab={activeTab}>
 								<TabPane tabId='1' />
-
 								<TabPane tabId='2'>
 									<div>
 										<div className='row pt-4'>
@@ -282,6 +281,11 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default CloudManagedBackup;
 
 const CloudManagedBackupWrapper = styled.div`
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: rgba(0, 0, 0, 0);
+	}
+	padding-top: 1.5rem;
 	h1,
 	h2,
 	h4,

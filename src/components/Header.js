@@ -97,6 +97,10 @@ const Header = () => {
 export default Header;
 
 const HeaderNav = styled.div`
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: rgba(0, 0, 0, 0);
+	}
 	.navbar-toggler > .close {
 		display: inline;
 	}
