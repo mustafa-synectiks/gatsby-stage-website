@@ -18,15 +18,17 @@ import restore from '../../../images/ManagedBackup/Restore.png';
 import support from '../../../images/ManagedBackup/Support.png';
 import price from '../../../images/ManagedBackup/affordableprice.png';
 
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler } from 'reactstrap';
 import classnames from 'classnames';
 
 const CloudManagedBackup = () => {
 	const [ activeTab, setActiveTab ] = useState('2');
-
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
 	};
+const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
 	const [ isOpen, setNav ] = useState(true);
 	const toggleTab = () => {
@@ -38,105 +40,62 @@ const CloudManagedBackup = () => {
 			<CloudManagedBackupWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className=''>
-						<Row className='position-relative'>
+						<Row className=''>
+						{/* <Row className='position-relative'> */}
 							<div className='col-md-12'>
-								<div className=''>
-									<button onClick={toggleTab} className='logo-btn'>
-										<FaBars />
-									</button>
-									<div>
-										<div className={isOpen ? `tabsHide` : `tabList`}>
-										{/* <Nav className='sidetabs'>
-											<NavItem className='one'>
-												<NavLink
-													id='bgL'
-													className={classnames({ active: activeTab === '1' })}
-													onClick={() => {
-														toggle('1');
-														toggleTab();
-													}}>
-													Hosted Infrastructure
-												</NavLink>
-											</NavItem>
+<NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+											<Nav navbar className='d-flex my-4 mx-auto w-85'>
+												<NavItem className='one'>
+													<NavLink
+														id='bgL'
+														className={classnames({ active: activeTab === '1' })}
+														onClick={() => {
+															toggle('1');
+															toggleTab();
+														}}>
+														UNDERSTANDING THE CLOUD MANAGED BACKUP
+													</NavLink>
+												</NavItem>
 
-											<NavItem className='one'>
-												<NavLink
-													id='bgLL'
-													className={classnames({ active: activeTab === '2' })}
-													onClick={() => {
-														toggle('2');
-														toggleTab();
-													}}>
-													Cloud Managed Backup
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '3' })}
-													onClick={() => {
-														toggle('3');
-														toggleTab();
-													}}>
-													Cloud Managed DR
-												</NavLink>
-											</NavItem>
-										</Nav> */}
-										<Nav className='d-flex my-4 mx-auto w-85'>
-											{/* <Nav className='sidetabs'> */}
-											{/* <Nav vertical className='sidetabs'> */}
-											<NavItem className='one'>
-												<NavLink
-													id='bgL'
-													className={classnames({ active: activeTab === '1' })}
-													onClick={() => {
-														toggle('1');
-														toggleTab();
-													}}>
-													UNDERSTANDING THE CLOUD MANAGED BACKUP
-												</NavLink>
-											</NavItem>
-
-											<NavItem className='one'>
-												<NavLink
-													id='bgLL'
-													className={classnames({ active: activeTab === '2' })}
-													onClick={() => {
-														toggle('2');
-														toggleTab();
-													}}>
-													GETTING STARTED TO CLOUD MANAGED BACKUP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '3' })}
-													onClick={() => {
-														toggle('3');
-														toggleTab();
-													}}>
-													HOW SYNECTIKS CAN HELP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '4' })}
-													onClick={() => {
-														toggle('4');
-														toggleTab();
-													}}>
-													{/* <span>
+												<NavItem className='one'>
+													<NavLink
+														id='bgLL'
+														className={classnames({ active: activeTab === '2' })}
+														onClick={() => {
+															toggle('2');
+															toggleTab();
+														}}>
+														GETTING STARTED TO CLOUD MANAGED BACKUP
+													</NavLink>
+												</NavItem>
+												<NavItem className='one'>
+													<NavLink
+														id='bgLLL'
+														className={classnames({ active: activeTab === '3' })}
+														onClick={() => {
+															toggle('3');
+															toggleTab();
+														}}>
+														HOW SYNECTIKS CAN HELP
+													</NavLink>
+												</NavItem>
+												<NavItem className='one'>
+													<NavLink
+														id='bgLLL'
+														className={classnames({ active: activeTab === '4' })}
+														onClick={() => {
+															toggle('4');
+															toggleTab();
+														}}>
+														{/* <span>
                       <img src={SD} alt="" className='imgHyb'/>
                     </span> */}
-													SYNECTIKS DIFFERENTIATOR
-												</NavLink>
-											</NavItem>
-										</Nav>
-									</div>
-									</div>
-								</div>
+														SYNECTIKS DIFFERENTIATOR
+													</NavLink>
+												</NavItem>
+											</Nav>
+ </Collapse>
 							</div>
 							<div className='px-1 mb-3 col-md-12'>
 								<TabContent activeTab={activeTab}>
@@ -387,11 +346,11 @@ const CloudManagedBackupWrapper = styled.div`
 	}
 	.tabList {
 		display: block;
-		margin-bottom:4rem;
+		margin-bottom: 4rem;
 	}
 	.tabsHide {
 		display: none;
-		margin-bottom:4rem;
+		margin-bottom: 4rem;
 	}
 	h1 {
 		font-size: 1.4rem;
@@ -438,8 +397,8 @@ const CloudManagedBackupWrapper = styled.div`
 	.w-8 {
 		width: 8rem;
 	}
-	.position-relative{
-		top:2rem;
+	.position-relative {
+		top: 2rem;
 	}
 	@media (min-width: 576px) {
 		h3 {
