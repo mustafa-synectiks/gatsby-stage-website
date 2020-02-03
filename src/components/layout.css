@@ -626,7 +626,7 @@ a.dropdown-toggle.nav-link {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-	color: #007cc2;
+	color: var(--synectiksWhite);
 }
 
 .width38em {
