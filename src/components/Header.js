@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { FaBars } from 'react-icons/fa';
+import { MdDehaze, MdClear } from 'react-icons/md';
 import Topbar from './Topbar';
 import logo from '../images/logo.png';
 import styled from 'styled-components';
@@ -16,15 +16,15 @@ const Header = () => {
 				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
-				<Navbar expand='lg' className='z pl-0 pr-3 px-md-5'>
+				<Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
 					<Container fluid={true}>
 						<Navbar.Brand href='/'>
 							<img src={logo} alt='synectiks' />
 						</Navbar.Brand>
 						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
 							{/* <span className='navbar-toggler-icon' /> */}
-							<FaBars className='navbar-toggler-icon' />
-							<span className='my-1 mx-2 close'>X</span>
+							<MdDehaze className='navbar-toggler-icon' />
+							<MdClear className='my-1 mx-2 close' />
 						</Navbar.Toggle>
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='ml-auto'>

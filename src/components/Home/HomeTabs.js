@@ -350,10 +350,12 @@ const TabsWrapper = styled.section`
 		display: block;
 		.card-header {
 			margin: 8px auto;
-			box-shadow: 2px 3px 5px -1px lightgrey;
+			/* box-shadow: 2px 3px 5px -1px lightgrey; */
+			background-color: rgba(0, 0, 0, 0);
+			border-bottom: 0px solid rgba(0, 0, 0, 0);
 			padding: 6px 0;
 			height: 6vh;
-			width: 19rem;
+			width: auto;
 		}
 		h5 {
 			text-align: center;
@@ -361,24 +363,24 @@ const TabsWrapper = styled.section`
 		#headingOne {
 			a {
 				padding: 1rem 5rem;
-				/* background: var(--synectiksOrange); */
-				color: var(--synectiksOrange);
+				background: var(--synectiksOrange);
+				color: var(--synectiksWhite);
 				text-decoration: none;
 			}
 		}
 		#headingTwo {
 			a {
 				padding: 1rem 5rem;
-				/* background: var(--synectiksRed); */
-				color: var(--synectiksRed);
+				background: var(--synectiksRed);
+				color: var(--synectiksWhite);
 				text-decoration: none;
 			}
 		}
 		#headingThree {
 			a {
 				padding: 1rem 6.7rem;
-				/* background: var(--synectiksBlue); */
-				color: var(--synectiksBlue);
+				background: var(--synectiksBlue);
+				color: var(--synectiksWhite);
 				text-decoration: none;
 			}
 		}

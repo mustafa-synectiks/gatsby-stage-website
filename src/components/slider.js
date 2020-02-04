@@ -151,7 +151,7 @@ const Slider = () => {
 				</div>
 			</div>
 			<div className='bgMain'>
-				<div className='container-fluid py-0 px-0 p-md-5'>
+				<div className='container-fluid bgWhite pt-0 px-0 pb-3 pb-md-0 p-md-5'>
 					<div className='tabsHeading'>
 						<h2 className='py-3'>Area Of Expertise For Outcome Based Solution Offerings</h2>
 					</div>
@@ -316,11 +316,11 @@ const Slider = () => {
 					</div>
 				</div>
 				<div className='container-fluid bgOrange px-3 px-md-5 pt-0 pb-0 pt-md-2 pb-md-4'>
-					<h2 className='text-capitalize textWhite pb-3 text-center'>Our Partners</h2>
+					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
 					<Partners />
 				</div>
 
-				<div className='container-fluid bgWhiteGradient px-3 py-2 px-md-5 py-md-4'>
+				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
 							<div className='col-sm-12 col-md-3'>
@@ -476,10 +476,12 @@ width: 100%;
 	display: flex;
 	flex-direction:column;
 }
-.case-studies{
-	img{
-		height: 20vh;
+.slick-slide {
+	.case-studies{
+		img{
+			height: auto;
 	}
+}
 	h3{
 		font-size: 18px;
 		text-align: left;
