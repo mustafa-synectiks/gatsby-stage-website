@@ -105,8 +105,8 @@ const Hexagon = () => {
 			<div className='container-fluid'>
 				<div className='row bg-white mx-auto'>
 					<div className='col-md-6'>
-						<ul id='categories' class='clr'>
-							<li class='pusher' />
+						<ul id='categories' className='clr'>
+							<li className='pusher' />
 							<li>
 								<div className='hx1' onClick={hex1}>
 									<img src={hx1} alt='' />
@@ -132,7 +132,7 @@ const Hexagon = () => {
 									<img src={hx3} alt='' />
 								</div>
 							</li>
-							<li class='pusher' />
+							<li className='pusher' />
 							<li>
 								<div className='hx5' onClick={hex5}>
 									<img src={hx5} alt='' />

@@ -151,7 +151,7 @@ const Slider = () => {
 				</div>
 			</div>
 			<div className='bgMain'>
-				<div className='container-fluid py-0 px-2 p-md-5'>
+				<div className='container-fluid py-0 px-0 p-md-5'>
 					<div className='tabsHeading'>
 						<h2 className='py-3'>Area Of Expertise For Outcome Based Solution Offerings</h2>
 					</div>
@@ -318,28 +318,6 @@ const Slider = () => {
 				<div className='container-fluid bgOrange px-3 px-md-5 pt-0 pb-0 pt-md-2 pb-md-4'>
 					<h2 className='text-capitalize textWhite pb-3 text-center'>Our Partners</h2>
 					<Partners />
-					{/* <div className='partners-logo'>
-						<div className=''>
-							<div className='w-75 mx-auto mb-2 mb-md-0'>
-								<img src={aws} className='w-100' />
-							</div>
-						</div>
-						<div className=''>
-							<div className='w-75 mx-auto mb-2 mb-md-0'>
-								<img src={gle} className='w-100' />
-							</div>
-						</div>
-						<div className=''>
-							<div className='w-75 mx-auto mb-2 mb-md-0'>
-								<img src={msa} className='w-100' />
-							</div>
-						</div>
-						<div className=''>
-							<div className='w-75 mx-auto mb-2 mb-md-0'>
-								<img src={acro} className='w-100' />
-							</div>
-						</div>
-					</div> */}
 				</div>
 
 				<div className='container-fluid bgWhiteGradient px-3 py-2 px-md-5 py-md-4'>
@@ -504,8 +482,10 @@ width: 100%;
 	}
 	h3{
 		font-size: 18px;
+		text-align: left;
 	}
 	p{
+		text-align: left;
 		font-size: 14px;
 		min-height:75px;
 		max-height:75px;
@@ -598,9 +578,7 @@ p{
 }
 
 .tabsFlex{
-	/* display:flex; */
 	display:none;
-	flex-direction: column;
 }
 	.Homecard-shadow {
 			width:auto;
@@ -653,6 +631,10 @@ p{
 		display:none;
 }
 	}
+
+
+
+
 	@media screen and  (min-width: 576px) {
 		.circletext{
 	p{
@@ -694,12 +676,10 @@ p{
 	margin-bottom:3rem;
 }
 }
-
 .tabsFlex{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display:none;
 }
+
 .tab-content {
 		padding: 0px;
   border: 0px solid white;
@@ -711,16 +691,17 @@ p{
 		font-size: 28px;
 		text-align: center;
 		padding: 0rem;
+		background: rgba(255,255,255,0);
 		margin-bottom:2rem
 	}
 }
 .circleFlex{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	.circle{
-			width:20rem;
-			height:20rem;
+			width:16rem;
+			height:16rem;
 			border-radius: 50%;
 			img{
 				border-radius: 60%;
@@ -1340,7 +1321,33 @@ color:var(--synectiksBlue);
 }
 		/* Hexagons */
 	}
+	/*  */
+	/* STARTING */
+	/* TAB VERSION STYLING */
+	/*  */
+	/*  */
 	@media screen and (min-width: 768px) {
 		background: var(--bgMain);
+		.tabsFlex{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.circleFlex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.circle{
+			width:20rem;
+			height:20rem;
+			border-radius: 50%;
+			img{
+				border-radius: 60%;
+				box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
+			}
+		}
+	}
+}
 	}
 `;

@@ -11,7 +11,7 @@ const Topbar = () => {
 			</a>
 			<h6 className='bl br'>
 				QUESTIONS?
-				<span id='quest' className='mr-1 mr-md-1'>
+				<span id='quest ' className='ml-2 ml-md-2'>
 					609 608 0429X102
 				</span>
 			</h6>

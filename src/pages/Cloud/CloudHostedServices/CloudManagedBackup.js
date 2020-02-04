@@ -17,12 +17,21 @@ import protection from '../../../images/ManagedBackup/ProtectionforAnyworkload.p
 import restore from '../../../images/ManagedBackup/Restore.png';
 import support from '../../../images/ManagedBackup/Support.png';
 import price from '../../../images/ManagedBackup/affordableprice.png';
+import AP from '../../../images/ManagedBackup/AffordablePricing.png';
+import ARP from '../../../images/ManagedBackup/Availability&ReliablePerformance.png';
+import HW from '../../../images/ManagedBackup/Hostanyworkload.png';
+import MS from '../../../images/ManagedBackup/MigrationServices.png';
+import MSGL from '../../../images/ManagedBackup/MultiSecureGeoLocations.png';
+import SCR from '../../../images/ManagedBackup/HSecurity.png';
+import ST from '../../../images/ManagedBackup/StorageTypesavailable.png';
+import SPT from '../../../images/ManagedBackup/HSupport.png';
+import HostedInfra from '../../../images/ManagedBackup/HostedInfra.png';
 
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 
 const CloudManagedBackup = () => {
-	const [ activeTab, setActiveTab ] = useState('2');
+	const [ activeTab, setActiveTab ] = useState('1');
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
 	};
@@ -39,7 +48,7 @@ const CloudManagedBackup = () => {
 		<Layout>
 			<CloudManagedBackupWrapper>
 				<div className='bg-lightgrey container-fluid'>
-					<Row className=''>
+					<Row className='d-flex justify-content-md-center justify-content-start'>
 						<Navbar color='light' light expand='md'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
@@ -52,7 +61,7 @@ const CloudManagedBackup = () => {
 												toggle('1');
 												toggleTab();
 											}}>
-											UNDERSTANDING THE CLOUD MANAGED BACKUP
+											CLOUD HOSTED INSFRASTRUCTURE
 										</NavLink>
 									</NavItem>
 									<NavItem className='one'>
@@ -63,32 +72,7 @@ const CloudManagedBackup = () => {
 												toggle('2');
 												toggleTab();
 											}}>
-											GETTING STARTED TO CLOUD MANAGED BACKUP
-										</NavLink>
-									</NavItem>
-									<NavItem className='one'>
-										<NavLink
-											id='bgLLL'
-											className={classnames({ active: activeTab === '3' })}
-											onClick={() => {
-												toggle('3');
-												toggleTab();
-											}}>
-											HOW SYNECTIKS CAN HELP
-										</NavLink>
-									</NavItem>
-									<NavItem className='one'>
-										<NavLink
-											id='bgLLL'
-											className={classnames({ active: activeTab === '4' })}
-											onClick={() => {
-												toggle('4');
-												toggleTab();
-											}}>
-											{/* <span>
-                      <img src={SD} alt="" className='imgHyb'/>
-                    </span> */}
-											SYNECTIKS DIFFERENTIATOR
+											CLOUD BACKUP
 										</NavLink>
 									</NavItem>
 								</Nav>
@@ -96,7 +80,131 @@ const CloudManagedBackup = () => {
 						</Navbar>
 						<div className='px-1 mb-3 col-md-12'>
 							<TabContent activeTab={activeTab}>
-								<TabPane tabId='1' />
+								<TabPane tabId='1'>
+									<div className='bg-lightgrey container mb-0 pb-3'>
+										<div className=''>
+											<div className='text-black w-100 mt-md-3 mt-0 py-md-4 py-2 flex-column flex-md-row d-flex text-justify'>
+												<div className='w-100  pl-3 pr-3 text-black'>
+													<h3 className='my-1 my-md-3'> Cloud Hosted Infrastructure</h3>
+													<p className='lineHeight-24 text-justify mt-md-4 mt-1'>
+														Synectiks Secure Cloud Hosted Services supports a variety of
+														workloads & Disaster Recovery with a high degree of control,
+														security and simplicity. Support your mission-critical
+														applications and workloads with instant and scalable
+														infrastructure. With Synectiks Cloud Hosted Services, you can
+														focus on your business needs instead of spending the time and
+														money it takes to plan, procure, secure and manage the right
+														infrastructure to meet your application demands.
+													</p>
+												</div>
+												<div className='w-100' data-aos='fade-up'>
+													<img
+														class='w-75 ml-3'
+														src={HostedInfra}
+														width='100%'
+														alt='Hosted Infrastructure'
+													/>
+												</div>
+											</div>
+											<h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4>
+											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={SCR} alt='Security' />
+												<div>
+													<h5 className='h5'>Security</h5>
+													<p className='mt-2'>
+														Never trade-off security when moving to cloud, Synectiks Secure
+														Cloud incorporates Multifactor authentication, SSL-VPN,
+														Data-At-Rest Encryption, Antivirus, Anti-Malware, Vulnerability
+														Scans, Intrusion Prevention System (IPS), Denial of Service
+														(DoS), IOC Detection with traffic segmentation.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-3'>
+												<img
+													class='w-12 mr-3'
+													src={ARP}
+													alt='Availability & Reliable Performance'
+												/>
+												<div>
+													<h5 className='h5'>Availability & Reliable Performance</h5>
+													<p className='mt-2'>
+														Built with best of the bread technologies, our infrastructure
+														can support any workload with reliable and consistent
+														performance.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={AP} alt='Affordable Pricing' />
+												<div>
+													<h5 className='h5'>Affordable Pricing</h5>
+													<p className='mt-2'>
+														we believe we have competitive affordable pricing when compared
+														all major Vendors/public clouds currently available in the
+														Market. <br />Contact us at&nbsp;
+														<a href='mailto:info@synectiks.com' target='_top'>
+															info@synectiks.com
+														</a>{' '}
+														for a quick affordable customized quote.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={MSGL} alt='Multi Secure Geo Locations' />
+												<div>
+													<h5 className='h5'>Multi Secure Geo Locations</h5>
+													<p className='mt-2'>
+														Different Secure Geo locations for customers to choose.
+														Different power grid locations to make sure your infrastructure
+														is available when disaster strikes a location.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex  flex-column flex-md-row align-items-center  align-items-md-start  mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={HW} alt='Host any workload' />
+												<div>
+													<h5 className='h5'>Host any workload</h5>
+													<p className='mt-2'>
+														Whether your mission-critical applications powered by Linux,
+														Windows Server, all Major Applications and Databases, Synectiks
+														offers support for these and other workloads, including your
+														favorite Open Source technologies, choose from a wide variety of
+														virtual machine sizes and storage performance classes configured
+														for specific types of workloads.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-4'>
+												<img class='w-12 mr-3' src={ST} alt='Storage Types available:' />
+												<div>
+													<h5 className='h5'>Storage Types available</h5>
+													<p className='mt-2'>S3, NAS, SAN, Cloud file & share.</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={MS} alt='' />
+												<div>
+													<h5 className='h5'>Migration Services</h5>
+													<p className='mt-2'>
+														we have expert professional team to migrate your current on
+														premises workloads to cloud.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={SPT} alt='' />
+												<div>
+													<h5 className='h5'>Support</h5>
+													<p className='mt-2'>
+														Follow the Sun model - 24/7/365 days support from both onshore
+														and offshore Teams.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</TabPane>
 								<TabPane tabId='2'>
 									<div>
 										<div className='row pt-4'>
@@ -289,11 +397,11 @@ const CloudManagedBackupWrapper = styled.div`
 	h1,
 	h2,
 	h4,
-	h5,
 	h6,
 	p {
 		text-align: left;
 	}
+	h5,
 	h3 {
 		text-align: center;
 	}
@@ -334,6 +442,7 @@ const CloudManagedBackupWrapper = styled.div`
 	.one {
 		z-index: 99999;
 		background: white;
+		width: 100%;
 	}
 	ul.tabList.nav.flex-column {
 		position: relative;
@@ -383,7 +492,7 @@ const CloudManagedBackupWrapper = styled.div`
 		cursor: pointer;
 	}
 	.tab-content > .active {
-		padding: 0rem 2rem;
+		padding: 0rem;
 	}
 	.w-6 {
 		width: 6rem;
@@ -397,7 +506,19 @@ const CloudManagedBackupWrapper = styled.div`
 	.position-relative {
 		top: 2rem;
 	}
+	.w-12 {
+		width: 25%;
+	}
 	@media (min-width: 576px) {
+		.one {
+			z-index: 99999;
+			background: white;
+			width: auto;
+		}
+		.w-12 {
+			width: 10%;
+		}
+		h5,
 		h3 {
 			text-align: left;
 		}
@@ -487,6 +608,44 @@ const CloudManagedBackupWrapper = styled.div`
 			font-size: 14px;
 		}
 
+		.logo-btn {
+			display: none;
+		}
+		.himage {
+			width: 50%;
+			height: auto;
+			box-shadow: 5px 5px 5px #789;
+			float: left;
+			margin-right: 2rem;
+			margin-bottom: 10px;
+		}
+
+		.hbh1 {
+			font-size: 2.5rem;
+		}
+		.hybridFixed {
+			display: block;
+			height: auto;
+			position: sticky;
+			top: 16%;
+			padding-bottom: 21.4rem;
+			padding-top: 2.4rem;
+		}
+		.nav-item > a.active,
+		.nav-item > a:active {
+			height: auto;
+		}
+		h2 {
+			font-size: 2rem;
+		}
+		h3 {
+			font-size: 1.75rem;
+		}
+		h4 {
+			font-size: 1.5rem;
+		}
+	}
+	@media (min-width: 768px) {
 		a#bgL.active:after {
 			top: 100%;
 			left: 50%;
@@ -550,44 +709,6 @@ const CloudManagedBackupWrapper = styled.div`
 			border-width: 20px;
 			margin-left: -20px;
 		}
-		.logo-btn {
-			display: none;
-		}
-		.himage {
-			width: 50%;
-			height: auto;
-			box-shadow: 5px 5px 5px #789;
-			float: left;
-			margin-right: 2rem;
-			margin-bottom: 10px;
-		}
-
-		.hbh1 {
-			font-size: 2.5rem;
-		}
-		.hybridFixed {
-			display: block;
-			height: auto;
-			position: sticky;
-			top: 16%;
-			padding-bottom: 21.4rem;
-			padding-top: 2.4rem;
-		}
-		.nav-item > a.active,
-		.nav-item > a:active {
-			height: auto;
-		}
-		h2 {
-			font-size: 2rem;
-		}
-		h3 {
-			font-size: 1.75rem;
-		}
-		h4 {
-			font-size: 1.5rem;
-		}
-	}
-	@media (min-width: 768px) {
 		.himage {
 			width: 100%;
 			height: auto;

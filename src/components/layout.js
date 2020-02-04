@@ -169,11 +169,13 @@ const Layout = ({ children }) => {
 						$('p').removeClass('animated fadeInRight');
 						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
 					}
+				},
+				beforeInit: function() {
+					if (owl) {
+					}
 				}
 			});
-			if (window.innerWidth > 768) {
-				$('.owl-carousel').owlCarousel();
-			}
+
 			var owl = $('#owl-demo').data('owlCarousel');
 
 			//Init progressBar where elem is $("#owl-demo")

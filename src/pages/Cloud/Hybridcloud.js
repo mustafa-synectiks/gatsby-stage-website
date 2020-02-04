@@ -75,7 +75,7 @@ const Hybridcloud = () => {
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='md'>
+								<Navbar color='light' light expand='lg'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -907,7 +907,7 @@ const HybridWrapper = styled.div`
 	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
 		display: inline;
 	}
-h1,h2,h3,h4,h5,h5,p{
+h1,h2,h3,h4,h5,h5,p,ul{
   text-align: left;
 }
 .hybJumbo{
@@ -968,6 +968,7 @@ a#bgLLL.active  {
 .one {
 	z-index: 99999;
 	background: white;
+	width: 100%;
 }
 ul.tabList.nav.flex-column {
 		position: relative;
@@ -982,16 +983,19 @@ ul.tabList.nav.flex-column {
     display: none;
   }
 h1{
-  font-size:1.4rem;
+  font-size:32px;
 }
 h2{
- font-size: 1.3rem;
+ font-size: 26px;
 }
 h3{
-  font-size:1.2rem;
+  font-size:22px;
 }
 h4{
-  font-size:1.1rem;
+  font-size:18px;
+}
+p{
+  font-size:18px;
 }
 .hybmt{
   margin-top: 2.5rem;
@@ -1033,6 +1037,11 @@ h4{
 
 
 @media (min-width: 576px){
+	.one {
+	z-index: 99999;
+	background: white;
+	width: auto;
+}
   .hybJumbo{
     display:block;
     	.himage {
@@ -1103,20 +1112,7 @@ h4{
      font-size: 14px;
      cursor: pointer;
   }
-  a#bgL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
+
 a#bgL.active {
   border-bottom: 5px solid #007cc2;
   position: relative;
@@ -1131,20 +1127,6 @@ a#bgLL.active {
 	background: bgBlue !important;
    font-size: 14px;
 }
-a#bgLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
 a#bgLLL.active {
   position: relative;
 	border-bottom: 5px solid #007cc2;
@@ -1152,20 +1134,7 @@ a#bgLLL.active {
 	background: bgBlue !important;
    font-size: 14px;
 }
-a#bgLLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
+
    .logo-btn {
     display: none;
   }
@@ -1202,6 +1171,48 @@ h4{
 }
 }
 @media(min-width:768px){
+	a#bgLLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+	a#bgL.active:after{
+ top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+a#bgLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
   .w-sm-100{
   width: 75%;
 }

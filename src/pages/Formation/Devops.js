@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/HybridCloud.jpg';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import one from '../../images/Devops/1.png';
 import two from '../../images/Devops/Technology Transformation.svg';
@@ -33,7 +33,9 @@ import styled from 'styled-components';
 
 const Devops = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
+	const [ collapsed, setCollapsed ] = useState(true);
 
+	const toggleNavbar = () => setCollapsed(!collapsed);
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
 	};
@@ -52,82 +54,81 @@ const Devops = () => {
 						<Row className='position-relative'>
 							<div className='col-md-12'>
 								<div className=''>
-									{/* <div className="hybridFixed"> */}
-									<button onClick={toggleTab} className='logo-btn'>
-										<FaBars />
-									</button>
-									{/* <div className={isOpen?`tabsHide`:`tabList`}> */}
 									<div>
-										<Nav className='d-flex my-4 mx-auto w-85'>
-											{/* <Nav className='sidetabs'> */}
-											{/* <Nav vertical className='sidetabs'> */}
-											<NavItem className='one'>
-												<NavLink
-													id='bgL'
-													className={classnames({ active: activeTab === '1' })}
-													onClick={() => {
-														toggle('1');
-														toggleTab();
-													}}>
-													Devops Transformation
-												</NavLink>
-											</NavItem>
+										<Navbar color='light' light expand='lg'>
+											<NavbarToggler onClick={toggleNavbar} className='mr-2' />
+											<Collapse isOpen={!collapsed} navbar>
+												<Nav className='d-flex my-4 mx-auto w-85'>
+													{/* <Nav className='sidetabs'> */}
+													{/* <Nav vertical className='sidetabs'> */}
+													<NavItem className='one'>
+														<NavLink
+															id='bgL'
+															className={classnames({ active: activeTab === '1' })}
+															onClick={() => {
+																toggle('1');
+																toggleTab();
+															}}>
+															Devops Transformation
+														</NavLink>
+													</NavItem>
 
-											<NavItem className='one'>
-												<NavLink
-													id='bgLL'
-													className={classnames({ active: activeTab === '2' })}
-													onClick={() => {
-														toggle('2');
-														toggleTab();
-													}}>
-													GETTING STARTED TO DEVOPS
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '3' })}
-													onClick={() => {
-														toggle('3');
-														toggleTab();
-													}}>
-													HOW SYNECTIKS CAN HELP
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '4' })}
-													onClick={() => {
-														toggle('4');
-														toggleTab();
-													}}>
-													{/* <span>
+													<NavItem className='one'>
+														<NavLink
+															id='bgLL'
+															className={classnames({ active: activeTab === '2' })}
+															onClick={() => {
+																toggle('2');
+																toggleTab();
+															}}>
+															GETTING STARTED TO DEVOPS
+														</NavLink>
+													</NavItem>
+													<NavItem className='one'>
+														<NavLink
+															id='bgLLL'
+															className={classnames({ active: activeTab === '3' })}
+															onClick={() => {
+																toggle('3');
+																toggleTab();
+															}}>
+															HOW SYNECTIKS CAN HELP
+														</NavLink>
+													</NavItem>
+													<NavItem className='one'>
+														<NavLink
+															id='bgLLL'
+															className={classnames({ active: activeTab === '4' })}
+															onClick={() => {
+																toggle('4');
+																toggleTab();
+															}}>
+															{/* <span>
                       <img src={SD} alt="" className='imgHyb'/>
                     </span> */}
-													SYNECTIKS DIFFERENTIATOR
-												</NavLink>
-											</NavItem>
-											<NavItem className='one'>
-												<NavLink
-													id='bgLLL'
-													className={classnames({ active: activeTab === '5' })}
-													onClick={() => {
-														toggle('5');
-														toggleTab();
-													}}>
-													{/* <span>
+															SYNECTIKS DIFFERENTIATOR
+														</NavLink>
+													</NavItem>
+													<NavItem className='one'>
+														<NavLink
+															id='bgLLL'
+															className={classnames({ active: activeTab === '5' })}
+															onClick={() => {
+																toggle('5');
+																toggleTab();
+															}}>
+															{/* <span>
                       <img src={SD} alt="" className='imgHyb'/>
                     </span> */}
-													KEY BENEFITS
-												</NavLink>
-											</NavItem>
-										</Nav>
+															KEY BENEFITS
+														</NavLink>
+													</NavItem>
+												</Nav>
+											</Collapse>
+										</Navbar>
 									</div>
 								</div>
-								{/* </div> */}
-								{/* <div className="px-1 mb-3 col-md-10"> */}
+
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
@@ -638,7 +639,10 @@ const Devops = () => {
 export default Devops;
 
 const DevopsWrapper = styled.div`
-
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,0);
+}
 h1,h2,h3,h4,p{
 	text-align: left;
 }
@@ -656,11 +660,9 @@ a#bgLL,
 a#bgLLL {
     padding: 0.5rem 1.5rem;
     font-size: 12px;
-    height: auto;
-    /* background: white !important; */
-    text-align: left;
-    /* display:flex;
-    justify-content: space-between; */
+				height: auto;
+				width:20rem;
+    text-align: center;
 }
 a#bgL.active,
 a#bgLL.active,
@@ -670,10 +672,9 @@ a#bgLLL.active  {
     text-align: left;
     color: var(--synectiksWhite);
     border-radius: 0px;
-    /* padding: 0.5rem 1.5rem; */
     font-size: 12px;
     height: auto;
-    width:100%;
+    width:20rem;
 }
 .imgHyb {
 	margin-right: 25px !important;
@@ -683,13 +684,8 @@ a#bgLLL.active  {
 }
 .one {
 	z-index: 99999;
-	/* display: flex; */
 	background: white;
-	/* box-shadow: 5px 5px 5px lightgray; */
-  /* padding: 5px 2px 2px 2px; */
-  /* border-bottom: 1px solid lightgrey; */
-  /* width:100%; */
-  /* background:rgba(0,0,0,0.5); */
+	width: 100%;
 }
 ul.tabList.nav.flex-column {
 		position: relative;
@@ -699,12 +695,6 @@ ul.tabList.nav.flex-column {
 	}
 	.tabList {
     display:block;
-		/* width: 100%;
-		color: rgba(0, 0, 0, 0.8);
-		height: 10vh;
-		font-size:15px;
-		cursor: pointer; */
-		/* padding-left: 3.2rem; */
   }
   .tabsHide {
     display: none;
@@ -769,6 +759,9 @@ h5{
 				margin: 0 auto;
 }
 @media (min-width: 576px){
+.one {
+	width:auto;
+}
 	.w15 {
 	width: 9%;
 }
@@ -845,79 +838,39 @@ h5{
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{
-    /* padding: 0.5rem 0.5rem !important; */
     background: bgBlue !important;
     text-align: left;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
      font-size: 14px;
      cursor: pointer;
+width:100%;
+		}
+		a#bgL.active,
+a#bgLL.active,
+a#bgLLL.active  {
+	width:100%;
+}
 
-  }
-  a#bgL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
 a#bgL.active {
   border-bottom: 5px solid #007cc2;
   position: relative;
-	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
   font-size: 14px;
 }
 a#bgLL.active {
   border-bottom: 5px solid #007cc2;
   position: relative;
-	/* padding-left: 1rem !important; */
+
 	background: bgBlue !important;
    font-size: 14px;
 }
-a#bgLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
+
 a#bgLLL.active {
   position: relative;
 	border-bottom: 5px solid #007cc2;
-	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
    font-size: 14px;
 }
-a#bgLLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
+
    .logo-btn {
     display: none;
   }
@@ -958,6 +911,48 @@ h4{
 }
 }
 @media(min-width:768px){
+	a#bgL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+a#bgLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+a#bgLLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
   	.himage {
 		width: 100%;
 		height: auto;

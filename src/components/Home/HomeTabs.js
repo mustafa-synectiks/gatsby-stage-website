@@ -245,8 +245,8 @@ const Tabs = () => {
 						<div className='card-body pl-3 pr-3'>
 							<div className='d-flex flex-column flex-nowrap bg-white'>
 								<div className='col order-1'>
-									<ul id='categories' class='clr ml-n5'>
-										<li class='pusher' />
+									<ul id='categories' className='clr ml-n5'>
+										<li className='pusher' />
 										<li>
 											<div className='thx1' onClick={tabHex1}>
 												<img src={thc1} alt='' />
@@ -272,7 +272,7 @@ const Tabs = () => {
 												<img src={hx3} alt='' />
 											</div>
 										</li>
-										<li class='pusher' />
+										<li className='pusher' />
 										<li>
 											<div className='thx5' onClick={tabHex5}>
 												<img src={hx5} alt='' />
@@ -488,7 +488,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -497,7 +497,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 70%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -506,7 +506,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -515,7 +515,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -524,7 +524,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 65%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -533,7 +533,7 @@ const TabsWrapper = styled.section`
 		right: -100%;
 		width: 58%;
 		height: auto;
-		margin: 1.2rem 5.5rem;
+		margin: 1.2rem 6.5rem;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -657,6 +657,11 @@ const TabsWrapper = styled.section`
 		margin-top: 0.5rem;
 	}
 	@media (min-width: 576px) {
+		#accordion {
+			display: block;
+		}
+	}
+	@media (min-width: 768px) {
 		#accordion {
 			display: none;
 		}
