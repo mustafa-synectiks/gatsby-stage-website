@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { MdDehaze, MdClear } from 'react-icons/md';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Topbar from './Topbar';
 import logo from '../images/logo.png';
 import styled from 'styled-components';
@@ -23,8 +23,8 @@ const Header = () => {
 						</Navbar.Brand>
 						<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
 							{/* <span className='navbar-toggler-icon' /> */}
-							<MdDehaze className='navbar-toggler-icon' />
-							<MdClear className='my-1 mx-2 close' />
+							<AiOutlineMenu className='navbar-toggler-icon' />
+							<AiOutlineClose className='my-1 mx-2 close' />
 						</Navbar.Toggle>
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='ml-auto'>
@@ -112,6 +112,7 @@ const HeaderNav = styled.div`
 	}
 	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
 		display: inline;
+		background-image: none;
 	}
 	.card-header {
 		padding: .75rem 9.25rem !important;

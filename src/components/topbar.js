@@ -44,8 +44,8 @@ const TopBarWrapper = styled.div`
 	a,
 	h6 {
 		text-decoration: none !important;
-		padding-left: 1%;
-		padding-right: 1%;
+		padding-left: 2%;
+		padding-right: 2%;
 		font-size: 9px;
 		-webkit-text-fill-color: #fff;
 	}
@@ -79,8 +79,8 @@ const TopBarWrapper = styled.div`
 		a,
 		h6 {
 			text-decoration: none !important;
-			padding-left: 1%;
-			padding-right: 1%;
+			padding-left: 3%;
+			padding-right: 3%;
 			font-size: 11px;
 			-webkit-text-fill-color: #fff;
 		}
