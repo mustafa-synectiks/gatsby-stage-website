@@ -245,6 +245,9 @@ body {
 .textColor {
 	color: #292929;
 }
+.destroy{
+	display:none;
+}
 .heading-h3 {
 	color: var(--synectiksBlue);
 }

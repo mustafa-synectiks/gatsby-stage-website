@@ -73,7 +73,7 @@ const Slider = () => {
 		<HomeWrapper>
 			<div className='container-fluid'>
 				<div className='row'>
-					<div id='owl-demo' className='owl-carousel owl-theme'>
+					<div id='owl-demo' className='owl-carousel owl-theme slider_wrapper'>
 						<div className='item'>
 							<div className='caption'>
 								<h3 className='animated delay-1s slow fadeInRight'>
@@ -451,6 +451,9 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+.owl-carousel {
+	display:none !important;
+}
 #collapseOne{
 	p{
 		text-align:left;
@@ -638,6 +641,9 @@ p{
 
 
 	@media screen and  (min-width: 576px) {
+		.owl-carousel {
+	display:block !important;
+}
 		.circletext{
 	p{
 		text-align: left;

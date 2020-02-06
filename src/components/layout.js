@@ -142,13 +142,48 @@ const Layout = ({ children }) => {
 		});
 		// Logo Slider
 		// /Case Study Ends
+
+		//
+		//
+		function postsCarousel() {
+			var checkWidth = $(window).width();
+			var owlPost = $('#owl-demo .slider-wrapper');
+			if (checkWidth > 767) {
+				if (typeof owlPost.data('owl.carousel') != 'undefined') {
+					owlPost.data('owl.carousel').destroy();
+				}
+				owlPost.removeClass('owl-carousel');
+			} else if (checkWidth < 768) {
+				owlPost.addClass('owl-carousel');
+				owlPost.owlCarousel({
+					items: 1,
+					slideSpeed: 500,
+					animateOut: 'fadeOut',
+					touchDrag: false,
+					mouseDrag: false,
+					autoplay: true,
+					autoplaySpeed: 8000,
+					autoplayTimeout: 8000,
+					dots: true,
+					loop: true
+				});
+			}
+		}
+
+		postsCarousel();
+		$(window).resize(postsCarousel);
+		//
+		//
 		// OWL V1.3
 		$(document).ready(function() {
+			var owl = $('#owl-demo').data('owlCarousel');
+			var checkWidth = $(window).width();
 			var time = 6; // time in seconds
 
-			var $progressBar, $bar, $elem, isPause, tick, percentTime;
+			var $progressBar, $bar, $elem, isPause, tick, percentTime, mobileNone;
 			// var $elem = $('#owl-demo');
 			//Init the carousel
+
 			$('#owl-demo').owlCarousel({
 				// $elem.owlCarousel({
 				slideSpeed: 500,
@@ -169,14 +204,8 @@ const Layout = ({ children }) => {
 						$('p').removeClass('animated fadeInRight');
 						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
 					}
-				},
-				beforeInit: function() {
-					if (owl) {
-					}
 				}
 			});
-
-			var owl = $('#owl-demo').data('owlCarousel');
 
 			//Init progressBar where elem is $("#owl-demo")
 			function progressBar(elem) {
