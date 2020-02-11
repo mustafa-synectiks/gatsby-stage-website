@@ -151,5 +151,9 @@ module.exports = [
 	{
 		path: '/VsForm/index.html',
 		component: path.resolve(`src/pages/Mails/VisualForm.js`)
+	},
+	{
+		path: '/terms/index.html',
+		component: path.resolve(`src/pages/Company/Terms.js`)
 	}
 ];

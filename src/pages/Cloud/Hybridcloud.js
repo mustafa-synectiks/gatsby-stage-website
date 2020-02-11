@@ -1089,12 +1089,7 @@ p{
 		/* width: 25vw; */
 		left: 0rem;
   }
-  .tabList{
-    display:block;
-  }
-  .tabsHide{
-    display:block;
-  }
+
 	ul.nav.flex-column > li > a {
 		width: 100%;
 		color: rgba(0, 0, 0, 0.8);

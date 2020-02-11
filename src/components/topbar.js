@@ -15,9 +15,9 @@ const Topbar = () => {
 					609 608 0429X102
 				</span>
 			</h6>
-			<h6 className='br infoMail'>
+			<a className='br infoMail' href='mailto:info@synectiks.com'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
-			</h6>
+			</a>
 			<div className='ts'>
 				{Social.map((item, index) => {
 					return (

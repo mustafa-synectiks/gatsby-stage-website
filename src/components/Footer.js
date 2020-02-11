@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Social from './social-icons';
+import logo from '../images/Synectiks Logo/synectiks-text-logo.png';
 import './layout.css';
 export class Footer extends React.Component {
 	render() {
@@ -27,7 +28,10 @@ export class Footer extends React.Component {
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-between d-lg-flex justify-content-lg-between d-xl-flex justify-content-xl-between bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='col'>
-						<h3 className='text-light text-capitalize'>Synectiks</h3>
+						{/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
+						<a href='/'>
+							<img src={logo} alt='' className='w-50' />
+						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
 						<p className='text-light'>300 Alexander Park Drive, Suite 215,</p>
 						<p className='text-light'> Princeton, NJ 08540 </p>
@@ -81,8 +85,16 @@ export class Footer extends React.Component {
 						<div>
 							<h3 className='text-light text-capitalize'>Terms</h3>
 							<ul className='text-light text-capitalize p-0'>
-								<li>Privacy Policy</li>
-								<li> Terms & Conditions </li>
+								<li>
+									<a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
+										Privacy Policy
+									</a>
+								</li>
+								<li>
+									<a href='/terms/index.html' className='text-light'>
+										Terms & Conditions
+									</a>{' '}
+								</li>
 							</ul>
 						</div>
 					</div>
