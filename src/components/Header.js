@@ -30,7 +30,7 @@ const Header = () => {
 							<Nav className='ml-auto'>
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/foundation/index.html'>Why Synectiks</NavDropdown.Item>
-									<NavDropdown.Item href='/migrations/index.html'>Case Studies</NavDropdown.Item>
+									<NavDropdown.Item href='/casestudies/index.html'>Case Studies</NavDropdown.Item>
 									<NavDropdown.Item href='/microservices/index.html'>
 										Area Of Expertise
 									</NavDropdown.Item>
@@ -47,9 +47,9 @@ const Header = () => {
 									<NavDropdown.Item href='/microservices/index.html'>
 										Data Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/microservices/index.html'>
+									{/* <NavDropdown.Item href='/microservices/index.html'>
 										Xformation Software
-									</NavDropdown.Item>
+									</NavDropdown.Item> */}
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/HostedInfrastructure/index.html'>

@@ -75,7 +75,7 @@ const Hybridcloud = () => {
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg'>
+								<Navbar color='light' light expand='lg' className='topNav'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -746,7 +746,6 @@ const Hybridcloud = () => {
 															<h4 className='my-2 my-md-3'>Time & Money</h4>
 														</div>
 														<p>
-															{' '}
 															Our open Product Driven Delivery Model allows customers to
 															quickly build, deliver and orchestrate cross cloud services
 															@50% time & cost.
@@ -891,6 +890,10 @@ const Hybridcloud = () => {
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
+.topNav{
+	position: fixed;
+	top: 100px;
+}
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
@@ -1037,6 +1040,11 @@ p{
 
 
 @media (min-width: 576px){
+	.topNav{
+	position: fixed;
+	top: 100px;
+	display:none;
+}
 	.one {
 	z-index: 99999;
 	background: white;

@@ -117,6 +117,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Mails/Contact.js`)
 	},
 	{
+		path: '/casestudies/index.html',
+		component: path.resolve(`src/components/Home/CaseStudies.js`)
+	},
+	{
 		path: '/realtime/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Realtime.js`)
 	},

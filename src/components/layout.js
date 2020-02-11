@@ -4,7 +4,6 @@ import Header from './Header';
 // import * as jquery from 'jquery';
 import Footer from './Footer';
 import './layout.css';
-
 const Layout = ({ children }) => {
 	useEffect(() => {
 		// typeof window !== 'undefined' && window;
@@ -145,68 +144,134 @@ const Layout = ({ children }) => {
 
 		//
 		//
-		function postsCarousel() {
-			var checkWidth = $(window).width();
-			var owlPost = $('#owl-demo .slider-wrapper');
-			if (checkWidth > 767) {
-				if (typeof owlPost.data('owl.carousel') != 'undefined') {
-					owlPost.data('owl.carousel').destroy();
-				}
-				owlPost.removeClass('owl-carousel');
-			} else if (checkWidth < 768) {
-				owlPost.addClass('owl-carousel');
-				owlPost.owlCarousel({
-					items: 1,
-					slideSpeed: 500,
-					animateOut: 'fadeOut',
-					touchDrag: false,
-					mouseDrag: false,
-					autoplay: true,
-					autoplaySpeed: 8000,
-					autoplayTimeout: 8000,
-					dots: true,
-					loop: true
-				});
-			}
-		}
+		// $(document).ready(function(e) {
+		// 	var owl = $('#owl-demo').data('owlCarousel');
 
-		postsCarousel();
-		$(window).resize(postsCarousel);
+		// 	function owlInitialize() {
+		// 		if ($(window).width() > 576) {
+		// 			owl.owlCarousel();
+		// 		} else {
+		// 			owl.destroy();
+		// 		}
+		// 	}
+
+		// 	// owlInitialize();
+
+		// 	$(window).resize(function() {
+		// 		owlInitialize();
+		// 	});
+		// });
+
 		//
-		//
+		// $(function() {
+		// 	var owl = $('#owl-demo').data('owlCarousel');
+		// 	var time = 6; // time in seconds
+
+		// 	var $progressBar, $bar, $elem, isPause, tick, percentTime;
+		// 	owlOptions = {
+		// 		slideSpeed: 500,
+		// 		paginationSpeed: 500,
+		// 		singleItem: true,
+		// 		afterInit: progressBar,
+		// 		afterMove: moved,
+		// 		startDragging: pauseOnDragging,
+		// 		afterAction: function() {
+		// 			if (owl) {
+		// 				var item = owl.currentItem;
+		// 				$('h3').removeClass('animated fadeInRight');
+		// 				$('.owl-item')
+		// 					.not('.cloned')
+		// 					.eq(item)
+		// 					.find('h3')
+		// 					.addClass('animated delay-1s slow fadeInRight');
+		// 				$('p').removeClass('animated fadeInRight');
+		// 				$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
+		// 			}
+		// 		}
+		// 	};
+		// 	//Init progressBar where elem is $("#owl-demo")
+		// 	function progressBar(elem) {
+		// 		$elem = elem;
+		// 		//build progress bar elements
+		// 		buildProgressBar();
+		// 		//start counting
+		// 		start();
+		// 	}
+
 		// OWL V1.3
+
 		$(document).ready(function() {
-			var owl = $('#owl-demo').data('owlCarousel');
-			var checkWidth = $(window).width();
 			var time = 6; // time in seconds
 
 			var $progressBar, $bar, $elem, isPause, tick, percentTime, mobileNone;
 			// var $elem = $('#owl-demo');
 			//Init the carousel
-
-			$('#owl-demo').owlCarousel({
-				// $elem.owlCarousel({
-				slideSpeed: 500,
-				paginationSpeed: 500,
-				singleItem: true,
-				afterInit: progressBar,
-				afterMove: moved,
-				startDragging: pauseOnDragging,
-				afterAction: function() {
-					if (owl) {
-						var item = owl.currentItem;
-						$('h3').removeClass('animated fadeInRight');
-						$('.owl-item')
-							.not('.cloned')
-							.eq(item)
-							.find('h3')
-							.addClass('animated delay-1s slow fadeInRight');
-						$('p').removeClass('animated fadeInRight');
-						$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
-					}
-				}
+			var timerId = -1;
+			$(window).resize(function() {
+				onResize();
 			});
 
+			function onResize() {
+				if (timerId !== -1) {
+					clearTimeout(timerId);
+				}
+				// debugger;
+
+				if ($(window).width() < 567) {
+					timerId = setTimeout(() => {
+						showHideCarousel(false);
+					}, 1000);
+				} else {
+					timerId = setTimeout(() => {
+						showHideCarousel(true);
+					}, 1000);
+				}
+			}
+
+			function showHideCarousel(bShow) {
+				if (bShow) {
+					createCarousel();
+				} else {
+					// owl.destroy();
+					// $('#owl-demo').owlCarousel('destroy');
+					if ($('#owl-demo').data('owlCarousel')) {
+						$('#owl-demo').data('owlCarousel').destroy();
+					}
+				}
+			}
+			var owl;
+			function createCarousel() {
+				$('#owl-demo').owlCarousel({
+					// $elem.owlCarousel({
+					slideSpeed: 500,
+					paginationSpeed: 500,
+					singleItem: true,
+					afterInit: progressBar,
+					afterMove: moved,
+					startDragging: pauseOnDragging,
+					afterAction: function() {
+						if (owl) {
+							var item = owl.currentItem;
+							$('h3').removeClass('animated fadeInRight');
+							$('.owl-item')
+								.not('.cloned')
+								.eq(item)
+								.find('h3')
+								.addClass('animated delay-1s slow fadeInRight');
+							$('p').removeClass('animated fadeInRight');
+							$('.owl-item')
+								.not('.cloned')
+								.eq(item)
+								.find('p')
+								.addClass('animated delay-2s slow fadeInRight');
+						}
+					}
+				});
+				owl = $('#owl-demo').data('owlCarousel');
+			}
+
+			createCarousel();
+			onResize();
 			//Init progressBar where elem is $("#owl-demo")
 			function progressBar(elem) {
 				$elem = elem;
@@ -218,13 +283,16 @@ const Layout = ({ children }) => {
 
 			//create div#progressBar and div#bar then prepend to $("#owl-demo")
 			function buildProgressBar() {
-				$progressBar = $('<div>', {
-					id: 'progressBar'
-				});
-				$bar = $('<div>', {
-					id: 'bar'
-				});
-				$progressBar.append($bar).appendTo($elem);
+				if ($('#progressBar').length === 0) {
+					$progressBar = $('<div>', {
+						id: 'progressBar'
+					});
+					$bar = $('<div>', {
+						id: 'bar'
+					});
+					// $progbar = document.getElementById('progbar');
+					$progressBar.append($bar).appendTo($elem);
+				}
 			}
 
 			function start() {
@@ -262,12 +330,12 @@ const Layout = ({ children }) => {
 				start();
 			}
 
-			// uncomment this to make pause on mouseover
-			// $elem.on('mouseover', function() {
-			// 	isPause = true;
-			// });
-			// $elem.on('mouseout', function() {
-			// 	isPause = false;
+			// 	// uncomment this to make pause on mouseover
+			// 	// $elem.on('mouseover', function() {
+			// 	// 	isPause = true;
+			// 	// });
+			// 	// $elem.on('mouseout', function() {
+			// 	// 	isPause = false;
 			// });
 		});
 		// OWL V1.3

@@ -7,8 +7,6 @@ import SDFT from '../../images/CS_SoftwareDefinedTransformation.jpg';
 import ND from '../../images/CS_NetworkDesign.jpg';
 import ST from '../../images/CS_StorageTier.jpg';
 import DR from '../../images/CS_DisasterRecovery.jpg';
-import Header from '../Header.js';
-import Footer from '../Footer.js';
 import Layout from '../../components/layout.js';
 
 const CaseStudies = () => {

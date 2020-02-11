@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PoweredBySynectiks from '../../images/PoweredBySynectiks.png';
 import thc1 from '../../images/HomePage/1.png';
 import hx2 from '../../images/HomePage/2.png';
 import hx3 from '../../images/HomePage/3.png';
@@ -121,12 +122,7 @@ const Tabs = () => {
 						data-parent='#accordion'>
 						<div className='card-body pl-4 pr-3'>
 							<div className=''>
-								{/* <img
-														src={PoweredBySynectiks}
-														width='100%'
-														alt=''
-														className='w-100'
-													/> */}
+								<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
 							</div>
 							<p className='p-3'>
 								What is Xformation? It's a platform that provides peace of mind, governance, efficiency

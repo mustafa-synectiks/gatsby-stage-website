@@ -73,7 +73,7 @@ const Slider = () => {
 		<HomeWrapper>
 			<div className='container-fluid'>
 				<div className='row'>
-					<div id='owl-demo' className='owl-carousel owl-theme slider_wrapper'>
+					<div id='owl-demo' className='owl-carousel owl-theme'>
 						<div className='item'>
 							<div className='caption'>
 								<h3 className='animated delay-1s slow fadeInRight'>
@@ -115,6 +115,7 @@ const Slider = () => {
 							/>
 						</div>
 					</div>
+					<div id='progbar' />
 				</div>
 			</div>
 			<div className='container-fluid bgBlue'>
@@ -353,12 +354,11 @@ const Slider = () => {
 										<div className='text-group align-self-center p-2 bgWhite'>
 											<h3 className=''>Software Defined Transformation</h3>
 											<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/softwaredefined/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
-
 									<div className='case-studies w-450 bshad'>
 										<img src={RM} alt='NetworkDesign' />{' '}
 										<div className='text-group align-self-center p-2 bgWhite'>
@@ -366,26 +366,24 @@ const Slider = () => {
 											<p className='pr-2 pr-md-5'>
 												Highly Scalable extremely customizable realtime monitoring platform.
 											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/realtime/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
-
 									<div className='case-studies w-450 bshad'>
-										<img src={SM} alt='StorageTier' />{' '}
+										<img src={SM} alt='Storage Migration' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Migration</h3>
 											<p className='pr-5'>
 												Petabytes of storage migration for a large financial company with zero
 												down time.
 											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/storagemigration/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
-
 									<div className='case-studies w-450 bshad'>
 										<img src={ND} alt='Enterprise-Transformation' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -393,12 +391,11 @@ const Slider = () => {
 											<p className='pr-5'>
 												Complete network Backbone design with highest security for retail.
 											</p>
-											<a href='/storagemigration/index.html' className='noLine fw300'>
+											<a href='/networkdesign/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
-
 									<div className='case-studies w-450 bshad'>
 										<img src={ST} alt='StorageTier' className='h46' />
 
@@ -407,12 +404,11 @@ const Slider = () => {
 											<p className='pr-5'>
 												Moving Bigdata workloads to aggregated platform for a large telco.
 											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/storagetier/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
-
 									<div className='case-studies w-450 bshad'>
 										<img src={DR} alt='StorageTier' />
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -420,11 +416,12 @@ const Slider = () => {
 											<p className='pr-5'>
 												Lightweight disaster recovery platform for indian Defense.
 											</p>{' '}
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/disasterrecovery/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
 									</div>
+									.
 								</div>
 							</div>
 						</div>
@@ -451,9 +448,7 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
-.owl-carousel {
-	display:none !important;
-}
+
 #collapseOne{
 	p{
 		text-align:left;
@@ -494,6 +489,7 @@ width: 100%;
 		font-size: 14px;
 		min-height:75px;
 		max-height:75px;
+		margin-bottom: 0rem;
 	}
 }
 .h70vh{
@@ -605,11 +601,9 @@ p{
 		display:none;
 	}
 }
-/*
-.owl-carousel{
-	display:none !important;
-} */
+
 .cstrip {
+	background: transparent;
 .btn-width{
 	width: 75%;
 }
@@ -638,14 +632,12 @@ p{
 	}
 
 
-
-
 	@media screen and  (min-width: 576px) {
-		.owl-carousel {
-	display:block !important;
-}
+
+
+
 		.circletext{
-	p{
+	 p{
 		text-align: left;
 	}
 }
@@ -661,6 +653,7 @@ p{
 		font-size: 18px;
 		min-height:75px;
 		max-height:75px;
+		margin-bottom: 0rem;
 	}
 }
 
@@ -746,8 +739,10 @@ transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 transform: translateX(15px);
 }
 .cstrip{
+	background: var(--synectiksWhite);
 .btn-width{
 	width: auto;
+	background: var(--synectiksWhite);
 }}
 .card-body {
 	padding :1rem 0rem 0rem 0rem;
@@ -803,7 +798,7 @@ transform: translateX(15px);
 				/* max-width:400px; */
 }
 		.h70vh {
-			height: 80vh;
+			height: 75vh;
 		}
 		ul.progress > li:first-child {
 			position: absolute;
@@ -1334,6 +1329,7 @@ color:var(--synectiksBlue);
 	/* TAB VERSION STYLING */
 	/*  */
 	/*  */
+	}
 	@media screen and (min-width: 768px) {
 		background: var(--bgMain);
 		.tabsFlex{

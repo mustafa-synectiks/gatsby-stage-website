@@ -4,7 +4,6 @@ import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import ModalContact from '../../../components/ModalContact';
 import Layout from '../../../components/layout';
 import { FaBars } from 'react-icons/fa';
-
 import '../../../components/layout.css';
 import styled from 'styled-components';
 import cloudImage from '../../../images/ManagedBackup/CloudBackup.png';
@@ -78,7 +77,7 @@ const CloudManagedBackup = () => {
 								</Nav>
 							</Collapse>
 						</Navbar>
-						<div className='px-1 mb-3 col-md-12'>
+						<div className='px-4 px-md-0 mb-3 col-md-12'>
 							<TabContent activeTab={activeTab}>
 								<TabPane tabId='1'>
 									<div className='bg-lightgrey container mb-0 pb-3'>

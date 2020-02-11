@@ -209,6 +209,15 @@ body {
 }
 
 /* MainColors */
+.blueBorder {
+	border-left: 2px solid var(--synectiksBlue);
+}
+.redBorder {
+	border-left: 2px solid var(--synectiksRed);
+}
+.orangeBorder {
+	border-left: 2px solid var(--synectiksOrange);
+}
 .bgRed {
 	background: var(--synectiksRed);
 }
@@ -221,7 +230,7 @@ body {
 }
 .btn-cnt:hover {
 	color: var(--backgroundColor);
-	background: var(--synectiksOrange);
+	background: var(--synectiksOrange) !important;
 }
 .bgMain {
 	background: var(--backgroundColor);
@@ -245,9 +254,9 @@ body {
 .textColor {
 	color: #292929;
 }
-.destroy{
-	display:none;
-}
+/* .owl-carousel.off {
+	display: block;
+} */
 .heading-h3 {
 	color: var(--synectiksBlue);
 }
