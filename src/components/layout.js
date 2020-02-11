@@ -283,16 +283,16 @@ const Layout = ({ children }) => {
 
 			//create div#progressBar and div#bar then prepend to $("#owl-demo")
 			function buildProgressBar() {
-				if ($('#progressBar').length === 0) {
-					$progressBar = $('<div>', {
-						id: 'progressBar'
-					});
-					$bar = $('<div>', {
-						id: 'bar'
-					});
-					// $progbar = document.getElementById('progbar');
-					$progressBar.append($bar).appendTo($elem);
-				}
+				// if ($('#progressBar').length === 0) {
+				$progressBar = $('<div>', {
+					id: 'progressBar'
+				});
+				$bar = $('<div>', {
+					id: 'bar'
+				});
+				// $progbar = document.getElementById('progbar');
+				$progressBar.append($bar).appendTo($elem);
+				// }
 			}
 
 			function start() {

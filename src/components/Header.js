@@ -52,9 +52,7 @@ const Header = () => {
 									</NavDropdown.Item> */}
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/HostedInfrastructure/index.html'>
-										Microservices
-									</NavDropdown.Item>
+									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
 									<NavDropdown.Item href='/CloudManagedBackup/index.html'>
 										Cloud Automation
 									</NavDropdown.Item>

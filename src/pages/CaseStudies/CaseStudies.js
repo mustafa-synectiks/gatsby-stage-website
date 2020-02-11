@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import SM from '../../images/CS_Software_Migration.jpg';
@@ -8,8 +9,22 @@ import ND from '../../images/CS_NetworkDesign.jpg';
 import ST from '../../images/CS_StorageTier.jpg';
 import DR from '../../images/CS_DisasterRecovery.jpg';
 import Layout from '../../components/layout.js';
+import Img from 'gatsby-image';
+
+// const getImages = graphql`
+// 	query Images {
+// 		fluid: file(relativePath: { eq: "CS_SoftwareDefinedTransformation.jpg" }) {
+// 			childImageSharp {
+// 				fluid {
+// 					...GatsbyImageSharpFluid_tracedSVG
+// 				}
+// 			}
+// 		}
+// 	}
+// `;
 
 const CaseStudies = () => {
+	// const data = useStaticQuery(getImages);
 	return (
 		<Layout>
 			<CaseStudiesWrapper>
@@ -19,7 +34,8 @@ const CaseStudies = () => {
 						<div className='content'>
 							<div className='d-flex flex-column flex-md-row justify-content-center'>
 								<div className='w-450 bshad'>
-									<img src={SDFT} alt='Disaster Recovery' />
+									{/* <img src={SDFT} alt='Disaster Recovery' /> */}
+									{/* <Img fluid={data.fluid.childImageSharp.fluid} /> */}
 
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className=''>Software Defined Transformation</h3>

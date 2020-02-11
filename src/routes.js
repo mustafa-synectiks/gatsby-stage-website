@@ -81,6 +81,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Cloud/Colocation.js`)
 	},
 	{
+		path: '/microservices/index.html',
+		component: path.resolve(`src/pages/Solutions/Microservices.js`)
+	},
+	{
 		path: '/applicationservices/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
