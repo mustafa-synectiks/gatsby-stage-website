@@ -220,11 +220,11 @@ const Layout = ({ children }) => {
 				if ($(window).width() < 567) {
 					timerId = setTimeout(() => {
 						showHideCarousel(false);
-					}, 1000);
+					}, 500);
 				} else {
 					timerId = setTimeout(() => {
 						showHideCarousel(true);
-					}, 1000);
+					}, 500);
 				}
 			}
 

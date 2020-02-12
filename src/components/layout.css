@@ -207,7 +207,10 @@ body {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
 }
-
+.animated.delay-1s {
+	-webkit-animation-delay: 1s;
+	animation-delay: 500ms;
+}
 /* MainColors */
 .blueBorder {
 	border-left: 2px solid var(--synectiksBlue);

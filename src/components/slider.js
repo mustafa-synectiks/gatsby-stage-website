@@ -118,10 +118,10 @@ const Slider = () => {
 					<div id='progbar' />
 				</div>
 			</div>
-			<div className='container-fluid bgBlue'>
+			<div className='container-fluid bgBlue px-2 px-md-5 '>
 				<div className='row'>
 					<div className='col heading1 mt-3 mt-md-0'>
-						<h2 className='textWhite'>
+						<h2 className='textWhite px-1 px-md-3'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h2>
 						<div className='circleFlex'>
@@ -141,7 +141,7 @@ const Slider = () => {
 								</div>
 							</ScrollAnimation>
 						</div>
-						<div className='circletext'>
+						<div className='circletext px-1 px-md-3'>
 							<p className='text-light'>
 								As an Open Product based Cloud Solution provider, we help enterprises take advantage of
 								public & private cloud and its infinite resources to migrate and modernize their

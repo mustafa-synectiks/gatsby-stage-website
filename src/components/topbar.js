@@ -163,8 +163,8 @@ const TopBarWrapper = styled.div`
 			font-weight: 400;
 		}
 		.ts {
-			width: 10vw;
-			padding-left: 0%;
+			width: 6.5vw;
+			padding-left: 0.6%;
 			/* margin-right: 1.8%; */
 		}
 		.br {

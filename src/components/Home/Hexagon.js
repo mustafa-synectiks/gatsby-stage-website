@@ -144,6 +144,7 @@ const Hexagon = () => {
 								</div>
 							</li>
 						</ul>
+						<h5 className='text-center'>Click on each Hexagon to know more!</h5>
 					</div>
 					<div className='col-md-6 pr-7'>
 						<div className='text-center my-4'>

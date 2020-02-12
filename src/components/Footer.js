@@ -30,10 +30,10 @@ export class Footer extends React.Component {
 					<div className='col'>
 						{/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
 						<a href='/'>
-							<img src={logo} alt='' className='w-50' />
+							<img src={logo} alt='' className='w-50 mt-0 mt-md-2' />
 						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-						<p className='text-light'>300 Alexander Park Drive, Suite 215,</p>
+						<p className='text-light mt-0 mt-md-3'>300 Alexander Park Drive, Suite 215,</p>
 						<p className='text-light'> Princeton, NJ 08540 </p>
 						<p className='text-light'>Sales: +1 (609) 608-0429 X 102 </p>
 						<p className='text-light'>Office: +1 (609) 608-0429</p>

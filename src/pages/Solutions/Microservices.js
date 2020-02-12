@@ -18,7 +18,7 @@ const MICRO_IMAGES = graphql`
 		}
 		img2: file(relativePath: { eq: "Microservice_3.png" }) {
 			childImageSharp {
-				fluid(maxWidth: 1024) {
+				fluid {
 					...GatsbyImageSharpFluid_tracedSVG
 				}
 			}
@@ -110,8 +110,8 @@ const Microservices = () => {
 
 											<TabContent activeTab={activeTab}>
 												<TabPane tabId='1'>
-													<div className='d-flex flex-column flex-md-row align-items-center'>
-														<div className='w50vw'>
+													<div className='d-flex flex-column flex-md-row align-items-center p-2 px-md-5'>
+														<div className='w50vw px-2 px-md-3'>
 															<p>
 																To accommodate the increasing complexity of functional
 																requirements, IT applications have embraced a variety of
@@ -132,8 +132,24 @@ const Microservices = () => {
 																maintain and scale applications.
 															</p>
 														</div>
-														<div className='w50vw'>
-														<Img fluid={img1}/>
+														<div className='w50vw px-2 px-md-3'>
+															<Img fluid={img1} />
+														</div>
+													</div>
+													<div className='p-2 p-md-5'>
+														<p>
+															Despite technological advancements, 90 percent of business
+															IT applications are legacy and what are known as
+															“monolithic”. These range from mainframe apps where UI,
+															business logic and data storage reside on machines, to
+															client-server applications where layered technologies that
+															support UI, business functionality and data are stored
+															horizontally. Microservices architecture, on the other hand,
+															divides the functionality into cohesive verticals by
+															implementing a specific domain.
+														</p>
+														<div className='w-100'>
+															<Img fluid={img2} />
 														</div>
 													</div>
 												</TabPane>
