@@ -1041,9 +1041,9 @@ p{
 
 @media (min-width: 576px){
 	.topNav{
-	position: fixed;
-	top: 100px;
-	display:none;
+	position: relative;
+	top: 0px;
+	z-index: 999;
 }
 	.one {
 	z-index: 99999;
