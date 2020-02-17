@@ -25,7 +25,7 @@ const WhySynectiks = () => {
 <h2>We’ve always done things differently</h2>
 <p>Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model. </p>
 <div> </div>
-<img src={team} alt="" className='py-2 py-md-4'/>
+<img src={team} alt="" className='py-2 py-md-4 w-100'/>
 <p>
 Our passionate global team is real good mix of Highly Experienced product developers who has been part of many big success and young full stack developers fully trained to deliver in DevOps cultural environment. Our deep expertise both on Application and Infrastructure helps us to deliver cloud native solutions in an optimal manner   and manage its lifecycle in a DevSecOps way. We have learnt to deliver software in predictable and deterministic way.  </p>
 <div className='container-fluid px5'>

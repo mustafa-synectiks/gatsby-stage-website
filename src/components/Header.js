@@ -31,7 +31,7 @@ const Header = () => {
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/whysynectiks/index.html'>Why Synectiks</NavDropdown.Item>
 									<NavDropdown.Item href='/casestudies/index.html'>Case Studies</NavDropdown.Item>
-									<NavDropdown.Item href='/'>
+									<NavDropdown.Item href='/areaexpertise/index.html'>
 										Area Of Expertise
 									</NavDropdown.Item>
 								</NavDropdown>
@@ -43,7 +43,7 @@ const Header = () => {
 									<NavDropdown.Item href='/migrations/index.html'>
 										Application Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/microservices/index.html'>
+									<NavDropdown.Item href='/migrations/index.html'>
 										Data Transformation
 									</NavDropdown.Item>
 									{/* <NavDropdown.Item href='/microservices/index.html'>
@@ -67,7 +67,7 @@ const Header = () => {
 									<NavDropdown.Item href='/applicationservices/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/managedservices/index.html'>
+									<NavDropdown.Item href='/applicationservices/index.html'>
 										Managed Services
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/primarycloudhostingservices/index.html'>
@@ -76,7 +76,7 @@ const Header = () => {
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
-									<NavDropdown.Item href='/casestudy/index.html'>Blog</NavDropdown.Item>
+									<NavDropdown.Item href='/casestudies/index.html'>Blog</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Company' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/about/index.html'>About Us</NavDropdown.Item>

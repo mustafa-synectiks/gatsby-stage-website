@@ -150,6 +150,10 @@ module.exports = [
 		component: path.resolve(`src/pages/CaseStudies/Softwaredefined.js`)
 	},
 	{
+		path: '/areaexpertise/index.html',
+		component: path.resolve(`src/pages/WhatWeDo/AreaOfExpertise.js`)
+	},
+	{
 		path: '/VsForm/index.html',
 		component: path.resolve(`src/pages/Mails/VisualForm.js`)
 	},
