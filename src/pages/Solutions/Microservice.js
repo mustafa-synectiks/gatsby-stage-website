@@ -109,7 +109,7 @@ const Microservice = () => {
        <TabContent activeTab={activeTab}>
         <TabPane tabId='1'>
          <div>
-          <div className='w-100 d-flex flex-column flex-md-row align-items-start'>
+          <div className='w-100 d-flex flex-column flex-md-row align-items-start py-2 py-md-3'>
            <div className='pr-0 pr-md-5'>
             <p>
              To accommodate the increasing complexity of functional requirements, IT applications have embraced a variety of architectural patterns. Organizations must meet ever-changing business demands — from mainframe applications and client-server to service oriented architecture (SOA) and microservices.
@@ -358,7 +358,7 @@ const MicroserviceWrapper = styled.div `
 	width: 100%;
 }
 .imgshadow{
-	box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.5)
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
 }
 .topNav{
 	position: fixed;

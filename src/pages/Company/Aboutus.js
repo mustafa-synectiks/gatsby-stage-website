@@ -35,7 +35,7 @@ export class Aboutus extends React.Component {
 		return (
 			<Layout>
 				<AboutWrapper>
-					<div className='bg-lightgrey px-4 px-md-0'>
+					<div className='bg-lightgrey px-4 px-md-5 mx-md-2 mx-0'>
 						<div>
 							<img className='  text-center ' src={about} width='100%' alt='AboutUs' />
 						</div>

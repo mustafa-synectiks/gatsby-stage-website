@@ -29,12 +29,11 @@ const Header = () => {
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='ml-auto'>
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/foundation/index.html'>Why Synectiks</NavDropdown.Item>
+									<NavDropdown.Item href='/whysynectiks/index.html'>Why Synectiks</NavDropdown.Item>
 									<NavDropdown.Item href='/casestudies/index.html'>Case Studies</NavDropdown.Item>
-									<NavDropdown.Item href='/microservices/index.html'>
+									<NavDropdown.Item href='/'>
 										Area Of Expertise
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/microservices/index.html'>Partners</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/devops/index.html'>DevOps Transformation</NavDropdown.Item>

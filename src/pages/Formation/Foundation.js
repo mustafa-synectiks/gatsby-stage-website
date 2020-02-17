@@ -84,12 +84,7 @@ const Foundation = () => {
               wheel’. By productizing our expertise and carefully researching
               the best tool, we aim to deliver to you a complete solution which
               offers cost-efficient secure cloud and on the top of it, extremely
-              scalable, reliable, secure application done right. The goal of
-              Xformation platform is to simplify the digital transformation,
-              make customers life simpler, give them flexibility to go to any
-              cloud, create container clusters, develop and deploy
-              microservices/Bigdata/IOT applications seamlessly and manage
-              operations with our automation bots.
+              scalable, reliable, secure application done right. The goal of X formation platform is to simplify the digital transformation, make customers life simpler, give them the flexibility to go to any cloud, create container clusters, develop and deploy microservices/Bigdata/IOT applications seamlessly and manage operations with our automated bots.
             </p>
             <p className="lineHeight-24">
               SYNECTIKS Open Xformation platform is consolidation of

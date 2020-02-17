@@ -9,6 +9,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Formation/Audit.js`)
 	},
 	{
+		path: '/whysynectiks/index.html',
+		component: path.resolve(`src/pages/WhatWeDo/WhySynectiks.js`)
+	},
+	{
 		path: '/devops/index.html',
 		component: path.resolve(`src/pages/Formation/Devops.js`)
 	},
@@ -16,10 +20,7 @@ module.exports = [
 		path: '/foundation/index.html',
 		component: path.resolve(`src/pages/Formation/Foundation.js`)
 	},
-	{
-		path: '/microservices/index.html',
-		component: path.resolve(`src/pages/Formation/Microservices.js`)
-	},
+
 	{
 		path: '/microserviceexample/index.html',
 		component: path.resolve(`src/pages/Formation/Microserviceexample.js`)
@@ -82,7 +83,7 @@ module.exports = [
 	},
 	{
 		path: '/microservices/index.html',
-		component: path.resolve(`src/pages/Solutions/Microservices.js`)
+		component: path.resolve(`src/pages/Solutions/Microservice.js`)
 	},
 	{
 		path: '/applicationservices/index.html',
