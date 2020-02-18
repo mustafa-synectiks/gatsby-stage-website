@@ -37,7 +37,7 @@ const Header = () => {
 								</NavDropdown>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/devops/index.html'>DevOps Transformation</NavDropdown.Item>
-									<NavDropdown.Item href='/foundation/index.html'>
+									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/migrations/index.html'>

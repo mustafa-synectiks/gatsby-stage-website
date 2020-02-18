@@ -465,12 +465,9 @@ a.dropdown-toggle.nav-link {
 		font-size: 22px;
 	}
 	p {
-		font-size: 18px;
-	}
-	p {
 		font-size: 16px;
 	}
-	p {
+	.p {
 		font-size: 15px;
 	}
 	a {
@@ -1844,12 +1841,14 @@ a.dropdown-toggle.nav-link {
 	height: 50vh;
 }
 @media (min-width: 576px) {
+	p {
+	}
 	h1 {
 		font-family: montserrat, sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		line-height: 72px;
-		font-size: 64px;
+		font-size: 40px;
+		line-height: 62px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */
 	}
@@ -1857,7 +1856,7 @@ a.dropdown-toggle.nav-link {
 		font-family: montserrat, sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		font-size: 36px;
+		font-size: 35px;
 		line-height: 44px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */

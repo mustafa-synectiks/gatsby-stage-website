@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import {
 	TabContent,
@@ -22,183 +22,265 @@ import tab3 from '../../images/HomePage/Solution.png';
 import PoweredBySynectiks from '../../images/PoweredBySynectiks.png';
 
 const Tabs = () => {
-		const [ activeTab, setActiveTab ] = useState('1');
+	const [ activeTab, setActiveTab ] = useState('1');
 
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
-	}
-	return(
-<TabsWrapper>
-<div className='container-fluid px-0 px-md-5'>
-						<Nav tabs className='tabsFlex'>
-							<NavItem className='p-0'>
-								<NavLink
-									id='tab1'
-									className={classnames({ active: activeTab === '1' })}
-									onClick={() => {
-										toggle('1');
-									}}>
-									<div className='Homecard-shadow card'>
-										<div className='bgOrange ct2'>
-											<img className='card-img-top' src={tab2} alt='Foundation' />
-										</div>
-										<div className='card-body'>
-											<h2 className='text-center text-uppercase'>Open Platform</h2>
-											<h6 className='pointerDown arrow-down'>&#187;</h6>
-										</div>
-									</div>
-								</NavLink>
-							</NavItem>
-							<NavItem className='p-0'>
-								<NavLink
-									id='tab2'
-									className={classnames({ active: activeTab === '2' })}
-									onClick={() => {
-										toggle('2');
-									}}>
-									<div className='Homecard-shadow card'>
-										<div className='bgRed ct3'>
-											<img className='card-img-top' src={tab1} alt='Transformation' />
-										</div>
-										<div className='card-body'>
-											<h2 className='text-center text-uppercase'>Transformation</h2>
-										</div>
-										<h6 className='pointerDown arrow-down'>&#187;</h6>
-									</div>
-								</NavLink>
-							</NavItem>
-							<NavItem className='p-0'>
-								<NavLink
-									id='tab3'
-									className={classnames({ active: activeTab === '3' })}
-									onClick={() => {
-										toggle('3');
-									}}>
-									<div className='Homecard-shadow  card'>
-										<div className='bgBlue ct1'>
-											<img className='card-img-top' src={tab3} alt='Operation' />
-										</div>
-										<div className='card-body'>
-											<h2 className='text-center text-uppercase'>Solutions</h2>
-										</div>
-										<h6 className='pointerDown arrow-down'>&#187;</h6>
-									</div>
-								</NavLink>
-							</NavItem>
-						</Nav>
-						<TabContent activeTab={activeTab} className='bgWhite'>
-							<TabPane tabId='1' className='borderHomePageTab1'>
-								<Row>
-									<Col sm='12'>
-										<div className='p-2 p-md-4'>
-											<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
-										</div>
-										<p>
-											What is Xformation? It's a platform that provides peace of mind, governance,
-											efficiency and control of multi-cloud environments. Xformation helps you to
-											migrate and modernize your legacy business, take advantage of cloud and
-											microservice architecture and thereby accelerate your transformation journey
-											@50% time & cost.  Its primary goals are: Accelerated Cloud Adoption
-											Multi-cloud container orchestration App-centric Optimization Continuous
-											Delivery / Continuous Compliance / Continuous Automation. Automated
-											Performance Monitoring and Cost Control
+	};
+	return (
+		<TabsWrapper>
+			<div className='container-fluid px-0 px-md-5'>
+				<Nav tabs className='tabsFlex'>
+					<NavItem className='p-0'>
+						<NavLink
+							id='tab1'
+							className={classnames({ active: activeTab === '1' })}
+							onClick={() => {
+								toggle('1');
+							}}>
+							<div className='Homecard-shadow card'>
+								<div className='bgOrange ct2'>
+									<img className='card-img-top' src={tab2} alt='Foundation' />
+								</div>
+								<div className='card-body'>
+									<h2 className='text-center text-uppercase'>Open Platform</h2>
+									<h6 className='pointerDown arrow-down'>&#187;</h6>
+								</div>
+							</div>
+						</NavLink>
+					</NavItem>
+					<NavItem className='p-0'>
+						<NavLink
+							id='tab2'
+							className={classnames({ active: activeTab === '2' })}
+							onClick={() => {
+								toggle('2');
+							}}>
+							<div className='Homecard-shadow card'>
+								<div className='bgRed ct3'>
+									<img className='card-img-top' src={tab1} alt='Transformation' />
+								</div>
+								<div className='card-body'>
+									<h2 className='text-center text-uppercase'>Transformation</h2>
+								</div>
+								<h6 className='pointerDown arrow-down'>&#187;</h6>
+							</div>
+						</NavLink>
+					</NavItem>
+					<NavItem className='p-0'>
+						<NavLink
+							id='tab3'
+							className={classnames({ active: activeTab === '3' })}
+							onClick={() => {
+								toggle('3');
+							}}>
+							<div className='Homecard-shadow  card'>
+								<div className='bgBlue ct1'>
+									<img className='card-img-top' src={tab3} alt='Operation' />
+								</div>
+								<div className='card-body'>
+									<h2 className='text-center text-uppercase'>Solutions</h2>
+								</div>
+								<h6 className='pointerDown arrow-down'>&#187;</h6>
+							</div>
+						</NavLink>
+					</NavItem>
+				</Nav>
+				<TabContent activeTab={activeTab} className='bgWhite'>
+					<TabPane tabId='1' className='borderHomePageTab1'>
+						<Row>
+							<Col sm='12'>
+								<div className='p-2 p-md-4'>
+									<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
+								</div>
+								<h2>What is Xformation?</h2>
+								<p>
+									It's a platform that provides peace of mind, governance, efficiency and control of
+									multi-cloud environments. Xformation helps you to migrate and modernize your legacy
+									business, take advantage of cloud and microservice architecture and thereby
+									accelerate your transformation journey @50% time & cost.  Its primary goals are:
+								</p>
+								<ul>
+									<li>Accelerated Cloud Adoption</li>
+									<li>Multi-cloud container orchestration</li>
+									<li>App-centric Optimization </li>
+									<li>Continuous Delivery / Continuous Compliance / Continuous Automation.</li>
+									<li> Automated Performance Monitoring and Cost Control</li>
+								</ul>
+							</Col>
+						</Row>
+					</TabPane>
+					<TabPane tabId='2' className='borderHomePageTab2'>
+						<Row>
+							<Col sm='12'>
+								<h2 className='text-center'>Transformation Services </h2>
+								<p className='py-1 py-md-3'>
+									Synectiks Transformation services elevate your business by optimizing every aspect
+									of your operations for the public cloud or Hybrid cloud – your people,
+									infrastructure, applications and data.
+								</p>
+							</Col>
+						</Row>
+						<Row>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right'>
+										<h3 className='text-center heading-h3'>
+											Data <br />Transformation
+										</h3>
+										<p className='text-justify f-14 px-2 px-md-4'>
+											Consolidate your unstructured, semi structure and strtucture data and get
+											maximum business insights & real time with minimal TCO of data management
+											and its governance.
+											<br />
+											<br />
 										</p>
-									</Col>
-								</Row>
-							</TabPane>
-							<TabPane tabId='2' className='borderHomePageTab2'>
-								<Row>
-									<Col sm='12'>
-										<h2 className='text-center'>Transformation Services </h2>
-										<p className='py-1 py-md-3'>
-											Synectiks Transformation services elevate your business by optimizing every
-											aspect of your operations for the public cloud or Hybrid cloud – your
-											people, infrastructure, applications and data.
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right'>
+										<h3 className='text-center heading-h3'>DevOps Transformation</h3>
+										<p className='text-justify f-14 px-1 px-md-4'>
+											Adopting a DevOps culture starts by transforming your people, tech and
+											processes. Accelerate your DevOps adaption by using our open Automation
+											platform and skilled resources.
+											<br />
+											<br />
 										</p>
-									</Col>
-								</Row>
-								<Row>
-									<Col sm='12' md='3' className='p-1'>
-										<div className='py-1 py-md-3 h-100'>
-											<div className='border-right'>
-												<h3 className='text-center heading-h3'>
-													Data <br />Transformation
-												</h3>
-												<p className='text-justify f-14 px-2 px-md-4'>
-													Consolidate your unstructured, semi structure and strtucture data
-													and get maximum business insights & real time with minimal TCO of
-													data management and its governance.
-													<br />
-													<br />
-												</p>
-											</div>
-										</div>
-									</Col>
-									<Col sm='12' md='3' className='p-1'>
-										<div className='py-1 py-md-3 h-100'>
-											<div className='border-right'>
-												<h3 className='text-center heading-h3'>DevOps Transformation</h3>
-												<p className='text-justify f-14 px-1 px-md-4'>
-													Adopting a DevOps culture starts by transforming your people, tech
-													and processes. Accelerate your DevOps adaption by using our open
-													Automation platform and skilled resources.
-													<br />
-													<br />
-												</p>
-											</div>
-										</div>
-									</Col>
-									<Col sm='12' md='3' className='p-1'>
-										<div className='py-1 py-md-3 h-100'>
-											<div className='border-right'>
-												<h3 className='text-center heading-h3'>
-													Infrastructure Transformation
-												</h3>
-												<p className='text-justify f-14 px-2 px-md-4 border-right'>
-													Make sure that every bit of your hardware environment is directly
-													supporting your business objectives. Transition from a hardware
-													centric to a software Defined organisation make huge difference in
-													CapEx and Opex.
-												</p>
-											</div>
-										</div>
-									</Col>
-									<Col sm='12' md='3' className='p-1'>
-										<div className='py-3 h-100'>
-											<div className=''>
-												<h3 className='text-center heading-h3'>Application Transformation</h3>
-												<p className='text-justify f-14 px-4'>
-													Applications that power your enterprise are key to generating a
-													strong competitive advantage. Bring innovation, agility and
-													outstanding customer experience through moderm architectures and
-													cloud first approach.
-												</p>
-											</div>
-										</div>
-									</Col>
-								</Row>
-							</TabPane>
-							<TabPane tabId='3' className='borderHomePageTab3'>
-								<Row>
-									<Col sm='12'>
-										<Hexagon />
-									</Col>
-								</Row>
-							</TabPane>
-						</TabContent>
-					</div>
-</TabsWrapper>
-	)
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-1 py-md-3 h-100'>
+									<div className='border-right'>
+										<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
+										<p className='text-justify f-14 px-2 px-md-4 border-right'>
+											Make sure that every bit of your hardware environment is directly supporting
+											your business objectives. Transition from a hardware centric to a software
+											Defined organisation make huge difference in CapEx and Opex.
+										</p>
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-3 h-100'>
+									<div className=''>
+										<h3 className='text-center heading-h3'>Application Transformation</h3>
+										<p className='text-justify f-14 px-4'>
+											Applications that power your enterprise are key to generating a strong
+											competitive advantage. Bring innovation, agility and outstanding customer
+											experience through moderm architectures and cloud first approach.
+										</p>
+									</div>
+								</div>
+							</Col>
+						</Row>
+					</TabPane>
+					<TabPane tabId='3' className='borderHomePageTab3'>
+						<Row>
+							<Col sm='12'>
+								<Hexagon />
+							</Col>
+						</Row>
+					</TabPane>
+				</TabContent>
+			</div>
+		</TabsWrapper>
+	);
 };
 
 export default Tabs;
+
 const TabsWrapper = styled.div`
 .tabsFlex{
 	display:none;
 }
+.ct1,.ct2,.ct3{
+	width:0rem;
+	height:0rem;
+	padding:0;
+	img{
+		display:none;
+	}
+}
+
+
 @media screen and (min-width: 576px){
 	.tabsFlex{
 	display:none;
+}
+
+.card-body h2 {
+    font-family: montserrat;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,1);
+    font-weight: 600;
+    font-style: normal;
+}
+.card {
+			border: 1px solid rgba(0, 0, 0, 0);
+		}
+.card-body {
+    padding: 1rem 0rem 0rem 0rem;
+}
+.ct1,.ct2,.ct3{
+    padding: 3rem;
+    border-radius: 50%;
+    width: 10rem;
+    margin: 0 auto;
+				height: 10rem;
+				img{
+					display:block
+				}
+}
+
+.borderHomePageTab2{
+	border: 4px solid var(--synectiksRed);
+			padding: 1rem;
+			position: relative;
+			z-index: 0;
+			border-radius: 25px;
+}
+.borderHomePageTab3{
+	border: 4px solid var(--synectiksBlue);
+			padding: 1rem;
+			position: relative;
+			z-index: 0;
+			border-radius: 25px;
+			border-radius: 25px;
+    border-top-right-radius: 0;
+}
+		.borderHomePageTab1 {
+			border: 4px solid var(--synectiksOrange);
+			padding: 1rem;
+			position: relative;
+			z-index: 0;
+			border-radius: 25px;
+			border-radius: 25px;
+    border-top-left-radius: 0;
+		}
+
+		.Homecard-shadow {
+			width:18rem;
+			border-radius: 25px;
+			-webkit-border-radius: 25px  ;
+			-moz-border-radius: 25px ;
+			-ms-border-radius: 25px ;
+			-o-border-radius: 25px ;
+			padding-top:1rem;
+			cursor: pointer;
+		}
+.pointerDown {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	font-size: 4rem;
+	margin-top: 0rem;
+	text-align:center;
 }
 	.borderHomePageTab1 {
 			border: 4px solid var(--synectiksOrange);
@@ -263,7 +345,7 @@ color:var(--synectiksBlue);
     position: relative;
     z-index: 999;
     /* left: -20px; */
-    top: 0%;
+    top: 0.5%;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     box-shadow: 0px 0px 0px transparent;
@@ -277,7 +359,7 @@ color:var(--synectiksBlue);
     position: relative;
     z-index: 999;
     /* left: 0px; */
-    top: 0%;
+    top: 0.5%;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     box-shadow: 0px 0px 0px transparent;
@@ -291,7 +373,7 @@ color:var(--synectiksBlue);
     position: relative;
     z-index: 999;
     /* right: -20px; */
-    top: 0%;
+    top: 0.5%;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     box-shadow: 0px 0px 0px transparent;
@@ -457,4 +539,3 @@ color:var(--synectiksBlue);
 }
 }
 `;
-
