@@ -71,7 +71,7 @@ module.exports = [
 	},
 	{
 		path: '/hybridcloud/index.html',
-		component: path.resolve(`src/pages/Cloud/Hybridcloud.js`)
+		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
 	},
 	{
 		path: '/publiccloud/index.html',

@@ -1,15 +1,25 @@
 module.exports = {
 	siteMetadata: {
-		title: `Synectiks | Enterprise Devops`,
+		title: `Home`,
 		description: `Synectiks | Enterprise Devops`,
-		author: `Synectiks`
+		author: `Synectiks`,
+		siteUrl: `http://localhost:8000`
 	},
 	pathPrefix: '/next',
 	plugins: [
+		`gatsby-plugin-sitemap`,
 		`gatsby-remark-responsive-iframe`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'http://localhost:8000',
+				sitemap: 'http://localhost:8000/sitemap.xml',
+				policy: [ { userAgent: '*', allow: '/' } ]
+			}
+		},
 		{
 			resolve: `gatsby-plugin-styled-components`,
 			options: {

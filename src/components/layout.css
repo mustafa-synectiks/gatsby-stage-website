@@ -483,6 +483,9 @@ a.dropdown-toggle.nav-link {
 .noLine {
 	text-decoration: none !important;
 }
+.line {
+	text-decoration: underline;
+}
 
 .card-hd {
 	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);

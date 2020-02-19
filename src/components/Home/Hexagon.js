@@ -150,7 +150,9 @@ const Hexagon = () => {
 						<div className='text-center my-4'>
 							<h2>Expertise</h2>
 							<p className='text-uppercase mb-4'>
-								Delivering purpose-built solutions based on open products and frameworks
+								{/* Delivering purpose-built solutions based on open products and frameworks */}
+								Open Solutions Delivered in Multi Cloud Container Ecosystem to supercharge the Data
+								Driven Enterprise.
 							</p>
 						</div>
 						<div className='show' id='hc1'>

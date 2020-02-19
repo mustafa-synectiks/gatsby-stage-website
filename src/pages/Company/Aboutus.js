@@ -4,18 +4,18 @@ import { Helmet } from 'react-helmet';
 import about from '../../images/AboutUs.jpg';
 import Layout from '../../components/layout';
 import styled from 'styled-components';
-import EM from '../../images/hybrid/Engagement Model.png';
-import LTR from '../../images/hybrid/Long Term Retention.png';
-import WO from '../../images/hybrid/Optimization Service.png';
-import DE from '../../images/hybrid/DemoEnvironment.png';
-import EA from '../../images/hybrid/Extreme Automation.png';
-import PCP from '../../images/hybrid/Public Cloud Partnership.png';
-import SCP from '../../images/hybrid/Single Control plane.png';
-import CS from '../../images/hybrid/Compliance&Security.png';
-import TM from '../../images/hybrid/Time & Money.png';
-import EE from '../../images/hybrid/E2E Solution.png';
-import EX from '../../images/hybrid/Experience.png';
-import EXP from '../../images/hybrid/Expertise.png';
+import EM from '../../images/Hybrid/Engagement Model.png';
+import LTR from '../../images/Hybrid/Long Term Retention.png';
+import WO from '../../images/Hybrid/Optimization Service.png';
+import DE from '../../images/Hybrid/DemoEnvironment.png';
+import EA from '../../images/Hybrid/Extreme Automation.png';
+import PCP from '../../images/Hybrid/Public Cloud Partnership.png';
+import SCP from '../../images/Hybrid/Single Control plane.png';
+import CS from '../../images/Hybrid/Compliance&Security.png';
+import TM from '../../images/Hybrid/Time & Money.png';
+import EE from '../../images/Hybrid/E2E Solution.png';
+import EX from '../../images/Hybrid/Experience.png';
+import EXP from '../../images/Hybrid/Expertise.png';
 
 const blue = {
 	color: '#007CC2'

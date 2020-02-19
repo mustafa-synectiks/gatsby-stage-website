@@ -5,48 +5,48 @@ import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
-import HybridCloud from '../../images/hybrid/Hybrid Cloud.jpg';
-import hybridIma from '../../images/hybrid/HybridCloud.jpg';
+import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
+import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
-import AI from '../../images/hybrid/AccelerateInnovation.png';
-import RC from '../../images/hybrid/Right Cloud.png';
-import BCC from '../../images/hybrid/BalanceCost&Control.png';
-import EVL from '../../images/hybrid/Eliminate Vendor Lock In.png';
-import WM from '../../images/hybrid/Workload Migration.png';
-import IC from '../../images/hybrid/Integrating Clouds.png';
-import WC from '../../images/hybrid/Workload Fragmentation.png';
-import SPRT from '../../images/hybrid/Support & Assistance.png';
-import DRB from '../../images/hybrid/Discovery&Assessment.png';
-import DSCR from '../../images/hybrid/DisasterRecoveryBackup.png';
+import AI from '../../images/Hybrid/AccelerateInnovation.png';
+import RC from '../../images/Hybrid/Right Cloud.png';
+import BCC from '../../images/Hybrid/BalanceCost&Control.png';
+import EVL from '../../images/Hybrid/Eliminate Vendor Lock In.png';
+import WM from '../../images/Hybrid/Workload Migration.png';
+import IC from '../../images/Hybrid/Integrating Clouds.png';
+import WC from '../../images/Hybrid/Workload Fragmentation.png';
+import SPRT from '../../images/Hybrid/Support & Assistance.png';
+import DRB from '../../images/Hybrid/Discovery&Assessment.png';
+import DSCR from '../../images/Hybrid/DisasterRecoveryBackup.png';
 import scr from '../../images/Screenshot_3.png';
 // import scrs from "../../images/Screenshot_4.png"
-import WS from '../../images/hybrid/Web Servers.png';
-import ETL from '../../images/hybrid/DataExtract.png';
-import HRP from '../../images/hybrid/HR Payroll.png';
-import SLDR from '../../images/hybrid/Supporting Local Data Regulations.png';
-import GGEC from '../../images/hybrid/Go Global and edge computing.png';
+import WS from '../../images/Hybrid/Web Servers.png';
+import ETL from '../../images/Hybrid/DataExtract.png';
+import HRP from '../../images/Hybrid/HR Payroll.png';
+import SLDR from '../../images/Hybrid/Supporting Local Data Regulations.png';
+import GGEC from '../../images/Hybrid/Go Global and edge computing.png';
 import SCR5 from '../../images/Screenshot_5.png';
-import ADT from '../../images/hybrid/ApplicationDevelopmentandTesting.png';
+import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
 import HC from '../../images/Hybridcloud.png';
-import ECC from '../../images/hybrid/Embrace Cultural Changes.png';
-import RCM from '../../images/hybrid/Revamp change management.png';
-import ICO from '../../images/hybrid/Integrate cloud operations.png';
-import AS from '../../images/hybrid/Automatesupport.png';
-import ST from '../../images/hybrid/Shadow IT.png';
-import TS from '../../images/hybrid/Transformation Services.png';
-import EM from '../../images/hybrid/Engagement Model.png';
-import LTR from '../../images/hybrid/Long Term Retention.png';
-import WO from '../../images/hybrid/Optimization Service.png';
-import DE from '../../images/hybrid/DemoEnvironment.png';
-import EA from '../../images/hybrid/Extreme Automation.png';
-import PCP from '../../images/hybrid/Public Cloud Partnership.png';
-import SCP from '../../images/hybrid/Single Control plane.png';
-import CS from '../../images/hybrid/Compliance&Security.png';
-import TM from '../../images/hybrid/Time & Money.png';
-import EE from '../../images/hybrid/E2E Solution.png';
-import EX from '../../images/hybrid/Experience.png';
-import EXP from '../../images/hybrid/Expertise.png';
+import ECC from '../../images/Hybrid/Embrace Cultural Changes.png';
+import RCM from '../../images/Hybrid/Revamp change management.png';
+import ICO from '../../images/Hybrid/Integrate cloud operations.png';
+import AS from '../../images/Hybrid/Automatesupport.png';
+import ST from '../../images/Hybrid/Shadow IT.png';
+import TS from '../../images/Hybrid/Transformation Services.png';
+import EM from '../../images/Hybrid/Engagement Model.png';
+import LTR from '../../images/Hybrid/Long Term Retention.png';
+import WO from '../../images/Hybrid/Optimization Service.png';
+import DE from '../../images/Hybrid/DemoEnvironment.png';
+import EA from '../../images/Hybrid/Extreme Automation.png';
+import PCP from '../../images/Hybrid/Public Cloud Partnership.png';
+import SCP from '../../images/Hybrid/Single Control plane.png';
+import CS from '../../images/Hybrid/Compliance&Security.png';
+import TM from '../../images/Hybrid/Time & Money.png';
+import EE from '../../images/Hybrid/E2E Solution.png';
+import EX from '../../images/Hybrid/Experience.png';
+import EXP from '../../images/Hybrid/Expertise.png';
 import GSHC from '../../images/GettingStartedwithHybridCloud.png';
 import HSCH from '../../images/HowSynectiksCanhelp.png';
 import SD from '../../images/SynectiksDifferentiator.png';
@@ -124,17 +124,12 @@ const Hybridcloud = () => {
 														toggle('4');
 														toggleTab();
 													}}>
-													{/* <span>
-                      <img src={SD} alt="" className='imgHyb'/>
-                    </span> */}
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
 											</NavItem>
 										</Nav>
 									</Collapse>
 								</Navbar>
-								{/* </div> */}
-								{/* <div className="px-1 mb-3 col-md-10"> */}
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>

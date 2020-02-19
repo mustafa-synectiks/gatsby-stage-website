@@ -5,47 +5,48 @@ import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
-import HybridCloud from '../../images/HybridCloud.jpg';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
+import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
-import AI from '../../images/hybrid/AccelerateInnovation.png';
-import RC from '../../images/hybrid/Right Cloud.png';
-import BCC from '../../images/hybrid/BalanceCost&Control.png';
-import EVL from '../../images/hybrid/Eliminate Vendor Lock In.png';
-import WM from '../../images/hybrid/Workload Migration.png';
-import IC from '../../images/hybrid/Integrating Clouds.png';
-import WC from '../../images/hybrid/Workload Fragmentation.png';
-import SPRT from '../../images/hybrid/Support & Assistance.png';
-import DRB from '../../images/hybrid/Discovery&Assessment.png';
-import DSCR from '../../images/hybrid/DisasterRecoveryBackup.png';
+import AI from '../../images/Hybrid/AccelerateInnovation.png';
+import RC from '../../images/Hybrid/Right Cloud.png';
+import BCC from '../../images/Hybrid/BalanceCost&Control.png';
+import EVL from '../../images/Hybrid/Eliminate Vendor Lock In.png';
+import WM from '../../images/Hybrid/Workload Migration.png';
+import IC from '../../images/Hybrid/Integrating Clouds.png';
+import WC from '../../images/Hybrid/Workload Fragmentation.png';
+import SPRT from '../../images/Hybrid/Support & Assistance.png';
+import DRB from '../../images/Hybrid/Discovery&Assessment.png';
+import DSCR from '../../images/Hybrid/DisasterRecoveryBackup.png';
 import scr from '../../images/Screenshot_3.png';
 // import scrs from "../../images/Screenshot_4.png"
-import WS from '../../images/hybrid/Web Servers.png';
-import ETL from '../../images/hybrid/DataExtract.png';
-import HRP from '../../images/hybrid/HR Payroll.png';
-import SLDR from '../../images/hybrid/Supporting Local Data Regulations.png';
-import GGEC from '../../images/hybrid/Go Global and edge computing.png';
+import WS from '../../images/Hybrid/Web Servers.png';
+import ETL from '../../images/Hybrid/DataExtract.png';
+import HRP from '../../images/Hybrid/HR Payroll.png';
+import SLDR from '../../images/Hybrid/Supporting Local Data Regulations.png';
+import GGEC from '../../images/Hybrid/Go Global and edge computing.png';
 import SCR5 from '../../images/Screenshot_5.png';
-import ADT from '../../images/hybrid/ApplicationDevelopmentandTesting.png';
+import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
 import HC from '../../images/Hybridcloud.png';
-import ECC from '../../images/hybrid/Embrace Cultural Changes.png';
-import RCM from '../../images/hybrid/Revamp change management.png';
-import ICO from '../../images/hybrid/Integrate cloud operations.png';
-import AS from '../../images/hybrid/Automatesupport.png';
-import ST from '../../images/hybrid/Shadow IT.png';
-import TS from '../../images/hybrid/Transformation Services.png';
-import EM from '../../images/hybrid/Engagement Model.png';
-import LTR from '../../images/hybrid/Long Term Retention.png';
-import WO from '../../images/hybrid/Optimization Service.png';
-import DE from '../../images/hybrid/DemoEnvironment.png';
-import EA from '../../images/hybrid/Extreme Automation.png';
-import PCP from '../../images/hybrid/Public Cloud Partnership.png';
-import SCP from '../../images/hybrid/Single Control plane.png';
-import CS from '../../images/hybrid/Compliance&Security.png';
-import TM from '../../images/hybrid/Time & Money.png';
-import EE from '../../images/hybrid/E2E Solution.png';
-import EX from '../../images/hybrid/Experience.png';
-import EXP from '../../images/hybrid/Expertise.png';
+import ECC from '../../images/Hybrid/Embrace Cultural Changes.png';
+import RCM from '../../images/Hybrid/Revamp change management.png';
+import ICO from '../../images/Hybrid/Integrate cloud operations.png';
+import AS from '../../images/Hybrid/Automatesupport.png';
+import ST from '../../images/Hybrid/Shadow IT.png';
+import TS from '../../images/Hybrid/Transformation Services.png';
+import EM from '../../images/Hybrid/Engagement Model.png';
+import LTR from '../../images/Hybrid/Long Term Retention.png';
+import WO from '../../images/Hybrid/Optimization Service.png';
+import DE from '../../images/Hybrid/DemoEnvironment.png';
+import EA from '../../images/Hybrid/Extreme Automation.png';
+import PCP from '../../images/Hybrid/Public Cloud Partnership.png';
+import SCP from '../../images/Hybrid/Single Control plane.png';
+import CS from '../../images/Hybrid/Compliance&Security.png';
+import TM from '../../images/Hybrid/Time & Money.png';
+import EE from '../../images/Hybrid/E2E Solution.png';
+import EX from '../../images/Hybrid/Experience.png';
+import EXP from '../../images/Hybrid/Expertise.png';
 import GSHC from '../../images/GettingStartedwithHybridCloud.png';
 import HSCH from '../../images/HowSynectiksCanhelp.png';
 import SD from '../../images/SynectiksDifferentiator.png';
@@ -54,7 +55,9 @@ import styled from 'styled-components';
 
 const Hybridcloud = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
+	const [ collapsed, setCollapsed ] = useState(true);
 
+	const toggleNavbar = () => setCollapsed(!collapsed);
 	const toggle = (tab) => {
 		if (activeTab !== tab) setActiveTab(tab);
 	};
@@ -68,19 +71,17 @@ const Hybridcloud = () => {
 		<Layout>
 			<HybridWrapper>
 				<div className='container-fluid '>
-					<div className='px-5 py-2 text-justify' />
+					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />
 					<div className=''>
 						<Row className='position-relative'>
-							<div className='col-md-12'>
-								<div className=''>
-									{/* <div className="hybridFixed"> */}
-									<button onClick={toggleTab} className='logo-btn'>
-										<FaBars />
-									</button>
-									<div>
-										<Nav className='d-flex my-4 mx-auto w-85'>
-											{/* <Nav className='sidetabs'> */}
-											{/* <Nav vertical className='sidetabs'> */}
+							<div className='col-sm-12 col-md-12'>
+								<Navbar color='light' light expand='lg' className='topNav'>
+									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
+										<FaBars className='navbar-toggler-icon' />
+										<span className='my-1 mx-2 close'>X</span>
+									</NavbarToggler>
+									<Collapse isOpen={!collapsed} navbar>
+										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
@@ -123,32 +124,26 @@ const Hybridcloud = () => {
 														toggle('4');
 														toggleTab();
 													}}>
-													{/* <span>
-                      <img src={SD} alt="" className='imgHyb'/>
-                    </span> */}
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
 											</NavItem>
 										</Nav>
-									</div>
-								</div>
-								{/* </div> */}
-								{/* <div className="px-1 mb-3 col-md-10"> */}
+									</Collapse>
+								</Navbar>
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
 											<div className=''>
-												<div className='w-100 pt-5'>
+												<div className='w-100 hybJumbo'>
 													<img
-														className='himage'
+														className='himage '
 														height='auto'
-														src={HybridCloud}
+														src={hybridIma}
 														alt='Hybrid Cloud'
 													/>
-													{/* </div>
-                        <div className="hp ml-5"> */}
+
 													<h2 className=''>Why Hybrid Cloud?</h2>
-													<h4 className='py-3'>Public, Private, and Hybrid Clouds</h4>
+													<h4 className='py-1 py-md-3'>Public, Private, and Hybrid Clouds</h4>
 													<p>
 														Public cloud is what people think of when they hear the word
 														“cloud.” It’s ideal for application development, scientific data
@@ -186,11 +181,11 @@ const Hybridcloud = () => {
 												</div>
 											</div>
 										</div>
-										<div className='shadow p-4 bgWhite'>
+										<div className='shadow p-4 p-md-4 bgWhite'>
 											<h3>Key Drivers for Hybrid cloud adoption is:</h3>
 											<div className=''>
-												<div className='my-3 d-flex flex-row justify-content-around align-items-center'>
-													<img src={AI} alt='' className='w15' />
+												<div className='my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
+													<img src={AI} alt='' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid'>
 														Experiment with new ideas on the cloud. Build once and run
 														anywhere. With secure, easily managed, low-cost cloud resources,
@@ -201,8 +196,8 @@ const Hybridcloud = () => {
 														hybrid cloud for better performance and cost savings.
 													</p>
 												</div>
-												<div className='my-3 d-flex flex-row justify-content-around align-items-center'>
-													<img src={RC} alt='' className='w15' />
+												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
+													<img src={RC} alt='' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
@@ -217,8 +212,8 @@ const Hybridcloud = () => {
 														(virtual servers in the cloud) are no longer needed.
 													</p>
 												</div>
-												<div className='my-3 d-flex flex-row justify-content-around align-items-center'>
-													<img src={BCC} alt='' className='w15' />
+												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
+													<img src={BCC} alt='' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
@@ -233,8 +228,8 @@ const Hybridcloud = () => {
 														(virtual servers in the cloud) are no longer needed.
 													</p>
 												</div>
-												<div className='my-3 d-flex flex-row justify-content-around align-items-center'>
-													<img src={EVL} alt='' className='w15' />
+												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
+													<img src={EVL} alt='' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid'>
 														Reduce dependency on proprietary services, application tools,
 														and cloud providers. To support global delivery, companies are
@@ -268,7 +263,7 @@ const Hybridcloud = () => {
 												</p>
 											</div>
 										</div>
-										<div className='bgBlue text-white text-center p-5'>
+										<div className='textColor text-center p-2 p-md-5'>
 											<h3>Hybrid Cloud Challenges</h3>
 											<p>
 												Migration of workloads and integration between the private and public
@@ -284,7 +279,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={WM} alt='' className='w-25 m-0' />
+															<img src={WM} alt='' className='w20 m-0' />
 															<h4 className='my-3'>Workload Migration</h4>
 														</div>
 														<p>
@@ -294,7 +289,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={IC} alt='' className='w-25 m-0' />
+															<img src={IC} alt='' className='w20 m-0' />
 															<h4 className='my-4'>Integrating Clouds</h4>
 														</div>
 														<p>
@@ -306,7 +301,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={WC} alt='' className='w-25 m-0' />
+															<img src={WC} alt='' className='w20 m-0' />
 															<h4 className='my-3'>Workload Fragmentation</h4>
 														</div>
 														<p>
@@ -316,7 +311,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={SPRT} alt='' className='w-25 m-0' />
+															<img src={SPRT} alt='' className='w20 m-0' />
 															<h4 className='my-3'>Support & Assistance</h4>
 														</div>
 														<p>
@@ -353,8 +348,12 @@ const Hybridcloud = () => {
 
 											<div className='row'>
 												<div className='col-md-6'>
-													<div className='d-flex align-items-center my-3'>
-														<img src={DSCR} alt='' className='w-25 mr-3 my-3' />
+													<div className='d-flex align-items-center my-2 my-md-3'>
+														<img
+															src={DSCR}
+															alt=''
+															className='w20 mr-2 mr-md-3 my-3 my-md-3'
+														/>
 														<h4>Disaster Recovery/Backup</h4>
 													</div>
 													<div>
@@ -369,13 +368,17 @@ const Hybridcloud = () => {
 													</div>
 												</div>
 												<div className='col-md-6'>
-													<img src={scr} className='imgBx wimg w-75' alt='' />
+													<img
+														src={scr}
+														className='imgBx wimg w-sm-100 my-3 my-md-2'
+														alt=''
+													/>
 												</div>
 											</div>
 
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={ADT} alt='' className='w15 mr-3 my-3 b-1' />
+													<img src={ADT} alt='' className='w15 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Application Development and Testing</h4>
 												</div>
 												<p>
@@ -388,7 +391,7 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={WS} alt='' className='whbd9 mr-3 my-3' />
+													<img src={WS} alt='' className='whbd9 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Web Servers</h4>
 												</div>
 												<p>
@@ -403,11 +406,15 @@ const Hybridcloud = () => {
 												</p>
 											</div>
 											<div className='text-center'>
-												<img src={SCR5} className='imgBx wimg w-75' alt='' />
+												<img
+													src={SCR5}
+													className='imgBx wimg w-sm-100 mx-auto my-3 my-md-4'
+													alt=''
+												/>
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={ETL} alt='' className='whbd7 mr-3 my-3 b-1' />
+													<img src={ETL} alt='' className='whbd7 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Data Extract, Transform, and Load (ETL) processes</h4>
 												</div>
 												<p>
@@ -419,7 +426,11 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={HRP} alt='' className='whbd9 mr-3 my-3' />
+													<img
+														src={HRP}
+														alt=''
+														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
+													/>
 													<h4>HR, Payroll, Productivity Applications</h4>
 												</div>
 												<p>
@@ -450,7 +461,11 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={SLDR} alt='' className='whbd7 mr-3 my-3' />
+													<img
+														src={SLDR}
+														alt=''
+														className='whbd7 mr-2 mr-md-3 my-2 my-md-3'
+													/>
 													<h4>Supporting Local Data Regulations</h4>
 												</div>
 												<p>
@@ -467,7 +482,11 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={GGEC} alt='' className='whbd9 mr-3 my-3' />
+													<img
+														src={GGEC}
+														alt=''
+														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
+													/>
 													<h4>Go Global and edge computing </h4>
 												</div>
 												<p>
@@ -487,7 +506,7 @@ const Hybridcloud = () => {
 										<div className=''>
 											<div className='row'>
 												<div className='col-md-6'>
-													<h2 className=''>GETTING STARTED TO HYBRID CLOUD</h2>
+													{/* <h2 className=''>GETTING STARTED TO HYBRID CLOUD</h2> */}
 													<p>
 														The first step is for CIOs to connect with the business to
 														establish clear lines of communication and to set common goals.
@@ -509,7 +528,7 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 												<div className='col-md-6'>
-													<img src={HC} alt='' className='w-75' />
+													<img src={HybridCloud} alt='' className='w-75' />
 												</div>
 											</div>
 											<div>
@@ -522,7 +541,9 @@ const Hybridcloud = () => {
 											<div className='row'>
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<img src={ECC} alt='' className='w-22' />
-													<h4>Embrace Cultural Changes</h4>
+													<h4>
+														Embrace <br />Cultural Changes
+													</h4>
 												</div>
 												<div className='col-sm-8 col-md-8'>
 													<p>
@@ -540,7 +561,9 @@ const Hybridcloud = () => {
 											<div className='row'>
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<img src={RCM} alt='' className='w-25' />
-													<h4>Revamp change management</h4>
+													<h4>
+														Revamp <br />Change Management
+													</h4>
 												</div>
 												<div className='col-ms-8 col-md-8'>
 													<p>
@@ -556,7 +579,9 @@ const Hybridcloud = () => {
 											<div className='row'>
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<img src={ICO} alt='' className='w-22' />
-													<h4>Integrate cloud operations</h4>
+													<h4>
+														Integrate <br />Cloud Operations
+													</h4>
 												</div>
 												<div className='col-ms-8 col-md-8'>
 													<p>
@@ -593,7 +618,9 @@ const Hybridcloud = () => {
 											<div className='row mlr '>
 												<div className='col-sm-12 col-md-4 text-center d-flex align-items-center flex-column'>
 													<img src={ST} alt='' className='w-22' />
-													<h4>Manage “shadow IT”</h4>
+													<h4>
+														Manage <br /> “Shadow IT”
+													</h4>
 												</div>
 												<div className='col-sm-12 col-md-8'>
 													<p>
@@ -613,12 +640,12 @@ const Hybridcloud = () => {
 									</TabPane>
 									<TabPane tabId='3'>
 										<div>
+											{/* <h2 className=''>HOW SYNECTIKS CAN HELP</h2> */}
 											<p className=''>
-												<h2 className='hybmt'>HOW SYNECTIKS CAN HELP</h2>
 												Synectiks can enable your enterprise journey to hybrid IT, regardless of
 												your starting point.
 											</p>
-											<div className='row my-5'>
+											<div className='row my-2 my-md-5'>
 												<div className='col-md-4 text-center d-flex align-items-center flex-column'>
 													<img src={DRB} alt='' className='w-25 mt-n5' />
 													<h4>Discovery & Assessment</h4>
@@ -635,7 +662,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={TS} alt='' className='w-25 mt-3' />
+													<img src={TS} alt='' className='w-25 mt-2 mt-md-3' />
 													<h4>Transformation Services</h4>
 												</div>
 												<div className='col-md-8'>
@@ -653,17 +680,17 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 											</div>
-											<blockquote className='blockquote blockquote-custom bg-white p-5 shadow rounded my-5'>
+											<blockquote className='blockquote blockquote-custom bg-white p-5 shadow rounded my-2 my-md-5'>
 												<div className='blockquote-custom-icon bg-info shadow-sm'>
 													<i className='fa fa-quote-left text-white' />
 												</div>
-												<p className='mb-0 mt-2 font-italic'>
+												<p className='mb-0 mt-1 mt-md-2 font-italic'>
 													"Synectiks managed services helped us to consolidate our entire
 													business from 4 different DC’s to a hybrid cloud that is fully
 													software defined and microservices based ensuring our scalability
 													and performance SLA."
 												</p>
-												<footer className='blockquote-footer pt-4 mt-4 border-top'>
+												<footer className='blockquote-footer pt-2 mt-2 pt-md-4 mt-md-4 border-top'>
 													Top 2 Motor Industry
 													<br />
 													<cite title='Source Title'>
@@ -676,32 +703,34 @@ const Hybridcloud = () => {
 									<TabPane tabId='4'>
 										<div className=''>
 											<div className=''>
-												<h3>
+												{/* <h3>
 													<b>Synectiks</b> Differentiator
-												</h3>
+												</h3> */}
 												<p>
 													We go beyond creating a strategy: Synectiks helps you plan it, do
 													it, run it and manage it.
 												</p>
 
-												<h4>
+												<h4 className='text-center line'>
 													Top 12 Reasons to select Synectiks as your Hybrid Cloud Partner:
 												</h4>
 											</div>
 
-											<div className='my-4'>
+											<div className='my-2 my-md-4'>
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EX} alt='' className='tw m-0' />
-															<h4 className='my-3'>Experience</h4>
+															<h4 className='my-2 my-md-3'>Experience</h4>
 														</div>
-														<p> 10+ Large Scale Hybrid Cloud Transformation</p>
+														<p className='text-center'>
+															10+ Large Scale Hybrid Cloud Transformation
+														</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EXP} alt='' className='tw m-0' />
-															<h4 className='my-4'>Expertise</h4>
+															<h4 className='my-2 my-md-4'>Expertise</h4>
 														</div>
 														<p>
 															Experience Team with proven track record of CloudOps
@@ -711,10 +740,9 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={TM} alt='' className='tw m-0' />
-															<h4 className='my-3'>Time & Money</h4>
+															<h4 className='my-2 my-md-3'>Time & Money</h4>
 														</div>
 														<p>
-															{' '}
 															Our open Product Driven Delivery Model allows customers to
 															quickly build, deliver and orchestrate cross cloud services
 															@50% time & cost.
@@ -751,7 +779,7 @@ const Hybridcloud = () => {
                           l-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={CS} alt='' className='tw m-0' />
-															<h4 className='my-4'>Compliance & Security</h4>
+															<h4 className='my-2 my-md-4'>Compliance & Security</h4>
 														</div>
 														<p>
 															Our compliance and security assessment tools makes sure your
@@ -766,7 +794,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EA} alt='' className='tw m-0' />
-															<h4 className='my-3'>Extreme Automation</h4>
+															<h4 className='my-2 my-md-3'>Extreme Automation</h4>
 														</div>
 														<p>
 															{' '}
@@ -778,7 +806,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={PCP} alt='' className='tw m-0' />
-															<h4 className='my-4'>Public Cloud Partnership</h4>
+															<h4 className='my-2 my-md-4'>Public Cloud Partnership</h4>
 														</div>
 														<p>
 															Our advanced partnership with major public cloud providers
@@ -790,7 +818,7 @@ const Hybridcloud = () => {
 															<div>
 																<div className='d-flex align-items-center flex-column'>
 																	<img src={DE} alt='' className='tw m-0' />
-																	<h4 className='my-3'>Demo Environment</h4>
+																	<h4 className='my-2 my-md-3'>Demo Environment</h4>
 																</div>
 																<p>
 																	Avail the opportunity to quickly create demo hybrid
@@ -807,14 +835,14 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={WO} alt='' className='tw m-0' />
-															<h4 className='my-4'>Optimization Service</h4>
+															<h4 className='my-2 my-md-4'>Optimization Service</h4>
 														</div>
 														<p>We do optimal resource pooling from multiple clouds.</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EM} alt='' className='tw m-0' />
-															<h4 className='my-3'>Engagement Model</h4>
+															<h4 className='my-2 my-md-3'>Engagement Model</h4>
 														</div>
 														<p>
 															Our every engagement focused on empowerment – not dependency
@@ -823,7 +851,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={LTR} alt='' className='tw m-0' />
-															<h4 className='my-4'>Long Term Retention</h4>
+															<h4 className='my-2 my-md-4'>Long Term Retention</h4>
 														</div>
 														<p>100% Customer Retention Rate.</p>
 													</div>
@@ -859,282 +887,356 @@ const Hybridcloud = () => {
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
-	.hybridFixed {
-		position: fixed;
-		top: 6rem;
-		left: 0;
-		z-index: 99;
+.topNav{
+	position: fixed;
+	top: 100px;
+}
+.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: rgba(0, 0, 0, 0);
+  }
+  .navbar-toggler > .close {
+		display: inline;
 	}
-	a#bgL,
-	a#bgLL,
-	a#bgLLL {
-		padding: 0.5rem 1.5rem;
-		font-size: 12px;
-		height: auto;
-		/* background: white !important; */
-		text-align: left;
-		/* display:flex;
-    justify-content: space-between; */
+	.navbar-toggler > .navbar-toggler-icon {
+		display: none;
 	}
-	a#bgL.active,
-	a#bgLL.active,
-	a#bgLLL.active {
-		border-bottom: 5px solid #007cc2;
-		background: bgBlue !important;
-		text-align: left;
-		color: var(--synectiksWhite);
-		border-radius: 0px;
-		/* padding: 0.5rem 1.5rem; */
-		font-size: 12px;
-		height: auto;
+	.navbar-toggler:not(.collapsed) > .close {
+		display: none;
+	}
+	.navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+		display: inline;
+	}
+h1,h2,h3,h4,h5,h5,p,ul{
+  text-align: left;
+}
+.hybJumbo{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  .himage {
 		width: 100%;
-	}
-	.imgHyb {
-		margin-right: 25px !important;
-		width: 55px !important;
-		z-index: 999;
-		position: relative;
-	}
-	.one {
-		z-index: 99999;
-		/* display: flex; */
-		background: white;
-		/* box-shadow: 5px 5px 5px lightgray; */
-		/* padding: 5px 2px 2px 2px; */
-		/* border-bottom: 1px solid lightgrey; */
-		/* width:100%; */
-		/* background:rgba(0,0,0,0.5); */
-	}
-	ul.tabList.nav.flex-column {
+    height: auto;
+    float: none;
+		box-shadow: 5px 5px 5px #789;
+		margin-bottom: 10px;
+    margin-left:0rem;
+  }
+}
+.marHybrid{
+  margin-left: 0rem;
+}
+.w-sm-100{
+  width: 100%;
+}
+.hybridFixed{
+  position: fixed;
+  top:6rem;
+  left:0;
+  z-index: 99;
+}
+a#bgL,
+a#bgLL,
+a#bgLLL {
+    padding: 0.5rem 1.5rem;
+    font-size: 12px;
+    height: auto;
+    /* background: white !important; */
+    text-align: left;
+    /* display:flex;
+    justify-content: space-between; */
+}
+a#bgL.active,
+a#bgLL.active,
+a#bgLLL.active  {
+    border-bottom: 5px solid #007cc2;
+    background: bgBlue !important;
+    text-align: left;
+    color: var(--synectiksWhite);
+    border-radius: 0px;
+    /* padding: 0.5rem 1.5rem; */
+    font-size: 12px;
+    height: auto;
+    width:100%;
+}
+.imgHyb {
+	margin-right: 25px !important;
+  width: 55px !important;
+  z-index: 999;
+  position: relative;
+}
+.one {
+	z-index: 99999;
+	background: white;
+	width: 100%;
+}
+ul.tabList.nav.flex-column {
 		position: relative;
 		z-index: 99999;
 		width: 100%;
 		left: 0rem;
 	}
 	.tabList {
-		display: block;
-		/* width: 100%;
+    display:block;
+  }
+  .tabsHide {
+    display: none;
+  }
+h1{
+  font-size:32px;
+}
+h2{
+ font-size: 26px;
+}
+h3{
+  font-size:22px;
+}
+h4{
+  font-size:18px;
+}
+p{
+  font-size:18px;
+}
+.hybmt{
+  margin-top: 2.5rem;
+}
+.nav-link.active{
+  background: var(--synectiksBlue);
+  color: var(--synectiksWhite);
+}
+.logo-btn {
+    font-size:2rem;
+    background: white;
+    border: none;
+    outline: none;
+    width: 100vw;
+    padding: 0.6rem;
+    text-align: left;
+    box-shadow: 2px 1px 10px rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.5);
+}
+
+    .logo-btn:hover {
+      cursor: pointer;
+    }
+      .tab-content>.active{
+        padding:0rem 0.5rem;
+      }
+      	.whbd9 {
+		width: 25%;
+  }
+  	.whbd7 {
+		width:25%;
+  }
+ .w20{
+		width:25%;
+  }
+  .w15 {
+	width: 25%;
+}
+
+
+@media (min-width: 576px){
+	.topNav{
+	position: relative;
+	top: 0px;
+	z-index: 999;
+}
+	.one {
+	z-index: 99999;
+	background: white;
+	width: auto;
+}
+  .hybJumbo{
+    display:block;
+    	.himage {
+		width: 50%;
+		height: auto;
+		box-shadow: 5px 5px 5px #789;
+		float: right;
+		margin-left: 2rem;
+		margin-bottom: 10px;
+  }
+  }
+  .w15 {
+	width: 8%;
+}
+  	.whbd7 {
+		width: 7%;
+	}
+  	.whbd9 {
+		width: 8%;
+  }
+  .w18{
+    width:
+  }
+  .w20{
+    width: 16%;
+  }
+.w-85{
+  width: 87vw;
+    border: 1px solid var(--textColor);
+    background: var(--synectiksWhite);
+    justify-content: space-between;
+}
+  ul.nav.flex-column {
+		position: relative;
+		z-index: 99999;
+		width: 100%;
+		/* width: 25vw; */
+		left: 0rem;
+  }
+
+	ul.nav.flex-column > li > a {
+		width: 100%;
 		color: rgba(0, 0, 0, 0.8);
 		height: 10vh;
-		font-size:15px;
-		cursor: pointer; */
-		/* padding-left: 3.2rem; */
-	}
-	.tabsHide {
-		display: none;
-	}
-	h1 {
-		font-size: 1.4rem;
-	}
-	h2 {
-		font-size: 1.3rem;
-	}
-	h3 {
-		font-size: 1.2rem;
-	}
-	h4 {
-		font-size: 1.1rem;
-	}
-	.hybmt {
-		margin-top: 2.5rem;
-	}
-	.nav-link.active {
-		background: var(--synectiksBlue);
-		color: var(--synectiksWhite);
-	}
-	.logo-btn {
-		font-size: 2rem;
-		background: white;
-		border: none;
-		outline: none;
-		width: 100vw;
-		padding: 0.6rem;
-		text-align: left;
-		box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.3);
-		color: rgba(0, 0, 0, 0.5);
-	}
-
-	.logo-btn:hover {
+		font-size:14px;
 		cursor: pointer;
+		/* padding-left: 3.2rem; */
+  }
+  ul.nav.flex-column > li > a {
+    width: 100%;
+    color: rgba(0,0,0,0.8);
+    height: 10vh;
+    font-size: 15px;
+    cursor: pointer;
+  }
+ .tab-content>.active{
+        padding:0rem 4rem;
+      }
 	}
-	.tab-content {
-		padding-top: 4rem;
-	}
+  a#bgL,a#bgLL,a#bgLLL{
+    background: bgBlue !important;
+    text-align: left;
+     font-size: 14px;
+     cursor: pointer;
+  }
 
-	@media (min-width: 576px) {
-		.w-85 {
-			width: 87vw;
-			border: 1px solid var(--textColor);
-			background: var(--synectiksWhite);
-			justify-content: space-between;
-		}
-		ul.nav.flex-column {
-			position: relative;
-			z-index: 99999;
-			width: 100%;
-			/* width: 25vw; */
-			left: 0rem;
-		}
-		.tabList {
-			display: block;
-		}
-		.tabsHide {
-			display: block;
-		}
-		ul.nav.flex-column > li > a {
-			width: 100%;
-			color: rgba(0, 0, 0, 0.8);
-			height: 10vh;
-			font-size: 14px;
-			cursor: pointer;
-			/* padding-left: 3.2rem; */
-		}
-		ul.nav.flex-column > li > a {
-			width: 100%;
-			color: rgba(0, 0, 0, 0.8);
-			height: 10vh;
-			font-size: 15px;
-			cursor: pointer;
-		}
-		.tab-content {
-			/* padding-top:0rem;
-		padding-left: 1.5rem;
-		padding-right: 3rem; */
-			text-align: justify;
-			padding: 3rem 3rem 1rem 3rem;
-		}
-		a#bgL,
-		a#bgLL,
-		a#bgLLL {
-			/* padding: 0.5rem 0.5rem !important; */
-			background: bgBlue !important;
-			text-align: left;
-			/* display: flex;
-    justify-content: space-around;
-    align-items: baseline; */
-			font-size: 14px;
-			cursor: pointer;
-		}
-		a#bgL.active:after {
-			top: 100%;
-			left: 50%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-color: rgba(136, 183, 213, 0);
-			border-top-color: var(--synectiksBlue);
-			border-width: 20px;
-			margin-left: -20px;
-		}
-		a#bgL.active {
-			border-bottom: 5px solid #007cc2;
-			position: relative;
-			/* padding-left: 1rem !important; */
-			background: bgBlue !important;
-			font-size: 14px;
-		}
-		a#bgLL.active {
-			border-bottom: 5px solid #007cc2;
-			position: relative;
-			/* padding-left: 1rem !important; */
-			background: bgBlue !important;
-			font-size: 14px;
-		}
-		a#bgLL.active:after {
-			top: 100%;
-			left: 50%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-color: rgba(136, 183, 213, 0);
-			border-top-color: var(--synectiksBlue);
-			border-width: 20px;
-			margin-left: -20px;
-		}
-		a#bgLLL.active {
-			position: relative;
-			border-bottom: 5px solid #007cc2;
-			/* padding-left: 1rem !important; */
-			background: bgBlue !important;
-			font-size: 14px;
-		}
-		a#bgLLL.active:after {
-			top: 100%;
-			left: 50%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-color: rgba(136, 183, 213, 0);
-			border-top-color: var(--synectiksBlue);
-			border-width: 20px;
-			margin-left: -20px;
-		}
-		.logo-btn {
-			display: none;
-		}
-		.himage {
-			width: 50%;
-			height: auto;
-			box-shadow: 5px 5px 5px #789;
-			float: right;
-			margin-left: 2rem;
-			margin-bottom: 10px;
-		}
-		.nav-link.active {
-			background: var(--synectiksBlue);
-			color: var(--synectiksWhite);
-		}
-		.hbh1 {
-			font-size: 2.5rem;
-		}
-		.hybridFixed {
-			display: block;
-			height: auto;
-			position: sticky;
-			top: 16%;
-			padding-bottom: 21.4rem;
-			padding-top: 2.4rem;
-		}
-		.nav-item > a.active,
-		.nav-item > a:active {
-			height: auto;
-		}
-		h2 {
-			font-size: 2rem;
-		}
-		h3 {
-			font-size: 1.75rem;
-		}
-		h4 {
-			font-size: 1.5rem;
-		}
-	}
-	@media (min-width: 768px) {
-		.himage {
-			width: 100%;
-			height: auto;
-			box-shadow: 5px 5px 5px #789;
-			margin-right: 2rem;
-			margin-bottom: 10px;
-		}
-	}
-	@media (min-width: 1024px) {
-		.himage {
-			width: 50%;
-			height: auto;
-			box-shadow: 5px 5px 5px #789;
-			float: right;
-			margin-left: 2rem;
-			margin-bottom: 10px;
-		}
-	}
+a#bgL.active {
+  border-bottom: 5px solid #007cc2;
+  position: relative;
+	/* padding-left: 1rem !important; */
+	background: bgBlue !important;
+  font-size: 14px;
+}
+a#bgLL.active {
+  border-bottom: 5px solid #007cc2;
+  position: relative;
+	/* padding-left: 1rem !important; */
+	background: bgBlue !important;
+   font-size: 14px;
+}
+a#bgLLL.active {
+  position: relative;
+	border-bottom: 5px solid #007cc2;
+	/* padding-left: 1rem !important; */
+	background: bgBlue !important;
+   font-size: 14px;
+}
+
+   .logo-btn {
+    display: none;
+  }
+
+  .bxshd{
+    box-shadow: 0px 0px 0px 0px lightgray;
+  }
+.nav-link.active{
+  background: var(--synectiksBlue);
+  color: var(--synectiksWhite);
+}
+.hbh1 {
+    font-size: 2.5rem;
+}
+.hybridFixed{
+       display: block;
+    height: auto;
+    position: sticky;
+    top: 16%;
+    padding-bottom: 21.4rem;
+    padding-top: 2.4rem;
+}
+.nav-item > a.active, .nav-item > a:active{
+  height: auto;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size:1.75rem;
+}
+h4{
+   font-size: 1.5rem;
+}
+}
+@media(min-width:768px){
+	a#bgLLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+	a#bgL.active:after{
+ top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+a#bgLL.active:after{
+    top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: var(--synectiksBlue);
+	border-width: 20px;
+	margin-left: -20px;
+  }
+  .w-sm-100{
+  width: 75%;
+}
+  	.himage {
+		width: 100%;
+		height: auto;
+		box-shadow: 5px 5px 5px #789;
+		margin-right: 2rem;
+		margin-bottom: 10px;
+  }
+  .bxshd{
+    box-shadow: 0px 0px 0px 0px lightgray;
+  }
+}
+@media(min-width:1024px){
+ 	.himage {
+		width: 50%;
+		height: auto;
+		box-shadow: 5px 5px 5px #789;
+		margin-left: 2rem;
+		margin-bottom: 10px;
+  }
+  .bxshd{
+    box-shadow: 0px 0px 0px 0px lightgray;
+  }
+}
 `;
