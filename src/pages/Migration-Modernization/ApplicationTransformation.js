@@ -332,23 +332,27 @@ const ApplicationTransformation = () => {
 									</TabPane>
 									<TabPane tabId='4'>
 										<div>
-											<h3>Synectiks Differentiator</h3>
+											{/* <h3>Synectiks Differentiator</h3> */}
 											<p>
 												We go beyond creating a strategy: Synectiks helps you plan it, do it,
-												run it and manage it. Synectiks reduce the application transformation
-												effort at least by 50% by using open Application blocks (common services
-												for any product), automation blocks and component frameworks built by
-												SYNECTIKS team, so that you can leverage lot of existing code and reuse
-												your existing codebase. A typical large transformation project can take
-												a yearlong effort and often don’t yield results. We recommend taking
-												bottom up approach, take a small piece of functionality, and develop the
-												services and foundation for it rapidly by using existing application
-												blocks and automation framework. You would minimize your risks by
-												investing a small time & money and continue to do so when you see a
-												significant ROI. The key aspect is time. The advantage of making us your
-												microservices partner is, our open source contribution helps us to
-												deliver values vary rapidly.
+												run it and manage it.<br /> Synectiks reduce the application
+												transformation effort at least by 50% by using open Application blocks
+												(common services for any product), automation blocks and component
+												frameworks built by SYNECTIKS team, so that you can leverage lot of
+												existing code and reuse your existing codebase. A typical large
+												transformation project can take a yearlong effort and often don’t yield
+												results. We recommend taking bottom up approach, take a small piece of
+												functionality, and develop the services and foundation for it rapidly by
+												using existing application blocks and automation framework. You would
+												minimize your risks by investing a small time & money and continue to do
+												so when you see a significant ROI. The key aspect is time. The advantage
+												of making us your microservices partner is, our open source contribution
+												helps us to deliver values vary rapidly.
 											</p>
+											<h4>
+												Top 9 Reasons to select Synectiks as your Application Modernization
+												Partner:
+											</h4>
 											<div className='my-2 my-md-4'>
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
@@ -512,6 +516,9 @@ h1,h2,h3,h4,h5,h5,p,ul{
   left:0;
   z-index: 99;
 }
+a#bgL{
+	padding-left: 0rem;
+}
 a#bgL,
 a#bgLL,
 a#bgLLL {
@@ -614,6 +621,10 @@ p{
 
 
 @media (min-width: 576px){
+	a#bgL{
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
 	.topNav{
 	position: relative;
 	top: 0px;
@@ -696,6 +707,8 @@ a#bgL.active {
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
   font-size: 14px;
+  padding-left:6rem;
+  padding-right:6rem;
 }
 a#bgLL.active {
   border-bottom: 5px solid #007cc2;
