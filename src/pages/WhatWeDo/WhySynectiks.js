@@ -14,11 +14,20 @@ import TM from '../../images/Hybrid/Time & Money.png';
 import EE from '../../images/Hybrid/E2E Solution.png';
 import EX from '../../images/Hybrid/Experience.png';
 import EXP from '../../images/Hybrid/Expertise.png';
+import SEO from '.././../components/seo.js';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-const WhySynectiks = () => {
+const WhySynectiks = ({ location }) => {
 	return (
 		<Layout>
+			<SEO title='Why Synectiks' />
 			<WhySynectiksWrapper>
+				<Breadcrumb
+					location={location}
+					crumbLabel='Why Synectiks'
+					crumbStyle={{ color: '#666' }}
+					crumbActiveStyle={{ color: 'orange' }}
+				/>
 				<div className='px-2 px-md-5 mx-0 mx-md-3 py-2 py-2 py-md-5'>
 					<h1>Why-Syenctiks </h1>
 					<p>

@@ -3,10 +3,12 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../../components/layout';
 import nd from '../../images/NetworkDesign_CS.jpg';
+import SEO from '../../components/seo.js';
 
 const Networkdesign = () => {
 	return (
 		<Layout>
+			<SEO title='Network Designing' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
 				<a href='/casestudies/index.html' className='noLine fw300'>
 					Case Studies

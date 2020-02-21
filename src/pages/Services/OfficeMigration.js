@@ -4,13 +4,7 @@ import Layout from '../../components/layout';
 import ApplicationServices from '../../images/ApplicationServices.jpg';
 import Office365 from '../../images/Office365.jpg';
 import '../../components/layout.css';
-// import Growth from '../../images/Growth.png'
-// import Migration from '../../images/Migration.png'
-// import Replatform from '../../images/Replatform.png'
-// import Remedition from '../../images/Remedition.png'
-// import Discovery from '../../images/Discovery.png'
-// import CheckMark from '../../images/CheckMark.png'
-// import ApplicationServicesErp from '../../images/ApplicationServices_Erp.jpg'
+import SEO from '../../components/seo.js';
 
 export class OfficeMigraton extends React.Component {
 	componentDidMount() {
@@ -20,6 +14,7 @@ export class OfficeMigraton extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<SEO title='Office Migraton' />
 				<div className='bg-lightgrey'>
 					<div className='w-100 pb-3'>
 						<img

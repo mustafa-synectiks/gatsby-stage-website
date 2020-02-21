@@ -6,7 +6,7 @@ import Layout from '../../../components/layout';
 import HostedInfra from '../../../images/HostedInfra.png';
 import CommonCloud from '../../../images/CloudCommon.png';
 import '../../../components/layout.css';
-
+import SEO from '../../../components/seo.js';
 const wid = {
 	width: '91%'
 };
@@ -82,6 +82,7 @@ export class HostedInfrastructure extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<SEO title='Hosted Infra Structure' />
 				<div className='bg-lightgrey container pt-2'>
 					<div className='text-black w-100 mt-3 py-2 flex-col d-flex text-justify'>
 						<div className='w-100'>

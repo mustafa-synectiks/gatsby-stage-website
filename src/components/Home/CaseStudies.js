@@ -12,7 +12,7 @@ import Header from '../Header.js';
 import Footer from '../Footer.js';
 import Layout from '../../components/layout.js';
 import Img from 'gatsby-image';
-
+import SEO from '../seo.js';
 const getImages = graphql`
 	query Images {
 		fluid: file(relativePath: { eq: "CS_SoftwareDefinedTransformation.jpg" }) {
@@ -29,6 +29,7 @@ const CaseStudies = () => {
 	const data = useStaticQuery(getImages);
 	return (
 		<Layout>
+			<SEO title='Case Studies' />
 			<CaseStudiesWrapper>
 				<h2>Case Studies </h2>
 				<div className='container-fluid mx-auto px-3 py-2 px-md-5 py-md-4'>

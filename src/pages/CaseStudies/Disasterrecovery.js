@@ -2,10 +2,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import ds from '../../images/DisasterRecovery_Subpage2.jpg';
+import SEO from '../../components/seo.js';
 
 const Disasterrecovery = () => {
 	return (
 		<Layout>
+			<SEO title='Disaster Recovery' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
 				<a href='/casestudies/index.html' className='noLine fw300'>
 					Case Studies

@@ -16,6 +16,7 @@ import TM from '../../images/Hybrid/Time & Money.png';
 import EE from '../../images/Hybrid/E2E Solution.png';
 import EX from '../../images/Hybrid/Experience.png';
 import EXP from '../../images/Hybrid/Expertise.png';
+import SEO from '../../components/seo.js';
 
 const blue = {
 	color: '#007CC2'
@@ -34,6 +35,7 @@ export class Aboutus extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<SEO title='About Us' />
 				<AboutWrapper>
 					<div className='bg-lightgrey px-4 px-md-5 mx-md-2 mx-0'>
 						<div>

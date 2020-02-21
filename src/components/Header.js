@@ -40,10 +40,10 @@ const Header = () => {
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/migrations/index.html'>
+									<NavDropdown.Item href='/applicationtransformation/index.html'>
 										Application Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/migrations/index.html'>
+									<NavDropdown.Item href='/datatransformation/index.html'>
 										Data Transformation
 									</NavDropdown.Item>
 									{/* <NavDropdown.Item href='/microservices/index.html'>

@@ -158,6 +158,14 @@ module.exports = [
 		component: path.resolve(`src/pages/Migration-Modernization/InfraSturctureTransformation.js`)
 	},
 	{
+		path: '/applicationtransformation/index.html',
+		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
+	},
+	{
+		path: '/datatransformation/index.html',
+		component: path.resolve(`src/pages/Migration-Modernization/DataTransformation.js`)
+	},
+	{
 		path: '/VsForm/index.html',
 		component: path.resolve(`src/pages/Mails/VisualForm.js`)
 	},

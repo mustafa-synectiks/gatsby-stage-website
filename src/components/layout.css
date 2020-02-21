@@ -456,16 +456,16 @@ a.dropdown-toggle.nav-link {
 
 @media screen and(max-width: 576px) {
 	h1 {
-		font-size: 32px;
+		font-size: 1.875rem;
 	}
 	h2 {
-		font-size: 26px;
+		font-size: 1.6rem;
 	}
 	h3 {
-		font-size: 22px;
+		font-size: 1.2rem;
 	}
 	p {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 	.p {
 		font-size: 15px;
@@ -487,6 +487,13 @@ a.dropdown-toggle.nav-link {
 	text-decoration: underline;
 }
 
+.breadcrumb {
+	display: inline-flex;
+}
+span.breadcrumb__separator {
+	margin-left: 20px;
+	margin-right: -15px;
+}
 .card-hd {
 	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4);
 	width: 14em !important;
@@ -1845,12 +1852,13 @@ a.dropdown-toggle.nav-link {
 }
 @media (min-width: 576px) {
 	p {
+		font-size: 1rem;
 	}
 	h1 {
 		font-family: montserrat, sans-serif;
 		font-weight: 300;
 		font-style: normal;
-		font-size: 40px;
+		font-size: 3.8rem;
 		line-height: 62px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */
@@ -1859,7 +1867,7 @@ a.dropdown-toggle.nav-link {
 		font-family: montserrat, sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		font-size: 35px;
+		font-size: 2.56rem;
 		line-height: 44px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */
@@ -1868,7 +1876,7 @@ a.dropdown-toggle.nav-link {
 		font-family: montserrat, sans-serif;
 		font-weight: 500;
 		font-style: normal;
-		font-size: 24px;
+		font-size: 1.25rem;
 		line-height: 32px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */
@@ -1877,7 +1885,7 @@ a.dropdown-toggle.nav-link {
 		font-family: montserrat, sans-serif;
 		font-weight: 600;
 		font-style: normal;
-		font-size: 18px;
+		font-size: 1.125rem;
 		line-height: 22px;
 		letter-spacing: normal;
 		/* color: #007cc2 !important; */

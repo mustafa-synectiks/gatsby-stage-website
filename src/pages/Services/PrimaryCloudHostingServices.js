@@ -19,6 +19,7 @@ import price from '../../images/ManagedBackup/affordableprice.png';
 
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
+import SEO from '../../components/seo.js';
 
 const PrimaryCloudHostingServices = () => {
 	const [ activeTab, setActiveTab ] = useState('2');
@@ -34,6 +35,7 @@ const PrimaryCloudHostingServices = () => {
 
 	return (
 		<Layout>
+			<SEO title='Primary Cloud Hosting Services' />
 			<CloudManagedBackupWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className=''>

@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
-		title: `Home`,
-		description: `Synectiks | Enterprise Devops`,
+		title: `Synectiks | Enterprise Devops`,
+		description: ` Synectiks | Enterprise Devops`,
 		author: `Synectiks`,
 		siteUrl: `http://localhost:8000`
 	},
@@ -12,6 +12,26 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-plugin-breadcrumb`,
+			options: {
+				// optional: To create a default crumb
+				// see Click Tracking default crumb example below
+				defaultCrumb: {
+					location: {
+						pathname: '/'
+					},
+					crumbLabel: 'Home',
+					crumbSeparator: ' / ',
+					crumbStyle: { color: '#666' },
+					crumbActiveStyle: { color: 'orange' }
+				},
+				// optional: switch to className styling
+				// see `useClassNames example with Click Tracking` below
+				useClassNames: true
+				// optional: if you are using path prefix
+			}
+		},
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {

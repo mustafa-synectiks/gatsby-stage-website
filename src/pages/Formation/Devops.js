@@ -30,8 +30,10 @@ import betterQual from '../../images/Devops/Better Quality.png';
 import lowCost from '../../images/Devops/Lower Cost.png';
 
 import styled from 'styled-components';
+import SEO from '../../components/seo.js';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-const Devops = () => {
+const Devops = ({ location }) => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const [ collapsed, setCollapsed ] = useState(true);
 
@@ -47,12 +49,21 @@ const Devops = () => {
 
 	return (
 		<Layout>
+			<SEO title='Devops Transformation' />
+
 			<DevopsWrapper>
 				<div className='container-fluid '>
 					<div className='px-5 py-2 text-justify' />
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-md-12'>
+								<Breadcrumb
+									location={location}
+									crumbLabel='Devops'
+									crumbStyle={{ color: '#666' }}
+									crumbActiveStyle={{ color: 'orange' }}
+									className='d-flex justify-content-aorund'
+								/>
 								<div className=''>
 									<div>
 										<Navbar color='light' light expand='lg'>

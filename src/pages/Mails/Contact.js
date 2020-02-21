@@ -7,11 +7,13 @@ import '../../components/layout.css';
 import ContactM from '../../components/ContactMe';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
+import SEO from '../../components/seo.js';
 
 export class Contact extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<SEO title='Contact' />
 				<contactWrapper>
 					<div class='bg-lightgrey pb-4'>
 						<div id='particle-js'>

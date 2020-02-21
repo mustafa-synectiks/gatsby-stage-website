@@ -14,9 +14,10 @@ import awsd from '../../images/modernization/awsd.png';
 import circle from '../../images/modernization/circle.png';
 import ds from '../../images/Hybrid/Discovery&Assessment.png';
 import ts from '../../images/Hybrid/Transformation Services.png';
-import EX from '../../images/hybrid/Experience.png';
-import EM from '../../images/hybrid/Engagement Model.png';
-import CS from '../../images/hybrid/Compliance&Security.png';
+import EX from '../../images/Hybrid/Experience.png';
+import EM from '../../images/Hybrid/Engagement Model.png';
+import CS from '../../images/Hybrid/Compliance&Security.png';
+import SEO from '../../components/seo.js';
 
 const Infrastructure = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
@@ -34,6 +35,7 @@ const Infrastructure = () => {
 
 	return (
 		<Layout>
+			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
 			<HybridWrapper>
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />

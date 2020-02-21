@@ -2,20 +2,31 @@ import React from 'react';
 import Layout from '../../components/layout.js';
 import styled from 'styled-components';
 import HomeTabs from '../../components/Home/HomeTabs';
-import  Tabs from '../../components/Home/Tabs';
+import Tabs from '../../components/Home/Tabs';
+import SEO from '../../components/seo.js';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-const AreaOfExpertise = () => {
+const AreaOfExpertise = ({ location }) => {
 	return (
 		<Layout>
+			<SEO title='Area Of Expertise' />
 			<AreaOfExpertiseWrapper>
-				<blockquote class='w-75 blockquote blockquote-custom bg-white p-5 shadow rounded'>
-									<div className='blockquote-custom-icon bg-info shadow-sm'>
-										<i className='fa fa-quote-left text-white' />
-									</div>
-									<h3 className='mb-0 mt-2 font-italic'>Across our outcome-driven consulting and managed services, it's our open product driven software
-					solutions, our deep expertise on modern application architecture and our cloud culture that makes
-					the difference.</h3>
-								</blockquote>
+				<Breadcrumb
+					location={location}
+					crumbLabel='Devops'
+					crumbStyle={{ color: '#666' }}
+					crumbActiveStyle={{ color: 'orange' }}
+				/>
+				<blockquote className='w-75 blockquote blockquote-custom bg-white p-5 shadow rounded'>
+					<div className='blockquote-custom-icon bg-info shadow-sm'>
+						<i className='fa fa-quote-left text-white' />
+					</div>
+					<h3 className='mb-0 mt-2 font-italic'>
+						Across our outcome-driven consulting and managed services, it's our open product driven software
+						solutions, our deep expertise on modern application architecture and our cloud culture that
+						makes the difference.
+					</h3>
+				</blockquote>
 
 				<h2>We are primarily helping customers on the following areas:</h2>
 				<h2>Migration & Modernization</h2>
@@ -42,10 +53,10 @@ export default AreaOfExpertise;
 
 const AreaOfExpertiseWrapper = styled.div`
 	padding: 1rem 2rem;
-	.blockquote{
-	width: 100% !important;
-	margin: 0;
-}
+	.blockquote {
+		width: 100% !important;
+		margin: 0;
+	}
 	@media screen and (min-width: 576px) {
 		padding: 2rem 4rem;
 		.blockquote-custom {

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import rjc from '../../images/RelianceJioCasestudy.jpg';
+import SEO from '../../components/seo.js';
 
 const brdr = {
 	borderRadius: '0 0.25rem 0.25rem 0'
@@ -9,6 +10,7 @@ const brdr = {
 const Realtime = () => {
 	return (
 		<Layout>
+			<SEO title='Realtime' />
 			<div className='realTime_wrap px-1 px-md-5 py-1 py-md-5'>
 				<a href='/casestudies/index.html' className='noLine fw300'>
 					Case Studies

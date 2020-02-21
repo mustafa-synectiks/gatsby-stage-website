@@ -47,7 +47,7 @@ import hx5 from '../images/HomePage/5.png';
 import hx6 from '../images/HomePage/6.png';
 import Hexagon from './Home/Hexagon';
 import HomeTabs from './Home/HomeTabs';
-import  Tabs from './Home/Tabs';
+import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import {
 	TabContent,
@@ -122,9 +122,9 @@ const Slider = () => {
 			<div className='container-fluid bgBlue px-2 px-md-5 '>
 				<div className='row'>
 					<div className='col heading1 mt-3 mt-md-0'>
-						<h2 className='textWhite px-1 px-md-3'>
+						<h1 className='textWhite px-1 px-md-3'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
-						</h2>
+						</h1>
 						<div className='circleFlex'>
 							<ScrollAnimation animateIn='fadeInUp'>
 								<div className='circle'>
@@ -292,6 +292,9 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+h1{
+	font-size: 1.875rem;
+}
 
 #collapseOne{
 	p{
@@ -325,12 +328,12 @@ width: 100%;
 	}
 }
 	h3{
-		font-size: 18px;
+		font-size: 1.2rem;
 		text-align: left;
 	}
 	p{
 		text-align: left;
-		font-size: 14px;
+		font-size: 1rem;
 		min-height:75px;
 		max-height:75px;
 		margin-bottom: 0rem;
@@ -381,12 +384,12 @@ width: 100%;
 .heading1 {
 	h2{
 	text-align: left;
-	font-size:32px;
+	font-size:1.8rem;
 	line-height: 44px;
 }
 
 p{
-	font-size: 18px;
+	font-size: 1rem;
 	line-height: 28px;
 	text-align: center;
 	margin-top:1rem;
@@ -397,7 +400,7 @@ p{
 }
 .tabsHeading {
 	h2{
-		font-size:24px;
+		font-size:1.8rem;
 		text-align: center;
 		padding-top: 15px;
   padding-bottom: 20px;
@@ -453,7 +456,7 @@ p{
 }
 .cstrip_text{
 	h3{
-		font-size:22px;
+		font-size:1.2rem;
 	}
 }
 }
@@ -478,7 +481,9 @@ p{
 
 	@media screen and  (min-width: 576px) {
 
-
+h1{
+	font-size: 3.2rem;
+}
 
 		.circletext{
 	 p{
@@ -494,7 +499,7 @@ p{
 		font-size: 22px;
 	}
 	p{
-		font-size: 18px;
+		font-size: 1.125rem;
 		min-height:75px;
 		max-height:75px;
 		margin-bottom: 0rem;
@@ -507,14 +512,19 @@ p{
 }
 
 		.heading1{
-	 h2{
-	font-size:36px;
-	line-height: 44px;
-	margin:1.5rem 0rem;
-	background:transparent;
+
+	h2 {
+		font-family: montserrat, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 2.56rem;
+		line-height: 44px;
+		letter-spacing: normal;
+		margin:1.5rem 0rem;
+		background:transparent;
 }
 p{
-	font-size: 20px;
+	font-size: 1rem;
 	line-height: 28px;
 	text-align: left;
 	margin-top:4rem;
@@ -533,7 +543,12 @@ p{
 }
 .tabsHeading{
 	h2{
-		font-size: 28px;
+		font-family: montserrat, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 2.56rem;
+		line-height: 44px;
+		letter-spacing: normal;
 		text-align: center;
 		padding: 0rem;
 		background: rgba(255,255,255,0);

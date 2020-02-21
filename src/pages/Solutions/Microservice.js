@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-// import { Modal, ModalHeader, ModalBody } from "reactstrap"
-// import ModalContact from "../../components/ModalContact"
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
@@ -20,6 +18,7 @@ import ms7 from '../../images/Microservices/Microservice_10.png';
 import ms8 from '../../images/Microservices/Microservice_11.png';
 import ms9 from '../../images/Microservices/Foundation-Subpage.png';
 import styled from 'styled-components';
+import SEO from '.././../components/seo.js';
 
 const Microservice = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
@@ -37,6 +36,7 @@ const Microservice = () => {
 
 	return (
 		<Layout>
+			<SEO title='Microservices' />
 			<MicroserviceWrapper>
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />

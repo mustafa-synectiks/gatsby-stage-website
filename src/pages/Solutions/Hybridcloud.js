@@ -52,7 +52,7 @@ import HSCH from '../../images/HowSynectiksCanhelp.png';
 import SD from '../../images/SynectiksDifferentiator.png';
 import UHC from '../../images/UnderstandingHybridCloud.png';
 import styled from 'styled-components';
-
+import SEO from '../../components/seo.js';
 const Hybridcloud = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const [ collapsed, setCollapsed ] = useState(true);
@@ -69,6 +69,7 @@ const Hybridcloud = () => {
 
 	return (
 		<Layout>
+			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />

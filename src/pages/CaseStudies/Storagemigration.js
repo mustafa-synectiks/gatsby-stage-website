@@ -3,10 +3,12 @@ import { Helmet } from 'react-helmet';
 import cb from '../../images/Storagemigration.jpg';
 import as from '../../images/Application-Services-Slider.png';
 import Layout from '../../components/layout';
+import SEO from '../../components/seo.js';
 
 const Storagemigration = () => {
 	return (
 		<Layout>
+			<SEO title='Storage Migration' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
 				<a href='/casestudies/index.html' className='noLine fw300'>
 					Case Studies
