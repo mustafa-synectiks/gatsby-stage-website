@@ -7,11 +7,11 @@ export default [
 	// 	url: 'https://www.facebook.com/synectikscloud/',
 	// 	text: 'Facebook'
 	// },
-	// {
-	// 	icon: <FaTwitter className='social' />,
-	// 	url: 'https://twitter.com/synectiks',
-	// 	text: 'Twitter'
-	// },
+	{
+		icon: <FaTwitter className='social' />,
+		url: 'https://twitter.com/synectiks',
+		text: 'Twitter'
+	},
 	{
 		icon: <FaLinkedinIn className='social' />,
 		url: 'https://www.linkedin.com/company/synectiks/',

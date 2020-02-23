@@ -154,6 +154,10 @@ module.exports = [
 		component: path.resolve(`src/pages/WhatWeDo/AreaOfExpertise.js`)
 	},
 	{
+		path: '/blog/index.html',
+		component: path.resolve(`src/pages/Resources/Blog.js`)
+	},
+	{
 		path: '/infrastructure/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/InfraSturctureTransformation.js`)
 	},

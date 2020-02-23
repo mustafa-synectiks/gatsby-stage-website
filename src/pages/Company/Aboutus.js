@@ -17,6 +17,7 @@ import EE from '../../images/Hybrid/E2E Solution.png';
 import EX from '../../images/Hybrid/Experience.png';
 import EXP from '../../images/Hybrid/Expertise.png';
 import SEO from '../../components/seo.js';
+import GetInTouch from '../../components/Home/Getintouch.js';
 
 const blue = {
 	color: '#007CC2'
@@ -228,17 +229,8 @@ export class Aboutus extends React.Component {
 								</div>
 							</div>
 						</div>
-						<div className='container-fluid p-1 p-md-5 cstrip'>
-							<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
-								<div className='cstrip_text'>
-									<h3 className='text-white'>Want to know how to evaluate your business?</h3>
-								</div>
-								<a
-									href='https://synectiks.com/contactus/index.html'
-									className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
-									Get In Touch
-								</a>
-							</div>
+						<div>
+							<GetInTouch />
 						</div>
 					</div>
 				</AboutWrapper>

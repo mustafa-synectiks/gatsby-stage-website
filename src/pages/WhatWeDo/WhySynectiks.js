@@ -16,6 +16,7 @@ import EX from '../../images/Hybrid/Experience.png';
 import EXP from '../../images/Hybrid/Expertise.png';
 import SEO from '.././../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+import GetInTouch from '../../components/Home/Getintouch.js';
 
 const WhySynectiks = ({ location }) => {
 	return (
@@ -26,7 +27,7 @@ const WhySynectiks = ({ location }) => {
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Why Synectiks' />
 				</div>
 				<div className='px-2 px-md-5 mx-0 mx-md-3 py-2 py-2 py-md-5'>
-					<h1>Why-Syenctiks </h1>
+					<h1>Why Synectiks </h1>
 					<p>
 						As an Open Product based Cloud Solution provider, we help enterprises take advantage of public &
 						private cloud and its infinite resources to migrate and modernize their business so that they
@@ -192,17 +193,8 @@ const WhySynectiks = ({ location }) => {
 							</div>
 						</div>
 					</div>
-					<div className='container-fluid p-1 p-md-5 cstrip'>
-						<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
-							<div className='cstrip_text'>
-								<h3 className='text-white'>Want to know how to evaluate your business?</h3>
-							</div>
-							<a
-								href='https://synectiks.com/contactus/index.html'
-								className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
-								Get In Touch
-							</a>
-						</div>
+					<div>
+						<GetInTouch />
 					</div>
 				</div>
 			</WhySynectiksWrapper>

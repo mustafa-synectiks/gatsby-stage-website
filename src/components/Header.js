@@ -76,7 +76,7 @@ const Header = () => {
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
-									<NavDropdown.Item href='/casestudies/index.html'>Blog</NavDropdown.Item>
+									<NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Company' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/about/index.html'>About Us</NavDropdown.Item>

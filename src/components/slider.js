@@ -49,6 +49,7 @@ import Hexagon from './Home/Hexagon';
 import HomeTabs from './Home/HomeTabs';
 import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
+import GetInTouch from './Home/Getintouch.js';
 import {
 	TabContent,
 	TabPane,
@@ -265,24 +266,13 @@ const Slider = () => {
 											</a>
 										</div>
 									</div>
-									.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div className='container-fluid p-1 p-md-5 cstrip'>
-					<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
-						<div className='cstrip_text'>
-							<h3 className='text-white'>Want to know how to evaluate your business?</h3>
-						</div>
-						<a
-							href='https://synectiks.com/contactus/index.html'
-							className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
-							Get In Touch
-						</a>
-					</div>
+				<div>
+					<GetInTouch />
 				</div>
 			</div>
 		</HomeWrapper>
@@ -449,17 +439,7 @@ p{
 	}
 }
 
-.cstrip {
-	background: transparent;
-.btn-width{
-	width: 75%;
-}
-.cstrip_text{
-	h3{
-		font-size:1.2rem;
-	}
-}
-}
+
 
 	background: var(--bgMain);
 	.border {
@@ -589,20 +569,7 @@ p{
 				}
 }
 
-.cstrip_text{
-	transform: none;
-	-webkit-transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
-transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
-}
-.cstrip:hover .cstrip_text{
-transform: translateX(15px);
-}
-.cstrip{
-	background: var(--synectiksWhite);
-.btn-width{
-	width: auto;
-	background: var(--synectiksWhite);
-}}
+
 .card-body {
 	padding :1rem 0rem 0rem 0rem;
 	h2 {
