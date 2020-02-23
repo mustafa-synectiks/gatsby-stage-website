@@ -18,6 +18,7 @@ import EX from '../../images/Hybrid/Experience.png';
 import EM from '../../images/Hybrid/Engagement Model.png';
 import CS from '../../images/Hybrid/Compliance&Security.png';
 import SEO from '../../components/seo.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const Infrastructure = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
@@ -36,9 +37,12 @@ const Infrastructure = () => {
 	return (
 		<Layout>
 			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
+
 			<HybridWrapper>
 				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />
+					<div className='px-1 px-md-5 pt-2 pt-md-5 mt-md-3'>
+						<BreadCrumbs title='Home' subtitle='Migration-Modernization' pageTitle='Infra Structure' />
+					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
@@ -112,7 +116,7 @@ const Infrastructure = () => {
 											</p>
 											<h3>Why Software defined infra structure matter in todays business?</h3>
 											<div className='table-responsive-md'>
-												<table className='table table-hover'>
+												<table className='table'>
 													<thead className='thead-light'>
 														<tr>
 															<th scope='col'>Hardware Defined</th>
@@ -195,7 +199,129 @@ const Infrastructure = () => {
 												</h3>
 												<img src={swd} alt='' className='w-50 mx-auto' />
 											</div>{' '}
-											<img src={awsd} alt='' className='w-50 mx-auto py-2 py-md-4' />
+											{/* <img src={awsd} alt='' className='w-50 mx-auto py-2 py-md-4' /> */}
+											<div>
+												<div className='d-flex'>
+													<div className='d-flex flex-column justify-content-around'>
+														<div className='rotate'>
+															<h6>Activites</h6>
+														</div>
+														<div className='rotate'>
+															<h6>Output</h6>
+														</div>
+													</div>
+													<div className='d-flex flex-column flex-md-row align-items-center justify-content-md-around bgWhite'>
+														<div className='aggregate col'>
+															<div>
+																<h4>Aggregate</h4>
+															</div>
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-0'>
+																		<li>
+																			Aggregate computing, storage, network
+																			@software layer from any plublic/private
+																			cloud
+																		</li>
+																		<li>Scale in/out as per need</li>
+																	</ul>
+																</div>
+															</div>
+
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-0'>
+																		<li>
+																			Aggregate computing, storage, network
+																			@software layer from any plublic/private
+																			cloud
+																		</li>
+																		<li>Scale in/out as per need</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='extend col'>
+															<div>
+																<h4>Extend</h4>
+															</div>
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-0'>
+																		<li>
+																			Develop micro service, <br /> IOT, big data
+																			quickly
+																		</li>
+																		<li>Extend full proof frameworks</li>
+																	</ul>
+																</div>
+															</div>
+															<div className=' '>
+																<div>
+																	<ul className='p-0'>
+																		<li>Spring boot based micro services</li>
+																		<li>
+																			IOt and Big data application using open
+																			framework
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='devops col'>
+															<div>
+																<h4>Devops</h4>
+															</div>
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-0'>
+																		<li>Establish build/deployment pipeline</li>
+																		<li>Establish service orchestration</li>
+																	</ul>
+																</div>
+															</div>
+															<div className=' '>
+																<div>
+																	<ul className='p-0'>
+																		<li>
+																			Automated scripts for build, deployment,
+																			test,release and quality sla's
+																		</li>
+																		<li>Scripted Audit</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='Operate col'>
+															<div>
+																<h4>Operate</h4>
+															</div>
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-0'>
+																		<li>Establish ALM</li>
+																		<li>
+																			Setup operational tools and frameworks to
+																			put your business in autopilot mode
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<div className=''>
+																<div>
+																	<ul className='p-0'>
+																		<li>
+																			Operation tools for monitoring, resilience,
+																			auto scaling
+																		</li>
+																		<li>Finer integration with ALM</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</TabPane>
 									<TabPane tabId='2'>
@@ -452,6 +578,11 @@ const Infrastructure = () => {
 export default Infrastructure;
 
 const HybridWrapper = styled.div`
+.rotate{
+     width: 6rem;
+    transform: rotate(-88deg);
+    margin: 0 -4rem;
+}
 .topNav{
 	position: fixed;
 	top: 100px;
@@ -602,6 +733,20 @@ p{
 
 
 @media (min-width: 576px){
+		a#bgL{
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+a#bgL.active {
+  border-bottom: 5px solid #007cc2;
+  position: relative;
+	/* padding-left: 1rem !important; */
+	background: bgBlue !important;
+  font-size: 14px;
+  padding-left:6rem;
+  padding-right:6rem;
+}
 	.topNav{
 	position: relative;
 	top: 0px;

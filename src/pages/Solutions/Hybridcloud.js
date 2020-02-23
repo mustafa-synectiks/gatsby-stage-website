@@ -53,6 +53,8 @@ import SD from '../../images/SynectiksDifferentiator.png';
 import UHC from '../../images/UnderstandingHybridCloud.png';
 import styled from 'styled-components';
 import SEO from '../../components/seo.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
+
 const Hybridcloud = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const [ collapsed, setCollapsed ] = useState(true);
@@ -72,7 +74,9 @@ const Hybridcloud = () => {
 			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>
 				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />
+					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Hybrid Cloud' />
+					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>

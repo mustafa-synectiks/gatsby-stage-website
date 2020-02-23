@@ -700,6 +700,10 @@ p{
      font-size: 14px;
      cursor: pointer;
   }
+  	a#bgL{
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
 
 a#bgL.active {
   border-bottom: 5px solid #007cc2;

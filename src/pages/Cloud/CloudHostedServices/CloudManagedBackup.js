@@ -29,6 +29,7 @@ import HostedInfra from '../../../images/ManagedBackup/HostedInfra.png';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../../components/seo.js';
+import BreadCrumbs from '../../../components/Home/Breadcrumbs.js';
 const CloudManagedBackup = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const toggle = (tab) => {
@@ -48,6 +49,9 @@ const CloudManagedBackup = () => {
 			<SEO title='Primary Cloud Hosting Services' />
 			<CloudManagedBackupWrapper>
 				<div className='bg-lightgrey container-fluid'>
+					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Primary Cloud Hosting Services' />
+					</div>
 					<Row className='d-flex justify-content-md-center justify-content-start'>
 						<Navbar color='light' light expand='md'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />

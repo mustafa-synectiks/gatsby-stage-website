@@ -3,15 +3,14 @@ import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import ds from '../../images/DisasterRecovery_Subpage2.jpg';
 import SEO from '../../components/seo.js';
+import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 
 const Disasterrecovery = () => {
 	return (
 		<Layout>
 			<SEO title='Disaster Recovery' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<a href='/casestudies/index.html' className='noLine fw300'>
-					Case Studies
-				</a>
+				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Disaster Recovery' />
 				<h2>Disaster Recovery</h2>
 				<div className='softwareDefined_image'>
 					{/* <h3>Large Motor Company</h3> */}

@@ -4,15 +4,14 @@ import cb from '../../images/Storagemigration.jpg';
 import as from '../../images/Application-Services-Slider.png';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo.js';
+import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 
 const Storagemigration = () => {
 	return (
 		<Layout>
 			<SEO title='Storage Migration' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<a href='/casestudies/index.html' className='noLine fw300'>
-					Case Studies
-				</a>
+				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Storage Migration' />
 				<h2>Storage Migration</h2>
 				<div className='softwareDefined_image'>
 					<h3>SAN connectivity via Synectiks Storage Network Solutions</h3>

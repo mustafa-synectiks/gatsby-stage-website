@@ -4,15 +4,13 @@ import styled from 'styled-components';
 import Layout from '../../components/layout';
 import nd from '../../images/NetworkDesign_CS.jpg';
 import SEO from '../../components/seo.js';
-
+import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 const Networkdesign = () => {
 	return (
 		<Layout>
 			<SEO title='Network Designing' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<a href='/casestudies/index.html' className='noLine fw300'>
-					Case Studies
-				</a>
+				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Network Design' />
 				<h2>Network Design</h2>
 				<div className='softwareDefined_image'>
 					<h3>Cloud Automation For Medfusion Inc</h3>

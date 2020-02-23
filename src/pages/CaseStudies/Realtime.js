@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
 import rjc from '../../images/RelianceJioCasestudy.jpg';
 import SEO from '../../components/seo.js';
+import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 
 const brdr = {
 	borderRadius: '0 0.25rem 0.25rem 0'
@@ -12,9 +13,7 @@ const Realtime = () => {
 		<Layout>
 			<SEO title='Realtime' />
 			<div className='realTime_wrap px-1 px-md-5 py-1 py-md-5'>
-				<a href='/casestudies/index.html' className='noLine fw300'>
-					Case Studies
-				</a>
+				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Realtime' />
 				<h2>Realtime Monitoring</h2>
 				<div className='realTime_image'>
 					<h3>Reliance Jio Casestudy</h3>

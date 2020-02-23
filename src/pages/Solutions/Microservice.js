@@ -19,6 +19,7 @@ import ms8 from '../../images/Microservices/Microservice_11.png';
 import ms9 from '../../images/Microservices/Foundation-Subpage.png';
 import styled from 'styled-components';
 import SEO from '.././../components/seo.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const Microservice = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
@@ -39,7 +40,9 @@ const Microservice = () => {
 			<SEO title='Microservices' />
 			<MicroserviceWrapper>
 				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />
+					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
+					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>

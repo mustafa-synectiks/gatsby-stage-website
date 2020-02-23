@@ -20,6 +20,7 @@ import price from '../../images/ManagedBackup/affordableprice.png';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import SEO from '../../components/seo.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const PrimaryCloudHostingServices = () => {
 	const [ activeTab, setActiveTab ] = useState('2');

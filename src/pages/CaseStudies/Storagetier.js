@@ -3,15 +3,14 @@ import { Helmet } from 'react-helmet';
 import st from '../../images/StorageTier_CS.jpg';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo.js';
-
+import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 const Storagetier = () => {
 	return (
 		<Layout>
 			<SEO title='Storagetier' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<a href='/casestudies/index.html' className='noLine fw300'>
-					Case Studies
-				</a>
+				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='
+			Storage Tier' />
 				<h2>Storage Tier</h2>
 				<div className='softwareDefined_image'>
 					<h3>Indian Meteorology Department - Case Study</h3>
