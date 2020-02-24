@@ -18,6 +18,7 @@ import EX from '../../images/Hybrid/Experience.png';
 import EXP from '../../images/Hybrid/Expertise.png';
 import SEO from '../../components/seo.js';
 import GetInTouch from '../../components/Home/Getintouch.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const blue = {
 	color: '#007CC2'
@@ -44,6 +45,7 @@ export class Aboutus extends React.Component {
 						</div>
 						<div className='row'>
 							<div className='container-fluid px-2 px-md-5 py-4'>
+								<BreadCrumbs title='Home' subtitle='Company' pageTitle='About Us' />
 								<h1>Mission Statement:</h1>
 								<p className='py-4'>
 									As an Open Product based Cloud Solution provider, we help enterprises take advantage

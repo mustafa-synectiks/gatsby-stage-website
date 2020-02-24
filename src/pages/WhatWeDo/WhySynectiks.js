@@ -26,7 +26,7 @@ const WhySynectiks = ({ location }) => {
 				<div className='px-1 px-md-5 pt-2 pt-md-5 mt-md-3'>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Why Synectiks' />
 				</div>
-				<div className='px-2 px-md-5 mx-0 mx-md-3 py-2 py-2 py-md-5'>
+				<div className='px-2 px-md-5 mx-0 mx-md-3 py-2 py-2 pt-md-5'>
 					<h1>Why Synectiks </h1>
 					<p>
 						As an Open Product based Cloud Solution provider, we help enterprises take advantage of public &
@@ -46,13 +46,13 @@ const WhySynectiks = ({ location }) => {
 						reduce at least 50% time & money compare to typical managed services delivery model.{' '}
 					</p>
 					<div> </div>
-					<img src={team} alt='' className='py-2 py-md-4 w-100' />
+					<img src={team} alt='' className='my-2 my-md-4 w-a real good mix 100 box-shadow' />
 					<p>
-						Our passionate global team is real good mix of Highly Experienced product developers who has
-						been part of many big success and young full stack developers fully trained to deliver in DevOps
-						cultural environment. Our deep expertise both on Application and Infrastructure helps us to
-						deliver cloud native solutions in an optimal manner and manage its lifecycle in a DevSecOps way.
-						We have learnt to deliver software in predictable and deterministic way.{' '}
+						Our passionate global team is a real good mix of Highly Experienced product developers who has
+						been part of many big success and young fully stack developers fully trained to deliver in a
+						DevOps cultural environment. Our deep expertise both on Application and Infrastructure helps us
+						to deliver cloud native solutions in an optimal manner and manage its lifecycle in a DevSecOps
+						way. We have learned to deliver software in a predictable and deterministic way.
 					</p>
 					<div className='container-fluid px5'>
 						<h3>Top 12 reasons to select us as your cloud migration and modernization partner! </h3>
@@ -73,8 +73,8 @@ const WhySynectiks = ({ location }) => {
 											<h4 className='my-2 my-md-4'>Expertise</h4>
 										</div>
 										<p>
-											Experience Team with proven track record of CloudOps delivery enabled with
-											DevSecOps Capabilities
+											Experience Teams with a proven track record of CloudOps delivery enabled
+											with DevSecOps Capabilities
 										</p>
 									</div>
 									<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
@@ -83,7 +83,6 @@ const WhySynectiks = ({ location }) => {
 											<h4 className='my-2 my-md-3'>Time & Money</h4>
 										</div>
 										<p>
-											{' '}
 											Our open Product Driven Delivery Model allows customers to quickly build,
 											deliver and orchestrate cross cloud services @50% time & cost.
 										</p>
@@ -135,8 +134,8 @@ const WhySynectiks = ({ location }) => {
 											<h4 className='my-3'>Extreme Automation</h4>
 										</div>
 										<p>
-											Use our existing automation capabilities to automate infrastructure ,
-											operations, security in hybrid IT environment.
+											Use our existing automation capabilities to automate infrastructure,
+											operations, in security the hybrid IT environment.
 										</p>
 									</div>
 									<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
@@ -158,7 +157,7 @@ const WhySynectiks = ({ location }) => {
 												</div>
 												<p>
 													Avail the opportunity to quickly create demo hybrid cloud setup in
-													our existing hybrid IT environment and testify you key business use
+													our existing hybrid IT environment and testify your key business use
 													cases.
 												</p>
 											</div>

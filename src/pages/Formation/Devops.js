@@ -31,7 +31,7 @@ import lowCost from '../../images/Devops/Lower Cost.png';
 
 import styled from 'styled-components';
 import SEO from '../../components/seo.js';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const Devops = ({ location }) => {
 	const [ activeTab, setActiveTab ] = useState('1');
@@ -53,19 +53,18 @@ const Devops = ({ location }) => {
 
 			<DevopsWrapper>
 				<div className='container-fluid '>
-					<div className='px-5 py-2 text-justify' />
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-md-12'>
-								<Breadcrumb
-									location={location}
-									crumbLabel='Devops'
-									crumbStyle={{ color: '#666' }}
-									crumbActiveStyle={{ color: 'orange' }}
-									className='d-flex justify-content-aorund'
-								/>
 								<div className=''>
 									<div>
+										<div className='px-5 pt-5 text-justify'>
+											<BreadCrumbs
+												title='Home'
+												subtitle='Migration & Modernization'
+												pageTitle='Devops'
+											/>
+										</div>
 										<Navbar color='light' light expand='lg'>
 											<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 											<Collapse isOpen={!collapsed} navbar>

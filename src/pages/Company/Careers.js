@@ -5,6 +5,7 @@ import Layout from '../../components/layout';
 import career from '../../images/Careers.jpg';
 import '../../components/layout.css';
 import SEO from '../../components/seo.js';
+import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 export class Careers extends React.Component {
 	state;
@@ -39,6 +40,9 @@ export class Careers extends React.Component {
 						<img className='  text-center pb-2 ' src={career} width='100%' alt='Careers' />
 					</div>
 					<div className='container'>
+						<div className='pt-5'>
+							<BreadCrumbs title='Home' subtitle='Company' pageTitle='Careers' />
+						</div>
 						<div className='text-center pb-3 lineHeight-24'>
 							<h2>Careers</h2>
 						</div>

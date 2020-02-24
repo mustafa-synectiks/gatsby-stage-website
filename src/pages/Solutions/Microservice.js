@@ -279,11 +279,11 @@ const Microservice = () => {
 												x. If you deploy those 100 x as layered stack in discrete servers in
 												different way, your deployment complexity would multiply to 1000X. To
 												address this challenge, you definitely need to unify the delivery of
-												services, make sure your services are delivered in same way and they are
-												staged to production environment through some stringent quality gates.
-												To unify the delivery of multiple services in same way, Containerization
-												play a big role and Containers along with Continuous Delivery channel
-												brings down your 1000X complexity to a factor of X.
+												services, make sure your services are delivered in the same way and they
+												are staged to production environment through some stringent quality
+												gates. To unify the delivery of multiple services in the same way,
+												Containerization play a big role and Containers along with Continuous
+												Delivery channel brings down your 1000X complexity to a factor of X.
 											</p>
 											<div className='d-flex flex-column align-items-start flex-md-row justify-md-between  px-2 px-md-0 mt-2 mt-md-5'>
 												<div className='pr-0 pr-md-5 w-100'>
@@ -294,7 +294,7 @@ const Microservice = () => {
 														platform alleviates the burden of managing many servers,
 														operating systems etc., it brings a new set of operational
 														challenges like debugging, logs tracing, many processes and
-														tools running for single application. The operation management
+														tools running in a single application. The operation management
 														paradigm is shifted from managing Compute/Network/Storage and
 														operating system to managing geographically distributed clusters
 														and services management, their interaction. Thankfully, current

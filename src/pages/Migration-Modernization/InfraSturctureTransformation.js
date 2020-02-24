@@ -193,44 +193,31 @@ const Infrastructure = () => {
 													A Blueprint for Modernizing and Consolidating Data Center and
 													Platforms as below:
 												</p>
-												<img src={mcit} alt='' className='w-75 mx-auto' />
-												<h3 className='py-2 py-md-3 text-center'>
+												<img src={mcit} alt='' className='w-75 mx-auto box-shadow' />
+												<h3 className='py-2 py-md-4text-center'>
 													Synectiks Software Defined Reference Architecture
 												</h3>
-												<img src={swd} alt='' className='w-50 mx-auto' />
+												<img src={swd} alt='' className='w-50 mx-auto box-shadow' />
 											</div>{' '}
 											{/* <img src={awsd} alt='' className='w-50 mx-auto py-2 py-md-4' /> */}
-											<div>
+											<div className='my-2 my-md-4'>
 												<div className='d-flex'>
-													<div className='d-flex flex-column justify-content-around'>
-														<div className='rotate'>
+													<div className='d-flex flex-column justify-content-around bgOrange'>
+														<div className='rotate bgOrange'>
 															<h6>Activites</h6>
 														</div>
-														<div className='rotate'>
+														{/* <div className='rotate'>
 															<h6>Output</h6>
-														</div>
+														</div> */}
 													</div>
-													<div className='d-flex flex-column flex-md-row align-items-center justify-content-md-around bgWhite'>
+													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlue text-light p-md-3'>
 														<div className='aggregate col'>
 															<div>
-																<h4>Aggregate</h4>
+																<h4 className='btn bgOrange py-0'>Aggregate</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
-																	<ul className='p-0'>
-																		<li>
-																			Aggregate computing, storage, network
-																			@software layer from any plublic/private
-																			cloud
-																		</li>
-																		<li>Scale in/out as per need</li>
-																	</ul>
-																</div>
-															</div>
-
-															<div className='d-flex'>
-																<div>
-																	<ul className='p-0'>
+																	<ul className='p-3'>
 																		<li>
 																			Aggregate computing, storage, network
 																			@software layer from any plublic/private
@@ -243,62 +230,41 @@ const Infrastructure = () => {
 														</div>
 														<div className='extend col'>
 															<div>
-																<h4>Extend</h4>
+																<h4 className='btn bgOrange py-0'>Extend</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
-																	<ul className='p-0'>
+																	<ul className='p-3'>
 																		<li>
 																			Develop micro service, <br /> IOT, big data
 																			quickly
+																			<br />
 																		</li>
 																		<li>Extend full proof frameworks</li>
-																	</ul>
-																</div>
-															</div>
-															<div className=' '>
-																<div>
-																	<ul className='p-0'>
-																		<li>Spring boot based micro services</li>
-																		<li>
-																			IOt and Big data application using open
-																			framework
-																		</li>
 																	</ul>
 																</div>
 															</div>
 														</div>
 														<div className='devops col'>
 															<div>
-																<h4>Devops</h4>
+																<h4 className='btn bgOrange py-0'>Devops</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
-																	<ul className='p-0'>
+																	<ul className='p-3'>
 																		<li>Establish build/deployment pipeline</li>
 																		<li>Establish service orchestration</li>
-																	</ul>
-																</div>
-															</div>
-															<div className=' '>
-																<div>
-																	<ul className='p-0'>
-																		<li>
-																			Automated scripts for build, deployment,
-																			test,release and quality sla's
-																		</li>
-																		<li>Scripted Audit</li>
 																	</ul>
 																</div>
 															</div>
 														</div>
 														<div className='Operate col'>
 															<div>
-																<h4>Operate</h4>
+																<h4 className='btn bgOrange py-0'>Operate</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
-																	<ul className='p-0'>
+																	<ul className='p-3'>
 																		<li>Establish ALM</li>
 																		<li>
 																			Setup operational tools and frameworks to
@@ -307,14 +273,81 @@ const Infrastructure = () => {
 																	</ul>
 																</div>
 															</div>
-															<div className=''>
+														</div>
+													</div>
+												</div>
+
+												<div className='d-flex'>
+													<div className='d-flex flex-column justify-content-around bgOrange'>
+														{/* <div className='rotate'>
+															<h6>Activites</h6>
+														</div> */}
+														<div className='rotate bgOrange'>
+															<h6>Output</h6>
+														</div>
+													</div>
+													<div className='d-flex flex-column flex-md-row justify-content-md-around bgRed text-light px-md-3 py-md-1'>
+														<div className='aggregate col'>
+															{/* <div>
+																<h4>Aggregate</h4>
+															</div> */}
+															<div className='d-flex'>
 																<div>
-																	<ul className='p-0'>
+																	<ul className='p-3'>
 																		<li>
-																			Operation tools for monitoring, resilience,
-																			auto scaling
+																			Automated scripts to do end to end
+																			provisioning of entire platform in minutes
 																		</li>
-																		<li>Finer integration with ALM</li>
+																		<li>
+																			Aggregated cluster capable of deploying
+																			microservice/IOT/Big Data Application
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='extend col'>
+															{/* <div>
+																<h4>Extend</h4>
+															</div> */}
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-3'>
+																		<li>
+																			Develop micro service, <br /> IOT, big data
+																			quickly
+																			<br />
+																		</li>
+																		<li>Extend full proof frameworks</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='devops col'>
+															{/* <div>
+																<h4>Devops</h4>
+															</div> */}
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-3'>
+																		<li>Establish build/deployment pipeline</li>
+																		<li>Establish service orchestration</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div className='Operate col'>
+															{/* <div>
+																<h4>Operate</h4>
+															</div> */}
+															<div className='d-flex'>
+																<div>
+																	<ul className='p-3'>
+																		<li>Establish ALM</li>
+																		<li>
+																			Setup operational tools and frameworks to
+																			put your business in autopilot mode
+																		</li>
 																	</ul>
 																</div>
 															</div>
@@ -336,9 +369,9 @@ const Infrastructure = () => {
 													overall IT strategies and create a clearly defined journey with
 													confidence. Synectiks recommend the following steps:
 												</p>
-												<img src={circle} alt='' className='w-100' />
+												<img src={circle} alt='' className='w-75 box-shadow my-2 my-md-4' />
 												<p>
-													Discovery & Assessment – Evaluate the needs to standardize,
+													<b>Discovery & Assessment</b> - Evaluate the needs to standardize,
 													rationalize and consolidate existing data center assets for greater
 													efficiency and economics, risks involved, and ROI achieved based on
 													real time data and POC’s.
@@ -346,33 +379,32 @@ const Infrastructure = () => {
 											</div>
 											<div>
 												<p>
-													<b>Strategic Planning & Architecture</b> – Develop a roadmap for
+													<b>Strategic Planning & Architecture</b> - Develop a roadmap for
 													upgrading and consolidating infrastructure, and migrating
 													applications and data, substantiated by futuristic architecture.
 												</p>
 												<p>
-													<b>Software Defined </b>
-													Transformation Modernize and Consolidate Data Center and
-													Infrastructure Blueprint and continuously optimize it.
+													<b>Software Defined </b> - Transformation Modernize and Consolidate
+													Data Center and Infrastructure Blueprint and continuously optimize
+													it.
 												</p>
 												<p>
-													<b>Operation Automation </b>
-													Accelerate service agility by unifying administration and
-													simplifying management The very first step discovery and assessment
-													with automated tool will clearly give you insights on the hardware
-													inventory, application dependency and resource consumption. You can
-													make informed decisions to balance workloads and optimize resources
-													and thereby to create a roadmap to guide the journey to Software
-													Defined Organization. This roadmap should map people, process,
-													technology change requirement, consider IT policy and operating
-													model factors; and ultimately produce clear, data-based
-													recommendations with a proposed execution plan to enable Software
-													Defined Transformation to happen. Getting there will require
-													significant upliftment of people skills, impart modern tools and
-													technologies, transforming and migrating applications, integrating
-													and orchestrating environments, automating and monitoring business
-													services, enabling digital processes, and integrating data and
-													security.
+													<b>Operation Automation </b> - Accelerate service agility by
+													unifying administration and simplifying management The very first
+													step discovery and assessment with automated tool will clearly give
+													you insights on the hardware inventory, application dependency and
+													resource consumption. You can make informed decisions to balance
+													workloads and optimize resources and thereby to create a roadmap to
+													guide the journey to Software Defined Organization. This roadmap
+													should map people, process, technology change requirement, consider
+													IT policy and operating model factors; and ultimately produce clear,
+													data-based recommendations with a proposed execution plan to enable
+													Software Defined Transformation to happen. Getting there will
+													require significant upliftment of people skills, impart modern tools
+													and technologies, transforming and migrating applications,
+													integrating and orchestrating environments, automating and
+													monitoring business services, enabling digital processes, and
+													integrating data and security.
 												</p>
 											</div>
 										</div>
@@ -578,10 +610,21 @@ const Infrastructure = () => {
 export default Infrastructure;
 
 const HybridWrapper = styled.div`
+ul{
+  font-size: 1rem;
+}
+.table{
+  font-size: 1rem;
+}
 .rotate{
-     width: 6rem;
-    transform: rotate(-88deg);
-    margin: 0 -4rem;
+     width: auto;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 0 -60px;
+    padding: 3px;
+    text-align: center;
+    color: var(--synectiksWhite);
 }
 .topNav{
 	position: fixed;
@@ -691,7 +734,7 @@ h4{
   font-size:18px;
 }
 p{
-  font-size:18px;
+  font-size:1rem;
 }
 .hybmt{
   margin-top: 2.5rem;

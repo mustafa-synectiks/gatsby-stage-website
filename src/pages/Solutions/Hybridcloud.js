@@ -288,8 +288,9 @@ const Hybridcloud = () => {
 															<h4 className='my-3'>Workload Migration</h4>
 														</div>
 														<p>
-															Choosing when to use what cloud provider is daunting task as
-															well as shifting legacy applications present challenges.
+															Choosing when to use what cloud provider is a daunting task
+															as well well as shifting legacy applications present
+															challenges.
 														</p>
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
@@ -310,8 +311,8 @@ const Hybridcloud = () => {
 															<h4 className='my-3'>Workload Fragmentation</h4>
 														</div>
 														<p>
-															Tracking resources and decommissioning them in timely manner
-															when they are migrated.
+															Tracking resources and decommissioning them in a timely
+															manner when they are migrated.
 														</p>
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
@@ -321,7 +322,7 @@ const Hybridcloud = () => {
 														</div>
 														<p>
 															Obtaining a unified support experience across cloud
-															providers during outage and anomalies.
+															providers during the outage and anomalies.
 														</p>
 													</div>
 												</div>
@@ -401,11 +402,11 @@ const Hybridcloud = () => {
 												</div>
 												<p>
 													Third, customers move web servers to the cloud to take advantage of
-													elastic compute resources. This allows a customer to leverage
-													auto-scaling to right-size compute resources as demand spikes or
+													the elastic compute resources. This allows a customer to leverage
+													auto-scaling to right-size, compute resources as demand spikes or
 													declines. Organizations can also use the cloud for content delivery,
 													placing their content closer to their end-users to reduce latency.
-													This also adds another layer of business continuity as these
+													This also adds another layer of business continuity as these,
 													customer-facing applications can be dispersed and stored across
 													multiple locations to prevent a single point of failure.
 												</p>
