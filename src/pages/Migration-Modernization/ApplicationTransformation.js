@@ -22,6 +22,16 @@ import fsub from '../../images/Microservices/Foundation-Subpage.png';
 import green from '../../images/ApplicationTransformation/transformation_2.png';
 import eptr from '../../images/ApplicationTransformation/Enterprise-Platform.png';
 import redev from '../../images/ApplicationTransformation/Redevelopment.png';
+import advisory from '../../images/modernization/Advisory.png';
+import artifact from '../../images/modernization/Artifacts.png';
+import da from '../../images/modernization/Discovery & Assessment.png';
+import economics from '../../images/modernization/Economics.png';
+import innovation from '../../images/modernization/Innovation.png';
+import operatAuto from '../../images/modernization/Operation Automation.png';
+import operate from '../../images/modernization/Operation.png';
+import pay from '../../images/modernization/Pay As You Use.png';
+import sd from '../../images/modernization/Software Defined.png';
+import spa from '../../images/modernization/Strategic Planning & Architecture.png';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 import SEO from '../../components/seo.js';
@@ -374,7 +384,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={artifact} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Artifacts</h4>
 														</div>
 														<p className='text-center'>
@@ -384,7 +394,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={advisory} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Advisory</h4>
 														</div>
 														<p className='text-center'>
@@ -406,7 +416,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={economics} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Economics</h4>
 														</div>
 														<p className='text-center'>
@@ -416,7 +426,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={innovation} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Innovations</h4>
 														</div>
 														<p className='text-center'>

@@ -9,8 +9,13 @@ const Storagetier = () => {
 		<Layout>
 			<SEO title='Storagetier' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='
-			Storage Tier' />
+				<CaseBreadCrumbs
+					title='Home'
+					casetitle='What We Do'
+					subtitle='Case Studies'
+					pageTitle='
+			Storage Tier'
+				/>
 				<h2>Storage Tier</h2>
 				<div className='softwareDefined_image'>
 					<h3>Indian Meteorology Department - Case Study</h3>

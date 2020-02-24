@@ -62,7 +62,7 @@ const Devops = ({ location }) => {
 											<BreadCrumbs
 												title='Home'
 												subtitle='Migration & Modernization'
-												pageTitle='Devops'
+												pageTitle='Devops Transformation'
 											/>
 										</div>
 										<Navbar color='light' light expand='lg'>

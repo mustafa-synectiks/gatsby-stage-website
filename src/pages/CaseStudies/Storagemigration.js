@@ -11,7 +11,12 @@ const Storagemigration = () => {
 		<Layout>
 			<SEO title='Storage Migration' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Storage Migration' />
+				<CaseBreadCrumbs
+					title='Home'
+					casetitle='What We Do'
+					subtitle='Case Studies'
+					pageTitle='Storage Migration'
+				/>
 				<h2>Storage Migration</h2>
 				<div className='softwareDefined_image'>
 					<h3>SAN connectivity via Synectiks Storage Network Solutions</h3>

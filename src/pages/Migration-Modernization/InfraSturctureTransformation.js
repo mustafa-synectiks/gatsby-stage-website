@@ -18,6 +18,17 @@ import EX from '../../images/Hybrid/Experience.png';
 import EM from '../../images/Hybrid/Engagement Model.png';
 import CS from '../../images/Hybrid/Compliance&Security.png';
 import SEO from '../../components/seo.js';
+import advisory from '../../images/modernization/Advisory.png';
+import artifact from '../../images/modernization/Artifacts.png';
+import da from '../../images/modernization/Discovery & Assessment.png';
+import economics from '../../images/modernization/Economics.png';
+import innovation from '../../images/modernization/Innovation.png';
+import operatAuto from '../../images/modernization/Operation Automation.png';
+import operate from '../../images/modernization/Operation.png';
+import pay from '../../images/modernization/Pay As You Use.png';
+import sd from '../../images/modernization/Software Defined.png';
+import spa from '../../images/modernization/Strategic Planning & Architecture.png';
+
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 
 const Infrastructure = () => {
@@ -41,7 +52,11 @@ const Infrastructure = () => {
 			<HybridWrapper>
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 pt-2 pt-md-5 mt-md-3'>
-						<BreadCrumbs title='Home' subtitle='Migration-Modernization' pageTitle='Infra Structure' />
+						<BreadCrumbs
+							title='Home'
+							subtitle='Migration-Modernization'
+							pageTitle='Infra Structure Transformation'
+						/>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
@@ -451,7 +466,7 @@ const Infrastructure = () => {
 											<div className='my-2 my-md-4'>
 												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center my-2 my-md-4'>
 													<div className='col-md-2'>
-														<img src={ds} alt='' className='imgDes' />
+														<img src={ds} alt='' className='imgDes disima' />
 													</div>
 													<div className='pl-3'>
 														<p>
@@ -468,7 +483,7 @@ const Infrastructure = () => {
 												</div>
 												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center '>
 													<div className='col-md-2'>
-														<img src={ts} alt='' className='imgDesc' />
+														<img src={ts} alt='' className='imgDesc disimal' />
 													</div>
 													<div className='pl-3'>
 														<p>
@@ -511,7 +526,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={artifact} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Artifacts</h4>
 														</div>
 														<p>
@@ -521,7 +536,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={advisory} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Advisory</h4>
 														</div>
 														<p>
@@ -533,7 +548,7 @@ const Infrastructure = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={pay} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Pay As You Use</h4>
 														</div>
 														<p>
@@ -543,7 +558,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={economics} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Economics</h4>
 														</div>
 														<p>
@@ -554,7 +569,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={operate} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Operation</h4>
 														</div>
 														<p>
@@ -567,7 +582,7 @@ const Infrastructure = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={innovation} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Innovation</h4>
 														</div>
 														<p>2–3X acceleration in continuous improvement cycles</p>
@@ -779,6 +794,12 @@ p{
 		a#bgL{
 	padding-left: 6rem;
 	padding-right: 6rem;
+}
+.disimal{
+ width: 60%;
+}
+.disima{
+ width: 75%;
 }
 
 a#bgL.active {

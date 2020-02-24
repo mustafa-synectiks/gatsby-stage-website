@@ -10,7 +10,12 @@ const Disasterrecovery = () => {
 		<Layout>
 			<SEO title='Disaster Recovery' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Disaster Recovery' />
+				<CaseBreadCrumbs
+					title='Home'
+					casetitle='What We Do'
+					subtitle='Case Studies'
+					pageTitle='Disaster Recovery'
+				/>
 				<h2>Disaster Recovery</h2>
 				<div className='softwareDefined_image'>
 					{/* <h3>Large Motor Company</h3> */}

@@ -13,7 +13,12 @@ const Softwaredefined = () => {
 		<Layout>
 			<SEO title='Software Defined' />
 			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
-				<CaseBreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Software Defined' />
+				<CaseBreadCrumbs
+					title='Home'
+					casetitle='What We Do'
+					subtitle='Case Studies'
+					pageTitle='Software Defined'
+				/>
 				<h2>Software Defined</h2>
 				<div className='softwareDefined_image'>
 					<h3>Large Motor Company</h3>
