@@ -37,16 +37,14 @@ export class Aboutus extends React.Component {
 	render() {
 		return (
 			<Layout>
-				<SEO title='About Us' />
 				<AboutWrapper>
-					<div className='bg-lightgrey px-4 px-md-5 mx-md-2 mx-0'>
-						<div>
-							<img className='  text-center ' src={about} width='100%' alt='AboutUs' />
-						</div>
-						<div className='row'>
-							<div className='container-fluid px-2 px-md-5 py-4'>
+					<SEO title='About Us' />
+					<div className='bg-lightgrey'>
+						<div>{/* <img className='  text-center ' src={about} width='100%' alt='AboutUs' /> */}</div>
+						<div className=''>
+							<div className=''>
 								<BreadCrumbs title='Home' subtitle='Company' pageTitle='About Us' />
-								<h1>Mission Statement:</h1>
+								<h1 className='mt-md-4'>Mission Statement:</h1>
 								<p className='py-4'>
 									As an Open Product based Cloud Solution provider, we help enterprises take advantage
 									of public & private cloud and its infinite resources to migrate and modernize their
@@ -243,14 +241,16 @@ export class Aboutus extends React.Component {
 
 export default Aboutus;
 
-const AboutWrapper = styled.div`
+const AboutWrapper = styled.div`{
+
+padding: 1rem;
 h3{
 	text-align : center;
 }
 .cstrip {
 	background: transparent;
 .btn-width{
-	width: 75%;
+	width: auto;
 }
 .cstrip_text{
 	h3{
@@ -270,8 +270,9 @@ transform: translateX(15px);
 	width: 100% !important;
 	margin: 0;
 }
+}
 	@media (min-width: 576px) {
-
+padding: 3rem 4rem;
 .cstrip{
 	background: var(--synectiksWhite);
 }

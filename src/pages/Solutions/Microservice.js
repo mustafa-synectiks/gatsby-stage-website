@@ -37,13 +37,13 @@ const Microservice = () => {
 
 	return (
 		<Layout>
-			<SEO title='Microservices' />
 			<MicroserviceWrapper>
-				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
-						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
-					</div>
+				<SEO title='Microservices' />
+				<div className=''>
+					<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
+
 					<div className=''>
+						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light='light' expand='lg' className='topNav'>
@@ -510,6 +510,7 @@ const Microservice = () => {
 export default Microservice;
 
 const MicroserviceWrapper = styled.div`
+padding: 1rem;
 .microImage{
 	width: 100%;
 }
@@ -605,22 +606,6 @@ ul.tabList.nav.flex-column {
 		width: 100%;
 		left: 0rem;
 	}
-
-h1{
-  font-size:32px;
-}
-h2{
- font-size: 26px;
-}
-h3{
-  font-size:22px;
-}
-h4{
-  font-size:18px;
-}
-p{
-  font-size:18px;
-}
 .hybmt{
   margin-top: 2.5rem;
 }
@@ -663,6 +648,7 @@ p{
 }
 
 @media (min-width: 576px){
+	padding: 3rem 4rem;
 	p{
 		text-align: justify;
 	}

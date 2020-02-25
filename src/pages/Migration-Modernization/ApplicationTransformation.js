@@ -52,18 +52,18 @@ const ApplicationTransformation = () => {
 
 	return (
 		<Layout>
-			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
 			<ApplicationTransformationWrapper>
-				<div className='container-fluid '>
-					<div className='px-1 px-md-5 py-2 py-md-2 text-justify' />
+				<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
+				<div className=''>
+					<div className=' text-justify' />
 					<div>
-						<div className='px-5 pt-5'>
+						<div className=''>
 							<BreadCrumbs
 								title='Home'
 								subtitle='Migration & Modernization'
 								pageTitle='Application Transformation'
 							/>
-							<h1>Application Transformation</h1>
+							<h1 className='mt-2 mt-md-4'>Application Transformation</h1>
 						</div>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
@@ -487,6 +487,7 @@ const ApplicationTransformation = () => {
 export default ApplicationTransformation;
 
 const ApplicationTransformationWrapper = styled.div`
+padding: 1rem;
 .w-hndr{
 	width: 100%
 }
@@ -573,7 +574,7 @@ a#bgLLL.active  {
 }
 .one {
 	z-index: 99999;
-	background: white;
+	background: transparent !important;
 	width: 100%;
 }
 ul.tabList.nav.flex-column {
@@ -629,6 +630,7 @@ ul.tabList.nav.flex-column {
 
 
 @media (min-width: 576px){
+	padding:3rem 4rem;
 	.w-hndr{
 	width: 75%
 }
@@ -643,7 +645,7 @@ ul.tabList.nav.flex-column {
 }
 	.one {
 	z-index: 99999;
-	background: white;
+	background: transparent !important;
 	width: auto;
 }
   .hybJumbo{

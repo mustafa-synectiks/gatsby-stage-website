@@ -59,7 +59,7 @@ module.exports = [
 	},
 	{
 		path: '/primarycloudhostingservices/index.html',
-		component: path.resolve(`src/pages/Cloud/CloudHostedServices/CloudManagedBackup.js`)
+		component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)
 	},
 	{
 		path: '/CloudDisasterRecovery/index.html',

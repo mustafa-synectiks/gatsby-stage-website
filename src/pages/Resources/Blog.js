@@ -8,7 +8,7 @@ const Blog = () => {
 			<div className='px-5 pt-5'>
 				<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Blog' />
 			</div>
-			<h1 className='p-5'>Blog</h1>
+			<h1 className='p-5'>Need Blog Content</h1>
 		</Layout>
 	);
 };
