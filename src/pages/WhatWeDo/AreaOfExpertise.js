@@ -13,35 +13,39 @@ const AreaOfExpertise = ({ location }) => {
 		<Layout>
 			<SEO title='Area Of Expertise' />
 			<AreaOfExpertiseWrapper>
-				<div className='px-1 px-md-5 py-md-4'>
+				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Area Of Expertise' />
 				</div>
-				<h1 className='my-4'>Area Of Expertise</h1>
-				<p>
-					Across our outcome-driven consulting and managed services, it's our open product driven software
-					solutions, our deep expertise on modern application architecture and our cloud culture that makes
-					the difference.
-				</p>
 				<div className='my-4'>
-					<h3 className='my-4'>We are primarily helping customers on the following areas:</h3>
-					<div className='d-flex my-2'>
-						<div className='col-2'>
-							<img src={img2} alt='' className='w-60' />
+					<h1>Area Of Expertise</h1>
+					<p>
+						Across our outcome-driven consulting and managed services, it's our open product driven software
+						solutions, our deep expertise on modern application architecture and our cloud culture that
+						makes the difference.
+					</p>
+				</div>
+				<div className='my-2 my-md-4'>
+					<h2 className='my-2 text-center text-md-left'>
+						We are primarily helping customers on the following areas:
+					</h2>
+					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
+						<div className=''>
+							<img src={img2} alt='' className='w-7 mr-md-5' />
 						</div>
 						<div>
-							<h3>Migration & Modernization</h3>
+							<h3 className='text-center text-md-left'>Migration & Modernization</h3>
 							<p>
 								Modernize your legacy applications and Infrastructure using cloud-native technologies
 								and deliver predictive and deterministic business outcome.
 							</p>
 						</div>
 					</div>
-					<div className='d-flex my-2'>
-						<div className='col-2'>
-							<img src={img1} alt='' className='w-60' />
+					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
+						<div className=''>
+							<img src={img1} alt='' className='w-7 mr-md-5' />
 						</div>
 						<div>
-							<h3>Cloud Management</h3>
+							<h3 className='text-center text-md-left'>Cloud Management</h3>
 							<p>
 								Fully manage your customers cloud environment with CloudOps delivery enabled with
 								DevSecOPs capabilities.
@@ -49,8 +53,10 @@ const AreaOfExpertise = ({ location }) => {
 						</div>
 					</div>
 				</div>
-				<div>
-					<h2>Area of Expertise for Outcome-based Solution offerings</h2>
+				<div className='my-2 my-md-4'>
+					<h2 className='text-center my-2 my-md-4 py-2 py-md-4'>
+						Area of Expertise for Outcome-based Solution offerings
+					</h2>
 					<HomeTabs />
 					<Tabs />
 				</div>
@@ -61,17 +67,18 @@ const AreaOfExpertise = ({ location }) => {
 export default AreaOfExpertise;
 
 const AreaOfExpertiseWrapper = styled.div`
-	padding: 1rem;
-	.w-60 {
-		width: 60%;
-	}
-	padding: 1rem 2rem;
-	.blockquote {
-		width: 100% !important;
-		margin: 0;
+	 {
+		padding: 1rem;
+		.w-7 {
+			width: 7rem;
+		}
+		.blockquote {
+			width: 100% !important;
+			margin: 0;
+		}
 	}
 	@media screen and (min-width: 576px) {
-		padding: 2rem 4rem;
+		padding: 3rem 4rem;
 		.blockquote-custom {
 			position: relative;
 			font-size: 1.1rem;

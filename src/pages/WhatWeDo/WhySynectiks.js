@@ -49,6 +49,7 @@ const WhySynectiks = ({ location }) => {
 					</p>
 				</div>
 				<div className='pt-md-4'>
+					<h2 className='py-2 py-md-2'>Our Team</h2>
 					<img src={team} alt='' className='my-2 my-md-4 W-100 box-shadow' width='100%' />
 					<p className='mt-md-5'>
 						Our passionate global team is a real good mix of Highly Experienced product developers who has

@@ -13,8 +13,8 @@ module.exports = [
 		component: path.resolve(`src/pages/WhatWeDo/WhySynectiks.js`)
 	},
 	{
-		path: '/devops/index.html',
-		component: path.resolve(`src/pages/Formation/Devops.js`)
+		path: '/devopstransformation/index.html',
+		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
 	{
 		path: '/foundation/index.html',
@@ -99,7 +99,7 @@ module.exports = [
 	},
 	{
 		path: '/casestudy/index.html',
-		component: path.resolve(`src/pages/Resources/Casestudy.js`)
+		component: path.resolve(`src/pages/WhatWeDo/Casestudy.js`)
 	},
 	{
 		path: '/featured/index.html',
