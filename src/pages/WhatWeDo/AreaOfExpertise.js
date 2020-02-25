@@ -61,6 +61,7 @@ const AreaOfExpertise = ({ location }) => {
 export default AreaOfExpertise;
 
 const AreaOfExpertiseWrapper = styled.div`
+	padding: 1rem;
 	.w-60 {
 		width: 60%;
 	}

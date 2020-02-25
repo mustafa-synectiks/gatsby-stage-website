@@ -23,30 +23,44 @@ const GetInTouch = () => {
 export default GetInTouch;
 
 const GetTouchWrapper = styled.div`
-	.cstrip {
-		background: transparent;
-		.btn-width {
-			width: 75%;
+	 {
+		.cstrip {
+			background: transparent;
+			.btn-width {
+				width: 75%;
+			}
+			.cstrip_text {
+				h3 {
+					font-size: 1.2rem;
+				}
+			}
 		}
 		.cstrip_text {
-			h3 {
-				font-size: 1.2rem;
+			transform: none;
+			-webkit-transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+			transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+		}
+		.cstrip:hover .cstrip_text {
+			transform: translateX(15px);
+		}
+		.cstrip {
+			background: var(--synectiksWhite);
+			.btn-width {
+				width: auto;
+				background: var(--synectiksWhite);
 			}
 		}
 	}
-	.cstrip_text {
-		transform: none;
-		-webkit-transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
-		transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
-	}
-	.cstrip:hover .cstrip_text {
-		transform: translateX(15px);
-	}
-	.cstrip {
-		background: var(--synectiksWhite);
-		.btn-width {
-			width: auto;
+	@media screen and (min-width: 576px) {
+		.cstrip {
 			background: var(--synectiksWhite);
+		}
+		.cstrip {
+			background: var(--synectiksWhite);
+			.btn-width {
+				width: auto;
+				background: var(--synectiksWhite);
+			}
 		}
 	}
 `;

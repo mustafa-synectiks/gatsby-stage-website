@@ -33,7 +33,7 @@ const CaseStudies = () => {
 				<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
 					<BreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Case Studies' />
 				</div>
-				<h2>Case Studies </h2>
+				<h1 className='text-center'>Case Studies ok </h1>
 				<div className='container-fluid mx-auto px-3 py-2 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content'>
@@ -142,22 +142,26 @@ const CaseStudies = () => {
 export default CaseStudies;
 
 const CaseStudiesWrapper = styled.div`
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
-		text-align: left;
-	}
-	.w-450 {
-		width: 100%;
-	}
-	.box-shadow {
-		box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+	 {
+		padding: 1rem;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			text-align: left;
+		}
+		.w-450 {
+			width: 100%;
+		}
+		.box-shadow {
+			box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+		}
 	}
 	@media screen and (min-width: 576px) {
-		padding: 2rem 4rem;
+		padding: 3rem 4rem;
 		.w-450 {
 			width: 400px;
 			padding: 0 2rem;

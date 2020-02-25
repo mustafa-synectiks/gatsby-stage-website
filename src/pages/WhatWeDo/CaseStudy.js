@@ -7,6 +7,7 @@ const CaseStudy = () => {
 	return (
 		<Layout>
 			<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Case Studies' />
+			<h1>ok</h1>
 			<CaseStudies />
 		</Layout>
 	);
