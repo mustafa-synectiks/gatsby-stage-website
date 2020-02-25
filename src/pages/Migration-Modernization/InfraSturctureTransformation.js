@@ -50,13 +50,14 @@ const Infrastructure = () => {
 			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
 
 			<HybridWrapper>
-				<div className='container-fluid '>
-					<div className='px-1 px-md-5 pt-2 pt-md-5 mt-md-3'>
+				<div className='container-fluid p-1'>
+					<div className=''>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Migration-Modernization'
 							pageTitle='Infra Structure Transformation'
 						/>
+						<h1 className='mt-4'>Infrastructure Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
@@ -120,9 +121,9 @@ const Infrastructure = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h1 className='text-left'>
+											<h2 className='text-left'>
 												Understanding the Software Defined Transformation:{' '}
-											</h1>
+											</h2>
 											<p>
 												Software-defined infrastructure is the definition of technical computing
 												infrastructure entirely under the control of software with no operator
@@ -204,16 +205,28 @@ const Infrastructure = () => {
 												</p>
 											</div>
 											<div>
-												<p>
-													A Blueprint for Modernizing and Consolidating Data Center and
-													Platforms as below:
-												</p>
-												<img src={mcit} alt='' className='w-75 mx-auto box-shadow' />
-												<h3 className='py-2 py-md-4text-center'>
-													Synectiks Software Defined Reference Architecture
-												</h3>
-												<img src={swd} alt='' className='w-50 mx-auto box-shadow' />
-											</div>{' '}
+												<div className='my-2 my-md-5'>
+													<h4 className='text-center'>
+														A Blueprint for Modernizing and Consolidating Data Center and
+														Platforms as below:
+													</h4>
+													<img
+														src={mcit}
+														alt=''
+														className='w-hndr mx-auto box-shadow my-2 my-md-4 '
+													/>
+												</div>
+												<div className='bgWhite py-2 py-md-4'>
+													<h3 className=' text-center'>
+														Synectiks Software Defined Reference Architecture
+													</h3>
+													<img
+														src={swd}
+														alt=''
+														className='w-hndr mx-auto box-shadow my-2 my-md-4'
+													/>
+												</div>
+											</div>
 											{/* <img src={awsd} alt='' className='w-50 mx-auto py-2 py-md-4' /> */}
 											<div className='my-2 my-md-4'>
 												<div className='d-flex'>
@@ -384,41 +397,46 @@ const Infrastructure = () => {
 													overall IT strategies and create a clearly defined journey with
 													confidence. Synectiks recommend the following steps:
 												</p>
-												<img src={circle} alt='' className='w-75 box-shadow my-2 my-md-4' />
+												<img
+													src={circle}
+													alt=''
+													className='w-hndr box-shadow my-2 my-md-4 mx-auto'
+												/>
 												<p>
-													<b>Discovery & Assessment</b> - Evaluate the needs to standardize,
-													rationalize and consolidate existing data center assets for greater
-													efficiency and economics, risks involved, and ROI achieved based on
-													real time data and POC’s.
+													<b className='h4'>Discovery & Assessment</b> - Evaluate the needs to
+													standardize, rationalize and consolidate existing data center assets
+													for greater efficiency and economics, risks involved, and ROI
+													achieved based on real time data and POC’s.
 												</p>
 											</div>
 											<div>
 												<p>
-													<b>Strategic Planning & Architecture</b> - Develop a roadmap for
-													upgrading and consolidating infrastructure, and migrating
-													applications and data, substantiated by futuristic architecture.
+													<b className='h4'>Strategic Planning & Architecture</b> - Develop a
+													roadmap for upgrading and consolidating infrastructure, and
+													migrating applications and data, substantiated by futuristic
+													architecture.
 												</p>
 												<p>
-													<b>Software Defined </b> - Transformation Modernize and Consolidate
-													Data Center and Infrastructure Blueprint and continuously optimize
-													it.
+													<b className='h4'>Software Defined </b> - Transformation Modernize
+													and Consolidate Data Center and Infrastructure Blueprint and
+													continuously optimize it.
 												</p>
 												<p>
-													<b>Operation Automation </b> - Accelerate service agility by
-													unifying administration and simplifying management The very first
-													step discovery and assessment with automated tool will clearly give
-													you insights on the hardware inventory, application dependency and
-													resource consumption. You can make informed decisions to balance
-													workloads and optimize resources and thereby to create a roadmap to
-													guide the journey to Software Defined Organization. This roadmap
-													should map people, process, technology change requirement, consider
-													IT policy and operating model factors; and ultimately produce clear,
-													data-based recommendations with a proposed execution plan to enable
-													Software Defined Transformation to happen. Getting there will
-													require significant upliftment of people skills, impart modern tools
-													and technologies, transforming and migrating applications,
-													integrating and orchestrating environments, automating and
-													monitoring business services, enabling digital processes, and
+													<b className='h4'>Operation Automation </b> - Accelerate service
+													agility by unifying administration and simplifying management The
+													very first step discovery and assessment with automated tool will
+													clearly give you insights on the hardware inventory, application
+													dependency and resource consumption. You can make informed decisions
+													to balance workloads and optimize resources and thereby to create a
+													roadmap to guide the journey to Software Defined Organization. This
+													roadmap should map people, process, technology change requirement,
+													consider IT policy and operating model factors; and ultimately
+													produce clear, data-based recommendations with a proposed execution
+													plan to enable Software Defined Transformation to happen. Getting
+													there will require significant upliftment of people skills, impart
+													modern tools and technologies, transforming and migrating
+													applications, integrating and orchestrating environments, automating
+													and monitoring business services, enabling digital processes, and
 													integrating data and security.
 												</p>
 											</div>
@@ -522,14 +540,17 @@ const Infrastructure = () => {
 															<img src={EX} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Experience</h4>
 														</div>
-														<p> Large Scale modernization and consolidation experience</p>
+														<p className='text-center'>
+															{' '}
+															Large Scale modernization and consolidation experience
+														</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={artifact} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Artifacts</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Transformation Blueprints and Automation Bots available in
 															Xformation platform accelerate transformation effort.
 														</p>
@@ -539,7 +560,7 @@ const Infrastructure = () => {
 															<img src={advisory} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Advisory</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Quick Discovery / Assessment and transformation plan built
 															in weeks, not months.
 														</p>
@@ -551,7 +572,7 @@ const Infrastructure = () => {
 															<img src={pay} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Pay As You Use</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Move to consumption model economics across all IT, use our
 															available blueprints that reduce any stranded capacity.
 														</p>
@@ -561,7 +582,7 @@ const Infrastructure = () => {
 															<img src={economics} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Economics</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Upto 50% Lower TCO of IT by having aggregated infrastructure
 															and fluid resource pools optimize use of compute, storage
 															and fabric resources.
@@ -572,7 +593,7 @@ const Infrastructure = () => {
 															<img src={operate} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Operation</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Upto 40% improvement in IT staff productivity by using our
 															automations that unify administration and simplify
 															management.
@@ -585,14 +606,16 @@ const Infrastructure = () => {
 															<img src={innovation} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Innovation</h4>
 														</div>
-														<p>2–3X acceleration in continuous improvement cycles</p>
+														<p className='text-center'>
+															2–3X acceleration in continuous improvement cycles
+														</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={CS} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'> Security & Compliance</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Provision and change infrastructure through well defined
 															blueprints and pipelines that adheres to highest level of
 															security & compliance.
@@ -603,7 +626,7 @@ const Infrastructure = () => {
 															<img src={EM} alt='' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Engagement</h4>
 														</div>
-														<p>
+														<p className='text-center'>
 															Our every engagement is focused on empowerment, not
 															dependency.
 														</p>
@@ -624,15 +647,20 @@ const Infrastructure = () => {
 
 export default Infrastructure;
 
-const HybridWrapper = styled.div`
+const HybridWrapper = styled.div`{
+	.w-hndr{
+		width: 100%;
+	}
+
+	padding: 1rem;
 ul{
-  font-size: 1rem;
+	font-size: 1rem;
 }
 .table{
-  font-size: 1rem;
+	font-size: 1rem;
 }
 .rotate{
-     width: auto;
+	width: auto;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -646,7 +674,7 @@ ul{
 	top: 100px;
 }
 .navbar-light .navbar-toggler {
-		color: rgba(0, 0, 0, .5);
+	color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
   }
   .navbar-toggler > .close {
@@ -662,14 +690,14 @@ ul{
 		display: inline;
 	}
 h1,h2,h3,h4,h5,h5,p,ul{
-  text-align: left;
+	text-align: left;
 }
 .hybJumbo{
-  display:flex;
+	display:flex;
   flex-direction: column;
   align-items: center;
   .himage {
-		width: 100%;
+	  width: 100%;
     height: auto;
     float: none;
 		box-shadow: 5px 5px 5px #789;
@@ -678,13 +706,13 @@ h1,h2,h3,h4,h5,h5,p,ul{
   }
 }
 .marHybrid{
-  margin-left: 0rem;
+	margin-left: 0rem;
 }
 .w-sm-100{
-  width: 100%;
+	width: 100%;
 }
 .hybridFixed{
-  position: fixed;
+	position: fixed;
   top:6rem;
   left:0;
   z-index: 99;
@@ -692,7 +720,7 @@ h1,h2,h3,h4,h5,h5,p,ul{
 a#bgL,
 a#bgLL,
 a#bgLLL {
-    padding: 0.5rem 1.5rem;
+	padding: 0.5rem 1.5rem;
     font-size: 12px;
     height: auto;
     /* background: white !important; */
@@ -703,7 +731,7 @@ a#bgLLL {
 a#bgL.active,
 a#bgLL.active,
 a#bgLLL.active  {
-    border-bottom: 5px solid #007cc2;
+	border-bottom: 5px solid #007cc2;
     background: bgBlue !important;
     text-align: left;
     color: var(--synectiksWhite);
@@ -725,41 +753,27 @@ a#bgLLL.active  {
 	width: 100%;
 }
 ul.tabList.nav.flex-column {
-		position: relative;
+	position: relative;
 		z-index: 99999;
 		width: 100%;
 		left: 0rem;
 	}
 	.tabList {
-    display:block;
+		display:block;
   }
   .tabsHide {
-    display: none;
+	  display: none;
   }
-h1{
-  font-size:32px;
-}
-h2{
- font-size: 26px;
-}
-h3{
-  font-size:22px;
-}
-h4{
-  font-size:18px;
-}
-p{
-  font-size:1rem;
-}
+
 .hybmt{
-  margin-top: 2.5rem;
+	margin-top: 2.5rem;
 }
 .nav-link.active{
-  background: var(--synectiksBlue);
+	background: var(--synectiksBlue);
   color: var(--synectiksWhite);
 }
 .logo-btn {
-    font-size:2rem;
+	font-size:2rem;
     background: white;
     border: none;
     outline: none;
@@ -771,26 +785,31 @@ p{
 }
 
     .logo-btn:hover {
-      cursor: pointer;
+		 cursor: pointer;
     }
       .tab-content>.active{
-        padding:0rem 0.5rem;
+			padding:0rem 0.5rem;
       }
       	.whbd9 {
-		width: 25%;
+				width: 25%;
   }
   	.whbd7 {
-		width:25%;
+		  width:25%;
   }
  .w20{
-		width:25%;
+	 width:25%;
   }
   .w15 {
+
 	width: 25%;
 }
-
+}
 
 @media (min-width: 576px){
+	.w-hndr{
+		width: 75%;
+	}
+	padding: 3rem 4rem;
 		a#bgL{
 	padding-left: 6rem;
 	padding-right: 6rem;

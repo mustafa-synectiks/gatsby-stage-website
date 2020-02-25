@@ -63,6 +63,7 @@ const ApplicationTransformation = () => {
 								subtitle='Migration & Modernization'
 								pageTitle='Application Transformation'
 							/>
+							<h1>Application Transformation</h1>
 						</div>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
@@ -125,9 +126,9 @@ const ApplicationTransformation = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h1 className='text-left'>
+											<h2 className='text-left'>
 												Understanding the Application Transformation:{' '}
-											</h1>
+											</h2>
 											<p>
 												Inside almost every leading business today there’s a world-class
 												software business – driving innovation, agility and outstanding customer
@@ -201,27 +202,27 @@ const ApplicationTransformation = () => {
 													strategies and create a clearly defined journey with confidence.
 													Synectiks recommend the following steps:
 												</p>
-												<img src={circle} alt='' className='w-100' />
+												<img src={circle} alt='' className='w-hndr mx-auto my-2 my-md-5' />
 												<p>
-													<b>Discovery & Assessment</b> – Evaluate the needs to modernize,
-													standardize, rationalize and consolidate existing applications for
-													greater efficiency and economics, risks involved, and ROI achieved
-													based on real time data and POC’s.
+													<b className='h4'>Discovery & Assessment</b> – Evaluate the needs to
+													modernize, standardize, rationalize and consolidate existing
+													applications for greater efficiency and economics, risks involved,
+													and ROI achieved based on real time data and POC’s.
 												</p>
 											</div>
 											<div>
 												<p>
-													<b>Strategic Planning & Architecture</b> – Develop a roadmap for
-													modernizing and migrating applications and data, substantiated by
-													futuristic architecture.
+													<b className='h4'>Strategic Planning & Architecture</b> – Develop a
+													roadmap for modernizing and migrating applications and data,
+													substantiated by futuristic architecture.
 												</p>
 												<p>
-													<b>Application Transformation - </b>
+													<b className='h4'>Application Transformation - </b>
 													Modernize and Consolidate existing applications based on target
 													architecture and continuously optimize it.
 												</p>
 												<p>
-													<b>People / Process / Technology Alignment</b>
+													<b className='h4'>People / Process / Technology Alignment</b>
 													Elevate people skills, operation automation and service agility to
 													support modernized applications. Our approach is to use a
 													combination of the latest industry tools, processes, experience and
@@ -285,7 +286,7 @@ const ApplicationTransformation = () => {
 													Lake: Extracting the data in a Data Lake and exposing that data
 													through analytical tools.
 												</p>
-												<img src={ms10} alt='' />
+												<img src={ms10} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Accelerated Migration</h3>
@@ -298,7 +299,7 @@ const ApplicationTransformation = () => {
 													governance.
 												</p>
 
-												<img src={fsub} alt='' />
+												<img src={fsub} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Delivery Pipeline</h3>
@@ -314,7 +315,7 @@ const ApplicationTransformation = () => {
 													increasing security and compliance guidelines.
 												</p>
 
-												<img src={green} alt='' />
+												<img src={green} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Redevelopment – Microservices Based App Development</h3>
@@ -327,7 +328,7 @@ const ApplicationTransformation = () => {
 												blocks based on cloud native services that customers can leverage to
 												build application and services rapidly. A typical microservice based
 												enterprise application component diagram is below:
-												<img src={eptr} alt='' />
+												<img src={eptr} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Fast Data & Bigdata Analytics</h3>
@@ -344,7 +345,7 @@ const ApplicationTransformation = () => {
 													truly focus on outcomes.
 												</p>
 
-												<img src={redev} alt='' />
+												<img src={redev} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 										</div>
 									</TabPane>
@@ -367,7 +368,7 @@ const ApplicationTransformation = () => {
 												of making us your microservices partner is, our open source contribution
 												helps us to deliver values vary rapidly.
 											</p>
-											<h4>
+											<h4 className='text-center'>
 												Top 9 Reasons to select Synectiks as your Application Modernization
 												Partner:
 											</h4>
@@ -486,6 +487,9 @@ const ApplicationTransformation = () => {
 export default ApplicationTransformation;
 
 const ApplicationTransformationWrapper = styled.div`
+.w-hndr{
+	width: 100%
+}
 .topNav{
 	position: fixed;
 	top: 100px;
@@ -584,21 +588,7 @@ ul.tabList.nav.flex-column {
   .tabsHide {
     display: none;
   }
-h1{
-  font-size:32px;
-}
-h2{
- font-size: 26px;
-}
-h3{
-  font-size:22px;
-}
-h4{
-  font-size:18px;
-}
-p{
-  font-size:18px;
-}
+
 .hybmt{
   margin-top: 2.5rem;
 }
@@ -639,6 +629,9 @@ p{
 
 
 @media (min-width: 576px){
+	.w-hndr{
+	width: 75%
+}
 	a#bgL{
 	padding-left: 6rem;
 	padding-right: 6rem;
@@ -772,15 +765,7 @@ a#bgLLL.active {
 .nav-item > a.active, .nav-item > a:active{
   height: auto;
 }
-h2{
-  font-size: 2rem;
-}
-h3{
-  font-size:1.75rem;
-}
-h4{
-   font-size: 1.5rem;
-}
+
 }
 @media(min-width:768px){
 	a#bgLLL.active:after{

@@ -64,6 +64,7 @@ const DevopsTransformation = ({ location }) => {
 												subtitle='Migration & Modernization'
 												pageTitle='Devops Transformation'
 											/>
+											<h1 className='text-center text-md-left mt-md-4'>Devops Transformation</h1>
 										</div>
 										<Navbar color='light' light expand='lg'>
 											<NavbarToggler onClick={toggleNavbar} className='mr-2' />
@@ -127,9 +128,6 @@ const DevopsTransformation = ({ location }) => {
 																toggle('5');
 																toggleTab();
 															}}>
-															{/* <span>
-                      <img src={SD} alt="" className='imgHyb'/>
-                    </span> */}
 															KEY BENEFITS
 														</NavLink>
 													</NavItem>
@@ -142,7 +140,9 @@ const DevopsTransformation = ({ location }) => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h2 className=''>Understanding the DevOps Transformation:</h2>
+											<h2 className='text-center text-md-left'>
+												Understanding the DevOps Transformation:
+											</h2>
 											<p>
 												DevOps is the combination of cultural philosophies, practices, and tools
 												that increases an organization’s ability to deliver applications and
@@ -653,12 +653,7 @@ const DevopsTWrapper = styled.div`
     color: rgba(0,0,0,.5);
     border-color: rgba(0,0,0,0);
 }
-h1,h2,h3,h4,p{
-	text-align: left;
-}
-h5{
-	text-align:center;
-}
+
 .hybridFixed{
   position: fixed;
   top:6rem;
@@ -709,21 +704,7 @@ ul.tabList.nav.flex-column {
   .tabsHide {
     display: none;
   }
-h1{
-  font-size:1.4rem;
-}
-h2{
- font-size: 1.3rem;
-}
-h3{
-  font-size:1.2rem;
-}
-h4{
-  font-size:1.1rem;
-}
-h5{
-	text-align: left;
-}
+
 .hybmt{
   margin-top: 2.5rem;
 }
@@ -910,15 +891,7 @@ a#bgLLL.active {
 .nav-item > a.active, .nav-item > a:active{
   height: auto;
 }
-h2{
-  font-size: 2rem;
-}
-h3{
-  font-size:1.75rem;
-}
-h4{
-   font-size: 1.5rem;
-}
+
 }
 @media(min-width:768px){
 	a#bgL.active:after{

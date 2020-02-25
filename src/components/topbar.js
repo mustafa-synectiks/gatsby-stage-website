@@ -12,7 +12,7 @@ const Topbar = () => {
 			<h6 className='bl br'>
 				QUESTIONS?
 				<span id='quest ' className='ml-2 ml-md-2'>
-					609 608 0429X102
+					609 608 0429 X 102
 				</span>
 			</h6>
 			<a className='br infoMail' href='mailto:info@synectiks.com'>
