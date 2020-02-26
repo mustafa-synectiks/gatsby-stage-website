@@ -220,28 +220,33 @@ const DevopsTransformation = ({ location }) => {
 											</div> */}
 
 											<div className='d-flex justify-content-start flex-column flex-md-row'>
-												<div className=''>
-													<br />
-													<div className='Dulture'>
-														<h5>Culture Skill</h5>
+												<div className='d-flex flex-column justify-content-evenly'>
+													<div className='Dulture w-11 py-2'>
+														<h5 className=''>
+															Culture <br />Skill
+														</h5>
 													</div>
-													<div className='DesignArc'>
-														<h5>Design Architecture</h5>
+													<div className='DesignArc w-11 py-2'>
+														<h5 className=''>
+															Design <br />Architecture
+														</h5>
 													</div>
-													<div className='Duild'>
-														<h5>Build Deploy</h5>
+													<div className='Duild w-11 py-2'>
+														<h5 className=''>
+															Build <br />Deploy
+														</h5>
 													</div>
-													<div className='Dest'>
-														<h5>Test</h5>
+													<div className='Dest w-11 py-3'>
+														<h5 className=''>Test</h5>
 													</div>
-													<div className='Doperate'>
-														<h5>Operation</h5>
+													<div className='Doperate w-11 py-3'>
+														<h5 className=''>Operation</h5>
 													</div>
 												</div>
 												<div className='Durple w-50'>
 													<h4>Basic</h4>
-													<div className='Dulture'>
-														<ul className='DurpleLight ulfont ulfont'>
+													<div className='Dulture d-flex align-items-center'>
+														<ul className='DurpleLight ulfont ulht w-21'>
 															<li>Prioritized work</li>
 															<li>Large team</li>
 															<li>Multiple Roles(ARchitect, Developer,Tester,...)</li>
@@ -249,8 +254,8 @@ const DevopsTransformation = ({ location }) => {
 															<li>Quarterly release</li>
 														</ul>
 													</div>
-													<div className='DesignArc'>
-														<ul className='DurpleLight ulfont ulfont'>
+													<div className='DesignArc d-flex align-items-center'>
+														<ul className='DurpleLight ulfont ulht w-21'>
 															<li>Monolith product</li>
 															<li>Consolidate platform</li>
 															<li>System into Modules</li>
@@ -259,8 +264,8 @@ const DevopsTransformation = ({ location }) => {
 															<li>Basic Automations</li>
 														</ul>
 													</div>
-													<div className='Duild'>
-														<ul className='DurpleLight ulfont ulfont'>
+													<div className='Duild d-flex align-items-center'>
+														<ul className='DurpleLight ulfont ulht w-21'>
 															<li>Scripted Build</li>
 															<li>Continous Integration</li>
 															<li>Dedicated build & release server</li>
@@ -272,15 +277,15 @@ const DevopsTransformation = ({ location }) => {
 															</li>
 														</ul>
 													</div>
-													<div className='Dest'>
-														<ul className='DurpleLight ulfont ulfont'>
+													<div className='Dest d-flex align-items-center'>
+														<ul className='DurpleLight ulfont ulht w-21'>
 															<li>Basic test automation</li>
 															<li>Continous tests integration</li>
 															<li>Risk based manual tests</li>
 														</ul>
 													</div>
-													<div className='Doperate'>
-														<ul className='DurpleLight ulfont ulfont'>
+													<div className='Doperate d-flex align-items-center'>
+														<ul className='DurpleLight ulfont ulht w-21'>
 															<li>ITSM tools & Operating SLA's</li>
 															<li>Performance monitoring</li>
 															<li>Log monitoring</li>
@@ -293,7 +298,7 @@ const DevopsTransformation = ({ location }) => {
 												<div className='Dred w-50'>
 													<h4>Intermediate</h4>
 													<div className='Dulture'>
-														<ul className='DredLight ulfont ulfont'>
+														<ul className='DredLight ulfont ulht w-21'>
 															<li>Stable teams</li>
 															<li>Share pain</li>
 															<li>Remove boundary(Dev & Test)</li>
@@ -303,7 +308,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='DesignArc'>
-														<ul className='DredLight ulfont ulfont'>
+														<ul className='DredLight ulfont ulht w-21'>
 															<li>Component engineering</li>
 															<li>Config as code</li>
 															<li>Event architecture</li>
@@ -313,7 +318,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Duild'>
-														<ul className='DredLight ulfont ulfont'>
+														<ul className='DredLight ulfont ulht w-21'>
 															<li>Pollen build </li>
 															<li>Manual version & tagging</li>
 															<li>Automated Staging</li>
@@ -325,7 +330,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='DredLight ulfont ulfont'>
+														<ul className='DredLight ulfont ulht w-21'>
 															<li>
 																Automated unit / Integration / UI / Regression
 																/Performance / Code / Security / Code Quality / Coverage
@@ -336,7 +341,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='DredLight ulfont ulfont'>
+														<ul className='DredLight ulfont ulht w-21'>
 															<li>Diagnostics</li>
 															<li>Advanced monitoring through scripts</li>
 															<li>Log Analysis</li>
@@ -347,7 +352,7 @@ const DevopsTransformation = ({ location }) => {
 												<div className='Dellow w-50'>
 													<h4>Standard</h4>
 													<div className='Dulture'>
-														<ul className='DellowLight ulfont ulfont'>
+														<ul className='DellowLight ulfont ulht w-21'>
 															<li>Team responsible all the way prod</li>
 															<li>Dedicated tools team</li>
 															<li>Remove boundary(Dev & Ops)</li>
@@ -358,7 +363,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='DesignArc'>
-														<ul className='DellowLight ulfont ulfont'>
+														<ul className='DellowLight ulfont ulht w-21'>
 															<li>Distributed Architecture</li>
 															<li>Horizontal scalability</li>
 															<li>Cloud centric, SASS model</li>
@@ -368,7 +373,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Duild'>
-														<ul className='DellowLight ulfont ulfont'>
+														<ul className='DellowLight ulfont ulht w-21'>
 															<li>Quality gates</li>
 															<li>Realtime build metrics</li>
 															<li>Deployment & compliance trend</li>
@@ -378,7 +383,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='DellowLight ulfont ulfont'>
+														<ul className='DellowLight ulfont ulht w-21'>
 															<li>well defined TDD and BDD framework</li>
 															<li>BDD tests written in DSL</li>
 															<li>Test rule based stage Automation</li>
@@ -387,7 +392,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='DellowLight ulfont ulfont'>
+														<ul className='DellowLight ulfont ulht w-21'>
 															<li>Automated hyberscale cluster & cloud provisioning</li>
 															<li>Elastic auto provisioning</li>
 															<li>Resilience scripts</li>
@@ -398,7 +403,7 @@ const DevopsTransformation = ({ location }) => {
 												<div className='Dreen w-50'>
 													<h4>Advanced</h4>
 													<div className='Dulture'>
-														<ul className='DreenLight ulfont ulfont'>
+														<ul className='DreenLight ulfont ulht w-21'>
 															<li>All full stacks experts</li>
 															<li>Cross functional small teams</li>
 															<li>Speedy feedback</li>
@@ -408,7 +413,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='DesignArc'>
-														<ul className='DreenLight ulfont ulfont'>
+														<ul className='DreenLight ulfont ulht w-21'>
 															<li>Hybrid cloud, cloud agnostics, elastics</li>
 															<li>Complete software defined(IAAC)</li>
 															<li>Multi cloud compete SOA</li>
@@ -419,7 +424,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Duild'>
-														<ul className='DreenLight ulfont ulfont'>
+														<ul className='DreenLight ulfont ulht w-21'>
 															<li>Zero touch deployment</li>
 															<li>Elastic automation cluster</li>
 															<li>Parallel continous delivery</li>
@@ -430,14 +435,14 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='DreenLight ulfont ulfont'>
+														<ul className='DreenLight ulfont ulht w-21'>
 															<li>Service wise test results consolidation</li>
 															<li>Tests Trend analytics</li>
 															<li>Continous tests in production</li>
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='DreenLight ulfont ulfont'>
+														<ul className='DreenLight ulfont ulht w-21'>
 															<li>Hardware / Os / App server / license agnostics</li>
 															<li>Continous security / Audit / Billing</li>
 															<li>
@@ -448,6 +453,57 @@ const DevopsTransformation = ({ location }) => {
 													</div>
 												</div>
 											</div>
+
+											{/* <div className='d-flex justify-content-around flex-row'>
+												<div className='w-11'>
+													<h5>Culture Skill</h5>
+												</div>
+												<div>
+													<h5>Basic</h5>
+													<ul className='DurpleLight ulfont ulht w-21'>
+														<li>Prioritized work</li>
+														<li>Large team</li>
+														<li>Multiple Roles(ARchitect, Developer,Tester,...)</li>
+														<li>Defined & documented process</li>
+														<li>Quarterly release</li>
+													</ul>
+												</div>
+												<div>
+													<h5>Intermediate</h5>
+													<ul className='DredLight ulfont ulht w-21'>
+														<li>Stable teams</li>
+														<li>Share pain</li>
+														<li>Remove boundary(Dev & Test)</li>
+														<li>Agile process</li>
+														<li>Monthly release</li>
+														<li>Act on metrics</li>
+													</ul>
+												</div>
+												<div>
+													<h5>Standard</h5>
+													<ul className='DellowLight ulfont ulht w-21'>
+														<li>Team responsible all the way prod</li>
+														<li>Dedicated tools team</li>
+														<li>Remove boundary(Dev & Ops)</li>
+														<li>Deploy disconnected from release</li>
+														<li>Continous improvement</li>
+														<li>Component ownership</li>
+														<li>Decentralized decisions</li>
+													</ul>
+												</div>
+												<div>
+													<h5>Advanced</h5>
+													<ul className='DreenLight ulfont ulht w-21'>
+														<li>All full stacks experts</li>
+														<li>Cross functional small teams</li>
+														<li>Speedy feedback</li>
+														<li>Advanced frameworks driven</li>
+														<li>RAD</li>
+														<li>Excellent training Framework</li>
+													</ul>
+												</div>
+											</div> */}
+
 											<div>
 												<h4 className='text-center my-5'>
 													Our DevOps Gap analysis process briefly as follows:
@@ -879,7 +935,17 @@ const DevopsTransformation = ({ location }) => {
 export default DevopsTransformation;
 
 const DevopsTWrapper = styled.div`
-
+.w-11{
+ width: 10rem;
+ padding: 1rem 0rem;
+ height: 10vh;
+}
+.w-21{
+	width:15.5rem;
+}
+.justify-content-evenly{
+	justify-content: space-evenly;
+}
 	.ulfont {
   font-size: 14px;
  }
