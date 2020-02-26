@@ -169,7 +169,7 @@ const DevopsTransformation = ({ location }) => {
 													most important need for technology and human side are as follows:
 												</p>
 											</div>
-											<div className='my-3 d-flex align-items-center flex-column'>
+											<div className='my-3 d-flex  justify-content-around align-items-start flex-column'>
 												<div>
 													<h3>Technology Shift</h3>
 													<p className=''>
@@ -215,8 +215,238 @@ const DevopsTransformation = ({ location }) => {
 										</div>
 										<div className='text-center '>
 											<h4 className='my-5'>Where do you find your current DevOps Maturity?</h4>
-											<div className='w-75 mx-auto'>
+											{/* <div className='w-75 mx-auto'>
 												<img src={six} alt='' className='boxshdd w-100' />
+											</div> */}
+
+											<div className='d-flex justify-content-start flex-column flex-md-row'>
+												<div className=''>
+													<br />
+													<div className='Dulture'>
+														<h5>Culture Skill</h5>
+													</div>
+													<div className='DesignArc'>
+														<h5>Design Architecture</h5>
+													</div>
+													<div className='Duild'>
+														<h5>Build Deploy</h5>
+													</div>
+													<div className='Dest'>
+														<h5>Test</h5>
+													</div>
+													<div className='Doperate'>
+														<h5>Operation</h5>
+													</div>
+												</div>
+												<div className='Durple w-50'>
+													<h4>Basic</h4>
+													<div className='Dulture'>
+														<ul className='DurpleLight ulfont ulfont'>
+															<li>Prioritized work</li>
+															<li>Large team</li>
+															<li>Multiple Roles(ARchitect, Developer,Tester,...)</li>
+															<li>Defined & documented process</li>
+															<li>Quarterly release</li>
+														</ul>
+													</div>
+													<div className='DesignArc'>
+														<ul className='DurpleLight ulfont ulfont'>
+															<li>Monolith product</li>
+															<li>Consolidate platform</li>
+															<li>System into Modules</li>
+															<li>Library management</li>
+															<li>Api management</li>
+															<li>Basic Automations</li>
+														</ul>
+													</div>
+													<div className='Duild'>
+														<ul className='DurpleLight ulfont ulfont'>
+															<li>Scripted Build</li>
+															<li>Continous Integration</li>
+															<li>Dedicated build & release server</li>
+															<li>Multiplatform packages</li>
+															<li>Basic test automation</li>
+															<li>
+																Manual staging environments(dev, stage,test, prod)
+																promotion
+															</li>
+														</ul>
+													</div>
+													<div className='Dest'>
+														<ul className='DurpleLight ulfont ulfont'>
+															<li>Basic test automation</li>
+															<li>Continous tests integration</li>
+															<li>Risk based manual tests</li>
+														</ul>
+													</div>
+													<div className='Doperate'>
+														<ul className='DurpleLight ulfont ulfont'>
+															<li>ITSM tools & Operating SLA's</li>
+															<li>Performance monitoring</li>
+															<li>Log monitoring</li>
+															<li>Alerts monitoring</li>
+															<li>Manual resource provisioning</li>
+															<li>Security audit</li>
+														</ul>
+													</div>
+												</div>
+												<div className='Dred w-50'>
+													<h4>Intermediate</h4>
+													<div className='Dulture'>
+														<ul className='DredLight ulfont ulfont'>
+															<li>Stable teams</li>
+															<li>Share pain</li>
+															<li>Remove boundary(Dev & Test)</li>
+															<li>Agile process</li>
+															<li>Monthly release</li>
+															<li>Act on metrics</li>
+														</ul>
+													</div>
+													<div className='DesignArc'>
+														<ul className='DredLight ulfont ulfont'>
+															<li>Component engineering</li>
+															<li>Config as code</li>
+															<li>Event architecture</li>
+															<li>service api interaction</li>
+															<li>Api management</li>
+															<li>Test / release automation</li>
+														</ul>
+													</div>
+													<div className='Duild'>
+														<ul className='DredLight ulfont ulfont'>
+															<li>Pollen build </li>
+															<li>Manual version & tagging</li>
+															<li>Automated Staging</li>
+															<li>
+																Automated unit / Integration / UI / Regression
+																/Performance / Code / Security / Code Quality / Coverage
+																/Acceptance tests
+															</li>
+														</ul>
+													</div>
+													<div className='Dest'>
+														<ul className='DredLight ulfont ulfont'>
+															<li>
+																Automated unit / Integration / UI / Regression
+																/Performance / Code / Security / Code Quality / Coverage
+																/Acceptance tests
+															</li>
+															<li>Test results Consolidate</li>
+															<li>Component wise tests</li>
+														</ul>
+													</div>
+													<div className='Doperate'>
+														<ul className='DredLight ulfont ulfont'>
+															<li>Diagnostics</li>
+															<li>Advanced monitoring through scripts</li>
+															<li>Log Analysis</li>
+															<li>Automated ticket recommendation and workflows</li>
+														</ul>
+													</div>
+												</div>
+												<div className='Dellow w-50'>
+													<h4>Standard</h4>
+													<div className='Dulture'>
+														<ul className='DellowLight ulfont ulfont'>
+															<li>Team responsible all the way prod</li>
+															<li>Dedicated tools team</li>
+															<li>Remove boundary(Dev & Ops)</li>
+															<li>Deploy disconnected from release</li>
+															<li>Continous improvement</li>
+															<li>Component ownership</li>
+															<li>Decentralized decisions</li>
+														</ul>
+													</div>
+													<div className='DesignArc'>
+														<ul className='DellowLight ulfont ulfont'>
+															<li>Distributed Architecture</li>
+															<li>Horizontal scalability</li>
+															<li>Cloud centric, SASS model</li>
+															<li>Deployment automation</li>
+															<li>Framework</li>
+															<li>Operation automation framework</li>
+														</ul>
+													</div>
+													<div className='Duild'>
+														<ul className='DellowLight ulfont ulfont'>
+															<li>Quality gates</li>
+															<li>Realtime build metrics</li>
+															<li>Deployment & compliance trend</li>
+															<li>Test results consolidation</li>
+															<li>TDD framework integration</li>
+															<li>Dymanic environment provisioning</li>
+														</ul>
+													</div>
+													<div className='Dest'>
+														<ul className='DellowLight ulfont ulfont'>
+															<li>well defined TDD and BDD framework</li>
+															<li>BDD tests written in DSL</li>
+															<li>Test rule based stage Automation</li>
+															<li>Test case tool to automation</li>
+															<li>Tests integration</li>
+														</ul>
+													</div>
+													<div className='Doperate'>
+														<ul className='DellowLight ulfont ulfont'>
+															<li>Automated hyberscale cluster & cloud provisioning</li>
+															<li>Elastic auto provisioning</li>
+															<li>Resilience scripts</li>
+															<li>Dynamic vdms/ VDss provisioning</li>
+														</ul>
+													</div>
+												</div>
+												<div className='Dreen w-50'>
+													<h4>Advanced</h4>
+													<div className='Dulture'>
+														<ul className='DreenLight ulfont ulfont'>
+															<li>All full stacks experts</li>
+															<li>Cross functional small teams</li>
+															<li>Speedy feedback</li>
+															<li>Advanced frameworks driven</li>
+															<li>RAD</li>
+															<li>Excellent training Framework</li>
+														</ul>
+													</div>
+													<div className='DesignArc'>
+														<ul className='DreenLight ulfont ulfont'>
+															<li>Hybrid cloud, cloud agnostics, elastics</li>
+															<li>Complete software defined(IAAC)</li>
+															<li>Multi cloud compete SOA</li>
+															<li>Simplified automated framework</li>
+															<li>Aggregated hardware</li>
+															<li>Container / Services</li>
+															<li>Optimized pooling</li>
+														</ul>
+													</div>
+													<div className='Duild'>
+														<ul className='DreenLight ulfont ulfont'>
+															<li>Zero touch deployment</li>
+															<li>Elastic automation cluster</li>
+															<li>Parallel continous delivery</li>
+															<li>
+																Containerized build environments for different language
+															</li>
+															<li>Simplified build Orchestration framework</li>
+														</ul>
+													</div>
+													<div className='Dest'>
+														<ul className='DreenLight ulfont ulfont'>
+															<li>Service wise test results consolidation</li>
+															<li>Tests Trend analytics</li>
+															<li>Continous tests in production</li>
+														</ul>
+													</div>
+													<div className='Doperate'>
+														<ul className='DreenLight ulfont ulfont'>
+															<li>Hardware / Os / App server / license agnostics</li>
+															<li>Continous security / Audit / Billing</li>
+															<li>
+																Centralized tools for monitoring different environments,
+																products, services, cluds
+															</li>
+														</ul>
+													</div>
+												</div>
 											</div>
 											<div>
 												<h4 className='text-center my-5'>
@@ -649,6 +879,15 @@ const DevopsTransformation = ({ location }) => {
 export default DevopsTransformation;
 
 const DevopsTWrapper = styled.div`
+
+	.ulfont {
+  font-size: 14px;
+ }
+ .ulht{
+  height: 41vh;
+  text-align: left;
+ }
+
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: rgba(0,0,0,0);

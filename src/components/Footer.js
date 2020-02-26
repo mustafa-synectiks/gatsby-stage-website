@@ -121,9 +121,10 @@ export class Footer extends React.Component {
 						<p className='text-light'>Sales: +1 (609) 608-0429 X 102 </p>
 						<p className='text-light'>Office: +1 (609) 608-0429</p>
 						<h3 className='text-light text-capitalize py-3'>
-							<a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
+							privacy &copy; 2020
+							{/* <a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
 								privacy &copy; 2019
-							</a>
+							</a> */}
 						</h3>
 					</div>
 				</div>

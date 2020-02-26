@@ -257,7 +257,49 @@ body {
 .textColor {
 	color: #292929;
 }
-/* .owl-carousel.off {
+
+/* Devops Maturity Image Starts */
+.Dred {
+	background: rgb(213, 43, 55);
+}
+.DredLight {
+	background: rgb(246, 235, 243);
+}
+.Dellow {
+	background: rgb(244, 127, 32);
+}
+.DellowLight {
+	background: rgb(240, 231, 232);
+}
+.Dreen {
+	background: rgb(134, 196, 66);
+}
+.DreenLight {
+	background: rgb(246, 241, 237);
+}
+.Durple {
+	background: rgb(129, 44, 130);
+}
+.DurpleLight {
+	background: rgb(241, 246, 242);
+}
+.Dulture {
+	background: rgb(108, 85, 164);
+}
+.DesignArc {
+	background: rgb(41, 124, 136);
+}
+.Duild {
+	background: rgb(40, 105, 74);
+}
+.Dest {
+	background: rgb(142, 132, 71);
+}
+.Doperate {
+	background: rgb(110, 80, 60);
+}
+
+/* Devops Maturity Image Ends*/ /* .owl-carousel.off {
 	display: block;
 } */
 .heading-h3 {

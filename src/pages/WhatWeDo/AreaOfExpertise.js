@@ -25,15 +25,15 @@ const AreaOfExpertise = ({ location }) => {
 					</p>
 				</div>
 				<div className='my-2 my-md-4'>
-					<h2 className='my-2 text-center text-md-left'>
+					<h3 className='my-2 text-center text-md-left'>
 						We are primarily helping customers on the following areas:
-					</h2>
+					</h3>
 					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
 						<div className=''>
 							<img src={img2} alt='' className='w-7 mr-md-5' />
 						</div>
 						<div>
-							<h3 className='text-center text-md-left'>Migration & Modernization</h3>
+							<h4 className='text-center text-md-left'>Migration & Modernization</h4>
 							<p>
 								Modernize your legacy applications and Infrastructure using cloud-native technologies
 								and deliver predictive and deterministic business outcome.
@@ -45,7 +45,7 @@ const AreaOfExpertise = ({ location }) => {
 							<img src={img1} alt='' className='w-7 mr-md-5' />
 						</div>
 						<div>
-							<h3 className='text-center text-md-left'>Cloud Management</h3>
+							<h4 className='text-center text-md-left'>Cloud Management</h4>
 							<p>
 								Fully manage your customers cloud environment with CloudOps delivery enabled with
 								DevSecOPs capabilities.

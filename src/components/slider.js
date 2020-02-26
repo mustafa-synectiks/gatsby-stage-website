@@ -13,7 +13,7 @@ import s4 from '../images/Slider4.jpg';
 import s5 from '../images/Slider5.jpg';
 import s6 from '../images/Slider6.jpg';
 import Jumbo from '../images/HomePage/Transformation.png';
-import circle2 from '../images/HomePage/Transformation.jpg';
+import circle2 from '../images/HomePage/Transformation.png';
 import circle3 from '../images/HomePage/Solutions.jpg';
 import tab1 from '../images/HomePage/Transformation_Icon.png';
 import tab2 from '../images/HomePage/OpenPlatform.png';
@@ -193,79 +193,94 @@ const Slider = () => {
 							</div>
 							<div className='col col-sm-12 col-md-9 h70vh'>
 								<div className='slider'>
-									<div className='case-studies w-450 bshad'>
-										<img src={SDFT} alt='Disaster Recovery' />
+									<a href='/softwaredefined/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={SDFT} alt='Disaster Recovery' />
 
-										<div className='text-group align-self-center p-2 bgWhite'>
-											<h3 className=''>Software Defined Transformation</h3>
-											<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
-											<a href='/softwaredefined/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+											<div className='text-group align-self-center p-2 bgWhite'>
+												<h3 className='textColor'>Software Defined Transformation</h3>
+												<p className='pr-5 textColor'>
+													AWS Cloud migration for a large motor industry.
+												</p>{' '}
+												<a href='/softwaredefined/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
-									<div className='case-studies w-450 bshad'>
-										<img src={RM} alt='NetworkDesign' />{' '}
-										<div className='text-group align-self-center p-2 bgWhite'>
-											<h3 className=''>Realtime Monitoring</h3>
-											<p className='pr-2 pr-md-5'>
-												Highly Scalable extremely customizable realtime monitoring platform.
-											</p>{' '}
-											<a href='/realtime/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+									</a>
+									<a href='/realtime/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={RM} alt='NetworkDesign' />{' '}
+											<div className='text-group align-self-center p-2 bgWhite'>
+												<h3 className='textColor'>Realtime Monitoring</h3>
+												<p className='pr-2 pr-md-5 textColor'>
+													Highly Scalable extremely customizable realtime monitoring platform.
+												</p>{' '}
+												<a href='/realtime/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
-									<div className='case-studies w-450 bshad'>
-										<img src={SM} alt='Storage Migration' />{' '}
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Storage Migration</h3>
-											<p className='pr-5'>
-												Petabytes of storage migration for a large financial company with zero
-												down time.
-											</p>{' '}
-											<a href='/storagemigration/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+									</a>
+									<a href='/storagemigration/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={SM} alt='Storage Migration' />{' '}
+											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
+												<h3 className='textColor'>Storage Migration</h3>
+												<p className='pr-5 textColor'>
+													Petabytes of storage migration for a large financial company with
+													zero down time.
+												</p>{' '}
+												<a href='/storagemigration/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
-									<div className='case-studies w-450 bshad'>
-										<img src={ND} alt='Enterprise-Transformation' />{' '}
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Network Design</h3>
-											<p className='pr-5'>
-												Complete network Backbone design with highest security for retail.
-											</p>
-											<a href='/networkdesign/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+									</a>
+									<a href='/networkdesign/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={ND} alt='Enterprise-Transformation' />{' '}
+											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
+												<h3 className='textColor'>Network Design</h3>
+												<p className='pr-5 textColor'>
+													Complete network Backbone design with highest security for retail.
+												</p>
+												<a href='/networkdesign/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
-									<div className='case-studies w-450 bshad'>
-										<img src={ST} alt='StorageTier' className='h46' />
+									</a>
+									<a href='/storagetier/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={ST} alt='StorageTier' className='h46' />
 
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Storage Tier</h3>
-											<p className='pr-5'>
-												Moving Bigdata workloads to aggregated platform for a large telco.
-											</p>{' '}
-											<a href='/storagetier/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
+												<h3 className='textColor'>Storage Tier</h3>
+												<p className='pr-5 textColor'>
+													Moving Bigdata workloads to aggregated platform for a large telco.
+												</p>{' '}
+												<a href='/storagetier/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
-									<div className='case-studies w-450 bshad'>
-										<img src={DR} alt='StorageTier' />
-										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-											<h3 className=''>Disaster Recovery</h3>
-											<p className='pr-5'>
-												Lightweight disaster recovery platform for indian Defense.
-											</p>{' '}
-											<a href='/disasterrecovery/index.html' className='noLine fw300'>
-												Read More <i className='fa fa-arrow-right' />
-											</a>
+									</a>
+
+									<a href='/disasterrecovery/index.html' className='noLine fw300'>
+										<div className='case-studies w-450 bshad'>
+											<img src={DR} alt='StorageTier' />
+											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
+												<h3 className='textColor'>Disaster Recovery</h3>
+												<p className='pr-5 textColor'>
+													Lightweight disaster recovery platform for indian Defense.
+												</p>{' '}
+												<a href='/disasterrecovery/index.html' className='noLine fw300'>
+													Read More <i className='fa fa-arrow-right' />
+												</a>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -313,8 +328,17 @@ width: 100%;
 }
 .slick-slide {
 	.case-studies{
+		overflow: hidden !important;
+		&:hover img{
+			-webkit-transform: scale(1.04);
+			transform: scale(1.04);
+			overflow: hidden !important;
+		}
 		img{
 			height: auto;
+			-webkit-transition: 0.4s ease;
+			transition: 0.4s ease;
+			overflow: hidden !important;
 	}
 }
 	h3{

@@ -49,9 +49,9 @@ const WhySynectiks = ({ location }) => {
 					</p>
 				</div>
 				<div className='pt-md-4'>
-					<h2 className='py-2 py-md-2'>Our Team</h2>
+					<h2 className='py-2 py-md-2'>Our Passionate Global Team</h2>
 					<img src={team} alt='' className='my-2 my-md-4 W-100 box-shadow' width='100%' />
-					<p className='mt-md-5'>
+					<p className='mt-md-3'>
 						Our passionate global team is a real good mix of Highly Experienced product developers who has
 						been part of many big success and young fully stack developers fully trained to deliver in a
 						DevOps cultural environment. Our deep expertise both on Application and Infrastructure helps us
@@ -60,7 +60,7 @@ const WhySynectiks = ({ location }) => {
 					</p>
 				</div>
 				<div className='container-fluid'>
-					<div className='hybmt'>
+					<div className='hybmt mt-2 mt-md-4'>
 						<h3>Top 12 reasons to select us as your cloud migration and modernization partner! </h3>
 						<div className='my-4'>
 							<div className='row'>
