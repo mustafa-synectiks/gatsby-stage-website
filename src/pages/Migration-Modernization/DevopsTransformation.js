@@ -937,8 +937,8 @@ export default DevopsTransformation;
 const DevopsTWrapper = styled.div`
 .w-11{
  width: 10rem;
- padding: 1rem 0rem;
- height: 10vh;
+ padding: 4rem 0rem !important;
+ height: 30vh;
 }
 .w-21{
 	width:15.5rem;
