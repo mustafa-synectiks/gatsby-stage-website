@@ -52,11 +52,11 @@ const PrimaryCloudHosting = () => {
 					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
 						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Primary Cloud Hosting Services' />
 					</div>
-					<Row className='d-flex justify-content-md-center justify-content-start'>
+					<Row className='d-flex justify-content-start'>
 						<Navbar color='light' light expand='md'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
-								<Nav navbar className='bgWhite d-flex my-4 mx-auto w-85'>
+								<Nav navbar className='bgWhite d-flex my-4 mx-auto ml-md-5 w-85'>
 									<NavItem className='one'>
 										<NavLink
 											id='bgL'
@@ -85,7 +85,7 @@ const PrimaryCloudHosting = () => {
 						<div className='px-4 px-md-0 mb-3 col-md-12'>
 							<TabContent activeTab={activeTab}>
 								<TabPane tabId='1'>
-									<div className='bg-lightgrey container mb-0 pb-3'>
+									<div className='bg-lightgrey mb-0 pb-3'>
 										<div className=''>
 											<div className='text-black w-100 mt-md-3 mt-0 py-md-4 py-2 flex-column flex-md-row d-flex text-justify'>
 												<div className='w-100  pl-3 pr-3 text-black'>
@@ -101,9 +101,9 @@ const PrimaryCloudHosting = () => {
 														infrastructure to meet your application demands.
 													</p>
 												</div>
-												<div className='w-100' data-aos='fade-up'>
+												<div className='w-100 ml-md-auto' data-aos='fade-up'>
 													<img
-														class='w-75 ml-3'
+														class='w-75 ml-md-auto'
 														src={HostedInfra}
 														width='100%'
 														alt='Hosted Infrastructure'
@@ -426,6 +426,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 		font-size: 12px;
 		height: auto;
 		text-align: left;
+		cursor: pointer;
 	}
 	a#bgL.active,
 	a#bgLL.active,

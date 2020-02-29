@@ -19,10 +19,17 @@ const BreadCrumbsWrapper = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: end;
+	flex-direction: column;
 	a {
 		margin-top: -0.3rem;
 	}
 	h6.active {
 		color: var(--synectiksOrange);
+	}
+	@media screen and (min-width: 576px) {
+		display: flex;
+		justify-content: flex-start;
+		align-items: end;
+		flex-direction: row;
 	}
 `;

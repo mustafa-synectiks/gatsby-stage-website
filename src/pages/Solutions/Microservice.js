@@ -176,7 +176,7 @@ const Microservice = () => {
 												</li>
 											</ul>
 
-											<h4>Process & Culture.</h4>
+											<h4 className='mt-2 mt-md-4'>Process & Culture.</h4>
 											<ul>
 												<li>
 													Streamline Feature Development: Sprint faster to keep up with
@@ -221,7 +221,7 @@ const Microservice = () => {
 												While Monolith has complexity in codebase, microservices poses the
 												complexity of interaction between many services.
 											</p>
-											<img src={ms3} alt='' className='imgshadow microImage h-50' />
+											<img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' />
 										</div>
 									</TabPane>
 									<TabPane tabId='3'>
@@ -273,18 +273,23 @@ const Microservice = () => {
 												technologies offer many avenues to aggregate hardware across data
 												centers and geographies.
 											</p>
-											<h3 className='my-0 mb-md-2	'>Containerization & Continuous Delivery.</h3>
-											<p>
-												As you transform monolith to microservices, your big X become 100 small
-												x. If you deploy those 100 x as layered stack in discrete servers in
-												different way, your deployment complexity would multiply to 1000X. To
-												address this challenge, you definitely need to unify the delivery of
-												services, make sure your services are delivered in the same way and they
-												are staged to production environment through some stringent quality
-												gates. To unify the delivery of multiple services in the same way,
-												Containerization play a big role and Containers along with Continuous
-												Delivery channel brings down your 1000X complexity to a factor of X.
-											</p>
+											<div className='mt-2 mt-md-4'>
+												<h3 className='my-0 mb-md-2	'>
+													Containerization & Continuous Delivery.
+												</h3>
+												<p>
+													As you transform monolith to microservices, your big X become 100
+													small x. If you deploy those 100 x as layered stack in discrete
+													servers in different way, your deployment complexity would multiply
+													to 1000X. To address this challenge, you definitely need to unify
+													the delivery of services, make sure your services are delivered in
+													the same way and they are staged to production environment through
+													some stringent quality gates. To unify the delivery of multiple
+													services in the same way, Containerization play a big role and
+													Containers along with Continuous Delivery channel brings down your
+													1000X complexity to a factor of X.
+												</p>
+											</div>
 											<div className='d-flex flex-column align-items-start flex-md-row justify-md-between  px-2 px-md-0 mt-2 mt-md-5'>
 												<div className='pr-0 pr-md-5 w-100'>
 													<h3 className='my-0 mb-md-2	mt-md-n3'>Operation Automation.</h3>
@@ -317,7 +322,7 @@ const Microservice = () => {
 											</div>
 
 											<div className='my-0 my-md-4'>
-												<img src={ms5} className='imgshadow microImage mb-1 mb-md-4' />
+												<img src={ms5} className='imgshadow microImage mb-1 mb-md-5' />
 												<h3>One Key Cultural Driver.</h3>
 												<p>
 													Simply speaking the microservice world is “Solve small problems,
@@ -448,7 +453,7 @@ const Microservice = () => {
 													<img
 														src={ms9}
 														alt=''
-														className='my-0 my-md-4 microImage imgshadow'
+														className='my-0 my-md-5 microImage imgshadow'
 													/>
 												</div>
 												<div>
@@ -725,7 +730,7 @@ ul.tabList.nav.flex-column {
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 4rem;
+        padding:0rem 1rem;
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{

@@ -63,11 +63,11 @@ const ApplicationTransformation = () => {
 								subtitle='Migration & Modernization'
 								pageTitle='Application Transformation'
 							/>
-							<h1 className='mt-2 mt-md-4'>Application Transformation</h1>
+							<h1 className='mt-2 mt-md-4 ml-n2'>Application Transformation</h1>
 						</div>
 						<Row className='position-relative'>
-							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav'>
+							<div className='col-sm-12 col-md-12 px-1'>
+								<Navbar color='light' light expand='lg' className='topNav ml-n5'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -368,7 +368,7 @@ const ApplicationTransformation = () => {
 												of making us your microservices partner is, our open source contribution
 												helps us to deliver values vary rapidly.
 											</p>
-											<h4 className='text-center'>
+											<h4 className='text-center mt-2 mt-md-5'>
 												Top 9 Reasons to select Synectiks as your Application Modernization
 												Partner:
 											</h4>
@@ -704,7 +704,7 @@ ul.tabList.nav.flex-column {
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 4rem;
+        padding:0rem 0rem;
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{

@@ -57,12 +57,12 @@ const Infrastructure = () => {
 							subtitle='Migration-Modernization'
 							pageTitle='Infra Structure Transformation'
 						/>
-						<h1 className='mt-4'>Infrastructure Transformation</h1>
+						<h1 className='mt-4 ml-n2'>Infrastructure Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav'>
+								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -130,7 +130,9 @@ const Infrastructure = () => {
 												or human intervention. It operates independent of any hardware-specific
 												dependencies and is programmatically extensible”.{' '}
 											</p>
-											<h3>Why Software defined infra structure matter in todays business?</h3>
+											<h3 className='mt-4'>
+												Why Software defined infra structure matter in todays business?
+											</h3>
 											<div className='table-responsive-md'>
 												<table className='table'>
 													<thead className='thead-light'>
@@ -400,7 +402,7 @@ const Infrastructure = () => {
 												<img
 													src={circle}
 													alt=''
-													className='w-hndr box-shadow my-2 my-md-4 mx-auto'
+													className='w-hndr box-shadow my-2 my-md-5 mx-auto'
 												/>
 												<p>
 													<b className='h4'>Discovery & Assessment</b> - Evaluate the needs to
@@ -896,7 +898,7 @@ a#bgL.active {
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 4rem;
+        padding:0rem 0rem;
       }
 	}
   a#bgL,a#bgLL,a#bgLLL{

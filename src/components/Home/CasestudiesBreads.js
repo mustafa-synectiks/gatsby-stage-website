@@ -21,9 +21,10 @@ export default CaseBreadCrumbs;
 
 const CaseBreadCrumbsWrapper = styled.div`
 	 {
-		display: inline-flex;
+		display: flex;
 		justify-content: flex-start;
 		align-items: end;
+		flex-direction: column;
 		a {
 			margin-top: -0.3rem;
 		}
@@ -36,6 +37,7 @@ const CaseBreadCrumbsWrapper = styled.div`
 		display: flex;
 		justify-content: flex-start;
 		align-items: end;
+		flex-direction: row;
 		a {
 			margin-top: -0.3rem;
 		}
