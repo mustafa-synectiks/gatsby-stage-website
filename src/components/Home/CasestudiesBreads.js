@@ -6,13 +6,13 @@ const CaseBreadCrumbs = ({ title, subtitle, casetitle, pageTitle }) => {
 	return (
 		<CaseBreadCrumbsWrapper>
 			<a href='/'>{title}</a>
-			<IoIosArrowForward className='mx-1 mx-md-3' />
+			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />
 			<h6 className=''>{casetitle}</h6>
-			<IoIosArrowForward className='mx-1 mx-md-3' />
+			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />
 			<a href='/casestudies/index.html' className='mx-1 mx-md-2'>
 				{subtitle}
 			</a>
-			<IoIosArrowForward className='mx-1 mx-md-3' />
+			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />
 			<h6 className='active'>{pageTitle}</h6>
 		</CaseBreadCrumbsWrapper>
 	);
@@ -21,6 +21,9 @@ export default CaseBreadCrumbs;
 
 const CaseBreadCrumbsWrapper = styled.div`
 	 {
+		.rotateIcon {
+			transform: rotate(90deg);
+		}
 		display: flex;
 		justify-content: flex-start;
 		align-items: end;
@@ -35,6 +38,9 @@ const CaseBreadCrumbsWrapper = styled.div`
 
 	@media screen and (min-width: 576px) {
 		display: flex;
+		.rotateIcon {
+			transform: rotate(0deg);
+		}
 		justify-content: flex-start;
 		align-items: end;
 		flex-direction: row;

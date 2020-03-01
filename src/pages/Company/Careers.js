@@ -59,7 +59,7 @@ export class Careers extends React.Component {
 									while making a difference in the world.
 									<br /> What’s your passion?<br />
 								</p>
-								<div className='col-lg-12 d-flex flex-col '>
+								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
 										<a className='navlink navfont noLine' href='/contactus/index.html'>
 											Data &amp; Analytics
@@ -76,7 +76,7 @@ export class Careers extends React.Component {
 										</a>
 									</div>
 								</div>
-								<div className='col-lg-12 d-flex flex-col'>
+								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
 										<a className='navlink navfont noLine' href='/contactus/index.html'>
 											Internships
@@ -103,7 +103,7 @@ export class Careers extends React.Component {
 										<div>
 											<Button
 												color='primary'
-												className='w-25 text-left'
+												className='career-btn text-left'
 												onClick={this.toggle}
 												style={{ marginBottom: '1rem' }}>
 												Sr.&nbsp;Systems&nbsp;Administrator{' '}
@@ -146,7 +146,7 @@ export class Careers extends React.Component {
 										<div>
 											<Button
 												color='primary'
-												className='w-25 text-left'
+												className='career-btn text-left'
 												onClick={this.toggle2}
 												style={{ marginBottom: '1rem' }}>
 												Lead&nbsp;Software&nbsp;Architect
@@ -188,7 +188,7 @@ export class Careers extends React.Component {
 										<div>
 											<Button
 												color='primary'
-												className='w-25 text-left'
+												className='career-btn text-left'
 												onClick={this.toggle3}
 												style={{ marginBottom: '1rem' }}>
 												Infrastructure&nbsp;Engineer
@@ -282,9 +282,15 @@ export default Careers;
 
 const CareerWrapper = styled.div`
 	 {
+		.career-btn {
+			width: 100%;
+		}
 		padding: 1rem;
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		.career-btn {
+			width: 25%;
+		}
 	}
 `;

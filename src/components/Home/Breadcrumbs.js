@@ -6,9 +6,9 @@ const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
 	return (
 		<BreadCrumbsWrapper>
 			<a href='/'>{title}</a>
-			<IoIosArrowForward className='mx-3' />
+			<IoIosArrowForward className='mx-3 rotateIcon' />
 			<h6 className='mx-2'>{subtitle}</h6>
-			<IoIosArrowForward className='mx-3' />
+			<IoIosArrowForward className='mx-3 rotateIcon' />
 			<h6 className='active'>{pageTitle}</h6>
 		</BreadCrumbsWrapper>
 	);
@@ -16,6 +16,9 @@ const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
 export default BreadCrumbs;
 
 const BreadCrumbsWrapper = styled.div`
+	.rotateIcon {
+		transform: rotate(90deg);
+	}
 	display: flex;
 	justify-content: flex-start;
 	align-items: end;
@@ -27,6 +30,9 @@ const BreadCrumbsWrapper = styled.div`
 		color: var(--synectiksOrange);
 	}
 	@media screen and (min-width: 576px) {
+		.rotateIcon {
+			transform: rotate(0deg);
+		}
 		display: flex;
 		justify-content: flex-start;
 		align-items: end;
