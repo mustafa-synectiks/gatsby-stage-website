@@ -30,10 +30,10 @@ export class Featured extends React.Component {
 							</div> */}
 						<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Featured' />
 
-						<div className='container'>
-							<div className='d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col'>
+						<div className=' '>
+							<div className='d-flex flex-column flex-md-row justify-content-around pt-2 flex-fill  align-items-center flex-col'>
 								<div>
-									<div className='p-5'>
+									<div className='p-1 p-md-5'>
 										<img src={FS} width='100%' alt='Enterprise-DevOps' className='imgBx' />
 										<div className='text-group align-self-center'>
 											<h6 className='font-weight-bold pt-2'>
@@ -51,7 +51,7 @@ export class Featured extends React.Component {
 								</div>
 
 								<div>
-									<div className='p-5'>
+									<div className='p-1 p-md-5'>
 										<img
 											className='border-grey-2px imgBx'
 											src={FT}
@@ -74,14 +74,14 @@ export class Featured extends React.Component {
 								</div>
 							</div>
 							<div className=''>
-								<div className='d-flex justify-content-around pt-2 flex-fill  align-items-center flex-col'>
+								<div className='d-flex flex-column flex-md-row justify-content-around pt-2 flex-fill  align-items-center flex-col'>
 									<div>
-										<div className='p-5'>
+										<div className='p-1 p-md-5'>
 											<img
 												src={FMP}
 												width='100%'
 												alt='Enterprise-Transformation'
-												className='imgBx'
+												className='imgBx w-img'
 											/>{' '}
 											<div className='text-group align-self-center'>
 												<h6 className='font-weight-bold pt-2'>
@@ -101,7 +101,7 @@ export class Featured extends React.Component {
 									</div>
 
 									<div>
-										<div className='p-5'>
+										<div className='p-1 p-md-5'>
 											<img
 												src={FP}
 												width='100%'
@@ -135,10 +135,14 @@ export class Featured extends React.Component {
 export default Featured;
 
 const FeaturedWrapper = styled.div`
-	 {
-		padding: 1rem;
+	padding: 1rem;
+	.w-img {
+		width: 100% !important;
 	}
-	@media (min-width: 576px;) {
+	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		.w-img {
+			width: 32rem !important;
+		}
 	}
 `;
