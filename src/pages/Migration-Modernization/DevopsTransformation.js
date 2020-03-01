@@ -179,7 +179,7 @@ const DevopsTransformation = ({ location }) => {
 													</p>
 												</div>
 												<div className='mx-auto'>
-													<img src={one} alt='' className='w-100' />
+													<img src={one} alt='' className='w-100 box-shadow' />
 												</div>
 											</div>
 											<div className='my-3 d-flex flex-column justify-content-around align-items-center'>
@@ -192,7 +192,7 @@ const DevopsTransformation = ({ location }) => {
 														economics.
 													</p>
 												</div>
-												<img src={two} alt='' className='w-100' />
+												<img src={two} alt='' className='w-100 box-shadow	' />
 											</div>
 										</div>
 									</TabPane>

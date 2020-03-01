@@ -353,7 +353,7 @@ const Microservice = () => {
 												<br />SYNECTIKS has a flexible and effective way of migrating monolithic
 												applications to microservices, which includes the following steps:
 											</p>
-											<img src={ms7} className='my-0 mt-md-4 microImage imgshadow' />
+											<img src={ms7} className='my-0 mt-md-4 microIm imgshadow' />
 										</div>
 										<div>
 											<div className='d-flex flex-column flex-md-row justify-content-between my-0 my-md-5'>
@@ -516,7 +516,7 @@ export default Microservice;
 
 const MicroserviceWrapper = styled.div`
 padding: 1rem;
-.microImage{
+.microImage,.microIm{
 	width: 100%;
 }
 .imgshadow{
@@ -659,6 +659,10 @@ ul.tabList.nav.flex-column {
 	}
 	.tab-content>.active {
     padding: 0rem 0.5rem;
+}
+.microIm{
+	width: 75%;
+		margin:0 auto;
 }
 	.microImage{
 		width: 50%;

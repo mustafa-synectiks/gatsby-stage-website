@@ -116,7 +116,7 @@ const TopBarWrapper = styled.div`
 		justify-content: flex-end;
 		align-items: baseline;
 		width: 100vw;
-		/* padding-right: 2%; */
+		padding: 0rem 1.8rem;
 		a,
 		h6 {
 			text-decoration: none !important;
@@ -148,7 +148,7 @@ const TopBarWrapper = styled.div`
 		justify-content: flex-end;
 		align-items: baseline;
 		width: 100vw;
-		/* padding-right: 7.8%; */
+		padding: 0rem 1.8rem;
 		a,
 		h6 {
 			text-decoration: none !important;

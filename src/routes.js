@@ -74,6 +74,18 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
 	},
 	{
+		path: '/analytics/index.html',
+		component: path.resolve(`src/pages/Solutions/Analytics.js`)
+	},
+	{
+		path: '/cloudautomation/index.html',
+		component: path.resolve(`src/pages/Solutions/CloudAutomation.js`)
+	},
+	{
+		path: '/monitoring/index.html',
+		component: path.resolve(`src/pages/Solutions/Monitoring.js`)
+	},
+	{
 		path: '/publiccloud/index.html',
 		component: path.resolve(`src/pages/Cloud/Publiccloud.js`)
 	},
@@ -164,6 +176,10 @@ module.exports = [
 	{
 		path: '/applicationtransformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
+	},
+	{
+		path: '/xformation/index.html',
+		component: path.resolve(`src/pages/Migration-Modernization/XformationSoftware.js`)
 	},
 	{
 		path: '/datatransformation/index.html',

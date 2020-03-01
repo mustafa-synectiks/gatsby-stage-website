@@ -212,7 +212,7 @@ const PrimaryCloudHosting = () => {
 								<TabPane tabId='2'>
 									<div>
 										<div className='row pt-4'>
-											<img src={cloudImaged} alt='' className='w-sm-100 h-50 mx-auto' />
+											<img src={cloudImaged} alt='' className='w-100 h-50 mx-auto' />
 											{/* <div className='bg-imageCloudManageBackup' /> */}
 										</div>
 										<h2 className='py-4'>
@@ -234,7 +234,7 @@ const PrimaryCloudHosting = () => {
 												<div className='w-2vh'>
 													<img src={security} alt='security' className='w-7' />
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3> Security: </h3>
 													<p>
 														Make sure your vendor offers strong security, including
@@ -257,7 +257,7 @@ const PrimaryCloudHosting = () => {
 												<div className='w-2vh'>
 													<img src={backupStorage} alt='security' className='w-7' />
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Different Modes of Backup Storage available: </h3>
 													<p>S3, NAS, SAN, ABGP.</p>
 												</div>
@@ -269,7 +269,7 @@ const PrimaryCloudHosting = () => {
 												<div className='w-2vh'>
 													<img src={price} alt='Affordable Price' className='w-7' />
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Affordable Price:</h3>
 													<p>
 														Cloud Backup storage as low as $0.018/GB per Month (only charged
@@ -287,7 +287,7 @@ const PrimaryCloudHosting = () => {
 														className='w-8'
 													/>
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Efficient Backup Storage Usage:</h3>{' '}
 													<p>
 														De-duplication and Compression technologies optimize backup
@@ -305,7 +305,7 @@ const PrimaryCloudHosting = () => {
 														className='w-7'
 													/>
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh  ml-n5'>
 													<h3>Multi Secure Geo Locations: </h3>
 													<p>
 														We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
@@ -330,7 +330,7 @@ const PrimaryCloudHosting = () => {
 														className='w-6'
 													/>
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Protection for any workload:</h3>
 													<p>
 														Protect Windows, Linux, Macs, eight major hypervisors, iOS,
@@ -345,7 +345,7 @@ const PrimaryCloudHosting = () => {
 												<div className='w-2vh'>
 													<img src={support} alt='support' className='w-6' />
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Support:</h3>
 													<p>
 														Follow the Sun model - 24/7/365 days support from both onshore
@@ -355,13 +355,13 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4 mx-auto'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
 												<div className='w-2vh'>
-													<img src={restore} alt='restore' className='w-7' />
+													<img src={restore} alt='support' className='w-6' />
 												</div>
-												<div className='w-8vh'>
+												<div className='w-8vh ml-n5'>
 													<h3>Fast Recovery:</h3>
-													<p>Recover the Data faster, transfer rate up to 1GB/sec </p>
+													<p>Recover the Data faster, transfer rate up to 1GB/sec</p>
 												</div>
 											</div>
 										</div>

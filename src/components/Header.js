@@ -48,21 +48,17 @@ const Header = () => {
 									<NavDropdown.Item href='/datatransformation/index.html'>
 										Data Transformation
 									</NavDropdown.Item>
-									{/* <NavDropdown.Item href='/microservices/index.html'>
+									<NavDropdown.Item href='/xformation/index.html'>
 										Xformation Software
-									</NavDropdown.Item> */}
+									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
-									<NavDropdown.Item href='/CloudManagedBackup/index.html'>
+									<NavDropdown.Item href='/cloudautomation/index.html'>
 										Cloud Automation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/CloudDisasterRecovery/index.html'>
-										Monitoring
-									</NavDropdown.Item>
-									<NavDropdown.Item href='/CloudDisasterRecovery/index.html'>
-										Analytics
-									</NavDropdown.Item>
+									<NavDropdown.Item href='/monitoring/index.html'>Monitoring</NavDropdown.Item>
+									<NavDropdown.Item href='/analytics/index.html'>Analytics</NavDropdown.Item>
 									<NavDropdown.Item href='/hybridcloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Services' id='basic-nav-dropdown'>

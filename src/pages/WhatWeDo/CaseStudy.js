@@ -33,9 +33,9 @@ const CaseStudy = () => {
 										<p className='pr-2 pr-md- textColor'>
 											AWS Cloud migration for a large motor industry.
 										</p>
-										<a href='/softwaredefined/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</a>
@@ -49,9 +49,9 @@ const CaseStudy = () => {
 										<p className='pr-2 pr-md-5 textColor'>
 											Highly Scalable extremely customizable realtime monitoring platform.
 										</p>
-										<a href='/realtime/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</a>
@@ -66,9 +66,9 @@ const CaseStudy = () => {
 										<p className='pr-5 textColor'>
 											Petabytes of storage migration for a large financial company with zero down.
 										</p>{' '}
-										<a href='/storagemigration/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</a>
@@ -84,9 +84,9 @@ const CaseStudy = () => {
 										<p className='pr-5 textColor'>
 											Complete network Backbone design with highest security for retail.
 										</p>
-										<a href='/networkdesign/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -102,9 +102,9 @@ const CaseStudy = () => {
 										<p className='pr-5 textColor'>
 											Moving Bigdata workloads to aggregated platform for a large telco.
 										</p>{' '}
-										<a href='/storagetier/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -120,9 +120,9 @@ const CaseStudy = () => {
 											<br />
 											<br />
 										</p>
-										<a href='/disasterrecovery/index.html' className='noLine fw300'>
+										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
-										</a>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -155,8 +155,9 @@ const CaseStudyWrapper = styled.div`
 			overflow: hidden !important;
 		}
 		.box-shadow {
-			box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 			overflow: hidden !important;
+			margin: 1rem 0rem;
 		}
 
 		.box-shadow img {

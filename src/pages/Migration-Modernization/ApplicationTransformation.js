@@ -202,7 +202,11 @@ const ApplicationTransformation = () => {
 													strategies and create a clearly defined journey with confidence.
 													Synectiks recommend the following steps:
 												</p>
-												<img src={circle} alt='' className='w-hndr mx-auto my-2 my-md-5' />
+												<img
+													src={circle}
+													alt=''
+													className='w-hndr mx-auto my-2 my-md-5 box-shadow'
+												/>
 												<p>
 													<b className='h4'>Discovery & Assessment</b> – Evaluate the needs to
 													modernize, standardize, rationalize and consolidate existing

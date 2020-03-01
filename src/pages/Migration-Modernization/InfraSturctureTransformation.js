@@ -131,7 +131,7 @@ const Infrastructure = () => {
 												dependencies and is programmatically extensible”.{' '}
 											</p>
 											<h3 className='mt-4'>
-												Why Software defined infra structure matter in todays business?
+												Why Software Defined Infrastructure matter in todays business?
 											</h3>
 											<div className='table-responsive-md'>
 												<table className='table'>
@@ -531,7 +531,7 @@ const Infrastructure = () => {
 													it, run it and manage it.
 												</p>
 
-												<h4 className='text-center line'>
+												<h4 className='text-center'>
 													Top 9 Reasons to select Synectiks as your Hybrid Cloud Partner:
 												</h4>
 											</div>
