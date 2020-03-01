@@ -45,7 +45,7 @@ export class Careers extends React.Component {
 							<div className=''>
 								<BreadCrumbs title='Home' subtitle='Company' pageTitle='Careers' />
 							</div>
-							<div className='text-center pb-3 lineHeight-24'>
+							<div className='text-left pb-3 lineHeight-24 mt-2 mt-md-4'>
 								<h1>Careers</h1>
 							</div>
 
