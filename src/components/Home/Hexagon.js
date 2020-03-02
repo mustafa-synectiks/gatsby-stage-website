@@ -557,4 +557,11 @@ const HexagonWrapper = styled.section`
 			margin: 2rem auto;
 		}
 	}
+	@media screen and (min-width: 1024px) {
+		.ct-cent {
+			transform: rotate(-30deg);
+			font-size: 14px;
+			margin: 1rem auto;
+		}
+	}
 `;
