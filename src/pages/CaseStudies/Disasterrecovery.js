@@ -9,7 +9,7 @@ const Disasterrecovery = () => {
 	return (
 		<Layout>
 			<SEO title='Disaster Recovery' />
-			<div className='softwareDefined_wrap px-1 px-md-5 py-1 py-md-5'>
+			<div className='softwareDefined_wrap px-1 px-md-5 py-5 py-md-5'>
 				<CaseBreadCrumbs
 					title='Home'
 					casetitle='What We Do'

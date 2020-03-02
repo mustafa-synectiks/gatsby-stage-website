@@ -138,7 +138,7 @@ const WhySynectiks = ({ location }) => {
 									</div>
 									<p>
 										Use our existing automation capabilities to automate infrastructure, operations,
-										in security the hybrid IT environment.
+										security in the hybrid IT environment.
 									</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>

@@ -230,12 +230,12 @@ const PrimaryCloudHosting = () => {
 										</p>
 										<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
 										<div className='row'>
-											<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img src={security} alt='security' className='w-7' />
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3> Security: </h3>
+													<h4> Security: </h4>
 													<p>
 														Make sure your vendor offers strong security, including
 														encryption. It doesn't matter how well you have protected your
@@ -253,24 +253,24 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img src={backupStorage} alt='security' className='w-7' />
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Different Modes of Backup Storage available: </h3>
+													<h4>Different Modes of Backup Storage available: </h4>
 													<p>S3, NAS, SAN, ABGP.</p>
 												</div>
 											</div>
 										</div>
 
 										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img src={price} alt='Affordable Price' className='w-7' />
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Affordable Price:</h3>
+													<h4>Affordable Price:</h4>
 													<p>
 														Cloud Backup storage as low as $0.018/GB per Month (only charged
 														for the storage consumed).
@@ -279,7 +279,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img
 														src={efficientStorage}
@@ -288,7 +288,7 @@ const PrimaryCloudHosting = () => {
 													/>
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Efficient Backup Storage Usage:</h3>{' '}
+													<h4>Efficient Backup Storage Usage:</h4>{' '}
 													<p>
 														De-duplication and Compression technologies optimize backup
 														storage capacity.
@@ -297,7 +297,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img
 														src={geolocation}
@@ -306,7 +306,7 @@ const PrimaryCloudHosting = () => {
 													/>
 												</div>
 												<div className='w-8vh  ml-n5'>
-													<h3>Multi Secure Geo Locations: </h3>
+													<h4>Multi Secure Geo Locations: </h4>
 													<p>
 														We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
 														which implies that you should always have three copies of your
@@ -322,7 +322,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
 												<div className='w-2vh'>
 													<img
 														src={protection}
@@ -331,7 +331,7 @@ const PrimaryCloudHosting = () => {
 													/>
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Protection for any workload:</h3>
+													<h4>Protection for any workload:</h4>
 													<p>
 														Protect Windows, Linux, Macs, eight major hypervisors, iOS,
 														Android, Complete Office 365 Protection, all Major Applications
@@ -341,12 +341,12 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
 												<div className='w-2vh'>
 													<img src={support} alt='support' className='w-6' />
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Support:</h3>
+													<h4>Support:</h4>
 													<p>
 														Follow the Sun model - 24/7/365 days support from both onshore
 														and offshore Teams
@@ -355,12 +355,12 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 py-md-4'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
 												<div className='w-2vh'>
 													<img src={restore} alt='support' className='w-6' />
 												</div>
 												<div className='w-8vh ml-n5'>
-													<h3>Fast Recovery:</h3>
+													<h4>Fast Recovery:</h4>
 													<p>Recover the Data faster, transfer rate up to 1GB/sec</p>
 												</div>
 											</div>

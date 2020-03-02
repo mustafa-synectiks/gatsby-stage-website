@@ -10,8 +10,10 @@ export class Footer extends React.Component {
 				<div className='text-center text-dark fixed-bottom bgOrange content'>
 					<button className='bgOrange text-dark fa fa-times float-right' type='submit' id='hide' />
 					<p className='mb-1 pt-2 px-3 fsize08'>
-						We use cookies for advertising, social media and analytics purposes. Read about how we use
-						cookies in our updated
+						{/* We use cookies for advertising, social media and analytics purposes. Read about how we use
+						cookies in our updated */}
+						We use cookies to make sure you have better experience on our website. Read about how we use
+						cookies in our Privacy Policy
 						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
 							<small className='fsize08'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
