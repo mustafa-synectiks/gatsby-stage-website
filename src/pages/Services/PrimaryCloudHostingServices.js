@@ -272,7 +272,7 @@ const PrimaryCloudHosting = () => {
 												<div className='w-8vh ml-n5'>
 													<h4>Affordable Price:</h4>
 													<p>
-														Cloud Backup storage as low as $0.018/GB per Month (only charged
+														Cloud Backup storage as low as $0.015/GB per Month (only charged
 														for the storage consumed).
 													</p>
 												</div>

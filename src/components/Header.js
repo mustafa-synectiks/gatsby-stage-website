@@ -69,7 +69,7 @@ const Header = () => {
 										Managed Services
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/primarycloudhostingservices/index.html'>
-										Private Cloud Hosting Services
+										Private Cloud Hosting
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
