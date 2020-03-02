@@ -53,89 +53,82 @@ const DevopsTransformation = ({ location }) => {
 
 			<DevopsTWrapper>
 				<div className='container-fluid '>
+					<div className='px-5 pt-5 text-justify'>
+						<BreadCrumbs
+							title='Home'
+							subtitle='Migration & Modernization'
+							pageTitle='Devops Transformation'
+						/>
+						<h1 className='text-center text-md-left mt-md-4'>Devops Transformation</h1>
+					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-md-12'>
-								<div className=''>
-									<div>
-										<div className='px-5 pt-5 text-justify'>
-											<BreadCrumbs
-												title='Home'
-												subtitle='Migration & Modernization'
-												pageTitle='Devops Transformation'
-											/>
-											<h1 className='text-center text-md-left mt-md-4'>Devops Transformation</h1>
-										</div>
-										<Navbar color='light' light expand='lg'>
-											<NavbarToggler onClick={toggleNavbar} className='mr-2' />
-											<Collapse isOpen={!collapsed} navbar>
-												<Nav className='d-flex my-4 mx-auto w-85'>
-													{/* <Nav className='sidetabs'> */}
-													{/* <Nav vertical className='sidetabs'> */}
-													<NavItem className='one'>
-														<NavLink
-															id='bgL'
-															className={classnames({ active: activeTab === '1' })}
-															onClick={() => {
-																toggle('1');
-																toggleTab();
-															}}>
-															Devops Transformation
-														</NavLink>
-													</NavItem>
+								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
+									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
+									<Collapse isOpen={!collapsed} navbar>
+										<Nav className='d-flex my-4  mx-auto w-85'>
+											{/* <Nav className='sidetabs'> */}
+											{/* <Nav vertical className='sidetabs'> */}
+											<NavItem className='one'>
+												<NavLink
+													id='bgL'
+													className={classnames({ active: activeTab === '1' })}
+													onClick={() => {
+														toggle('1');
+														toggleTab();
+													}}>
+													BRIEF
+												</NavLink>
+											</NavItem>
 
-													<NavItem className='one'>
-														<NavLink
-															id='bgLL'
-															className={classnames({ active: activeTab === '2' })}
-															onClick={() => {
-																toggle('2');
-																toggleTab();
-															}}>
-															GETTING STARTED TO DEVOPS
-														</NavLink>
-													</NavItem>
-													<NavItem className='one'>
-														<NavLink
-															id='bgLLL'
-															className={classnames({ active: activeTab === '3' })}
-															onClick={() => {
-																toggle('3');
-																toggleTab();
-															}}>
-															HOW SYNECTIKS CAN HELP
-														</NavLink>
-													</NavItem>
-													<NavItem className='one'>
-														<NavLink
-															id='bgLLL'
-															className={classnames({ active: activeTab === '4' })}
-															onClick={() => {
-																toggle('4');
-																toggleTab();
-															}}>
-															{/* <span>
-                      <img src={SD} alt="" className='imgHyb'/>
-                    </span> */}
-															SYNECTIKS DIFFERENTIATOR
-														</NavLink>
-													</NavItem>
-													<NavItem className='one'>
-														<NavLink
-															id='bgLLL'
-															className={classnames({ active: activeTab === '5' })}
-															onClick={() => {
-																toggle('5');
-																toggleTab();
-															}}>
-															KEY BENEFITS
-														</NavLink>
-													</NavItem>
-												</Nav>
-											</Collapse>
-										</Navbar>
-									</div>
-								</div>
+											<NavItem className='one'>
+												<NavLink
+													id='bgLL'
+													className={classnames({ active: activeTab === '2' })}
+													onClick={() => {
+														toggle('2');
+														toggleTab();
+													}}>
+													GETTING STARTED
+												</NavLink>
+											</NavItem>
+											<NavItem className='one'>
+												<NavLink
+													id='bgLLL'
+													className={classnames({ active: activeTab === '3' })}
+													onClick={() => {
+														toggle('3');
+														toggleTab();
+													}}>
+													HOW SYNECTIKS CAN HELP
+												</NavLink>
+											</NavItem>
+											<NavItem className='one'>
+												<NavLink
+													id='bgLLL'
+													className={classnames({ active: activeTab === '4' })}
+													onClick={() => {
+														toggle('4');
+														toggleTab();
+													}}>
+													SYNECTIKS DIFFERENTIATOR
+												</NavLink>
+											</NavItem>
+											<NavItem className='one'>
+												<NavLink
+													id='bgLLL'
+													className={classnames({ active: activeTab === '5' })}
+													onClick={() => {
+														toggle('5');
+														toggleTab();
+													}}>
+													KEY BENEFITS
+												</NavLink>
+											</NavItem>
+										</Nav>
+									</Collapse>
+								</Navbar>
 
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
@@ -215,11 +208,11 @@ const DevopsTransformation = ({ location }) => {
 										</div>
 										<div className='text-center '>
 											<h2 className='my-5'>Where do you find your current DevOps Maturity?</h2>
-											{/* <div className='w-75 mx-auto'>
-												<img src={six} alt='' className='boxshdd w-100' />
-											</div> */}
+											<div className='w-75 mx-auto'>
+												<img src={six} alt='' className='boxshdd w-100 mobile-show' />
+											</div>
 
-											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4'>
+											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4 mobile-hide'>
 												{/* <div className='d-flex flex-column justify-content-around'>
 													<div className='w-11 mt-5'>
 														<h5 className='Dulture  py-5 border-ra'>
@@ -963,7 +956,14 @@ const DevopsTransformation = ({ location }) => {
 export default DevopsTransformation;
 
 const DevopsTWrapper = styled.div`
-h1 {
+.mobile-show{
+	display: block;
+}
+.mobile-hide{
+	display: none !important;
+}
+padding:2rem 1rem;
+	h1 {
 		font-size: 1.875rem;
 	}
 	h2 {
@@ -975,375 +975,410 @@ h1 {
 	p {
 		font-size: 1rem;
 	}
-.w-11{
- width: 10rem;
- /* padding: 4rem 0rem !important;
+	.w-11 {
+		width: 10rem;
+		/* padding: 4rem 0rem !important;
  height: 35vh; */
- color: white;
-}
-.border-ra{
-	 border-top-left-radius: 25px;
- 	 border-bottom-left-radius:25px;
-}
-.w-21{
-	width:16rem;
-}
-.justify-content-evenly{
-	justify-content: space-evenly;
-}
+		color: white;
+	}
+	.border-ra {
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.w-21 {
+		width: 16rem;
+	}
+	.justify-content-evenly {
+		justify-content: space-evenly;
+	}
 	.ulfont {
-  font-size: 14px;
- }
- .ulht{
-  height: 45vh;
-  text-align: left;
- }
+		font-size: 14px;
+	}
+	.ulht {
+		height: 45vh;
+		text-align: left;
+	}
 
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,0);
-}
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .5);
+		border-color: rgba(0, 0, 0, 0);
+	}
 
-.hybridFixed{
-  position: fixed;
-  top:6rem;
-  left:0;
-  z-index: 99;
-}
-a#bgL,
-a#bgLL,
-a#bgLLL {
-    padding: 0.5rem 1.5rem;
-    font-size: 12px;
-				height: auto;
-				width:20rem;
-    text-align: center;
-}
-a#bgL.active,
-a#bgLL.active,
-a#bgLLL.active  {
-    border-bottom: 5px solid #007cc2;
-    background: bgBlue !important;
-    text-align: left;
-    color: var(--synectiksWhite);
-    border-radius: 0px;
-    font-size: 12px;
-    height: auto;
-    width:20rem;
-}
-.imgHyb {
-	margin-right: 25px !important;
-  width: 55px !important;
-  z-index: 999;
-  position: relative;
-}
-.one {
-	z-index: 99999;
-	background: white;
-	width: 100%;
-}
-ul.tabList.nav.flex-column {
+	.hybridFixed {
+		position: fixed;
+		top: 6rem;
+		left: 0;
+		z-index: 99;
+	}
+	a#bgL,
+	a#bgLL,
+	a#bgLLL {
+		padding: 0.5rem 1.5rem;
+		font-size: 12px;
+		height: auto;
+		width: 20rem;
+		text-align: center;
+	}
+	a#bgL.active,
+	a#bgLL.active,
+	a#bgLLL.active {
+		border-bottom: 5px solid #007cc2;
+		background: bgBlue !important;
+		text-align: left;
+		color: var(--synectiksWhite);
+		border-radius: 0px;
+		font-size: 12px;
+		height: auto;
+		width: 20rem;
+	}
+	.imgHyb {
+		margin-right: 25px !important;
+		width: 55px !important;
+		z-index: 999;
+		position: relative;
+	}
+	.one {
+		z-index: 99999;
+		background: white;
+		width: 100%;
+	}
+	ul.tabList.nav.flex-column {
 		position: relative;
 		z-index: 99999;
 		width: 100%;
 		left: 0rem;
 	}
 	.tabList {
-    display:block;
-  }
-  .tabsHide {
-    display: none;
-  }
+		display: block;
+	}
+	.tabsHide {
+		display: none;
+	}
 
-.hybmt{
-  margin-top: 2.5rem;
-}
-.nav-link.active{
-  background: var(--synectiksBlue);
-  color: var(--synectiksWhite);
-}
-.logo-btn {
-    font-size:2rem;
-    background: white;
-    border: none;
-    outline: none;
-    width: 100vw;
-    padding: 0.6rem;
-    text-align: left;
-    box-shadow: 2px 1px 10px rgba(0,0,0,0.3);
-    color: rgba(0,0,0,0.5);
-}
+	.hybmt {
+		margin-top: 2.5rem;
+	}
+	.nav-link.active {
+		background: var(--synectiksBlue);
+		color: var(--synectiksWhite);
+	}
+	.logo-btn {
+		font-size: 2rem;
+		background: white;
+		border: none;
+		outline: none;
+		width: 100vw;
+		padding: 0.6rem;
+		text-align: left;
+		box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.3);
+		color: rgba(0, 0, 0, 0.5);
+	}
 
-    .logo-btn:hover {
-      cursor: pointer;
-    }
-      .tab-content>.active{
-        padding:0rem 1rem;
-						}
-						.w125px{
+	.logo-btn:hover {
+		cursor: pointer;
+	}
+	.tab-content > .active {
+		padding: 0rem 1rem;
+	}
+	.w125px {
 		width: 50%;
 	}
-.w15 {
-	width: 25%;
-}
-.w9{
-	width: 25%;
-}
-.counters{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    border: 3px solid #f5f5f5;
-    padding: 18px 25px;
-    text-align: center;
-				font-weight:700;
-				margin: 0 auto;
-}
-@media (min-width: 576px){
-	p {
-		font-size: 1rem;
-	}
-	h1 {
-		font-family: montserrat, sans-serif;
-		font-weight: 300;
-		font-style: normal;
-		font-size: 3.6rem;
-		line-height: 62px;
-		letter-spacing: normal;
-		/* color: #007cc2 !important; */
-	}
-	h2 {
-		font-family: montserrat, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 2.56rem;
-		line-height: 44px;
-		letter-spacing: normal;
-		/* color: #007cc2 !important; */
-	}
-	h3 {
-		font-family: montserrat, sans-serif;
-		font-weight: 500;
-		font-style: normal;
-		font-size: 1.6rem;
-		line-height: 32px;
-		letter-spacing: normal;
-		/* color: #007cc2 !important; */
-	}
-	h4 {
-		font-family: montserrat, sans-serif;
-		font-weight: 600;
-		font-style: normal;
-		font-size: 1.125rem;
-		line-height: 22px;
-		letter-spacing: normal;
-		/* color: #007cc2 !important; */
-	}
-.Dreen,.Dellow,.Dred,.Durple {
-	 border-radius: 25px;
-}
-.one {
-	width:auto;
-}
 	.w15 {
-	width: 9%;
-}
-	.w125px{
-		width: 115px;
+		width: 25%;
 	}
-  .w-40{
-    width:40%;
-  }
-  .f14{
-    font-size: 14px;
-  }
-  .w9{
-    width:7%;
-  }
-  .boxshd{
-    box-shadow: 0px 0px 3px 1px lightgrey;
-  }
-  .boxshdd{
-    box-shadow: 0px 0px 5px 3px gray;
-  }
-  .counters{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50px;
-    border: 3px solid #f5f5f5;
-    padding: 18px 25px;
-    text-align: center;
-    font-weight:700;
-}
-.count{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0px;
-}
-.w-85{
-  width: 87vw;
-    border: 1px solid var(--textColor);
-    background: var(--synectiksWhite);
-    justify-content: space-between;
-}
-  ul.nav.flex-column {
-		position: relative;
-		z-index: 99999;
-		width: 100%;
-		/* width: 25vw; */
-		left: 0rem;
-  }
-  .tabList{
-    display:block;
-  }
-  .tabsHide{
-    display:block;
-  }
-	ul.nav.flex-column > li > a {
-		width: 100%;
-		color: rgba(0, 0, 0, 0.8);
-		height: 10vh;
-		font-size:14px;
-		cursor: pointer;
-		/* padding-left: 3.2rem; */
-  }
-  ul.nav.flex-column > li > a {
-    width: 100%;
-    color: rgba(0,0,0,0.8);
-    height: 10vh;
-    font-size: 15px;
-    cursor: pointer;
-  }
-  .tab-content>.active{
-        padding:0rem 4rem 2rem 4rem;
-      }
+	.w9 {
+		width: 25%;
 	}
-  a#bgL,a#bgLL,a#bgLLL{
-    background: bgBlue !important;
-    text-align: left;
-     font-size: 14px;
-     cursor: pointer;
-width:100%;
+	.counters {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50px;
+		border: 3px solid #f5f5f5;
+		padding: 18px 25px;
+		text-align: center;
+		font-weight: 700;
+		margin: 0 auto;
+	}
+
+	.topNav {
+		position: fixed;
+		top: 100px;
+	}
+	@media (min-width: 576px) {
+		.mobile-show{
+	display: none;
+}
+.mobile-hide{
+	display: none !important;
+}
+		padding: 0rem;
+	.topNav{
+	position: relative;
+	top: 0px;
+	z-index: 999;
+}
+ p {
+				font-size: 1rem;
+			}
+			h1 {
+				font-family: montserrat, sans-serif;
+				font-weight: 300;
+				font-style: normal;
+				font-size: 3.6rem;
+				line-height: 62px;
+				letter-spacing: normal;
+				/* color: #007cc2 !important; */
+			}
+			h2 {
+				font-family: montserrat, sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 2.56rem;
+				line-height: 44px;
+				letter-spacing: normal;
+				/* color: #007cc2 !important; */
+			}
+			h3 {
+				font-family: montserrat, sans-serif;
+				font-weight: 500;
+				font-style: normal;
+				font-size: 1.6rem;
+				line-height: 32px;
+				letter-spacing: normal;
+				/* color: #007cc2 !important; */
+			}
+			h4 {
+				font-family: montserrat, sans-serif;
+				font-weight: 600;
+				font-style: normal;
+				font-size: 1.125rem;
+				line-height: 22px;
+				letter-spacing: normal;
+				/* color: #007cc2 !important; */
+			}
+			.Dreen,
+			.Dellow,
+			.Dred,
+			.Durple {
+				border-radius: 25px;
+			}
+			.one {
+				width: auto;
+			}
+			.w15 {
+				width: 9%;
+			}
+			.w125px {
+				width: 115px;
+			}
+			.w-40 {
+				width: 40%;
+			}
+			.f14 {
+				font-size: 14px;
+			}
+			.w9 {
+				width: 7%;
+			}
+			.boxshd {
+				box-shadow: 0px 0px 3px 1px lightgrey;
+			}
+			.boxshdd {
+				box-shadow: 0px 0px 5px 3px gray;
+			}
+			.counters {
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50px;
+				border: 3px solid #f5f5f5;
+				padding: 18px 25px;
+				text-align: center;
+				font-weight: 700;
+			}
+			.count {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				padding: 10px 0px;
+			}
+			.w-85 {
+				width: 87vw;
+				border: 1px solid var(--textColor);
+				background: var(--synectiksWhite);
+				justify-content: space-between;
+			}
+			ul.nav.flex-column {
+				position: relative;
+				z-index: 99999;
+				width: 100%;
+				/* width: 25vw; */
+				left: 0rem;
+			}
+			.tabList {
+				display: block;
+			}
+			.tabsHide {
+				display: block;
+			}
+			ul.nav.flex-column > li > a {
+				width: 100%;
+				color: rgba(0, 0, 0, 0.8);
+				height: 10vh;
+				font-size: 14px;
+				cursor: pointer;
+				/* padding-left: 3.2rem; */
+			}
+			ul.nav.flex-column > li > a {
+				width: 100%;
+				color: rgba(0, 0, 0, 0.8);
+				height: 10vh;
+				font-size: 15px;
+				cursor: pointer;
+			}
+			.tab-content > .active {
+				padding: 0rem 4rem 2rem 4rem;
+			}
+		}
+		a#bgL,
+		a#bgLL,
+		a#bgLLL {
+			background: bgBlue !important;
+			text-align: left;
+			font-size: 14px;
+			cursor: pointer;
+			width: 100%;
 		}
 		a#bgL.active,
-a#bgLL.active,
-a#bgLLL.active  {
-	width:100%;
-}
+		a#bgLL.active,
+		a#bgLLL.active {
+			width: 100%;
+		}
 
-a#bgL.active {
-  border-bottom: 5px solid #007cc2;
-  position: relative;
-	background: bgBlue !important;
-  font-size: 14px;
-}
-a#bgLL.active {
-  border-bottom: 5px solid #007cc2;
-  position: relative;
+		a#bgL.active {
+			border-bottom: 5px solid #007cc2;
+			position: relative;
+			background: bgBlue !important;
+			font-size: 14px;
+		}
+		a#bgLL.active {
+			border-bottom: 5px solid #007cc2;
+			position: relative;
 
-	background: bgBlue !important;
-   font-size: 14px;
-}
+			background: bgBlue !important;
+			font-size: 14px;
+		}
 
-a#bgLLL.active {
-  position: relative;
-	border-bottom: 5px solid #007cc2;
-	background: bgBlue !important;
-   font-size: 14px;
-}
+		a#bgLLL.active {
+			position: relative;
+			border-bottom: 5px solid #007cc2;
+			background: bgBlue !important;
+			font-size: 14px;
+		}
+			.navbar{
+			padding: 0 !important;
+		}
 
-   .logo-btn {
-    display: none;
-  }
-  	.himage {
-		width: 50%;
-		height: auto;
-		box-shadow: 5px 5px 5px #789;
-		float: right;
-		margin-left: 2rem;
-		margin-bottom: 10px;
+		.logo-btn {
+			display: none;
+		}
+		.himage {
+			width: 50%;
+			height: auto;
+			box-shadow: 5px 5px 5px #789;
+			float: right;
+			margin-left: 2rem;
+			margin-bottom: 10px;
+		}
+		.nav-link.active {
+			background: var(--synectiksBlue);
+			color: var(--synectiksWhite);
+		}
+		.hbh1 {
+			font-size: 2.5rem;
+		}
+		.hybridFixed {
+			display: block;
+			height: auto;
+			position: sticky;
+			top: 16%;
+			padding-bottom: 21.4rem;
+			padding-top: 2.4rem;
+		}
+		.nav-item > a.active,
+		.nav-item > a:active {
+			height: auto;
+		}
 	}
-.nav-link.active{
-  background: var(--synectiksBlue);
-  color: var(--synectiksWhite);
+	@media (min-width: 768px) {
+		.mobile-show{
+	display: none;
 }
-.hbh1 {
-    font-size: 2.5rem;
+.mobile-hide{
+	display: flex !important;
 }
-.hybridFixed{
-       display: block;
-    height: auto;
-    position: sticky;
-    top: 16%;
-    padding-bottom: 21.4rem;
-    padding-top: 2.4rem;
-}
-.nav-item > a.active, .nav-item > a:active{
-  height: auto;
-}
-
-}
-@media(min-width:768px){
-	a#bgL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
-a#bgLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
-a#bgLLL.active:after{
-    top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: var(--synectiksBlue);
-	border-width: 20px;
-	margin-left: -20px;
-  }
-  	.himage {
-		width: 100%;
-		height: auto;
-		box-shadow: 5px 5px 5px #789;
-		margin-right: 2rem;
-		margin-bottom: 10px;
+		padding: 0rem;
+		.navbar{
+			padding: 0 !important;
+		}
+		a#bgL.active:after {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: var(--synectiksBlue);
+			border-width: 20px;
+			margin-left: -20px;
+		}
+		a#bgLL.active:after {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: var(--synectiksBlue);
+			border-width: 20px;
+			margin-left: -20px;
+		}
+		a#bgLLL.active:after {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(136, 183, 213, 0);
+			border-top-color: var(--synectiksBlue);
+			border-width: 20px;
+			margin-left: -20px;
+		}
+		.himage {
+			width: 100%;
+			height: auto;
+			box-shadow: 5px 5px 5px #789;
+			margin-right: 2rem;
+			margin-bottom: 10px;
+		}
 	}
-}
-@media(min-width:1024px){
- 	.himage {
-		width: 50%;
-		height: auto;
-		box-shadow: 5px 5px 5px #789;
-		float: right;
-		margin-left: 2rem;
-		margin-bottom: 10px;
+	@media (min-width: 1024px) {
+		.himage {
+			width: 50%;
+			height: auto;
+			box-shadow: 5px 5px 5px #789;
+			float: right;
+			margin-left: 2rem;
+			margin-bottom: 10px;
+		}
 	}
-}
 `;

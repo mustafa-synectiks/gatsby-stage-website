@@ -98,7 +98,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)
 	},
 	{
-		path: '/applicationservices/index.html',
+		path: '/officemigration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
 	{

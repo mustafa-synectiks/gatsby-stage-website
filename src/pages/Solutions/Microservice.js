@@ -7,7 +7,7 @@ import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
-
+import '../../components/fonts.css';
 import ms1 from '../../images/Microservices/Microservice_1.png';
 import ms2 from '../../images/Microservices/monovsmicro.png';
 import ms3 from '../../images/Microservices/Microservice_3.png';
@@ -221,7 +221,41 @@ const Microservice = () => {
 												While Monolith has complexity in codebase, microservices poses the
 												complexity of interaction between many services.
 											</p>
-											<img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' />
+											{/* <img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' /> */}
+											<div className='my-2 my-md-4 d-flex flex-column flex-md-row'>
+												<div className='bgBlue text-light col-md-6 pt-2'>
+													<h4 className='btn bgOrange py-0'>Pain Points</h4>
+													<ul>
+														<li>Code complexity & Maintainability</li>
+														<li>
+															Deployment becomes the bottleneck, fear to change, lack of
+															ownership
+														</li>
+														<li>Failure dependencies</li>
+														<li>One size doesn't fit all, hard to scale out</li>
+														<li>Discrete hardware, 10% Utilization across servers</li>
+														<li>Hardware centric culture</li>
+														<li>Operations - infinite mails and tickets</li>
+													</ul>
+												</div>
+												<div className='bgRed text-light col-md-6 pt-2'>
+													<h4 className='btn bgOrange py-0'>Benefits / ROI</h4>
+													<ul>
+														<li>Composability / Reusability / Ease of maintenance</li>
+														<li>
+															Autonomy of teams, culture of change, deploy more, deploy
+															faster, deploy better. Ownership and devops culture.
+														</li>
+														<li>Failure isolation and resiliency</li>
+														<li>Better scaling (out) and optimizations</li>
+														<li>
+															Hardware aggregated, assign resource to service elastically
+														</li>
+														<li>Software centric culture</li>
+														<li>Complete automated, run in pilot mode</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</TabPane>
 									<TabPane tabId='3'>
@@ -323,6 +357,163 @@ const Microservice = () => {
 
 											<div className='my-0 my-md-4'>
 												<img src={ms5} className='imgshadow microImage mb-1 mb-md-5' />
+												<div className='my-2 my-md-4'>
+													<div className='d-flex'>
+														<div className='d-flex flex-column justify-content-around bgOrange'>
+															<div className='rotate bgOrange'>
+																<h6>Activites</h6>
+															</div>
+															{/* <div className='rotate'>
+															<h6>Output</h6>
+														</div> */}
+														</div>
+														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlue text-light p-md-3'>
+															<div className='aggregate col'>
+																<div>
+																	<h4 className='btn bgOrange py-0'>Aggregate</h4>
+																</div>
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>
+																				Aggregate computing, storage, network
+																				@software layer from any plublic/private
+																				cloud
+																			</li>
+																			<li>Scale in/out as per need</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='extend col'>
+																<div>
+																	<h4 className='btn bgOrange py-0'>Extend</h4>
+																</div>
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>
+																				Develop micro service, <br /> IOT, big
+																				data quickly
+																				<br />
+																			</li>
+																			<li>Extend full proof frameworks</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='devops col'>
+																<div>
+																	<h4 className='btn bgOrange py-0'>Devops</h4>
+																</div>
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>Establish build/deployment pipeline</li>
+																			<li>Establish service orchestration</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='Operate col'>
+																<div>
+																	<h4 className='btn bgOrange py-0'>Operate</h4>
+																</div>
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>Establish ALM</li>
+																			<li>
+																				Setup operational tools and frameworks
+																				to put your business in autopilot mode
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div className='d-flex'>
+														<div className='d-flex flex-column justify-content-around bgOrange'>
+															{/* <div className='rotate'>
+															<h6>Activites</h6>
+														</div> */}
+															<div className='rotate bgOrange'>
+																<h6>Output</h6>
+															</div>
+														</div>
+														<div className='d-flex flex-column flex-md-row justify-content-md-around bgRed text-light px-md-3 py-md-1'>
+															<div className='aggregate col'>
+																{/* <div>
+																<h4>Aggregate</h4>
+															</div> */}
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>
+																				Automated scripts to do end to end
+																				provisioning of entire platform in
+																				minutes
+																			</li>
+																			<li>
+																				Aggregated cluster capable of deploying
+																				microservice/IOT/Big Data Application
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='extend col'>
+																{/* <div>
+																<h4>Extend</h4>
+															</div> */}
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>
+																				Develop micro service, <br /> IOT, big
+																				data quickly
+																				<br />
+																			</li>
+																			<li>Extend full proof frameworks</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='devops col'>
+																{/* <div>
+																<h4>Devops</h4>
+															</div> */}
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>Establish build/deployment pipeline</li>
+																			<li>Establish service orchestration</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+															<div className='Operate col'>
+																{/* <div>
+																<h4>Operate</h4>
+															</div> */}
+																<div className='d-flex'>
+																	<div>
+																		<ul className='p-3'>
+																			<li>Establish ALM</li>
+																			<li>
+																				Setup operational tools and frameworks
+																				to put your business in autopilot mode
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
 												<h3>One Key Cultural Driver.</h3>
 												<p>
 													Simply speaking the microservice world is “Solve small problems,
@@ -515,7 +706,7 @@ const Microservice = () => {
 export default Microservice;
 
 const MicroserviceWrapper = styled.div`
-padding: 1rem;
+padding: 5rem 1rem;
 .microImage,.microIm{
 	width: 100%;
 }
@@ -649,10 +840,20 @@ ul.tabList.nav.flex-column {
 	width: 25%;
 }
 .tab-content>.active {
-    padding: 5rem 0.5rem;
+    padding: 2rem 0.5rem;
 }
 
 @media (min-width: 576px){
+	.rotate{
+	width: auto;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 0 -60px;
+    padding: 3px;
+    text-align: center;
+    color: var(--synectiksWhite);
+}
 	padding: 3rem 4rem;
 	p{
 		text-align: justify;

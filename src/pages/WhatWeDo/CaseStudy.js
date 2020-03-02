@@ -137,7 +137,7 @@ export default CaseStudy;
 
 const CaseStudyWrapper = styled.div`
 	 {
-		padding: 1rem;
+		padding: 2rem 1rem;
 		h1,
 		h2,
 		h3,

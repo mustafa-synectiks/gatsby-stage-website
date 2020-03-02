@@ -7,24 +7,24 @@ export class Footer extends React.Component {
 	render() {
 		return (
 			<FooterWrapper>
-				{/* <div className='text-center text-dark fixed-bottom bgFooter content'>
-					<button className='bgFooter text-dark  fa fa-times float-right' type='submit' id='hide' />
+				<div className='text-center text-dark fixed-bottom bgOrange content'>
+					<button className='bgOrange text-dark fa fa-times float-right' type='submit' id='hide' />
 					<p className='mb-1 pt-2 px-3 fsize08'>
 						We use cookies for advertising, social media and analytics purposes. Read about how we use
 						cookies in our updated
-						<a className=' navfont  text-dark' href='/privacypolicy/index.html'>
-							<small className='fsize07'>
+						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
+							<small className='fsize08'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</small>
 						</a>
 						If you continue to use this site, you consent to our use of cookies and our
-						<a className=' navfont  text-dark' href='/privacypolicy/index.html'>
-							<small className='fsize07'>
+						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
+							<small className='fsize08'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</small>
 						</a>
 					</p>
-				</div> */}
+				</div>
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 ml-md-4 px-2 px-md-0'>
@@ -34,8 +34,11 @@ export class Footer extends React.Component {
 						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
 						<p className='text-light mt-0 mt-md-3'>
-							We are a team of highly qualified and experienced professionals from various fields who are
-							determined and dedicated to delivering world class professional services to our patrons.
+							{/* We are a team of highly qualified and experienced professionals from various fields who are
+							determined and dedicated to delivering world class professional services to our patrons. */}
+							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
+							public & private cloud and its infinite resources to migrate and modernize their business so
+							that they outperform their peers by becoming truly disruptive.
 						</p>
 					</div>
 					<div className='w-30vw mx-0 ml-md-5 pl-md-2 pl-2'>
@@ -49,7 +52,7 @@ export class Footer extends React.Component {
 								</li>
 								<li>
 									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Migration & Modernization
+										Migration/Modernization
 									</a>
 								</li>
 								<li>
@@ -158,7 +161,13 @@ const FooterWrapper = styled.div`
 	.m5t {
 		margin-top: 5px;
 	}
+	.fsize08 {
+		font-size: 10px;
+	}
 	@media (min-width: 576px) {
+		.fsize08 {
+			font-size: 10px;
+		}
 		.w-65 {
 			width: 55%;
 		}

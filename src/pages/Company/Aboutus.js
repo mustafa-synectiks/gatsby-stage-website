@@ -243,7 +243,7 @@ export default Aboutus;
 
 const AboutWrapper = styled.div`{
 
-padding: 1rem;
+padding: 2rem 1rem;
 h3{
 	text-align : center;
 }

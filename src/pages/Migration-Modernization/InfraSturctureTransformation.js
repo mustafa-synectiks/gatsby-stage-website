@@ -654,7 +654,7 @@ const HybridWrapper = styled.div`{
 		width: 100%;
 	}
 
-	padding: 1rem;
+	padding: 5rem 1rem;
 ul{
 	font-size: 1rem;
 }

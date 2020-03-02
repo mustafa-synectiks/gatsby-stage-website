@@ -30,8 +30,9 @@ export class Featured extends React.Component {
 							</div> */}
 						<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Featured' />
 
-						<div className=' '>
-							<div className='d-flex flex-column flex-md-row justify-content-around pt-2 flex-fill  align-items-center flex-col'>
+						<div className=''>
+							<h1 className='mt-2 mt-md-4'>Featured</h1>
+							<div className='d-flex flex-column flex-md-row justify-content-around flex-fill  align-items-center flex-col'>
 								<div>
 									<div className='p-1 p-md-5'>
 										<img src={FS} width='100%' alt='Enterprise-DevOps' className='imgBx' />
@@ -135,7 +136,7 @@ export class Featured extends React.Component {
 export default Featured;
 
 const FeaturedWrapper = styled.div`
-	padding: 1rem;
+	padding: 2rem 1rem;
 	.w-img {
 		width: 100% !important;
 	}

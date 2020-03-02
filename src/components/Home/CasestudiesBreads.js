@@ -9,7 +9,7 @@ const CaseBreadCrumbs = ({ title, subtitle, casetitle, pageTitle }) => {
 			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />
 			<h6 className=''>{casetitle}</h6>
 			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />
-			<a href='/casestudies/index.html' className='mx-1 mx-md-2'>
+			<a href='/casestudy/index.html' className='mx-1 mx-md-2'>
 				{subtitle}
 			</a>
 			<IoIosArrowForward className='mx-1 mx-md-3 rotateIcon' />

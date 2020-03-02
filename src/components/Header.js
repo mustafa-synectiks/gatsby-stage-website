@@ -62,10 +62,10 @@ const Header = () => {
 									<NavDropdown.Item href='/hybridcloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Services' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/applicationservices/index.html'>
+									<NavDropdown.Item href='/officemigration/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/applicationservices/index.html'>
+									<NavDropdown.Item href='/managedservices/index.html'>
 										Managed Services
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/primarycloudhostingservices/index.html'>

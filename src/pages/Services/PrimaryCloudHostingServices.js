@@ -49,11 +49,11 @@ const PrimaryCloudHosting = () => {
 			<SEO title='Primary Cloud Hosting Services' />
 			<PrimaryCloudHostingWrapper>
 				<div className='bg-lightgrey container-fluid'>
-					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+					<div className='text-justify'>
 						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Primary Cloud Hosting Services' />
 					</div>
 					<Row className='d-flex justify-content-start'>
-						<Navbar color='light' light expand='md'>
+						<Navbar color='light' light expand='md' className='topNav ml-n2'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
 								<Nav navbar className='bgWhite d-flex my-4 mx-auto ml-md-5 w-85'>
@@ -87,7 +87,7 @@ const PrimaryCloudHosting = () => {
 								<TabPane tabId='1'>
 									<div className='bg-lightgrey mb-0 pb-3'>
 										<div className=''>
-											<div className='text-black w-100 mt-md-3 mt-0 py-md-4 py-2 flex-column flex-md-row d-flex text-justify'>
+											<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex text-justify'>
 												<div className='w-100  pl-3 pr-3 text-black'>
 													<h3 className='my-1 my-md-3'> Cloud Hosted Infrastructure</h3>
 													<p className='lineHeight-24 text-justify mt-md-4 mt-1'>
@@ -111,7 +111,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4>
-											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-5'>
+											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
 												<img class='w-12 mr-3' src={SCR} alt='Security' />
 												<div>
 													<h5 className='h5'>Security</h5>
@@ -393,11 +393,16 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default PrimaryCloudHosting;
 
 const PrimaryCloudHostingWrapper = styled.div`
+	padding: 5rem 1rem;
+	.topNav {
+		position: fixed;
+		top: 100px;
+	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
 	}
-	padding-top: 1.5rem;
+
 	h1,
 	h2,
 	h4,
@@ -515,6 +520,12 @@ const PrimaryCloudHostingWrapper = styled.div`
 		width: 25%;
 	}
 	@media (min-width: 576px) {
+		padding: 3rem 4rem;
+		.topNav {
+			position: relative;
+			top: 0px;
+			z-index: 999;
+		}
 		.one {
 			z-index: 99999;
 			background: white;

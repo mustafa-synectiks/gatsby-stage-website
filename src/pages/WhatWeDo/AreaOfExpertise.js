@@ -68,7 +68,7 @@ export default AreaOfExpertise;
 
 const AreaOfExpertiseWrapper = styled.div`
 	 {
-		padding: 1rem;
+		padding: 2rem 1rem;
 		.w-7 {
 			width: 7rem;
 		}

@@ -95,7 +95,7 @@ const Hybridcloud = () => {
 														toggle('1');
 														toggleTab();
 													}}>
-													UNDERSTANDING THE HYBRID CLOUD
+													UNDERSTANDING
 												</NavLink>
 											</NavItem>
 
@@ -107,7 +107,7 @@ const Hybridcloud = () => {
 														toggle('2');
 														toggleTab();
 													}}>
-													GETTING STARTED TO HYBRID CLOUD
+													GETTING STARTED
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -893,6 +893,7 @@ const Hybridcloud = () => {
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
+padding:5rem 1rem;
 .topNav{
 	position: fixed;
 	top: 100px;
@@ -1043,6 +1044,7 @@ p{
 
 
 @media (min-width: 576px){
+	padding: 0rem 1rem;
 	.topNav{
 	position: relative;
 	top: 0px;

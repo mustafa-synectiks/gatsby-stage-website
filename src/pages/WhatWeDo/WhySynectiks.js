@@ -17,7 +17,7 @@ import EXP from '../../images/Hybrid/Expertise.png';
 import SEO from '.././../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import GetInTouch from '../../components/Home/Getintouch.js';
-
+import '../../components/fonts.css';
 const WhySynectiks = ({ location }) => {
 	return (
 		<Layout>
@@ -206,7 +206,7 @@ export default WhySynectiks;
 
 const WhySynectiksWrapper = styled.div`
 	 {
-		padding: 1rem;
+		padding: 2rem 1rem;
 		.hybmt {
 			h3 {
 				font-size: 1.1rem;

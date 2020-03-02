@@ -853,6 +853,9 @@ p{
 		ul {
 			list-style: none;
 		}
+		.showul{
+			list-style: disc;
+		}
 		#bar {
 			width: 0%;
 			max-width: 100%;

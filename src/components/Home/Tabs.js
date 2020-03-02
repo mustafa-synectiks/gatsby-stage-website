@@ -100,7 +100,7 @@ const Tabs = () => {
 									business, take advantage of cloud and microservice architecture and thereby
 									accelerate your transformation journey @50% time & cost.  Its primary goals are:
 								</p>
-								<ul>
+								<ul className='showul'>
 									<li>Accelerated Cloud Adoption</li>
 									<li>Multi-cloud container orchestration</li>
 									<li>App-centric Optimization </li>
@@ -125,15 +125,23 @@ const Tabs = () => {
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right'>
-										<h3 className='text-center heading-h3'>
-											Data <br />Transformation
-										</h3>
-										<p className='text-justify f-14 px-2 px-md-4'>
-											Consolidate your unstructured, semi structure and strtucture data and get
-											maximum business insights & real time with minimal TCO of data management
-											and its governance.
-											<br />
-											<br />
+										<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
+										<p className='text-justify f-14 px-2 px-md-4 border-right'>
+											Make sure that every bit of your hardware environment is directly supporting
+											your business objectives. Transition from a hardware centric to a software
+											Defined organisation make huge difference in CapEx and Opex.
+										</p>
+									</div>
+								</div>
+							</Col>
+							<Col sm='12' md='3' className='p-1'>
+								<div className='py-3 h-100'>
+									<div className='border-right'>
+										<h3 className='text-center heading-h3'>Application Transformation</h3>
+										<p className='text-justify f-14 px-4'>
+											Applications that power your enterprise are key to generating a strong
+											competitive advantage. Bring innovation, agility and outstanding customer
+											experience through moderm architectures and cloud first approach.
 										</p>
 									</div>
 								</div>
@@ -152,26 +160,19 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
+
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right'>
-										<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
-										<p className='text-justify f-14 px-2 px-md-4 border-right'>
-											Make sure that every bit of your hardware environment is directly supporting
-											your business objectives. Transition from a hardware centric to a software
-											Defined organisation make huge difference in CapEx and Opex.
-										</p>
-									</div>
-								</div>
-							</Col>
-							<Col sm='12' md='3' className='p-1'>
-								<div className='py-3 h-100'>
 									<div className=''>
-										<h3 className='text-center heading-h3'>Application Transformation</h3>
-										<p className='text-justify f-14 px-4'>
-											Applications that power your enterprise are key to generating a strong
-											competitive advantage. Bring innovation, agility and outstanding customer
-											experience through moderm architectures and cloud first approach.
+										<h3 className='text-center heading-h3'>
+											Data <br />Transformation
+										</h3>
+										<p className='text-justify f-14 px-2 px-md-4'>
+											Consolidate your unstructured, semi structure and strtucture data and get
+											maximum business insights & real time with minimal TCO of data management
+											and its governance.
+											<br />
+											<br />
 										</p>
 									</div>
 								</div>
@@ -205,9 +206,14 @@ const TabsWrapper = styled.div`
 		display:none;
 	}
 }
-
+.showul{
+			list-style: disc;
+		}
 
 @media screen and (min-width: 576px){
+	.showul{
+			list-style: disc;
+		}
 	.tabsFlex{
 	display:none;
 }
