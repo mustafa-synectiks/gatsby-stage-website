@@ -214,12 +214,12 @@ const DevopsTransformation = ({ location }) => {
 											</p>
 										</div>
 										<div className='text-center '>
-											<h4 className='my-5'>Where do you find your current DevOps Maturity?</h4>
+											<h2 className='my-5'>Where do you find your current DevOps Maturity?</h2>
 											{/* <div className='w-75 mx-auto'>
 												<img src={six} alt='' className='boxshdd w-100' />
 											</div> */}
 
-											<div className='d-flex justify-content-start flex-column flex-md-row'>
+											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4'>
 												{/* <div className='d-flex flex-column justify-content-around'>
 													<div className='w-11 mt-5'>
 														<h5 className='Dulture  py-5 border-ra'>
@@ -533,12 +533,12 @@ const DevopsTransformation = ({ location }) => {
 											</div> */}
 
 											<div>
-												<h4 className='text-center my-5'>
+												<h2 className='text-center mt-3 mt-md-5'>
 													Our DevOps Gap analysis process briefly as follows:
-												</h4>
+												</h2>
 
 												<div>
-													<h2 className='fw6 text-center'>Gap Analysis</h2>
+													<h3 className='fw6 text-center'>Gap Analysis</h3>
 													<h6 className='text-center'>4 Phased - 5 days</h6>
 												</div>
 
