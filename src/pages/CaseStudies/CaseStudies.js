@@ -30,7 +30,7 @@ const CaseStudies = () => {
 		<Layout>
 			<SEO title='Case Studies' />
 			<CaseStudiesWrapper>
-				<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
+				<div className='text-justify'>
 					<BreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Case Studies' />
 				</div>
 				<h1 className='text-center'>Case Studies ok </h1>

@@ -47,6 +47,12 @@ module.exports = {
 			}
 		},
 		{
+			resolve: `gatsby-plugin-s3`,
+			options: {
+				bucketName: 'websemitest'
+			}
+		},
+		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `images`,

@@ -5,6 +5,7 @@ import lc from '../../images/LargeMotorCompany.jpg';
 import SEO from '../../components/seo.js';
 import styled from 'styled-components';
 import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
+
 const brdr = {
 	borderRadius: '0 0.25rem 0.25rem 0'
 };
@@ -162,7 +163,8 @@ const SoftwaredefinedWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
 	}
-	@media (min-width: 576px) {
+
+	@media screen and (min-width: 576px) {
 		padding: 3rem 4rem;
 	}
 `;

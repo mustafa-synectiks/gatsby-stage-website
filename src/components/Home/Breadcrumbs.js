@@ -16,13 +16,18 @@ const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
 export default BreadCrumbs;
 
 const BreadCrumbsWrapper = styled.div`
+	a,
+	h6,
 	.rotateIcon {
-		transform: rotate(90deg);
+		font-size: 8px;
+	}
+	.rotateIcon {
+		transform: rotate(0deg);
 	}
 	display: flex;
 	justify-content: flex-start;
-	align-items: end;
-	flex-direction: column;
+	align-items: baseline;
+	flex-direction: row;
 	a {
 		margin-top: -0.3rem;
 	}
@@ -30,6 +35,11 @@ const BreadCrumbsWrapper = styled.div`
 		color: var(--synectiksOrange);
 	}
 	@media screen and (min-width: 576px) {
+		.rotateIcon,
+		a,
+		h6 {
+			font-size: 16px;
+		}
 		.rotateIcon {
 			transform: rotate(0deg);
 		}
