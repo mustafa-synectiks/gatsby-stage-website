@@ -289,6 +289,28 @@ const Slider = () => {
 				<div>
 					<GetInTouch />
 				</div>
+				<div className=''>
+					{/* private policy */}
+					<div className='text-center text-light fixed-bottom bgBlue prvtpolicy'>
+						<p className='mb-1 pt-2 px-3 fsize08'>
+							We use cookies to make sure you have better experience on our website. Read about how we use
+							cookies in our Privacy Policy.
+							<a className='navfont text-light' href='/privacypolicy/index.html'>
+								<small className='fsize08'>
+									&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
+								</small>
+							</a>
+							{/* If you continue to use this site, you consent to our use of cookies and our
+							<a className='navfont text-light' href='/privacypolicy/index.html'>
+								<small className='fsize08'>
+									&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
+								</small>
+							</a> */}
+						</p>
+						<button className='bgBlue text-light fa fa-times float-right' type='submit' id='hide' />
+					</div>
+					{/* private policy */}
+				</div>
 			</div>
 		</HomeWrapper>
 	);
@@ -297,6 +319,14 @@ const Slider = () => {
 export default Slider;
 
 const HomeWrapper = styled.section`
+.prvtpolicy{
+	height:40px;
+#hide{
+	position: absolute;
+	top:0;
+	right:0;
+}
+}
 h1{
 	font-size: 1.875rem;
 }

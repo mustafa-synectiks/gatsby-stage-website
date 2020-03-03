@@ -929,8 +929,8 @@ const DevopsTransformation = ({ location }) => {
 												<p className='ml-0 ml-md-5'>
 													Everything software defined and maximum automation ensure lowest
 													TCO. A successful Digital Modernization project delivers 10X
-													agility,30X reliability and 10X operational efficiency. At least 50
-													% TCO is reduced because of 80% operation, 50% hardware and 100%
+													agility, 30X reliability and 10X operational efficiency. At least
+													50% TCO is reduced because of 80% operation, 50% hardware and 100%
 													license cost savings.
 												</p>
 											</div>

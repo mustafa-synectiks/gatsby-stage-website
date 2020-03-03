@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 		// Cookie Strip
 		$(document).ready(function() {
 			$('#hide').click(function() {
-				$('.content').hide();
+				$('.prvtpolicy').hide();
 			});
 		});
 

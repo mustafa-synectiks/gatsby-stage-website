@@ -7,11 +7,9 @@ export class Footer extends React.Component {
 	render() {
 		return (
 			<FooterWrapper>
-				<div className='text-center text-light fixed-bottom bgBlue content'>
+				{/* <div className='text-center text-light fixed-bottom bgBlue content'>
 					<button className='bgBlue text-light fa fa-times float-right' type='submit' id='hide' />
 					<p className='mb-1 pt-2 px-3 fsize08'>
-						{/* We use cookies for advertising, social media and analytics purposes. Read about how we use
-						cookies in our updated */}
 						We use cookies to make sure you have better experience on our website. Read about how we use
 						cookies in our Privacy Policy
 						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
@@ -26,7 +24,7 @@ export class Footer extends React.Component {
 							</small>
 						</a>
 					</p>
-				</div>
+				</div> */}
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 ml-md-4 px-2 px-md-0'>
