@@ -1,10 +1,14 @@
-import React from "react"
+import React from 'react';
 const VisualForm = () => {
-  return (
-    <div>
-      <h1>Visual Form</h1>
-    </div>
-  )
-}
+	return (
+		<div>
+			<form action=''>
+				<input type='text' id='fname' />
+				<input type='text' id='lname' />
+				<input type='tel' id='phone' />
+			</form>
+		</div>
+	);
+};
 
-export default VisualForm
+export default VisualForm;

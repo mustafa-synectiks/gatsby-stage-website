@@ -153,8 +153,8 @@ const DevopsTransformation = ({ location }) => {
 												<p className=''>
 													Competition, new products and continuing pressure to monetize older
 													services severely taxing many businesses driven by legacy
-													applications and infrastructure. To maintain competitive edge in a
-													highly dynamic market, business need to re-imagine the customer
+													applications and infrastructure. To maintain the competitive edge in
+													a highly dynamic market, business need to re-imagine the customer
 													experience in lower economics. Enterprises looking for modernization
 													of their legacy stack and operate in more fast and competitive way
 													taking DevOps as key strategic drivers. As companies embrace DevOps,
@@ -270,7 +270,7 @@ const DevopsTransformation = ({ location }) => {
 														<ul className='pt-3 DurpleLight ulfont ulht w-100'>
 															<li>Prioritized work</li>
 															<li>Large team</li>
-															<li>Multiple Roles(ARchitect, Developer,Tester,...)</li>
+															<li>Multiple Roles(Architect, Developer,Tester,...)</li>
 															<li>Defined & documented process</li>
 															<li>Quarterly release</li>
 														</ul>
@@ -400,7 +400,7 @@ const DevopsTransformation = ({ location }) => {
 															<li>Deployment & compliance trend</li>
 															<li>Test results consolidation</li>
 															<li>TDD framework integration</li>
-															<li>Dymanic environment provisioning</li>
+															<li>Dynamic environment provisioning</li>
 														</ul>
 													</div>
 													<div className='Dest'>
@@ -430,7 +430,7 @@ const DevopsTransformation = ({ location }) => {
 															<li>Speedy feedback</li>
 															<li>Advanced frameworks driven</li>
 															<li>RAD</li>
-															<li>Excellent training Framework</li>
+															<li>Excellent training framework</li>
 														</ul>
 													</div>
 													<div className='DesignArc'>
@@ -484,7 +484,7 @@ const DevopsTransformation = ({ location }) => {
 													<ul className='pt-3 DurpleLight ulfont ulht w-100'>
 														<li>Prioritized work</li>
 														<li>Large team</li>
-														<li>Multiple Roles(ARchitect, Developer,Tester,...)</li>
+														<li>Multiple Roles(Architect, Developer,Tester,...)</li>
 														<li>Defined & documented process</li>
 														<li>Quarterly release</li>
 													</ul>
@@ -603,7 +603,7 @@ const DevopsTransformation = ({ location }) => {
 																<ul className='pt-3 text-left f14 pr-1 pr-md-2'>
 																	<li>
 																		Presentation of the report and plans to
-																		stakeholders, following plans are deliverd.
+																		stakeholders, following plans are delivered.
 																	</li>{' '}
 																	<li>Phase wise maturity development</li>
 																	<li>Tools & Technology Adoption</li>
@@ -615,7 +615,7 @@ const DevopsTransformation = ({ location }) => {
 												</div>
 											</div>
 											<h5 className='py-2 py-md-5'>
-												For your self-assessment, please refer
+												For your self-assessment, please refer &nbsp;
 												<a href=''>DevOps assessment Questionnaires:</a>
 											</h5>
 											<p className='text-justify'>
@@ -801,9 +801,9 @@ const DevopsTransformation = ({ location }) => {
 													</div>
 													<p>
 														{' '}
-														We have done large Transformation projects with Toyota,
-														Relianace and cultural challenges effectively and brought the
-														changes, resulting significant improvement and savings.
+														We have done large Transformation projects with Toyota, Reliance
+														and cultural challenges effectively and brought the changes,
+														resulting significant improvement and savings.
 													</p>
 												</div>
 
@@ -864,7 +864,6 @@ const DevopsTransformation = ({ location }) => {
 													<h5 className=''>Extreme Automation</h5>
 												</div>
 												<p>
-													{' '}
 													Use our existing automation capabilities to automate infrastructure
 													, operations, security in hybrid IT environment.
 												</p>
@@ -1103,6 +1102,7 @@ padding:2rem 1rem;
 	.topNav {
 		position: fixed;
 		top: 100px;
+		z-index: 9999;
 	}
 	@media (min-width: 576px) {
 		.mobile-show{
@@ -1311,6 +1311,10 @@ padding:2rem 1rem;
 		}
 	}
 	@media (min-width: 768px) {
+
+	.ulfont {
+		font-size: 1rem;
+	}
 		.mobile-show{
 	display: none;
 }

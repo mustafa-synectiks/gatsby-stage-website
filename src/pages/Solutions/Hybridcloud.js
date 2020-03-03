@@ -717,7 +717,7 @@ const Hybridcloud = () => {
 													it, run it and manage it.
 												</p>
 
-												<h4 className='text-center line mt-md-4'>
+												<h4 className='text-center mt-md-4'>
 													Top 12 Reasons to select Synectiks as your Hybrid Cloud Partner:
 												</h4>
 											</div>
@@ -897,6 +897,7 @@ padding:5rem 1rem;
 .topNav{
 	position: fixed;
 	top: 100px;
+	z-index: 9999;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

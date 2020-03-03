@@ -7,8 +7,8 @@ export class Footer extends React.Component {
 	render() {
 		return (
 			<FooterWrapper>
-				<div className='text-center text-dark fixed-bottom bgOrange content'>
-					<button className='bgOrange text-dark fa fa-times float-right' type='submit' id='hide' />
+				<div className='text-center text-light fixed-bottom bgBlue content'>
+					<button className='bgBlue text-light fa fa-times float-right' type='submit' id='hide' />
 					<p className='mb-1 pt-2 px-3 fsize08'>
 						{/* We use cookies for advertising, social media and analytics purposes. Read about how we use
 						cookies in our updated */}

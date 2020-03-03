@@ -98,6 +98,10 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)
 	},
 	{
+		path: '/visualform/index.html',
+		component: path.resolve(`src/pages/Mails/VisualForm.js`)
+	},
+	{
 		path: '/officemigration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},

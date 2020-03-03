@@ -98,13 +98,14 @@ const Tabs = () => {
 									It's a platform that provides peace of mind, governance, efficiency and control of
 									multi-cloud environments. Xformation helps you to migrate and modernize your legacy
 									business, take advantage of cloud and microservice architecture and thereby
-									accelerate your transformation journey @50% time & cost.  Its primary goals are:
+									accelerate your transformation journey @50% time & cost.  <br />{' '}
+									<span className='h5 b'>Its primary goals are:</span>
 								</p>
 								<ul className='showul'>
 									<li>Accelerated Cloud Adoption</li>
 									<li>Multi-cloud container orchestration</li>
 									<li>App-centric Optimization </li>
-									<li>Continuous Delivery / Continuous Compliance / Continuous Automation.</li>
+									<li>Continuous Delivery / Compliance / Automation.</li>
 									<li> Automated Performance Monitoring and Cost Control</li>
 								</ul>
 							</Col>

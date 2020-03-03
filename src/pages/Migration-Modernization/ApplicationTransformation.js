@@ -498,6 +498,7 @@ padding: 5rem 1rem;
 .topNav{
 	position: fixed;
 	top: 100px;
+	z-index: 9999;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

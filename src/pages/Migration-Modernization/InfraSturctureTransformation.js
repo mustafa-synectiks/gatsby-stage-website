@@ -653,6 +653,13 @@ const HybridWrapper = styled.div`{
 	.w-hndr{
 		width: 100%;
 	}
+	.disimal{
+ width: 100%;
+}
+.disima{
+ width: 100%;
+}
+
 
 	padding: 5rem 1rem;
 ul{
@@ -674,6 +681,7 @@ ul{
 .topNav{
 	position: fixed;
 	top: 100px;
+	z-index: 9999;
 }
 .navbar-light .navbar-toggler {
 	color: rgba(0, 0, 0, .5);
