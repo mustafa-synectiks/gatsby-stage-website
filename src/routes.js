@@ -4,10 +4,10 @@ module.exports = [
 		path: '/',
 		component: path.resolve(`src/pages/index.js`)
 	},
-	{
-		path: '/audit/index.html',
-		component: path.resolve(`src/pages/Formation/Audit.js`)
-	},
+	// {
+	// 	path: '/audit/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Audit.js`)
+	// },
 	{
 		path: '/whysynectiks/index.html',
 		component: path.resolve(`src/pages/WhatWeDo/WhySynectiks.js`)
@@ -16,43 +16,43 @@ module.exports = [
 		path: '/devopstransformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
-	{
-		path: '/foundation/index.html',
-		component: path.resolve(`src/pages/Formation/Foundation.js`)
-	},
+	// {
+	// 	path: '/foundation/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Foundation.js`)
+	// },
 
-	{
-		path: '/microserviceexample/index.html',
-		component: path.resolve(`src/pages/Formation/Microserviceexample.js`)
-	},
-	{
-		path: '/microservicehelp/index.html',
-		component: path.resolve(`src/pages/Formation/Microservicehelp.js`)
-	},
+	// {
+	// 	path: '/microserviceexample/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Microserviceexample.js`)
+	// },
+	// {
+	// 	path: '/microservicehelp/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Microservicehelp.js`)
+	// },
 	{
 		path: '/privacypolicy/index.html',
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)
 	},
-	{
-		path: '/microservicechallenge/index.html',
-		component: path.resolve(`src/pages/Formation/Microservicechallenge.js`)
-	},
-	{
-		path: '/microservicebenefit/index.html',
-		component: path.resolve(`src/pages/Formation/Microservicebenefit.js`)
-	},
-	{
-		path: '/transformation/index.html',
-		component: path.resolve(`src/pages/Formation/Transformation.js`)
-	},
-	{
-		path: '/operations/index.html',
-		component: path.resolve(`src/pages/Formation/Operations.js`)
-	},
-	{
-		path: '/migrations/index.html',
-		component: path.resolve(`src/pages/Formation/Migrations.js`)
-	},
+	// {
+	// 	path: '/microservicechallenge/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Microservicechallenge.js`)
+	// },
+	// {
+	// 	path: '/microservicebenefit/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Microservicebenefit.js`)
+	// },
+	// {
+	// 	path: '/transformation/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Transformation.js`)
+	// },
+	// {
+	// 	path: '/operations/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Operations.js`)
+	// },
+	// {
+	// 	path: '/migrations/index.html',
+	// 	component: path.resolve(`src/pages/Formation/Migrations.js`)
+	// },
 	{
 		path: '/HostedInfrastructure/index.html',
 		component: path.resolve(`src/pages/Cloud/CloudHostedServices/HostedInfrastructure.js`)
@@ -115,7 +115,7 @@ module.exports = [
 	},
 	{
 		path: '/casestudy/index.html',
-		component: path.resolve(`src/pages/WhatWeDo/Casestudy.js`)
+		component: path.resolve(`src/pages/WhatWeDo/CaseStudy.js`)
 	},
 	{
 		path: '/featured/index.html',
