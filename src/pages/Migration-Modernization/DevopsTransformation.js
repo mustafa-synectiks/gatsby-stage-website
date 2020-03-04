@@ -8,7 +8,7 @@ import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
-import one from '../../images/Devops/1.png';
+import one from '../../images/Devops/Technology Shift.jpg';
 import two from '../../images/Devops/Technology Transformation.svg';
 import speed from '../../images/Devops/speed.svg';
 import scale from '../../images/Devops/scale.svg';
