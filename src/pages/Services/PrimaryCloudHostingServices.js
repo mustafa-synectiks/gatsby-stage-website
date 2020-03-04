@@ -47,11 +47,11 @@ const PrimaryCloudHosting = () => {
 
 	return (
 		<Layout>
-			<SEO title='Primary Cloud Hosting Services' />
+			<SEO title='Private Cloud Hosting Services' />
 			<PrimaryCloudHostingWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>
-						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Primary Cloud Hosting Services' />
+						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Private Cloud Hosting Services' />
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<Navbar color='light' light expand='md' className='topNav ml-n2'>
@@ -113,7 +113,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 											<h4> Why choose SYNECTIKS Cloud Hosted Infrastructure Services? </h4>
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
-												<img class='w-12 mr-3' src={SCR} alt='Security' />
+												<img class='w-12 mr-0 mr-md-5' src={SCR} alt='Security' />
 												<div>
 													<h5>Security</h5>
 													<p className='mt-2'>
@@ -127,7 +127,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-3'>
 												<img
-													class='w-12 mr-3'
+													class='w-12 mr-0 mr-md-5'
 													src={ARP}
 													alt='Availability & Reliable Performance'
 												/>
@@ -141,7 +141,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={AP} alt='Affordable Pricing' />
+												<img class='w-12 mr-0 mr-md-5' src={AP} alt='Affordable Pricing' />
 												<div>
 													<h5>Affordable Pricing</h5>
 													<p className='mt-2'>
@@ -156,7 +156,11 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={MSGL} alt='Multi Secure Geo Locations' />
+												<img
+													class='w-12 mr-0 mr-md-5'
+													src={MSGL}
+													alt='Multi Secure Geo Locations'
+												/>
 												<div>
 													<h5>Multi Secure Geo Locations</h5>
 													<p className='mt-2'>
@@ -167,7 +171,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex  flex-column flex-md-row align-items-center  align-items-md-start  mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={HW} alt='Host any workload' />
+												<img class='w-12 mr-0 mr-md-5' src={HW} alt='Host any workload' />
 												<div>
 													<h5>Host any workload</h5>
 													<p className='mt-2'>
@@ -181,14 +185,18 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-4'>
-												<img class='w-12 mr-3' src={ST} alt='Storage Types available:' />
+												<img
+													class='w-12 mr-0 mr-md-5'
+													src={ST}
+													alt='Storage Types available:'
+												/>
 												<div>
 													<h4>Storage Types available</h4>
 													<p className='mt-2'>S3, NAS, SAN, Cloud file & share.</p>
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={MS} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={MS} alt='' />
 												<div>
 													<h4>Migration Services</h4>
 													<p className='mt-2'>
@@ -198,7 +206,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={SPT} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={SPT} alt='' />
 												<div>
 													<h4>Support</h4>
 													<p className='mt-2'>
@@ -208,7 +216,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-3' src={self} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
 												<div>
 													<h4>Self-service portal</h4>
 													<p className='mt-2'>

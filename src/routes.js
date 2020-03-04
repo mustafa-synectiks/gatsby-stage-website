@@ -58,7 +58,7 @@ module.exports = [
 	// 	component: path.resolve(`src/pages/Cloud/CloudHostedServices/HostedInfrastructure.js`)
 	// },
 	{
-		path: '/primarycloudhostingservices/index.html',
+		path: '/privatecloudhostingservices/index.html',
 		component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)
 	},
 	// {
