@@ -168,32 +168,6 @@ const Tabs = () => {
 								<div className='col-sm-12  p-1'>
 									<div className='py-1 h-100'>
 										<div className='border-bottom'>
-											<h3 className='text-center heading-h3'>Data Transformation</h3>
-											<p className='text-justify f-14 px-2 px-md-4'>
-												Consolidate your unstructured, semi structure and strtucture data and
-												get maximum business insights & real time with minimal TCO of data
-												management and its governance.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1 h-100'>
-										<div className='border-bottom'>
-											<h3 className='text-center heading-h3'>DevOps Transformation</h3>
-											<p className='text-justify f-14 px-1 px-md-4'>
-												Adopting a DevOps culture starts by transforming your people, tech and
-												processes. Accelerate your DevOps adaption by using our open Automation
-												platform and skilled resources.
-												<br />
-												<br />
-											</p>
-										</div>
-									</div>
-								</div>
-								<div className='col-sm-12  p-1'>
-									<div className='py-1 h-100'>
-										<div className='border-bottom'>
 											<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
 											<p className='text-justify f-14 px-2 px-md-4'>
 												Make sure that every bit of your hardware environment is directly
@@ -213,6 +187,33 @@ const Tabs = () => {
 												competitive advantage. Bring innovation, agility and outstanding
 												customer experience through moderm architectures and cloud first
 												approach.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div className='col-sm-12  p-1'>
+									<div className='py-1 h-100'>
+										<div className='border-bottom'>
+											<h3 className='text-center heading-h3'>DevOps Transformation</h3>
+											<p className='text-justify f-14 px-1 px-md-4'>
+												Adopting a DevOps culture starts by transforming your people, tech and
+												processes. Accelerate your DevOps adaption by using our open Automation
+												platform and skilled resources.
+												<br />
+												<br />
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className='col-sm-12  p-1'>
+									<div className='py-1 h-100'>
+										<div className='border-bottom'>
+											<h3 className='text-center heading-h3'>Data Transformation</h3>
+											<p className='text-justify f-14 px-2 px-md-4'>
+												Consolidate your unstructured, semi structure and strtucture data and
+												get maximum business insights & real time with minimal TCO of data
+												management and its governance.
 											</p>
 										</div>
 									</div>

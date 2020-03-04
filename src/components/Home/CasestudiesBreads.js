@@ -21,6 +21,9 @@ export default CaseBreadCrumbs;
 
 const CaseBreadCrumbsWrapper = styled.div`
 	 {
+		a {
+			width: 18%;
+		}
 		a,
 		h6,
 		.rotateIcon {
@@ -42,6 +45,9 @@ const CaseBreadCrumbsWrapper = styled.div`
 	}
 
 	@media screen and (min-width: 576px) {
+		a {
+			width: auto;
+		}
 		a,
 		h6,
 		.rotateIcon {

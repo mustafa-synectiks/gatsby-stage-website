@@ -438,6 +438,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 	.topNav {
 		position: fixed;
 		top: 100px;
+		z-index: 999;
 	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

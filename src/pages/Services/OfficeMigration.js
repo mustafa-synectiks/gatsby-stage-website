@@ -98,7 +98,7 @@ export class OfficeMigraton extends React.Component {
 								</p>
 							</div>
 							<div
-								className='d-flex  py-3 flex-col text-center col-lg-12 text-light'
+								className='d-flex  py-3 flex-col flex-column flex-md-row text-center col-lg-12 text-light'
 								data-aos='fade-up'
 								data-aos-duration='2000'>
 								<div className='p-3 m-1 col-sm-3 border-grey-2px text-center bgOrange'>

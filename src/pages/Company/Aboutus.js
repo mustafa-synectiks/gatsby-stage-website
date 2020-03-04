@@ -44,14 +44,14 @@ export class Aboutus extends React.Component {
 						<div className=''>
 							<div className=''>
 								<BreadCrumbs title='Home' subtitle='Company' pageTitle='About Us' />
-								<h1 className='mt-md-4'>Mission Statement:</h1>
+								<h1 className='mt-md-4 text-left'>Mission Statement:</h1>
 								<p className='py-4'>
 									As an Open Product based Cloud Solution provider, we help enterprises take advantage
 									of public & private cloud and its infinite resources to migrate and modernize their
 									business so that they outperform their peers by becoming truly disruptive.
 								</p>
 
-								<blockquote class='w-75 blockquote blockquote-custom bg-white p-5 shadow rounded'>
+								<blockquote class='bloqwidth blockquote blockquote-custom bg-white p-5 shadow rounded'>
 									<div className='blockquote-custom-icon bg-info shadow-sm'>
 										<i className='fa fa-quote-left text-white' />
 									</div>
@@ -69,7 +69,7 @@ export class Aboutus extends React.Component {
 									flexibility. These aren’t your typical consulting and managed services. They’re an
 									entirely new kind of engagement focused on empowerment – not dependency.{' '}
 								</p>
-								<blockquote class='w-75 blockquote blockquote-custom bg-white p-5 shadow rounded'>
+								<blockquote class='bloqwidth blockquote blockquote-custom bg-white p-5 shadow rounded'>
 									<div className='blockquote-custom-icon bg-info shadow-sm'>
 										<i className='fa fa-quote-left text-white' />
 									</div>
@@ -242,8 +242,10 @@ export class Aboutus extends React.Component {
 export default Aboutus;
 
 const AboutWrapper = styled.div`{
-
 padding: 2rem 1rem;
+.bloqwidth{
+	width: 100%;
+}
 h3{
 	text-align : center;
 }
@@ -273,6 +275,9 @@ transform: translateX(15px);
 }
 	@media (min-width: 576px) {
 padding: 3rem 4rem;
+.bloqwidth{
+	width: 75%;
+}
 .cstrip{
 	background: var(--synectiksWhite);
 }

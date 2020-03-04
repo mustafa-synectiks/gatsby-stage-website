@@ -289,8 +289,7 @@ const Hybridcloud = () => {
 														</div>
 														<p>
 															Choosing when to use what cloud provider is a daunting task
-															as well well as shifting legacy applications present
-															challenges.
+															as well as shifting legacy applications present challenges.
 														</p>
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>

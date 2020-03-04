@@ -53,10 +53,10 @@ const DevopsTransformation = ({ location }) => {
 
 			<DevopsTWrapper>
 				<div className='container-fluid '>
-					<div className='px-5 pt-5 text-justify'>
+					<div className='px-0 px-md-5 pt-5 text-justify'>
 						<BreadCrumbs
 							title='Home'
-							subtitle='Migration & Modernization'
+							subtitle='Migration / Modernization'
 							pageTitle='Devops Transformation'
 						/>
 						<h1 className='text-center text-md-left mt-md-4'>Devops Transformation</h1>

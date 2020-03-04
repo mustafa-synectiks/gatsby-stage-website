@@ -320,7 +320,7 @@ export default Slider;
 
 const HomeWrapper = styled.section`
 .prvtpolicy{
-	height:40px;
+	height:125px;
 #hide{
 	position: absolute;
 	top:0;
@@ -514,6 +514,14 @@ p{
 
 
 	@media screen and  (min-width: 576px) {
+		.prvtpolicy{
+	height:40px;
+#hide{
+	position: absolute;
+	top:0;
+	right:0;
+}
+}
 
 h1{
 	font-size: 3.2rem;

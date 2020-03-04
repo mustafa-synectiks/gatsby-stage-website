@@ -16,10 +16,14 @@ const BreadCrumbs = ({ title, subtitle, pageTitle }) => {
 export default BreadCrumbs;
 
 const BreadCrumbsWrapper = styled.div`
+	a {
+		width: 18%;
+	}
 	a,
 	h6,
 	.rotateIcon {
 		font-size: 8px;
+		text-align: left;
 	}
 	.rotateIcon {
 		transform: rotate(0deg);
@@ -35,6 +39,9 @@ const BreadCrumbsWrapper = styled.div`
 		color: var(--synectiksOrange);
 	}
 	@media screen and (min-width: 576px) {
+		a {
+			width: auto;
+		}
 		.rotateIcon,
 		a,
 		h6 {
