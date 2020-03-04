@@ -25,7 +25,7 @@ const Realtime = () => {
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
 						</p>
-						<img src={rjc} alt='' />
+						<img src={rjc} alt='' className='w-100' />
 					</div>
 					<div className='realTime_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>

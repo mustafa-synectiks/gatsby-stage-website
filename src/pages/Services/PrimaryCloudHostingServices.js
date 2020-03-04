@@ -7,7 +7,8 @@ import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import cloudImage from '../../images/ManagedBackup/CloudBackup.png';
-import cloudImaged from '../../images/ManagedBackup/cloud.png';
+import self from '../../images/ManagedBackup/Self Service Portal.png';
+import cloudImaged from '../../images/ManagedBackup/Backup.jpg';
 import security from '../../images/ManagedBackup/Security.png';
 import geolocation from '../../images/ManagedBackup/MultipleSecureGeoLocations.png';
 import backupStorage from '../../images/ManagedBackup/BackupStorage.png';
@@ -114,7 +115,7 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
 												<img class='w-12 mr-3' src={SCR} alt='Security' />
 												<div>
-													<h5 className='h5'>Security</h5>
+													<h5>Security</h5>
 													<p className='mt-2'>
 														Never trade-off security when moving to cloud, Synectiks Secure
 														Cloud incorporates Multifactor authentication, SSL-VPN,
@@ -131,7 +132,7 @@ const PrimaryCloudHosting = () => {
 													alt='Availability & Reliable Performance'
 												/>
 												<div>
-													<h5 className='h5'>Availability & Reliable Performance</h5>
+													<h5>Availability & Reliable Performance</h5>
 													<p className='mt-2'>
 														Built with best of the bread technologies, our infrastructure
 														can support any workload with reliable and consistent
@@ -142,7 +143,7 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
 												<img class='w-12 mr-3' src={AP} alt='Affordable Pricing' />
 												<div>
-													<h5 className='h5'>Affordable Pricing</h5>
+													<h5>Affordable Pricing</h5>
 													<p className='mt-2'>
 														we believe we have competitive affordable pricing when compared
 														all major Vendors/public clouds currently available in the
@@ -157,7 +158,7 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
 												<img class='w-12 mr-3' src={MSGL} alt='Multi Secure Geo Locations' />
 												<div>
-													<h5 className='h5'>Multi Secure Geo Locations</h5>
+													<h5>Multi Secure Geo Locations</h5>
 													<p className='mt-2'>
 														Different Secure Geo locations for customers to choose.
 														Different power grid locations to make sure your infrastructure
@@ -168,7 +169,7 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex  flex-column flex-md-row align-items-center  align-items-md-start  mt-1 mt-md-5'>
 												<img class='w-12 mr-3' src={HW} alt='Host any workload' />
 												<div>
-													<h5 className='h5'>Host any workload</h5>
+													<h5>Host any workload</h5>
 													<p className='mt-2'>
 														Whether your mission-critical applications powered by Linux,
 														Windows Server, all Major Applications and Databases, Synectiks
@@ -182,14 +183,14 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-4'>
 												<img class='w-12 mr-3' src={ST} alt='Storage Types available:' />
 												<div>
-													<h5 className='h5'>Storage Types available</h5>
+													<h4>Storage Types available</h4>
 													<p className='mt-2'>S3, NAS, SAN, Cloud file & share.</p>
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-3' src={MS} alt='' />
 												<div>
-													<h5 className='h5'>Migration Services</h5>
+													<h4>Migration Services</h4>
 													<p className='mt-2'>
 														we have expert professional team to migrate your current on
 														premises workloads to cloud.
@@ -199,10 +200,20 @@ const PrimaryCloudHosting = () => {
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-3' src={SPT} alt='' />
 												<div>
-													<h5 className='h5'>Support</h5>
+													<h4>Support</h4>
 													<p className='mt-2'>
 														Follow the Sun model - 24/7/365 days support from both onshore
 														and offshore Teams.
+													</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+												<img class='w-12 mr-3' src={self} alt='' />
+												<div>
+													<h4>Self-service portal</h4>
+													<p className='mt-2'>
+														Manage and control all your company Hosted infrastructure with
+														easy self-service portal.
 													</p>
 												</div>
 											</div>
@@ -211,23 +222,33 @@ const PrimaryCloudHosting = () => {
 								</TabPane>
 								<TabPane tabId='2'>
 									<div>
-										<div className='row pt-4'>
-											<img src={cloudImaged} alt='' className='w-100 h-50 mx-auto' />
-											{/* <div className='bg-imageCloudManageBackup' /> */}
+										<div className='bg-lightgrey text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex text-justify'>
+											<div className='w-100  pl-3 pr-3 text-black'>
+												<h3 className='my-1 my-md-3'>
+													Secure, Reliable & Very Affordable Cloud Backup Solution
+												</h3>
+												<p className='lineHeight-24 text-justify mt-md-4 mt-1'>
+													At Synectiks, Data Protection is at the topmost priority and is
+													monitored with utmost vigilance. Synectiks Cloud Backup with front
+													line innovation reinforcement arrangements offers a simple, secure
+													and moderate cloud offsite backup needs. You can have your backup
+													offsite with sureness at Synectiks Cloud establishment at Preferred
+													Geo Locations. Synectiks backup solutions provide exceptional,
+													customizable backup and storage management solutions for any system
+													setup: physical servers, virtual machines, PCs, business-critical
+													applications, Databases and more.
+												</p>
+											</div>
+											<div className='w-100 ml-md-auto' data-aos='fade-up'>
+												<img
+													class='w-75 ml-md-auto box-shadow'
+													src={cloudImaged}
+													width='100%'
+													alt='Hosted Infrastructure'
+												/>
+											</div>
 										</div>
-										<h2 className='py-4'>
-											Secure, Reliable & Very Affordable Cloud Backup Solution:
-										</h2>
-										<p>
-											At Synectiks, Data Protection is at the topmost priority and is monitored
-											with utmost vigilance. Synectiks Cloud Backup with front line innovation
-											reinforcement arrangements offers a simple, secure and moderate cloud
-											offsite backup needs. You can have your backup offsite with sureness at
-											Synectiks Cloud establishment at Preferred Geo Locations. Synectiks backup
-											solutions provide exceptional, customizable backup and storage management
-											solutions for any system setup: physical servers, virtual machines, PCs,
-											business-critical applications, Databases and more.
-										</p>
+
 										<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
 										<div className='row'>
 											<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
@@ -362,6 +383,18 @@ const PrimaryCloudHosting = () => {
 												<div className='w-8vh ml-n5'>
 													<h4>Fast Recovery:</h4>
 													<p>Recover the Data faster, transfer rate up to 1GB/sec</p>
+												</div>
+											</div>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
+												<div className='w-2vh'>
+													<img src={self} alt='support' className='w-6' />
+												</div>
+												<div className='w-8vh ml-n5'>
+													<h4>Self-service portal:</h4>
+													<p>
+														Manage and control all your company Backups with easy
+														self-service portal
+													</p>
 												</div>
 											</div>
 										</div>
