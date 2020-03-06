@@ -697,8 +697,14 @@ const VisualFormWrapper = styled.div`
 		background-color: #d1d1d1;
 		border: 1px solid #d1d1d1;
 	}
+	form {
+		padding: 1rem;
+	}
 
 	@media (min-width: 576px) {
+		form {
+			padding: 0rem;
+		}
 		padding: 3rem 4rem;
 	}
 `;
