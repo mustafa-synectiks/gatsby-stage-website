@@ -47,7 +47,7 @@ const VisualForm = () => {
 				enableDisableButton();
 			}
 		}
-		function l() {
+		const l = () => {
 			let l = document.getElementById('last_name');
 			let fn = document.getElementsByClassName('error');
 			if (l.value.length === 0) {
@@ -63,7 +63,7 @@ const VisualForm = () => {
 				validationArr['l'] = true;
 				enableDisableButton();
 			}
-		}
+		};
 
 		function c() {
 			let c = document.getElementById('company');
