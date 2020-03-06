@@ -54,7 +54,7 @@ const PrimaryCloudHosting = () => {
 						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Private Cloud Hosting Services' />
 					</div>
 					<Row className='d-flex justify-content-start'>
-						<Navbar color='light' light expand='md' className='topNav ml-n2'>
+						<Navbar color='light' light expand='md' className='FixedHeader ml-n2'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
 								<Nav

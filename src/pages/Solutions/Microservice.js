@@ -46,7 +46,7 @@ const Microservice = () => {
 						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light='light' expand='lg' className='topNav'>
+								<Navbar color='light' light='light' expand='lg' className='FixedHeader'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>

@@ -886,7 +886,7 @@ p{
 			display: block;
 			width: 100%;
 			height: 450px;
-			margin-top: 10px;
+			margin-top: 0px;
 		}
 		ul {
 			list-style: none;

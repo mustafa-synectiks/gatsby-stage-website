@@ -64,7 +64,7 @@ const DevopsTransformation = ({ location }) => {
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
+								<Navbar color='light' light expand='lg' className='FixedHeader ml-n4'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 									<Collapse isOpen={!collapsed} navbar>
 										<Nav className='d-flex my-4  mx-auto w-85'>

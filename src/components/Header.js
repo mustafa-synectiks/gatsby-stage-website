@@ -12,7 +12,8 @@ import styled from 'styled-components';
 const Header = () => {
 	return (
 		<HeaderNav>
-			<div className='FixedHeader'>
+			<div className=''>
+				{/* <div className='FixedHeader'> */}
 				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
