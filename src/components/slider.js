@@ -294,7 +294,7 @@ const Slider = () => {
 					<div className='text-center text-light fixed-bottom bgBlue prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
-							cookies in our Privacy Policy.
+							cookies in our
 							<a className='navfont text-light' href='/privacypolicy/index.html'>
 								<small className='fsize08'>
 									&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;

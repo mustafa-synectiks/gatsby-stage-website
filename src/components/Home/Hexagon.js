@@ -554,14 +554,14 @@ const HexagonWrapper = styled.section`
 		.ct-cent {
 			transform: rotate(-30deg);
 			font-size: 24px;
-			margin: 2rem auto;
+			margin: 3rem auto;
 		}
 	}
 	@media screen and (min-width: 1024px) {
 		.ct-cent {
 			transform: rotate(-30deg);
-			font-size: 14px;
-			margin: 1rem auto;
+			font-size: 24px;
+			margin: 3rem auto;
 		}
 	}
 `;

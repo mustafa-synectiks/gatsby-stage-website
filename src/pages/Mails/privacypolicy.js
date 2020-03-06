@@ -16,7 +16,7 @@ export class Privacypolicy extends React.Component {
 					<p className='w-100 pt-3'>
 						<h2>SYNECTIKS - Privacy Policy</h2>
 					</p>
-					<p>Revision Date: November 22, 2018</p>
+					{/* <p>Revision Date: November 22, 2018</p> */}
 					<p>
 						This Privacy Policy describes how Synectiks Inc. and its affiliates ("Synectiks," "we," "our" or
 						"us") collect, use and share information in connection with your use of our websites (including

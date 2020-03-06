@@ -131,7 +131,7 @@ export class Careers extends React.Component {
 															Ansible, MongoDB, MySQL, OpenStack, vCenter, Docker,
 															OpenShift, AWS and PowerCLI. Relocation and travel to
 															unanticipated locations within USA possible.<br />
-															<b>Send resumes to</b> careers@synectiks.com<br />
+															<b>Send resumes to</b> info@synectiks.com<br />
 															<b>
 																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
 																215, Princeton, NJ 08540.
@@ -173,7 +173,7 @@ export class Careers extends React.Component {
 															experience in designing, developing and implementing
 															applications. Relocation and travel to unanticipated
 															locations within USA possible.<br />
-															<b>Send resumes to </b>careers@synectiks.com<br />
+															<b>Send resumes to </b>info@synectiks.com<br />
 															<b>
 																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
 																215, Princeton, NJ 08540.
@@ -216,7 +216,7 @@ export class Careers extends React.Component {
 															UNIX Shell Scripting, Ruby, OpenQRM and OpenStack.
 															Relocation and travel to unanticipated locations within USA
 															possible.<br />
-															<b>Send resumes to </b>careers@synectiks.com<br />
+															<b>Send resumes to </b>info@synectiks.com<br />
 															<b>
 																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
 																215, Princeton, NJ 08540.

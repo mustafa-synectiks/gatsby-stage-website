@@ -356,7 +356,7 @@ const Microservice = () => {
 											</div>
 
 											<div className='my-0 my-md-4'>
-												<img src={ms5} className='imgshadow microImage mb-1 mb-md-5' />
+												{/* <img src={ms5} className='imgshadow microImage mb-1 mb-md-5' /> */}
 												<div className='my-2 my-md-4'>
 													<div className='d-flex'>
 														<div className='d-flex flex-column justify-content-around bgOrange'>

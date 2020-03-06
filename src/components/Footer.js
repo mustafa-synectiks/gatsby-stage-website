@@ -27,7 +27,7 @@ export class Footer extends React.Component {
 				</div> */}
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
-					<div className='w-35vw mx-0 ml-md-4 px-2 px-md-0'>
+					<div className='w-35vw mx-0 mx-md-4 px-2 px-md-0'>
 						{/* <h3 className='text-light text-capitalize'>Synectiks</h3> */}
 						<a href='/'>
 							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
@@ -41,7 +41,7 @@ export class Footer extends React.Component {
 							that they outperform their peers by becoming truly disruptive.
 						</p>
 					</div>
-					<div className='w-30vw mx-0 ml-md-5 pl-md-2 pl-2'>
+					{/* <div className='w-30vw mx-0 ml-md-5 pl-md-2 pl-2'>
 						<div>
 							<h3 className='text-light text-capitalize'>Menu</h3>
 							<ul className='text-light text-capitalize p-0'>
@@ -77,7 +77,7 @@ export class Footer extends React.Component {
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div> */}
 					<div className='w-30vw mx-0 ml-md-4  px-2 px-md-0'>
 						<div>
 							<h3 className='text-light text-capitalize'>Terms</h3>
@@ -88,9 +88,7 @@ export class Footer extends React.Component {
 									</a>
 								</li>
 								<li>
-									<a href='/terms/index.html' className='text-light'>
-										Terms & Conditions
-									</a>{' '}
+									<a className='text-light'>Terms & Conditions</a>{' '}
 								</li>
 							</ul>
 						</div>

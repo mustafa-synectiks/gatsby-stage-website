@@ -43,7 +43,7 @@ const Tabs = () => {
 									<img className='card-img-top' src={tab2} alt='Foundation' />
 								</div>
 								<div className='card-body'>
-									<h2 className='text-center text-uppercase'>Open Platform</h2>
+									<h3 className='text-center text-uppercase'>Open Platform</h3>
 									<h6 className='pointerDown arrow-down'>&#187;</h6>
 								</div>
 							</div>
@@ -61,7 +61,7 @@ const Tabs = () => {
 									<img className='card-img-top' src={tab1} alt='Transformation' />
 								</div>
 								<div className='card-body'>
-									<h2 className='text-center text-uppercase'>Transformation</h2>
+									<h3 className='text-center text-uppercase'>Transformation</h3>
 								</div>
 								<h6 className='pointerDown arrow-down'>&#187;</h6>
 							</div>
@@ -79,7 +79,7 @@ const Tabs = () => {
 									<img className='card-img-top' src={tab3} alt='Operation' />
 								</div>
 								<div className='card-body'>
-									<h2 className='text-center text-uppercase'>Solutions</h2>
+									<h3 className='text-center text-uppercase'>Solutions</h3>
 								</div>
 								<h6 className='pointerDown arrow-down'>&#187;</h6>
 							</div>
@@ -125,9 +125,11 @@ const Tabs = () => {
 						<Row>
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right'>
-										<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
-										<p className='text-justify f-14 px-2 px-md-4 border-right'>
+									<div className='border-right text-left'>
+										<h3 className='text-center heading-h3'>
+											Infrastructure <br />Transformation
+										</h3>
+										<p className='text-left f-14 px-2 px-md-4'>
 											Make sure that every bit of your hardware environment is directly supporting
 											your business objectives. Transition from a hardware centric to a software
 											Defined organisation make huge difference in CapEx and Opex.
@@ -137,9 +139,11 @@ const Tabs = () => {
 							</Col>
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-3 h-100'>
-									<div className='border-right'>
-										<h3 className='text-center heading-h3'>Application Transformation</h3>
-										<p className='text-justify f-14 px-4'>
+									<div className='border-right text-left'>
+										<h3 className='text-center heading-h3'>
+											Application<br /> Transformation
+										</h3>
+										<p className=' f-14 px-4'>
 											Applications that power your enterprise are key to generating a strong
 											competitive advantage. Bring innovation, agility and outstanding customer
 											experience through moderm architectures and cloud first approach.
@@ -149,9 +153,11 @@ const Tabs = () => {
 							</Col>
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right'>
-										<h3 className='text-center heading-h3'>DevOps Transformation</h3>
-										<p className='text-justify f-14 px-1 px-md-4'>
+									<div className='border-right text-left'>
+										<h3 className='text-center heading-h3'>
+											DevOps <br />Transformation
+										</h3>
+										<p className='	 f-14 px-1 px-md-4'>
 											Adopting a DevOps culture starts by transforming your people, tech and
 											processes. Accelerate your DevOps adaption by using our open Automation
 											platform and skilled resources.
@@ -164,11 +170,11 @@ const Tabs = () => {
 
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className=''>
+									<div className='text-left'>
 										<h3 className='text-center heading-h3'>
 											Data <br />Transformation
 										</h3>
-										<p className='text-justify f-14 px-2 px-md-4'>
+										<p className=' f-14 px-2 px-md-4'>
 											Consolidate your unstructured, semi structure and strtucture data and get
 											maximum business insights & real time with minimal TCO of data management
 											and its governance.

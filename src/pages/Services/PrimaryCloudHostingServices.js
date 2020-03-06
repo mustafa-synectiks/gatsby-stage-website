@@ -57,8 +57,10 @@ const PrimaryCloudHosting = () => {
 						<Navbar color='light' light expand='md' className='topNav ml-n2'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
-								<Nav navbar className='bgWhite d-flex my-4 mx-auto ml-md-5 w-85'>
-									<NavItem className='one'>
+								<Nav
+									navbar
+									className='bgWhite d-flex justify-content-between my-4 mx-auto ml-md-5 w-85'>
+									<NavItem className='one mr-0 mr-md-5'>
 										<NavLink
 											id='bgL'
 											className={classnames({ active: activeTab === '1' })}
@@ -69,7 +71,7 @@ const PrimaryCloudHosting = () => {
 											CLOUD HOSTED INSFRASTRUCTURE
 										</NavLink>
 									</NavItem>
-									<NavItem className='one'>
+									<NavItem className='one ml-0 ml-md-5'>
 										<NavLink
 											id='bgLL'
 											className={classnames({ active: activeTab === '2' })}
@@ -155,6 +157,16 @@ const PrimaryCloudHosting = () => {
 													</p>
 												</div>
 											</div>
+											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
+												<div>
+													<h4>Self-service portal</h4>
+													<p className='mt-2'>
+														Manage and control all your company Hosted infrastructure with
+														easy self-service portal.
+													</p>
+												</div>
+											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
 												<img
 													class='w-12 mr-0 mr-md-5'
@@ -212,16 +224,6 @@ const PrimaryCloudHosting = () => {
 													<p className='mt-2'>
 														Follow the Sun model - 24/7/365 days support from both onshore
 														and offshore Teams.
-													</p>
-												</div>
-											</div>
-											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
-												<div>
-													<h4>Self-service portal</h4>
-													<p className='mt-2'>
-														Manage and control all your company Hosted infrastructure with
-														easy self-service portal.
 													</p>
 												</div>
 											</div>
@@ -303,6 +305,20 @@ const PrimaryCloudHosting = () => {
 													<p>
 														Cloud Backup storage as low as $0.015/GB per Month (only charged
 														for the storage consumed).
+													</p>
+												</div>
+											</div>
+										</div>
+										<div className='row'>
+											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
+												<div className='w-2vh'>
+													<img src={self} alt='support' className='w-6' />
+												</div>
+												<div className='w-8vh ml-n5'>
+													<h4>Self-service portal:</h4>
+													<p>
+														Manage and control all your company Backups with easy
+														self-service portal
 													</p>
 												</div>
 											</div>
@@ -391,18 +407,6 @@ const PrimaryCloudHosting = () => {
 												<div className='w-8vh ml-n5'>
 													<h4>Fast Recovery:</h4>
 													<p>Recover the Data faster, transfer rate up to 1GB/sec</p>
-												</div>
-											</div>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
-												<div className='w-2vh'>
-													<img src={self} alt='support' className='w-6' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Self-service portal:</h4>
-													<p>
-														Manage and control all your company Backups with easy
-														self-service portal
-													</p>
 												</div>
 											</div>
 										</div>

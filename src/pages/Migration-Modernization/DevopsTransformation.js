@@ -253,12 +253,12 @@ const DevopsTransformation = ({ location }) => {
 															Build <br />Deploy
 														</h5>
 													</div>
-													<div className='Dest ulht  d-flex align-items-center  border-ra my-3'>
+													<div className='Dest ulht38  d-flex align-items-center  border-ra my-3'>
 														<h5 className=' py-5 px-2 text-center  w-11'>
 															<br /> Test
 														</h5>
 													</div>
-													<div className='Doperate ulht d-flex align-items-center  border-ra mt-2'>
+													<div className='Doperate ulht38 d-flex align-items-center  border-ra mt-2'>
 														<h5 className=' py-5 px-2 text-center  w-11'>
 															<br /> Operate
 														</h5>
@@ -299,14 +299,14 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Durple d-flex align-items-center'>
-														<ul className='pt-3 DurpleLight ulfont ulht w-100'>
+														<ul className='pt-3 DurpleLight ulfont ulht38	 w-100'>
 															<li>Basic test automation</li>
 															<li>Continous tests integration</li>
 															<li>Risk based manual tests</li>
 														</ul>
 													</div>
 													<div className='Durple d-flex align-items-center'>
-														<ul className='pt-3 DurpleLight ulfont ulht w-100'>
+														<ul className='pt-3 DurpleLight ulfont ulht38 w-100'>
 															<li>ITSM tools & Operating SLA's</li>
 															<li>Performance monitoring</li>
 															<li>Log monitoring</li>
@@ -351,7 +351,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='pt-3 DredLight ulfont ulht w-100'>
+														<ul className='pt-3 DredLight ulfont ulht38 w-100'>
 															<li>
 																Automated unit / Integration / UI / Regression
 																/Performance / Code / Security / Code Quality / Coverage
@@ -362,7 +362,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='pt-3 DredLight ulfont ulht w-100'>
+														<ul className='pt-3 DredLight ulfont ulht38 w-100'>
 															<li>Diagnostics</li>
 															<li>Advanced monitoring through scripts</li>
 															<li>Log Analysis</li>
@@ -404,7 +404,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='pt-3 DellowLight ulfont ulht w-100'>
+														<ul className='pt-3 DellowLight ulfont ulht38 w-100'>
 															<li>well defined TDD and BDD framework</li>
 															<li>BDD tests written in DSL</li>
 															<li>Test rule based stage Automation</li>
@@ -413,7 +413,7 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='pt-3 DellowLight ulfont ulht w-100'>
+														<ul className='pt-3 DellowLight ulfont ulht38 w-100'>
 															<li>Automated hyberscale cluster & cloud provisioning</li>
 															<li>Elastic auto provisioning</li>
 															<li>Resilience scripts</li>
@@ -456,14 +456,14 @@ const DevopsTransformation = ({ location }) => {
 														</ul>
 													</div>
 													<div className='Dest'>
-														<ul className='pt-3 DreenLight ulfont ulht w-100'>
+														<ul className='pt-3 DreenLight ulfont ulht38 w-100'>
 															<li>Service wise test results consolidation</li>
 															<li>Tests Trend analytics</li>
 															<li>Continous tests in production</li>
 														</ul>
 													</div>
 													<div className='Doperate'>
-														<ul className='pt-3 DreenLight ulfont ulht w-100'>
+														<ul className='pt-3 DreenLight ulfont ulht38 w-100'>
 															<li>Hardware / Os / App server / license agnostics</li>
 															<li>Continous security / Audit / Billing</li>
 															<li>
@@ -994,7 +994,11 @@ padding:2rem 1rem;
 		font-size: 14px;
 	}
 	.ulht {
-		height: 45vh;
+		height: 43vh;
+		text-align: left;
+	}
+	.ulht38{
+		height: 36vh;
 		text-align: left;
 	}
 

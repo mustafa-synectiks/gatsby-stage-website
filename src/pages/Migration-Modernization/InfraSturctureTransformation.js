@@ -9,6 +9,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarT
 import classnames from 'classnames';
 import styled from 'styled-components';
 import mcit from '../../images/modernization/mcit.png';
+import ms4 from '../../images/Microservices/Microservice_7.png';
 import swd from '../../images/modernization/swd.png';
 import awsd from '../../images/modernization/awsd.png';
 import circle from '../../images/modernization/circle.png';
@@ -223,7 +224,7 @@ const Infrastructure = () => {
 														Synectiks Software Defined Reference Architecture
 													</h3>
 													<img
-														src={swd}
+														src={ms4}
 														alt=''
 														className='w-hndr mx-auto box-shadow my-2 my-md-4'
 													/>
