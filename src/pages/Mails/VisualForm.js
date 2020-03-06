@@ -247,7 +247,7 @@ const VisualForm = () => {
 								name='last_name'
 								size='20'
 								type='text'
-								onblur='l()'
+								onblur={l()}
 								required
 							/>
 							<div class='error' />

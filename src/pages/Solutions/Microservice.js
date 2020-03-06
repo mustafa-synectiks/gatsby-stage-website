@@ -46,7 +46,7 @@ const Microservice = () => {
 						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light='light' expand='lg' className='FixedHeader'>
+								<Navbar color='light' light='light' expand='lg' className='topNav'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -367,7 +367,7 @@ const Microservice = () => {
 															<h6>Output</h6>
 														</div> */}
 														</div>
-														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlue text-light p-md-3'>
+														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight text-light p-md-3'>
 															<div className='aggregate col'>
 																<div>
 																	<h4 className='btn bgOrange py-0'>Aggregate</h4>
@@ -443,7 +443,7 @@ const Microservice = () => {
 																<h6>Output</h6>
 															</div>
 														</div>
-														<div className='d-flex flex-column flex-md-row justify-content-md-around bgRed text-light px-md-3 py-md-1'>
+														<div className='d-flex flex-column flex-md-row justify-content-md-around bgRedLight text-light px-md-3 py-md-1'>
 															<div className='aggregate col'>
 																{/* <div>
 																<h4>Aggregate</h4>
@@ -714,9 +714,9 @@ padding: 5rem 1rem;
 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
 }
 .topNav{
-	position: fixed;
-	top: 100px;
-	z-index: 9999;
+	position: relative;
+    top: 0px;
+    z-index: 999;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

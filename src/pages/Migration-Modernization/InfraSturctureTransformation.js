@@ -49,7 +49,6 @@ const Infrastructure = () => {
 	return (
 		<Layout>
 			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
-
 			<HybridWrapper>
 				<div className='container-fluid p-1'>
 					<div className=''>
@@ -63,7 +62,7 @@ const Infrastructure = () => {
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='FixedHeader ml-n4'>
+								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -226,7 +225,7 @@ const Infrastructure = () => {
 													<img
 														src={ms4}
 														alt=''
-														className='w-hndr mx-auto box-shadow my-2 my-md-4'
+														className='w-50 mx-auto box-shadow my-2 my-md-4'
 													/>
 												</div>
 											</div>

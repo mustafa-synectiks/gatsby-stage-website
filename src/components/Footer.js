@@ -87,9 +87,9 @@ export class Footer extends React.Component {
 										Privacy Policy
 									</a>
 								</li>
-								<li>
+								{/* <li>
 									<a className='text-light'>Terms & Conditions</a>{' '}
-								</li>
+								</li> */}
 							</ul>
 						</div>
 						<div>

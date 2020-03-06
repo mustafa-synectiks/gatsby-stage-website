@@ -76,11 +76,12 @@ const Hybridcloud = () => {
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>
 						<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Hybrid Cloud' />
+						<h1>Hybrid Cloud</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='FixedHeader'>
+								<Navbar color='light' light expand='lg' className='topNav'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -158,29 +159,29 @@ const Hybridcloud = () => {
 													</p>
 													<p>
 														Once applications hit a certain usage/cost threshold, or have
-														strict requirements, such as security or data protec¬tion, that
+														strict requirements, such as security or data protection, that
 														cannot be met by the public cloud, organizations often consider
 														a private cloud. IT favors the private cloud for core enterprise
 														security; applications run on infrastructure that is solely
 														assigned to your company and that facilitates auditing and
 														compliance. The reality is that most organizations will need a
-														blend of these options for different purposes.{' '}
+														blend of these options for different purposes.
 													</p>
 													<p>
 														This is referred to as a hybrid cloud. It allows organizations
 														to use the public cloud where it makes sense, to create private
-														clouds to sup¬port certain application types, and to use
-														advanced techniques such as cloud hubbing—situating critical
-														hardware in network data centers in close proximity to telecom
-														providers, content distribution networks, and application
-														component providers—to place their applications optimally to
-														ensure rapid response time. Hybrid cloud automates and
-														modernizes the applications estate, places workloads in their
-														optimal location, embeds security, enables an IT brokerage model
-														and creates a simple, agile, on-demand environment. Hybrid Cloud
-														also lays the foundation for embracing new technologies such as
+														clouds to support certain application types, and to use advanced
+														techniques such as cloud hubbing situating critical hardware in
+														network data centers in close proximity to telecom providers,
+														content distribution networks, and application component
+														providers to place their applications optimally to ensure rapid
+														response time. Hybrid cloud automates and modernizes the
+														applications estate, places workloads in their optimal location,
+														embeds security, enables an IT brokerage model and creates a
+														simple, agile, on-demand environment. Hybrid Cloud also lays the
+														foundation for embracing new technologies such as
 														containerization , serverless, platform as a service (PaaS), IoT
-														and edge computing — all with an eye toward improving business
+														and edge computing all with an eye toward improving business
 														outcomes.
 													</p>
 												</div>
@@ -239,8 +240,8 @@ const Hybridcloud = () => {
 														Reduce dependency on proprietary services, application tools,
 														and cloud providers. To support global delivery, companies are
 														paying increasing attention to the network performance from
-														their end users back to the applications being con¬sumed.
-														Placing application servers close to the customer and directly
+														their end users back to the applications being consumed. Placing
+														application servers close to the customer and directly
 														connecting with relevant networks helps to ensure an optimal
 														end-user experience.
 													</p>
@@ -501,7 +502,7 @@ const Hybridcloud = () => {
 													videos) are required from outside sources. Using a hybrid cloud,
 													enterprises can set up multiple availability zones under their
 													control, connect with cloud service providers in regional markets,
-													and use edge computing techniques to forge a direct con¬nection to
+													and use edge computing techniques to forge a direct connection to
 													public cloud resources.
 												</p>
 											</div>
@@ -894,9 +895,9 @@ export default Hybridcloud;
 const HybridWrapper = styled.div`
 padding:5rem 1rem;
 .topNav{
-	position: fixed;
-	top: 100px;
-	z-index: 9999;
+	position: relative;
+    top: 0px;
+    z-index: 999;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);

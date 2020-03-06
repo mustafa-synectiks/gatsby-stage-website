@@ -67,7 +67,7 @@ const ApplicationTransformation = () => {
 						</div>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12 px-1'>
-								<Navbar color='light' light expand='lg' className='FixedHeader ml-n2'>
+								<Navbar color='light' light expand='lg' className='topNav ml-n2'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>

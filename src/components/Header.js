@@ -12,8 +12,8 @@ import styled from 'styled-components';
 const Header = () => {
 	return (
 		<HeaderNav>
-			<div className=''>
-				{/* <div className='FixedHeader'> */}
+			{/* <div className=''> */}
+			<div className='FixedHeader'>
 				<div className='bg-top pt-2 pl-md-0 py-md-1'>
 					<Topbar />
 				</div>
@@ -46,36 +46,36 @@ const Header = () => {
 									<NavDropdown.Item href='/applicationtransformation/index.html'>
 										Application Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/datatransformation/index.html'>
+									{/* <NavDropdown.Item href='/datatransformation/index.html'>
 										Data Transformation
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/xformation/index.html'>
 										Xformation Software
-									</NavDropdown.Item>
+									</NavDropdown.Item> */}
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
-									<NavDropdown.Item href='/cloudautomation/index.html'>
+									{/* <NavDropdown.Item href='/cloudautomation/index.html'>
 										Cloud Automation
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/monitoring/index.html'>Monitoring</NavDropdown.Item>
-									<NavDropdown.Item href='/analytics/index.html'>Analytics</NavDropdown.Item>
+									<NavDropdown.Item href='/analytics/index.html'>Analytics</NavDropdown.Item> */}
 									<NavDropdown.Item href='/hybridcloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Services' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/officemigration/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/managedservices/index.html'>
+									{/* <NavDropdown.Item href='/managedservices/index.html'>
 										Managed Services
-									</NavDropdown.Item>
+									</NavDropdown.Item> */}
 									<NavDropdown.Item href='/privatecloudhostingservices/index.html'>
 										Private Cloud Hosting
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Resources' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/featured/index.html'>Featured</NavDropdown.Item>
-									<NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item>
+									{/* <NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item> */}
 								</NavDropdown>
 								<NavDropdown title='Company' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/about/index.html'>About Us</NavDropdown.Item>
