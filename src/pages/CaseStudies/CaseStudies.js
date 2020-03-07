@@ -123,7 +123,6 @@ const CaseStudies = () => {
 											<p className='pr-5'>
 												Lightweight disaster recovery platform for indian Defense.
 												<br />
-												<br />
 											</p>
 											<a href='/disasterrecovery/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />

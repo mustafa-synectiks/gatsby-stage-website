@@ -8,10 +8,7 @@ module.exports = [
 	// 	path: '/audit/index.html',
 	// 	component: path.resolve(`src/pages/Formation/Audit.js`)
 	// },
-	{
-		path: '/aboutus/index.html',
-		component: path.resolve(`src/pages/WhatWeDo/WhySynectiks.js`)
-	},
+
 	{
 		path: '/devopstransformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
@@ -122,7 +119,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Resources/Featured.js`)
 	},
 	{
-		path: '/about/index.html',
+		path: '/aboutus/index.html',
 		component: path.resolve(`src/pages/Company/Aboutus.js`)
 	},
 	{

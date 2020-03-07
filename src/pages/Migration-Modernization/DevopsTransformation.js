@@ -68,8 +68,6 @@ const DevopsTransformation = ({ location }) => {
 									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 									<Collapse isOpen={!collapsed} navbar>
 										<Nav className='d-flex my-4  mx-auto w-85'>
-											{/* <Nav className='sidetabs'> */}
-											{/* <Nav vertical className='sidetabs'> */}
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
@@ -756,11 +754,11 @@ const DevopsTransformation = ({ location }) => {
 														<p>
 															You can access our open Xformation platform products and
 															resource teams to adopt technology and cultural changes
-															quickly — from Application modernization, people skill and
+															quickly from Application modernization, people skill and
 															process transformation and integration to cloud-native apps
 															development, containerization, platform services and
-															microservices — to enable your enterprise to thrive in
-															Hybrid IT environments.{' '}
+															microservices to enable your enterprise to thrive in Hybrid
+															IT environments.{' '}
 														</p>
 													</div>
 												</div>
@@ -769,9 +767,9 @@ const DevopsTransformation = ({ location }) => {
 									</TabPane>
 									<TabPane tabId='4'>
 										<div>
-											<h3>
+											{/* <h3>
 												<b>Synectiks</b> Differentiator
-											</h3>
+											</h3> */}
 											<p>
 												We go beyond creating a strategy: Synectiks helps you plan it, do it,
 												run it and manage it.
@@ -935,8 +933,8 @@ const DevopsTransformation = ({ location }) => {
 												</p>
 											</div>
 											<p>
-												Now is the time to act. Don’t be disrupted — be the disruptor. Let us
-												help you innovate and transform to differentiate with speed and quality.
+												Now is the time to act. Don’t be disrupted be the disruptor. Let us help
+												you innovate and transform to differentiate with speed and quality.
 												That’s Synectiks. That’s transformation Delivered in open product based
 												solutioning model.
 											</p>

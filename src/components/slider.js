@@ -259,7 +259,7 @@ const Slider = () => {
 												<h3 className='textColor'>Storage Tier</h3>
 												<p className='pr-5 textColor'>
 													Moving Bigdata workloads to aggregated platform for a large telco.
-												</p>{' '}
+												</p>
 												<a href='/storagetier/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
@@ -274,7 +274,7 @@ const Slider = () => {
 												<h3 className='textColor'>Disaster Recovery</h3>
 												<p className='pr-5 textColor'>
 													Lightweight disaster recovery platform for indian Defense.
-												</p>{' '}
+												</p>
 												<a href='/disasterrecovery/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>

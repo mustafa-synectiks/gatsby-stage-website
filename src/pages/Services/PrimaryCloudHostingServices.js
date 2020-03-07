@@ -247,7 +247,7 @@ const PrimaryCloudHosting = () => {
 													customizable backup and storage management solutions for any system
 													setup: physical servers, virtual machines, PCs, business-critical
 													applications, Databases and more.
-												</p>+
+												</p>
 											</div>
 											<div className='w-100 ml-md-auto' data-aos='fade-up'>
 												<img
