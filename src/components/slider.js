@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './layout.css';
-// import "bootstrap/dist/css/bootstrap.min.css"
-// import Carousel from 'react-bootstrap/Carousel';
-// import Button from "react-bootstrap/Button"
 import s1 from '../images/Slider_1.jpg';
 import s2 from '../images/Slider2.jpg';
 import s3 from '../images/Slider3.jpg';
@@ -296,9 +294,7 @@ const Slider = () => {
 							We use cookies to make sure you have better experience on our website. Read about how we use
 							cookies in our
 							<a className='navfont text-light' href='/privacypolicy/index.html'>
-								<small className='fsize08'>
-									&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
-								</small>
+								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</a>
 							{/* If you continue to use this site, you consent to our use of cookies and our
 							<a className='navfont text-light' href='/privacypolicy/index.html'>
@@ -312,6 +308,19 @@ const Slider = () => {
 					{/* private policy */}
 				</div>
 			</div>
+			<Helmet>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `
+					}}
+				/>
+			</Helmet>
 		</HomeWrapper>
 	);
 };
@@ -886,7 +895,7 @@ p{
 			display: block;
 			width: 100%;
 			height: 450px;
-			margin-top: 0px;
+			margin-top: 15px;
 		}
 		ul {
 			list-style: none;
