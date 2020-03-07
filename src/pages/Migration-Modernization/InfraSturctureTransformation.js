@@ -218,7 +218,7 @@ const Infrastructure = () => {
 														className='w-hndr mx-auto box-shadow my-2 my-md-4 '
 													/>
 												</div>
-												<div className='bgWhite py-2 py-md-4'>
+												<div className='py-2 py-md-4'>
 													<h3 className=' text-center'>
 														Synectiks Software Defined Reference Architecture
 													</h3>
@@ -399,11 +399,11 @@ const Infrastructure = () => {
 													overall IT strategies and create a clearly defined journey with
 													confidence. Synectiks recommend the following steps:
 												</p>
-												<img
+												{/* <img
 													src={circle}
 													alt=''
 													className='w-hndr box-shadow my-2 my-md-5 mx-auto'
-												/>
+												/> */}
 												<p>
 													<b className='h4'>Discovery & Assessment</b> - Evaluate the needs to
 													standardize, rationalize and consolidate existing data center assets
@@ -643,6 +643,19 @@ const Infrastructure = () => {
 					</div>
 				</div>
 			</HybridWrapper>
+			<Helmet>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `
+					}}
+				/>
+			</Helmet>
 		</Layout>
 	);
 };

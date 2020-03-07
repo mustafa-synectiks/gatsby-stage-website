@@ -417,7 +417,7 @@ const PrimaryCloudHosting = () => {
 						</div>
 					</Row>
 				</div>
-				{/* <Helmet>
+				<Helmet>
 					<script
 						dangerouslySetInnerHTML={{
 							__html: `
@@ -429,7 +429,7 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
         `
 						}}
 					/>
-				</Helmet> */}
+				</Helmet>
 			</PrimaryCloudHostingWrapper>
 		</Layout>
 	);
