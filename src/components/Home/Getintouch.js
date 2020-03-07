@@ -9,9 +9,7 @@ const GetInTouch = () => {
 					<div className='cstrip_text'>
 						<h3 className='text-white'>Want to know how to evaluate your business?</h3>
 					</div>
-					<a
-						href='https://synectiks.com/contactus/index.html'
-						className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
+					<a href='/Contact.html' className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
 						Get In Touch
 					</a>
 				</div>

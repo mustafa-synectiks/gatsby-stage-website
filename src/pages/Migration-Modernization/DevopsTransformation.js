@@ -99,7 +99,7 @@ const DevopsTransformation = ({ location }) => {
 														toggle('3');
 														toggleTab();
 													}}>
-													HOW SYNECTIKS CAN HELP
+													How can we help you?
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>

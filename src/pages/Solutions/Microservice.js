@@ -103,7 +103,7 @@ const Microservice = () => {
 														toggle('4');
 														toggleTab();
 													}}>
-													How we can help You?
+													How can we help you?
 												</NavLink>
 											</NavItem>
 										</Nav>
