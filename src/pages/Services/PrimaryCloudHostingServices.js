@@ -247,7 +247,7 @@ const PrimaryCloudHosting = () => {
 													customizable backup and storage management solutions for any system
 													setup: physical servers, virtual machines, PCs, business-critical
 													applications, Databases and more.
-												</p>
+												</p>+
 											</div>
 											<div className='w-100 ml-md-auto' data-aos='fade-up'>
 												<img
@@ -442,7 +442,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 	.topNav {
 		position: fixed;
 		top: 100px;
-		z-index: 999;
+		z-index: 1;
 	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
@@ -570,7 +570,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 		.topNav {
 			position: relative;
 			top: 0px;
-			z-index: 999;
+			z-index: 1;
 		}
 		.one {
 			z-index: 99999;

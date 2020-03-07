@@ -87,8 +87,8 @@ font-style: normal; */
 	--textColor: #292929;
 	--backgroundColor: #efefef;
 	--synectiksWhite: #ffffff;
-	--synectiksLightBlue: #007cc28f;
-	--synectiksLightRed: #ee284bab;
+	--synectiksLightBlue: #34b2fcde;
+	--synectiksLightRed: #f8506ff5;
 }
 body {
 	margin: 0;
@@ -488,16 +488,17 @@ a.dropdown-toggle.nav-link {
 	text-transform: uppercase;
 	font-weight: 600;
 }
+
 .FixedHeader {
 	/* position: sticky; */
 	position: fixed;
 	top: 0rem;
 	margin: 0 0;
-	z-index: 9;
+	z-index: 999999;
 	right: 0;
 	left: 0;
 	/* background: rgb(34, 166, 230); */
-	/* box-shadow: 0px 0px 5px lightgrey; */
+	box-shadow: 0px 0px 5px lightgrey;
 }
 .z {
 	z-index: 9999 !important;

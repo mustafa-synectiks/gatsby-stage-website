@@ -223,7 +223,7 @@ const Microservice = () => {
 											</p>
 											{/* <img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' /> */}
 											<div className='my-2 my-md-4 d-flex flex-column flex-md-row'>
-												<div className='bgBlue text-light col-md-6 pt-2'>
+												<div className='bgBlueLight text-light col-md-6 pt-2'>
 													<h4 className='btn bgOrange py-0'>Pain Points</h4>
 													<ul>
 														<li>Code complexity & Maintainability</li>
@@ -238,7 +238,7 @@ const Microservice = () => {
 														<li>Operations - infinite mails and tickets</li>
 													</ul>
 												</div>
-												<div className='bgRed text-light col-md-6 pt-2'>
+												<div className='bgRedLight text-light col-md-6 pt-2'>
 													<h4 className='btn bgOrange py-0'>Benefits / ROI</h4>
 													<ul>
 														<li>Composability / Reusability / Ease of maintenance</li>

@@ -9,7 +9,7 @@ module.exports = [
 	// 	component: path.resolve(`src/pages/Formation/Audit.js`)
 	// },
 	{
-		path: '/whysynectiks/index.html',
+		path: '/aboutus/index.html',
 		component: path.resolve(`src/pages/WhatWeDo/WhySynectiks.js`)
 	},
 	{
@@ -172,6 +172,10 @@ module.exports = [
 	{
 		path: '/blog/index.html',
 		component: path.resolve(`src/pages/Resources/Blog.js`)
+	},
+	{
+		path: '/blogone/index.html',
+		component: path.resolve(`src/pages/Resources/Blogone.js`)
 	},
 	{
 		path: '/infrastructure/index.html',

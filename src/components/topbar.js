@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Topbar = () => {
 	return (
 		<TopBarWrapper>
-			<a href='/contactus/index.html' className='mb-2 mb-md-0'>
+			<a href='/vContact.html' className='mb-2 mb-md-0'>
 				CONTACT
 			</a>
 			<h6 className='bl br'>

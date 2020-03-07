@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout.js';
 import team from '../../images/AboutUs.jpg';
 import styled from 'styled-components';
@@ -22,16 +23,16 @@ const WhySynectiks = ({ location }) => {
 	return (
 		<Layout>
 			<WhySynectiksWrapper>
-				<SEO title='Why Synectiks' />
+				<SEO title='About Us' />
 				<div className=''>
-					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Why Synectiks' />
+					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='About Us' />
 				</div>
 				<div className='pt-md-4'>
-					<h1>Why Synectiks </h1>
+					<h1>Mission Statement!</h1>
 					<p>
-						As an Open Product based Cloud Solution provider, we help enterprises take advantage of public &
-						private cloud and its infinite resources to migrate and modernize their business so that they
-						outperform their peers by becoming truly disruptive.
+						Since 2006 as an Open Product based Cloud Solution provider, we help enterprises take advantage
+						of public & private cloud and its infinite resources to migrate and modernize their business so
+						that they outperform their peers by becoming truly disruptive.
 					</p>
 				</div>
 				<div className='pt-md-4'>
@@ -197,8 +198,20 @@ const WhySynectiks = ({ location }) => {
 				<div>
 					<GetInTouch />
 				</div>
-				{/* </div> */}
 			</WhySynectiksWrapper>
+			<Helmet>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `
+					}}
+				/>
+			</Helmet>
 		</Layout>
 	);
 };

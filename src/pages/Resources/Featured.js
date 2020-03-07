@@ -76,19 +76,18 @@ export class Featured extends React.Component {
 							</div>
 							<div className=''>
 								<div className='d-flex flex-column flex-md-row justify-content-around pt-2 flex-fill  align-items-center flex-col'>
-									<div>
+									<div className='col-md-6'>
 										<div className='p-1 p-md-5'>
 											<img
 												src={FMP}
 												width='100%'
 												alt='Enterprise-Transformation'
-												className='imgBx w-img'
+												className='imgBx'
 											/>{' '}
 											<div className='text-group align-self-center'>
 												<h6 className='font-weight-bold pt-2'>
-													{' '}
 													Why to choose Synectiks as your preferred microservices delivery
-													partner.{' '}
+													partner.
 												</h6>
 
 												<a
@@ -100,8 +99,7 @@ export class Featured extends React.Component {
 											</div>
 										</div>
 									</div>
-
-									<div>
+									<div className='col-md-6'>
 										<div className='p-1 p-md-5'>
 											<img
 												src={FP}
@@ -143,7 +141,7 @@ const FeaturedWrapper = styled.div`
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
 		.w-img {
-			width: 32rem !important;
+			width: 100% !important;
 		}
 	}
 `;

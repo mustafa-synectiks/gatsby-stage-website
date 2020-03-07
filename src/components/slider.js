@@ -123,7 +123,7 @@ const Slider = () => {
 			<div className='container-fluid bgBlue px-2 px-md-5 '>
 				<div className='row'>
 					<div className='col heading1 mt-3 mt-md-0'>
-						<h1 className='textWhite px-1 px-md-3'>
+						<h1 className='textWhite text-left px-1 px-md-3'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h1>
 						<div className='circleFlex'>
@@ -291,7 +291,7 @@ const Slider = () => {
 				</div>
 				<div className=''>
 					{/* private policy */}
-					<div className='text-center text-light fixed-bottom bgBlue prvtpolicy'>
+					<div className='text-center text-light fixed-bottom DesignArc prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
 							cookies in our
@@ -307,7 +307,7 @@ const Slider = () => {
 								</small>
 							</a> */}
 						</p>
-						<button className='bgBlue text-light fa fa-times float-right' type='submit' id='hide' />
+						<button className='DesignArc text-light fa fa-times float-right' type='submit' id='hide' />
 					</div>
 					{/* private policy */}
 				</div>

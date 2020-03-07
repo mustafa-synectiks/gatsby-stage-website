@@ -240,7 +240,7 @@ const Infrastructure = () => {
 															<h6>Output</h6>
 														</div> */}
 													</div>
-													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlue text-light p-md-3'>
+													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight text-light p-md-3'>
 														<div className='aggregate col'>
 															<div>
 																<h4 className='btn bgOrange py-0'>Aggregate</h4>
@@ -316,7 +316,7 @@ const Infrastructure = () => {
 															<h6>Output</h6>
 														</div>
 													</div>
-													<div className='d-flex flex-column flex-md-row justify-content-md-around bgRed text-light px-md-3 py-md-1'>
+													<div className='d-flex flex-column flex-md-row justify-content-md-around bgRedLight text-light px-md-3 py-md-1'>
 														<div className='aggregate col'>
 															{/* <div>
 																<h4>Aggregate</h4>
