@@ -80,8 +80,14 @@ export class Footer extends React.Component {
 					</div> */}
 					<div className='w-30vw mx-0 ml-md-4  px-2 px-md-0'>
 						<div>
-							<h3 className='text-light text-capitalize'>Terms</h3>
-							<ul className='text-light text-capitalize p-0'>
+							<h3 className='text-light text-capitalize'>
+								<a
+									href='https://synectiks.com/privacypolicy/index.html'
+									className='text-light text-underline h2'>
+									<u>Privacy Policy</u>
+								</a>
+							</h3>
+							{/* <ul className='text-light text-capitalize p-0'>
 								<li>
 									<a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
 										Privacy Policy
@@ -90,7 +96,7 @@ export class Footer extends React.Component {
 								{/* <li>
 									<a className='text-light'>Terms & Conditions</a>{' '}
 								</li> */}
-							</ul>
+							{/* </ul> */}
 						</div>
 						<div>
 							<h3 className='text-light  text-capitalize'>Social</h3>

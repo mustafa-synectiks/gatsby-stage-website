@@ -1574,6 +1574,10 @@ textarea.has-error {
 .fright {
 	float: right;
 }
+.closeBtn{
+	background: transparent;
+	color: #be0a0a;
+}
 .input-feedback {
 	color: #be0a0a;
 }

@@ -197,7 +197,7 @@ const Slider = () => {
 
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Software Defined Transformation</h3>
-												<p className='pr-2 pr-md-5 textColor'>
+												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-3'>
 													AWS Cloud migration for a large motor industry.
 												</p>
 												<a href='/softwaredefined/index.html' className='noLine fw300'>
@@ -211,7 +211,7 @@ const Slider = () => {
 											<img src={RM} alt='NetworkDesign' />{' '}
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Realtime Monitoring</h3>
-												<p className='pr-2 pr-md-5 textColor'>
+												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-3'>
 													Highly Scalable extremely customizable realtime monitoring platform.
 												</p>
 												<a href='/realtime/index.html' className='noLine fw300'>
@@ -225,7 +225,7 @@ const Slider = () => {
 											<img src={SM} alt='Storage Migration' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Migration</h3>
-												<p className='pr-1 textColor'>
+												<p className='pr-1 textColor  mb-1 mb-md-3'>
 													Petabytes of storage migration for a large financial company with
 													zero down time.
 												</p>{' '}
@@ -240,7 +240,7 @@ const Slider = () => {
 											<img src={ND} alt='Enterprise-Transformation' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Network Design</h3>
-												<p className='pr-5 textColor'>
+												<p className='pr-5 textColor  mb-1 mb-md-3'>
 													Complete network Backbone design with highest security for retail.
 												</p>
 												<a href='/networkdesign/index.html' className='noLine fw300'>
@@ -255,7 +255,7 @@ const Slider = () => {
 
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Tier</h3>
-												<p className='pr-5 textColor'>
+												<p className='pr-5 textColor  mb-1 mb-md-3'>
 													Moving Bigdata workloads to aggregated platform for a large telco.
 												</p>
 												<a href='/storagetier/index.html' className='noLine fw300'>
@@ -270,7 +270,7 @@ const Slider = () => {
 											<img src={DR} alt='StorageTier' />
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Disaster Recovery</h3>
-												<p className='pr-5 textColor'>
+												<p className='pr-5 textColor mb-1 mb-md-3'>
 													Lightweight disaster recovery platform for indian Defense.
 												</p>
 												<a href='/disasterrecovery/index.html' className='noLine fw300'>
@@ -303,7 +303,7 @@ const Slider = () => {
 								</small>
 							</a> */}
 						</p>
-						<button className='Footerbg   fa fa-times float-right' type='submit' id='hide' />
+						<button className='closeBtn fa fa-times float-right mr-2 mr-md-3' type='submit' id='hide' />
 					</div>
 					{/* private policy */}
 				</div>
@@ -389,7 +389,7 @@ width: 100%;
 		font-size: 1rem;
 		/* min-height:75px;
 		max-height:75px; */
-		margin-bottom: 2rem;
+		margin-bottom: 0rem;
 	}
 }
 .h70vh{
