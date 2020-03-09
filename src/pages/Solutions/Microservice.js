@@ -16,7 +16,7 @@ import ms5 from '../../images/Microservices/Microservice_8.png';
 import ms6 from '../../images/Microservices/Microservice_9.png';
 import ms7 from '../../images/Microservices/Microservice_10.png';
 import ms8 from '../../images/Microservices/Microservice_11.png';
-import ms9 from '../../images/Microservices/Foundation-Subpage.png';
+import ms9 from '../../images/Microservices/infrastructure.svg';
 import styled from 'styled-components';
 import SEO from '.././../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
@@ -150,7 +150,7 @@ const Microservice = () => {
 													divides the functionality into cohesive verticals by implementing a
 													specific domain.
 												</p>
-												<img src={ms2} alt='' className='imgshadow microImage' />
+												<img src={ms2} alt='' className='imgshadow microser mx-auto' />
 											</div>
 										</div>
 									</TabPane>
@@ -530,7 +530,7 @@ const Microservice = () => {
 													contributes 90% towards your success. A typical culturally changed
 													organization will look like as below:
 												</p>
-												<img src={ms6} className='microImage imgshadow' />
+												<img src={ms6} className='microser imgshadow mx-auto' />
 											</div>
 										</div>
 									</TabPane>
@@ -644,7 +644,7 @@ const Microservice = () => {
 													<img
 														src={ms9}
 														alt=''
-														className='my-0 my-md-5 microImage imgshadow'
+														className='my-0 my-md-5 microser imgshadow mx-auto'
 													/>
 												</div>
 												<div>
@@ -686,7 +686,7 @@ const Microservice = () => {
 														<img
 															src={ms8}
 															alt=''
-															className='my-0 mt-md-4 microImage imgshadow'
+															className='my-0 mt-md-4 microser70 imgshadow mx-auto'
 														/>
 													</div>
 												</div>
@@ -720,6 +720,9 @@ export default Microservice;
 
 const MicroserviceWrapper = styled.div`
 padding: 5rem 1rem;
+.microser,.microser70{
+	width: 100%;
+}
 .microImage,.microIm{
 	width: 100%;
 }
@@ -858,6 +861,12 @@ ul.tabList.nav.flex-column {
 }
 
 @media (min-width: 576px){
+	.microser{
+		width:75%;
+	}
+	.microser70{
+		width:70%;
+	}
 	.rotate{
 	width: auto;
     -webkit-transform: rotate(-90deg);

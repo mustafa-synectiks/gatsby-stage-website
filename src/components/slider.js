@@ -127,17 +127,17 @@ const Slider = () => {
 						<div className='circleFlex'>
 							<ScrollAnimation animateIn='fadeInUp'>
 								<div className='circle'>
-									<img src={circle1} alt='' />
+									<img src={circle1} alt='open platform' />
 								</div>
 							</ScrollAnimation>
 							<ScrollAnimation animateIn='fadeInUp'>
 								<div className='circle'>
-									<img src={circle2} alt='' />
+									<img src={circle2} alt='transformation' />
 								</div>
 							</ScrollAnimation>
 							<ScrollAnimation animateIn='fadeInUp'>
 								<div className='circle'>
-									<img src={circle3} alt='' />
+									<img src={circle3} alt='solutions' />
 								</div>
 							</ScrollAnimation>
 						</div>
@@ -197,9 +197,9 @@ const Slider = () => {
 
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Software Defined Transformation</h3>
-												<p className='pr-5 textColor'>
+												<p className='pr-2 pr-md-5 textColor'>
 													AWS Cloud migration for a large motor industry.
-												</p>{' '}
+												</p>
 												<a href='/softwaredefined/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
@@ -213,7 +213,7 @@ const Slider = () => {
 												<h3 className='textColor'>Realtime Monitoring</h3>
 												<p className='pr-2 pr-md-5 textColor'>
 													Highly Scalable extremely customizable realtime monitoring platform.
-												</p>{' '}
+												</p>
 												<a href='/realtime/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
@@ -389,7 +389,7 @@ width: 100%;
 		font-size: 1rem;
 		min-height:75px;
 		max-height:75px;
-		margin-bottom: 0rem;
+		margin-bottom: 2rem;
 	}
 }
 .h70vh{

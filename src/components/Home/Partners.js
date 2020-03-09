@@ -9,23 +9,23 @@ const Partners = () => {
 		<div className='customer-logos'>
 			<div>
 				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={aws} className='w-100' />
+					<img src={aws} alt='aws' className='w-100' />
 				</div>
 			</div>
 			<div>
 				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={gle} className='w-100' />
+					<img src={gle} alt='google cloud' className='w-100' />
 				</div>
 			</div>
 			<div>
 				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={msa} className='w-100' />
+					<img src={msa} atl='microsoft azure' className='w-100' />
 				</div>
 			</div>
 			<div>
 				{' '}
 				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={acro} className='w-100' />
+					<img src={acro} alt='acronis' className='w-100' />
 				</div>
 			</div>
 		</div>

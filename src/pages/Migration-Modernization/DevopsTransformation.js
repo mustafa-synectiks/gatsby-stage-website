@@ -685,7 +685,7 @@ const DevopsTransformation = ({ location }) => {
 											<div className='my-1 my-md-3'>
 												<div className='my-1 my-md-3 d-flex flex-column flex-md-row align-items-center'>
 													<div className='w125px text-center mr-1 mr-md-5'>
-														<img src={speed} alt='' className='w125px' />
+														<img src={speed} alt='speed' className='w125px' />
 													</div>
 													<div className=''>
 														<h4 className='my-1 my-md-3'>Speed</h4>
@@ -697,8 +697,8 @@ const DevopsTransformation = ({ location }) => {
 													</div>
 												</div>
 												<div className=' my-3 d-flex flex-column flex-md-row align-items-center'>
-													<div className=' w125px text-center mr-1 mr-md-5'>
-														<img src={scale} alt='' className='w125px' />
+													<div className='w125px text-center mr-1 mr-md-5'>
+														<img src={scale} alt='scale' className='w125px' />
 													</div>
 													<div>
 														<h5 className='my-1 my-md-3'>Scale</h5>
@@ -713,7 +713,7 @@ const DevopsTransformation = ({ location }) => {
 												</div>
 												<div className='my-3 d-flex flex-column flex-md-row align-items-center'>
 													<div className='w125px text-center mr-1 mr-md-5'>
-														<img src={security} alt='' className=' w125px' />
+														<img src={security} alt='security' className=' w125px' />
 													</div>
 													<div className=''>
 														<h5 className='my-1 my-md-3'>Security</h5>
@@ -734,7 +734,11 @@ const DevopsTransformation = ({ location }) => {
 													of your starting point.
 												</h4>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img src={four} className='w15 mr-4' />
+													<img
+														src={four}
+														alt='Discover and Assessment'
+														className='w15 mr-4'
+													/>
 													<div>
 														<h5>Discover & Assessment</h5>
 														<p>
@@ -748,7 +752,7 @@ const DevopsTransformation = ({ location }) => {
 													</div>
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img src={five} className='w9 mr-5' />
+													<img src={five} alt='Transformation Services' className='w9 mr-5' />
 													<div>
 														<h5>Transformation Services</h5>
 														<p>
@@ -784,7 +788,7 @@ const DevopsTransformation = ({ location }) => {
 											<div className='row'>
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<div className='d-flex align-items-center flex-column'>
-														<img src={Expertise} alt='' className='tw m-0 h-75' />
+														<img src={Expertise} alt='Expertise' className='tw m-0 h-75' />
 														<h5 className='mb-4'>Expertise</h5>
 													</div>
 													<p>
@@ -794,11 +798,10 @@ const DevopsTransformation = ({ location }) => {
 												</div>
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<div className='d-flex align-items-center flex-column'>
-														<img src={Experience} alt='' className='tw m-0' />
+														<img src={Experience} alt='Experience' className='tw m-0' />
 														<h5 className='mt-3'>Experience</h5>
 													</div>
 													<p>
-														{' '}
 														We have done large Transformation projects with Toyota, Reliance
 														and cultural challenges effectively and brought the changes,
 														resulting significant improvement and savings.
@@ -807,11 +810,10 @@ const DevopsTransformation = ({ location }) => {
 
 												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 													<div className='d-flex align-items-center flex-column'>
-														<img src={Contribution} alt='' className='tw m-0' />
+														<img src={Contribution} alt='Contribution' className='tw m-0' />
 														<h5 className='mt-3'>Contribution</h5>
 													</div>
 													<p>
-														{' '}
 														We are continuously contributing open XFormation platform that
 														is accelerating the transformation @50% Time & Cost.
 													</p>
@@ -822,14 +824,18 @@ const DevopsTransformation = ({ location }) => {
 										<div className='row'>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
-													<img src={Engagement} alt='' className='tw m-0' />
+													<img src={Engagement} alt='Engagement Model' className='tw m-0' />
 													<h5 className='mt-3'>Engagement Model</h5>
 												</div>
 												<p>Our every engagement focused on empowerment – not dependency.</p>
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
-													<img src={pcpartner} alt='' className='tw m-0' />
+													<img
+														src={pcpartner}
+														alt='Public Cloud Partnership'
+														className='tw m-0'
+													/>
 													<h5 className=''>Public Cloud Partnership</h5>
 												</div>
 												<p>
@@ -839,7 +845,11 @@ const DevopsTransformation = ({ location }) => {
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
-													<img src={ltretention} alt='' className='tw m-0' />
+													<img
+														src={ltretention}
+														alt='Long Term Retention'
+														className='tw m-0'
+													/>
 													<h5 className='mt-2'>Long Term Retention</h5>
 												</div>
 												<p>100% Customer Retention Rate.</p>
@@ -848,7 +858,7 @@ const DevopsTransformation = ({ location }) => {
 										<div className='row mt-5'>
 											<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 												<div className='d-flex align-items-center flex-column'>
-													<img src={E2E} alt='' className='tw m-0' />
+													<img src={E2E} alt='E2E Solution' className='tw m-0' />
 													<h5 className='mt-3'>E2E Solution</h5>
 												</div>
 												<p>
@@ -858,7 +868,7 @@ const DevopsTransformation = ({ location }) => {
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
-													<img src={Extreme} alt='' className='tw m-0' />
+													<img src={Extreme} alt='Extreme Automation' className='tw m-0' />
 													<h5 className=''>Extreme Automation</h5>
 												</div>
 												<p>

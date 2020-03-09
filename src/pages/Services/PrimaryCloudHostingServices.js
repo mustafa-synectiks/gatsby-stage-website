@@ -60,7 +60,7 @@ const PrimaryCloudHosting = () => {
 								<Nav
 									navbar
 									className='bgWhite d-flex justify-content-between my-4 mx-auto ml-md-5 w-85'>
-									<NavItem className='one mr-0 mr-md-5'>
+									<NavItem className='one'>
 										<NavLink
 											id='bgL'
 											className={classnames({ active: activeTab === '1' })}
@@ -71,7 +71,7 @@ const PrimaryCloudHosting = () => {
 											CLOUD HOSTED INSFRASTRUCTURE
 										</NavLink>
 									</NavItem>
-									<NavItem className='one ml-0 ml-md-5'>
+									<NavItem className='one'>
 										<NavLink
 											id='bgLL'
 											className={classnames({ active: activeTab === '2' })}
@@ -665,7 +665,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 		a#bgL,
 		a#bgLL,
 		a#bgLLL {
-			padding: 0.5rem 0.5rem !important;
+			padding: 0.5rem 2.5rem !important;
 			text-align: left;
 			font-size: 14px;
 		}

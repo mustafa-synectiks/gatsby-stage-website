@@ -33,9 +33,9 @@ import pay from '../../images/modernization/Pay As You Use.png';
 import sd from '../../images/modernization/Software Defined.png';
 import spa from '../../images/modernization/Strategic Planning & Architecture.png';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
-
+import ms9 from '../../images/Microservices/infrastructure.svg';
 import SEO from '../../components/seo.js';
-
+import EXP from '../../images/Hybrid/Expertise.png';
 const ApplicationTransformation = () => {
 	const [ activeTab, setActiveTab ] = useState('1');
 	const [ collapsed, setCollapsed ] = useState(true);
@@ -303,7 +303,7 @@ const ApplicationTransformation = () => {
 													governance.
 												</p>
 
-												<img src={fsub} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={ms9} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Delivery Pipeline</h3>
@@ -380,7 +380,7 @@ const ApplicationTransformation = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EX} alt='' className='tw m-0' />
+															<img src={EX} alt='Experience' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Experience</h4>
 														</div>
 														<p className='text-center'>
@@ -389,7 +389,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={artifact} alt='' className='tw m-0' />
+															<img src={artifact} alt='Artifacts' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Artifacts</h4>
 														</div>
 														<p className='text-center'>
@@ -399,7 +399,7 @@ const ApplicationTransformation = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={advisory} alt='' className='tw m-0' />
+															<img src={advisory} alt='Advisory' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Advisory</h4>
 														</div>
 														<p className='text-center'>
@@ -411,7 +411,7 @@ const ApplicationTransformation = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={EXP} alt='E2E Expertise' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>E2E Expertise</h4>
 														</div>
 														<p>
@@ -444,7 +444,7 @@ const ApplicationTransformation = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='' className='tw m-0' />
+															<img src={ds} alt='E2E Expertise' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Continuous Delivery</h4>
 														</div>
 														<p className='text-center'>

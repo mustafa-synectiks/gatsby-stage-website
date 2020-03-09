@@ -486,7 +486,11 @@ const Infrastructure = () => {
 											<div className='my-2 my-md-4'>
 												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center my-2 my-md-4'>
 													<div className='col-md-2'>
-														<img src={ds} alt='' className='imgDes disima' />
+														<img
+															src={ds}
+															alt='Discovery and Assessment'
+															className='imgDes disima'
+														/>
 													</div>
 													<div className='pl-3'>
 														<p>
@@ -503,7 +507,11 @@ const Infrastructure = () => {
 												</div>
 												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center '>
 													<div className='col-md-2'>
-														<img src={ts} alt='' className='imgDesc disimal' />
+														<img
+															src={ts}
+															alt='Transformation Services'
+															className='imgDesc disimal'
+														/>
 													</div>
 													<div className='pl-3'>
 														<p>
@@ -539,17 +547,16 @@ const Infrastructure = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EX} alt='' className='tw m-0' />
+															<img src={EX} alt='Experience' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Experience</h4>
 														</div>
 														<p className='text-center'>
-															{' '}
 															Large Scale modernization and consolidation experience
 														</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={artifact} alt='' className='tw m-0' />
+															<img src={artifact} alt='Artifacts' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Artifacts</h4>
 														</div>
 														<p className='text-center'>
@@ -559,7 +566,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={advisory} alt='' className='tw m-0' />
+															<img src={advisory} alt='Advisory' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Advisory</h4>
 														</div>
 														<p className='text-center'>
@@ -571,7 +578,7 @@ const Infrastructure = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={pay} alt='' className='tw m-0' />
+															<img src={pay} alt='Pay As You Use' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Pay As You Use</h4>
 														</div>
 														<p className='text-center'>
@@ -581,7 +588,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={economics} alt='' className='tw m-0' />
+															<img src={economics} alt='Economics' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Economics</h4>
 														</div>
 														<p className='text-center'>
@@ -592,7 +599,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={operate} alt='' className='tw m-0' />
+															<img src={operate} alt='Operation' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Operation</h4>
 														</div>
 														<p className='text-center'>
@@ -605,7 +612,7 @@ const Infrastructure = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={innovation} alt='' className='tw m-0' />
+															<img src={innovation} alt='Innovation' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Innovation</h4>
 														</div>
 														<p className='text-center'>
@@ -614,7 +621,11 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={CS} alt='' className='tw m-0' />
+															<img
+																src={CS}
+																alt='Security and Compliance'
+																className='tw m-0'
+															/>
 															<h4 className='my-2 my-md-3'> Security & Compliance</h4>
 														</div>
 														<p className='text-center'>
@@ -625,7 +636,7 @@ const Infrastructure = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EM} alt='' className='tw m-0' />
+															<img src={EM} alt='Engagement' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Engagement</h4>
 														</div>
 														<p className='text-center'>

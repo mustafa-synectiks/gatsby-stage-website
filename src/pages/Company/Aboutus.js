@@ -31,9 +31,9 @@ const AboutUs = ({ location }) => {
 				<div className='pt-md-4'>
 					<h1>Mission Statement!</h1>
 					<p>
-						Since 2006 as an Open Product based Cloud Solution provider, we help enterprises take advantage
-						of public & private cloud and its infinite resources to migrate and modernize their business so
-						that they outperform their peers by becoming truly disruptive.
+						Since <span className='fweit'>2006</span> as an Open Product based Cloud Solution provider, we
+						help enterprises take advantage of public & private cloud and its infinite resources to migrate
+						and modernize their business so that they outperform their peers by becoming truly disruptive.
 					</p>
 				</div>
 				<div className='pt-md-4'>
@@ -220,6 +220,9 @@ export default AboutUs;
 
 const AboutWrapper = styled.div`
 	 {
+		.fweit {
+			font-weight: 600;
+		}
 		padding: 2rem 1rem;
 		.hybmt {
 			h3 {

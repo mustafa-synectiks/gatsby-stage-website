@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
-		title: `Synectiks | Enterprise Devops`,
-		description: ` Synectiks | Enterprise Devops`,
+		title: `Synectiks | Cloud Solutions`,
+		description: ` Synectiks | Cloud Solutions`,
 		author: `Synectiks`,
 		siteUrl: `http://localhost:8000`
 	},
@@ -49,7 +49,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-s3`,
 			options: {
-				bucketName: 'websemitest'
+				bucketName: 'synectiks-latest-website',
+				protocol: 'https',
+				hostname: 'synectiks.com'
 			}
 		},
 		{
