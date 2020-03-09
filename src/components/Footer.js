@@ -41,45 +41,8 @@ export class Footer extends React.Component {
 							that they outperform their peers by becoming truly disruptive.
 						</p>
 					</div>
-					{/* <div className='w-30vw mx-0 ml-md-5 pl-md-2 pl-2'>
-						<div>
-							<h3 className='text-light text-capitalize'>Menu</h3>
-							<ul className='text-light text-capitalize p-0'>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										What We Do
-									</a>
-								</li>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Migration/Modernization
-									</a>
-								</li>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Solutions
-									</a>
-								</li>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Services
-									</a>
-								</li>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Resources
-									</a>
-								</li>
-								<li>
-									<a href='/CloudManagedBackup/index.html' className='text-light'>
-										Company
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div> */}
-					<div className='w-30vw mx-0 ml-md-4  px-2 px-md-0'>
-						<div>
+					<div className='w-35vw mx-0 ml-md-5 pl-1 pl-md-5'>
+						<div className='ml-0 ml-md-5'>
 							<h3 className='text-light text-capitalize'>
 								<a
 									href='https://synectiks.com/privacypolicy/index.html'
@@ -87,18 +50,6 @@ export class Footer extends React.Component {
 									<u>Privacy Policy</u>
 								</a>
 							</h3>
-							{/* <ul className='text-light text-capitalize p-0'>
-								<li>
-									<a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
-										Privacy Policy
-									</a>
-								</li>
-								{/* <li>
-									<a className='text-light'>Terms & Conditions</a>{' '}
-								</li> */}
-							{/* </ul> */}
-						</div>
-						<div>
 							<h3 className='text-light  text-capitalize'>Social</h3>
 							<div className='d-flex flex-column'>
 								{Social.map((item, index) => {
@@ -117,7 +68,7 @@ export class Footer extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className='w-35vw mx-0 ml-md-n3  px-2 px-md-0'>
+					<div className='w-30vw mx-0 ml-md-3  px-2 px-md-0'>
 						<h3 className='text-light text-capitalize'>Address</h3>
 						{/* <a href='/'>
 							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
