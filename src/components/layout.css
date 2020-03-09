@@ -265,6 +265,10 @@ body {
 .textColor {
 	color: #292929;
 }
+.Footerbg {
+	background: #cbcbcb;
+	color: #252525;
+}
 
 /* Devops Maturity Image Starts */
 .Dred {

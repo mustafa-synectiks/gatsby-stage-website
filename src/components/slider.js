@@ -225,7 +225,7 @@ const Slider = () => {
 											<img src={SM} alt='Storage Migration' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Migration</h3>
-												<p className='pr-5 textColor'>
+												<p className='pr-1 textColor'>
 													Petabytes of storage migration for a large financial company with
 													zero down time.
 												</p>{' '}
@@ -289,11 +289,11 @@ const Slider = () => {
 				</div>
 				<div className=''>
 					{/* private policy */}
-					<div className='text-center text-light fixed-bottom DesignArc prvtpolicy'>
+					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
 							cookies in our
-							<a className='navfont text-light' href='/privacypolicy/index.html'>
+							<a className='navfont Footerbg' href='/privacypolicy/index.html'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</a>
 							{/* If you continue to use this site, you consent to our use of cookies and our
@@ -303,7 +303,7 @@ const Slider = () => {
 								</small>
 							</a> */}
 						</p>
-						<button className='DesignArc text-light fa fa-times float-right' type='submit' id='hide' />
+						<button className='Footerbg   fa fa-times float-right' type='submit' id='hide' />
 					</div>
 					{/* private policy */}
 				</div>
@@ -387,8 +387,8 @@ width: 100%;
 	p{
 		text-align: left;
 		font-size: 1rem;
-		min-height:75px;
-		max-height:75px;
+		/* min-height:75px;
+		max-height:75px; */
 		margin-bottom: 2rem;
 	}
 }
@@ -551,8 +551,8 @@ h1{
 	}
 	p{
 		font-size: 1.125rem;
-		min-height:75px;
-		max-height:75px;
+		/* min-height:75px;
+		max-height:75px; */
 		margin-bottom: 0rem;
 	}
 }
@@ -667,7 +667,7 @@ p{
 		}
 		background: var(--bgMain);
 		.w-450 {
-			width: 400px;
+			width: 460px;
 		}
 
 		p {
@@ -894,7 +894,7 @@ p{
 		#owl-demo .item img {
 			display: block;
 			width: 100%;
-			height: 450px;
+			height: 460px;
 			margin-top: 15px;
 		}
 		ul {

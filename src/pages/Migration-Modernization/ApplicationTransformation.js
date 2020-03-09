@@ -12,7 +12,7 @@ import mcit from '../../images/modernization/mcit.png';
 import swd from '../../images/modernization/swd.png';
 import awsd from '../../images/modernization/awsd.png';
 import circle from '../../images/modernization/circle.png';
-import ds from '../../images/Hybrid/Discovery&Assessment.png';
+import ds from '../../images/ApplicationTransformation/Continuous Delivery.png';
 import ts from '../../images/Hybrid/Transformation Services.png';
 import EX from '../../images/Hybrid/Experience.png';
 import EM from '../../images/Hybrid/Engagement Model.png';
@@ -207,6 +207,24 @@ const ApplicationTransformation = () => {
 													alt=''
 													className='w-hndr mx-auto my-2 my-md-5 box-shadow'
 												/> */}
+												{/*
+												<div className='circleBox'>
+													<div className='boxLeft'>
+														<h3>Dicovery</h3>
+													</div>
+													<div className='boxLeft'>
+														<h3>Iteration</h3>
+													</div>
+													<div className='boxCenter'>
+														<h1>two box</h1>
+													</div>
+													<div className='boxRight'>
+														<h3>Assessment</h3>
+													</div>
+													<div className='boxRight'>
+														<h3>Visualization</h3>
+													</div>
+												</div> */}
 												<p>
 													<b className='h4'>Discovery & Assessment</b> – Evaluate the needs to
 													modernize, standardize, rationalize and consolidate existing
