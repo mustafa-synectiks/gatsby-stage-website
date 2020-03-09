@@ -331,12 +331,12 @@ const Layout = ({ children }) => {
 			}
 
 			// 	// uncomment this to make pause on mouseover
-			$elem.on('mouseover', function() {
-				isPause = true;
-			});
-			$elem.on('mouseout', function() {
-				isPause = false;
-			});
+			// $elem.on('mouseover', function() {
+			// 	isPause = true;
+			// });
+			// $elem.on('mouseout', function() {
+			// 	isPause = false;
+			// });
 		});
 		// OWL V1.3
 	});
