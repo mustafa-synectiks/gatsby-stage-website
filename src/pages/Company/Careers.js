@@ -49,9 +49,9 @@ export class Careers extends React.Component {
 								<h1>Careers</h1>
 							</div>
 
-							<div className='w-100  text-black text-justify'>
-								<p className='lineHeight-24 pb-3'>
-									<h2>Changing the game takes talent - Yours!</h2>
+							<div className='w-100  text-black ptext'>
+								<h2>Changing the game takes talent - Yours!</h2>
+								<p className='lineHeight-24 pb-3 ptext'>
 									Work where you’re encouraged to explore your passions, where your skills are
 									nurtured and respected. Introduce with leading-edge technologies on absolutely the
 									coolest undertakings you'll be able to envision. What's more, get the tools you have
@@ -111,7 +111,7 @@ export class Careers extends React.Component {
 											<Collapse isOpen={this.state.collapse} className='pb-3'>
 												<Card>
 													<CardBody>
-														<p>
+														<p className='ptext'>
 															<b>
 																Sr. Systems Administrator<br />
 																Bachelor’s with 5 yrs exp.<br />
@@ -154,7 +154,7 @@ export class Careers extends React.Component {
 											<Collapse isOpen={this.state.collapse2} className='pb-3'>
 												<Card>
 													<CardBody>
-														<p>
+														<p className='ptext'>
 															<b>
 																Lead Software Architect<br />
 																Master’s with 3 yrs experience.<br />
@@ -196,7 +196,7 @@ export class Careers extends React.Component {
 											<Collapse isOpen={this.state.collapse3} className='pb-3'>
 												<Card>
 													<CardBody>
-														<p>
+														<p className='ptext'>
 															<b>
 																Infrastructure Engineer<br />
 																Master’s with 3 yrs exp or Bachelor’s with 5 yrs exp.<br
@@ -229,8 +229,8 @@ export class Careers extends React.Component {
 									</div>
 								</div>
 								{/*  */}
-								<p className='lineHeight-24 pb-3'>
-									<h3>Life at SYNECTIKS!</h3>
+								<h3>Life at SYNECTIKS!</h3>
+								<p className='lineHeight-24 pb-3 ptext'>
 									<i>Be Happy, Healthy and Inspired!</i>
 									<br />
 									To start with, We provide a competitive salary and employer-paid health benefits. We
@@ -240,8 +240,8 @@ export class Careers extends React.Component {
 									refresh and thrive.
 									<br />{' '}
 								</p>
-								<p className='lineHeight-24 '>
-									<h3>SYNECTIKS for All!</h3>
+								<h3>SYNECTIKS for All!</h3>
+								<p className='lineHeight-24 ptext'>
 									SYNECTIKS is proud to be an equal opportunity workplace. We take great care to
 									evaluate all employees and job applicants equally, based on competence and
 									qualifications. We will not discriminate by age, race, gender, color, religion,
@@ -282,6 +282,9 @@ export default Careers;
 
 const CareerWrapper = styled.div`
 	 {
+		.ptext {
+			text-align: left;
+		}
 		.career-btn {
 			width: 100%;
 		}
@@ -289,6 +292,9 @@ const CareerWrapper = styled.div`
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		.ptext {
+			text-align: justify;
+		}
 		.career-btn {
 			width: 25%;
 		}

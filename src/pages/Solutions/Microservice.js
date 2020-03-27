@@ -7,9 +7,10 @@ import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../../components/fonts.css';
 import ms1 from '../../images/Microservices/Microservice_1.png';
-import ms2 from '../../images/Microservices/monovsmicro.png';
+import ms2 from '../../images/Microservices/Monolith to Microservices.jpg';
 import ms3 from '../../images/Microservices/Microservice_3.png';
 import ms4 from '../../images/Microservices/Microservice_7.png';
 import ms5 from '../../images/Microservices/Microservice_8.png';
@@ -34,25 +35,27 @@ const Microservice = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-
+const onTop = () => {
+	window.scroll(0,0);
+}
 	return (
 		<Layout>
+			<SEO title='Microservices' />
 			<MicroserviceWrapper>
-				<SEO title='Microservices' />
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
-
 					<div className=''>
 						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light='light' expand='lg' className='topNav'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
+									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
-									</NavbarToggler>
+									</NavbarToggler> */}
+									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mb-n4' />
 									<Collapse isOpen={!collapsed} navbar='navbar'>
-										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
+										<Nav className='bgWhite d-flex my-2 my-md-4 w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
@@ -61,12 +64,11 @@ const Microservice = () => {
 													})}
 													onClick={() => {
 														toggle('1');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													Examples of Microservices
+													BRIEF
 												</NavLink>
 											</NavItem>
-
 											<NavItem className='one'>
 												<NavLink
 													id='bgLL'
@@ -75,9 +77,9 @@ const Microservice = () => {
 													})}
 													onClick={() => {
 														toggle('2');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													Benefits of Microservices
+													BENEFITS
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -88,9 +90,9 @@ const Microservice = () => {
 													})}
 													onClick={() => {
 														toggle('3');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													Challenges of Microservices
+													CHALLENGES
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -101,28 +103,27 @@ const Microservice = () => {
 													})}
 													onClick={() => {
 														toggle('4');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													How can we help you?
+													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
 											</NavItem>
 										</Nav>
 									</Collapse>
 								</Navbar>
-
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
 											<div className='w-100 d-flex flex-column flex-md-row align-items-start py-2 py-md-3'>
 												<div className='pr-0 pr-md-5'>
-													<p>
+													<p className='ptext'>
 														To accommodate the increasing complexity of functional
 														requirements, IT applications have embraced a variety of
 														architectural patterns. Organizations must meet ever-changing
 														business demands — from mainframe applications and client-server
 														to service oriented architecture (SOA) and microservices.
 													</p>
-													<p>
+													<p className='ptext'>
 														Microservices architecture is a combination of successful and
 														proven concepts of software engineering such as agile software
 														development, SOA, API-first design and continuous delivery (CD).
@@ -205,7 +206,7 @@ const Microservice = () => {
 											</ul>
 										</div>
 										<div className='my-2 my-md-3'>
-											<p>
+											<p className='ptext'>
 												Maintaining monolithic applications often proves challenging because
 												it’s difficult to test and release millions of lines of code for tiny
 												changes (in most cases only a few lines). But migrating to microservices
@@ -223,8 +224,8 @@ const Microservice = () => {
 											</p>
 											{/* <img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' /> */}
 											<div className='my-2 my-md-4 d-flex flex-column flex-md-row'>
-												<div className='bgBlueLight text-light col-md-6 pt-2'>
-													<h4 className='btn bgOrange py-0'>Pain Points</h4>
+												<div className='bgBlueLight col-md-6 pt-2'>
+													<h4 className='btn bgOrange py-0 text-light'>Pain Points</h4>
 													<ul>
 														<li>Code complexity & Maintainability</li>
 														<li>
@@ -239,7 +240,7 @@ const Microservice = () => {
 													</ul>
 												</div>
 												<div className='bgRedLight text-light col-md-6 pt-2'>
-													<h4 className='btn bgOrange py-0'>Benefits / ROI</h4>
+													<h4 className='btn bgOrange py-0  text-light '>Benefits / ROI</h4>
 													<ul>
 														<li>Composability / Reusability / Ease of maintenance</li>
 														<li>
@@ -291,9 +292,9 @@ const Microservice = () => {
 											develop and deploy on a dime.
 										</p>
 										<div className='my-0 my-md-4	'>
-											<h2>Three key Technology Drivers to Address Microservices Challenges.</h2>
+											<h3>Three key Technology Drivers to Address Microservices Challenges.</h3>
 											<h3 className='my-0 mb-md-2	'>Hardware Aggregation.</h3>
-											<p>
+											<p className='ptext'>
 												As you refactor one large monolith application into multiple independent
 												services with their own services and data layer, you probably would end
 												up having 25+ services, 50+ databases (Cache, Relational, NoSQL, Graph,
@@ -311,7 +312,7 @@ const Microservice = () => {
 												<h3 className='my-0 mb-md-2	'>
 													Containerization & Continuous Delivery.
 												</h3>
-												<p>
+												<p className='ptext'>
 													As you transform monolith to microservices, your big X become 100
 													small x. If you deploy those 100 x as layered stack in discrete
 													servers in different way, your deployment complexity would multiply
@@ -327,7 +328,7 @@ const Microservice = () => {
 											<div className='d-flex flex-column align-items-start flex-md-row justify-md-between  px-2 px-md-0 mt-2 mt-md-5'>
 												<div className='pr-0 pr-md-5 w-100'>
 													<h3 className='my-0 mb-md-2	mt-md-n3'>Operation Automation.</h3>
-													<p>
+													<p className='ptext'>
 														An ideal microservices hosting platform is based on
 														geographically spanned cluster and hardware agnostic. While this
 														platform alleviates the burden of managing many servers,
@@ -341,7 +342,7 @@ const Microservice = () => {
 														management technologies offer avenues to aggregate those
 														operational challenges.
 													</p>
-													<p>
+													<p className='ptext'>
 														Essentially in a microservices ecosystem, you will aggregate,
 														extent & automate. You will aggregate your hardware across DC’s
 														and geographies, develop microservices, bigdata, IOT
@@ -367,10 +368,12 @@ const Microservice = () => {
 															<h6>Output</h6>
 														</div> */}
 														</div>
-														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight text-light p-md-3'>
+														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight p-md-3'>
 															<div className='aggregate col'>
 																<div>
-																	<h4 className='btn bgOrange py-0'>Aggregate</h4>
+																	<h4 className='btn bgOrange py-0 text-light'>
+																		Aggregate
+																	</h4>
 																</div>
 																<div className='d-flex'>
 																	<div>
@@ -387,7 +390,9 @@ const Microservice = () => {
 															</div>
 															<div className='extend col'>
 																<div>
-																	<h4 className='btn bgOrange py-0'>Extend</h4>
+																	<h4 className='btn bgOrange py-0 text-light'>
+																		Extend
+																	</h4>
 																</div>
 																<div className='d-flex'>
 																	<div>
@@ -404,7 +409,9 @@ const Microservice = () => {
 															</div>
 															<div className='devops col'>
 																<div>
-																	<h4 className='btn bgOrange py-0'>Devops</h4>
+																	<h4 className='btn bgOrange py-0 text-light'>
+																		Devops
+																	</h4>
 																</div>
 																<div className='d-flex'>
 																	<div>
@@ -417,7 +424,9 @@ const Microservice = () => {
 															</div>
 															<div className='Operate col'>
 																<div>
-																	<h4 className='btn bgOrange py-0'>Operate</h4>
+																	<h4 className='btn bgOrange py-0 text-light'>
+																		Operate
+																	</h4>
 																</div>
 																<div className='d-flex'>
 																	<div>
@@ -515,7 +524,7 @@ const Microservice = () => {
 												</div>
 
 												<h3>One Key Cultural Driver.</h3>
-												<p>
+												<p className='ptext'>
 													Simply speaking the microservice world is “Solve small problems,
 													with small teams with measurable outcomes vs solving 1 big problem
 													with 1 large team.”
@@ -536,7 +545,7 @@ const Microservice = () => {
 									</TabPane>
 									<TabPane tabId='4'>
 										<div>
-											<p>
+											<p className='ptext'>
 												SYNECTIKS, a trusted partner with experience migrating monolithic
 												applications to cloud and microservices architecture, can help make the
 												process seamless. Let us help you make the shift so you can capitalize
@@ -579,12 +588,12 @@ const Microservice = () => {
 												</div>
 											</div>
 
-											<p>
+											<p className='ptext'>
 												Provide modernization options, along with Demo / POC how the transition
 												would look like.
 											</p>
 
-											<p>
+											<p className='ptext'>
 												Based on the SYNECTIKS recommendations, provide proposed LOE (Level of
 												Effort) After mutual agreement, SYNECTIKS begins with agile methodology,
 												including:
@@ -617,7 +626,7 @@ const Microservice = () => {
 												</li>
 											</ul>
 											<div>
-												<p>
+												<p className='ptext'>
 													SYNECTIKS is committed to working with its customers to meet almost
 													any need.
 												</p>
@@ -648,11 +657,11 @@ const Microservice = () => {
 													/>
 												</div>
 												<div>
-													<p>
+													<p className='ptext'>
 														How much effort it takes to perform a Monolith to Microservices
 														transformation?
 													</p>
-													<p>
+													<p className='ptext'>
 														Though it depends on complexity & sizing of the existing
 														applications, you could accelerate the transformation process by
 														engaging a microservices SYNECTIKS who can help you as follows:
@@ -718,7 +727,31 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 
 export default Microservice;
 
-const MicroserviceWrapper = styled.div`
+const MicroserviceWrapper = styled.div`{
+.nav-link{
+  /* background: var(--synectiksBlue); */
+  color: var(--synectiksWhite);
+	padding: 0.5rem 1rem;
+}
+.nav-link{
+  /* background: var(--synectiksBlue); */
+  color: var(--synectiksWhite);
+	padding: 0.5rem 1rem;
+}
+.nav-link.active{
+  background: var(--synectiksBlue);
+  color: var(--synectiksWhite);
+	padding: 0.5rem 1rem;
+}
+.ptext{
+	text-align:left;
+}
+	.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display: block;
+}
 padding: 5rem 1rem;
 .microser,.microser70{
 	width: 100%;
@@ -727,12 +760,18 @@ padding: 5rem 1rem;
 	width: 100%;
 }
 .imgshadow{
-	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.1);
 }
 .topNav{
-	position: relative;
-    top: 0px;
-    z-index: 999;
+	position: fixed;
+	z-index: 9999;
+	top: 97px;
+  background: white;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  padding: 0 0 20px 0;
+  left: 0px;
 }
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
@@ -778,18 +817,7 @@ h1,h2,h3,h4,h5,h5,p,ul{
   left:0;
   z-index: 99;
 }
-a#bgL,
-a#bgLL,
-a#bgLLL {
-    padding: 0.5rem 1.5rem;
-    font-size: 12px;
-    height: auto;
-    /* background: white !important; */
-    text-align: left;
-    /* display:flex;
-    justify-content: space-between; */
-}
-a#bgL.active,
+
 a#bgLL.active,
 a#bgLLL.active  {
     border-bottom: 5px solid #007cc2;
@@ -800,7 +828,8 @@ a#bgLLL.active  {
     /* padding: 0.5rem 1.5rem; */
     font-size: 12px;
     height: auto;
-    width:100%;
+    /* width:100%; */
+		padding: 0.5rem 3rem;
 }
 .imgHyb {
 	margin-right: 25px !important;
@@ -822,9 +851,14 @@ ul.tabList.nav.flex-column {
 .hybmt{
   margin-top: 2.5rem;
 }
-.nav-link.active{
-  background: var(--synectiksBlue);
-  color: var(--synectiksWhite);
+.w-85{
+  /* width: 87vw; */
+	position: relative;
+	top:30px;
+	left: 0px;
+    border: 1px solid var(--textColor);
+    background: var(--synectiksWhite);
+    justify-content: flex-start;
 }
 .logo-btn {
     font-size:2rem;
@@ -859,8 +893,23 @@ ul.tabList.nav.flex-column {
 .tab-content>.active {
     padding: 2rem 0.5rem;
 }
+.nav-link:nth-child(1).active{
+  background: var(--synectiksBlue);
+  color: var(--synectiksWhite);
+	padding: 0.5rem 1rem;
+}
+}
 
 @media (min-width: 576px){
+	.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:none;
+}
+	.ptext{
+	text-align:justify;
+}
 	.microser{
 		width:75%;
 	}
@@ -929,10 +978,12 @@ ul.tabList.nav.flex-column {
     width: 16%;
   }
 .w-85{
-  width: 87vw;
+  /* width: 87vw; */
+		position: relative;
+		top:0px;
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
-    justify-content: space-between;
+    justify-content: flex-start;
 }
   ul.nav.flex-column {
 		position: relative;
@@ -980,6 +1031,8 @@ a#bgLL.active {
   position: relative;
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
+	/* padding-left: 7rem ;
+	padding-right: 7rem ; */
    font-size: 14px;
 }
 a#bgLLL.active {
@@ -988,6 +1041,8 @@ a#bgLLL.active {
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
    font-size: 14px;
+	 /* padding-left: 4rem ;
+	padding-right: 4rem ; */
 }
 
    .logo-btn {
@@ -997,9 +1052,15 @@ a#bgLLL.active {
   .bxshd{
     box-shadow: 0px 0px 0px 0px lightgray;
   }
-.nav-link.active{
+.nav-link:nth-child(1){
+  /* background: var(--synectiksBlue); */
+  color: var(--textColor);
+	padding: 0.5rem 3rem;
+}
+.nav-link:nth-child(1).active{
   background: var(--synectiksBlue);
   color: var(--synectiksWhite);
+	padding: 0.5rem 3rem;
 }
 .hbh1 {
     font-size: 2.5rem;

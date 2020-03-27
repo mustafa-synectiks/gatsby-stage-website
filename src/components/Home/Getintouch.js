@@ -5,11 +5,15 @@ const GetInTouch = () => {
 	return (
 		<GetTouchWrapper>
 			<div className='container-fluid p-1 p-md-5 cstrip'>
-				<div className='container bgBlue p-1 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around'>
+				<div className='container bgBlue py-2 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around my-4 my-md-0'>
 					<div className='cstrip_text'>
-						<h3 className='text-white'>Want to know how to evaluate your business?</h3>
+						<h3 className='text-white text-center text-md-left'>
+							Want to know how to evaluate your business?
+						</h3>
 					</div>
-					<a href='/Contact.html' className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width'>
+					<a
+						href='https://synectiks.com/Contact-us.html'
+						className='textColor btn btn-cnt btn-lg btn-rnd px-5 btn-width box-shadow'>
 						Get In Touch
 					</a>
 				</div>

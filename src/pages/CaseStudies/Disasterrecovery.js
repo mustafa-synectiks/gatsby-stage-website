@@ -17,7 +17,7 @@ const Disasterrecovery = () => {
 						subtitle='Case Studies'
 						pageTitle='Disaster Recovery'
 					/>
-					<h2>Disaster Recovery</h2>
+					<h1>Disaster Recovery</h1>
 					<div className='softwareDefined_image'>
 						{/* <h3>Large Motor Company</h3> */}
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
@@ -27,7 +27,7 @@ const Disasterrecovery = () => {
 							exactly what we offered Indian defense, a solution that can manage and provide necessary
 							outcomes in case of any DR issues.
 						</p>
-						<img src={ds} alt='' className='w-100' />
+						<img src={ds} alt='' className='w-100 my-3 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
@@ -139,8 +139,14 @@ export default Disasterrecovery;
 const DisasterWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left;
+		}
 	}
 	@media screen and (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify;
+		}
 	}
 `;

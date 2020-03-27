@@ -89,7 +89,7 @@ const Tabs = () => {
 				<TabContent activeTab={activeTab} className='bgWhite'>
 					<TabPane tabId='1' className='borderHomePageTab1'>
 						<Row>
-							<Col sm='12'>
+							<Col sm='12 hiding'>
 								<div className='p-2 p-md-4'>
 									<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
 								</div>
@@ -205,6 +205,9 @@ const TabsWrapper = styled.div`
 .tabsFlex{
 	display:none;
 }
+.hiding{
+	display:none;
+}
 .ct1,.ct2,.ct3{
 	width:0rem;
 	height:0rem;
@@ -216,7 +219,6 @@ const TabsWrapper = styled.div`
 .showul{
 			list-style: disc;
 		}
-
 @media screen and (min-width: 576px){
 	.showul{
 			list-style: disc;
@@ -273,6 +275,7 @@ const TabsWrapper = styled.div`
 			border-radius: 25px;
 			border-radius: 25px;
     border-top-left-radius: 0;
+		/* display: block; */
 		}
 
 		.Homecard-shadow {
@@ -536,6 +539,9 @@ color:var(--synectiksBlue);
 }
 #fork:hover {
   color: #fff;
+}
+.hiding{
+	display:block;
 }
 #fork:hover:before {
   transform: translateX(0) skewX(-45deg);

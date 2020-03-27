@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
 import { FaBars } from 'react-icons/fa';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
@@ -19,14 +20,15 @@ import WC from '../../images/Hybrid/Workload Fragmentation.png';
 import SPRT from '../../images/Hybrid/Support & Assistance.png';
 import DRB from '../../images/Hybrid/Discovery&Assessment.png';
 import DSCR from '../../images/Hybrid/DisasterRecoveryBackup.png';
-import scr from '../../images/Screenshot_3.png';
+import scr from '../../images/Hybrid/AWSBackup.png';
 // import scrs from "../../images/Screenshot_4.png"
 import WS from '../../images/Hybrid/Web Servers.png';
 import ETL from '../../images/Hybrid/DataExtract.png';
 import HRP from '../../images/Hybrid/HR Payroll.png';
 import SLDR from '../../images/Hybrid/Supporting Local Data Regulations.png';
 import GGEC from '../../images/Hybrid/Go Global and edge computing.png';
-import SCR5 from '../../images/Screenshot_5.png';
+// import SCR5 from '../../images/Screenshot_5.png';
+import SCR5 from '../../images/Hybrid/web-servers-hybrid-cloud.jpeg';
 import ADT from '../../images/Hybrid/ApplicationDevelopmentandTesting.png';
 import HC from '../../images/Hybridcloud.png';
 import ECC from '../../images/Hybrid/Embrace Cultural Changes.png';
@@ -69,6 +71,10 @@ const Hybridcloud = () => {
 		setNav((isOpen) => !isOpen);
 	};
 
+	const onTop = () => {
+	window.scroll(0,0);
+}
+
 	return (
 		<Layout>
 			<SEO title='Hybrid Cloud' />
@@ -83,18 +89,22 @@ const Hybridcloud = () => {
 							<div className='col-sm-12 col-md-12'>
 								<Navbar color='light' light expand='lg' className='topNav'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
-										<FaBars className='navbar-toggler-icon' />
+										{/* <FaBars className='navbar-toggler-icon' /> */}
+										<AiOutlineMenu
+											onClick={toggleNavbar}
+											className='mr-2 svgcolor mobile-show mb-n4 navbar-toggler-icon'
+										/>
 										<span className='my-1 mx-2 close'>X</span>
 									</NavbarToggler>
 									<Collapse isOpen={!collapsed} navbar>
-										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
+										<Nav className='bgWhite d-flex my-2 my-md-4 w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
 													className={classnames({ active: activeTab === '1' })}
 													onClick={() => {
 														toggle('1');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
 													UNDERSTANDING
 												</NavLink>
@@ -106,7 +116,7 @@ const Hybridcloud = () => {
 													className={classnames({ active: activeTab === '2' })}
 													onClick={() => {
 														toggle('2');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
 													GETTING STARTED
 												</NavLink>
@@ -117,9 +127,9 @@ const Hybridcloud = () => {
 													className={classnames({ active: activeTab === '3' })}
 													onClick={() => {
 														toggle('3');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													How can we help you?
+													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -128,7 +138,7 @@ const Hybridcloud = () => {
 													className={classnames({ active: activeTab === '4' })}
 													onClick={() => {
 														toggle('4');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
@@ -148,16 +158,16 @@ const Hybridcloud = () => {
 														alt='Hybrid Cloud'
 													/>
 
-													<h2 className=''>Why Hybrid Cloud?</h2>
+													<h3 className=''>Why Hybrid Cloud?</h3>
 													<h4 className='py-1 py-md-3'>Public, Private, and Hybrid Clouds</h4>
-													<p>
+													<p className='ptext'>
 														Public cloud is what people think of when they hear the word
 														“cloud.” It’s ideal for application development, scientific data
 														processing, and web-scale applications. On the downside, SLAs
 														can be weak and security can be limited. Exclusive use of the
-														public cloud becomes less economically feasible as usage scales.{' '}
+														public cloud becomes less economically feasible as usage scales.
 													</p>
-													<p>
+													<p className='ptext'>
 														Once applications hit a certain usage/cost threshold, or have
 														strict requirements, such as security or data protection, that
 														cannot be met by the public cloud, organizations often consider
@@ -167,7 +177,7 @@ const Hybridcloud = () => {
 														compliance. The reality is that most organizations will need a
 														blend of these options for different purposes.
 													</p>
-													<p>
+													<p className='ptext'>
 														This is referred to as a hybrid cloud. It allows organizations
 														to use the public cloud where it makes sense, to create private
 														clouds to support certain application types, and to use advanced
@@ -192,7 +202,7 @@ const Hybridcloud = () => {
 											<div className=''>
 												<div className='my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
 													<img src={AI} alt='' className='w15 mr-0 mr-md-3' />
-													<p className='marHybrid'>
+													<p className='marHybrid ptext'>
 														Experiment with new ideas on the cloud. Build once and run
 														anywhere. With secure, easily managed, low-cost cloud resources,
 														companies can finally break the 6-to-18-month application
@@ -204,7 +214,7 @@ const Hybridcloud = () => {
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
 													<img src={RC} alt='' className='w15 mr-0 mr-md-3' />
-													<p className='marHybrid'>
+													<p className='marHybrid ptext'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
 														operational flexibility and scalability, data that needs to stay
@@ -220,7 +230,7 @@ const Hybridcloud = () => {
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
 													<img src={BCC} alt='' className='w15 mr-0 mr-md-3' />
-													<p className='marHybrid'>
+													<p className='marHybrid ptext'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
 														operational flexibility and scalability, data that needs to stay
@@ -236,7 +246,7 @@ const Hybridcloud = () => {
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
 													<img src={EVL} alt='' className='w15 mr-0 mr-md-3' />
-													<p className='marHybrid'>
+													<p className='marHybrid ptext'>
 														Reduce dependency on proprietary services, application tools,
 														and cloud providers. To support global delivery, companies are
 														paying increasing attention to the network performance from
@@ -246,7 +256,7 @@ const Hybridcloud = () => {
 														end-user experience.
 													</p>
 												</div>
-												<p>
+												<p className='ptext'>
 													Ultimately, a hybrid IT environment enables a whole new style of
 													execution characterized by collaborative development environments,
 													consumer-controlled personalized experiences, a cloud-first
@@ -271,7 +281,7 @@ const Hybridcloud = () => {
 										</div>
 										<div className='textColor text-center p-2 p-md-5'>
 											<h3>Hybrid Cloud Challenges</h3>
-											<p>
+											<p className='ptext'>
 												Migration of workloads and integration between the private and public
 												clouds are primary challenges. Ensuring that applications and data do
 												not become fragmented between clouds is a key issue as well. The
@@ -330,8 +340,8 @@ const Hybridcloud = () => {
 										</div>
 										<div>
 											<div>
-												<h2> How Can I Use a Hybrid Cloud?</h2>
-												<p>
+												<h3> How Can I Use a Hybrid Cloud?</h3>
+												<p className='ptext'>
 													From being able to migrate between clouds to supporting local data
 													regulations, hybrid cloud enables the advanced level of management
 													of computing resources that is necessary to gain competitive
@@ -353,17 +363,17 @@ const Hybridcloud = () => {
 											</div>
 
 											<div className='row'>
-												<div className='col-md-6'>
+												<div className='col-md-12'>
 													<div className='d-flex align-items-center my-2 my-md-3'>
 														<img
 															src={DSCR}
 															alt=''
-															className='w20 mr-2 mr-md-3 my-3 my-md-3'
+															className='w8 mr-2 mr-md-3 my-3 my-md-3'
 														/>
 														<h4>Disaster Recovery/Backup</h4>
 													</div>
 													<div>
-														<p>
+														<p className='ptext'>
 															Backup and disaster recovery is the most common use case as
 															it serves two primary benefits. First, it allows you to use
 															a non-production workload as a proof-of-concept for your
@@ -373,10 +383,10 @@ const Hybridcloud = () => {
 														</p>
 													</div>
 												</div>
-												<div className='col-md-6'>
+												<div className='col-md-12'>
 													<img
 														src={scr}
-														className='imgBx wimg w-sm-100 my-3 my-md-2'
+														className='imgBx wimg wb-sm-100 my-3 my-md-2 mx-auto'
 														alt=''
 													/>
 												</div>
@@ -387,7 +397,7 @@ const Hybridcloud = () => {
 													<img src={ADT} alt='' className='w15 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Application Development and Testing</h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													Application development and testing or “DevTest” is another popular
 													use case, particularly in organizations focused on innovation. Many
 													customers move their dev/test environments to the cloud to gain
@@ -400,7 +410,7 @@ const Hybridcloud = () => {
 													<img src={WS} alt='' className='whbd9 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Web Servers</h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													Third, customers move web servers to the cloud to take advantage of
 													the elastic compute resources. This allows a customer to leverage
 													auto-scaling to right-size, compute resources as demand spikes or
@@ -423,7 +433,7 @@ const Hybridcloud = () => {
 													<img src={ETL} alt='' className='whbd7 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Data Extract, Transform, and Load (ETL) processes</h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													Data Extract, Transform, and Load (ETL) processes can be quite
 													resource-intensive and thus overwhelm the capabilities of an
 													internal cloud and datacenter. Machine learning and other analysis
@@ -439,7 +449,7 @@ const Hybridcloud = () => {
 													/>
 													<h4>HR, Payroll, Productivity Applications</h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													Many customers are moving first-workload applications to the cloud
 													as their entry point. These entry-point applications include
 													Microsoft Active Directory, Microsoft SharePoint, Microsoft
@@ -474,7 +484,7 @@ const Hybridcloud = () => {
 													/>
 													<h4>Supporting Local Data Regulations</h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													There are increasing legal and regulatory requirements for data
 													storage and processing. For example, European data protection laws
 													require protections for personal information that are significantly
@@ -495,7 +505,7 @@ const Hybridcloud = () => {
 													/>
 													<h4>Go Global and edge computing </h4>
 												</div>
-												<p>
+												<p className='ptext'>
 													To deliver a good experience, enterprises need to be as close to
 													customers as possible, and they need to understand how customers
 													consume applications, as well as what components (payments, ads,
@@ -513,7 +523,7 @@ const Hybridcloud = () => {
 											<div className='row'>
 												<div className='col-md-6'>
 													{/* <h2 className=''>GETTING STARTED TO HYBRID CLOUD</h2> */}
-													<p>
+													<p className='ptext'>
 														The first step is for CIOs to connect with the business to
 														establish clear lines of communication and to set common goals.
 														Within the IT organization, CIOs must set policies that identify
@@ -539,107 +549,103 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<h4>Key Strategic Drivers</h4>
-												<p>
+												<p className='ptext'>
 													As companies embrace hybrid Cloud, they must address both technology
 													and the human side of change. There are several key actions to take:
 												</p>
 											</div>
 											<div className='row'>
-												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={ECC} alt='' className='w-22' />
-													<h4>
-														Embrace <br />Cultural Changes
-													</h4>
-												</div>
-												<div className='col-sm-8 col-md-8'>
-													<p>
-														As the organization start embracing hybrid cloud and take
-														benefits of Serverless, PaaS, IoT and edge computing, so the
-														workforce should become more integrated, multifunctional,
-														flexible and agile. Existing and new IT stuffs must adept cloud
-														technologies, agile methodologies so that they can build, deploy
-														and scale applications across multiple infrastructure
-														environments using Agile and DevOps processes. Most importantly
-														companies need to foster a culture of learning at scale.
-													</p>
-												</div>
-											</div>
-											<div className='row'>
-												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={RCM} alt='' className='w-25' />
-													<h4>
-														Revamp <br />Change Management
-													</h4>
-												</div>
-												<div className='col-ms-8 col-md-8'>
-													<p>
-														The existing governance processes, gates and approval procedures
-														designed for traditional legacy IT environments are no longer
-														appropriate in a cloud environment. Companies should revamp
-														their change management systems to allow changes to happen
-														quickly and, using automated workflows, to reduce manual
-														intervention.
-													</p>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
+													<img src={ECC} alt='Discover and Assessment' className='w15 mr-5' />
+													<div>
+														<h5>Embrace Cultural Changes</h5>
+														<p className='ptext'>
+															As the organization start embracing hybrid cloud and take
+															benefits of Serverless, PaaS, IoT and edge computing, so the
+															workforce should become more integrated, multifunctional,
+															flexible and agile. Existing and new IT stuffs must adept
+															cloud technologies, agile methodologies so that they can
+															build, deploy and scale applications across multiple
+															infrastructure environments using Agile and DevOps
+															processes. Most importantly companies need to foster a
+															culture of learning at scale.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row'>
-												<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={ICO} alt='' className='w-22' />
-													<h4>
-														Integrate <br />Cloud Operations
-													</h4>
-												</div>
-												<div className='col-ms-8 col-md-8'>
-													<p>
-														As organizations move workloads to the cloud, the IT operations
-														function should adapt to manage both on-premises and cloud-based
-														applications. This new model, called CloudOps, can provide
-														continuous integrated operations in a multi-cloud environment to
-														enable rapid response to events, incidents and requests. Adding
-														DevOps to the mix then utilizes automation, integration and
-														organizational change to enable more frequent enhancements that
-														result in higher quality software.
-													</p>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img src={RCM} alt='Discover and Assessment' className='w15 mr-5' />
+													<div>
+														<h5>Revamp Change Management</h5>
+														<p className='ptext'>
+															The existing governance processes, gates and approval
+															procedures designed for traditional legacy IT environments
+															are no longer appropriate in a cloud environment. Companies
+															should revamp their change management systems to allow
+															changes to happen quickly and, using automated workflows, to
+															reduce manual intervention.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row'>
-												<div className='col-sm-12 col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={AS} alt='' className='w-22' />
-													<h4>Automate support</h4>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img src={ICO} alt='Discover and Assessment' className='w15 mr-5' />
+													<div>
+														<h5>Integrate Cloud Operations</h5>
+														<p className='ptext'>
+															As organizations move workloads to the cloud, the IT
+															operations function should adapt to manage both on-premises
+															and cloud-based applications. This new model, called
+															CloudOps, can provide continuous integrated operations in a
+															multi-cloud environment to enable rapid response to events,
+															incidents and requests. Adding DevOps to the mix then
+															utilizes automation, integration and organizational change
+															to enable more frequent enhancements that result in higher
+															quality software.
+														</p>
+													</div>
 												</div>
-												<div className='col-sm-12 col-md-8'>
-													<p>
-														To the extent possible, automate IT support functions. For
-														example, the traditional trouble ticket system can be manually
-														intensive and inefficient. Automation can improve service and
-														free up IT personnel for higher-level activities. Longer term,
-														companies will be able to deploy machine learning and AI to take
-														log data from cloud-based systems and automatically take actions
-														to resolve or even prevent incidents. The idea is to learn once,
-														fix with code and share learnings to improve code over time and
-														scale knowledge.
-													</p>
+											</div>
+											<div className='row'>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img src={AS} alt='Discover and Assessment' className='w15 mr-5' />
+													<div>
+														<h5>Automate support</h5>
+														<p className='ptext'>
+															To the extent possible, automate IT support functions. For
+															example, the traditional trouble ticket system can be
+															manually intensive and inefficient. Automation can improve
+															service and free up IT personnel for higher-level
+															activities. Longer term, companies will be able to deploy
+															machine learning and AI to take log data from cloud-based
+															systems and automatically take actions to resolve or even
+															prevent incidents. The idea is to learn once, fix with code
+															and share learnings to improve code over time and scale
+															knowledge.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row mlr '>
-												<div className='col-sm-12 col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={ST} alt='' className='w-22' />
-													<h4>
-														Manage <br /> “Shadow IT”
-													</h4>
-												</div>
-												<div className='col-sm-12 col-md-8'>
-													<p>
-														Business units are often acquiring the cloud services they need
-														because IT moves too slowly. At some point, those services must
-														be integrated back into the traditional IT environment for
-														operational and security reasons through a services governance
-														model that encompasses hybrid IT elements. In addition, it’s
-														important for CIOs to have a handle on what the enterprise is
-														spending on IT services. The only way to accomplish this is to
-														adopt hybrid IT and demonstrate to business units that IT can
-														support the pace and scale that the business requires.
-													</p>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img src={ST} alt='Discover and Assessment' className='w15 mr-5' />
+													<div>
+														<h5>Manage “Shadow IT”</h5>
+														<p className='ptext'>
+															Business units are often acquiring the cloud services they
+															need because IT moves too slowly. At some point, those
+															services must be integrated back into the traditional IT
+															environment for operational and security reasons through a
+															services governance model that encompasses hybrid IT
+															elements. In addition, it’s important for CIOs to have a
+															handle on what the enterprise is spending on IT services.
+															The only way to accomplish this is to adopt hybrid IT and
+															demonstrate to business units that IT can support the pace
+															and scale that the business requires.
+														</p>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -652,38 +658,39 @@ const Hybridcloud = () => {
 												your starting point.
 											</p>
 											<div className='row my-2 my-md-5'>
-												<div className='col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={DRB} alt='' className='w-25 mt-n5' />
-													<h4>Discovery & Assessment</h4>
-												</div>
-												<div className='col-md-8'>
-													<p>
-														Our discovery and assessment services can help you draft a
-														hybrid IT roadmap with a clearly defined business case and
-														prioritized recommendations by workload or accelerate efforts
-														already underway. Our recommendations reflect deep industry
-														knowledge and contextual knowledge about your business.
-													</p>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
+													<img src={DRB} alt='' className='w10 mr-0 mr-md-5 mt-n3' />
+													<div>
+														<h4>Discovery & Assessment</h4>
+														<p className='ptext'>
+															Our discovery and assessment services can help you draft a
+															hybrid IT roadmap with a clearly defined business case and
+															prioritized recommendations by workload or accelerate
+															efforts already underway. Our recommendations reflect deep
+															industry knowledge and contextual knowledge about your
+															business.
+														</p>
+													</div>
 												</div>
 											</div>
 											<div className='row'>
-												<div className='col-md-4 text-center d-flex align-items-center flex-column'>
-													<img src={TS} alt='' className='w-25 mt-2 mt-md-3' />
-													<h4>Transformation Services</h4>
-												</div>
-												<div className='col-md-8'>
-													<p>
-														You can access our open Xformation platform products and
-														resource teams to adopt change quickly — from application
-														migration, transformation and integration to cloud-native apps
-														development, containerization, platform services and
-														microservices — to enable your enterprise to thrive in public
-														and virtual private environments. Synectiks xformation platform
-														coupled with its Hybrid cross cloud infrastructure delivers you
-														the maximum flexibility to run/move your high performant
-														workloads across clouds and manage them through a single pane of
-														glass.
-													</p>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
+													<img src={TS} alt='' className='w15 mr-md-5 mr-0 mt-n3' />
+													<div className='ml-0 ml-md-4'>
+														<h4>Transformation Services</h4>
+														<p className='ptext'>
+															You can access our open Xformation platform products and
+															resource teams to adopt change quickly — from application
+															migration, transformation and integration to cloud-native
+															apps development, containerization, platform services and
+															microservices — to enable your enterprise to thrive in
+															public and virtual private environments. Synectiks
+															xformation platform coupled with its Hybrid cross cloud
+															infrastructure delivers you the maximum flexibility to
+															run/move your high performant workloads across clouds and
+															manage them through a single pane of glass
+														</p>
+													</div>
 												</div>
 											</div>
 											<blockquote className='blockquote blockquote-custom bg-white p-5 shadow rounded my-2 my-md-5'>
@@ -712,7 +719,7 @@ const Hybridcloud = () => {
 												{/* <h3>
 													<b>Synectiks</b> Differentiator
 												</h3> */}
-												<p>
+												<p className='ptext'>
 													We go beyond creating a strategy: Synectiks helps you plan it, do
 													it, run it and manage it.
 												</p>
@@ -775,7 +782,6 @@ const Hybridcloud = () => {
 															<h4 className='my-3'>Single Control plane</h4>
 														</div>
 														<p>
-															{' '}
 															Xformation is a single interface and platform to manage all
 															your workloads distributed across multiple clouds and
 															boundaries within a single control plane.
@@ -862,7 +868,7 @@ const Hybridcloud = () => {
 														<p>100% Customer Retention Rate.</p>
 													</div>
 												</div>
-												<p>
+												<p className='ptext'>
 													Finally, we help you run it all at a lower cost using CloudOps
 													delivery enabled with DevSecOps capabilities and extreme automation
 													from our Synectiks Xformation platform driven services delivery
@@ -906,14 +912,33 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Hybridcloud;
 
 const HybridWrapper = styled.div`
+
+.ptext{
+	text-align: left;
+}
+.w-85{
+  /* width: 87vw; */
+	position: relative;
+	top: 20px;
+	left:0px;
+    border: 1px solid var(--textColor);
+    background: var(--synectiksWhite);
+    justify-content: flex-start;
+}
 padding:5rem 1rem;
 .topNav{
-	position: relative;
-    top: 0px;
-    z-index: 999;
+	position: fixed;
+	z-index: 9999;
+	top: 97px;
+  background: white;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  padding: 0 0 20px 0;
+  left: 0px;
 }
 .navbar-light .navbar-toggler {
-		color: rgba(0, 0, 0, .5);
+		color: rgba(0, 0, 0, .3);
 		border-color: rgba(0, 0, 0, 0);
   }
   .navbar-toggler > .close {
@@ -944,11 +969,15 @@ h1,h2,h3,h4,h5,h5,p,ul{
     margin-left:0rem;
   }
 }
-.marHybrid{
+.marHybrid ptext{
   margin-left: 0rem;
 }
 .w-sm-100{
   width: 100%;
+}
+.wb-sm-100{
+	width: 100%;
+	background: white;
 }
 .hybridFixed{
   position: fixed;
@@ -1049,15 +1078,24 @@ p{
   	.whbd7 {
 		width:25%;
   }
+	.navbar-light .navbar-toggler-icon{
+		display: none;
+	}
  .w20{
 		width:25%;
-  }
-  .w15 {
+	}
+	.w8{
+		width: 25%;
+	}
+  .w15,.w10 {
 	width: 25%;
 }
 
 
 @media (min-width: 576px){
+	.ptext{
+		text-align: justify;
+	}
 	padding: 0rem 1rem;
 	.topNav{
 	position: relative;
@@ -1083,6 +1121,9 @@ p{
   .w15 {
 	width: 8%;
 }
+.w10{
+	width: 10%;
+}
   	.whbd7 {
 		width: 7%;
 	}
@@ -1094,12 +1135,18 @@ p{
   }
   .w20{
     width: 16%;
-  }
+	}
+	.w8{
+		width: 8%;
+	}
 .w-85{
-  width: 87vw;
+  /* width: 87vw; */
+	position: relative;
+	top: 0px;
+	left: 3%;
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
-    justify-content: space-between;
+    justify-content: flex-start;
 }
   ul.nav.flex-column {
 		position: relative;
@@ -1237,6 +1284,10 @@ a#bgLL.active:after{
   }
   .w-sm-100{
   width: 75%;
+}
+.wb-sm-100{
+	width: 50%;
+	background: white;
 }
   	.himage {
 		width: 100%;

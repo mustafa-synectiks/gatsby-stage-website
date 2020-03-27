@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { MdArrowForward, MdArrowBack } from 'react-icons/md';
+import { MdArrowForward, MdArrowBack, MdClose } from 'react-icons/md';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './layout.css';
 import s1 from '../images/Slider_1.jpg';
@@ -95,8 +95,14 @@ const Slider = () => {
 								<p className=''>
 									we accelerate organization evolution <br />through open platform and <br />skilled
 									resources.
-								</p>
+								</p>{' '}
+								<div>
+									<a href='https://synectiks.com/devops/index.html' className='btn btn-primary'>
+										Learn More
+									</a>
+								</div>
 							</div>
+
 							<img src={Slider2} alt='Optimize Devops Transformation' />
 						</div>
 						<div className='item'>
@@ -107,8 +113,16 @@ const Slider = () => {
 								<p className=''>
 									accelerate high performance reliable <br /> application delivery using microservices
 									<br />across clouds.
-								</p>
+								</p>{' '}
+								<div>
+									<a
+										href='https://synectiks.com/microservices/index.html'
+										className='btn btn-primary'>
+										Learn More
+									</a>
+								</div>
 							</div>
+
 							<img
 								src={Slider3}
 								alt='modernize your business, adopt cloud native microservices architecture'
@@ -120,7 +134,7 @@ const Slider = () => {
 			</div>
 			<div className='container-fluid bgBlue px-2 px-md-5 '>
 				<div className='row'>
-					<div className='col heading1 mt-3 mt-md-0'>
+					<div className='col heading1 mt-3 mt-md-0 pt-4 pt-md-0'>
 						<h1 className='textWhite text-left px-1 px-md-3'>
 							We’ve always done things differently<span className='fa-3x l-0'>...</span>
 						</h1>
@@ -168,7 +182,7 @@ const Slider = () => {
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
 							<div className='col-sm-12 col-md-3'>
-								<div className='my-2 my-md-5 '>
+								<div className='my-2 my-md-5 caseText'>
 									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
 									<a href='' className='text-capitalize'>
 										View all success stories &nbsp; >{' '}
@@ -180,7 +194,7 @@ const Slider = () => {
 										<li className='slider__label sr-only' /> <li>06</li>
 									</ul>
 								</div>
-								<div className='slickbtns'>
+								<div className='slickbtns mx-4'>
 									<div className='prevbtn'>
 										<MdArrowBack className='fa-2x' />
 									</div>
@@ -189,7 +203,7 @@ const Slider = () => {
 									</div>
 								</div>
 							</div>
-							<div className='col col-sm-12 col-md-9 h70vh'>
+							<div className='col col-sm-12 col-md-9 p-0 h70vh'>
 								<div className='slider'>
 									<a href='/softwaredefined/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
@@ -197,7 +211,7 @@ const Slider = () => {
 
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Software Defined Transformation</h3>
-												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-3'>
+												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4 mr-0 mr-md-5'>
 													AWS Cloud migration for a large motor industry.
 												</p>
 												<a href='/softwaredefined/index.html' className='noLine fw300'>
@@ -211,7 +225,7 @@ const Slider = () => {
 											<img src={RM} alt='NetworkDesign' />{' '}
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Realtime Monitoring</h3>
-												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-3'>
+												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4'>
 													Highly Scalable extremely customizable realtime monitoring platform.
 												</p>
 												<a href='/realtime/index.html' className='noLine fw300'>
@@ -225,7 +239,7 @@ const Slider = () => {
 											<img src={SM} alt='Storage Migration' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Migration</h3>
-												<p className='pr-1 textColor  mb-1 mb-md-3'>
+												<p className='pr-1 textColor  mb-1 mb-md-4'>
 													Petabytes of storage migration for a large financial company with
 													zero down time.
 												</p>{' '}
@@ -240,7 +254,7 @@ const Slider = () => {
 											<img src={ND} alt='Enterprise-Transformation' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Network Design</h3>
-												<p className='pr-5 textColor  mb-1 mb-md-3'>
+												<p className='pr-5 textColor  mb-1 mb-md-4'>
 													Complete network Backbone design with highest security for retail.
 												</p>
 												<a href='/networkdesign/index.html' className='noLine fw300'>
@@ -255,7 +269,7 @@ const Slider = () => {
 
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Tier</h3>
-												<p className='pr-5 textColor  mb-1 mb-md-3'>
+												<p className='pr-5 textColor  mb-1 mb-md-4'>
 													Moving Bigdata workloads to aggregated platform for a large telco.
 												</p>
 												<a href='/storagetier/index.html' className='noLine fw300'>
@@ -270,7 +284,7 @@ const Slider = () => {
 											<img src={DR} alt='StorageTier' />
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Disaster Recovery</h3>
-												<p className='pr-5 textColor mb-1 mb-md-3'>
+												<p className='pr-5 textColor mb-1 mb-md-4'>
 													Lightweight disaster recovery platform for indian Defense.
 												</p>
 												<a href='/disasterrecovery/index.html' className='noLine fw300'>
@@ -303,7 +317,7 @@ const Slider = () => {
 								</small>
 							</a> */}
 						</p>
-						<button className='closeBtn fa fa-times float-right mr-2 mr-md-3' type='submit' id='hide' />
+						<MdClose className='closeBtn float-right mr-2 mr-md-3' type='submit' id='hide' />
 					</div>
 					{/* private policy */}
 				</div>
@@ -327,13 +341,30 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 
 export default Slider;
 
-const HomeWrapper = styled.section`
+const HomeWrapper = styled.section`{
+.navfont{
+	position:relative;
+	top:0px;
+	font-size:8px;
+}
+
+.fsize08{
+	font-size:8px;
+	position:relative;
+	top:5px;
+}
 .prvtpolicy{
-	height:125px;
+	height:45px;
+	line-height: 10px;
+	margin-top:0px;
+	padding: 0px 30px;
 #hide{
 	position: absolute;
 	top:0;
 	right:0;
+	padding: 10px;
+	font-size: 2.5rem;
+	margin-top: 5px;
 }
 }
 h1{
@@ -411,6 +442,9 @@ width: 100%;
 			width: 45%;
 			}
 	}
+	.caseText{
+		text-align: center;
+	}
 .slider .slick-list {
     position: relative;
     display: block;
@@ -419,19 +453,20 @@ width: 100%;
     padding: 0px;
     left: 0rem;
 }
-	.slickbtns {
+	/* .slickbtns {
 			display: grid;
 			grid-template-columns: 50px 50px;
 			grid-gap: 2.4rem;
-			margin-left: 13%;
-			margin-top: 4%;
-		}
+			margin-left: 18% !important;
+			margin-top: 0% !important;
+			width: 60%
+		} */
 .slider .slick-slide {
     padding: 0px;
     margin: 0px;
 }
 	.w-450 {
-			width: 200px;
+			width: 90% !important;
 		}
 
 .heading1 {
@@ -503,7 +538,6 @@ p{
 }
 
 
-
 	background: var(--bgMain);
 	.border {
 		border: 1px solid var(--synectiksBlue) !important;
@@ -520,11 +554,20 @@ p{
 		display:none;
 }
 	}
-
+}
 
 	@media screen and  (min-width: 576px) {
+			.caseText{
+		text-align: left;
+	}
+		.navfont,.fsize08{
+	font-size:16px;
+	position: relative;
+    top: 18%;
+}
 		.prvtpolicy{
 	height:40px;
+	padding: 0;
 #hide{
 	position: absolute;
 	top:0;
@@ -667,7 +710,7 @@ p{
 		}
 		background: var(--bgMain);
 		.w-450 {
-			width: 460px;
+			width: 90% !important;
 		}
 
 		p {
@@ -695,7 +738,7 @@ p{
 				/* max-width:400px; */
 }
 		.h70vh {
-			height: 75vh;
+			height: 70vh;
 		}
 		ul.progress > li:first-child {
 			position: absolute;
@@ -795,11 +838,14 @@ p{
 			border: 0;
 		}
 		.slickbtns {
-			display: grid;
-			grid-template-columns: 50px 50px;
+			display: flex;
+		justify-content: space-around;
+		width: 64%;
+			/* display: grid; */
+			/* grid-template-columns: 50px 50px;
 			grid-gap: 2.4rem;
-			margin-left: 13%;
-			margin-top: 12%;
+			margin-left: 13% !important;
+			margin-top: 12% !important; */
 		}
 .f-14{
 	font-size: 14px;

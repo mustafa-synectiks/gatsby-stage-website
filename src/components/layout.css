@@ -87,8 +87,8 @@ font-style: normal; */
 	--textColor: #292929;
 	--backgroundColor: #efefef;
 	--synectiksWhite: #ffffff;
-	--synectiksLightBlue: #34b2fcde;
-	--synectiksLightRed: #f8506ff5;
+	--synectiksLightBlue: #a5d8e9;
+	--synectiksLightRed: #ff3366;
 }
 body {
 	margin: 0;
@@ -101,7 +101,6 @@ body {
 	line-height: 26px;
 	background-color: #efefef;
 	word-break: break-word;
-	text-align: justify;
 	color: var(--textColor);
 	text-rendering: optimizeLegibility;
 }
@@ -511,6 +510,10 @@ a.dropdown-toggle.nav-link {
 }
 
 @media screen and(max-width: 576px) {
+	.marHybrid {
+		margin-left: 0rem;
+	}
+
 	h1 {
 		font-size: 1.875rem !important;
 	}
@@ -566,7 +569,7 @@ span.breadcrumb__separator {
 }
 
 .imgBx {
-	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 	border: 5px solid white;
 }
 
@@ -1196,10 +1199,7 @@ background-color: #007bff!important;
 .h-300 {
 	height: 300px;
 }
-.text-justify {
-	text-align: justify !important;
-	text-justify: inter-word !important;
-}
+
 .box-shadow {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
@@ -1574,9 +1574,9 @@ textarea.has-error {
 .fright {
 	float: right;
 }
-.closeBtn{
+.closeBtn {
 	background: transparent;
-	color: #be0a0a;
+	color: black;
 }
 .input-feedback {
 	color: #be0a0a;
@@ -1984,9 +1984,6 @@ a.dropdown-toggle.nav-link {
 
 	.bg-top {
 		padding-top: 0px;
-	}
-	.marHybrid {
-		margin-bottom: 0;
 	}
 	.hbh1 {
 		font-size: 2.5rem;

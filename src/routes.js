@@ -95,10 +95,6 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)
 	},
 	{
-		path: '/visualform/index.html',
-		component: path.resolve(`src/pages/Mails/VisualForm.js`)
-	},
-	{
 		path: '/officemigration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
@@ -125,14 +121,6 @@ module.exports = [
 	{
 		path: '/careers/index.html',
 		component: path.resolve(`src/pages/Company/Careers.js`)
-	},
-	{
-		path: '/askfordemo/index.html',
-		component: path.resolve(`src/pages/Mails/Askdemo.js`)
-	},
-	{
-		path: '/contactus/index.html',
-		component: path.resolve(`src/pages/Mails/Contact.js`)
 	},
 	{
 		path: '/casestudies/index.html',
@@ -189,10 +177,6 @@ module.exports = [
 	{
 		path: '/datatransformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DataTransformation.js`)
-	},
-	{
-		path: '/VsForm/index.html',
-		component: path.resolve(`src/pages/Mails/VisualForm.js`)
 	},
 	{
 		path: '/terms/index.html',

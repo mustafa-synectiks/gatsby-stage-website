@@ -19,7 +19,7 @@ const Storagetier = () => {
 						pageTitle='
 			Storage Tier'
 					/>
-					<h2>Storage Tier</h2>
+					<h1>Storage Tier</h1>
 					<div className='softwareDefined_image'>
 						<h3>Indian Meteorology Department - Case Study</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
@@ -28,7 +28,7 @@ const Storagetier = () => {
 							forecasting and seismology reports and also responsible for communicating and forecasting
 							weather services.
 						</p>
-						<img src={st} alt='' className='w-100' />
+						<img src={st} alt='' className='w-100 my-3 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
@@ -146,8 +146,14 @@ export default Storagetier;
 const StorageWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left;
+		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify;
+		}
 	}
 `;

@@ -18,27 +18,27 @@ const Networkdesign = () => {
 						subtitle='Case Studies'
 						pageTitle='Network Design'
 					/>
-					<h2>Network Design</h2>
+					<h1>Network Design</h1>
 					<div className='softwareDefined_image'>
 						<h3>Cloud Automation For Medfusion Inc</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							Complete network backbone design with highest security for retail.
 						</p>
-						<img src={nd} alt='' className='w-100' />
+						<img src={nd} alt='' className='w-100 my-4 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
-						<div className='column w-100 px-1 px-5 orangeBorder'>
+						<div className='column w-100 px-1 px-md-5 orangeBorder'>
 							<h4>Industry</h4>
 							<p>Medfusion</p>
 						</div>
-						<div className='column w-100 px-1 px-5 blueBorder'>
+						<div className='column w-100 px-1 px-md-5 blueBorder'>
 							<h4>Business Objective</h4>
 							<p>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
-						<div className='column w-100 px-1 px-5 redBorder'>
+						<div className='column w-100 px-1 px-md-5 redBorder'>
 							<h4>Technologies</h4>
 							<p>AWS, Infrastructure as a code, microservices, devops.</p>
 						</div>
@@ -164,8 +164,14 @@ export default Networkdesign;
 const NetworkWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left;
+		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify;
+		}
 	}
 `;

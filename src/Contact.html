@@ -700,7 +700,7 @@ a.dropdown-toggle.nav-link {
      <div class="mt-3">
 
 
-        <form form='Cform' id="Cform" action=""
+        <form form='Cform' id="Cform" action="/contact.html"
             method="POST" class="was-validated">
 
 
@@ -1044,7 +1044,7 @@ a.dropdown-toggle.nav-link {
                 </div>
                 <div class='col-sm-4 col-md-4 col-lg-4 col-xl-4 field-group'
                     style="align-self: baseline;margin-top: 2rem;">
-                    <input type="submit" name="submit"  value='Submit' class="btn btn-primary w-50 pos-3" id="submit-btn" disabled>
+                    <input type="submit" name="submit"  value='Submit' onclick="redirect()"  class="btn btn-primary w-50 pos-3" id="submit-btn" disabled>
                 </div>
 
             </div>
@@ -1139,6 +1139,12 @@ a.dropdown-toggle.nav-link {
 </script>
 <!-- Form Script Ends -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    var redirect=function() {
+            document.location.href="https://synectiks-website.s3.amazonaws.com/thankyou.html"
+        }
+</script>
 
 <script>
     var validationArr = {

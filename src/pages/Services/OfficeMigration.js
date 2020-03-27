@@ -45,11 +45,11 @@ export class OfficeMigraton extends React.Component {
 								data-aos='fade-up'
 								data-aos-duration='2000'>
 								<div className='w-100  text-black'>
-									<p className='lineHeight-24'>
+									<p className='lineHeight-24 ptext'>
 										Microsoft is the recognized leader in cloud productivity solutions for business
-										with Office 365 - transforming the workplace experience.
+										with Office 365 transforming the workplace experience.
 									</p>
-									<p className='lineHeight-24'>
+									<p className='lineHeight-24 ptext'>
 										With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on
 										all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for
 										Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility +
@@ -60,7 +60,7 @@ export class OfficeMigraton extends React.Component {
 										Imagine what we can do for you!
 										<br />
 									</p>
-									<p className='lineHeight-24'>
+									<p className='lineHeight-24 ptext'>
 										We don’t just move you to Office 365. We help you create and sustain a
 										cost-efficient, highly responsive and secure evergreen workplace platform. We
 										provide a holistic set of transformational and managed services to modernize
@@ -157,7 +157,7 @@ export class OfficeMigraton extends React.Component {
 										<p>
 											<b>Built by Microsoft, Made Easy by SYNECTIKS</b>
 										</p>
-										<ul className='lineHeight-34'>
+										<ul className='lineHeight-34 ptext'>
 											<li>
 												<b>Reliable Support:</b> 24x7x365 support via phone or ticket. 15-minute
 												response time on Sev-1 tickets. SLA based proactive support with
@@ -207,8 +207,14 @@ export default OfficeMigraton;
 const OfficeMigratonWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		.ptext {
+			text-align: left;
+		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		.ptext {
+			text-align: justify;
+		}
 	}
 `;

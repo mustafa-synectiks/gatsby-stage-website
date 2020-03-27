@@ -19,7 +19,7 @@ const Storagemigration = () => {
 						subtitle='Case Studies'
 						pageTitle='Storage Migration'
 					/>
-					<h2>Storage Migration</h2>
+					<h1>Storage Migration</h1>
 					<div className='softwareDefined_image'>
 						<h3>SAN connectivity via Synectiks Storage Network Solutions</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
@@ -167,8 +167,14 @@ export default Storagemigration;
 const StorageWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left;
+		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify;
+		}
 	}
 `;

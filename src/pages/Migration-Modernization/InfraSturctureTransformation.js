@@ -7,12 +7,13 @@ import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import styled from 'styled-components';
-import mcit from '../../images/modernization/mcit.png';
+import mcit from '../../images/modernization/Modernize and Consolidate IT Infrastructure.jpg';
 import ms4 from '../../images/Microservices/Microservice_7.png';
 import swd from '../../images/modernization/swd.png';
 import awsd from '../../images/modernization/awsd.png';
-import circle from '../../images/modernization/circle.png';
+import circle from '../../images/modernization/Application Transformation.svg';
 import ds from '../../images/Hybrid/Discovery&Assessment.png';
 import ts from '../../images/Hybrid/Transformation Services.png';
 import EX from '../../images/Hybrid/Experience.png';
@@ -45,30 +46,34 @@ const Infrastructure = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
+	const onTop = () => {
+	window.scroll(0,0);
+}
 
 	return (
 		<Layout>
-			<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
+			<SEO title='InfraStructure Transformation' description='Infra Sturcture page' />
 			<HybridWrapper>
 				<div className='container-fluid p-1'>
 					<div className=''>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Migration-Modernization'
-							pageTitle='Infra Structure Transformation'
+							pageTitle='InfraStructure Transformation'
 						/>
 						<h1 className='mt-4 ml-n2'>Infrastructure Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
+								<Navbar color='light' light expand='lg' className='topNav'>
+									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
-									</NavbarToggler>
+									</NavbarToggler> */}
+									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mb-n2' />
 									<Collapse isOpen={!collapsed} navbar>
-										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
+										<Nav className='bgWhite d-flex my-2 my-md-4 w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
@@ -76,6 +81,7 @@ const Infrastructure = () => {
 													onClick={() => {
 														toggle('1');
 														toggleTab();
+														onTop();
 													}}>
 													BRIEF
 												</NavLink>
@@ -88,6 +94,7 @@ const Infrastructure = () => {
 													onClick={() => {
 														toggle('2');
 														toggleTab();
+														onTop();
 													}}>
 													GETTING STARTED
 												</NavLink>
@@ -99,8 +106,9 @@ const Infrastructure = () => {
 													onClick={() => {
 														toggle('3');
 														toggleTab();
+														onTop();
 													}}>
-													How can we help you?
+													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -110,6 +118,7 @@ const Infrastructure = () => {
 													onClick={() => {
 														toggle('4');
 														toggleTab();
+														onTop();
 													}}>
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
@@ -121,10 +130,10 @@ const Infrastructure = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h2 className='text-left'>
+											<h3 className='text-left'>
 												Understanding the Software Defined Transformation:{' '}
-											</h2>
-											<p>
+											</h3>
+											<p className='ptext'>
 												Software-defined infrastructure is the definition of technical computing
 												infrastructure entirely under the control of software with no operator
 												or human intervention. It operates independent of any hardware-specific
@@ -172,7 +181,7 @@ const Infrastructure = () => {
 												</table>
 											</div>
 											<div>
-												<p>
+												<p className='ptext'>
 													The Capex and Opex of maintaining large, complex heterogeneous data
 													centers taxing many businesses driven by legacy applications and
 													infrastructure. To maintain competitive edge in a highly dynamic
@@ -195,7 +204,7 @@ const Infrastructure = () => {
 													support of business objectives. Whether that’s controlling costs,
 													supporting growth, driving efficiency or otherwise.{' '}
 												</p>
-												<p>
+												<p className='ptext'>
 													Forward-looking IT organizations are modernizing and consolidating
 													IT infrastructure to meet the increased agility and
 													price-performance requirements of today’s on-demand applications,
@@ -240,10 +249,12 @@ const Infrastructure = () => {
 															<h6>Output</h6>
 														</div> */}
 													</div>
-													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight text-light p-md-3'>
+													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight p-md-3'>
 														<div className='aggregate col'>
 															<div>
-																<h4 className='btn bgOrange py-0'>Aggregate</h4>
+																<h4 className='btn bgOrange py-0 text-light'>
+																	Aggregate
+																</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
@@ -260,7 +271,7 @@ const Infrastructure = () => {
 														</div>
 														<div className='extend col'>
 															<div>
-																<h4 className='btn bgOrange py-0'>Extend</h4>
+																<h4 className='btn bgOrange py-0 text-light'>Extend</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
@@ -277,7 +288,7 @@ const Infrastructure = () => {
 														</div>
 														<div className='devops col'>
 															<div>
-																<h4 className='btn bgOrange py-0'>Devops</h4>
+																<h4 className='btn bgOrange py-0 text-light'>Devops</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
@@ -290,7 +301,9 @@ const Infrastructure = () => {
 														</div>
 														<div className='Operate col'>
 															<div>
-																<h4 className='btn bgOrange py-0'>Operate</h4>
+																<h4 className='btn bgOrange py-0 text-light'>
+																	Operate
+																</h4>
 															</div>
 															<div className='d-flex'>
 																<div>
@@ -390,57 +403,81 @@ const Infrastructure = () => {
 									<TabPane tabId='2'>
 										<div>
 											<div>
-												<h3>Getting Started To Software Defined Transformation</h3>
-												<p>
-													The first step is for CIOs to connect with the business to establish
-													clear lines of communication and to set common goals. Within the IT
-													organization, CIOs must set policies that identify the need to
-													prepare for Software Defined Transformation as a priority for
-													overall IT strategies and create a clearly defined journey with
-													confidence. Synectiks recommend the following steps:
-												</p>
-												{/* <img
-													src={circle}
-													alt=''
-													className='w-hndr box-shadow my-2 my-md-5 mx-auto'
-												/> */}
-												<p>
-													<b className='h4'>Discovery & Assessment</b> - Evaluate the needs to
-													standardize, rationalize and consolidate existing data center assets
-													for greater efficiency and economics, risks involved, and ROI
-													achieved based on real time data and POC’s.
-												</p>
-											</div>
-											<div>
-												<p>
-													<b className='h4'>Strategic Planning & Architecture</b> - Develop a
-													roadmap for upgrading and consolidating infrastructure, and
-													migrating applications and data, substantiated by futuristic
-													architecture.
-												</p>
-												<p>
-													<b className='h4'>Software Defined </b> - Transformation Modernize
-													and Consolidate Data Center and Infrastructure Blueprint and
-													continuously optimize it.
-												</p>
-												<p>
-													<b className='h4'>Operation Automation </b> - Accelerate service
-													agility by unifying administration and simplifying management The
-													very first step discovery and assessment with automated tool will
-													clearly give you insights on the hardware inventory, application
-													dependency and resource consumption. You can make informed decisions
-													to balance workloads and optimize resources and thereby to create a
-													roadmap to guide the journey to Software Defined Organization. This
-													roadmap should map people, process, technology change requirement,
-													consider IT policy and operating model factors; and ultimately
-													produce clear, data-based recommendations with a proposed execution
-													plan to enable Software Defined Transformation to happen. Getting
-													there will require significant upliftment of people skills, impart
-													modern tools and technologies, transforming and migrating
-													applications, integrating and orchestrating environments, automating
-													and monitoring business services, enabling digital processes, and
-													integrating data and security.
-												</p>
+												<h3 className='text-left'>
+													Getting Started To Software Defined Transformation
+												</h3>
+
+												<div className='confidence row my-md-5'>
+													<div className='leftcol col-md-4'>
+														<div className='leftcolOne'>
+															<span className='leftcolOneh3' />
+															<h3 className='text-left'>Discovery & Assessment</h3>
+															<p className='text-left'>
+																Evaluate the needs to standardize, rationalize and
+																consolidate existing data center assets for greater
+																efficiency and economics, risks involved, and ROI
+																achieved based on real time data and POC’s.
+															</p>
+														</div>
+														<div className='leftcolTwo'>
+															<span className='leftcolTwoh3' />
+															<h3 className='text-left'>
+																Strategic Planning & Architecture
+															</h3>
+															<p className='text-left'>
+																Develop a roadmap for upgrading and consolidating
+																infrastructure, and migrating applications and data,
+																substantiated by futuristic architecture.
+															</p>
+														</div>
+													</div>
+													<div className='centercol col-md-4'>
+														<img
+															src={circle}
+															alt='Getting Started To Software Defined Transformation'
+															className='w-100'
+														/>
+													</div>
+													<div className='rightcol col-md-4 '>
+														<div className='rightcolOne'>
+															<span className='rightcolOneh3' />
+															<h3 className=''>Software Defined</h3>
+															<p className=''>
+																Transformation Modernize and Consolidate Data Center and
+																Infrastructure Blueprint and continuously optimize it.
+															</p>
+														</div>
+														<div className='rightcolTwo'>
+															<span className='rightcolTwoh3' />
+															<h3 className=''>Operation Automation</h3>
+															<p className=''>
+																Accelerate service agility by unifying administration
+																and simplifying management The very first step discovery
+																and assessment with automated tool will clearly give you
+																insights on the hardware inventory, application
+																dependency and resource consumption.
+															</p>
+														</div>
+													</div>
+												</div>
+												<div className='bottomCol'>
+													{/* <span className='bottomColh3' /> */}
+													{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
+													<p className=''>
+														You can make informed decisions to balance workloads and
+														optimize resources and thereby to create a roadmap to guide the
+														journey to Software Defined Organization. This roadmap should
+														map people, process, technology change requirement, consider IT
+														policy and operating model factors; and ultimately produce
+														clear, data-based recommendations with a proposed execution plan
+														to enable Software Defined Transformation to happen. Getting
+														there will require significant upliftment of people skills,
+														impart modern tools and technologies, transforming and migrating
+														applications, integrating and orchestrating environments,
+														automating and monitoring business services, enabling digital
+														processes, and integrating data and security.
+													</p>
+												</div>
 											</div>
 										</div>
 									</TabPane>
@@ -448,7 +485,7 @@ const Infrastructure = () => {
 										<div>
 											<div>
 												{/* <h3>How Synectiks can help?</h3> */}
-												<p>
+												<p className='ptext'>
 													The Modernize and Consolidate Data Center and Infrastructure
 													Platform Blueprint available in Synectiks Xformation platform helps
 													businesses roll out new IT systems and practices to meet the
@@ -458,8 +495,8 @@ const Infrastructure = () => {
 													and improve automation, so you can respond to the needs of the
 													business more efficiently, quickly and cost-effectively.
 												</p>
-												<h3> Synectiks Xformation platform can help you:</h3>
-												<ul>
+												<h3> Synectiks Xformation platform can help you</h3>
+												<ul className='ptext'>
 													<li>
 														Reduce CAPEX and OPEX by consolidating infrastructure, pooling
 														resources and eliminating stranded capacity
@@ -477,23 +514,22 @@ const Infrastructure = () => {
 														processing data at the network edge
 													</li>
 												</ul>
-												<p>
+												<p className='ptext'>
 													The Synectiks Xformation Platform delivers cloud speed, scalability
 													and economics. Synectiks can enable your enterprise journey to
 													Software Defined Transformation , regardless of your starting point.
 												</p>
 											</div>
-											<div className='my-2 my-md-4'>
-												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center my-2 my-md-4'>
-													<div className='col-md-2'>
-														<img
-															src={ds}
-															alt='Discovery and Assessment'
-															className='imgDes disima'
-														/>
-													</div>
-													<div className='pl-3'>
-														<p>
+
+											<div className='row'>
+												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
+													Synectiks can enable your enterprise journey to DevOps, regardless
+													of your starting point.
+												</h4>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
+													<img src={ds} alt='Discover and Assessment' className='w16 mr-5' />
+													<div>
+														<p className='ptexticon'>
 															Synectiks offers a variety of advisory services to assist
 															with your modernization and consolidation Journey. Our
 															discovery and assessment services can help you draft a
@@ -505,19 +541,13 @@ const Infrastructure = () => {
 														</p>
 													</div>
 												</div>
-												<div className='d-flex flex-column flex-md-row justify-content-around align-items-center '>
-													<div className='col-md-2'>
-														<img
-															src={ts}
-															alt='Transformation Services'
-															className='imgDesc disimal'
-														/>
-													</div>
-													<div className='pl-3'>
-														<p>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img src={ts} alt='Transformation Services' className='w16 mr-5' />
+													<div className=''>
+														<p className='ptexticon'>
 															You can access our open Xformation platform products and
 															resource teams to adopt technology and cultural changes
-															quickly — from Software Defined Transformation, People skill
+															quickly from Software Defined Transformation, People skill
 															and process transformation and integration to cloud-native
 															apps development. We have vast experience helping businesses
 															plan, design, optimize and manage the transitions necessary
@@ -540,7 +570,7 @@ const Infrastructure = () => {
 												</p>
 
 												<h4 className='text-center'>
-													Top 9 Reasons to select Synectiks as your Hybrid Cloud Partner:
+													Top 9 Reasons to select Synectiks as your Software Defined Partner:
 												</h4>
 											</div>
 											<div className='my-2 my-md-4'>
@@ -674,6 +704,63 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Infrastructure;
 
 const HybridWrapper = styled.div`{
+	.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:block;
+}
+	.bottomColh3{
+		width: 10%;
+		height: 10px;
+		background: #CB2029;
+		display: block;
+		margin: 0 auto;
+	}
+	.leftcolOneh3{
+		width: 30%;
+		height: 10px;
+		background: #67873C;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.leftcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #81376C;
+		display: block;
+		margin-bottom: 20px;}
+
+	.rightcolOneh3{
+		content:'';
+		width: 30%;
+		height: 10px;
+		background: #2C75A2;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.rightcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #E96D25;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.rightcolOne,.rightcolTwo{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		h3,p{
+			text-align: left;
+		}
+	}
+
+	.leftcol, .rightcol {
+		display: flex;
+		justify-content space-between;
+		flex-flow: column;
+	}
 	.w-hndr{
 		width: 100%;
 	}
@@ -683,8 +770,12 @@ const HybridWrapper = styled.div`{
 .disima{
  width: 100%;
 }
-
-
+.ptext{
+	text-align: left;
+}
+.ptexticon{
+	text-align: center;
+}
 	padding: 5rem 1rem;
 ul{
 	font-size: 1rem;
@@ -702,11 +793,19 @@ ul{
     text-align: center;
     color: var(--synectiksWhite);
 }
+
 .topNav{
 	position: fixed;
-	top: 100px;
 	z-index: 9999;
+	top: 97px;
+  background: white;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  padding: 0 0 20px 0;
+  left: 0px;
 }
+
 .navbar-light .navbar-toggler {
 	color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
@@ -751,18 +850,15 @@ h1,h2,h3,h4,h5,h5,p,ul{
   left:0;
   z-index: 99;
 }
-a#bgL,
+a#bgL{
+	padding: 0.5rem 1rem;
+}
 a#bgLL,
 a#bgLLL {
-	padding: 0.5rem 1.5rem;
     font-size: 12px;
     height: auto;
-    /* background: white !important; */
-    text-align: left;
-    /* display:flex;
-    justify-content: space-between; */
 }
-a#bgL.active,
+
 a#bgLL.active,
 a#bgLLL.active  {
 	border-bottom: 5px solid #007cc2;
@@ -770,7 +866,7 @@ a#bgLLL.active  {
     text-align: left;
     color: var(--synectiksWhite);
     border-radius: 0px;
-    /* padding: 0.5rem 1.5rem; */
+    padding: 0.5rem 1rem;
     font-size: 12px;
     height: auto;
     width:100%;
@@ -837,17 +933,92 @@ ul.tabList.nav.flex-column {
 
 	width: 25%;
 }
+  .w16 {
+	width: 50%;
+}
+
+	.w-85 {
+	position: relative;
+	top:30px;
+	left: 0px;
+  border: 1px solid var(--textColor);
+  background: var(--synectiksWhite);
+  justify-content: flex-start;
+			}
 }
 
 @media (min-width: 576px){
+	a#bgL.active:hover{
+		color: white;
+	}
+
+	.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:none;
+}
+		.bottomColh3{
+		width: 10%;
+		height: 10px;
+		background: #CB2029;
+		display: block;
+		margin: 0 auto;
+	}
+	.leftcolOneh3{
+		width: 30%;
+		height: 10px;
+		background: #67873C;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.leftcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #81376C;
+		display: block;
+		margin-bottom: 20px;}
+
+	.rightcolOneh3{
+		content:'';
+		width: 30%;
+		height: 10px;
+		background: #2C75A2;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.rightcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #E96D25;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.rightcolOne,.rightcolTwo{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		h3,p{
+			text-align: right;
+		}
+	}
+
+	.leftcol, .rightcol {
+		display: flex;
+		justify-content space-between;
+		flex-flow: column;
+	}
 	.w-hndr{
 		width: 75%;
 	}
-	padding: 3rem 4rem;
-		a#bgL{
-	padding-left: 6rem;
-	padding-right: 6rem;
+	.ptext{
+	text-align: justify;
 }
+.ptexticon{
+	text-align: justify;
+}
+	padding: 3rem 4rem;
 .disimal{
  width: 60%;
 }
@@ -855,15 +1026,6 @@ ul.tabList.nav.flex-column {
  width: 75%;
 }
 
-a#bgL.active {
-  border-bottom: 5px solid #007cc2;
-  position: relative;
-	/* padding-left: 1rem !important; */
-	background: bgBlue !important;
-  font-size: 14px;
-  padding-left:6rem;
-  padding-right:6rem;
-}
 	.topNav{
 	position: relative;
 	top: 0px;
@@ -888,6 +1050,9 @@ a#bgL.active {
   .w15 {
 	width: 8%;
 }
+  .w16 {
+	width: 8%;
+}
   	.whbd7 {
 		width: 7%;
 	}
@@ -901,10 +1066,13 @@ a#bgL.active {
     width: 16%;
   }
 .w-85{
-  width: 87vw;
+  /* width: 87vw; */
+	position: relative;
+	top: 0px;
+	left: 0%;
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
-    justify-content: space-between;
+    justify-content: flex-start;
 }
   ul.nav.flex-column {
 		position: relative;
@@ -930,22 +1098,29 @@ a#bgL.active {
     cursor: pointer;
   }
  .tab-content>.active{
-        padding:0rem 0rem;
+        padding:1rem 0rem 0rem 0rem;
       }
 	}
-  a#bgL,a#bgLL,a#bgLLL{
+		/* a#bgL{
+		padding: 0.5rem 3rem;
+		cursor: pointer;
+		font-size: 14px;
+	} */
+a#bgL,
+	a#bgLL,a#bgLLL{
     background: bgBlue !important;
     text-align: left;
      font-size: 14px;
      cursor: pointer;
+		  padding: 0.5rem 3rem;
   }
 
 a#bgL.active {
   border-bottom: 5px solid #007cc2;
   position: relative;
-	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
   font-size: 14px;
+	 padding: 0.5rem 3rem;
 }
 a#bgLL.active {
   border-bottom: 5px solid #007cc2;
@@ -953,6 +1128,7 @@ a#bgLL.active {
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
    font-size: 14px;
+	  padding: 0.5rem 3rem;
 }
 a#bgLLL.active {
   position: relative;
@@ -960,6 +1136,7 @@ a#bgLLL.active {
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
    font-size: 14px;
+	  padding: 0.5rem 3rem;
 }
 
    .logo-btn {

@@ -8,10 +8,11 @@ import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import styled from 'styled-components';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import mcit from '../../images/modernization/mcit.png';
 import swd from '../../images/modernization/swd.png';
 import awsd from '../../images/modernization/awsd.png';
-import circle from '../../images/modernization/circle.png';
+import circle from '../../images/modernization/Application Transformation.svg';
 import ds from '../../images/ApplicationTransformation/Continuous Delivery.png';
 import ts from '../../images/Hybrid/Transformation Services.png';
 import EX from '../../images/Hybrid/Experience.png';
@@ -49,11 +50,13 @@ const ApplicationTransformation = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-
+const onTop = () => {
+	window.scroll(0,0);
+}
 	return (
 		<Layout>
 			<ApplicationTransformationWrapper>
-				<SEO title='Infra Structure Transformation' description='Infra Sturcture page' />
+				<SEO title='Application Transformation' description='Application Transformation page' />
 				<div className=''>
 					<div className=' text-justify' />
 					<div>
@@ -67,20 +70,21 @@ const ApplicationTransformation = () => {
 						</div>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12 px-1'>
-								<Navbar color='light' light expand='lg' className='topNav ml-n2'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
+								<Navbar color='light' light expand='lg' className='topNav'>
+									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
-									</NavbarToggler>
+									</NavbarToggler> */}
+									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mb-n2' />
 									<Collapse isOpen={!collapsed} navbar>
-										<Nav className='bgWhite d-flex my-2 my-md-4 mx-auto w-85'>
+										<Nav className='bgWhite d-flex my-2 my-md-4 w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
 													className={classnames({ active: activeTab === '1' })}
 													onClick={() => {
 														toggle('1');
-														toggleTab();
+												toggleTab(); onTop();
 													}}>
 													BRIEF
 												</NavLink>
@@ -92,7 +96,7 @@ const ApplicationTransformation = () => {
 													className={classnames({ active: activeTab === '2' })}
 													onClick={() => {
 														toggle('2');
-														toggleTab();
+												toggleTab(); onTop();
 													}}>
 													GETTING STARTED
 												</NavLink>
@@ -103,9 +107,9 @@ const ApplicationTransformation = () => {
 													className={classnames({ active: activeTab === '3' })}
 													onClick={() => {
 														toggle('3');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
-													How can we help you?
+													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -114,7 +118,7 @@ const ApplicationTransformation = () => {
 													className={classnames({ active: activeTab === '4' })}
 													onClick={() => {
 														toggle('4');
-														toggleTab();
+													toggleTab(); onTop();
 													}}>
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
@@ -126,15 +130,15 @@ const ApplicationTransformation = () => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h2 className='text-left'>
+											<h3 className='text-left'>
 												Understanding the Application Transformation:{' '}
-											</h2>
-											<p>
+											</h3>
+											<p className='ptext'>
 												Inside almost every leading business today there’s a world-class
 												software business – driving innovation, agility and outstanding customer
 												experiences from within.
 											</p>
-											<p>
+											<p className='ptext'>
 												To accommodate the increasing complexity of functional requirements, and
 												velocity , volume and variety that current business demands , IT
 												applications need to embrace a variety of architectural patterns.
@@ -142,7 +146,7 @@ const ApplicationTransformation = () => {
 												applications and client-server to service oriented architecture (SOA)
 												and microservices.
 											</p>
-											<p>
+											<p className='ptext'>
 												Our application transformation services close the gap between what your
 												current applications can do and what the cloud native services and
 												microservices architecture makes them capable of. That could be greater
@@ -150,7 +154,7 @@ const ApplicationTransformation = () => {
 												entirely new capabilities that create lasting advantage, generate value
 												and drive better outcomes for your customers and your employees.
 											</p>
-											<p>
+											<p className='ptext'>
 												Synectiks has a proven approach to help you migrate, modernize, and
 												digitally transform your business. We can help you modernize your
 												application portfolio based on APIs, microservices, containers and
@@ -158,7 +162,7 @@ const ApplicationTransformation = () => {
 												cost. Application Transformation services provides customer the ability
 												to optimize the existing application as follows:
 											</p>
-											<ul>
+											<ul className='ptext'>
 												<li>
 													By migrating existing workloads and apps to any cloud—public or
 													private or hybrid cloud.
@@ -182,7 +186,7 @@ const ApplicationTransformation = () => {
 												</li>
 												<li>By having built in security from the start.</li>
 											</ul>
-											<p>
+											<p className='ptext'>
 												Synectiks open product driven solutions delivery approach coupled with
 												many large scale application transformation experience delivers the
 												speed, innovations and quality and better economics that your current
@@ -193,85 +197,116 @@ const ApplicationTransformation = () => {
 									<TabPane tabId='2'>
 										<div>
 											<div>
-												<h3>Getting Started To Application Transformation</h3>
-												<p>
-													The first step is for CIOs to connect with the business to establish
-													clear lines of communication and to set common goals. Within the IT
-													organization, CIOs must set policies that identify the need to
-													prepare for Application modernization as a priority for overall IT
-													strategies and create a clearly defined journey with confidence.
-													Synectiks recommend the following steps:
-												</p>
-												{/* <img
-													src={circle}
-													alt=''
-													className='w-hndr mx-auto my-2 my-md-5 box-shadow'
-												/> */}
-												{/*
-												<div className='circleBox'>
-													<div className='boxLeft'>
-														<h3>Dicovery</h3>
+												<div>
+													<div>
+														<div>
+															<h3 className=''>
+																Getting Started To Application Transformation
+															</h3>
+															<p className=''>
+																The first step is for CIOs to connect with the business
+																to establish clear lines of communication and to set
+																common goals. Within the IT organization, CIOs must set
+																policies that identify the need to prepare for
+																Application modernization as a priority for overall IT
+																strategies and create a clearly defined journey with
+																confidence. Synectiks recommend the following steps
+															</p>
+														</div>
+														<div className='confidence row my-md-5'>
+															<div className='leftcol col-md-4'>
+																<div className='leftcolOne'>
+																	<span className='leftcolOneh3' />
+																	<h3 className='text-left'>
+																		Discovery & Assessment
+																	</h3>
+																	<p className='text-left'>
+																		Evaluate the needs to modernize, standardize,
+																		rationalize and consolidate existing
+																		applications for greater efficiency and
+																		economics, risks involved, and ROI achieved
+																		based on real time data and POC’s.
+																	</p>
+																</div>
+																<div className='leftcolTwo'>
+																	<span className='leftcolTwoh3' />
+																	<h3 className='text-left'>
+																		Strategic Planning & Architecture
+																	</h3>
+																	<p className='text-left'>
+																		Develop a roadmap for modernizing and migrating
+																		applications and data, substantiated by
+																		futuristic architecture.
+																	</p>
+																</div>
+															</div>
+															<div className='centercol col-md-4'>
+																<img
+																	src={circle}
+																	alt='Getting Started To Software Defined Transformation'
+																	className='w-100'
+																/>
+															</div>
+															<div className='rightcol col-md-4 '>
+																<div className='rightcolOne'>
+																	<span className='rightcolOneh3' />
+																	<h3 className=''>Application Transformation</h3>
+																	<p className=''>
+																		Modernize and Consolidate existing applications
+																		based on target architecture and continuously
+																		optimize it.
+																	</p>
+																</div>
+																<div className='rightcolTwo'>
+																	<span className='rightcolTwoh3' />
+																	<h3 className=''>
+																		People / Process / Technology Alignment
+																	</h3>
+																	<p className=''>
+																		Elevate people skills, operation automation and
+																		service agility to support modernized
+																		applications. Our approach is to use a
+																		combination of the latest industry tools,
+																		processes, experience and best practices
+																		providing the best solutions to our customers.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div className='bottomCol'>
+															{/* <span className='bottomColh3' /> */}
+															{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
+															<p className=''>
+																The teams perform a quick requirements analysis and GAP
+																analysis to understand the current setup and provide
+																solutions to optimize your applications, storage,
+																databases and overall infrastructure. The very first
+																step discovery and assessment will clearly give you
+																insights on the improved SLA’s and cost savings. You can
+																make informed decisions to balance workloads and
+																optimize resources and thereby to create a roadmap to
+																guide the journey to Application modernization. This
+																roadmap should map people, process, technology change
+																requirement, consider IT policy and operating model
+																factors; and ultimately produce clear, data-based
+																recommendations with a proposed execution plan to enable
+																Application Transformation to happen. Getting there will
+																require significant upliftment of people skills, impart
+																modern tools and technologies, transforming and
+																migrating applications, integrating and orchestrating
+																environments, automating and monitoring business
+																services, enabling digital processes, and integrating
+																data and security.
+															</p>
+														</div>
 													</div>
-													<div className='boxLeft'>
-														<h3>Iteration</h3>
-													</div>
-													<div className='boxCenter'>
-														<h1>two box</h1>
-													</div>
-													<div className='boxRight'>
-														<h3>Assessment</h3>
-													</div>
-													<div className='boxRight'>
-														<h3>Visualization</h3>
-													</div>
-												</div> */}
-												<p>
-													<b className='h4'>Discovery & Assessment</b> – Evaluate the needs to
-													modernize, standardize, rationalize and consolidate existing
-													applications for greater efficiency and economics, risks involved,
-													and ROI achieved based on real time data and POC’s.
-												</p>
-											</div>
-											<div>
-												<p>
-													<b className='h4'>Strategic Planning & Architecture</b> – Develop a
-													roadmap for modernizing and migrating applications and data,
-													substantiated by futuristic architecture.
-												</p>
-												<p>
-													<b className='h4'>Application Transformation - </b>
-													Modernize and Consolidate existing applications based on target
-													architecture and continuously optimize it.
-												</p>
-												<p>
-													<b className='h4'>People / Process / Technology Alignment</b>
-													Elevate people skills, operation automation and service agility to
-													support modernized applications. Our approach is to use a
-													combination of the latest industry tools, processes, experience and
-													best practices providing the best solutions to our customers. The
-													teams perform a quick requirements analysis and GAP analysis to
-													understand the current setup and provide solutions to optimize your
-													applications, storage, databases and overall infrastructure. The
-													very first step discovery and assessment will clearly give you
-													insights on the improved SLA’s and cost savings. You can make
-													informed decisions to balance workloads and optimize resources and
-													thereby to create a roadmap to guide the journey to Application
-													modernization. This roadmap should map people, process, technology
-													change requirement, consider IT policy and operating model factors;
-													and ultimately produce clear, data-based recommendations with a
-													proposed execution plan to enable Application Transformation to
-													happen. Getting there will require significant upliftment of people
-													skills, impart modern tools and technologies, transforming and
-													migrating applications, integrating and orchestrating environments,
-													automating and monitoring business services, enabling digital
-													processes, and integrating data and security.
-												</p>
+												</div>
 											</div>
 										</div>
 									</TabPane>
 									<TabPane tabId='3'>
 										<div>
-											<p>
+											<p className='ptext'>
 												Synectiks Application transformation services provides customer the
 												ability to optimize the existing application as follows:{' '}
 											</p>
@@ -290,17 +325,17 @@ const ApplicationTransformation = () => {
 													cloud in private address space ensuring security and performance.
 												</li>
 											</ul>
-											<p>
+											<p className='ptext'>
 												Synectiks accelerated migration and modernization services allows
 												customer to leverage the data processing benefits of cloud sooner,
 												providing cost-savings and solving scalability issues. Following are the
-												values delivered:
+												values delivered
 											</p>
 											<div>
-												<h2>Legacy Application Migration:</h2>
-												<p>
-													Two ways to extract value from legacy apps, as below:<br />{' '}
-													<b> Business Logic:</b> Creating microservices that become APIs
+												<h2>Legacy Application Migration</h2>
+												<p className='ptext'>
+													Two ways to extract value from legacy apps, as below<br />
+													<b> Business Logic</b> Creating microservices that become APIs
 													enabling business user to assemble various functionalities and truly
 													become a API driven organization with a API centric application
 													architecture. This allows the organization to become a low-code
@@ -312,7 +347,7 @@ const ApplicationTransformation = () => {
 											</div>
 											<div>
 												<h3>Accelerated Migration</h3>
-												<p>
+												<p className='ptext'>
 													With synectiks Xformation platform, companies can take advantage of
 													an API-driven cloud architecture and get moving faster. Synectiks
 													open xformation platform offers App/ Delivery/ Automation blocks
@@ -325,7 +360,7 @@ const ApplicationTransformation = () => {
 											</div>
 											<div>
 												<h3>Delivery Pipeline</h3>
-												<p>
+												<p className='ptext'>
 													Synectiks xformation platform comes with industry standard CI/CD
 													blueprint infrastructure provisioning and validation, container
 													driven services delivery across clouds, functional testing,
@@ -354,7 +389,7 @@ const ApplicationTransformation = () => {
 											</div>
 											<div>
 												<h3>Fast Data & Bigdata Analytics</h3>
-												<p>
+												<p className='ptext'>
 													Synectiks analytic service offering allow customers to create data
 													lake for their unstructured, semi structured and structured data and
 													derive real time visibility across their business processes by doing
@@ -374,7 +409,7 @@ const ApplicationTransformation = () => {
 									<TabPane tabId='4'>
 										<div>
 											{/* <h3>Synectiks Differentiator</h3> */}
-											<p>
+											<p className='ptext'>
 												We go beyond creating a strategy: Synectiks helps you plan it, do it,
 												run it and manage it.<br /> Synectiks reduce the application
 												transformation effort at least by 50% by using open Application blocks
@@ -432,7 +467,7 @@ const ApplicationTransformation = () => {
 															<img src={EXP} alt='E2E Expertise' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>E2E Expertise</h4>
 														</div>
-														<p>
+														<p className='ptext'>
 															You will get E2E expertise for new application development
 															or refactoring existing product under a single Roof.
 														</p>
@@ -522,15 +557,91 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default ApplicationTransformation;
 
 const ApplicationTransformationWrapper = styled.div`
+	.w-85 {
+	position: relative;
+	top:15px;
+	left: 0px;
+  border: 1px solid var(--textColor);
+  background: var(--synectiksWhite);
+  justify-content: flex-start;
+			}
+.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:block;
+}
+	.topNav {
+		position: fixed;
+	z-index: 9999;
+	top: 97px;
+  background: white;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  padding: 0 0 20px 0;
+  left: 0%;
+	}
+
+	.bottomColh3{
+		width: 10%;
+		height: 10px;
+		background: #CB2029;
+		display: block;
+		margin: 0 auto;
+	}
+	.leftcolOneh3{
+		width: 30%;
+		height: 10px;
+		background: #67873C;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.leftcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #81376C;
+		display: block;
+		margin-bottom: 20px;}
+
+	.rightcolOneh3{
+		content:'';
+		width: 30%;
+		height: 10px;
+		background: #2C75A2;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.rightcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #E96D25;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.rightcolOne,.rightcolTwo{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		h3,p{
+			text-align: left;
+		}
+	}
+
+	.leftcol, .rightcol {
+		display: flex;
+		justify-content space-between;
+		flex-flow: column;
+	}
 padding: 5rem 1rem;
 .w-hndr{
 	width: 100%
 }
-.topNav{
-	position: fixed;
-	top: 100px;
-	z-index: 9999;
-}
+	.ptext{
+		text-align: left;
+	}
+
 .navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
@@ -666,17 +777,86 @@ ul.tabList.nav.flex-column {
 
 
 @media (min-width: 576px){
+.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
+		display:none;
+}
+		.bottomColh3{
+		width: 10%;
+		height: 10px;
+		background: #CB2029;
+		display: block;
+		margin: 0 auto;
+	}
+	.leftcolOneh3{
+		width: 30%;
+		height: 10px;
+		background: #67873C;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.leftcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #81376C;
+		display: block;
+		margin-bottom: 20px;}
+
+	.rightcolOneh3{
+		content:'';
+		width: 30%;
+		height: 10px;
+		background: #2C75A2;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.rightcolTwoh3{
+		width: 30%;
+		height: 10px;
+		background: #E96D25;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.rightcolOne,.rightcolTwo{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		h3,p{
+			text-align: right;
+		}
+	}
+
+	.leftcol, .rightcol {
+		display: flex;
+		justify-content space-between;
+		flex-flow: column;
+	}
+	.ptext{
+		text-align: justify;
+	}
 	padding:3rem 4rem;
 	.w-hndr{
 	width: 75%
 }
 	a#bgL{
-	padding-left: 6rem;
-	padding-right: 6rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+	a#bgLL{
+	padding-left:3rem;
+	padding-right: 3rem;
+}
+	a#bgLLL{
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 	.topNav{
 	position: relative;
 	top: 0px;
+	left: -3%;
 	z-index: 999;
 }
 	.one {
@@ -711,10 +891,13 @@ ul.tabList.nav.flex-column {
     width: 16%;
   }
 .w-85{
-  width: 87vw;
+  /* width: 87vw; */
+	position: relative;
+	top: 0px;
+	left: 3%;
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
-    justify-content: space-between;
+    justify-content: flex-start;
 }
   ul.nav.flex-column {
 		position: relative;
@@ -749,10 +932,7 @@ ul.tabList.nav.flex-column {
      font-size: 14px;
      cursor: pointer;
   }
-  	a#bgL{
-	padding-left: 6rem;
-	padding-right: 6rem;
-}
+
 
 a#bgL.active {
   border-bottom: 5px solid #007cc2;
@@ -760,8 +940,8 @@ a#bgL.active {
 	/* padding-left: 1rem !important; */
 	background: bgBlue !important;
   font-size: 14px;
-  padding-left:6rem;
-  padding-right:6rem;
+  /* padding-left:6rem;
+  padding-right:6rem; */
 }
 a#bgLL.active {
   border-bottom: 5px solid #007cc2;

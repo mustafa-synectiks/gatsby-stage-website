@@ -31,10 +31,10 @@ const Header = () => {
 							<Nav className='ml-auto'>
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
 									{/* <NavDropdown.Item href='/whysynectiks/index.html'>Why Synectiks</NavDropdown.Item> */}
-									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
 									<NavDropdown.Item href='/areaexpertise/index.html'>
 										Area Of Expertise
 									</NavDropdown.Item>
+									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/devopstransformation/index.html'>
@@ -64,7 +64,8 @@ const Header = () => {
 								</NavDropdown>
 								<NavDropdown title='Company' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/aboutus/index.html'>About Us</NavDropdown.Item>
-									<NavDropdown.Item href='/careers/index.html'>Career</NavDropdown.Item>
+									<NavDropdown.Item href='/careers/index.html'>Careers</NavDropdown.Item>
+									<NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item>
 								</NavDropdown>
 							</Nav>
 						</Navbar.Collapse>

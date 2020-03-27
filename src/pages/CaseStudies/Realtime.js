@@ -15,7 +15,7 @@ const Realtime = () => {
 				<SEO title='Realtime' />
 				<div className='realTime_wrap'>
 					<CaseBreadCrumbs title='Home' casetitle='What We Do' subtitle='Case Studies' pageTitle='Realtime' />
-					<h2>Realtime Monitoring</h2>
+					<h1>Realtime Monitoring</h1>
 					<div className='realTime_image'>
 						<h3>Reliance Jio Casestudy</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
@@ -151,8 +151,14 @@ export default Realtime;
 const RealtimeWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left;
+		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify;
+		}
 	}
 `;

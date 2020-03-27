@@ -6,8 +6,8 @@ import styled from 'styled-components';
 const Topbar = () => {
 	return (
 		<TopBarWrapper>
-			<a href='/Contact.html' className='mb-2 mb-md-0'>
-				CONTACT
+			<a href='/Contact-us.html' className='mb-2 mb-md-0'>
+				CONTACT US
 			</a>
 			<h6 className='bl br'>
 				QUESTIONS?
@@ -88,6 +88,7 @@ const TopBarWrapper = styled.div`
 			cursor: none;
 			pointer-event: none;
 			text-decoration: none;
+			webkit-text-fill-color: white;
 		}
 		.ts {
 			display: flex;

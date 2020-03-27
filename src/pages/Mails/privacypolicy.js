@@ -14,7 +14,7 @@ export class Privacypolicy extends React.Component {
 
 				<div className='text-black w-100 px-4 text-justify'>
 					<p className='w-100 pt-3'>
-						<h2>SYNECTIKS - Privacy Policy</h2>
+						<h1>SYNECTIKS - Privacy Policy</h1>
 					</p>
 					{/* <p>Revision Date: November 22, 2018</p> */}
 					<p>

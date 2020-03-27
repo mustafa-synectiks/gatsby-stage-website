@@ -93,9 +93,11 @@ const Layout = ({ children }) => {
 					{
 						breakpoint: 600,
 						settings: {
-							slidesToShow: 2,
+							slidesToShow: 1,
 							slidesToScroll: 1,
-							infinite: true
+							centerMode: false,
+							infinite: true,
+							mobileFirst: true
 						}
 					},
 					{
@@ -103,6 +105,7 @@ const Layout = ({ children }) => {
 						settings: {
 							centerMode: false,
 							slidesToShow: 1,
+							mobileFirst: true,
 							slidesToScroll: 1,
 							infinite: true,
 							autoplay: false,
@@ -243,8 +246,8 @@ const Layout = ({ children }) => {
 			function createCarousel() {
 				$('#owl-demo').owlCarousel({
 					// $elem.owlCarousel({
-					slideSpeed: 500,
-					paginationSpeed: 500,
+					slideSpeed: 400,
+					paginationSpeed: 400,
 					singleItem: true,
 					afterInit: progressBar,
 					afterMove: moved,
@@ -290,8 +293,12 @@ const Layout = ({ children }) => {
 				$bar = $('<div>', {
 					id: 'bar'
 				});
+				// var apend = $progressBar.append($bar).appendTo($elem);
 				// $progbar = document.getElementById('progbar');
+				// $progressBar.append($bar).insertAfter($elem);
 				$progressBar.append($bar).appendTo($elem);
+				// $progressBar.insertAdjacentElement('afterbegin', apend);
+				// 'beforebegin', tempDiv;
 				// }
 			}
 
@@ -339,6 +346,9 @@ const Layout = ({ children }) => {
 			// });
 		});
 		// OWL V1.3
+		$('.navbar-collapse a').click(function() {
+			$('.navbar-collapse').collapse('hide');
+		});
 	});
 	return (
 		<div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import PoweredBySynectiks from '../../images/PoweredBySynectiks.png';
-import thc1 from '../../images/HomePage/1.png';
-import hx2 from '../../images/HomePage/2.png';
-import hx3 from '../../images/HomePage/3.png';
-import hx4 from '../../images/HomePage/4.png';
-import hx5 from '../../images/HomePage/5.png';
-import hx6 from '../../images/HomePage/6.png';
-import hx7 from '../../images/HomePage/22.png';
+import thc1 from '../../images/areofxpertise/Microservices.svg';
+import hx2 from '../../images/areofxpertise/Area Of Expertise.svg';
+import hx3 from '../../images/areofxpertise/Cloud.svg';
+import hx4 from '../../images/areofxpertise/Monitoring.svg';
+import hx5 from '../../images/areofxpertise/Analytics.svg';
+import hx6 from '../../images/areofxpertise/RAD.svg';
+import hx7 from '../../images/areofxpertise/DevOps.svg';
 import classnames from 'classnames';
 import { Accordion, Card } from 'react-bootstrap/Accordion';
 const Tabs = () => {
@@ -109,34 +109,40 @@ const Tabs = () => {
 			<div id='accordion' role='tablist'>
 				<div className='card'>
 					<div className='card-header' role='tab' id='headingOne'>
-						<a data-toggle='collapse' href='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>
+						<a data-toggle='collapse' href='#collapseOne' aria-expanded='false' aria-controls='collapseOne'>
 							Open Platform
 						</a>
 					</div>
 
 					<div
 						id='collapseOne'
-						className='collapse show'
+						className='collapse'
 						role='tabpanel'
 						aria-labelledby='headingOne'
 						data-parent='#accordion'>
 						<div className='card-body pl-4 pr-3'>
-							<div className=''>
+							<div className='p-2 p-md-4'>
 								<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
 							</div>
-							<p className='p-3'>
-								What is Xformation? It's a platform that provides peace of mind, governance, efficiency
-								and control of multi-cloud environments. Xformation helps you to migrate and modernize
-								your legacy business, take advantage of cloud and microservice architecture and thereby
-								accelerate your transformation journey @50% time & cost.  Its primary goals are:
-								Accelerated Cloud Adoption Multi-cloud container orchestration App-centric Optimization
-								Continuous Delivery / Continuous Compliance / Continuous Automation. Automated
-								Performance Monitoring and Cost Control
+							<h2>What is Xformation?</h2>
+							<p>
+								It's a platform that provides peace of mind, governance, efficiency and control of
+								multi-cloud environments. Xformation helps you to migrate and modernize your legacy
+								business, take advantage of cloud and microservice architecture and thereby accelerate
+								your transformation journey @50% time & cost.  <br />{' '}
+								<span className='h5 b'>Its primary goals are:</span>
 							</p>
+							<ul className='showul'>
+								<li>Accelerated Cloud Adoption</li>
+								<li>Multi-cloud container orchestration</li>
+								<li>App-centric Optimization </li>
+								<li>Continuous Delivery / Compliance / Automation.</li>
+								<li> Automated Performance Monitoring and Cost Control</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<div className='card'>
+				<div className='card my-4'>
 					<div className='card-header' role='tab' id='headingTwo'>
 						<a
 							className='collapsed'
@@ -166,10 +172,10 @@ const Tabs = () => {
 							</div>
 							<div className='row'>
 								<div className='col-sm-12  p-1'>
-									<div className='py-1 h-100'>
-										<div className='border-bottom'>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0'>
 											<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
-											<p className='text-justify f-14 px-2 px-md-4'>
+											<p className='ptext  f-14 px-2 px-md-4'>
 												Make sure that every bit of your hardware environment is directly
 												supporting your business objectives. Transition from a hardware centric
 												to a software Defined organisation make huge difference in CapEx and
@@ -179,10 +185,10 @@ const Tabs = () => {
 									</div>
 								</div>
 								<div className='col-sm-12  p-1'>
-									<div className='py-3 h-100'>
-										<div className=''>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0'>
 											<h3 className='text-center heading-h3'>Application Transformation</h3>
-											<p className='text-justify f-14 px-4'>
+											<p className='ptext  f-14 px-4'>
 												Applications that power your enterprise are key to generating a strong
 												competitive advantage. Bring innovation, agility and outstanding
 												customer experience through moderm architectures and cloud first
@@ -193,24 +199,22 @@ const Tabs = () => {
 								</div>
 
 								<div className='col-sm-12  p-1'>
-									<div className='py-1 h-100'>
-										<div className='border-bottom'>
+									<div className='py-1'>
+										<div className='border-bottom my-n1 my-md-n0'>
 											<h3 className='text-center heading-h3'>DevOps Transformation</h3>
-											<p className='text-justify f-14 px-1 px-md-4'>
+											<p className='ptext  f-14 px-1 px-md-4'>
 												Adopting a DevOps culture starts by transforming your people, tech and
 												processes. Accelerate your DevOps adaption by using our open Automation
 												platform and skilled resources.
-												<br />
-												<br />
 											</p>
 										</div>
 									</div>
 								</div>
 								<div className='col-sm-12  p-1'>
-									<div className='py-1 h-100'>
-										<div className='border-bottom'>
+									<div className='py-1'>
+										<div className=''>
 											<h3 className='text-center heading-h3'>Data Transformation</h3>
-											<p className='text-justify f-14 px-2 px-md-4'>
+											<p className='ptext  f-14 px-2 px-md-4'>
 												Consolidate your unstructured, semi structure and strtucture data and
 												get maximum business insights & real time with minimal TCO of data
 												management and its governance.
@@ -261,7 +265,8 @@ const Tabs = () => {
 										</li>
 										<li>
 											<div>
-												<h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3>
+												<img src={hx2} alt='' className='ctc-cent' />
+												{/* <h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3> */}
 											</div>
 										</li>
 										<li>
@@ -281,6 +286,7 @@ const Tabs = () => {
 											</div>
 										</li>
 									</ul>
+									<h6 className='text-center mt-5'>Click on each Hexagon to know more!</h6>
 								</div>
 								<div className='col order-0 text-center my-4'>
 									<h2 className=' text-center'>Expertise</h2>
@@ -305,6 +311,7 @@ const Tabs = () => {
 									<div className='hide' id='thc3'>
 										<h2 className=' text-center text-light'>Cloud</h2>
 										<p className=' text-center'>
+											Accelerating cloud adoption and software defined transformation through open
 											Accelerating cloud adoption and software defined transformation through open
 											tools and frameworks.
 										</p>
@@ -346,7 +353,7 @@ const TabsWrapper = styled.section`
 	#accordion {
 		display: block;
 		.card-header {
-			margin: 8px auto;
+			margin: 8px 0px;
 			/* box-shadow: 2px 3px 5px -1px lightgrey; */
 			background-color: rgba(0, 0, 0, 0);
 			border-bottom: 0px solid rgba(0, 0, 0, 0);
@@ -359,26 +366,42 @@ const TabsWrapper = styled.section`
 		}
 		#headingOne {
 			a {
-				padding: 1rem 5rem;
+				padding: 1rem;
 				background: var(--synectiksOrange);
 				color: var(--synectiksWhite);
 				text-decoration: none;
+				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+				position: relative;
+				display: block;
+					text-align: center;
+    margin: -4% 0;
 			}
 		}
 		#headingTwo {
 			a {
-				padding: 1rem 5rem;
+				padding: 1rem;
 				background: var(--synectiksRed);
 				color: var(--synectiksWhite);
 				text-decoration: none;
+				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+				position: relative;
+				display: block;
+					text-align: center;
+    margin: -4% 0;
 			}
 		}
 		#headingThree {
 			a {
-				padding: 1rem 6.7rem;
+				padding: 1rem;
 				background: var(--synectiksBlue);
 				color: var(--synectiksWhite);
 				text-decoration: none;
+				box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.3);
+				position: relative;
+				display: block;
+				text-align: center;
+    margin: -4% 0;
+}
 			}
 		}
 	}
@@ -406,8 +429,11 @@ const TabsWrapper = styled.section`
 	}
 	.ctc-cent {
 		transform: rotate(-30deg);
-		margin: 1.8rem 0px;
-		font-size: 14px;
+			width: 100%;
+			position: relative;
+			left: 0%;
+			top: 8%;
+			margin: 0 auto;
 	}
 	/* Hexagons */
 	.show {
@@ -485,54 +511,60 @@ const TabsWrapper = styled.section`
 	.thx1 > img {
 		left: -100%;
 		right: -100%;
-		width: 70%;
+		top: 12%;
+			width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
 	.thx2 > img {
 		left: -100%;
 		right: -100%;
-		width: 70%;
+		top: 12%;
+			width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
 	.thx3 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		top: 12%;
+		width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
 	.thx4 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		top: 12%;
+		width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
 	.thx5 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		top: 12%;
+		width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
 	.thx6 > img {
 		left: -100%;
 		right: -100%;
-		width: 58%;
+		top: 12%;
+		width: 100%;
 		height: auto;
-		margin: 1.2rem 6.5rem;
+		margin: 0 auto;
 		transform: rotate(-30deg);
 		cursor: pointer;
 	}
@@ -659,10 +691,18 @@ const TabsWrapper = styled.section`
 		#accordion {
 			display: block;
 		}
+		.ct-cent {
+			transform: rotate(-30deg);
+			margin: 0 auto;
+		}
 	}
 	@media (min-width: 768px) {
 		#accordion {
 			display: none;
+		}
+		.ct-cent {
+			transform: rotate(-30deg);
+			margin: 0 auto;
 		}
 	}
 `;

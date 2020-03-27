@@ -33,7 +33,7 @@ export class Footer extends React.Component {
 							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
 						</a>
 						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-						<p className='text-light mt-0 mt-md-3'>
+						<p className='text-light mt-0 mt-md-3 ptext'>
 							{/* We are a team of highly qualified and experienced professionals from various fields who are
 							determined and dedicated to delivering world class professional services to our patrons. */}
 							As an Open Product based Cloud Solution provider, we help enterprises take advantage of
@@ -41,16 +41,33 @@ export class Footer extends React.Component {
 							that they outperform their peers by becoming truly disruptive.
 						</p>
 					</div>
-					<div className='w-35vw mx-0 ml-md-5 pl-1 pl-md-5'>
+					<div className='w-30vw mx-0 mx-md-5  px-2 px-md-0'>
+						<h3 className='text-light text-capitalize'>USA</h3>
+						<p className='text-light mt-0 mt-md-3'>300 Alexander Park Drive, Suite 215,</p>
+						<p className='text-light'> Princeton, NJ 08540 </p>
+						<span className='text-light webText'>Sales: +1 (609) 608-0429 X 102 </span>
+						<br />
+						<span className='text-light webText'>Office: +1 (609) 608-0429</span>
+						{/* <h3 className='text-light text-capitalize py-3'>privacy &copy; 2020</h3> */}
+					</div>
+					<div className='w-30vw mx-0 ml-md-3  px-2 px-md-0'>
+						<h3 className='text-light text-capitalize'>INDIA</h3>
+						<p className='text-light mt-0 mt-md-3'>
+							Ground Floor, SK Feature, <br />Plot 105 & 106, Lumbini Layout,
+						</p>
+						<p className='text-light'> Hitech City Main Rd, Gachibowli, Hyderabad 500032 </p>
+						<p className='text-light webText'>Office: +91 (40) 4857 4411</p>
+					</div>
+					<div className='w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0'>
 						<div className='ml-0 ml-md-5'>
-							<h3 className='text-light text-capitalize'>
+							<h4 className='text-light text-capitalize mb-3'>
 								<a
 									href='https://synectiks.com/privacypolicy/index.html'
-									className='text-light text-underline h2'>
+									className='text-light text-underline h4'>
 									<u>Privacy Policy</u>
 								</a>
-							</h3>
-							<h3 className='text-light  text-capitalize'>Social</h3>
+							</h4>
+							<h3 className='text-light  text-capitalize mt-2 mt-md-3'>Social</h3>
 							<div className='d-flex flex-column'>
 								{Social.map((item, index) => {
 									return (
@@ -66,24 +83,8 @@ export class Footer extends React.Component {
 									);
 								})}
 							</div>
+							<h3 className='text-light text-capitalize py-3'>privacy &copy; 2020</h3>
 						</div>
-					</div>
-					<div className='w-30vw mx-0 ml-md-3  px-2 px-md-0'>
-						<h3 className='text-light text-capitalize'>Address</h3>
-						{/* <a href='/'>
-							<img src={logo} alt='' className='w-65 mt-0 mt-md-2' />
-						</a> */}
-						{/* <h4 className='text-light text-capitalize'>U.S.A</h4> */}
-						<p className='text-light mt-0 mt-md-3'>300 Alexander Park Drive, Suite 215,</p>
-						<p className='text-light'> Princeton, NJ 08540 </p>
-						<p className='text-light'>Sales: +1 (609) 608-0429 X 102 </p>
-						<p className='text-light'>Office: +1 (609) 608-0429</p>
-						<h3 className='text-light text-capitalize py-3'>
-							privacy &copy; 2020
-							{/* <a href='https://synectiks.com/privacypolicy/index.html' className='text-light'>
-								privacy &copy; 2019
-							</a> */}
-						</h3>
 					</div>
 				</div>
 			</FooterWrapper>
@@ -94,6 +95,12 @@ export class Footer extends React.Component {
 export default Footer;
 
 const FooterWrapper = styled.div`
+	.webText {
+		webkit-text-fill-color: white;
+	}
+	.ptext {
+		text-align: left;
+	}
 	.w-65 {
 		width: 50%;
 	}
@@ -120,6 +127,9 @@ const FooterWrapper = styled.div`
 		font-size: 10px;
 	}
 	@media (min-width: 576px) {
+		.ptext {
+			text-align: justify;
+		}
 		.fsize08 {
 			font-size: 10px;
 		}
@@ -130,7 +140,7 @@ const FooterWrapper = styled.div`
 			width: 40vw;
 		}
 		.w-30vw {
-			width: 30vw;
+			width: 35vw;
 		}
 		background: var(--textColor);
 		a {

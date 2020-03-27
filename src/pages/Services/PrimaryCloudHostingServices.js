@@ -44,7 +44,9 @@ const PrimaryCloudHosting = () => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-
+const onTop = () => {
+	window.scroll(0,0);
+}
 	return (
 		<Layout>
 			<SEO title='Private Cloud Hosting Services' />
@@ -52,21 +54,20 @@ const PrimaryCloudHosting = () => {
 				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>
 						<BreadCrumbs title='Home' subtitle='Services' pageTitle='Private Cloud Hosting Services' />
+						<h1>Private Cloud Hosting</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
 						<Navbar color='light' light expand='md' className='topNav ml-n2'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
-								<Nav
-									navbar
-									className='bgWhite d-flex justify-content-between my-4 mx-auto ml-md-5 w-85'>
+								<Nav navbar className='bgWhite d-flex justify-content-between my-4 w-85'>
 									<NavItem className='one'>
 										<NavLink
 											id='bgL'
 											className={classnames({ active: activeTab === '1' })}
 											onClick={() => {
 												toggle('1');
-												toggleTab();
+											toggleTab(); onTop();
 											}}>
 											CLOUD HOSTED INSFRASTRUCTURE
 										</NavLink>
@@ -77,7 +78,7 @@ const PrimaryCloudHosting = () => {
 											className={classnames({ active: activeTab === '2' })}
 											onClick={() => {
 												toggle('2');
-												toggleTab();
+											toggleTab(); onTop();
 											}}>
 											CLOUD BACKUP
 										</NavLink>
@@ -85,15 +86,15 @@ const PrimaryCloudHosting = () => {
 								</Nav>
 							</Collapse>
 						</Navbar>
-						<div className='px-4 px-md-0 mb-3 col-md-12'>
+						<div className='px-2 px-md-0 mb-3 col-md-12'>
 							<TabContent activeTab={activeTab}>
 								<TabPane tabId='1'>
 									<div className='bg-lightgrey mb-0 pb-3'>
 										<div className=''>
-											<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex text-justify'>
+											<div className='text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 												<div className='w-100  pl-3 pr-3 text-black'>
 													<h3 className='my-1 my-md-3'> Cloud Hosted Infrastructure</h3>
-													<p className='lineHeight-24 text-justify mt-md-4 mt-1'>
+													<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 														Synectiks Secure Cloud Hosted Services supports a variety of
 														workloads & Disaster Recovery with a high degree of control,
 														security and simplicity. Support your mission-critical
@@ -106,7 +107,7 @@ const PrimaryCloudHosting = () => {
 												</div>
 												<div className='w-100 ml-md-auto' data-aos='fade-up'>
 													<img
-														class='w-75 ml-md-auto'
+														class='w75 ml-md-auto'
 														src={HostedInfra}
 														width='100%'
 														alt='Hosted Infrastructure'
@@ -118,7 +119,7 @@ const PrimaryCloudHosting = () => {
 												<img class='w-12 mr-0 mr-md-5' src={SCR} alt='Security' />
 												<div>
 													<h5>Security</h5>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Never trade-off security when moving to cloud, Synectiks Secure
 														Cloud incorporates Multifactor authentication, SSL-VPN,
 														Data-At-Rest Encryption, Antivirus, Anti-Malware, Vulnerability
@@ -135,7 +136,7 @@ const PrimaryCloudHosting = () => {
 												/>
 												<div>
 													<h5>Availability & Reliable Performance</h5>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Built with best of the bread technologies, our infrastructure
 														can support any workload with reliable and consistent
 														performance.
@@ -146,7 +147,7 @@ const PrimaryCloudHosting = () => {
 												<img class='w-12 mr-0 mr-md-5' src={AP} alt='Affordable Pricing' />
 												<div>
 													<h5>Affordable Pricing</h5>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														we believe we have competitive affordable pricing when compared
 														all major Vendors/public clouds currently available in the
 														Market. <br />Contact us at&nbsp;
@@ -161,7 +162,7 @@ const PrimaryCloudHosting = () => {
 												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
 												<div>
 													<h4>Self-service portal</h4>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Manage and control all your company Hosted infrastructure with
 														easy self-service portal.
 													</p>
@@ -175,7 +176,7 @@ const PrimaryCloudHosting = () => {
 												/>
 												<div>
 													<h5>Multi Secure Geo Locations</h5>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Different Secure Geo locations for customers to choose.
 														Different power grid locations to make sure your infrastructure
 														is available when disaster strikes a location.
@@ -186,7 +187,7 @@ const PrimaryCloudHosting = () => {
 												<img class='w-12 mr-0 mr-md-5' src={HW} alt='Host any workload' />
 												<div>
 													<h5>Host any workload</h5>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Whether your mission-critical applications powered by Linux,
 														Windows Server, all Major Applications and Databases, Synectiks
 														offers support for these and other workloads, including your
@@ -204,14 +205,14 @@ const PrimaryCloudHosting = () => {
 												/>
 												<div>
 													<h4>Storage Types available</h4>
-													<p className='mt-2'>S3, NAS, SAN, Cloud file & share.</p>
+													<p className='mt-2 pcenter'>S3, NAS, SAN, Cloud file & share.</p>
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-0 mr-md-5' src={MS} alt='' />
 												<div>
 													<h4>Migration Services</h4>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														we have expert professional team to migrate your current on
 														premises workloads to cloud.
 													</p>
@@ -221,7 +222,7 @@ const PrimaryCloudHosting = () => {
 												<img class='w-12 mr-0 mr-md-5' src={SPT} alt='' />
 												<div>
 													<h4>Support</h4>
-													<p className='mt-2'>
+													<p className='mt-2 pcenter'>
 														Follow the Sun model - 24/7/365 days support from both onshore
 														and offshore Teams.
 													</p>
@@ -232,12 +233,12 @@ const PrimaryCloudHosting = () => {
 								</TabPane>
 								<TabPane tabId='2'>
 									<div>
-										<div className='bg-lightgrey text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex text-justify'>
+										<div className='bg-lightgrey text-black w-100  pb-md-4 pb-2 flex-column flex-md-row d-flex'>
 											<div className='w-100  pl-3 pr-3 text-black'>
 												<h3 className='my-1 my-md-3'>
 													Secure, Reliable & Very Affordable Cloud Backup Solution
 												</h3>
-												<p className='lineHeight-24 text-justify mt-md-4 mt-1'>
+												<p className='lineHeight-24 ptext mt-md-4 mt-1'>
 													At Synectiks, Data Protection is at the topmost priority and is
 													monitored with utmost vigilance. Synectiks Cloud Backup with front
 													line innovation reinforcement arrangements offers a simple, secure
@@ -251,7 +252,7 @@ const PrimaryCloudHosting = () => {
 											</div>
 											<div className='w-100 ml-md-auto' data-aos='fade-up'>
 												<img
-													class='w-75 ml-md-auto box-shadow'
+													class='w75 ml-md-auto box-shadow'
 													src={cloudImaged}
 													width='100%'
 													alt='Hosted Infrastructure'
@@ -259,155 +260,120 @@ const PrimaryCloudHosting = () => {
 											</div>
 										</div>
 
-										<h2 className='py-4'>Why choose SYNECTIKS Cloud Backup Solution? </h2>
-										<div className='row'>
-											<div className='d-flex flex-column align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img src={security} alt='security' className='w-7' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4> Security: </h4>
-													<p>
-														Make sure your vendor offers strong security, including
-														encryption. It doesn't matter how well you have protected your
-														primary systems if your backup systems present an easy target
-														for attackers. Any cloud backup service you use needs to have
-														the same level of security that your primary systems have
-													</p>
-													<ul>
-														<li>
-															END to END Encryption: In-Flight and Data-At-Rest Encryption
-														</li>
-														<li>AI-based ransomware protection </li>
-													</ul>
-												</div>
+										<h4>Why choose SYNECTIKS Cloud Backup Solution?</h4>
+										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-start mt-1 mt-md-3'>
+											<img class='w-12 mr-0 mr-md-5' src={security} alt='Security' />
+											<div>
+												<h5>Security</h5>
+												<p className='pcenter'>
+													Make sure your vendor offers strong security, including
+													encryption. It doesn't matter how well you have protected your
+													primary systems if your backup systems present an easy target for
+													attackers. Any cloud backup service you use needs to have the same
+													level of security that your primary systems have.
+												</p>
+												<ul>
+													<li>
+														END to END Encryption: In-Flight and Data-At-Rest Encryption
+													</li>
+													<li>AI-based ransomware protection </li>
+												</ul>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img src={backupStorage} alt='security' className='w-7' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Different Modes of Backup Storage available: </h4>
-													<p>S3, NAS, SAN, ABGP.</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-center mt-3'>
+											<img
+												class='w-12 mr-0 mr-md-5'
+												src={backupStorage}
+												alt='Availability & Reliable Performance'
+											/>
+											<div>
+												<h5>Different Modes of Backup Storage available</h5>
+												<p className='pcenter'>S3, NAS, SAN, ABGP.</p>
 											</div>
 										</div>
-
-										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img src={price} alt='Affordable Price' className='w-7' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Affordable Price:</h4>
-													<p>
-														Cloud Backup storage as low as $0.015/GB per Month (only charged
-														for the storage consumed).
-													</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={price} alt='Affordable Pricing' />
+											<div>
+												<h4>Affordable Price</h4>
+												<p className='pcenter'>
+													Cloud Backup storage as low as $0.015/GB per Month (only charged for
+													the storage consumed).
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
-												<div className='w-2vh'>
-													<img src={self} alt='support' className='w-6' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Self-service portal:</h4>
-													<p>
-														Manage and control all your company Backups with easy
-														self-service portal
-													</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
+											<div>
+												<h4>Self-service portal</h4>
+												<p className='mt-2 pcenter'>
+													Manage and control all your company Backups with easy self-service
+													portal.
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img
-														src={efficientStorage}
-														alt='Efficient Backup storage usage'
-														className='w-8'
-													/>
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Efficient Backup Storage Usage:</h4>{' '}
-													<p>
-														De-duplication and Compression technologies optimize backup
-														storage capacity.
-													</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
+											<img
+												class='w-12 mr-0 mr-md-5'
+												src={efficientStorage}
+												alt='Multi Secure Geo Locations'
+											/>
+											<div>
+												<h5>Efficient Backup Storage Usage</h5>
+												<p className='mt-2 pcenter'>
+													De-duplication and Compression technologies optimize backup storage
+													capacity.
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img
-														src={geolocation}
-														alt='Multi Secure Geo Location'
-														className='w-7'
-													/>
-												</div>
-												<div className='w-8vh  ml-n5'>
-													<h4>Multi Secure Geo Locations: </h4>
-													<p>
-														We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
-														which implies that you should always have three copies of your
-														data, that you keep it backed up on at least two different types
-														of storage media, and that you have at least one copy of the
-														data offsite.
-														<br />
-														Synectiks have different backup Secure Geo locations with
-														different power grids to make sure your data is available when
-														disaster strike in one location.
-													</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-end mt-1 mt-md-5'>
+											<img
+												class='w-12 mr-0 mr-md-5'
+												src={geolocation}
+												alt='Multi Secure Geo Locations'
+											/>
+											<div>
+												<h4>Multi Secure Geo Locations</h4>
+												<p className='pcenter'>
+													We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
+													which implies that you should always have three copies of your data,
+													that you keep it backed up on at least two different types of
+													storage media, and that you have at least one copy of the data
+													offsite.
+													<br />
+													Synectiks have different backup Secure Geo locations with different
+													power grids to make sure your data is available when disaster strike
+													in one location.
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column  align-items-center flex-md-row py-2 py-md-4 px-5 px-md-0'>
-												<div className='w-2vh'>
-													<img
-														src={protection}
-														alt='protection for any workload'
-														className='w-6'
-													/>
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Protection for any workload:</h4>
-													<p>
-														Protect Windows, Linux, Macs, eight major hypervisors, iOS,
-														Android, Complete Office 365 Protection, all Major Applications
-														and Databases.
-													</p>
-												</div>
+										<div className='d-flex  flex-column flex-md-row align-items-center  align-items-md-start  mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={protection} alt='Host any workload' />
+											<div>
+												<h4>Protection for any workload</h4>
+												<p className='pcenter'>
+													Protect Windows, Linux, Macs, eight major hypervisors, iOS, Android,
+													Complete Office 365 Protection, all Major Applications and
+													Databases.
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
-												<div className='w-2vh'>
-													<img src={support} alt='support' className='w-6' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Support:</h4>
-													<p>
-														Follow the Sun model - 24/7/365 days support from both onshore
-														and offshore Teams
-													</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={support} alt='' />
+											<div>
+												<h4>Support</h4>
+												<p className='pcenter'>
+													Follow the Sun model - 24/7/365 days support from both onshore and
+													offshore Teams.
+												</p>
 											</div>
 										</div>
-										<div className='row'>
-											<div className='d-flex flex-column align-items-center  flex-md-row py-2 px-5 px-md-0 py-md-4'>
-												<div className='w-2vh'>
-													<img src={restore} alt='support' className='w-6' />
-												</div>
-												<div className='w-8vh ml-n5'>
-													<h4>Fast Recovery:</h4>
-													<p>Recover the Data faster, transfer rate up to 1GB/sec</p>
-												</div>
+										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
+											<img class='w-12 mr-0 mr-md-5' src={restore} alt='' />
+											<div>
+												<h4>Fast Recovery</h4>
+												<p className='pcenter'>
+													Recover the Data faster, transfer rate up to 1GB/sec.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -438,24 +404,35 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default PrimaryCloudHosting;
 
 const PrimaryCloudHostingWrapper = styled.div`
+	.w75 {
+		width: 100%;
+	}
+	.pcenter {
+		text-align: center;
+	}
 	padding: 5rem 1rem;
 	.topNav {
 		position: fixed;
-		top: 100px;
+		top: 97px;
 		z-index: 1;
+		background: white;
+		width: 100%;
+		left: 2%;
 	}
 	.navbar-light .navbar-toggler {
 		color: rgba(0, 0, 0, .5);
 		border-color: rgba(0, 0, 0, 0);
 	}
-
+	ul,
 	h1,
 	h2,
-	h4,
-	h6,
-	p {
+	h6 {
 		text-align: left;
 	}
+	.ptext {
+		text-align: left !important;
+	}
+	h4,
 	h5,
 	h3 {
 		text-align: center;
@@ -565,12 +542,24 @@ const PrimaryCloudHostingWrapper = styled.div`
 	.w-12 {
 		width: 25%;
 	}
+
 	@media (min-width: 576px) {
+		.w75 {
+			width: 85%;
+		}
+		.pcenter {
+			text-align: left;
+		}
+		.ptext {
+			text-align: justify !important;
+		}
 		padding: 3rem 4rem;
 		.topNav {
 			position: relative;
 			top: 0px;
 			z-index: 1;
+			width: auto;
+			left: 0px;
 		}
 		.one {
 			z-index: 99999;
@@ -578,8 +567,14 @@ const PrimaryCloudHostingWrapper = styled.div`
 			width: auto;
 		}
 		.w-12 {
-			width: 10%;
+			width: 7rem;
 		}
+		ul {
+			text-align: justify;
+		}
+		h1,
+		h2,
+		h4,
 		h5,
 		h3 {
 			text-align: left;
@@ -658,8 +653,8 @@ const PrimaryCloudHostingWrapper = styled.div`
 		}
 		.tab-content > .active {
 			padding-top: 0rem;
-			padding-right: 4rem;
-			padding-left: 4rem;
+			/* padding-right: 4rem;
+			padding-left: 4rem; */
 			padding-bottom: 2rem;
 		}
 		a#bgL,

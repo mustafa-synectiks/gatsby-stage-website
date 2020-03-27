@@ -8,6 +8,8 @@ export default function HTML(props) {
 				<meta charSet='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=0.86,
 				minimum-scale=0.9' />
+
+				<meta name='format-detection' content='telephone=no' />
 				<meta httpEquiv='x-ua-compatible' content='ie=edge' />
 				{/* <!-- Bootstrap --> */}
 				<link rel='stylesheet' href='https://use.typekit.net/ruo4mge.css' />

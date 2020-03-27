@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
 import CloudCommon from '../../images/CloudCommon.png';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import HybridCloud from '../../images/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
+import IconSection from '../../components/Home/IconSection.js';
 import one from '../../images/Devops/Technology Shift.jpg';
 import two from '../../images/Devops/Technology Transformation.svg';
 import speed from '../../images/Devops/speed.svg';
@@ -46,10 +48,12 @@ const DevopsTransformation = ({ location }) => {
 	const toggleTab = () => {
 		setNav((isOpen) => !isOpen);
 	};
-
+const onTop = () => {
+	window.scroll(0,0);
+}
 	return (
 		<Layout>
-			<SEO title='Devops Transformation' />
+			<SEO title='DevOps Transformation' />
 
 			<DevopsTWrapper>
 				<div className='container-fluid '>
@@ -59,15 +63,17 @@ const DevopsTransformation = ({ location }) => {
 							subtitle='Migration / Modernization'
 							pageTitle='Devops Transformation'
 						/>
-						<h1 className='text-center text-md-left mt-md-4'>Devops Transformation</h1>
+						<h1 className='text-left mt-md-4'>Devops Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav ml-n4'>
-									<NavbarToggler onClick={toggleNavbar} className='mr-2' />
+								<Navbar color='light' light expand='lg' className='topNav' id='devopsTabs'>
+									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'> */}
+									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mobile-show mb-n4' />
+									{/* </NavbarToggler> */}
 									<Collapse isOpen={!collapsed} navbar>
-										<Nav className='d-flex my-4  mx-auto w-85'>
+										<Nav className='d-flex my-4  w-85'>
 											<NavItem className='one'>
 												<NavLink
 													id='bgL'
@@ -75,6 +81,7 @@ const DevopsTransformation = ({ location }) => {
 													onClick={() => {
 														toggle('1');
 														toggleTab();
+														onTop();
 													}}>
 													BRIEF
 												</NavLink>
@@ -87,6 +94,7 @@ const DevopsTransformation = ({ location }) => {
 													onClick={() => {
 														toggle('2');
 														toggleTab();
+														onTop();
 													}}>
 													GETTING STARTED
 												</NavLink>
@@ -98,8 +106,9 @@ const DevopsTransformation = ({ location }) => {
 													onClick={() => {
 														toggle('3');
 														toggleTab();
+														onTop();
 													}}>
-													How can we help you?
+													HOW SYNECTIKS CAN HELP YOU?
 												</NavLink>
 											</NavItem>
 											<NavItem className='one'>
@@ -109,6 +118,7 @@ const DevopsTransformation = ({ location }) => {
 													onClick={() => {
 														toggle('4');
 														toggleTab();
+														onTop();
 													}}>
 													SYNECTIKS DIFFERENTIATOR
 												</NavLink>
@@ -120,6 +130,7 @@ const DevopsTransformation = ({ location }) => {
 													onClick={() => {
 														toggle('5');
 														toggleTab();
+														onTop();
 													}}>
 													KEY BENEFITS
 												</NavLink>
@@ -131,10 +142,8 @@ const DevopsTransformation = ({ location }) => {
 								<TabContent activeTab={activeTab}>
 									<TabPane tabId='1'>
 										<div>
-											<h2 className='text-center text-md-left'>
-												Understanding the DevOps Transformation:
-											</h2>
-											<p>
+											<h3 className='text--left'>Understanding the DevOps Transformation</h3>
+											<p className='ptext'>
 												DevOps is the combination of cultural philosophies, practices, and tools
 												that increases an organization’s ability to deliver applications and
 												services at high velocity: evolving and improving products at a faster
@@ -148,7 +157,7 @@ const DevopsTransformation = ({ location }) => {
 											<h3>Why DevOps Transformation matter in Today’s Business?</h3>
 											<div className='my-3 d-flex flex-row justify-content-around'>
 												{/* <img src={AI} alt="" className="w-50" /> */}
-												<p className=''>
+												<p className='ptext'>
 													Competition, new products and continuing pressure to monetize older
 													services severely taxing many businesses driven by legacy
 													applications and infrastructure. To maintain the competitive edge in
@@ -189,8 +198,8 @@ const DevopsTransformation = ({ location }) => {
 									</TabPane>
 									<TabPane tabId='2'>
 										<div>
-											<h2 className=''>Getting Started To DevOps</h2>
-											<p>
+											<h3 className=''>Getting Started To DevOps</h3>
+											<p className='ptext'>
 												The first step is for CIOs to connect with the business to establish
 												clear lines of communication and to set common goals. Within the IT
 												organization, CIOs must set policies that identify the need to prepare
@@ -206,34 +215,11 @@ const DevopsTransformation = ({ location }) => {
 										</div>
 										<div className='text-center '>
 											<h2 className='my-5'>Where do you find your current DevOps Maturity?</h2>
-											<div className='w-75 mx-auto'>
+											<div className='w-100 mx-auto'>
 												<img src={six} alt='' className='boxshdd w-100 mobile-show' />
 											</div>
 
 											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4 mobile-hide'>
-												{/* <div className='d-flex flex-column justify-content-around'>
-													<div className='w-11 mt-5'>
-														<h5 className='Dulture  py-5 border-ra'>
-															Culture <br />Skill
-														</h5>
-													</div>
-													<div className=' w-11 mt-5'>
-														<h5 className='DesignArc  py-5 border-ra'>
-															Design <br />Architecture
-														</h5>
-													</div>
-													<div className=' w-11 mt-5'>
-														<h5 className='Duild  py-5 border-ra'>
-															Build <br />Deploy
-														</h5>
-													</div>
-													<div className=' w-11 mt-5'>
-														<h5 className='Dest  py-5 border-ra'>Test</h5>
-													</div>
-													<div className=' w-11  mt-5'>
-														<h5 className='Doperate py-5 border-ra'>Operation</h5>
-													</div>
-												</div> */}
 												<div className='w-11'>
 													<h4 className='py-3'> </h4>
 													<div className='Dulture ulht d-flex align-items-center  border-ra mb-2'>
@@ -536,8 +522,8 @@ const DevopsTransformation = ({ location }) => {
 												<div className='row py-3'>
 													<div className='container-fluid'>
 														<div className='d-flex flex-column flex-md-row justify-content-around'>
-															<div className='col-md-3 p-0 mx-3 border boxshd'>
-																<div className='count bgOrange'>
+															<div className='col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd'>
+																<div className='count bgOrange py-2 py-md-2'>
 																	<div className='counters brclr'>1</div>
 																	<h6 className='text-center mt-2'>
 																		Day 1<br /> Project kick-off
@@ -555,9 +541,8 @@ const DevopsTransformation = ({ location }) => {
 																	</li>
 																</ul>
 															</div>
-
-															<div className='col-md-3 p-0 mx-3 border boxshd'>
-																<div className='count bgRed text-light'>
+															<div className='col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd'>
+																<div className='count bgRed text-light py-2 py-md-2'>
 																	<div className='counters'>2</div>
 																	<h6 className='text-center mt-2'>
 																		Day 2 <br />Assessment
@@ -566,7 +551,7 @@ const DevopsTransformation = ({ location }) => {
 																<h6 className='mt-4'>Questions Based Audit</h6>
 																<ul className='pt-3 text-left  f14'>
 																	<li>A DevOps briefing for all interviews</li>
-																	<li>Audit on following key focus areas:</li>
+																	<li>Audit on following key focus areas</li>
 
 																	<li>Organization</li>
 																	<li>Automation</li>
@@ -575,8 +560,8 @@ const DevopsTransformation = ({ location }) => {
 																	</li>
 																</ul>
 															</div>
-															<div className='col-md-3 p-0 mx-3 border boxshd'>
-																<div className='count hx3  text-light'>
+															<div className='col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd'>
+																<div className='count hx3 text-light py-2 py-md-2'>
 																	<div className='counters'>3</div>
 																	<h6 className='text-center mt-2'>
 																		Day 3 <br />Report preparation
@@ -590,8 +575,8 @@ const DevopsTransformation = ({ location }) => {
 																	</li>
 																</ul>
 															</div>
-															<div className='col-md-3 p-0 mx-3 border boxshd'>
-																<div className='count bgBlue text-light'>
+															<div className='col-md-3 p-0 mx-3 my-3 my-md-0 border boxshd'>
+																<div className='count bgBlue text-light py-2 py-md-2'>
 																	<div className='counters'>4</div>
 																	<h6 className='text-center mt-2'>
 																		Day 4 <br />Presentation
@@ -602,7 +587,7 @@ const DevopsTransformation = ({ location }) => {
 																	<li>
 																		Presentation of the report and plans to
 																		stakeholders, following plans are delivered.
-																	</li>{' '}
+																	</li>
 																	<li>Phase wise maturity development</li>
 																	<li>Tools & Technology Adoption</li>
 																	<li>Skill Development</li>
@@ -614,9 +599,9 @@ const DevopsTransformation = ({ location }) => {
 											</div>
 											<h5 className='py-2 py-md-5'>
 												For your self-assessment, please refer &nbsp;
-												<a href=''>DevOps assessment Questionnaires:</a>
+												<a href=''>DevOps assessment Questionnaires</a>
 											</h5>
-											<p className='text-justify'>
+											<p className='ptext'>
 												The standard maturity model-based assessment will clearly give you
 												insights on the current and future capability to create a business case
 												for improvement in each capability and thereby helping you to create a
@@ -635,7 +620,7 @@ const DevopsTransformation = ({ location }) => {
 									<TabPane tabId='3'>
 										<div>
 											<h4> How Synectiks can help?</h4>
-											<p>
+											<p className='ptext'>
 												Enterprises looking for modernization of their legacy stack and operate
 												in more fast and competitive way, can use the Synectiks open platform
 												and specialized resources to bring the cultural transformation and
@@ -644,8 +629,8 @@ const DevopsTransformation = ({ location }) => {
 												coupled with our experience and expertise accelerate the project
 												execution @50% time & cost.
 											</p>
-											<h4>Technology Transformation -</h4>
-											<p>
+											<h4>Technology Transformation</h4>
+											<p className='ptext'>
 												“Over 85% of enterprise IT organizations will commit to multi-cloud
 												architectures by 2018, IDC. End User experience, Security, Agility,
 												Flexibility, Consumption Based pricing are most important five
@@ -655,7 +640,7 @@ const DevopsTransformation = ({ location }) => {
 												transformation journey @50% time & cost.”
 											</p>
 
-											<p>
+											<p className='ptext'>
 												Synectiks build the most powerful open product that helps customers to
 												provision resources across clouds in complete software defined way and
 												deliver modern container and FAAS driven workloads on it. The platform
@@ -664,8 +649,8 @@ const DevopsTransformation = ({ location }) => {
 												the workload runs seamlessly with highest security, performance,
 												scalability and availability.
 											</p>
-											<h4>Cultural Transformation –</h4>
-											<p>
+											<h4>Cultural Transformation </h4>
+											<p className='ptext'>
 												Need? A culture with less Roles , much E2E responsibilities Innovate /
 												Deliver Fast High Speed Feedback and Superfast Delivery Lower Capex,
 												Opex
@@ -676,7 +661,7 @@ const DevopsTransformation = ({ location }) => {
 												Assess DevOps maturity and address Gaps.
 											</p>
 
-											<p>
+											<p className='ptext'>
 												Ensuring that you stay ahead of race and keep disrupting by adopting
 												most modern technologies intelligently and effectively, requires an Open
 												Product Based Professional Services partner who understand your
@@ -737,7 +722,7 @@ const DevopsTransformation = ({ location }) => {
 													<img
 														src={four}
 														alt='Discover and Assessment'
-														className='w15 mr-4'
+														className='w15 mr-5'
 													/>
 													<div>
 														<h5>Discover & Assessment</h5>
@@ -753,7 +738,7 @@ const DevopsTransformation = ({ location }) => {
 												</div>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={five} alt='Transformation Services' className='w9 mr-5' />
-													<div>
+													<div className='ml-4'>
 														<h5>Transformation Services</h5>
 														<p>
 															You can access our open Xformation platform products and
@@ -780,7 +765,7 @@ const DevopsTransformation = ({ location }) => {
 											</p>
 
 											<h4 className='text-center my-5'>
-												Top 8 Reasons to select Synectiks as your Hybrid Cloud Partner:
+												Top 8 Reasons to select Synectiks as your DevOps Partner:
 											</h4>
 										</div>
 
@@ -827,7 +812,7 @@ const DevopsTransformation = ({ location }) => {
 													<img src={Engagement} alt='Engagement Model' className='tw m-0' />
 													<h5 className='mt-3'>Engagement Model</h5>
 												</div>
-												<p>Our every engagement focused on empowerment – not dependency.</p>
+												<p>Our every engagement focused on empowerment not dependency.</p>
 											</div>
 											<div className='col-sm-4 col-md-4 text-center'>
 												<div className='d-flex align-items-center flex-column'>
@@ -892,57 +877,83 @@ const DevopsTransformation = ({ location }) => {
 									</TabPane>
 									<TabPane tabId='5'>
 										<div>
-											<h3>Key benefits you get by choosing Synectiks as DevOps partner:</h3>
-											<div className='d-flex flex-column flex-md-row justify-content-around align-items-end my-1 my-md-4'>
-												<div className='d-flex flex-column align-items-center'>
-													<img src={maxFac} alt='maximum facility' className='w-37' />
-													<h5>Maximum Flexibility</h5>
+											<h3>Key benefits you get by choosing Synectiks as DevOps partner</h3>
+
+											<div className='row'>
+												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
+													Synectiks can enable your enterprise journey to DevOps, regardless
+													of your starting point.
+												</h4>
+												<div className='d-flex flex-column flex-md-row align-items-center'>
+													<img
+														src={maxFac}
+														alt='Discover and Assessment'
+														className='w9 mr-5'
+													/>
+													<div>
+														<h5>Maximum Flexibility</h5>
+														<p className='mb-1 mb-md-4'>
+															Synectiks xformation platform coupled with its Hybrid cross
+															cloud infrastructure delivers you the maximum flexibility to
+															run/move your high performant workloads across clouds and
+															manage them through a single pane of glass.
+														</p>
+													</div>
 												</div>
-												<p className='mb-1 mb-md-4'>
-													Synectiks xformation platform coupled with its Hybrid cross cloud
-													infrastructure delivers you the maximum flexibility to run/move your
-													high performant workloads across clouds and manage them through a
-													single pane of glass.
-												</p>
-											</div>
-											<div className='d-flex justify-content-around flex-column flex-md-row align-items-end my-1 my-md-4'>
-												<div className='d-flex flex-column align-items-center'>
-													<img src={fastDeliv} alt='fast delivery' className='w-37' />
-													<h5>Faster Delivery</h5>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img
+														src={fastDeliv}
+														alt='Transformation Services'
+														className='w9 mr-5'
+													/>
+													<div className='ml-2'>
+														<h5>Faster Delivery</h5>
+														<p className='mb-1 mb-4'>
+															Synectiks xformation platform enabled infrastructure and
+															application provisioning in complete software defined manner
+															with regulatory compliant architectures. The existing assets
+															and best practices enable project delivery in weeks than
+															months.
+														</p>
+													</div>
 												</div>
-												<p className='ml-0 ml-3 mb-1 mb-4'>
-													Synectiks xformation platform enabled infrastructure and application
-													provisioning in complete software defined manner with regulatory
-													compliant architectures. The existing assets and best practices
-													enable project delivery in weeks than months.
-												</p>
-											</div>
-											<div className='d-flex flex-column flex-md-row justify-content-around align-items-end my-2 my-md-4'>
-												<div className='d-flex flex-column align-items-center'>
-													<img src={betterQual} alt='better quality' className='w-37' />
-													<h5>Better Quality</h5>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img
+														src={betterQual}
+														alt='Transformation Services'
+														className='w7 mr-5'
+													/>
+													<div className='ml-4'>
+														<h5>Better Quality</h5>
+														<p className=' mb-1 mb-4 ptext'>
+															Through Synectiks Xformation platform, you can continuously
+															deliver containerized and serverless microservices verified
+															through stringent quality gates that run across clouds and
+															geographies ensuring 100% availability and maximum
+															performance.
+														</p>
+													</div>
 												</div>
-												<p className='ml-0 ml-md-3 mb-1 mb-4'>
-													Through Synectiks Xformation platform, you can continuously deliver
-													containerized and serverless microservices verified through
-													stringent quality gates that run across clouds and geographies
-													ensuring 100% availability and maximum performance.
-												</p>
-											</div>
-											<div className='d-flex flex-column flex-md-row justify-content-around align-items-center my-2 my-md-4'>
-												<div className='d-flex flex-column align-items-center'>
-													<img src={lowCost} alt='low cost' className='w-50' />
-													<h5>Lower Costs</h5>
+												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
+													<img
+														src={lowCost}
+														alt='Transformation Services'
+														className='w9 mr-5'
+													/>
+													<div className='ml-2'>
+														<h5>Lower Costs</h5>
+														<p className='ptext'>
+															Everything software defined and maximum automation ensure
+															lowest TCO. A successful Digital Modernization project
+															delivers 10X agility, 30X reliability and 10X operational
+															efficiency. At least 50% TCO is reduced because of 80%
+															operation, 50% hardware and 100% license cost savings.
+														</p>
+													</div>
 												</div>
-												<p className='ml-0 ml-md-5'>
-													Everything software defined and maximum automation ensure lowest
-													TCO. A successful Digital Modernization project delivers 10X
-													agility, 30X reliability and 10X operational efficiency. At least
-													50% TCO is reduced because of 80% operation, 50% hardware and 100%
-													license cost savings.
-												</p>
 											</div>
-											<p>
+
+											<p className='ptext'>
 												Now is the time to act. Don’t be disrupted be the disruptor. Let us help
 												you innovate and transform to differentiate with speed and quality.
 												That’s Synectiks. That’s transformation Delivered in open product based
@@ -976,11 +987,18 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default DevopsTransformation;
 
 const DevopsTWrapper = styled.div`
-.mobile-show{
+.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
 	display: block;
 }
+
 .mobile-hide{
 	display: none !important;
+}
+.ptext{
+	text-align: left;
 }
 padding:2rem 1rem;
 	h1 {
@@ -997,8 +1015,6 @@ padding:2rem 1rem;
 	}
 	.w-11 {
 		width: 10rem;
-		/* padding: 4rem 0rem !important;
- height: 35vh; */
 		color: white;
 	}
 	.border-ra {
@@ -1037,10 +1053,10 @@ padding:2rem 1rem;
 	a#bgL,
 	a#bgLL,
 	a#bgLLL {
-		padding: 0.5rem 1.5rem;
+		padding: 0.5rem 2.15rem;
 		font-size: 12px;
 		height: auto;
-		width: 20rem;
+		width: auto;
 		text-align: center;
 	}
 	a#bgL.active,
@@ -1053,7 +1069,7 @@ padding:2rem 1rem;
 		border-radius: 0px;
 		font-size: 12px;
 		height: auto;
-		width: 20rem;
+		width: auto;
 	}
 	.imgHyb {
 		margin-right: 25px !important;
@@ -1113,6 +1129,9 @@ padding:2rem 1rem;
 	.w9 {
 		width: 25%;
 	}
+	.w7{
+		width: 25%;
+	}
 	.counters {
 		width: 4rem;
 		height: 4rem;
@@ -1123,15 +1142,50 @@ padding:2rem 1rem;
 		font-weight: 700;
 		margin: 0 auto;
 	}
+	.w12{
+			width:100%;
+		}
+			.w-85 {
+	position: relative;
+	top:15px;
+	left: 0px;
+  border: 1px solid var(--textColor);
+  background: var(--synectiksWhite);
+  justify-content: flex-start;
+			}
 
 	.topNav {
 		position: fixed;
-		top: 100px;
-		z-index: 9999;
+	z-index: 9999;
+	top: 97px;
+  background: white;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  padding: 0 0 20px 0;
+  left: 0px;
 	}
 	@media (min-width: 576px) {
-		.mobile-show{
+	.svgcolor{
+	font-size: 2rem;
+    color: rgba(0,0,0,0.5);
+		margin: 10px 5px;
 	display: none;
+}
+.w7{
+	width: 7%;
+}
+.w-85{
+  /* width: 87vw; */
+	position: relative;
+	top: 0px;
+	left: 3%;
+    border: 1px solid var(--textColor);
+    background: var(--synectiksWhite);
+    justify-content: flex-start;
+}
+.ptext{
+	text-align: justify;
 }
 .mobile-hide{
 	display: none !important;
@@ -1191,7 +1245,7 @@ padding:2rem 1rem;
 				width: auto;
 			}
 			.w15 {
-				width: 9%;
+				width: 10%;
 			}
 			.w125px {
 				width: 115px;
@@ -1203,7 +1257,7 @@ padding:2rem 1rem;
 				font-size: 14px;
 			}
 			.w9 {
-				width: 7%;
+				width: 8%;
 			}
 			.boxshd {
 				box-shadow: 0px 0px 3px 1px lightgrey;
@@ -1227,12 +1281,7 @@ padding:2rem 1rem;
 				flex-direction: column;
 				padding: 10px 0px;
 			}
-			.w-85 {
-				width: 87vw;
-				border: 1px solid var(--textColor);
-				background: var(--synectiksWhite);
-				justify-content: space-between;
-			}
+
 			ul.nav.flex-column {
 				position: relative;
 				z-index: 99999;
@@ -1262,7 +1311,7 @@ padding:2rem 1rem;
 				cursor: pointer;
 			}
 			.tab-content > .active {
-				padding: 0rem 4rem 2rem 4rem;
+				padding: 1rem 4rem 2rem 4rem;
 			}
 		}
 		a#bgL,
@@ -1289,7 +1338,6 @@ padding:2rem 1rem;
 		a#bgLL.active {
 			border-bottom: 5px solid #007cc2;
 			position: relative;
-
 			background: bgBlue !important;
 			font-size: 14px;
 		}
@@ -1299,9 +1347,6 @@ padding:2rem 1rem;
 			border-bottom: 5px solid #007cc2;
 			background: bgBlue !important;
 			font-size: 14px;
-		}
-			.navbar{
-			padding: 0 !important;
 		}
 
 		.logo-btn {
@@ -1321,6 +1366,9 @@ padding:2rem 1rem;
 		}
 		.hbh1 {
 			font-size: 2.5rem;
+		}
+		.w12{
+			width:12rem;
 		}
 		.hybridFixed {
 			display: block;

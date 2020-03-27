@@ -22,7 +22,7 @@ const Softwaredefined = () => {
 						subtitle='Case Studies'
 						pageTitle='Software Defined'
 					/>
-					<h2>Software Defined</h2>
+					<h1>Software Defined</h1>
 					<div className='softwareDefined_image'>
 						<h3>Large Motor Company</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
@@ -37,38 +37,40 @@ const Softwaredefined = () => {
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
 							<h4>Industry</h4>
-							<p>Automobiles</p>
+							<p classname='textAlign'>Automobiles</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
 							<h4>Business Objective</h4>
-							<p>
+							<p classname='textAlign'>
 								Transformation towards becoming hardware / Os / Vender / Operation agnostic. Make
 								everything software defined.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
 							<h4>Technologies</h4>
-							<p> AWS, Infrastructure as a code, microservices, devops</p>
+							<p classname='text-left'>AWS, Infrastructure as a code, microservices, devops</p>
 						</div>
 					</div>
 					<div>
 						<h4>Overview</h4>
-						<p>
+						<p classname='textAlign'>
 							Four data centers and more than two thousand servers running 24/7, with twenty plus
 							applications and two hundred operations team, Large Motor Company handles massive daily
 							operations round the clock to give the best world class service to their customers.
 						</p>
 						<h4>Challenges</h4>
-						<p>
-							Scalability: This was the primary and pertinent challenge of Large Motor Company as their
-							applications were not horizontally scalable due to which their applications, faced many
-							performance issues. Reliability: They had difficulty in confronting hardware downtime,
-							unplanned outages have directly impacted software downtime and baffled their IT operations,
-							applications and data. Vendor Dependency: They were running licensed products for HA
-							clustering, system monitoring and security. Most of the products were licensed. Traditional
-							IT infrastructure: With traditional Infrastructure, it is not only difficult to manage a
-							data center but also hard to improve costs in maintaining the physical resources. The Large
-							Motor company was not using more than 10% of their physical resources.
+						<p classname='textAlign'>
+							<b> Scalability</b>: This was the primary and pertinent challenge of Large Motor Company as
+							their applications were not horizontally scalable due to which their applications, faced
+							many performance issues. <br />
+							<b>Reliability</b>: They had difficulty in confronting hardware downtime, unplanned outages
+							have directly impacted software downtime and baffled their IT operations, applications and
+							data. <br />
+							<b>Vendor Dependency</b>: They were running licensed products for HA clustering, system
+							monitoring and security. Most of the products were licensed.<br />
+							<b>Traditional IT infrastructure</b>: With traditional Infrastructure, it is not only
+							difficult to manage a data center but also hard to improve costs in maintaining the physical
+							resources. The Large Motor company was not using more than 10% of their physical resources.
 						</p>
 					</div>
 					<div>
@@ -90,19 +92,14 @@ const Softwaredefined = () => {
 								scalability, better security and visibility to the exposed API.
 							</li>
 							<li>
-								{' '}
 								We proved our expertise once again by delivering fast and accurate releases to meet the
 								growing business demand.
-							</li>{' '}
+							</li>
 							<li>
-								{' '}
 								We rebuilt and revamped the existing applications to meet today’s agility and
 								scalability demands in the market.
-							</li>{' '}
-							<li>
-								{' '}
-								We reduced high CAPEX and OPEX and made them achieve more with less IT budget.
-							</li>{' '}
+							</li>
+							<li>We reduced high CAPEX and OPEX and made them achieve more with less IT budget.</li>
 							<li> We offered a complete license agnostic solution.</li>
 						</ul>
 					</div>
@@ -111,7 +108,7 @@ const Softwaredefined = () => {
 							Synectiks providing a customized solution and targeting the pain points of Large Motor
 							Systems.
 						</h4>
-						<p>
+						<p classname='textAlign'>
 							When Large Motor Company approached Synectiks, they were handling multiple tasks with
 							traditional infrastructure model. They have reached a point on the edge where they can no
 							longer withstand the outage issues that rippled their business to two folds and finally
@@ -124,7 +121,7 @@ const Softwaredefined = () => {
 							in their core areas and compete in their line of business for better business prospects.
 						</p>
 						<h4>How did Synectiks Consolidate, Validate and Outline the issues of Large Motor Systems?</h4>
-						<p>
+						<p classname='textAlign'>
 							We believe in harvesting information as much as possible that will yield a better solution.
 							That is exactly what we did with Large Motor Company. Upon analyzing their queries on a
 							broader spectrum, we did a quick 360° audit on their existing infrastructure and harvested
@@ -139,7 +136,7 @@ const Softwaredefined = () => {
 						</p>
 
 						<h4>OUTCOME</h4>
-						<p>
+						<p classname='textAlign'>
 							The entire business system is now managed by few resources reducing CAPEX by 80% and OPEX by
 							70%. Large Motor Company’s legacy infrastructure is entirely a new transformed
 							software-defined infrastructure. As we promised, they achieved scalability, reliability,
@@ -175,9 +172,15 @@ export default Softwaredefined;
 const SoftwaredefinedWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
+		p {
+			text-align: left !important;
+		}
 	}
 
 	@media screen and (min-width: 576px) {
 		padding: 3rem 4rem;
+		p {
+			text-align: justify !important;
+		}
 	}
 `;

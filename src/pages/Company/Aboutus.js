@@ -30,7 +30,7 @@ const AboutUs = ({ location }) => {
 				</div>
 				<div className='pt-md-4'>
 					<h1>Mission Statement!</h1>
-					<p>
+					<p className='ptext'>
 						Since <span className='fweit'>2006</span> as an Open Product based Cloud Solution provider, we
 						help enterprises take advantage of public & private cloud and its infinite resources to migrate
 						and modernize their business so that they outperform their peers by becoming truly disruptive.
@@ -38,7 +38,7 @@ const AboutUs = ({ location }) => {
 				</div>
 				<div className='pt-md-4'>
 					<h2>We’ve always done things differently</h2>
-					<p>
+					<p className='ptext'>
 						Synectiks builds open source software that helps enterprises to migrate and modernize their
 						business rapidly at optimal economy. Customers use our migration and management software
 						platform, Xformation to migrate and modernize their business and create affordable and powerful
@@ -223,6 +223,9 @@ const AboutWrapper = styled.div`
 		.fweit {
 			font-weight: 600;
 		}
+		.ptext {
+			text-align: left;
+		}
 		padding: 2rem 1rem;
 		.hybmt {
 			h3 {
@@ -242,6 +245,9 @@ const AboutWrapper = styled.div`
 			h3 {
 				font-size: 1.5rem;
 			}
+		}
+		.ptext {
+			text-align: justify;
 		}
 		padding: 3rem 4rem;
 

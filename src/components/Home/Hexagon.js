@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
-import hx1 from '../../images/HomePage/1.png';
-import hx2 from '../../images/HomePage/2.png';
-import hx3 from '../../images/HomePage/3.png';
-import hx4 from '../../images/HomePage/4.png';
-import hx5 from '../../images/HomePage/5.png';
-import hx6 from '../../images/HomePage/6.png';
-import hx7 from '../../images/HomePage/22.png';
+import hx1 from '../../images/areofxpertise/Microservices.svg';
+import hx2 from '../../images/areofxpertise/Area Of Expertise.svg';
+import hx3 from '../../images/areofxpertise/Cloud.svg';
+import hx4 from '../../images/areofxpertise/Monitoring.svg';
+import hx5 from '../../images/areofxpertise/Analytics.svg';
+import hx6 from '../../images/areofxpertise/RAD.svg';
+import hx7 from '../../images/areofxpertise/DevOps.svg';
 import classnames from 'classnames';
 
 const Hexagon = () => {
@@ -124,7 +124,8 @@ const Hexagon = () => {
 							</li>
 							<li>
 								<div>
-									<h3 className='heading-h3 ct-cent'>Area Of Expertise</h3>
+									<img src={hx2} alt='' className='ct-cent' />
+									{/* <h3 className='heading-h3 ct-cent'>Area Of Expertise</h3> */}
 								</div>
 							</li>
 							<li>
@@ -203,7 +204,7 @@ const HexagonWrapper = styled.section`
 	.hx1 > img {
 		left: -100%;
 		right: -100%;
-		width: 70%;
+		width: 100%;
 		height: auto;
 		margin: 1.2rem 7.3rem;
 		transform: rotate(-30deg);
@@ -212,7 +213,7 @@ const HexagonWrapper = styled.section`
 	.hx2 > img {
 		left: -100%;
 		right: -100%;
-		width: 70%;
+		width: 100%;
 		height: auto;
 		margin: 1.2rem 7.3rem;
 		transform: rotate(-30deg);
@@ -221,7 +222,7 @@ const HexagonWrapper = styled.section`
 	.hx3 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		width: 100%;
 		height: auto;
 		margin: 1.1rem 7.4rem;
 		transform: rotate(-30deg);
@@ -230,7 +231,7 @@ const HexagonWrapper = styled.section`
 	.hx4 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		width: 100%;
 		height: auto;
 		margin: 1.5rem 7.6rem;
 		transform: rotate(-30deg);
@@ -239,7 +240,7 @@ const HexagonWrapper = styled.section`
 	.hx5 > img {
 		left: -100%;
 		right: -100%;
-		width: 65%;
+		width: 100%;
 		height: auto;
 		margin: 1.3rem 7.6rem;
 		transform: rotate(-30deg);
@@ -248,7 +249,7 @@ const HexagonWrapper = styled.section`
 	.hx6 > img {
 		left: -100%;
 		right: -100%;
-		width: 58%;
+		width: 100%;
 		height: auto;
 		margin: 1.3rem 7.6rem;
 		transform: rotate(-30deg);
@@ -374,54 +375,60 @@ const HexagonWrapper = styled.section`
 		.hx1 > img {
 			left: -100%;
 			right: -100%;
-			width: 70%;
+			width: 100%;
 			height: auto;
-			margin: 35px auto;
+			margin: 0 auto;
 			transform: rotate(-30deg);
 			cursor: pointer;
+			top: 12%;
 		}
 		.hx2 > img {
 			left: -100%;
 			right: -100%;
-			width: 70%;
+			width: 100%;
 			height: auto;
-			margin: 35px auto;
+			margin: 0 auto;
 			transform: rotate(-30deg);
 			cursor: pointer;
+			top: 12%;
 		}
 		.hx3 > img {
 			left: -100%;
 			right: -100%;
-			width: 65%;
+			width: 100%;
 			height: auto;
-			margin: 35px auto;
+			margin: 0 auto;
 			transform: rotate(-30deg);
 			cursor: pointer;
+			top: 12%;
 		}
 		.hx4 > img {
 			left: -100%;
 			right: -100%;
-			width: 65%;
+			width: 100%;
 			height: auto;
-			margin: 40px auto;
+			margin: 0 auto;
 			transform: rotate(-30deg);
 			cursor: pointer;
+			top: 12%;
 		}
 		.hx5 > img {
 			left: -100%;
 			right: -100%;
-			width: 65%;
+			width: 100%;
 			height: auto;
-			margin: 38px auto;
+			margin: 0 auto;
+			top: 12%;
 			transform: rotate(-30deg);
 			cursor: pointer;
 		}
 		.hx6 > img {
 			left: -100%;
 			right: -100%;
-			width: 58%;
+			width: 100%;
 			height: auto;
-			margin: 45px auto;
+			top: 12%;
+			margin: 0 auto;
 			transform: rotate(-30deg);
 			cursor: pointer;
 		}
@@ -546,22 +553,22 @@ const HexagonWrapper = styled.section`
 		}
 		.ct-cent {
 			transform: rotate(-30deg);
-			font-size: 26px;
-			margin: 3rem auto;
+			width: 100%;
+			position: relative;
+			top: 8%;
+			margin: 0 auto;
 		}
 	}
 	@media screen and (min-width: 768px) {
 		.ct-cent {
 			transform: rotate(-30deg);
-			font-size: 24px;
-			margin: 3rem auto;
+			margin: 0 auto;
 		}
 	}
 	@media screen and (min-width: 1024px) {
 		.ct-cent {
 			transform: rotate(-30deg);
-			font-size: 24px;
-			margin: 3rem auto;
+			margin: 0rem auto;
 		}
 	}
 `;
