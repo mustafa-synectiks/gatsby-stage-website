@@ -204,7 +204,7 @@ const Layout = ({ children }) => {
 		// OWL V1.3
 
 		$(document).ready(function() {
-			var time = 6; // time in seconds
+			var time = 8; // time in seconds
 
 			var $progressBar, $bar, $elem, isPause, tick, percentTime, mobileNone;
 			// var $elem = $('#owl-demo');
@@ -267,6 +267,12 @@ const Layout = ({ children }) => {
 								.eq(item)
 								.find('p')
 								.addClass('animated delay-2s slow fadeInRight');
+							$('a').removeClass('animated fadeInRight');
+							$('.owl-item')
+								.not('.cloned')
+								.eq(item)
+								.find('a')
+								.addClass('animated delay-3s slow fadeInRight');
 						}
 					}
 				});

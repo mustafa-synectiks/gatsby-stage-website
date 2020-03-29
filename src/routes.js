@@ -30,42 +30,10 @@ module.exports = [
 		path: '/privacypolicy/index.html',
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)
 	},
-	// {
-	// 	path: '/microservicechallenge/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Microservicechallenge.js`)
-	// },
-	// {
-	// 	path: '/microservicebenefit/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Microservicebenefit.js`)
-	// },
-	// {
-	// 	path: '/transformation/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Transformation.js`)
-	// },
-	// {
-	// 	path: '/operations/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Operations.js`)
-	// },
-	// {
-	// 	path: '/migrations/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Migrations.js`)
-	// },
-	// {
-	// 	path: '/HostedInfrastructure/index.html',
-	// 	component: path.resolve(`src/pages/Cloud/CloudHostedServices/HostedInfrastructure.js`)
-	// },
 	{
 		path: '/privatecloudhostingservices/index.html',
 		component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)
 	},
-	// {
-	// 	path: '/CloudDisasterRecovery/index.html',
-	// 	component: path.resolve(`src/pages/Cloud/CloudHostedServices/CloudDisasterRecovery.js`)
-	// },
-	// {
-	// 	path: '/privatecloud/index.html',
-	// 	component: path.resolve(`src/pages/Cloud/Privatecloud.js`)
-	// },
 	{
 		path: '/hybridcloud/index.html',
 		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
@@ -82,14 +50,6 @@ module.exports = [
 		path: '/monitoring/index.html',
 		component: path.resolve(`src/pages/Solutions/Monitoring.js`)
 	},
-	// {
-	// 	path: '/publiccloud/index.html',
-	// 	component: path.resolve(`src/pages/Cloud/Publiccloud.js`)
-	// },
-	// {
-	// 	path: '/colocation/index.html',
-	// 	component: path.resolve(`src/pages/Cloud/Colocation.js`)
-	// },
 	{
 		path: '/microservices/index.html',
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)

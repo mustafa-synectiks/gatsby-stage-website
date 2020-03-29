@@ -48,6 +48,7 @@ import HomeTabs from './Home/HomeTabs';
 import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import GetInTouch from './Home/Getintouch.js';
+import SEO from '../components/seo.js';
 import {
 	TabContent,
 	TabPane,
@@ -71,6 +72,10 @@ const Slider = () => {
 	};
 	return (
 		<HomeWrapper>
+			<SEO
+				title='Home'
+				description='As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.'
+			/>
 			<div className='container-fluid'>
 				<div className='row'>
 					<div id='owl-demo' className='owl-carousel owl-theme'>
@@ -95,12 +100,12 @@ const Slider = () => {
 								<p className=''>
 									we accelerate organization evolution <br />through open platform and <br />skilled
 									resources.
-								</p>{' '}
-								<div>
-									<a href='https://synectiks.com/devops/index.html' className='btn btn-primary'>
-										Learn More
-									</a>
-								</div>
+								</p>
+								<a
+									href='https://synectiks.com/devopstransformation/index.html'
+									className='btn btn-primary'>
+									Learn More
+								</a>
 							</div>
 
 							<img src={Slider2} alt='Optimize Devops Transformation' />
@@ -113,14 +118,10 @@ const Slider = () => {
 								<p className=''>
 									accelerate high performance reliable <br /> application delivery using microservices
 									<br />across clouds.
-								</p>{' '}
-								<div>
-									<a
-										href='https://synectiks.com/microservices/index.html'
-										className='btn btn-primary'>
-										Learn More
-									</a>
-								</div>
+								</p>
+								<a href='https://synectiks.com/microservices/index.html' className='btn btn-primary'>
+									Learn More
+								</a>
 							</div>
 
 							<img
