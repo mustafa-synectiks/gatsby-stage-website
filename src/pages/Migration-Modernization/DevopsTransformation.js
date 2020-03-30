@@ -53,7 +53,9 @@ const onTop = () => {
 }
 	return (
 		<Layout>
-			<SEO title='DevOps Transformation' />
+			<SEO title='DevOps Transformation'
+			description='DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.'
+			 />
 
 			<DevopsTWrapper>
 				<div className='container-fluid '>
@@ -63,7 +65,7 @@ const onTop = () => {
 							subtitle='Migration / Modernization'
 							pageTitle='Devops Transformation'
 						/>
-						<h1 className='text-left mt-md-4'>Devops Transformation</h1>
+						<h1 className='text-left mt-md-4'>DevOps Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>

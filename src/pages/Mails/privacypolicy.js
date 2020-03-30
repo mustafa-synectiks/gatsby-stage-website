@@ -1,5 +1,6 @@
 import * as React from 'react';
-// import Layout from '../../components/layout'
+import Layout from '../../components/layout'
+import styled from 'styled-components'
 import SEO from '../../components/seo.js';
 
 export class Privacypolicy extends React.Component {
@@ -9,8 +10,11 @@ export class Privacypolicy extends React.Component {
 
 	render() {
 		return (
-			<div className='bg-lightgrey'>
-				<SEO title='Private Policy' />
+
+			<Layout className='bg-lightgrey'>
+			<PrivacyWrapper>
+				<SEO title="SYNECTIKS - Privacy Policy"
+				description='This Privacy Policy describes how Synectiks Inc. and its affiliates ("Synectiks," "we," "our" or "us") collect, use and share information in connection with your use of our websites (including www.synectiks.com), services and applications (collectively, the "Services"). This Privacy Policy (the "Privacy Policy") does not apply to information our customers may process when using our Services.'/>
 
 				<div className='text-black w-100 px-4 text-justify'>
 					<p className='w-100 pt-3'>
@@ -476,9 +480,24 @@ export class Privacypolicy extends React.Component {
 						</ol>
 					</p>
 				</div>
-			</div>
+				</PrivacyWrapper>
+			</Layout>
+
 		);
 	}
 }
 
 export default Privacypolicy;
+
+const PrivacyWrapper = styled.div`
+ol,ul{
+	padding: 0rem;
+}
+padding: 2rem 0rem;
+@media (min-width: 576px){
+	padding: 2rem 4rem;
+	ul,ol{
+		padding; 0rem 1rem;
+	}
+}
+`;

@@ -36,7 +36,7 @@ export class Careers extends React.Component {
 		return (
 			<Layout>
 				<CareerWrapper>
-					<SEO title='Careers' />
+					<SEO title='Careers' description="Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce with leading-edge technologies on absolutely the coolest undertakings you'll be able to envision. What's more, get the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world." />
 					<div className='bg-lightgrey'>
 						<div>
 							{/* <img className='  text-center pb-2 ' src={career} width='100%' alt='Careers' /> */}

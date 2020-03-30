@@ -17,8 +17,8 @@ export class OfficeMigraton extends React.Component {
 		return (
 			<Layout>
 				<OfficeMigratonWrapper>
+					<SEO title='Office 365' description='Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 transforming the workplace experience. With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security) and Azure.' />
 					<BreadCrumbs title='Home' subtitle='Services' pageTitle='Office Migration' />
-					<SEO title='Office Migraton' />
 					<div className='bg-lightgrey'>
 						<h1 className='text-left mt-2 mt-md-4'>Office 365</h1>
 						{/* <div className='w-100 pb-3'>

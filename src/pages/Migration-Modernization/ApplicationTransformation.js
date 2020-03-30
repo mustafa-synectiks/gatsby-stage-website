@@ -56,7 +56,7 @@ const onTop = () => {
 	return (
 		<Layout>
 			<ApplicationTransformationWrapper>
-				<SEO title='Application Transformation' description='Application Transformation page' />
+				<SEO title='Application Transformation' description='Synectiks application transformation services close the gap between what your current applications can do and what the cloud native services and microservices architecture makes them capable of. That could be greater efficiency, scale, performance and resilience. But it could also mean entirely new capabilities that create lasting advantage, generate value and drive better outcomes for your customers and your employees.' />
 				<div className=''>
 					<div className=' text-justify' />
 					<div>

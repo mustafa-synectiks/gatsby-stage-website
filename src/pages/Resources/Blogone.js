@@ -28,7 +28,7 @@ const BlogOne = () => {
 					pageTitle='Microservices Transformation'
 				/>
 				<h1>Microservices Transformation</h1>
-				<img src={blog1} alt='' className='my-3 my-md-4' />
+				<img src={blog1} alt='' className='my-3 my-md-4' width='100%'/>
 				<div className='d-flex flex-column flex-md-row'>
 					<div className='textWrapper w75'>
 						<h3>

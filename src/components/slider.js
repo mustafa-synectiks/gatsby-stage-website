@@ -73,7 +73,7 @@ const Slider = () => {
 	return (
 		<HomeWrapper>
 			<SEO
-				title='Home'
+				title='Synectiks'
 				description='As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.'
 			/>
 			<div className='container-fluid'>

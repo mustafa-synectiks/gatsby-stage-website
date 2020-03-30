@@ -40,7 +40,9 @@ const onTop = () => {
 }
 	return (
 		<Layout>
-			<SEO title='Microservices' />
+			<SEO title='Microservices'
+			description='SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster.'
+			 />
 			<MicroserviceWrapper>
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='Solutions' pageTitle='Micro services' />
