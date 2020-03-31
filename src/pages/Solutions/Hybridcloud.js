@@ -296,7 +296,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
 															<img src={WM} alt='' className='w20 m-0' />
-															<h4 className='my-3'>Workload Migration</h4>
+															<h5 className='my-3'>Workload Migration</h5>
 														</div>
 														<p>
 															Choosing when to use what cloud provider is a daunting task
@@ -306,7 +306,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
 															<img src={IC} alt='' className='w20 m-0' />
-															<h4 className='my-4'>Integrating Clouds</h4>
+															<h5 className='my-4'>Integrating Clouds</h5>
 														</div>
 														<p>
 															Manage the public and private clouds together that
@@ -318,7 +318,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
 															<img src={WC} alt='' className='w20 m-0' />
-															<h4 className='my-3'>Workload Fragmentation</h4>
+															<h5 className='my-3'>Workload Fragmentation</h5>
 														</div>
 														<p>
 															Tracking resources and decommissioning them in a timely
@@ -328,7 +328,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
 															<img src={SPRT} alt='' className='w20 m-0' />
-															<h4 className='my-3'>Support & Assistance</h4>
+															<h5 className='my-3'>Support & Assistance</h5>
 														</div>
 														<p>
 															Obtaining a unified support experience across cloud
@@ -370,7 +370,7 @@ const Hybridcloud = () => {
 															alt=''
 															className='w8 mr-2 mr-md-3 my-3 my-md-3'
 														/>
-														<h4>Disaster Recovery/Backup</h4>
+														<h5>Disaster Recovery/Backup</h5>
 													</div>
 													<div>
 														<p className='ptext'>
@@ -395,7 +395,7 @@ const Hybridcloud = () => {
 											<div>
 												<div className='d-flex align-items-center'>
 													<img src={ADT} alt='' className='w15 mr-2 mr-md-3 my-2 my-md-3' />
-													<h4>Application Development and Testing</h4>
+													<h5>Application Development and Testing</h5>
 												</div>
 												<p className='ptext'>
 													Application development and testing or “DevTest” is another popular
@@ -431,7 +431,7 @@ const Hybridcloud = () => {
 											<div>
 												<div className='d-flex align-items-center'>
 													<img src={ETL} alt='' className='whbd7 mr-2 mr-md-3 my-2 my-md-3' />
-													<h4>Data Extract, Transform, and Load (ETL) processes</h4>
+													<h5>Data Extract, Transform, and Load (ETL) processes</h5>
 												</div>
 												<p className='ptext'>
 													Data Extract, Transform, and Load (ETL) processes can be quite
@@ -447,7 +447,7 @@ const Hybridcloud = () => {
 														alt=''
 														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
 													/>
-													<h4>HR, Payroll, Productivity Applications</h4>
+													<h5>HR, Payroll, Productivity Applications</h5>
 												</div>
 												<p className='ptext'>
 													Many customers are moving first-workload applications to the cloud
@@ -482,7 +482,7 @@ const Hybridcloud = () => {
 														alt=''
 														className='whbd7 mr-2 mr-md-3 my-2 my-md-3'
 													/>
-													<h4>Supporting Local Data Regulations</h4>
+													<h5>Supporting Local Data Regulations</h5>
 												</div>
 												<p className='ptext'>
 													There are increasing legal and regulatory requirements for data
@@ -503,7 +503,7 @@ const Hybridcloud = () => {
 														alt=''
 														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
 													/>
-													<h4>Go Global and edge computing </h4>
+													<h5>Go Global and edge computing </h5>
 												</div>
 												<p className='ptext'>
 													To deliver a good experience, enterprises need to be as close to
@@ -661,7 +661,7 @@ const Hybridcloud = () => {
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={DRB} alt='' className='w10 mr-0 mr-md-5 mt-n3' />
 													<div>
-														<h4>Discovery & Assessment</h4>
+														<h5>Discovery & Assessment</h5>
 														<p className='ptext'>
 															Our discovery and assessment services can help you draft a
 															hybrid IT roadmap with a clearly defined business case and
@@ -677,7 +677,7 @@ const Hybridcloud = () => {
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img src={TS} alt='' className='w15 mr-md-5 mr-0 mt-n3' />
 													<div className='ml-0 ml-md-4'>
-														<h4>Transformation Services</h4>
+														<h5>Transformation Services</h5>
 														<p className='ptext'>
 															You can access our open Xformation platform products and
 															resource teams to adopt change quickly — from application
@@ -724,9 +724,9 @@ const Hybridcloud = () => {
 													it, run it and manage it.
 												</p>
 
-												<h4 className='text-center mt-md-4'>
+												<h5 className='text-center mt-md-4'>
 													Top 12 Reasons to select Synectiks as your Hybrid Cloud Partner:
-												</h4>
+												</h5>
 											</div>
 
 											<div className='my-2 my-md-4'>
@@ -734,7 +734,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EX} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Experience</h4>
+															<h5 className='my-2 my-md-3'>Experience</h5>
 														</div>
 														<p className='text-center'>
 															10+ Large Scale Hybrid Cloud Transformation
@@ -743,7 +743,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EXP} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-4'>Expertise</h4>
+															<h5 className='my-2 my-md-4'>Expertise</h5>
 														</div>
 														<p>
 															Experience Team with proven track record of CloudOps
@@ -753,7 +753,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={TM} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Time & Money</h4>
+															<h5 className='my-2 my-md-3'>Time & Money</h5>
 														</div>
 														<p>
 															Our open Product Driven Delivery Model allows customers to
@@ -768,7 +768,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EE} alt='' className='tw m-0' />
-															<h4 className='my-4'>E2E Solution</h4>
+															<h5 className='my-4'>E2E Solution</h5>
 														</div>
 														<p>
 															Single point of contact for Application Migration,
@@ -779,7 +779,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={SCP} alt='' className='tw m-0' />
-															<h4 className='my-3'>Single Control plane</h4>
+															<h5 className='my-3'>Single Control plane</h5>
 														</div>
 														<p>
 															Xformation is a single interface and platform to manage all
@@ -791,7 +791,7 @@ const Hybridcloud = () => {
                           l-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={CS} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-4'>Compliance & Security</h4>
+															<h5 className='my-2 my-md-4'>Compliance & Security</h5>
 														</div>
 														<p>
 															Our compliance and security assessment tools makes sure your
@@ -806,10 +806,9 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EA} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Extreme Automation</h4>
+															<h5 className='my-2 my-md-3'>Extreme Automation</h5>
 														</div>
 														<p>
-															{' '}
 															Use our existing automation capabilities to automate
 															infrastructure , operations, security in hybrid IT
 															environment.
@@ -818,7 +817,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={PCP} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-4'>Public Cloud Partnership</h4>
+															<h5 className='my-2 my-md-4'>Public Cloud Partnership</h5>
 														</div>
 														<p>
 															Our advanced partnership with major public cloud providers
@@ -830,7 +829,7 @@ const Hybridcloud = () => {
 															<div>
 																<div className='d-flex align-items-center flex-column'>
 																	<img src={DE} alt='' className='tw m-0' />
-																	<h4 className='my-2 my-md-3'>Demo Environment</h4>
+																	<h5 className='my-2 my-md-3'>Demo Environment</h5>
 																</div>
 																<p>
 																	Avail the opportunity to quickly create demo hybrid
@@ -847,14 +846,14 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={WO} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-4'>Optimization Service</h4>
+															<h5 className='my-2 my-md-4'>Optimization Service</h5>
 														</div>
 														<p>We do optimal resource pooling from multiple clouds.</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EM} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Engagement Model</h4>
+															<h5 className='my-2 my-md-3'>Engagement Model</h5>
 														</div>
 														<p>
 															Our every engagement focused on empowerment – not dependency
@@ -863,7 +862,7 @@ const Hybridcloud = () => {
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={LTR} alt='' className='tw m-0' />
-															<h4 className='my-2 my-md-4'>Long Term Retention</h4>
+															<h5 className='my-2 my-md-4'>Long Term Retention</h5>
 														</div>
 														<p>100% Customer Retention Rate.</p>
 													</div>

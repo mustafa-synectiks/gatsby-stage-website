@@ -52,10 +52,10 @@ export class Footer extends React.Component {
 					</div>
 					<div className='w-30vw mx-0 ml-md-3  px-2 px-md-0'>
 						<h3 className='text-light text-capitalize'>INDIA</h3>
-						<p className='text-light mt-0 mt-md-3'>
+						<p className='text-light mt-0 mt-md-3 footaddleft'>
 							Ground Floor, SK Feature, <br />Plot 105 & 106, Lumbini Layout,
 						</p>
-						<p className='text-light'> Hitech City Main Rd, Gachibowli, Hyderabad 500032 </p>
+						<p className='text-light footaddleft'> Hitech City Main Rd, Gachibowli, Hyderabad 500032 </p>
 						<p className='text-light webText'>Office: +91 (40) 4857 4411</p>
 					</div>
 					<div className='w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0'>
@@ -95,6 +95,9 @@ export class Footer extends React.Component {
 export default Footer;
 
 const FooterWrapper = styled.div`
+.footaddleft{
+	text-align: left;
+}
 	.webText {
 		webkit-text-fill-color: white;
 	}

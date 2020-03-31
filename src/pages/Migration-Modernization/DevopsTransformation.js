@@ -621,7 +621,7 @@ const onTop = () => {
 									</TabPane>
 									<TabPane tabId='3'>
 										<div>
-											<h4> How Synectiks can help?</h4>
+											<h3> How Synectiks can help?</h3>
 											<p className='ptext'>
 												Enterprises looking for modernization of their legacy stack and operate
 												in more fast and competitive way, can use the Synectiks open platform
@@ -631,7 +631,7 @@ const onTop = () => {
 												coupled with our experience and expertise accelerate the project
 												execution @50% time & cost.
 											</p>
-											<h4>Technology Transformation</h4>
+											<h3>Technology Transformation</h3>
 											<p className='ptext'>
 												“Over 85% of enterprise IT organizations will commit to multi-cloud
 												architectures by 2018, IDC. End User experience, Security, Agility,
@@ -651,7 +651,7 @@ const onTop = () => {
 												the workload runs seamlessly with highest security, performance,
 												scalability and availability.
 											</p>
-											<h4>Cultural Transformation </h4>
+											<h3>Cultural Transformation </h3>
 											<p className='ptext'>
 												Need? A culture with less Roles , much E2E responsibilities Innovate /
 												Deliver Fast High Speed Feedback and Superfast Delivery Lower Capex,
@@ -716,10 +716,10 @@ const onTop = () => {
 											</div>
 
 											<div className='row'>
-												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
+												<h3 className='pt-0 pt-md-0 pb-2 pb-md-3'>
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
-												</h4>
+												</h3>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img
 														src={four}

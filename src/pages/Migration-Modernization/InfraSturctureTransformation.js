@@ -59,7 +59,7 @@ const Infrastructure = () => {
 						<BreadCrumbs
 							title='Home'
 							subtitle='Migration-Modernization'
-							pageTitle='InfraStructure Transformation'
+							pageTitle='Infrastructure Transformation'
 						/>
 						<h1 className='mt-4 ml-n2'>Infrastructure Transformation</h1>
 					</div>
@@ -569,16 +569,16 @@ const Infrastructure = () => {
 													it, run it and manage it.
 												</p>
 
-												<h4 className='text-center'>
+												<h5 className='text-center'>
 													Top 9 Reasons to select Synectiks as your Software Defined Partner:
-												</h4>
+												</h5>
 											</div>
 											<div className='my-2 my-md-4'>
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EX} alt='Experience' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Experience</h4>
+															<h5 className='my-2 my-md-3'>Experience</h5>
 														</div>
 														<p className='text-center'>
 															Large Scale modernization and consolidation experience
@@ -587,7 +587,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={artifact} alt='Artifacts' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Artifacts</h4>
+															<h5 className='my-2 my-md-3'>Artifacts</h5>
 														</div>
 														<p className='text-center'>
 															Transformation Blueprints and Automation Bots available in
@@ -597,7 +597,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={advisory} alt='Advisory' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Advisory</h4>
+															<h5 className='my-2 my-md-3'>Advisory</h5>
 														</div>
 														<p className='text-center'>
 															Quick Discovery / Assessment and transformation plan built
@@ -609,7 +609,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={pay} alt='Pay As You Use' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Pay As You Use</h4>
+															<h5 className='my-2 my-md-3'>Pay As You Use</h5>
 														</div>
 														<p className='text-center'>
 															Move to consumption model economics across all IT, use our
@@ -619,7 +619,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={economics} alt='Economics' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Economics</h4>
+															<h5 className='my-2 my-md-3'>Economics</h5>
 														</div>
 														<p className='text-center'>
 															Upto 50% Lower TCO of IT by having aggregated infrastructure
@@ -630,7 +630,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={operate} alt='Operation' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Operation</h4>
+															<h5 className='my-2 my-md-3'>Operation</h5>
 														</div>
 														<p className='text-center'>
 															Upto 40% improvement in IT staff productivity by using our
@@ -643,7 +643,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={innovation} alt='Innovation' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Innovation</h4>
+															<h5 className='my-2 my-md-3'>Innovation</h5>
 														</div>
 														<p className='text-center'>
 															2–3X acceleration in continuous improvement cycles
@@ -656,7 +656,7 @@ const Infrastructure = () => {
 																alt='Security and Compliance'
 																className='tw m-0'
 															/>
-															<h4 className='my-2 my-md-3'> Security & Compliance</h4>
+															<h5 className='my-2 my-md-3'> Security & Compliance</h5>
 														</div>
 														<p className='text-center'>
 															Provision and change infrastructure through well defined
@@ -667,7 +667,7 @@ const Infrastructure = () => {
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
 															<img src={EM} alt='Engagement' className='tw m-0' />
-															<h4 className='my-2 my-md-3'>Engagement</h4>
+															<h5 className='my-2 my-md-3'>Engagement</h5>
 														</div>
 														<p className='text-center'>
 															Our every engagement is focused on empowerment, not

@@ -7,6 +7,15 @@ module.exports = {
 	},
 	pathPrefix: '/next',
 	plugins: [
+		{
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-162017401-1",
+        head: true,
+				anonymize: true,
+        respectDNT: true,
+      },
+    },
 		`gatsby-plugin-sitemap`,
 		`gatsby-remark-responsive-iframe`,
 		`gatsby-plugin-react-helmet`,

@@ -153,7 +153,7 @@ const onTop = () => {
 														Market. <br />Contact us at&nbsp;
 														<a href='mailto:info@synectiks.com' target='_top'>
 															info@synectiks.com
-														</a>{' '}
+														</a>
 														for a quick affordable customized quote.
 													</p>
 												</div>
@@ -161,7 +161,7 @@ const onTop = () => {
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
 												<div>
-													<h4>Self-service portal</h4>
+													<h5>Self-service portal</h5>
 													<p className='mt-2 pcenter'>
 														Manage and control all your company Hosted infrastructure with
 														easy self-service portal.
@@ -204,14 +204,14 @@ const onTop = () => {
 													alt='Storage Types available:'
 												/>
 												<div>
-													<h4>Storage Types available</h4>
+													<h5>Storage Types available</h5>
 													<p className='mt-2 pcenter'>S3, NAS, SAN, Cloud file & share.</p>
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-0 mr-md-5' src={MS} alt='' />
 												<div>
-													<h4>Migration Services</h4>
+													<h5>Migration Services</h5>
 													<p className='mt-2 pcenter'>
 														we have expert professional team to migrate your current on
 														premises workloads to cloud.
@@ -221,7 +221,7 @@ const onTop = () => {
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 												<img class='w-12 mr-0 mr-md-5' src={SPT} alt='' />
 												<div>
-													<h4>Support</h4>
+													<h5>Support</h5>
 													<p className='mt-2 pcenter'>
 														Follow the Sun model - 24/7/365 days support from both onshore
 														and offshore Teams.
@@ -294,7 +294,7 @@ const onTop = () => {
 										<div className='d-flex flex-column flex-md-row  align-items-center align-items-md-start mt-1 mt-md-5'>
 											<img class='w-12 mr-0 mr-md-5' src={price} alt='Affordable Pricing' />
 											<div>
-												<h4>Affordable Price</h4>
+												<h5>Affordable Price</h5>
 												<p className='pcenter'>
 													Cloud Backup storage as low as $0.015/GB per Month (only charged for
 													the storage consumed).
@@ -304,7 +304,7 @@ const onTop = () => {
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 											<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
 											<div>
-												<h4>Self-service portal</h4>
+												<h5>Self-service portal</h5>
 												<p className='mt-2 pcenter'>
 													Manage and control all your company Backups with easy self-service
 													portal.
@@ -332,7 +332,7 @@ const onTop = () => {
 												alt='Multi Secure Geo Locations'
 											/>
 											<div>
-												<h4>Multi Secure Geo Locations</h4>
+												<h5>Multi Secure Geo Locations</h5>
 												<p className='pcenter'>
 													We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data,
 													which implies that you should always have three copies of your data,
@@ -349,7 +349,7 @@ const onTop = () => {
 										<div className='d-flex  flex-column flex-md-row align-items-center  align-items-md-start  mt-1 mt-md-5'>
 											<img class='w-12 mr-0 mr-md-5' src={protection} alt='Host any workload' />
 											<div>
-												<h4>Protection for any workload</h4>
+												<h5>Protection for any workload</h5>
 												<p className='pcenter'>
 													Protect Windows, Linux, Macs, eight major hypervisors, iOS, Android,
 													Complete Office 365 Protection, all Major Applications and
@@ -360,7 +360,7 @@ const onTop = () => {
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 											<img class='w-12 mr-0 mr-md-5' src={support} alt='' />
 											<div>
-												<h4>Support</h4>
+												<h5>Support</h5>
 												<p className='pcenter'>
 													Follow the Sun model - 24/7/365 days support from both onshore and
 													offshore Teams.
@@ -370,7 +370,7 @@ const onTop = () => {
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
 											<img class='w-12 mr-0 mr-md-5' src={restore} alt='' />
 											<div>
-												<h4>Fast Recovery</h4>
+												<h5>Fast Recovery</h5>
 												<p className='pcenter'>
 													Recover the Data faster, transfer rate up to 1GB/sec.
 												</p>
