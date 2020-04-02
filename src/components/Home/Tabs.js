@@ -123,12 +123,12 @@ const Tabs = () => {
 							</Col>
 						</Row>
 						<Row>
-							<Col sm='12' md='3' className='p-1'>
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right text-left'>
-										<h3 className='text-center heading-h3'>
+									<div className='border-right text-center'>
+										<a href='/infrastructure/index.html' className='text-center heading-h3 h3'>
 											Infrastructure <br />Transformation
-										</h3>
+										</a>
 										<p className='text-left f-14 px-2 px-md-4'>
 											Make sure that every bit of your hardware environment is directly supporting
 											your business objectives. Transition from a hardware centric to a software
@@ -137,13 +137,13 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-							<Col sm='12' md='3' className='p-1'>
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-3 h-100'>
-									<div className='border-right text-left'>
-										<h3 className='text-center heading-h3'>
+									<div className='border-right text-center'>
+										<a href='/applicationtransformation/index.html' className='text-center heading-h3 h3'>
 											Application<br /> Transformation
-										</h3>
-										<p className=' f-14 px-4'>
+										</a>
+										<p className='f-14 px-4'>
 											Applications that power your enterprise are key to generating a strong
 											competitive advantage. Bring innovation, agility and outstanding customer
 											experience through moderm architectures and cloud first approach.
@@ -151,13 +151,13 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-							<Col sm='12' md='3' className='p-1'>
+							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
-									<div className='border-right text-left'>
-										<h3 className='text-center heading-h3'>
+									<div className='border-right text-center'>
+										<a href='/devopstransformation/index.html' className='text-center heading-h3 h3'>
 											DevOps <br />Transformation
-										</h3>
-										<p className='	 f-14 px-1 px-md-4'>
+										</a>
+										<p className='f-14 px-1 px-md-4'>
 											Adopting a DevOps culture starts by transforming your people, tech and
 											processes. Accelerate your DevOps adaption by using our open Automation
 											platform and skilled resources.
@@ -167,7 +167,7 @@ const Tabs = () => {
 									</div>
 								</div>
 							</Col>
-
+{/*
 							<Col sm='12' md='3' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='text-left'>
@@ -183,7 +183,7 @@ const Tabs = () => {
 										</p>
 									</div>
 								</div>
-							</Col>
+							</Col> */}
 						</Row>
 					</TabPane>
 					<TabPane tabId='3' className='borderHomePageTab3'>

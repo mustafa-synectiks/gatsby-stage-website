@@ -173,8 +173,8 @@ const Tabs = () => {
 							<div className='row'>
 								<div className='col-sm-12  p-1'>
 									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0'>
-											<h3 className='text-center heading-h3'>Infrastructure Transformation</h3>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a href='/infrastructure/index.html'  className='text-center heading-h3'>Infrastructure Transformation</a>
 											<p className='ptext  f-14 px-2 px-md-4'>
 												Make sure that every bit of your hardware environment is directly
 												supporting your business objectives. Transition from a hardware centric
@@ -186,8 +186,8 @@ const Tabs = () => {
 								</div>
 								<div className='col-sm-12  p-1'>
 									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0'>
-											<h3 className='text-center heading-h3'>Application Transformation</h3>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a  href='/applicationtransformation/index.html' className='text-center heading-h3'>Application Transformation</a>
 											<p className='ptext  f-14 px-4'>
 												Applications that power your enterprise are key to generating a strong
 												competitive advantage. Bring innovation, agility and outstanding
@@ -200,8 +200,8 @@ const Tabs = () => {
 
 								<div className='col-sm-12  p-1'>
 									<div className='py-1'>
-										<div className='border-bottom my-n1 my-md-n0'>
-											<h3 className='text-center heading-h3'>DevOps Transformation</h3>
+										<div className='border-bottom my-n1 my-md-n0 text-center'>
+											<a href='/devopstransformation/index.html' className='text-center heading-h3'>DevOps Transformation</a>
 											<p className='ptext  f-14 px-1 px-md-4'>
 												Adopting a DevOps culture starts by transforming your people, tech and
 												processes. Accelerate your DevOps adaption by using our open Automation
@@ -210,7 +210,7 @@ const Tabs = () => {
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-12  p-1'>
+								{/* <div className='col-sm-12  p-1'>
 									<div className='py-1'>
 										<div className=''>
 											<h3 className='text-center heading-h3'>Data Transformation</h3>
@@ -221,7 +221,7 @@ const Tabs = () => {
 											</p>
 										</div>
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>

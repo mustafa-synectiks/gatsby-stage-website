@@ -37,14 +37,15 @@ const Header = () => {
 									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/devopstransformation/index.html'>
-										DevOps Transformation
-									</NavDropdown.Item>
+
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/applicationtransformation/index.html'>
 										Application Transformation
+									</NavDropdown.Item>
+									<NavDropdown.Item href='/devopstransformation/index.html'>
+										DevOps Transformation
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
