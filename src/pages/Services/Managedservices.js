@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
-import ManagedServices from '../../images/ManagedServices.jpg';
+// import ManagedServices from '../../images/ManagedServices.jpg';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import styled from 'styled-components';
 

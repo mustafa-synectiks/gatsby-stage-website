@@ -6,7 +6,6 @@ import Layout from '../../components/layout';
 import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
-import cloudImage from '../../images/ManagedBackup/CloudBackup.png';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
 import cloudImaged from '../../images/ManagedBackup/Backup.jpg';
 import security from '../../images/ManagedBackup/Security.png';

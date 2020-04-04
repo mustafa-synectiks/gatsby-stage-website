@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
-import CloudCommon from '../../images/CloudCommon.png';
+// import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
@@ -11,9 +11,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import '../../components/fonts.css';
 import ms1 from '../../images/Microservices/Microservice_1.png';
 import ms2 from '../../images/Microservices/Monolith to Microservices.jpg';
-import ms3 from '../../images/Microservices/Microservice_3.png';
 import ms4 from '../../images/Microservices/Microservice_7.png';
-import ms5 from '../../images/Microservices/Microservice_8.png';
 import ms6 from '../../images/Microservices/Microservice_9.png';
 import ms7 from '../../images/Microservices/Microservice_10.png';
 import ms8 from '../../images/Microservices/Microservice_11.png';
@@ -226,7 +224,7 @@ const onTop = () => {
 												While Monolith has complexity in codebase, microservices poses the
 												complexity of interaction between many services.
 											</p>
-											{/* <img src={ms3} alt='' className='imgshadow microImage h-50 mt-2 mt-md-4' /> */}
+
 											<div className='my-2 my-md-4 d-flex flex-column flex-md-row'>
 												<div className='bgBlueLight col-md-6 pt-2'>
 													<h4 className='btn bgOrange py-0 text-light'>Pain Points</h4>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
-import CloudCommon from '../../images/CloudCommon.png';
+// import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
@@ -12,7 +12,6 @@ import styled from 'styled-components';
 import mcit from '../../images/modernization/Modernize and Consolidate IT Infrastructure.jpg';
 import ms4 from '../../images/Microservices/Microservice_7.png';
 import swd from '../../images/modernization/swd.png';
-import awsd from '../../images/modernization/awsd.png';
 import circle from '../../images/modernization/Application Transformation.svg';
 import ds from '../../images/Hybrid/Discovery&Assessment.png';
 import ts from '../../images/Hybrid/Transformation Services.png';
@@ -241,7 +240,6 @@ const Infrastructure = () => {
 													/>
 												</div>
 											</div>
-											{/* <img src={awsd} alt='' className='w-50 mx-auto py-2 py-md-4' /> */}
 											<div className='my-2 my-md-4'>
 												<div className='d-flex'>
 													<div className='d-flex flex-column justify-content-around bgOrange'>

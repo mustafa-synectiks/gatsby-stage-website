@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
-import N from '../../images/NetworkServices.jpg';
+// import N from '../../images/NetworkServices.jpg';
 import SEO from '../../components/seo.js';
 
 export class Networkservices extends React.Component {
@@ -15,7 +15,7 @@ export class Networkservices extends React.Component {
 				<SEO title='Network Services' />
 				<div className='bg-lightgrey container'>
 					<div className='w-100 pb-3'>
-						<img height='auto' width='100%' className='' src={N} alt='Network Services' />
+						{/* <img height='auto' width='100%' className='' src={N} alt='Network Services' /> */}
 					</div>
 
 					<div className=' text-black w-100  text-white px-5 flex-col d-flex text-justify'>

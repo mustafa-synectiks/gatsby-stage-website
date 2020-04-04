@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 // import ModalContact from "../../components/ModalContact"
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
-import CloudCommon from '../../images/CloudCommon.png';
+// import CloudCommon from '../../images/CloudCommon.png';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import HybridCloud from '../../images/HybridCloud.jpg';
+// import HybridCloud from '../../images/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';
 import classnames from 'classnames';
 import IconSection from '../../components/Home/IconSection.js';
