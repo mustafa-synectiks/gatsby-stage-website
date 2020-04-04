@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../../components/layout';
-import nd from '../../images/NetworkDesign_CS.jpg';
+import nd from '../../images/case/NetworkDesign_CS.jpg';
 import SEO from '../../components/seo.js';
 import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 

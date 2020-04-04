@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout.js';
-import team from '../../images/AboutUs.jpg';
+import team from '../../images/Hybrid/AboutUs.jpg';
 import styled from 'styled-components';
 import EM from '../../images/Hybrid/Engagement Model.png';
 import LTR from '../../images/Hybrid/Long Term Retention.png';

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
-import ds from '../../images/DisasterRecovery_Subpage2.jpg';
+import ds from '../../images/case/DisasterRecovery_Subpage2.jpg';
 import SEO from '../../components/seo.js';
 import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 import styled from 'styled-components';

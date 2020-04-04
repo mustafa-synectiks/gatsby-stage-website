@@ -77,7 +77,10 @@ const Hybridcloud = () => {
 
 	return (
 		<Layout>
-			<SEO title='Hybrid Cloud' description='Synectiks can enable your enterprise journey to hybrid IT, regardless of your starting point.' />
+		<Helmet>
+		<meta name='description' content="Synectiks can enable your enterprise journey to hybrid IT, regardless of your starting point."/>
+		</Helmet>
+			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>
 				<div className='container-fluid '>
 					<div className='px-1 px-md-5 py-2 pt-md-5 text-justify'>

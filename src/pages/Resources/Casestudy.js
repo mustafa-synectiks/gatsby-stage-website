@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
-import SoftwareMigration from '../../images/CS_Software_Migration.jpg';
-import RealtimeMonitoring from '../../images/CS_Realtime_Monitoring.jpg';
-import SoftwareDefinedTransformation from '../../images/CS_SoftwareDefinedTransformation.jpg';
-import NetworkDesign from '../../images/CS_NetworkDesign.jpg';
-import StorageTier from '../../images/CS_StorageTier.jpg';
-import DisasterRecovery from '../../images/CS_DisasterRecovery.jpg';
+import SoftwareMigration from '../../images/case/CS_Software_Migration.jpg';
+import RealtimeMonitoring from '../../images/case/CS_Realtime_Monitoring.jpg';
+import SoftwareDefinedTransformation from '../../images/case/CS_SoftwareDefinedTransformation.jpg';
+import NetworkDesign from '../../images/case/CS_NetworkDesign.jpg';
+import StorageTier from '../../images/case/CS_StorageTier.jpg';
+import DisasterRecovery from '../../images/case/CS_DisasterRecovery.jpg';
 import SEO from '../../components/seo.js';
 
 const Casestudy = () => {

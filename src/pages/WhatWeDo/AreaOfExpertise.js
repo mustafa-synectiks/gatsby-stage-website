@@ -11,8 +11,10 @@ import { Helmet } from 'react-helmet';
 const AreaOfExpertise = ({ location }) => {
 	return (
 		<Layout>
-			<SEO title='Area of Expertise'
-			description="Across our outcome-driven consulting and managed services, it's our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference." />
+		<Helmet>
+		<meta name='description' content="Across our outcome-driven consulting and managed services, it's our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference."/>
+		</Helmet>
+			<SEO title='Area of Expertise' />
 			<AreaOfExpertiseWrapper>
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Area Of Expertise' />

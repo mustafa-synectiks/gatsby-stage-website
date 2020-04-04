@@ -49,7 +49,10 @@ const onTop = () => {
 }
 	return (
 		<Layout>
-			<SEO title='Private Cloud Hosting' description='Synectiks Secure Cloud Hosted Services supports a variety of workloads & Disaster Recovery with a high degree of control, security and simplicity. Support your mission-critical applications and workloads with instant and scalable infrastructure. With Synectiks Cloud Hosted Services, you can focus on your business needs instead of spending the time and money it takes to plan, procure, secure and manage the right infrastructure to meet your application demands.' />
+		<Helmet>
+<meta name='description' content='Synectiks Secure Cloud Hosted Services supports a variety of workloads & Disaster Recovery with a high degree of control, security and simplicity. Support your mission-critical applications and workloads with instant and scalable infrastructure. With Synectiks Cloud Hosted Services, you can focus on your business needs instead of spending the time and money it takes to plan, procure, secure and manage the right infrastructure to meet your application demands.'/>
+		</Helmet>
+			<SEO title='Private Cloud Hosting'  />
 			<PrimaryCloudHostingWrapper>
 				<div className='bg-lightgrey container-fluid'>
 					<div className='text-justify'>

@@ -30,12 +30,12 @@ import OpenPlatform from '../images/OpenPlatform.png';
 import Transformation from '../images/Transformation.png';
 import Solutions from '../images/Solutions.png';
 import PoweredBySynectiks from '../images/PoweredBySynectiks.png';
-import SM from '../images/CS_Software_Migration.jpg';
-import RM from '../images/CS_Realtime_Monitoring.jpg';
-import SDFT from '../images/CS_SoftwareDefinedTransformation.jpg';
-import ND from '../images/CS_NetworkDesign.jpg';
-import ST from '../images/CS_StorageTier.jpg';
-import DR from '../images/CS_DisasterRecovery.jpg';
+import SM from '../images/case/CS_Software_Migration.jpg';
+import RM from '../images/case/CS_Realtime_Monitoring.jpg';
+import SDFT from '../images/case/CS_SoftwareDefinedTransformation.jpg';
+import ND from '../images/case/CS_NetworkDesign.jpg';
+import ST from '../images/case/CS_StorageTier.jpg';
+import DR from '../images/case/CS_DisasterRecovery.jpg';
 import Mcc from '../images/mcc.png';
 import hx1 from '../images/HomePage/1.png';
 import hx2 from '../images/HomePage/Picture3.png';
@@ -72,10 +72,11 @@ const Slider = () => {
 	};
 	return (
 		<HomeWrapper>
+		<Helmet>
+		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
+		</Helmet>
 			<SEO
-				title='Synectiks'
-				description='As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.'
-			/>
+				title='Synectiks'/>
 			<div className='container-fluid'>
 				<div className='row'>
 					<div id='owl-demo' className='owl-carousel owl-theme'>

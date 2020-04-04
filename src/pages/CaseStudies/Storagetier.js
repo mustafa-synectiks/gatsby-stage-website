@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import st from '../../images/StorageTier_CS.jpg';
+import st from '../../images/case/StorageTier_CS.jpg';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo.js';
 import styled from 'styled-components';

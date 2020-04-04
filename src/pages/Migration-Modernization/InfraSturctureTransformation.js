@@ -52,8 +52,11 @@ const Infrastructure = () => {
 
 	return (
 		<Layout>
-			<SEO title='Infrastructure Transformation' description='The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively.' />
+		<Helmet>
+		<meta name='description' content="The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively."/>
+		</Helmet>
 			<HybridWrapper>
+			<SEO title='Infrastructure Transformation'/>
 				<div className='container-fluid p-1'>
 					<div className=''>
 						<BreadCrumbs

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout';
-import rjc from '../../images/RelianceJioCasestudy.jpg';
+import rjc from '../../images/case/RelianceJioCasestudy.jpg';
 import SEO from '../../components/seo.js';
 import CaseBreadCrumbs from '../../components/Home/CasestudiesBreads.js';
 import styled from 'styled-components';

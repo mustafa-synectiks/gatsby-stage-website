@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../components/layout.js';
-import team from '../../images/AboutUs.jpg';
+import team from '../../images/Hybrid/AboutUs.jpg';
 import styled from 'styled-components';
 import EM from '../../images/Hybrid/Engagement Model.png';
 import LTR from '../../images/Hybrid/Long Term Retention.png';
@@ -23,8 +23,11 @@ import '../../components/fonts.css';
 const AboutUs = ({ location }) => {
 	return (
 		<Layout>
+				<Helmet>
+<meta name='description' content="Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model."/>
+</Helmet>
 			<AboutWrapper>
-				<SEO title='About Synectiks' description="Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model." />
+				<SEO title='About Synectiks' />
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='About Us' />
 				</div>

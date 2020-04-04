@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import BlogBreadCrumbs from '../../components/Home/BlogBreadcrumbs.js';
 import styled from 'styled-components';
 import blog1 from '../../images/Blog/0.png';
+import SEO from '../../components/seo.js';
 
 const BlogOne = () => {
 	useEffect(() => {
@@ -20,7 +21,9 @@ const BlogOne = () => {
 
 	return (
 		<Layout>
+
 			<BlogWrapper>
+				<SEO title='Microservices Transformation' />
 				<BlogBreadCrumbs
 					title='Home'
 					casetitle='Resources'

@@ -40,8 +40,10 @@ const onTop = () => {
 }
 	return (
 		<Layout>
+		<Helmet>
+		<meta name='description' content="SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster."/>
+		</Helmet>
 			<SEO title='Microservices'
-			description='SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster.'
 			 />
 			<MicroserviceWrapper>
 				<div className=''>
