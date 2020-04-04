@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import Layout from '../../components/layout';
-import career from '../../images/Careers.jpg';
+import career from '../../images/Synectiks Logo/Careers.jpg';
 import '../../components/layout.css';
 import SEO from '../../components/seo.js';
 import BreadCrumbs from '../../components/Home/Breadcrumbs.js';

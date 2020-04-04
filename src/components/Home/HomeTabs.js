@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PoweredBySynectiks from '../../images/PoweredBySynectiks.png';
+import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
 import thc1 from '../../images/areofxpertise/Microservices.svg';
 import hx2 from '../../images/areofxpertise/Area Of Expertise.svg';
 import hx3 from '../../images/areofxpertise/Cloud.svg';

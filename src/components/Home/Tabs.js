@@ -19,7 +19,7 @@ import classnames from 'classnames';
 import tab1 from '../../images/HomePage/Transformation_Icon.png';
 import tab2 from '../../images/HomePage/OpenPlatform.png';
 import tab3 from '../../images/HomePage/Solution.png';
-import PoweredBySynectiks from '../../images/PoweredBySynectiks.png';
+import PoweredBySynectiks from '../../images/HomePage/PoweredBySynectiks.png';
 
 const Tabs = () => {
 	const [ activeTab, setActiveTab ] = useState('1');

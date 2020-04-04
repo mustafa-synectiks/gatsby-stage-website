@@ -29,7 +29,7 @@ import vdo from '../images/Video.png';
 import OpenPlatform from '../images/OpenPlatform.png';
 import Transformation from '../images/Transformation.png';
 import Solutions from '../images/Solutions.png';
-import PoweredBySynectiks from '../images/PoweredBySynectiks.png';
+import PoweredBySynectiks from '../images/HomePage/PoweredBySynectiks.png';
 import SM from '../images/case/CS_Software_Migration.jpg';
 import RM from '../images/case/CS_Realtime_Monitoring.jpg';
 import SDFT from '../images/case/CS_SoftwareDefinedTransformation.jpg';
