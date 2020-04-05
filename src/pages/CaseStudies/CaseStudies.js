@@ -46,7 +46,7 @@ const CaseStudies = () => {
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className=''>Software Defined Transformation</h3>
 										<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
-										<a href='/softwaredefined/index.html' className='noLine fw300'>
+										<a href='/software-defined/index.html' className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
 										</a>
 									</div>
@@ -76,7 +76,7 @@ const CaseStudies = () => {
 												Petabytes of storage migration for a large financial company with zero
 												down.
 											</p>{' '}
-											<a href='/storagemigration/index.html' className='noLine fw300'>
+											<a href='/storage-migration/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -93,7 +93,7 @@ const CaseStudies = () => {
 											<p className='pr-5'>
 												Complete network Backbone design with highest security for retail.
 											</p>
-											<a href='/networkdesign/index.html' className='noLine fw300'>
+											<a href='/network-design/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -125,7 +125,7 @@ const CaseStudies = () => {
 												Lightweight disaster recovery platform for indian Defense.
 												<br />
 											</p>
-											<a href='/disasterrecovery/index.html' className='noLine fw300'>
+											<a href='/disaster-recovery/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>

@@ -31,7 +31,7 @@ const Header = () => {
 							<Nav className='ml-auto'>
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
 									{/* <NavDropdown.Item href='/whysynectiks/index.html'>Why Synectiks</NavDropdown.Item> */}
-									<NavDropdown.Item href='/areaexpertise/index.html'>
+									<NavDropdown.Item href='/area-expertise/index.html'>
 										Area Of Expertise
 									</NavDropdown.Item>
 									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
@@ -41,22 +41,22 @@ const Header = () => {
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/applicationtransformation/index.html'>
+									<NavDropdown.Item href='/application-transformation/index.html'>
 										Application Transformation
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/devopstransformation/index.html'>
+									<NavDropdown.Item href='/devops-transformation/index.html'>
 										DevOps Transformation
 									</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Solutions' id='basic-nav-dropdown'>
 									<NavDropdown.Item href='/microservices/index.html'>Microservices</NavDropdown.Item>
-									<NavDropdown.Item href='/hybridcloud/index.html'>Hybrid Cloud</NavDropdown.Item>
+									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Services' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/officemigration/index.html'>
+									<NavDropdown.Item href='/office-migration/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
-									<NavDropdown.Item href='/privatecloudhostingservices/index.html'>
+									<NavDropdown.Item href='/private-cloud-hosting-services/index.html'>
 										Private Cloud Hosting
 									</NavDropdown.Item>
 								</NavDropdown>
@@ -65,7 +65,7 @@ const Header = () => {
 									<NavDropdown.Item href='/blog/index.html'>Blog</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Company' id='basic-nav-dropdown'>
-									<NavDropdown.Item href='/aboutus/index.html'>About Us</NavDropdown.Item>
+									<NavDropdown.Item href='/about-us/index.html'>About Us</NavDropdown.Item>
 									<NavDropdown.Item href='/careers/index.html'>Careers</NavDropdown.Item>
 									<NavDropdown.Item href='/Contact-us.html'>Contact Us</NavDropdown.Item>
 								</NavDropdown>

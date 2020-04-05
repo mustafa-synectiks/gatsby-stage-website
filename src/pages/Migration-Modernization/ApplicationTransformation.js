@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { FaBars } from 'react-icons/fa';
 import Layout from '../../components/layout';
-// import CloudCommon from '../../images/CloudCommon.png';
 import HybridCloud from '../../images/Hybrid/Hybrid Cloud.jpg';
 import hybridIma from '../../images/Hybrid/HybridCloud.jpg';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Collapse, NavbarToggler, Navbar } from 'reactstrap';

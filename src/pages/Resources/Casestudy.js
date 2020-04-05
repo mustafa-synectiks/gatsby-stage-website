@@ -20,7 +20,7 @@ const Casestudy = () => {
 					</div>
 
 					<div className='d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col'>
-						<a href='/softwaredefined/index.html' className='noLine'>
+						<a href='/software-defined/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -63,7 +63,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/storagemigration/index.html' className='noLine'>
+						<a href='/storage-migration/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -89,7 +89,7 @@ const Casestudy = () => {
 						className='d-flex justify-content-around pt-2 flex-fill mt-3 pb-3 align-items-center flex-col'
 						data-aos='fade-up'
 						data-aos-duration='2000'>
-						<a href='/networkdesign/index.html' className='noLine'>
+						<a href='/network-design/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -121,7 +121,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/disasterrecovery/index.html' className='noLine'>
+						<a href='/disaster-recovery/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>

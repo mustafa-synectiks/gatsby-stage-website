@@ -10,7 +10,7 @@ module.exports = [
 	// },
 
 	{
-		path: '/devopstransformation/index.html',
+		path: '/devops-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
 	// {
@@ -31,11 +31,11 @@ module.exports = [
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)
 	},
 	{
-		path: '/privatecloudhostingservices/index.html',
+		path: '/private-cloud-hosting-services/index.html',
 		component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)
 	},
 	{
-		path: '/hybridcloud/index.html',
+		path: '/hybrid-cloud/index.html',
 		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
 	},
 	{
@@ -43,7 +43,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Analytics.js`)
 	},
 	{
-		path: '/cloudautomation/index.html',
+		path: '/cloud-automation/index.html',
 		component: path.resolve(`src/pages/Solutions/CloudAutomation.js`)
 	},
 	{
@@ -55,15 +55,15 @@ module.exports = [
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)
 	},
 	{
-		path: '/officemigration/index.html',
+		path: '/office-migration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
 	{
-		path: '/managedservices/index.html',
+		path: '/managed-services/index.html',
 		component: path.resolve(`src/pages/Services/Managedservices.js`)
 	},
 	{
-		path: '/networkservices/index.html',
+		path: '/network-services/index.html',
 		component: path.resolve(`src/pages/Services/Networkservices.js`)
 	},
 	{
@@ -75,7 +75,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Resources/Featured.js`)
 	},
 	{
-		path: '/aboutus/index.html',
+		path: '/about-us/index.html',
 		component: path.resolve(`src/pages/Company/Aboutus.js`)
 	},
 	{
@@ -83,7 +83,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Company/Careers.js`)
 	},
 	{
-		path: '/casestudies/index.html',
+		path: '/case-studies/index.html',
 		component: path.resolve(`src/components/Home/CaseStudies.js`)
 	},
 	{
@@ -91,11 +91,11 @@ module.exports = [
 		component: path.resolve(`src/pages/CaseStudies/Realtime.js`)
 	},
 	{
-		path: '/networkdesign/index.html',
+		path: '/network-design/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Networkdesign.js`)
 	},
 	{
-		path: '/disasterrecovery/index.html',
+		path: '/disaster-recovery/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Disasterrecovery.js`)
 	},
 	{
@@ -103,15 +103,15 @@ module.exports = [
 		component: path.resolve(`src/pages/CaseStudies/Storagetier.js`)
 	},
 	{
-		path: '/storagemigration/index.html',
+		path: '/storage-migration/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Storagemigration.js`)
 	},
 	{
-		path: '/softwaredefined/index.html',
+		path: '/software-defined/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Softwaredefined.js`)
 	},
 	{
-		path: '/areaexpertise/index.html',
+		path: '/area-expertise/index.html',
 		component: path.resolve(`src/pages/WhatWeDo/AreaOfExpertise.js`)
 	},
 	{
@@ -119,7 +119,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Resources/Blog.js`)
 	},
 	{
-		path: '/blogone/index.html',
+		path: '/microservices-transformation/index.html',
 		component: path.resolve(`src/pages/Resources/Blogone.js`)
 	},
 	{
@@ -127,7 +127,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Migration-Modernization/InfraSturctureTransformation.js`)
 	},
 	{
-		path: '/applicationtransformation/index.html',
+		path: '/application-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
 	},
 	{
@@ -135,7 +135,7 @@ module.exports = [
 		component: path.resolve(`src/pages/Migration-Modernization/XformationSoftware.js`)
 	},
 	{
-		path: '/datatransformation/index.html',
+		path: '/data-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DataTransformation.js`)
 	},
 	{

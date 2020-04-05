@@ -189,7 +189,7 @@ const Slider = () => {
 							</div>
 							<div className='col col-sm-12 col-md-9 p-0 h70vh'>
 								<div className='slider'>
-									<a href='/softwaredefined/index.html' className='noLine fw300'>
+									<a href='/software-defined/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
 											<img src={SDFT} alt='Disaster Recovery' />
 
@@ -198,7 +198,7 @@ const Slider = () => {
 												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4 mr-0 mr-md-5'>
 													AWS Cloud migration for a large motor industry.
 												</p>
-												<a href='/softwaredefined/index.html' className='noLine fw300'>
+												<a href='/software-defined/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
 											</div>
@@ -218,7 +218,7 @@ const Slider = () => {
 											</div>
 										</div>
 									</a>
-									<a href='/storagemigration/index.html' className='noLine fw300'>
+									<a href='/storage-migration/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
 											<img src={SM} alt='Storage Migration' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -227,13 +227,13 @@ const Slider = () => {
 													Petabytes of storage migration for a large financial company with
 													zero down time.
 												</p>{' '}
-												<a href='/storagemigration/index.html' className='noLine fw300'>
+												<a href='/storage-migration/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
 											</div>
 										</div>
 									</a>
-									<a href='/networkdesign/index.html' className='noLine fw300'>
+									<a href='/network-design/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
 											<img src={ND} alt='Enterprise-Transformation' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -241,7 +241,7 @@ const Slider = () => {
 												<p className='pr-5 textColor  mb-1 mb-md-4'>
 													Complete network Backbone design with highest security for retail.
 												</p>
-												<a href='/networkdesign/index.html' className='noLine fw300'>
+												<a href='/network-design/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
 											</div>
@@ -263,7 +263,7 @@ const Slider = () => {
 										</div>
 									</a>
 
-									<a href='/disasterrecovery/index.html' className='noLine fw300'>
+									<a href='/disaster-recovery/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
 											<img src={DR} alt='StorageTier' />
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -271,7 +271,7 @@ const Slider = () => {
 												<p className='pr-5 textColor mb-1 mb-md-4'>
 													Lightweight disaster recovery platform for indian Defense.
 												</p>
-												<a href='/disasterrecovery/index.html' className='noLine fw300'>
+												<a href='/disaster-recovery/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
 											</div>

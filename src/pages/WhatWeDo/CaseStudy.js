@@ -26,7 +26,7 @@ const CaseStudy = () => {
 				<div className='content'>
 					<div className='d-flex flex-column flex-md-row justify-content-between mb-2 mb-md-5'>
 						<div className='w-450'>
-							<a href='/softwaredefined/index.html' className='noLine fw300'>
+							<a href='/software-defined/index.html' className='noLine fw300'>
 								<div className='box-shadow'>
 									<img src={SDFT} alt='NetworkDesign' />
 									<div className='text-group align-self-center p-2 bgWhite'>
@@ -59,7 +59,7 @@ const CaseStudy = () => {
 						</div>
 
 						<div className='w-450'>
-							<a href='/storagemigration/index.html' className='noLine fw300'>
+							<a href='/storage-migration/index.html' className='noLine fw300'>
 								<div className='box-shadow'>
 									<img src={SM} alt='StorageTier' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -76,7 +76,7 @@ const CaseStudy = () => {
 						</div>
 					</div>
 					<div className='d-flex flex-column flex-md-row justify-content-between my-2 my-md-5'>
-						<a href='/networkdesign/index.html' className='noLine fw300'>
+						<a href='/network-design/index.html' className='noLine fw300'>
 							<div className='w-450'>
 								<div className='box-shadow'>
 									<img src={ND} alt='Enterprise-Transformation' />{' '}
@@ -110,7 +110,7 @@ const CaseStudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/disasterrecovery/index.html' className='noLine fw300'>
+						<a href='/disaster-recovery/index.html' className='noLine fw300'>
 							<div className='w-450'>
 								<div className='box-shadow'>
 									<img src={DR} alt='StorageTier' />

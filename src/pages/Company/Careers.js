@@ -64,40 +64,38 @@ export class Careers extends React.Component {
 								</p>
 								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
+										<a className='navlink navfont noLine'>
 											Data &amp; Analytics
 										</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
+										<a className='navlink navfont noLine' >
 											Design &amp; UX
 										</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
-											Engineering&amp;Technology
+										<a className='navlink navfont noLine'>
+											Engineering &amp; Technology
 										</a>
 									</div>
 								</div>
 								<div className='col-lg-12 d-flex flex-col flex-column flex-md-row'>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
+										<a className='navlink navfont noLine'>
 											Internships
 										</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
-											Sales&amp;Marketing
+										<a className='navlink navfont noLine' >
+											Sales &amp; Marketing
 										</a>
 									</div>
 									<div className='pt-3 col-sm-4 px-4'>
-										<a className='navlink navfont noLine' href='/contactus/index.html'>
+										<a className='navlink navfont noLine' >
 											Software Development
 										</a>
 									</div>
 								</div>
-								{/* </p> */}
-								{/*  */}
 								<div className='my-md-5'>
 									<p className='lineHeight-24 borderbtm-grey-1px my-md-3'>
 										<h2>Open positions in all locations</h2>

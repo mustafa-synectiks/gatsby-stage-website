@@ -17,7 +17,7 @@ const Blog = () => {
 				<div>
 					<div className='w-450'>
 						<div className='bshad'>
-							<a href='/blogone/index.html' className='noLine fw300'>
+							<a href='/microservices-transformation/index.html' className='noLine fw300'>
 								<img src={blog1} alt='Enterprise-Transformation' width='100%' />{' '}
 								<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 									{/* <h3 className=''>Network Design</h3> */}

@@ -236,7 +236,7 @@ const Infrastructure = () => {
 													<img
 														src={ms4}
 														alt=''
-														className='w-50 mx-auto box-shadow my-2 my-md-4'
+														className='w-sm-50 mx-auto box-shadow my-2 my-md-4'
 													/>
 												</div>
 											</div>
@@ -711,6 +711,9 @@ const HybridWrapper = styled.div`{
 		margin: 10px 5px;
 		display:block;
 }
+.w-sm-50{
+	width: 100%;
+}
 	.bottomColh3{
 		width: 10%;
 		height: 10px;
@@ -952,7 +955,9 @@ ul.tabList.nav.flex-column {
 	a#bgL.active:hover{
 		color: white;
 	}
-
+.w-sm-50{
+	width: 50%;
+}
 	.svgcolor{
 	font-size: 2rem;
     color: rgba(0,0,0,0.5);
