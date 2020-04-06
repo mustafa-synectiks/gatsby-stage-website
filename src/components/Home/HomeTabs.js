@@ -187,7 +187,7 @@ const Tabs = () => {
 								<div className='col-sm-12  p-1'>
 									<div className='py-1'>
 										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a  href='/applicationtransformation/index.html' className='text-center heading-h3'>Application Transformation</a>
+											<a  href='/application-transformation/index.html' className='text-center heading-h3'>Application Transformation</a>
 											<p className='ptext  f-14 px-4'>
 												Applications that power your enterprise are key to generating a strong
 												competitive advantage. Bring innovation, agility and outstanding
@@ -201,7 +201,7 @@ const Tabs = () => {
 								<div className='col-sm-12  p-1'>
 									<div className='py-1'>
 										<div className='border-bottom my-n1 my-md-n0 text-center'>
-											<a href='/devopstransformation/index.html' className='text-center heading-h3'>DevOps Transformation</a>
+											<a href='/devops-transformation/index.html' className='text-center heading-h3'>DevOps Transformation</a>
 											<p className='ptext  f-14 px-1 px-md-4'>
 												Adopting a DevOps culture starts by transforming your people, tech and
 												processes. Accelerate your DevOps adaption by using our open Automation

@@ -23,7 +23,7 @@ const Storagetier = () => {
 					<div className='softwareDefined_image'>
 						<h3>Indian Meteorology Department - Case Study</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							Background - Indian Meteorology Department is an agency of the Ministry of Earth Sciences of
+							Indian Meteorology Department is an agency of the Ministry of Earth Sciences of
 							the Government of India. The agency harvests the meteorological observations, weather
 							forecasting and seismology reports and also responsible for communicating and forecasting
 							weather services.

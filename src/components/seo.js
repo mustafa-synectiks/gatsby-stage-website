@@ -103,7 +103,7 @@ const SEO = ({ title, description }) => {
 
 	return (
 		<Helmet htmlAttributes={{ lang: 'en' }} title={`${title} | ${siteTitle}`}>
-			<meta name='descrition' content={description || siteDesc} />
+			<meta name='descrition' content={`${description} || ${siteDesc}`} />
 		</Helmet>
 	);
 };

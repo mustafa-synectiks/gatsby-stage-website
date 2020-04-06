@@ -21,7 +21,7 @@ const Disasterrecovery = () => {
 					<div className='softwareDefined_image'>
 						{/* <h3>Large Motor Company</h3> */}
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							Background - As we all know, a potential business disorder will directly impact CAPEX and
+						 As we all know, a potential business disorder will directly impact CAPEX and
 							OPEX of the business. When a proper disaster recovery plan is set, any business can continue
 							to run its critical operations without thwarting their customer expectations. That is
 							exactly what we offered Indian defense, a solution that can manage and provide necessary

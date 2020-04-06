@@ -189,7 +189,7 @@ const Hybridcloud = () => {
 														embeds security, enables an IT brokerage model and creates a
 														simple, agile, on-demand environment. Hybrid Cloud also lays the
 														foundation for embracing new technologies such as
-														containerization , serverless, platform as a service (PaaS), IoT
+														containerization, serverless, platform as a service (PaaS), IoT
 														and edge computing all with an eye toward improving business
 														outcomes.
 													</p>
@@ -809,7 +809,7 @@ const Hybridcloud = () => {
 														</div>
 														<p>
 															Use our existing automation capabilities to automate
-															infrastructure , operations, security in hybrid IT
+															infrastructure, operations, security in hybrid IT
 															environment.
 														</p>
 													</div>
@@ -871,7 +871,7 @@ const Hybridcloud = () => {
 													delivery enabled with DevSecOps capabilities and extreme automation
 													from our Synectiks Xformation platform driven services delivery
 													model. Xformation Platform allows to quickly build and deliver and
-													orchestrate cross cloud services , at-scale, repeatable offerings
+													orchestrate cross cloud services, at-scale, repeatable offerings
 													and solutions that help to drive your Hybrid Cloud journey @50% time
 													& cost. Xformation is a single interface and platform to manage all
 													your workloads distributed across multiple clouds and boundaries

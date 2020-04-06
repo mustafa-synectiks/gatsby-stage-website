@@ -60,15 +60,15 @@ const Softwaredefined = () => {
 						</p>
 						<h4>Challenges</h4>
 						<p classname='textAlign'>
-							<b> Scalability</b>: This was the primary and pertinent challenge of Large Motor Company as
+							<b className='fw-500'> Scalability</b>: This was the primary and pertinent challenge of Large Motor Company as
 							their applications were not horizontally scalable due to which their applications, faced
 							many performance issues. <br />
-							<b>Reliability</b>: They had difficulty in confronting hardware downtime, unplanned outages
+							<b className='fw-500'>Reliability</b>: They had difficulty in confronting hardware downtime, unplanned outages
 							have directly impacted software downtime and baffled their IT operations, applications and
 							data. <br />
-							<b>Vendor Dependency</b>: They were running licensed products for HA clustering, system
+							<b className='fw-500'>Vendor Dependency</b>: They were running licensed products for HA clustering, system
 							monitoring and security. Most of the products were licensed.<br />
-							<b>Traditional IT infrastructure</b>: With traditional Infrastructure, it is not only
+							<b className='fw-500'>Traditional IT infrastructure</b>: With traditional Infrastructure, it is not only
 							difficult to manage a data center but also hard to improve costs in maintaining the physical
 							resources. The Large Motor company was not using more than 10% of their physical resources.
 						</p>

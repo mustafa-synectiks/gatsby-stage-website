@@ -25,9 +25,9 @@ const CaseStudy = () => {
 				<h1 className='my-2 my-md-4'>Case Studies</h1>
 				<div className='content'>
 					<div className='d-flex flex-column flex-md-row justify-content-between mb-2 mb-md-5'>
-						<div className='w-450'>
+						<div className='w-450 box-shadow'>
 							<a href='/software-defined/index.html' className='noLine fw300'>
-								<div className='box-shadow'>
+								<div className=''>
 									<img src={SDFT} alt='NetworkDesign' />
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className='textColor'>Software Defined Transformation</h3>
@@ -41,9 +41,9 @@ const CaseStudy = () => {
 								</div>
 							</a>
 						</div>
-						<div className='w-450'>
+						<div className='w-450 box-shadow'>
 							<a href='/realtime/index.html' className='noLine fw300'>
-								<div className='box-shadow'>
+								<div className=''>
 									<img src={RM} alt='NetworkDesign' />
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className='textColor'>Realtime Monitoring</h3>
@@ -58,9 +58,9 @@ const CaseStudy = () => {
 							</a>
 						</div>
 
-						<div className='w-450'>
+						<div className='w-450 box-shadow'>
 							<a href='/storage-migration/index.html' className='noLine fw300'>
-								<div className='box-shadow'>
+								<div className=''>
 									<img src={SM} alt='StorageTier' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Storage Migration</h3>
@@ -77,8 +77,8 @@ const CaseStudy = () => {
 					</div>
 					<div className='d-flex flex-column flex-md-row justify-content-between my-2 my-md-5'>
 						<a href='/network-design/index.html' className='noLine fw300'>
-							<div className='w-450'>
-								<div className='box-shadow'>
+							<div className='w-450 box-shadow'>
+								<div className=''>
 									<img src={ND} alt='Enterprise-Transformation' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Network Design</h3>
@@ -94,8 +94,8 @@ const CaseStudy = () => {
 						</a>
 
 						<a href='/storagetier/index.html' className='noLine fw300'>
-							<div className='w-450'>
-								<div className='box-shadow'>
+							<div className='w-450 box-shadow'>
+								<div className=''>
 									<img src={ST} alt='StorageTier' className='h46' />
 
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -111,8 +111,8 @@ const CaseStudy = () => {
 							</div>
 						</a>
 						<a href='/disaster-recovery/index.html' className='noLine fw300'>
-							<div className='w-450'>
-								<div className='box-shadow'>
+							<div className='w-450 box-shadow'>
+								<div className=''>
 									<img src={DR} alt='StorageTier' />
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Disaster Recovery</h3>
@@ -189,7 +189,7 @@ const CaseStudyWrapper = styled.div`
 		padding: 3rem 4rem;
 		.w-450 {
 			width: 400px;
-			padding: 0 2rem;
+			padding: 0 0rem;
 		}
 	}
 `;

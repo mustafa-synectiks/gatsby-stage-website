@@ -518,7 +518,7 @@ const Infrastructure = () => {
 												<p className='ptext'>
 													The Synectiks Xformation Platform delivers cloud speed, scalability
 													and economics. Synectiks can enable your enterprise journey to
-													Software Defined Transformation , regardless of your starting point.
+													Software Defined Transformation, regardless of your starting point.
 												</p>
 											</div>
 

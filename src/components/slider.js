@@ -85,7 +85,7 @@ const Slider = () => {
 									resources.
 								</p>
 								<a
-									href='https://synectiks.com/devopstransformation/index.html'
+									href='https://synectiks.com/devops-transformation/index.html'
 									className='btn btn-primary'>
 									Learn More
 								</a>
@@ -286,7 +286,6 @@ const Slider = () => {
 					<GetInTouch />
 				</div>
 				<div className=''>
-					{/* private policy */}
 					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use

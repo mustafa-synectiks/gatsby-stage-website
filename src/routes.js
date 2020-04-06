@@ -99,7 +99,7 @@ module.exports = [
 		component: path.resolve(`src/pages/CaseStudies/Disasterrecovery.js`)
 	},
 	{
-		path: '/storagetier/index.html',
+		path: '/storage-tier/index.html',
 		component: path.resolve(`src/pages/CaseStudies/Storagetier.js`)
 	},
 	{

@@ -129,7 +129,7 @@ const Tabs = () => {
 										<a href='/infrastructure/index.html' className='text-center heading-h3 h3'>
 											Infrastructure <br />Transformation
 										</a>
-										<p className='text-left f-14 px-2 px-md-4'>
+										<p className='f-14 px-2 px-md-4'>
 											Make sure that every bit of your hardware environment is directly supporting
 											your business objectives. Transition from a hardware centric to a software
 											Defined organisation make huge difference in CapEx and Opex.
@@ -140,7 +140,7 @@ const Tabs = () => {
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/applicationtransformation/index.html' className='text-center heading-h3 h3'>
+										<a href='/application-transformation/index.html' className='text-center heading-h3 h3'>
 											Application<br /> Transformation
 										</a>
 										<p className='f-14 px-4'>
@@ -154,7 +154,7 @@ const Tabs = () => {
 							<Col sm='12' md='4' className='p-1'>
 								<div className='py-1 py-md-3 h-100'>
 									<div className='border-right text-center'>
-										<a href='/devopstransformation/index.html' className='text-center heading-h3 h3'>
+										<a href='/devops-transformation/index.html' className='text-center heading-h3 h3'>
 											DevOps <br />Transformation
 										</a>
 										<p className='f-14 px-1 px-md-4'>

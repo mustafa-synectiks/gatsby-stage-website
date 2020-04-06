@@ -681,7 +681,7 @@ const onTop = () => {
 															blocks and automation framework. You would minimize your
 															risks by investing a small time & money and continue to do
 															so when you see a significant ROI. The key aspect is time.
-															The advantage of making us your microservices partner is ,
+															The advantage of making us your microservices partner is,
 															our open source contribution helps us to deliver values vary
 															rapidly.
 														</li>

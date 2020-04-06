@@ -58,19 +58,17 @@ const onTop = () => {
 		</Helmet>
 			<ApplicationTransformationWrapper>
 				<SEO title='Application Transformation' />
-				<div className=''>
-					<div className=' text-justify' />
-					<div>
-						<div className=''>
+					<div  className='position-relative'>
+
+						<Row>
+							<div className='col-sm-12 col-md-12 px-1'>
 							<BreadCrumbs
 								title='Home'
 								subtitle='Migration & Modernization'
 								pageTitle='Application Transformation'
 							/>
-							<h1 className='mt-2 mt-md-4 ml-n2'>Application Transformation</h1>
-						</div>
-						<Row className='position-relative'>
-							<div className='col-sm-12 col-md-12 px-1'>
+							{/* <h1 className='mt-2 mt-md-4 ml-n2'>Application Transformation</h1> */}
+							<h1 className='mt-2 mt-md-4'>Application Transformation</h1>
 								<Navbar color='light' light expand='lg' className='topNav'>
 									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
@@ -141,7 +139,7 @@ const onTop = () => {
 											</p>
 											<p className='ptext'>
 												To accommodate the increasing complexity of functional requirements, and
-												velocity , volume and variety that current business demands , IT
+												velocity, volume and variety that current business demands, IT
 												applications need to embrace a variety of architectural patterns.
 												Organizations must meet ever-changing business demands — from mainframe
 												applications and client-server to service oriented architecture (SOA)
@@ -367,7 +365,7 @@ const onTop = () => {
 													driven services delivery across clouds, functional testing,
 													performance testing and security testing and stagewise production
 													deployment tasks. By truly adopting a DevOps based cultural
-													adoption, customers can ensure their product quality , security and
+													adoption, customers can ensure their product quality, security and
 													compliance posture is continually maintained along with the
 													capability to rapidly deliver features and services with ever
 													increasing security and compliance guidelines.
@@ -536,7 +534,6 @@ const onTop = () => {
 							</div>
 						</Row>
 					</div>
-				</div>
 			</ApplicationTransformationWrapper>
 			<Helmet>
 				<script
@@ -838,7 +835,7 @@ ul.tabList.nav.flex-column {
 	.ptext{
 		text-align: justify;
 	}
-	padding:3rem 4rem;
+	padding:3rem 5rem;
 	.w-hndr{
 	width: 75%
 }
