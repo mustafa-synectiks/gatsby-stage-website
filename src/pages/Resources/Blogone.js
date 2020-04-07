@@ -5,20 +5,11 @@ import BlogBreadCrumbs from '../../components/Home/BlogBreadcrumbs.js';
 import styled from 'styled-components';
 import blog1 from '../../images/Blog/0.png';
 import SEO from '../../components/seo.js';
+import PropTypes from 'prop-types';
 
-const BlogOne = () => {
-	useEffect(() => {
-		// var $ = window.$;
-		// $("#subscribeform").submit(function(e) {
-    // e.preventDefault();
-		function submitForm() {
-			var subsform = document.getElementByName('subscribeform')[0];
-			subsform.submit();
-			subsform.reset();
-			return false;
-		}
-});
+const BlogOne = (props) => {
 
+// const script = require()
 	return (
 		<Layout>
 
@@ -115,39 +106,11 @@ const BlogOne = () => {
 					</div>
 				</div>
 			</BlogWrapper>
-				<Helmet>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `
-            var vv_base_id = 'q00IB13hyn';
-var vv_ext_id = '5d53ed9a';
-var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
-(function () {
-var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
-        `
-					}}
-				/>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `
-var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");
-var vvfc_ServiceURL = vvfc_BaseURL + 'ProcessFormCapture.aspx';
-var vvfc_ScriptURL = vvfc_BaseURL + 'Scripts/vvfcscript.js';
-var trackedForms = ['subscribeform'];
-var options = { accountId: 'q00IB13hyn', serviceURL: vvfc_ServiceURL, pollInterval: 5000,
-forms: [{ id: 'subscribeform', ignoreFields: ['__VIEWSTATE', '__VIEWSTATEGENERATOR', '__EVENTVALIDATION'], accountFormId: '5e8a21d697c1d005406683d6' } ]};
-(function (src) {
-var vvscript = document.createElement('script');
-vvscript.type = 'text/javascript';
-vvscript.async = true; vvscript.src = src;
-var scriptElements = document.getElementsByTagName('script');
-var lastScriptElement = scriptElements[scriptElements.length - 1];
-lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
-})(vvfc_ScriptURL);
-        `
-					}}
-				/>
-			</Helmet>
+			<Helmet>
+				<div key={`body`} id='___gatsby' dangerouslySetInnerHTML={{ __html: props.body }} />
+
+				{props.postBodyComponents}
+						</Helmet>
 		</Layout>
 	);
 };
