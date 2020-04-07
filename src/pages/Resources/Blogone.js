@@ -11,9 +11,17 @@ const BlogOne = (props) => {
 
 // const script = require()
 	return (
+			<html {...props.htmlAttributes}>
+			<head>
+	</head>
+			<body {...props.bodyAttributes}>
+				{props.preBodyComponents}
+				<noscript key='noscript' id='gatsby-noscript'>
+					This app works best with JavaScript enabled.
+				</noscript>
 		<Layout>
-
-			<BlogWrapper>
+	<BlogWrapper>
+				<div key={`body`} id='___gatsby' dangerouslySetInnerHTML={{ __html: props.body }} />
 				<SEO title='Microservices Transformation' />
 				<BlogBreadCrumbs
 					title='Home'
@@ -105,16 +113,45 @@ const BlogOne = (props) => {
 						</form>
 					</div>
 				</div>
-			</BlogWrapper>
-			<Helmet>
-				<div key={`body`} id='___gatsby' dangerouslySetInnerHTML={{ __html: props.body }} />
-
 				{props.postBodyComponents}
-						</Helmet>
-		</Layout>
-	);
-};
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            var vv_base_id = 'q00IB13hyn';
+var vv_ext_id = '5d53ed9a';
+var __ibaseUrl = (("https:" == document.location.protocol) ? "https://frontend.id-visitors.com" : "http://frontend.id-visitors.com");
+(function () {
+var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true; va.src = __ibaseUrl + '/cscripts/' + vv_base_id + '-' + vv_ext_id + '.js'; var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv); })();
+        `
+					}}
+				/>
+					<script
+					dangerouslySetInnerHTML={{
+						__html: `
+           var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");
+var vvfc_ServiceURL = vvfc_BaseURL + 'ProcessFormCapture.aspx';
+var vvfc_ScriptURL = vvfc_BaseURL + 'Scripts/vvfcscript.js';
+var trackedForms = ['subscribeform'];
+var options = { accountId: 'q00IB13hyn', serviceURL: vvfc_ServiceURL, pollInterval: 5000,
+forms: [{ id: 'subscribeform', ignoreFields: ['__VIEWSTATE', '__VIEWSTATEGENERATOR', '__EVENTVALIDATION'], accountFormId: '5e8a21d697c1d005406683d6' } ]};
+(function (src) {
+var vvscript = document.createElement('script');
+vvscript.type = 'text/javascript';
+vvscript.async = true; vvscript.src = src;
+var scriptElements = document.getElementsByTagName('script');
+var lastScriptElement = scriptElements[scriptElements.length - 1];
+lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
+})(vvfc_ScriptURL);
+        `
+					}}
+				/>
 
+			</BlogWrapper>
+		</Layout>
+			</body>
+		</html>
+	);
+}
 
 export default BlogOne;
 
@@ -143,3 +180,12 @@ const BlogWrapper = styled.div`
 		}
 	}
 `;
+
+BlogOne.propTypes = {
+	htmlAttributes: PropTypes.object,
+	headComponents: PropTypes.array,
+	bodyAttributes: PropTypes.object,
+	preBodyComponents: PropTypes.array,
+	body: PropTypes.string,
+	postBodyComponents: PropTypes.array
+};

@@ -82,7 +82,7 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
         `
 					}}
 				/>
-					<script
+					{/* <script
 					dangerouslySetInnerHTML={{
 						__html: `
            var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");
@@ -101,7 +101,7 @@ lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSiblin
 })(vvfc_ScriptURL);
         `
 					}}
-				/>
+				/> */}
 
 			</body>
 		</html>
