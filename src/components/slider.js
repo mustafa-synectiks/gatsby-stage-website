@@ -300,7 +300,7 @@ const Slider = () => {
 								</small>
 							</a> */}
 						</p>
-						<MdClose className='closeBtn float-right mr-2 mr-md-3' type='submit' id='hide' />
+						<span className='closeBtn float-right mr-2 mr-md-3' type='submit' id='hide'>X</span>
 					</div>
 					{/* private policy */}
 				</div>
@@ -346,8 +346,9 @@ const HomeWrapper = styled.section`{
 	top:0;
 	right:0;
 	padding: 10px;
-	font-size: 2.5rem;
+	font-size: 1.2rem;
 	margin-top: 5px;
+	font-weight: 500;
 }
 }
 h1{

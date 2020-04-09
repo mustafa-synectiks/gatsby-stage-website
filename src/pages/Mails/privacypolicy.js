@@ -42,7 +42,7 @@ export class Privacypolicy extends React.Component {
 					<p>
 						<ol type='1'>
 							<h3>
-								<li>Information We Collect</li>
+								<li className='text-left'>Information We Collect</li>
 							</h3>
 							<ol type='i'>
 								<h5>

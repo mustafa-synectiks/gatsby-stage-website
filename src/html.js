@@ -8,7 +8,7 @@ export default function HTML(props) {
 				<meta charSet='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=0.86,
 				minimum-scale=0.9' />
-
+				<meta name="ahrefs-site-verification" content="8c6cee071ee9cd1825e173a97a51407ea7094e6a42d87c2e4929e464c037b969"/>
 				<meta name='format-detection' content='telephone=no' />
 				<meta httpEquiv='x-ua-compatible' content='ie=edge' />
 				{/* <!-- Bootstrap --> */}
@@ -82,26 +82,6 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
         `
 					}}
 				/>
-					{/* <script
-					dangerouslySetInnerHTML={{
-						__html: `
-           var vvfc_BaseURL = (("https:" == document.location.protocol) ? "https://forms.id-visitors.com/FrontEndWeb/" : "http://forms.id-visitors.com/FrontEndWeb/");
-var vvfc_ServiceURL = vvfc_BaseURL + 'ProcessFormCapture.aspx';
-var vvfc_ScriptURL = vvfc_BaseURL + 'Scripts/vvfcscript.js';
-var trackedForms = ['subscribeform'];
-var options = { accountId: 'q00IB13hyn', serviceURL: vvfc_ServiceURL, pollInterval: 5000,
-forms: [{ id: 'subscribeform', ignoreFields: ['__VIEWSTATE', '__VIEWSTATEGENERATOR', '__EVENTVALIDATION'], accountFormId: '5e8a21d697c1d005406683d6' } ]};
-(function (src) {
-var vvscript = document.createElement('script');
-vvscript.type = 'text/javascript';
-vvscript.async = true; vvscript.src = src;
-var scriptElements = document.getElementsByTagName('script');
-var lastScriptElement = scriptElements[scriptElements.length - 1];
-lastScriptElement.parentNode.insertBefore(vvscript, lastScriptElement.nextSibling);
-})(vvfc_ScriptURL);
-        `
-					}}
-				/> */}
 
 			</body>
 		</html>
