@@ -234,7 +234,7 @@ microsoft cloud service provider,
 								<div className='slider'>
 									<a href='/software-defined/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
-											<img src={SDFT} alt='Disaster Recovery' />
+											<img src={SDFT} alt='Software Defined' />
 
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Software Defined Transformation</h3>
@@ -249,7 +249,7 @@ microsoft cloud service provider,
 									</a>
 									<a href='/realtime/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
-											<img src={RM} alt='NetworkDesign' />{' '}
+											<img src={RM} alt='Realtime' />{' '}
 											<div className='text-group align-self-center p-2 bgWhite'>
 												<h3 className='textColor'>Realtime Monitoring</h3>
 												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4'>
@@ -278,7 +278,7 @@ microsoft cloud service provider,
 									</a>
 									<a href='/network-design/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
-											<img src={ND} alt='Enterprise-Transformation' />{' '}
+											<img src={ND} alt='Network Design' />{' '}
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Network Design</h3>
 												<p className='pr-5 textColor  mb-1 mb-md-4'>
@@ -292,7 +292,7 @@ microsoft cloud service provider,
 									</a>
 									<a href='/storage-tier/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
-											<img src={ST} alt='StorageTier' className='h46' />
+											<img src={ST} alt='Storage Tier' className='h46' />
 
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Storage Tier</h3>
@@ -308,7 +308,7 @@ microsoft cloud service provider,
 
 									<a href='/disaster-recovery/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
-											<img src={DR} alt='StorageTier' />
+											<img src={DR} alt='Disaster Recovery' />
 											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 												<h3 className='textColor'>Disaster Recovery</h3>
 												<p className='pr-5 textColor mb-1 mb-md-4'>

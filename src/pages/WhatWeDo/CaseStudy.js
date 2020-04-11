@@ -28,7 +28,7 @@ const CaseStudy = () => {
 						<div className='w-450 box-shadow'>
 							<a href='/software-defined/index.html' className='noLine fw300'>
 								<div className=''>
-									<img src={SDFT} alt='NetworkDesign' />
+									<img src={SDFT} alt='Software Defined' />
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className='textColor'>Software Defined Transformation</h3>
 										<p className='pr-2 pr-md- textColor'>
@@ -44,7 +44,7 @@ const CaseStudy = () => {
 						<div className='w-450 box-shadow'>
 							<a href='/realtime/index.html' className='noLine fw300'>
 								<div className=''>
-									<img src={RM} alt='NetworkDesign' />
+									<img src={RM} alt='Realtime' />
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className='textColor'>Realtime Monitoring</h3>
 										<p className='pr-2 pr-md-5 textColor'>
@@ -61,7 +61,7 @@ const CaseStudy = () => {
 						<div className='w-450 box-shadow'>
 							<a href='/storage-migration/index.html' className='noLine fw300'>
 								<div className=''>
-									<img src={SM} alt='StorageTier' />{' '}
+									<img src={SM} alt='Storage Migration' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Storage Migration</h3>
 										<p className='pr-5 textColor'>
@@ -79,7 +79,7 @@ const CaseStudy = () => {
 						<a href='/network-design/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
-									<img src={ND} alt='Enterprise-Transformation' />{' '}
+									<img src={ND} alt='Network Design' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Network Design</h3>
 										<p className='pr-5 textColor'>
@@ -93,16 +93,16 @@ const CaseStudy = () => {
 							</div>
 						</a>
 
-						<a href='/storagetier/index.html' className='noLine fw300'>
+						<a href='/storage-tier/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
-									<img src={ST} alt='StorageTier' className='h46' />
+									<img src={ST} alt='Storage Tier' className='h46' />
 
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Storage Tier</h3>
 										<p className='pr-5 textColor'>
 											Moving Bigdata workloads to aggregated platform for a large telco.
-										</p>{' '}
+										</p>
 										<span className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
 										</span>
@@ -113,7 +113,7 @@ const CaseStudy = () => {
 						<a href='/disaster-recovery/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
-									<img src={DR} alt='StorageTier' />
+									<img src={DR} alt='Disaster Recovery' />
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 										<h3 className='textColor'>Disaster Recovery</h3>
 										<p className='pr-5 textColor'>

@@ -17,36 +17,16 @@ module.exports = [
 		component: path.resolve(`src/pages/Services/PrimaryCloudHostingServices.js`)
 	},
 	{
+		path: '/office-migration/index.html',
+		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
+	},
+		{
 		path: '/hybrid-cloud/index.html',
 		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
 	},
 	{
-		path: '/analytics/index.html',
-		component: path.resolve(`src/pages/Solutions/Analytics.js`)
-	},
-	{
-		path: '/cloud-automation/index.html',
-		component: path.resolve(`src/pages/Solutions/CloudAutomation.js`)
-	},
-	{
-		path: '/monitoring/index.html',
-		component: path.resolve(`src/pages/Solutions/Monitoring.js`)
-	},
-	{
 		path: '/microservices/index.html',
 		component: path.resolve(`src/pages/Solutions/Microservice.js`)
-	},
-	{
-		path: '/office-migration/index.html',
-		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
-	},
-	{
-		path: '/managed-services/index.html',
-		component: path.resolve(`src/pages/Services/Managedservices.js`)
-	},
-	{
-		path: '/network-services/index.html',
-		component: path.resolve(`src/pages/Services/Networkservices.js`)
 	},
 	{
 		path: '/casestudy/index.html',
@@ -112,8 +92,4 @@ module.exports = [
 		path: '/application-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
 	},
-	{
-		path: '/terms/index.html',
-		component: path.resolve(`src/pages/Company/Terms.js`)
-	}
 ];
