@@ -4,28 +4,10 @@ module.exports = [
 		path: '/',
 		component: path.resolve(`src/pages/index.js`)
 	},
-	// {
-	// 	path: '/audit/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Audit.js`)
-	// },
-
 	{
 		path: '/devops-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
-	// {
-	// 	path: '/foundation/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Foundation.js`)
-	// },
-
-	// {
-	// 	path: '/microserviceexample/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Microserviceexample.js`)
-	// },
-	// {
-	// 	path: '/microservicehelp/index.html',
-	// 	component: path.resolve(`src/pages/Formation/Microservicehelp.js`)
-	// },
 	{
 		path: '/privacypolicy/index.html',
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)
@@ -129,14 +111,6 @@ module.exports = [
 	{
 		path: '/application-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
-	},
-	{
-		path: '/xformation/index.html',
-		component: path.resolve(`src/pages/Migration-Modernization/XformationSoftware.js`)
-	},
-	{
-		path: '/data-transformation/index.html',
-		component: path.resolve(`src/pages/Migration-Modernization/DataTransformation.js`)
 	},
 	{
 		path: '/terms/index.html',

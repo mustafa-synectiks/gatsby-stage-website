@@ -59,14 +59,14 @@ const onTop = () => {
 			<SEO title='DevOps Transformation'/>
 
 			<DevopsTWrapper>
-				<div className='container-fluid '>
-					<div className='px-0 px-md-5 pt-5 text-justify'>
+				<div className=''>
+					<div className='text-justify'>
 						<BreadCrumbs
 							title='Home'
 							subtitle='Migration / Modernization'
 							pageTitle='Devops Transformation'
 						/>
-						<h1 className='text-left mt-md-4'>DevOps Transformation</h1>
+						<h1 className='text-left mt-md-4 ml-n1'>DevOps Transformation</h1>
 					</div>
 					<div className=''>
 						<Row className='position-relative'>
@@ -1003,7 +1003,7 @@ const DevopsTWrapper = styled.div`
 .ptext{
 	text-align: left;
 }
-padding:2rem 1rem;
+padding:6rem 1rem;
 	h1 {
 		font-size: 1.875rem;
 	}
@@ -1121,7 +1121,7 @@ padding:2rem 1rem;
 		cursor: pointer;
 	}
 	.tab-content > .active {
-		padding: 0rem 1rem;
+		padding: 0rem 0rem;
 	}
 	.w125px {
 		width: 50%;
@@ -1182,7 +1182,7 @@ padding:2rem 1rem;
   /* width: 87vw; */
 	position: relative;
 	top: 0px;
-	left: 3%;
+	/* left: 3%; */
     border: 1px solid var(--textColor);
     background: var(--synectiksWhite);
     justify-content: flex-start;
@@ -1314,7 +1314,7 @@ padding:2rem 1rem;
 				cursor: pointer;
 			}
 			.tab-content > .active {
-				padding: 1rem 4rem 2rem 4rem;
+				/* padding: 2rem 4.2rem; */
 			}
 		}
 		a#bgL,
@@ -1397,7 +1397,7 @@ padding:2rem 1rem;
 .mobile-hide{
 	display: flex !important;
 }
-		padding: 0rem;
+		padding: 2rem 4.2rem;
 		.navbar{
 			padding: 0 !important;
 		}

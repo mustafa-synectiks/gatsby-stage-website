@@ -248,8 +248,8 @@ export class Careers extends React.Component {
 									qualifications. We will not discriminate by age, race, gender, color, religion,
 									national origin, sexual orientation, veteran status, marital status, disability
 									status, or any other protected category. For assistance or reasonable accommodation
-									during the interview process, please contact us by sending an e-mail to
-									<a className='navlink navfont noLine' href='/contactus'>
+									during the interview process, please contact us by sending an e-mail to &nbsp;
+									<a className='navlink navfont noLine' href='mailto:info@synectiks.com'>
 										hr@synectiks.com
 									</a>
 									<br />

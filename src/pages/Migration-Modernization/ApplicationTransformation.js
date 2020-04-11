@@ -67,13 +67,8 @@ const onTop = () => {
 								subtitle='Migration & Modernization'
 								pageTitle='Application Transformation'
 							/>
-							{/* <h1 className='mt-2 mt-md-4 ml-n2'>Application Transformation</h1> */}
 							<h1 className='mt-2 mt-md-4'>Application Transformation</h1>
 								<Navbar color='light' light expand='lg' className='topNav'>
-									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
-										<FaBars className='navbar-toggler-icon' />
-										<span className='my-1 mx-2 close'>X</span>
-									</NavbarToggler> */}
 									<AiOutlineMenu onClick={toggleNavbar} className='mr-2 svgcolor mb-n2' />
 									<Collapse isOpen={!collapsed} navbar>
 										<Nav className='bgWhite d-flex my-2 my-md-4 w-85'>

@@ -37,7 +37,7 @@ export class Privacypolicy extends React.Component {
 					<p>
 						We recommend that you read this Privacy Policy in full to ensure you are fully informed. If you
 						have any questions about this Privacy Policy or Synectiks data collection, use and disclosure
-						practices, please contact us at <a href='/contactus/index.html'>info@synectiks.com.</a>
+						practices, please contact us at <a href='mailto:info@synectiks.com'>info@synectiks.com.</a>
 					</p>
 					<p>
 						<ol type='1'>

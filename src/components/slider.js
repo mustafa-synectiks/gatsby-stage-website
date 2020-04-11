@@ -55,6 +55,49 @@ const Slider = () => {
 	return (
 		<HomeWrapper>
 		<Helmet>
+		  <meta name="keywords" content="cloud migration strategy,
+cloud migration services,
+aws cloud migration,
+how will you design a aws cloud migration of a legacy system,
+legacy application migration to the cloud practicability and methodology,
+cloud application migration,
+cloud migration,
+devops best practices,
+devops architecture,
+devops maturity model,
+devops as a service,
+devops culture,
+devops goals,
+devops workflow,
+cncf,
+event driven architecture microservices,
+microservices deployment architecture,
+aws microservices,
+java microservices,
+monolithic vs microservices,
+building microservices: designing fine-grained systems,
+software platform,
+cloud infrastructure,
+cloud infrastructure as a service,
+orchestration tools,
+infrastructure automation,
+legacy application,
+transformation services,
+cloud business solutions,
+serverless deploy,
+cloud based architecture,
+public private hybrid cloud,
+cloud based hosting,
+cloud server providers,
+cloud solutions companies,
+private cloud providers,
+solution based,
+cloud computing companies to invest in,
+cloud infrastructure services,
+cloud servers providers,
+infrastructure cloud,
+microsoft cloud service provider,
+"/>
 		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
 		</Helmet>
 			<SEO
@@ -247,7 +290,7 @@ const Slider = () => {
 											</div>
 										</div>
 									</a>
-									<a href='/storagetier/index.html' className='noLine fw300'>
+									<a href='/storage-tier/index.html' className='noLine fw300'>
 										<div className='case-studies w-450 bshad'>
 											<img src={ST} alt='StorageTier' className='h46' />
 
@@ -256,7 +299,7 @@ const Slider = () => {
 												<p className='pr-5 textColor  mb-1 mb-md-4'>
 													Moving Bigdata workloads to aggregated platform for a large telco.
 												</p>
-												<a href='/storagetier/index.html' className='noLine fw300'>
+												<a href='/storage-tier/index.html' className='noLine fw300'>
 													Read More <i className='fa fa-arrow-right' />
 												</a>
 											</div>
