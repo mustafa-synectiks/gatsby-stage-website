@@ -11,6 +11,9 @@ const Storagemigration = () => {
 	return (
 		<Layout>
 			<StorageWrapper>
+			<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/storage-migration/index.html'/>
+			</Helmet>
 				<SEO title='Storage Migration' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
@@ -29,7 +32,7 @@ const Storagemigration = () => {
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
 						</p>
-						<img src={cb} alt='' className='w-100' />
+						<img src={cb} alt='Storage Migration' className='w-100' />
 					</div>
 					<div className='d-flex flex-column flex-md-row justify-content-around py-2 py-md-5'>
 						<div className='px-2 px-md-5'>
@@ -44,7 +47,7 @@ const Storagemigration = () => {
 							</p>
 						</div>
 						<div>
-							<img src={as} alt='' className='w-100' />
+							<img src={as} alt='Cloud Implement Services' className='w-100' />
 						</div>
 					</div>
 					<div>

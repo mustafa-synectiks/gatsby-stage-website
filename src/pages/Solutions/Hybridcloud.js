@@ -75,6 +75,7 @@ const Hybridcloud = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Synectiks can enable your enterprise journey to hybrid IT, regardless of your starting point."/>
+		<link rel='canonical' href='https://www.synectiks.com/hybrid-cloud/index.html'/>
 		</Helmet>
 			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>
@@ -200,7 +201,7 @@ const Hybridcloud = () => {
 											<h3>Key Drivers for Hybrid cloud adoption is:</h3>
 											<div className=''>
 												<div className='my-1 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
-													<img src={AI} alt='' className='w15 mr-0 mr-md-3' />
+													<img src={AI} alt='Hybrid cloud adoption' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid ptext'>
 														Experiment with new ideas on the cloud. Build once and run
 														anywhere. With secure, easily managed, low-cost cloud resources,
@@ -212,7 +213,7 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
-													<img src={RC} alt='' className='w15 mr-0 mr-md-3' />
+													<img src={RC} alt='virtual servers in the cloud' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid ptext'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
@@ -228,7 +229,7 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
-													<img src={BCC} alt='' className='w15 mr-0 mr-md-3' />
+													<img src={BCC} alt='operational flexibility and scalability' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid ptext'>
 														Choose the best cloud to meet cost, performance, regulatory, or
 														data governance requirements. Organizations that demand greater
@@ -244,7 +245,7 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 												<div className='my-2 my-md-3 d-flex flex-column flex-md-row justify-content-around align-items-center'>
-													<img src={EVL} alt='' className='w15 mr-0 mr-md-3' />
+													<img src={EVL} alt='global delivery' className='w15 mr-0 mr-md-3' />
 													<p className='marHybrid ptext'>
 														Reduce dependency on proprietary services, application tools,
 														and cloud providers. To support global delivery, companies are
@@ -294,7 +295,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={WM} alt='' className='w20 m-0' />
+															<img src={WM} alt='Workload Migration' className='w20 m-0' />
 															<h5 className='my-3'>Workload Migration</h5>
 														</div>
 														<p>
@@ -304,7 +305,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={IC} alt='' className='w20 m-0' />
+															<img src={IC} alt='Integrating Clouds' className='w20 m-0' />
 															<h5 className='my-4'>Integrating Clouds</h5>
 														</div>
 														<p>
@@ -316,7 +317,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={WC} alt='' className='w20 m-0' />
+															<img src={WC} alt='Workload Fragmentation' className='w20 m-0' />
 															<h5 className='my-3'>Workload Fragmentation</h5>
 														</div>
 														<p>
@@ -326,7 +327,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-6 col-md-6 text-center'>
 														<div className='d-flex flex-column align-items-center'>
-															<img src={SPRT} alt='' className='w20 m-0' />
+															<img src={SPRT} alt='Support & Assistance' className='w20 m-0' />
 															<h5 className='my-3'>Support & Assistance</h5>
 														</div>
 														<p>
@@ -366,7 +367,7 @@ const Hybridcloud = () => {
 													<div className='d-flex align-items-center my-2 my-md-3'>
 														<img
 															src={DSCR}
-															alt=''
+															alt='Disaster Recovery / Backup'
 															className='w8 mr-2 mr-md-3 my-3 my-md-3'
 														/>
 														<h5>Disaster Recovery/Backup</h5>
@@ -386,14 +387,14 @@ const Hybridcloud = () => {
 													<img
 														src={scr}
 														className='imgBx wimg wb-sm-100 my-3 my-md-2 mx-auto'
-														alt=''
+														alt='Backup and disaster recovery'
 													/>
 												</div>
 											</div>
 
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={ADT} alt='' className='w15 mr-2 mr-md-3 my-2 my-md-3' />
+													<img src={ADT} alt='Application Development and Testing' className='w15 mr-2 mr-md-3 my-2 my-md-3' />
 													<h5>Application Development and Testing</h5>
 												</div>
 												<p className='ptext'>
@@ -406,7 +407,7 @@ const Hybridcloud = () => {
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={WS} alt='' className='whbd9 mr-2 mr-md-3 my-2 my-md-3' />
+													<img src={WS} alt='Web Servers' className='whbd9 mr-2 mr-md-3 my-2 my-md-3' />
 													<h4>Web Servers</h4>
 												</div>
 												<p className='ptext'>
@@ -424,12 +425,12 @@ const Hybridcloud = () => {
 												<img
 													src={SCR5}
 													className='imgBx wimg w-sm-100 mx-auto my-3 my-md-4'
-													alt=''
+													alt='Data Extract, Transform,'
 												/>
 											</div>
 											<div>
 												<div className='d-flex align-items-center'>
-													<img src={ETL} alt='' className='whbd7 mr-2 mr-md-3 my-2 my-md-3' />
+													<img src={ETL} alt='Data Extract, Transform, and Load (ETL) processes' className='whbd7 mr-2 mr-md-3 my-2 my-md-3' />
 													<h5>Data Extract, Transform, and Load (ETL) processes</h5>
 												</div>
 												<p className='ptext'>
@@ -443,7 +444,7 @@ const Hybridcloud = () => {
 												<div className='d-flex align-items-center'>
 													<img
 														src={HRP}
-														alt=''
+														alt='HR, Payroll, Productivity Applications'
 														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
 													/>
 													<h5>HR, Payroll, Productivity Applications</h5>
@@ -478,7 +479,7 @@ const Hybridcloud = () => {
 												<div className='d-flex align-items-center'>
 													<img
 														src={SLDR}
-														alt=''
+														alt='Supporting Local Data Regulations'
 														className='whbd7 mr-2 mr-md-3 my-2 my-md-3'
 													/>
 													<h5>Supporting Local Data Regulations</h5>
@@ -499,7 +500,7 @@ const Hybridcloud = () => {
 												<div className='d-flex align-items-center'>
 													<img
 														src={GGEC}
-														alt=''
+														alt='Go Global and edge computing'
 														className='whbd9  mr-2 mr-md-3 my-2 my-md-3'
 													/>
 													<h5>Go Global and edge computing </h5>
@@ -543,7 +544,7 @@ const Hybridcloud = () => {
 													</p>
 												</div>
 												<div className='col-md-6'>
-													<img src={HybridCloud} alt='' className='w-75' />
+													<img src={HybridCloud} alt='Key Strategic Drivers' className='w-75' />
 												</div>
 											</div>
 											<div>
@@ -555,7 +556,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img src={ECC} alt='Discover and Assessment' className='w15 mr-5' />
+													<img src={ECC} alt='Embrace Cultural Changes' className='w15 mr-5' />
 													<div>
 														<h5>Embrace Cultural Changes</h5>
 														<p className='ptext'>
@@ -574,7 +575,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img src={RCM} alt='Discover and Assessment' className='w15 mr-5' />
+													<img src={RCM} alt='Revamp Change Management' className='w15 mr-5' />
 													<div>
 														<h5>Revamp Change Management</h5>
 														<p className='ptext'>
@@ -590,7 +591,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img src={ICO} alt='Discover and Assessment' className='w15 mr-5' />
+													<img src={ICO} alt='Integrate Cloud Operations' className='w15 mr-5' />
 													<div>
 														<h5>Integrate Cloud Operations</h5>
 														<p className='ptext'>
@@ -609,7 +610,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img src={AS} alt='Discover and Assessment' className='w15 mr-5' />
+													<img src={AS} alt='Automate support' className='w15 mr-5' />
 													<div>
 														<h5>Automate support</h5>
 														<p className='ptext'>
@@ -629,7 +630,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row mlr '>
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
-													<img src={ST} alt='Discover and Assessment' className='w15 mr-5' />
+													<img src={ST} alt='Manage “Shadow IT”' className='w15 mr-5' />
 													<div>
 														<h5>Manage “Shadow IT”</h5>
 														<p className='ptext'>
@@ -658,7 +659,7 @@ const Hybridcloud = () => {
 											</p>
 											<div className='row my-2 my-md-5'>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img src={DRB} alt='' className='w10 mr-0 mr-md-5 mt-n3' />
+													<img src={DRB} alt='Discovery & Assessment' className='w10 mr-0 mr-md-5 mt-n3' />
 													<div>
 														<h5>Discovery & Assessment</h5>
 														<p className='ptext'>
@@ -674,7 +675,7 @@ const Hybridcloud = () => {
 											</div>
 											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
-													<img src={TS} alt='' className='w15 mr-md-5 mr-0 mt-n3' />
+													<img src={TS} alt='Transformation Services' className='w15 mr-md-5 mr-0 mt-n3' />
 													<div className='ml-0 ml-md-4'>
 														<h5>Transformation Services</h5>
 														<p className='ptext'>
@@ -732,7 +733,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EX} alt='' className='tw m-0' />
+															<img src={EX} alt='Experience' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Experience</h5>
 														</div>
 														<p className='text-center'>
@@ -741,7 +742,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EXP} alt='' className='tw m-0' />
+															<img src={EXP} alt='Expertise' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Expertise</h5>
 														</div>
 														<p>
@@ -751,7 +752,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={TM} alt='' className='tw m-0' />
+															<img src={TM} alt='Time & Money' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Time & Money</h5>
 														</div>
 														<p>
@@ -766,7 +767,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EE} alt='' className='tw m-0' />
+															<img src={EE} alt='E2E Solution' className='tw m-0' />
 															<h5 className='my-4'>E2E Solution</h5>
 														</div>
 														<p>
@@ -777,7 +778,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={SCP} alt='' className='tw m-0' />
+															<img src={SCP} alt='Single Control plane' className='tw m-0' />
 															<h5 className='my-3'>Single Control plane</h5>
 														</div>
 														<p>
@@ -789,7 +790,7 @@ const Hybridcloud = () => {
 													<div className='co
                           l-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={CS} alt='' className='tw m-0' />
+															<img src={CS} alt='Compliance & Security' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Compliance & Security</h5>
 														</div>
 														<p>
@@ -804,7 +805,7 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EA} alt='' className='tw m-0' />
+															<img src={EA} alt='Extreme Automation' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Extreme Automation</h5>
 														</div>
 														<p>
@@ -815,7 +816,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={PCP} alt='' className='tw m-0' />
+															<img src={PCP} alt='Public Cloud Partnership' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Public Cloud Partnership</h5>
 														</div>
 														<p>
@@ -827,7 +828,7 @@ const Hybridcloud = () => {
 														<div className='d-flex text-center px-5'>
 															<div>
 																<div className='d-flex align-items-center flex-column'>
-																	<img src={DE} alt='' className='tw m-0' />
+																	<img src={DE} alt='Demo Environment' className='tw m-0' />
 																	<h5 className='my-2 my-md-3'>Demo Environment</h5>
 																</div>
 																<p>
@@ -844,14 +845,14 @@ const Hybridcloud = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={WO} alt='' className='tw m-0' />
+															<img src={WO} alt='Optimization Service' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Optimization Service</h5>
 														</div>
 														<p>We do optimal resource pooling from multiple clouds.</p>
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EM} alt='' className='tw m-0' />
+															<img src={EM} alt='Engagement Model' className='tw m-0' />
 															<h5 className='my-2 my-md-3'>Engagement Model</h5>
 														</div>
 														<p>
@@ -860,7 +861,7 @@ const Hybridcloud = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={LTR} alt='' className='tw m-0' />
+															<img src={LTR} alt='Long Term Retention' className='tw m-0' />
 															<h5 className='my-2 my-md-4'>Long Term Retention</h5>
 														</div>
 														<p>100% Customer Retention Rate.</p>

@@ -55,6 +55,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market."/>
+		<link rel='canonical' href='https://www.synectiks.com/devops-transformation/index.html'/>
 		</Helmet>
 			<SEO title='DevOps Transformation'/>
 
@@ -182,12 +183,12 @@ const onTop = () => {
 													</p>
 												</div>
 												<div className='mx-auto'>
-													<img src={one} alt='' className='w-100 box-shadow' />
+													<img src={one} alt='Technology Shift' className='w-100 box-shadow' />
 												</div>
 											</div>
 											<div className='my-3 d-flex flex-column justify-content-around align-items-center'>
 												<div>
-													<h3> Cultural Shift</h3>
+													<h3>Cultural Shift</h3>
 													<p className=''>
 														A culture with less roles, much E2E responsibilities, which
 														innovates fast accepting high speed feedback and respond with
@@ -195,7 +196,7 @@ const onTop = () => {
 														economics.
 													</p>
 												</div>
-												<img src={two} alt='' className='w-100 box-shadow	' />
+												<img src={two} alt='Cultural Shift' className='w-100 box-shadow	' />
 											</div>
 										</div>
 									</TabPane>
@@ -219,7 +220,7 @@ const onTop = () => {
 										<div className='text-center '>
 											<h2 className='my-5'>Where do you find your current DevOps Maturity?</h2>
 											<div className='w-100 mx-auto'>
-												<img src={six} alt='' className='boxshdd w-100 mobile-show' />
+												<img src={six} alt='Devops Maturity' className='boxshdd w-100 mobile-show' />
 											</div>
 
 											<div className='d-flex justify-content-start flex-column flex-md-row my-2 my-md-4 mobile-hide'>
@@ -462,57 +463,7 @@ const onTop = () => {
 												</div>
 											</div>
 
-											{/* <div className='d-flex justify-content-around flex-row'>
-												<div className='w-11'>
-													<h5>Culture Skill</h5>
-												</div>
 												<div>
-													<h5>Basic</h5>
-													<ul className='pt-3 DurpleLight ulfont ulht w-100'>
-														<li>Prioritized work</li>
-														<li>Large team</li>
-														<li>Multiple Roles(Architect, Developer,Tester,...)</li>
-														<li>Defined & documented process</li>
-														<li>Quarterly release</li>
-													</ul>
-												</div>
-												<div>
-													<h5>Intermediate</h5>
-													<ul className='pt-3 DredLight ulfont ulht w-100'>
-														<li>Stable teams</li>
-														<li>Share pain</li>
-														<li>Remove boundary(Dev & Test)</li>
-														<li>Agile process</li>
-														<li>Monthly release</li>
-														<li>Act on metrics</li>
-													</ul>
-												</div>
-												<div>
-													<h5>Standard</h5>
-													<ul className='pt-3 DellowLight ulfont ulht w-100'>
-														<li>Team responsible all the way prod</li>
-														<li>Dedicated tools team</li>
-														<li>Remove boundary(Dev & Ops)</li>
-														<li>Deploy disconnected from release</li>
-														<li>Continous improvement</li>
-														<li>Component ownership</li>
-														<li>Decentralized decisions</li>
-													</ul>
-												</div>
-												<div>
-													<h5>Advanced</h5>
-													<ul className='pt-3 DreenLight ulfont ulht w-100'>
-														<li>All full stacks experts</li>
-														<li>Cross functional small teams</li>
-														<li>Speedy feedback</li>
-														<li>Advanced frameworks driven</li>
-														<li>RAD</li>
-														<li>Excellent training Framework</li>
-													</ul>
-												</div>
-											</div> */}
-
-											<div>
 												<h2 className='text-center mt-3 mt-md-5'>
 													Our DevOps Gap analysis process briefly as follows:
 												</h2>
@@ -759,9 +710,6 @@ const onTop = () => {
 									</TabPane>
 									<TabPane tabId='4'>
 										<div>
-											{/* <h3>
-												<b>Synectiks</b> Differentiator
-											</h3> */}
 											<p>
 												We go beyond creating a strategy: Synectiks helps you plan it, do it,
 												run it and manage it.
@@ -882,15 +830,15 @@ const onTop = () => {
 										<div>
 											<h3>Key benefits you get by choosing Synectiks as DevOps partner</h3>
 
-											<div className='row'>
 												<h4 className='pt-0 pt-md-0 pb-2 pb-md-3'>
 													Synectiks can enable your enterprise journey to DevOps, regardless
 													of your starting point.
 												</h4>
+											<div className='row'>
 												<div className='d-flex flex-column flex-md-row align-items-center'>
 													<img
 														src={maxFac}
-														alt='Discover and Assessment'
+														alt='Maximum Flexibility'
 														className='w9 mr-5'
 													/>
 													<div>
@@ -906,7 +854,7 @@ const onTop = () => {
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
 													<img
 														src={fastDeliv}
-														alt='Transformation Services'
+														alt='Faster Delivery'
 														className='w9 mr-5'
 													/>
 													<div className='ml-2'>
@@ -923,7 +871,7 @@ const onTop = () => {
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
 													<img
 														src={betterQual}
-														alt='Transformation Services'
+														alt='Better Quality'
 														className='w7 mr-5'
 													/>
 													<div className='ml-4'>
@@ -940,7 +888,7 @@ const onTop = () => {
 												<div className='d-flex flex-column flex-md-row align-items-center mt-0 mt-md-3'>
 													<img
 														src={lowCost}
-														alt='Transformation Services'
+														alt='Lower Costs'
 														className='w9 mr-5'
 													/>
 													<div className='ml-2'>

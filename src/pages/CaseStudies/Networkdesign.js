@@ -10,6 +10,9 @@ const Networkdesign = () => {
 	return (
 		<Layout>
 			<NetworkWrapper>
+			<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/network-design/index.html'/>
+				</Helmet>
 				<SEO title='Network Designing' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
@@ -24,7 +27,7 @@ const Networkdesign = () => {
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 							Complete network backbone design with highest security for retail.
 						</p>
-						<img src={nd} alt='' className='w-100 my-4 my-md-0' />
+						<img src={nd} alt='Network Design' className='w-100 my-4 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-md-5 orangeBorder'>

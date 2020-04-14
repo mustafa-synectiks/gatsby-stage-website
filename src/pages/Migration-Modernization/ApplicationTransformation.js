@@ -55,6 +55,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Synectiks application transformation services close the gap between what your current applications can do and what the cloud native services and microservices architecture makes them capable of. That could be greater efficiency, scale, performance and resilience. But it could also mean entirely new capabilities that create lasting advantage, generate value and drive better outcomes for your customers and your employees." />
+		<link rel='canonical' href='https://www.synectiks.com/application-transformation/index.html'/>
 		</Helmet>
 			<ApplicationTransformationWrapper>
 				<SEO title='Application Transformation' />
@@ -237,7 +238,7 @@ const onTop = () => {
 															<div className='centercol col-md-4'>
 																<img
 																	src={circle}
-																	alt='Getting Started To Software Defined Transformation'
+																	alt='Strategic Planning & Architecture'
 																	className='w-100'
 																/>
 															</div>
@@ -259,10 +260,7 @@ const onTop = () => {
 																	<p className=''>
 																		Elevate people skills, operation automation and
 																		service agility to support modernized
-																		applications. Our approach is to use a
-																		combination of the latest industry tools,
-																		processes, experience and best practices
-																		providing the best solutions to our customers.
+																		applications.
 																	</p>
 																</div>
 															</div>
@@ -270,6 +268,10 @@ const onTop = () => {
 														<div className='bottomCol'>
 															{/* <span className='bottomColh3' /> */}
 															{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
+															<p>Our approach is to use a
+																		combination of the latest industry tools,
+																		processes, experience and best practices
+																		providing the best solutions to our customers.</p>
 															<p className=''>
 																The teams perform a quick requirements analysis and GAP
 																analysis to understand the current setup and provide
@@ -328,16 +330,16 @@ const onTop = () => {
 											<div>
 												<h2>Legacy Application Migration</h2>
 												<p className='ptext'>
-													Two ways to extract value from legacy apps, as below<br />
-													<b> Business Logic</b> Creating microservices that become APIs
+													Two ways to extract value from legacy apps, as below </p>
+										<p className='ptext'>	<span className='fw'> Business Logic:</span> Creating microservices that become APIs
 													enabling business user to assemble various functionalities and truly
 													become a API driven organization with a API centric application
 													architecture. This allows the organization to become a low-code
-													organization where they 'assemble apps' rather than write apps. Data
-													Lake: Extracting the data in a Data Lake and exposing that data
+													organization where they 'assemble apps' rather than write apps.</p>
+											<p className='ptext'>	<span className='fw'>Data Lake:</span> Extracting the data in a Data Lake and exposing that data
 													through analytical tools.
 												</p>
-												<img src={ms10} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={ms10} alt='Legacy Application Migration' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Accelerated Migration</h3>
@@ -350,7 +352,7 @@ const onTop = () => {
 													governance.
 												</p>
 
-												<img src={ms9} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={ms9} alt='Accelerated Migration' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Delivery Pipeline</h3>
@@ -366,7 +368,7 @@ const onTop = () => {
 													increasing security and compliance guidelines.
 												</p>
 
-												<img src={green} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={green} alt='Delivery Pipeline' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Redevelopment – Microservices Based App Development</h3>
@@ -379,7 +381,7 @@ const onTop = () => {
 												blocks based on cloud native services that customers can leverage to
 												build application and services rapidly. A typical microservice based
 												enterprise application component diagram is below:
-												<img src={eptr} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={eptr} alt='Redevelopment – Microservices Based App Development' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 											<div>
 												<h3>Fast Data & Bigdata Analytics</h3>
@@ -396,13 +398,12 @@ const onTop = () => {
 													truly focus on outcomes.
 												</p>
 
-												<img src={redev} alt='' className='w-hndr mx-auto my-md-5 box-shadow' />
+												<img src={redev} alt='Fast Data & Bigdata Analytics' className='w-hndr mx-auto my-md-5 box-shadow' />
 											</div>
 										</div>
 									</TabPane>
 									<TabPane tabId='4'>
 										<div>
-											{/* <h3>Synectiks Differentiator</h3> */}
 											<p className='ptext'>
 												We go beyond creating a strategy: Synectiks helps you plan it, do it,
 												run it and manage it.<br /> Synectiks reduce the application
@@ -468,7 +469,7 @@ const onTop = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={economics} alt='' className='tw m-0' />
+															<img src={economics} alt='Economics' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Economics</h4>
 														</div>
 														<p className='text-center'>
@@ -478,7 +479,7 @@ const onTop = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={innovation} alt='' className='tw m-0' />
+															<img src={innovation} alt='Innovations' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Innovations</h4>
 														</div>
 														<p className='text-center'>
@@ -491,7 +492,7 @@ const onTop = () => {
 												<div className='row'>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={ds} alt='E2E Expertise' className='tw m-0' />
+															<img src={ds} alt='Continuous Delivery' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Continuous Delivery</h4>
 														</div>
 														<p className='text-center'>
@@ -502,7 +503,7 @@ const onTop = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={CS} alt='' className='tw m-0' />
+															<img src={CS} alt='Security & Compliance' className='tw m-0' />
 															<h4 className='my-2 my-md-3'> Security & Compliance</h4>
 														</div>
 														<p className='text-center'>
@@ -513,7 +514,7 @@ const onTop = () => {
 													</div>
 													<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 														<div className='d-flex align-items-center flex-column'>
-															<img src={EM} alt='' className='tw m-0' />
+															<img src={EM} alt='Engagement' className='tw m-0' />
 															<h4 className='my-2 my-md-3'>Engagement</h4>
 														</div>
 														<p className='text-center'>
@@ -775,6 +776,9 @@ ul.tabList.nav.flex-column {
     color: rgba(0,0,0,0.5);
 		margin: 10px 5px;
 		display:none;
+}
+.fw{
+	font-weight:600;
 }
 		.bottomColh3{
 		width: 10%;

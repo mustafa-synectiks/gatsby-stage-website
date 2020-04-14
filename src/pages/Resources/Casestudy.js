@@ -27,7 +27,7 @@ const Casestudy = () => {
 										<img
 											src={SoftwareDefinedTransformation}
 											width='100%'
-											alt='Enterprise-DevOps'
+											alt='Software Defined Transformation'
 										/>{' '}
 									</div>
 									<div className='text-group p-3 align-self-center'>
@@ -49,7 +49,7 @@ const Casestudy = () => {
 										<img
 											src={RealtimeMonitoring}
 											width='100%'
-											alt='Enterprise-Transformation'
+											alt='Realtime Monitoring'
 										/>{' '}
 									</div>
 									<div className='text-group p-3 align-self-center '>
@@ -70,7 +70,7 @@ const Casestudy = () => {
 										<img
 											src={SoftwareMigration}
 											width='100%'
-											alt='Enterprise-Transformation'
+											alt='Software Migration'
 										/>{' '}
 									</div>
 									<div className='text-group p-3 align-self-center'>
@@ -93,7 +93,7 @@ const Casestudy = () => {
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
-										<img src={NetworkDesign} width='100%' alt='NetworkDesign' />{' '}
+										<img src={NetworkDesign} width='100%' alt='Network Design' />{' '}
 									</div>
 									<div className='text-group p-3 align-self-center'>
 										<h4 className='font-weight-bold text-black'>Network Design </h4>
@@ -109,7 +109,7 @@ const Casestudy = () => {
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
-										<img src={StorageTier} width='100%' alt='StorageTier' />{' '}
+										<img src={StorageTier} width='100%' alt='Storage Tier' />{' '}
 									</div>
 									<div className='text-group p-3 align-self-center'>
 										<h4 className='font-weight-bold text-black'>Storage Tier </h4>

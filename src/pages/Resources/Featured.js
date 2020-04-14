@@ -19,14 +19,11 @@ export class Featured extends React.Component {
 		return (
 			<Layout>
 				<FeaturedWrapper>
+				<Helmet>
+				<link rel='canonical' href='https://www.synectiks.com/featured/index.html'/>
+				</Helmet>
 					<div className='bg-lightgrey'>
 						<SEO title='Featured' />
-						{/* <img className='text-center' src={Cr} width='100%' alt='Resources' /> */}
-
-						{/* <div className='text-center centered '> */}
-						{/* <div className='text-white'>
-								<h3>Resources</h3>
-							</div> */}
 						<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Featured' />
 
 						<div className=''>
@@ -34,7 +31,7 @@ export class Featured extends React.Component {
 							<div className='d-flex flex-column flex-md-row justify-content-around flex-fill  align-items-center flex-col'>
 								<div>
 									<div className='p-1 p-md-5'>
-										<img src={FS} width='100%' alt='Enterprise-DevOps' className='imgBx' />
+										<img src={FS} width='100%' alt='Featured' className='imgBx' />
 										<div className='text-group align-self-center'>
 											<h6 className='font-weight-bold pt-2'>
 												Discover the business value of Synectiks Open Xformation Platform and
@@ -56,7 +53,7 @@ export class Featured extends React.Component {
 											className='border-grey-2px imgBx'
 											src={FT}
 											width='100%'
-											alt='Enterprise-Transformation'
+											alt='Synectiks open products'
 										/>
 										<div className='text-group align-self-center '>
 											<h6 className='font-weight-bold pt-2'>
@@ -80,7 +77,8 @@ export class Featured extends React.Component {
 											<img
 												src={FMP}
 												width='100%'
-												alt='Enterprise-Transformation'
+												alt='microservices delivery
+													partner'
 												className='imgBx'
 											/>{' '}
 											<div className='text-group align-self-center'>

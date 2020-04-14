@@ -12,13 +12,13 @@ export class Footer extends React.Component {
 					<p className='mb-1 pt-2 px-3 fsize08'>
 						We use cookies to make sure you have better experience on our website. Read about how we use
 						cookies in our Privacy Policy
-						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
+						<a className=' navfont  text-light' href='/privacy-policy/index.html'>
 							<small className='fsize08'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</small>
 						</a>
 						If you continue to use this site, you consent to our use of cookies and our
-						<a className=' navfont  text-light' href='/privacypolicy/index.html'>
+						<a className=' navfont  text-light' href='/privacy-policy/index.html'>
 							<small className='fsize08'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</small>
@@ -62,7 +62,7 @@ export class Footer extends React.Component {
 						<div className='ml-0 ml-md-5'>
 							<h4 className='text-light text-capitalize mb-3'>
 								<a
-									href='https://synectiks.com/privacypolicy/index.html'
+									href='https://synectiks.com/privacy-policy/index.html'
 									className='text-light text-underline h4'>
 									<u>Privacy Policy</u>
 								</a>

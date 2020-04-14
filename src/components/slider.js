@@ -55,6 +55,7 @@ const Slider = () => {
 	return (
 		<HomeWrapper>
 		<Helmet>
+		<link rel='content' href='https://www.synectiks.com/'/>
 		  <meta name="keywords" content="cloud migration strategy,
 cloud migration services,
 aws cloud migration,
@@ -98,6 +99,7 @@ cloud servers providers,
 infrastructure cloud,
 microsoft cloud service provider,
 "/>
+<link rel='canonical' href='https://synectiks.com/'/>
 		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
 		</Helmet>
 			<SEO
@@ -204,7 +206,7 @@ microsoft cloud service provider,
 					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
 					<Partners />
 				</div>
-
+{/*
 				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
@@ -324,7 +326,7 @@ microsoft cloud service provider,
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 				<div>
 					<GetInTouch />
 				</div>
@@ -333,19 +335,13 @@ microsoft cloud service provider,
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
 							cookies in our
-							<a className='navfont Footerbg' href='/privacypolicy/index.html'>
+							<a className='navfont Footerbg' href='/privacy-policy/index.html'>
 								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
 							</a>
-							{/* If you continue to use this site, you consent to our use of cookies and our
-							<a className='navfont text-light' href='/privacypolicy/index.html'>
-								<small className='fsize08'>
-									&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
-								</small>
-							</a> */}
+
 						</p>
-						<span className='closeBtn float-right mr-2 mr-md-3' type='submit' id='hide'>X</span>
+						<MdClose className='closeBtn' type='submit' id='hide'/>
 					</div>
-					{/* private policy */}
 				</div>
 			</div>
 			<Helmet>
@@ -384,14 +380,11 @@ const HomeWrapper = styled.section`{
 	line-height: 10px;
 	margin-top:0px;
 	padding: 0px 30px;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
-	padding: 10px;
-	font-size: 1.2rem;
-	margin-top: 5px;
-	font-weight: 500;
+.closeBtn{
+ position: absolute;
+    top: 20%;
+    right: 2%;
+    font-size: 1.4rem;
 }
 }
 h1{
@@ -595,10 +588,11 @@ p{
 		.prvtpolicy{
 	height:40px;
 	padding: 0;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
+.closeBtn{
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    font-size: 1.4rem;
 }
 }
 

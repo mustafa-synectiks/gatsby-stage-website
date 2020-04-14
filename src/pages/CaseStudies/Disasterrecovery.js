@@ -9,6 +9,10 @@ const Disasterrecovery = () => {
 	return (
 		<Layout>
 			<DisasterWrapper>
+			<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/disaster-recovery/index.html'/>
+			</Helmet>
+
 				<SEO title='Disaster Recovery' />
 				<div className=''>
 					<CaseBreadCrumbs
@@ -19,7 +23,6 @@ const Disasterrecovery = () => {
 					/>
 					<h1>Disaster Recovery</h1>
 					<div className='softwareDefined_image'>
-						{/* <h3>Large Motor Company</h3> */}
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
 						 As we all know, a potential business disorder will directly impact CAPEX and
 							OPEX of the business. When a proper disaster recovery plan is set, any business can continue
@@ -27,7 +30,7 @@ const Disasterrecovery = () => {
 							exactly what we offered Indian defense, a solution that can manage and provide necessary
 							outcomes in case of any DR issues.
 						</p>
-						<img src={ds} alt='' className='w-100 my-3 my-md-0' />
+						<img src={ds} alt='Disaster Recovery' className='w-100 my-3 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>

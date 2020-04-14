@@ -122,7 +122,7 @@ const Tabs = () => {
 						data-parent='#accordion'>
 						<div className='card-body pl-4 pr-3'>
 							<div className='p-2 p-md-4'>
-								<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
+								<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
 							</div>
 							<h2>What is Xformation?</h2>
 							<p>
@@ -250,39 +250,39 @@ const Tabs = () => {
 										<li className='pusher' />
 										<li>
 											<div className='thx1' onClick={tabHex1}>
-												<img src={thc1} alt='' />
+												<img src={thc1} alt='Microservices' />
 											</div>
 										</li>
 										<li>
 											<div className='thx2' onClick={tabHex2}>
-												<img src={hx7} alt='' />
+												<img src={hx7} alt='Devops' />
 											</div>
 										</li>
 										<li>
 											<div className='thx3' onClick={tabHex3}>
-												<img src={hx6} alt='' />
+												<img src={hx6} alt='RAD' />
 											</div>
 										</li>
 										<li>
 											<div>
-												<img src={hx2} alt='' className='ctc-cent' />
+												<img src={hx2} alt='Area Of Expertise' className='ctc-cent' />
 												{/* <h3 className='heading-h3 ctc-cent'>Area Of Expertise</h3> */}
 											</div>
 										</li>
 										<li>
 											<div className='thx4' onClick={tabHex4}>
-												<img src={hx3} alt='' />
+												<img src={hx3} alt='Cloud' />
 											</div>
 										</li>
 										<li className='pusher' />
 										<li>
 											<div className='thx5' onClick={tabHex5}>
-												<img src={hx5} alt='' />
+												<img src={hx5} alt='Analytics' />
 											</div>
 										</li>
 										<li>
 											<div className='thx6' onClick={tabHex6}>
-												<img src={hx4} alt='' />
+												<img src={hx4} alt='Monitoring' />
 											</div>
 										</li>
 									</ul>

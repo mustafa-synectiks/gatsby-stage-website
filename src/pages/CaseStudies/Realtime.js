@@ -12,6 +12,9 @@ const Realtime = () => {
 	return (
 		<Layout>
 			<RealtimeWrapper>
+			<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/realtime/index.html'/>
+			</Helmet>
 				<SEO title='Realtime' />
 				<div className='realTime_wrap'>
 					<CaseBreadCrumbs title='Home' casetitle='What We Do' subtitle='Case Studies' pageTitle='Realtime' />
@@ -25,7 +28,7 @@ const Realtime = () => {
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
 						</p>
-						<img src={rjc} alt='' className='w-100' />
+						<img src={rjc} alt='Network Design' className='w-100' />
 					</div>
 					<div className='realTime_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>

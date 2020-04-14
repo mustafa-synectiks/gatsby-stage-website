@@ -10,6 +10,9 @@ const Storagetier = () => {
 	return (
 		<Layout>
 			<StorageWrapper>
+			<Helmet>
+			<link rel="canonical" href="https://www.synectiks.com/storage-tier/index.html"/>
+			</Helmet>
 				<SEO title='Storagetier' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
@@ -28,7 +31,7 @@ const Storagetier = () => {
 							forecasting and seismology reports and also responsible for communicating and forecasting
 							weather services.
 						</p>
-						<img src={st} alt='' className='w-100 my-3 my-md-0' />
+						<img src={st} alt='Storage Tier' className='w-100 my-3 my-md-0' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>

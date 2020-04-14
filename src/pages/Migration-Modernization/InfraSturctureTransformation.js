@@ -53,6 +53,7 @@ const Infrastructure = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="The Modernize and Consolidate Data Center and Infrastructure Platform Blueprint available in Synectiks Xformation platform helps businesses roll out new IT systems and practices to meet the increased agility and price-performance demands of the digital enterprise. By following the blueprint’s and Powerful automation you can reduce workload and technology sprawl, streamline operations, and improve automation, so you can respond to the needs of the business more efficiently, quickly and cost-effectively."/>
+		<link rel='canonical' href='https://www.synectiks.com/infrastructure/index.html'/>
 		</Helmet>
 			<HybridWrapper>
 			<SEO title='Infrastructure Transformation'/>
@@ -225,7 +226,7 @@ const Infrastructure = () => {
 													</h4>
 													<img
 														src={mcit}
-														alt=''
+														alt='Modernize and Consolidate IT Infrastructure'
 														className='w-hndr mx-auto box-shadow my-2 my-md-4 '
 													/>
 												</div>
@@ -235,7 +236,7 @@ const Infrastructure = () => {
 													</h3>
 													<img
 														src={ms4}
-														alt=''
+														alt='Synectiks Software Defined Reference Architecture'
 														className='w-sm-50 mx-auto box-shadow my-2 my-md-4'
 													/>
 												</div>
@@ -246,9 +247,6 @@ const Infrastructure = () => {
 														<div className='rotate bgOrange'>
 															<h6>Activites</h6>
 														</div>
-														{/* <div className='rotate'>
-															<h6>Output</h6>
-														</div> */}
 													</div>
 													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight p-md-3'>
 														<div className='aggregate col'>
@@ -332,9 +330,6 @@ const Infrastructure = () => {
 													</div>
 													<div className='d-flex flex-column flex-md-row justify-content-md-around bgRedLight text-light px-md-3 py-md-1'>
 														<div className='aggregate col'>
-															{/* <div>
-																<h4>Aggregate</h4>
-															</div> */}
 															<div className='d-flex'>
 																<div>
 																	<ul className='p-3'>
@@ -351,9 +346,6 @@ const Infrastructure = () => {
 															</div>
 														</div>
 														<div className='extend col'>
-															{/* <div>
-																<h4>Extend</h4>
-															</div> */}
 															<div className='d-flex'>
 																<div>
 																	<ul className='p-3'>
@@ -368,9 +360,6 @@ const Infrastructure = () => {
 															</div>
 														</div>
 														<div className='devops col'>
-															{/* <div>
-																<h4>Devops</h4>
-															</div> */}
 															<div className='d-flex'>
 																<div>
 																	<ul className='p-3'>
@@ -381,9 +370,6 @@ const Infrastructure = () => {
 															</div>
 														</div>
 														<div className='Operate col'>
-															{/* <div>
-																<h4>Operate</h4>
-															</div> */}
 															<div className='d-flex'>
 																<div>
 																	<ul className='p-3'>
@@ -442,9 +428,9 @@ const Infrastructure = () => {
 													<div className='rightcol col-md-4 '>
 														<div className='rightcolOne'>
 															<span className='rightcolOneh3' />
-															<h3 className=''>Software Defined</h3>
+															<h3 className=''>Software Defined Transformation</h3>
 															<p className=''>
-																Transformation Modernize and Consolidate Data Center and
+																 Modernize and Consolidate Data Center and
 																Infrastructure Blueprint and continuously optimize it.
 															</p>
 														</div>
@@ -453,10 +439,7 @@ const Infrastructure = () => {
 															<h3 className=''>Operation Automation</h3>
 															<p className=''>
 																Accelerate service agility by unifying administration
-																and simplifying management The very first step discovery
-																and assessment with automated tool will clearly give you
-																insights on the hardware inventory, application
-																dependency and resource consumption.
+																and simplifying management
 															</p>
 														</div>
 													</div>
@@ -464,6 +447,10 @@ const Infrastructure = () => {
 												<div className='bottomCol'>
 													{/* <span className='bottomColh3' /> */}
 													{/* <h3 className='text-center mt-2 mt-md-4'>Migration</h3> */}
+													<p>The very first step discovery
+																and assessment with automated tool will clearly give you
+																insights on the hardware inventory, application
+																dependency and resource consumption.</p>
 													<p className=''>
 														You can make informed decisions to balance workloads and
 														optimize resources and thereby to create a roadmap to guide the

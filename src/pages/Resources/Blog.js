@@ -4,11 +4,15 @@ import BreadCrumbs from '../../components/Home/Breadcrumbs.js';
 import styled from 'styled-components';
 import blog1 from '../../images/Blog/0.png';
 import SEO from '../../components/seo.js';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
 	return (
 		<Layout>
 			<BlogWrapper>
+			<Helmet>
+ 			<link rel='canonical' href='https://www.synectiks.com/blog/index.html'/>
+			</Helmet>
 				<SEO title='Blogs' />
 				<div className=''>
 					<BreadCrumbs title='Home' subtitle='Resources' pageTitle='Blog' />

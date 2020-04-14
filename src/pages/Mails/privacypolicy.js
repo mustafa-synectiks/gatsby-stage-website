@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../../components/layout'
 import styled from 'styled-components'
 import SEO from '../../components/seo.js';
+import { Helmet } from 'react-helmet';
 
 export class Privacypolicy extends React.Component {
 	componentDidMount() {
@@ -13,6 +14,9 @@ export class Privacypolicy extends React.Component {
 
 			<Layout className='bg-lightgrey'>
 			<PrivacyWrapper>
+				<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/privacy-policy/index.html'/>
+			</Helmet>
 				<SEO title="SYNECTIKS - Privacy Policy"
 				description='This Privacy Policy describes how Synectiks Inc. and its affiliates ("Synectiks," "we," "our" or "us") collect, use and share information in connection with your use of our websites (including www.synectiks.com), services and applications (collectively, the "Services"). This Privacy Policy (the "Privacy Policy") does not apply to information our customers may process when using our Services.'/>
 
@@ -402,7 +406,7 @@ export class Privacypolicy extends React.Component {
 							</h3>
 							<p>
 								If you are a registered user, you may access certain information associated with your
-								Account by logging into our Services or emailing <a href='/contactus/index.html'>info@synectiks.com</a>.
+								Account by logging into our Services or emailing <a href='mailto:info@synectiks.com'>info@synectiks.com</a>.
 								If you terminate your Account, any public activity on your Account prior to deletion may
 								remain stored on our servers and may remain accessible to the public.
 							</p>
@@ -445,7 +449,7 @@ export class Privacypolicy extends React.Component {
 								Synectiks does not knowingly collect information from children under the age of 13 and
 								children under 13 are prohibited from using our Services. If you learn that a child has
 								provided us with personal information in violation of this Privacy Policy, you can alert
-								us at <a href='/contactus/index.html'>info@synectiks.com</a>.
+								us at <a href='mailto:info@synectiks.com'>info@synectiks.com</a>.
 							</p>
 							<h3>
 								<li>International Data Transfers</li>
@@ -472,7 +476,7 @@ export class Privacypolicy extends React.Component {
 							</h3>
 							<p>
 								If you have any questions or concerns about this Privacy Policy, please feel free to
-								email us at<a rel='noopener noreferrer' href='/contactus/index.html'>
+								email us at&nbsp; <a href='mailto:info@synectiks.com'>
 									info@synectiks.com
 								</a>.
 							</p>

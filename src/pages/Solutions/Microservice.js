@@ -40,6 +40,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster."/>
+		<link rel='canonical' href='https://www.vsynectiks.com/microservices/index.html'/>
 		</Helmet>
 			<SEO title='Microservices'
 			 />
@@ -153,7 +154,7 @@ const onTop = () => {
 													divides the functionality into cohesive verticals by implementing a
 													specific domain.
 												</p>
-												<img src={ms2} alt='' className='imgshadow microser mx-auto' />
+												<img src={ms2} alt='monolllith microservice' className='imgshadow microser mx-auto' />
 											</div>
 										</div>
 									</TabPane>
@@ -354,21 +355,17 @@ const onTop = () => {
 													</p>
 												</div>
 												<div className='w-100'>
-													<img src={ms4} className='w-100 imgshadow' />
+													<img src={ms4} alt='Operation Automation' className='w-100 imgshadow' />
 												</div>
 											</div>
 
 											<div className='my-0 my-md-4'>
-												{/* <img src={ms5} className='imgshadow microImage mb-1 mb-md-5' /> */}
 												<div className='my-2 my-md-4'>
 													<div className='d-flex'>
 														<div className='d-flex flex-column justify-content-around bgOrange'>
 															<div className='rotate bgOrange'>
 																<h6>Activites</h6>
 															</div>
-															{/* <div className='rotate'>
-															<h6>Output</h6>
-														</div> */}
 														</div>
 														<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight p-md-3'>
 															<div className='aggregate col'>
@@ -447,18 +444,14 @@ const onTop = () => {
 
 													<div className='d-flex'>
 														<div className='d-flex flex-column justify-content-around bgOrange'>
-															{/* <div className='rotate'>
-															<h6>Activites</h6>
-														</div> */}
+
 															<div className='rotate bgOrange'>
 																<h6>Output</h6>
 															</div>
 														</div>
 														<div className='d-flex flex-column flex-md-row justify-content-md-around bgRedLight text-light px-md-3 py-md-1'>
 															<div className='aggregate col'>
-																{/* <div>
-																<h4>Aggregate</h4>
-															</div> */}
+
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -476,9 +469,7 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='extend col'>
-																{/* <div>
-																<h4>Extend</h4>
-															</div> */}
+
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -493,9 +484,7 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='devops col'>
-																{/* <div>
-																<h4>Devops</h4>
-															</div> */}
+
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -506,9 +495,7 @@ const onTop = () => {
 																</div>
 															</div>
 															<div className='Operate col'>
-																{/* <div>
-																<h4>Operate</h4>
-															</div> */}
+
 																<div className='d-flex'>
 																	<div>
 																		<ul className='p-3'>
@@ -541,7 +528,7 @@ const onTop = () => {
 													contributes 90% towards your success. A typical culturally changed
 													organization will look like as below:
 												</p>
-												<img src={ms6} className='microser imgshadow mx-auto' />
+												<img src={ms6} alt='One Key Cultural Driver' className='microser imgshadow mx-auto' />
 											</div>
 										</div>
 									</TabPane>
@@ -555,7 +542,7 @@ const onTop = () => {
 												<br />SYNECTIKS has a flexible and effective way of migrating monolithic
 												applications to microservices, which includes the following steps:
 											</p>
-											<img src={ms7} className='my-0 mt-md-4 microIm imgshadow' />
+											<img src={ms7} alt='migrating monolithic ' className='my-0 mt-md-4 microIm imgshadow' />
 										</div>
 										<div>
 											<div className='d-flex flex-column flex-md-row justify-content-between my-0 my-md-5'>
@@ -654,7 +641,7 @@ const onTop = () => {
 												<div>
 													<img
 														src={ms9}
-														alt=''
+														alt='SYNECTIKS Xformation platform'
 														className='my-0 my-md-5 microser imgshadow mx-auto'
 													/>
 												</div>
@@ -696,7 +683,7 @@ const onTop = () => {
 														</h3>
 														<img
 															src={ms8}
-															alt=''
+															alt='microservice partner'
 															className='my-0 mt-md-4 microser70 imgshadow mx-auto'
 														/>
 													</div>

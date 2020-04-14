@@ -25,6 +25,7 @@ const AboutUs = ({ location }) => {
 		<Layout>
 				<Helmet>
 <meta name='description' content="Synectiks builds open source software that helps enterprises to migrate and modernize their business rapidly at optimal economy. Customers use our migration and management software platform, Xformation to migrate and modernize their business and create affordable and powerful custom solutions that bring simplicity and absolute confidence to a data-driven decision making. Committed to codifying our know-how, once we solve a problem, we automate the solution. When running our products and solutions in mission-critical environments, our community knows that they can turn to us for world-class support. Customers avoid vendor lock-in and save (much) money! Our open product driven solution approach rapidly delivers high quality solutions and reduce at least 50% time & money compare to typical managed services delivery model."/>
+<link rel='canonical' href='https://www.synectiks.com/about-us/index.html'/>
 </Helmet>
 			<AboutWrapper>
 				<SEO title='About Synectiks' />
@@ -55,7 +56,7 @@ const AboutUs = ({ location }) => {
 				</div>
 				<div className='pt-md-4'>
 					<h2 className='py-2 py-md-2'>Our Passionate Global Team</h2>
-					<img src={team} alt='' className='my-2 my-md-4 W-100 box-shadow' width='100%' />
+					<img src={team} alt='Synectiks Team' className='my-2 my-md-4 W-100 box-shadow' width='100%' />
 					<p className='mt-md-3'>
 						Our passionate global team is a real good mix of Highly Experienced product developers who has
 						been part of many big success and young fully stack developers fully trained to deliver in a
@@ -71,14 +72,14 @@ const AboutUs = ({ location }) => {
 							<div className='row'>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={EX} alt='' className='tw m-0' />
+										<img src={EX} alt='Experience' className='tw m-0' />
 										<h4 className='my-2 my-md-3'>Experience</h4>
 									</div>
 									<p> 10+ Large Scale Hybrid Cloud Transformation</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={EXP} alt='' className='tw m-0' />
+										<img src={EXP} alt='Expertise' className='tw m-0' />
 										<h4 className='my-2 my-md-4'>Expertise</h4>
 									</div>
 									<p>
@@ -88,7 +89,7 @@ const AboutUs = ({ location }) => {
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={TM} alt='' className='tw m-0' />
+										<img src={TM} alt='Time and Money' className='tw m-0' />
 										<h4 className='my-2 my-md-3'>Time & Money</h4>
 									</div>
 									<p>
@@ -102,7 +103,7 @@ const AboutUs = ({ location }) => {
 							<div className='row'>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={EE} alt='' className='tw m-0' />
+										<img src={EE} alt='E2E Solutions' className='tw m-0' />
 										<h4 className='my-4'>E2E Solution</h4>
 									</div>
 									<p>
@@ -112,18 +113,17 @@ const AboutUs = ({ location }) => {
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={SCP} alt='' className='tw m-0' />
+										<img src={SCP} alt='Single Control plane' className='tw m-0' />
 										<h4 className='my-3'>Single Control plane</h4>
 									</div>
 									<p>
-										{' '}
 										Xformation is a single interface and platform to manage all your workloads
 										distributed across multiple clouds and boundaries within a single control plane.
 									</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={CS} alt='' className='tw m-0' />
+										<img src={CS} alt='Compliance & Security' className='tw m-0' />
 										<h4 className='my-4'>Compliance & Security</h4>
 									</div>
 									<p>
@@ -138,7 +138,7 @@ const AboutUs = ({ location }) => {
 							<div className='row'>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={EA} alt='' className='tw m-0' />
+										<img src={EA} alt='Extreme Automation' className='tw m-0' />
 										<h4 className='my-3'>Extreme Automation</h4>
 									</div>
 									<p>
@@ -148,7 +148,7 @@ const AboutUs = ({ location }) => {
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={PCP} alt='' className='tw m-0' />
+										<img src={PCP} alt='Public Cloud Partnership' className='tw m-0' />
 										<h4 className='my-4'>Public Cloud Partnership</h4>
 									</div>
 									<p>
@@ -160,7 +160,7 @@ const AboutUs = ({ location }) => {
 									<div className='d-flex text-center px-0 px-md-5'>
 										<div>
 											<div className='d-flex align-items-center flex-column'>
-												<img src={DE} alt='' className='tw m-0' />
+												<img src={DE} alt='Demo Environment' className='tw m-0' />
 												<h4 className='my-3'>Demo Environment</h4>
 											</div>
 											<p>
@@ -176,21 +176,21 @@ const AboutUs = ({ location }) => {
 							<div className='row'>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={WO} alt='' className='tw m-0' />
+										<img src={WO} alt='Optimization Service' className='tw m-0' />
 										<h4 className='my-4'>Optimization Service</h4>
 									</div>
 									<p>We do optimal resource pooling from multiple clouds.</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={EM} alt='' className='tw m-0' />
+										<img src={EM} alt='Engagement Model' className='tw m-0' />
 										<h4 className='my-3'>Engagement Model</h4>
 									</div>
 									<p>Our every engagement focused on empowerment – not dependency</p>
 								</div>
 								<div className='col-sm-4 col-md-4 text-center d-flex align-items-center flex-column'>
 									<div className='d-flex align-items-center flex-column'>
-										<img src={LTR} alt='' className='tw m-0' />
+										<img src={LTR} alt='Long Term Retention' className='tw m-0' />
 										<h4 className='my-4'>Long Term Retention</h4>
 									</div>
 									<p>100% Customer Retention Rate.</p>

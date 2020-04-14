@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
-import ModalContact from '../../components/ModalContact';
 import Layout from '../../components/layout';
 import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
@@ -50,6 +49,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 <meta name='description' content='Synectiks Secure Cloud Hosted Services supports a variety of workloads & Disaster Recovery with a high degree of control, security and simplicity. Support your mission-critical applications and workloads with instant and scalable infrastructure. With Synectiks Cloud Hosted Services, you can focus on your business needs instead of spending the time and money it takes to plan, procure, secure and manage the right infrastructure to meet your application demands.'/>
+<link rel='canonical' href='https://www.synectiks.com/private-cloud-hosting-services/index.html'/>
 		</Helmet>
 			<SEO title='Private Cloud Hosting'  />
 			<PrimaryCloudHostingWrapper>
@@ -161,7 +161,7 @@ const onTop = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={self} alt='Self-service portal' />
 												<div>
 													<h5>Self-service portal</h5>
 													<p className='mt-2 pcenter'>
@@ -211,7 +211,7 @@ const onTop = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row  align-items-center  align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-0 mr-md-5' src={MS} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={MS} alt='Migration Services' />
 												<div>
 													<h5>Migration Services</h5>
 													<p className='mt-2 pcenter'>
@@ -221,7 +221,7 @@ const onTop = () => {
 												</div>
 											</div>
 											<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-												<img class='w-12 mr-0 mr-md-5' src={SPT} alt='' />
+												<img class='w-12 mr-0 mr-md-5' src={SPT} alt='Support' />
 												<div>
 													<h5>Support</h5>
 													<p className='mt-2 pcenter'>
@@ -304,7 +304,7 @@ const onTop = () => {
 											</div>
 										</div>
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-											<img class='w-12 mr-0 mr-md-5' src={self} alt='' />
+											<img class='w-12 mr-0 mr-md-5' src={self} alt='Self-service portal' />
 											<div>
 												<h5>Self-service portal</h5>
 												<p className='mt-2 pcenter'>
@@ -317,7 +317,7 @@ const onTop = () => {
 											<img
 												class='w-12 mr-0 mr-md-5'
 												src={efficientStorage}
-												alt='Multi Secure Geo Locations'
+												alt='Efficient Backup Storage Usage'
 											/>
 											<div>
 												<h5>Efficient Backup Storage Usage</h5>
@@ -360,7 +360,7 @@ const onTop = () => {
 											</div>
 										</div>
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-											<img class='w-12 mr-0 mr-md-5' src={support} alt='' />
+											<img class='w-12 mr-0 mr-md-5' src={support} alt='Support' />
 											<div>
 												<h5>Support</h5>
 												<p className='pcenter'>
@@ -370,7 +370,7 @@ const onTop = () => {
 											</div>
 										</div>
 										<div className='d-flex flex-column flex-md-row align-items-center align-items-md-center mt-1 mt-md-5'>
-											<img class='w-12 mr-0 mr-md-5' src={restore} alt='' />
+											<img class='w-12 mr-0 mr-md-5' src={restore} alt='Fast Recovery' />
 											<div>
 												<h5>Fast Recovery</h5>
 												<p className='pcenter'>

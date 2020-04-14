@@ -13,6 +13,7 @@ const AreaOfExpertise = ({ location }) => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Across our outcome-driven consulting and managed services, it's our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference."/>
+		<link rel='canonical' href='https://www.synectiks.com/area-expertise/index.html'/>
 		</Helmet>
 			<SEO title='Area of Expertise' />
 			<AreaOfExpertiseWrapper>
@@ -33,7 +34,7 @@ const AreaOfExpertise = ({ location }) => {
 					</h3>
 					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
 						<div className=''>
-							<img src={img2} alt='' className='w-7 mr-md-5' />
+							<img src={img2} alt='Migration & Modernization' className='w-7 mr-md-5' />
 						</div>
 						<div>
 							<h4 className='text-center text-md-left'>Migration & Modernization</h4>
@@ -45,7 +46,7 @@ const AreaOfExpertise = ({ location }) => {
 					</div>
 					<div className='d-flex flex-column align-items-center flex-md-row justify-md-content-start my-2 my-md-4'>
 						<div className=''>
-							<img src={img1} alt='' className='w-7 mr-md-5' />
+							<img src={img1} alt='Cloud Management' className='w-7 mr-md-5' />
 						</div>
 						<div>
 							<h4 className='text-center text-md-left'>Cloud Management</h4>

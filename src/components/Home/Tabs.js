@@ -91,7 +91,7 @@ const Tabs = () => {
 						<Row>
 							<Col sm='12 hiding'>
 								<div className='p-2 p-md-4'>
-									<img src={PoweredBySynectiks} width='100%' alt='' className='w-100' />
+									<img src={PoweredBySynectiks} width='100%' alt='Xformation' className='w-100' />
 								</div>
 								<h2>What is Xformation?</h2>
 								<p>

@@ -14,6 +14,9 @@ const Softwaredefined = () => {
 	return (
 		<Layout>
 			<SoftwaredefinedWrapper>
+			<Helmet>
+			<link rel='canonical' href='https://www.synectiks.com/software-defined/index.html'/>
+			</Helmet>
 				<SEO title='Software Defined' />
 				<div className='softwareDefined_wrap'>
 					<CaseBreadCrumbs
@@ -32,7 +35,7 @@ const Softwaredefined = () => {
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
 						</p>
-						<img src={lc} alt='' className='w-100' />
+						<img src={lc} alt='Network Design' className='w-100' />
 					</div>
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>

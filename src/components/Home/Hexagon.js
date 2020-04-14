@@ -109,39 +109,39 @@ const Hexagon = () => {
 							<li className='pusher' />
 							<li>
 								<div className='hx1' onClick={hex1}>
-									<img src={hx1} alt='' />
+									<img src={hx1} alt='Microservices' />
 								</div>
 							</li>
 							<li>
 								<div className='hx2' onClick={hex2}>
-									<img src={hx7} alt='' />
+									<img src={hx7} alt='Devops' />
 								</div>
 							</li>
 							<li>
 								<div className='hx3' onClick={hex3}>
-									<img src={hx6} alt='' />
+									<img src={hx6} alt='RAD' />
 								</div>
 							</li>
 							<li>
 								<div>
-									<img src={hx2} alt='' className='ct-cent' />
+									<img src={hx2} alt='Area Of Expertise' className='ct-cent' />
 									{/* <h3 className='heading-h3 ct-cent'>Area Of Expertise</h3> */}
 								</div>
 							</li>
 							<li>
 								<div className='hx4' onClick={hex4}>
-									<img src={hx3} alt='' />
+									<img src={hx3} alt='Cloud' />
 								</div>
 							</li>
 							<li className='pusher' />
 							<li>
 								<div className='hx5' onClick={hex5}>
-									<img src={hx5} alt='' />
+									<img src={hx5} alt='Analytics' />
 								</div>
 							</li>
 							<li>
 								<div className='hx6' onClick={hex6}>
-									<img src={hx4} alt='' />
+									<img src={hx4} alt='Monitoring' />
 								</div>
 							</li>
 						</ul>

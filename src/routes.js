@@ -8,8 +8,9 @@ module.exports = [
 		path: '/devops-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
+
 	{
-		path: '/privacypolicy/index.html',
+		path: '/privacy-policy/index.html',
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)
 	},
 	{
@@ -43,10 +44,6 @@ module.exports = [
 	{
 		path: '/careers/index.html',
 		component: path.resolve(`src/pages/Company/Careers.js`)
-	},
-	{
-		path: '/case-studies/index.html',
-		component: path.resolve(`src/components/Home/CaseStudies.js`)
 	},
 	{
 		path: '/realtime/index.html',

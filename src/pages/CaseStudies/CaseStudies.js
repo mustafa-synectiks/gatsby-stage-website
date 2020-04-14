@@ -40,9 +40,6 @@ const CaseStudies = () => {
 						<div className='content'>
 							<div className='d-flex flex-column flex-md-row justify-content-center'>
 								<div className='w-450 box-shadow '>
-									{/* <img src={SDFT} alt='Disaster Recovery' /> */}
-									{/* <Img fluid={data.fluid.childImageSharp.fluid} /> */}
-
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className=''>Software Defined Transformation</h3>
 										<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
@@ -54,12 +51,12 @@ const CaseStudies = () => {
 
 								<div className='w-450'>
 									<div className='box-shadow'>
-										<img src={RM} alt='NetworkDesign' />{' '}
+										<img src={RM} alt='Realtime Monitoring' />
 										<div className='text-group align-self-center p-2 bgWhite'>
 											<h3 className=''>Realtime Monitoring</h3>
 											<p className='pr-2 pr-md-5'>
 												Highly Scalable extremely customizable realtime monitoring platform.
-											</p>{' '}
+											</p>
 											<a href='/realtime/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
@@ -69,7 +66,7 @@ const CaseStudies = () => {
 
 								<div className='w-450'>
 									<div className='box-shadow'>
-										<img src={SM} alt='StorageTier' />{' '}
+										<img src={SM} alt='Storage Migration' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Migration</h3>
 											<p className='pr-5'>
@@ -87,7 +84,7 @@ const CaseStudies = () => {
 							<div className='d-flex flex-column flex-md-row justify-content-center py-5'>
 								<div className='w-450'>
 									<div className='box-shadow'>
-										<img src={ND} alt='Enterprise-Transformation' />{' '}
+										<img src={ND} alt='Network Design' />{' '}
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Network Design</h3>
 											<p className='pr-5'>
@@ -102,7 +99,7 @@ const CaseStudies = () => {
 
 								<div className='w-450'>
 									<div className='box-shadow'>
-										<img src={ST} alt='StorageTier' className='h46' />
+										<img src={ST} alt='Storage Tier' className='h46' />
 
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Storage Tier</h3>
@@ -118,7 +115,7 @@ const CaseStudies = () => {
 
 								<div className='w-450'>
 									<div className='box-shadow'>
-										<img src={DR} alt='StorageTier' />
+										<img src={DR} alt='Disaster Recovery' />
 										<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
 											<h3 className=''>Disaster Recovery</h3>
 											<p className='pr-5'>

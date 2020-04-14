@@ -37,6 +37,7 @@ export class Careers extends React.Component {
 			<Layout>
 			<Helmet>
 			<meta name='description' content="Work where you’re encouraged to explore your passions, where your skills are nurtured and respected. Introduce with leading-edge technologies on absolutely the coolest undertakings you'll be able to envision. What's more, get the tools you have to continue learning and developing, so you remain consistently on top of things while making a difference in the world."/>
+			<link rel='canonical' href='https://synectiks.com/careers/index.html'/>
 			</Helmet>
 				<CareerWrapper>
 					<SEO title='Careers' />

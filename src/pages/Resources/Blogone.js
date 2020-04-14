@@ -13,6 +13,7 @@ const BlogOne = (props) => {
 	return (
 			<html {...props.htmlAttributes}>
 			<head>
+			<link rel='canonical' href='https://www.synectiks.com/microservices-transformation/index.html'/>
 	</head>
 			<body {...props.bodyAttributes}>
 				{props.preBodyComponents}
@@ -30,7 +31,7 @@ const BlogOne = (props) => {
 					pageTitle='Microservices Transformation'
 				/>
 				<h1>Microservices Transformation</h1>
-				<img src={blog1} alt='' className='my-3 my-md-4' width='100%'/>
+				<img src={blog1} alt='Microservices Transformation' className='my-3 my-md-4' width='100%'/>
 				<div className='d-flex flex-column flex-md-row'>
 					<div className='textWrapper w75'>
 						<h3>

@@ -19,7 +19,7 @@ const Partners = () => {
 			</div>
 			<div>
 				<div className='w-75 mx-auto mb-2 mb-md-0'>
-					<img src={msa} atl='microsoft azure' className='w-100' />
+					<img src={msa} alt='microsoft azure' className='w-100' />
 				</div>
 			</div>
 			<div>
