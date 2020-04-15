@@ -97,8 +97,6 @@ microsoft cloud service provider,
 <link rel='canonical' href='https://synectiks.com/'/>
 		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
 		</Helmet>
-			<SEO
-				title='Synectiks'/>
 			<div className='container-fluid'>
 				<div className='row'>
 					<div id='owl-demo' className='owl-carousel owl-theme'>
@@ -202,7 +200,7 @@ microsoft cloud service provider,
 					<Partners />
 				</div>
 	<div>
-	<SuccessStories/>
+	{/* <SuccessStories/> */}
 	</div>
 				<div>
 					<GetInTouch />
