@@ -6,3 +6,248 @@
 }
 @media (min-width: 1200px) {
 }
+
+
+
+.slick-slide {
+	.case-studies{
+		overflow: hidden !important;
+		&:hover img{
+			-webkit-transform: scale(1.04);
+			transform: scale(1.04);
+			overflow: hidden !important;
+		}
+		img{
+			height: auto;
+			-webkit-transition: 0.4s ease;
+			transition: 0.4s ease;
+			overflow: hidden !important;
+	}
+}
+.slider .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    left: 0rem;
+}
+
+.slider .slick-slide {
+    padding: 0px;
+    margin: 0px;
+}
+	.w-450 {
+			width: 90% !important;
+		}
+		.slider .slick-slide img{
+	width: 100%;
+}
+	.progressnumb {
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+			position:relative;
+			left:11%;
+
+	.progress {
+			display: block;
+			width: 45%;
+			}
+	}
+
+	.caseText{
+		text-align: center;
+	}
+	@media (min-width: 576px){
+			.caseText{
+		text-align: left;
+	}
+	.case-studies{
+	img{
+		height:46vh;
+	}
+}
+		.w-450 {
+			width: 90% !important;
+		}
+		#progressBar {
+			width: 100%;
+			background: var(--backgroundColor);
+		}
+			/* Slick Slider Starts */
+		.slider .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    left: 0rem;
+}
+.slider .slick-slide {
+    padding: 0 0px;
+    margin: 0px 20px;
+				/* max-width:400px; */
+}
+		.h70vh {
+			height: 70vh;
+		}
+		ul.progress > li:first-child {
+			position: absolute;
+			left: -12%;
+			margin-top: -4%;
+			font-size: 1.4rem;
+		}
+		ul.progress > li:last-child {
+			position: absolute;
+			right: 30%;
+			margin-top: -4%;
+			font-size: 1.4rem;
+		}
+
+		.slider .slick-slide img {
+			display: block;
+			width: 100%;
+		}
+
+		.slick-dots {
+			position: absolute;
+			top: 5%;
+			display: flex;
+			width: 100%;
+			padding: 1rem;
+			margin: 0;
+			list-style: none;
+			text-align: center;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+		.slick-dots li button:before {
+			font-family: 'slick';
+			font-size: 1.2rem;
+			line-height: 20px;
+			opacity: 1;
+			color: rgb(255, 255, 255);
+		}
+		.slick-dots li.slick-active button:before {
+			opacity: 1;
+			color: var(--synectiksOrange);
+		}
+
+		.slick-dots li {
+			position: relative;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin: 10px 25px;
+			padding: 0;
+			cursor: pointer;
+		}
+	.slider	.slick-slide {
+			margin-top: 2rem;
+			width: 400px;
+		}
+			.progressnumb {
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+			position:relative;
+			left:11%;
+
+		.progress {
+			display: block;
+			width: 55%;
+			height: 3px;
+			border-radius: 10px;
+			overflow: hidden;
+			background-color: rgb(146, 146, 146);
+			background-image: -webkit-gradient(linear, left top, right top, from(var(--synectiksOrange)), to(var(--synectiksOrange)));
+			background-image: linear-gradient(to right, var(--synectiksOrange), var(--synectiksOrange));
+			background-repeat: no-repeat;
+			background-size: 0 100%;
+			-webkit-transition: background-size .4s ease-in-out;
+			transition: background-size .4s ease-in-out;
+		}
+			}
+
+		.content {
+			/* margin: auto; */
+			padding: 20px;
+			width: 100vw;
+			display: flex;
+			justify-content: space-around;
+			align-items: baseline;
+		}
+
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			border: 0;
+		}
+		.slickbtns {
+			display: flex;
+		justify-content: space-around;
+		width: 64%;
+			/* display: grid; */
+			/* grid-template-columns: 50px 50px;
+			grid-gap: 2.4rem;
+			margin-left: 13% !important;
+			margin-top: 12% !important; */
+		}
+.f-14{
+	font-size: 14px;
+}
+
+
+		.nextbtn:hover {
+			border: 1px solid var(--synectiksOrange);
+			color: var(--synectiksOrange);
+		}
+		.prevbtn:hover{
+		border: 1px solid var(--synectiksOrange);
+		color: var(--synectiksOrange);
+		}
+		.prevbtn,
+		.nextbtn {
+			border: 1px solid var(--textColor);
+			border-radius: 50%;
+			padding: 5px;
+			text-align: center;
+			width: 3rem;
+			height: 3rem;
+			cursor: pointer;
+		}
+		.bshad{
+			box-shadow: 0px 0px 12px 2px lightgray;
+		}
+
+			.case-studies{
+	img{
+		height: 20vh;
+	}
+	h3{
+		font-size: 22px;
+	}
+	p{
+		font-size: 1.125rem;
+		margin-bottom: 0rem;
+	}
+}
+	}
+.progress {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .4s ease-in-out;
+}

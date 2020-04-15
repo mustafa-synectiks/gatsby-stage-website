@@ -19,18 +19,13 @@ import acro from '../images/HomePage/Acronis Logo.png';
 import gle from '../images/HomePage/google.png';
 import msa from '../images/HomePage/msa.png';
 import PoweredBySynectiks from '../images/HomePage/PoweredBySynectiks.png';
-import SM from '../images/case/CS_Software_Migration.jpg';
-import RM from '../images/case/CS_Realtime_Monitoring.jpg';
-import SDFT from '../images/case/CS_SoftwareDefinedTransformation.jpg';
-import ND from '../images/case/CS_NetworkDesign.jpg';
-import ST from '../images/case/CS_StorageTier.jpg';
-import DR from '../images/case/CS_DisasterRecovery.jpg';
 import Hexagon from './Home/Hexagon';
 import HomeTabs from './Home/HomeTabs';
 import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import GetInTouch from './Home/Getintouch.js';
 import SEO from '../components/seo.js';
+import SuccessStories from './Home/SuccessStories'
 import {
 	TabContent,
 	TabPane,
@@ -206,127 +201,9 @@ microsoft cloud service provider,
 					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
 					<Partners />
 				</div>
-{/*
-				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
-					<div className='row'>
-						<div className='content d-flex flex-column flex-md-row align-items-center'>
-							<div className='col-sm-12 col-md-3'>
-								<div className='my-2 my-md-5 caseText'>
-									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
-									<a href='' className='text-capitalize'>
-										View all success stories &nbsp; >{' '}
-									</a>
-								</div>
-								<div className='progressnumb'>
-									<ul className='progress' role='progressbar' aria-valuemin='0' aria-valuemax='100'>
-										<li>01</li>
-										<li className='slider__label sr-only' /> <li>06</li>
-									</ul>
-								</div>
-								<div className='slickbtns mx-4'>
-									<div className='prevbtn'>
-										<MdArrowBack className='fa-2x' />
-									</div>
-									<div className='nextbtn'>
-										<MdArrowForward className='fa-2x' />
-									</div>
-								</div>
-							</div>
-							<div className='col col-sm-12 col-md-9 p-0 h70vh'>
-								<div className='slider'>
-									<a href='/software-defined/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={SDFT} alt='Software Defined' />
-
-											<div className='text-group align-self-center p-2 bgWhite'>
-												<h3 className='textColor'>Software Defined Transformation</h3>
-												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4 mr-0 mr-md-5'>
-													AWS Cloud migration for a large motor industry.
-												</p>
-												<a href='/software-defined/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-									<a href='/realtime/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={RM} alt='Realtime' />{' '}
-											<div className='text-group align-self-center p-2 bgWhite'>
-												<h3 className='textColor'>Realtime Monitoring</h3>
-												<p className='pr-2 pr-md-5 textColor  mb-1 mb-md-4'>
-													Highly Scalable extremely customizable realtime monitoring platform.
-												</p>
-												<a href='/realtime/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-									<a href='/storage-migration/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={SM} alt='Storage Migration' />{' '}
-											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-												<h3 className='textColor'>Storage Migration</h3>
-												<p className='pr-1 textColor  mb-1 mb-md-4'>
-													Petabytes of storage migration for a large financial company with
-													zero down time.
-												</p>{' '}
-												<a href='/storage-migration/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-									<a href='/network-design/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={ND} alt='Network Design' />{' '}
-											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-												<h3 className='textColor'>Network Design</h3>
-												<p className='pr-5 textColor  mb-1 mb-md-4'>
-													Complete network Backbone design with highest security for retail.
-												</p>
-												<a href='/network-design/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-									<a href='/storage-tier/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={ST} alt='Storage Tier' className='h46' />
-
-											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-												<h3 className='textColor'>Storage Tier</h3>
-												<p className='pr-5 textColor  mb-1 mb-md-4'>
-													Moving Bigdata workloads to aggregated platform for a large telco.
-												</p>
-												<a href='/storage-tier/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-
-									<a href='/disaster-recovery/index.html' className='noLine fw300'>
-										<div className='case-studies w-450 bshad'>
-											<img src={DR} alt='Disaster Recovery' />
-											<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
-												<h3 className='textColor'>Disaster Recovery</h3>
-												<p className='pr-5 textColor mb-1 mb-md-4'>
-													Lightweight disaster recovery platform for indian Defense.
-												</p>
-												<a href='/disaster-recovery/index.html' className='noLine fw300'>
-													Read More <i className='fa fa-arrow-right' />
-												</a>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> */}
+	<div>
+	<SuccessStories/>
+	</div>
 				<div>
 					<GetInTouch />
 				</div>
@@ -416,21 +293,7 @@ width: 100%;
 	display: flex;
 	flex-direction:column;
 }
-.slick-slide {
-	.case-studies{
-		overflow: hidden !important;
-		&:hover img{
-			-webkit-transform: scale(1.04);
-			transform: scale(1.04);
-			overflow: hidden !important;
-		}
-		img{
-			height: auto;
-			-webkit-transition: 0.4s ease;
-			transition: 0.4s ease;
-			overflow: hidden !important;
-	}
-}
+
 	h3{
 		font-size: 1.2rem;
 		text-align: left;
@@ -447,47 +310,7 @@ width: 100%;
 	height:52vh;
 }
 
-.slider .slick-slide img{
-	width: 100%;
-}
-	.progressnumb {
-			display: flex;
-			justify-content: flex-start;
-			align-items: baseline;
-			position:relative;
-			left:11%;
 
-	.progress {
-			display: block;
-			width: 45%;
-			}
-	}
-	.caseText{
-		text-align: center;
-	}
-.slider .slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    left: 0rem;
-}
-	/* .slickbtns {
-			display: grid;
-			grid-template-columns: 50px 50px;
-			grid-gap: 2.4rem;
-			margin-left: 18% !important;
-			margin-top: 0% !important;
-			width: 60%
-		} */
-.slider .slick-slide {
-    padding: 0px;
-    margin: 0px;
-}
-	.w-450 {
-			width: 90% !important;
-		}
 
 .heading1 {
 	h2{
@@ -577,9 +400,7 @@ p{
 }
 
 	@media screen and  (min-width: 576px) {
-			.caseText{
-		text-align: left;
-	}
+
 		.navfont,.fsize08{
 	font-size:16px;
 	position: relative;
@@ -606,20 +427,7 @@ h1{
 	}
 }
 
-		.case-studies{
-	img{
-		height: 20vh;
-	}
-	h3{
-		font-size: 22px;
-	}
-	p{
-		font-size: 1.125rem;
-		/* min-height:75px;
-		max-height:75px; */
-		margin-bottom: 0rem;
-	}
-}
+
 
 		.partners-logo{
 	display: flex;
@@ -685,11 +493,7 @@ p{
 		}
 	}
 }
-.case-studies{
-	img{
-		height:46vh;
-	}
-}
+
 		.h46{
 			height: 46vh;
 		}
@@ -730,9 +534,7 @@ p{
 			font-weight: 300;
 		}
 		background: var(--bgMain);
-		.w-450 {
-			width: 90% !important;
-		}
+
 
 		p {
 			word-break: break-word;
@@ -744,157 +546,7 @@ p{
 		.solutionImage {
 			width: 90%;
 		}
-		/* Slick Slider Starts */
-		.slider .slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    left: 0rem;
-}
-.slider .slick-slide {
-    padding: 0 0px;
-    margin: 0px 20px;
-				/* max-width:400px; */
-}
-		.h70vh {
-			height: 70vh;
-		}
-		ul.progress > li:first-child {
-			position: absolute;
-			left: -12%;
-			margin-top: -4%;
-			font-size: 1.4rem;
-		}
-		ul.progress > li:last-child {
-			position: absolute;
-			right: 30%;
-			margin-top: -4%;
-			font-size: 1.4rem;
-		}
 
-		.slider .slick-slide img {
-			display: block;
-			width: 100%;
-		}
-
-		.slick-dots {
-			position: absolute;
-			top: 5%;
-			display: flex;
-			width: 100%;
-			padding: 1rem;
-			margin: 0;
-			list-style: none;
-			text-align: center;
-			flex-direction: column;
-			align-items: flex-end;
-		}
-		.slick-dots li button:before {
-			font-family: 'slick';
-			font-size: 1.2rem;
-			line-height: 20px;
-			opacity: 1;
-			color: rgb(255, 255, 255);
-		}
-		.slick-dots li.slick-active button:before {
-			opacity: 1;
-			color: var(--synectiksOrange);
-		}
-
-		.slick-dots li {
-			position: relative;
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			margin: 10px 25px;
-			padding: 0;
-			cursor: pointer;
-		}
-	.slider	.slick-slide {
-			margin-top: 2rem;
-			width: 400px;
-		}
-			.progressnumb {
-			display: flex;
-			justify-content: flex-start;
-			align-items: baseline;
-			position:relative;
-			left:11%;
-
-		.progress {
-			display: block;
-			width: 55%;
-			height: 3px;
-			border-radius: 10px;
-			overflow: hidden;
-			background-color: rgb(146, 146, 146);
-			background-image: -webkit-gradient(linear, left top, right top, from(var(--synectiksOrange)), to(var(--synectiksOrange)));
-			background-image: linear-gradient(to right, var(--synectiksOrange), var(--synectiksOrange));
-			background-repeat: no-repeat;
-			background-size: 0 100%;
-			-webkit-transition: background-size .4s ease-in-out;
-			transition: background-size .4s ease-in-out;
-		}
-			}
-
-		.content {
-			/* margin: auto; */
-			padding: 20px;
-			width: 100vw;
-			display: flex;
-			justify-content: space-around;
-			align-items: baseline;
-		}
-
-		.sr-only {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			padding: 0;
-			margin: -1px;
-			overflow: hidden;
-			clip: rect(0, 0, 0, 0);
-			border: 0;
-		}
-		.slickbtns {
-			display: flex;
-		justify-content: space-around;
-		width: 64%;
-			/* display: grid; */
-			/* grid-template-columns: 50px 50px;
-			grid-gap: 2.4rem;
-			margin-left: 13% !important;
-			margin-top: 12% !important; */
-		}
-.f-14{
-	font-size: 14px;
-}
-
-
-		.nextbtn:hover {
-			border: 1px solid var(--synectiksOrange);
-			color: var(--synectiksOrange);
-		}
-		.prevbtn:hover{
-		border: 1px solid var(--synectiksOrange);
-		color: var(--synectiksOrange);
-		}
-		.prevbtn,
-		.nextbtn {
-			border: 1px solid var(--textColor);
-			border-radius: 50%;
-			padding: 5px;
-			text-align: center;
-			width: 3rem;
-			height: 3rem;
-			cursor: pointer;
-		}
-		.bshad{
-			box-shadow: 0px 0px 12px 2px lightgray;
-		}
-		/* Slick Slider  Ends */
 		/* OWL Carousel v1 */
 		.owl-pagination {
 			display: flex;
@@ -977,10 +629,7 @@ p{
 			background: var(--synectiksOrange);
 			margin-top: -0.7rem;
 		}
-		#progressBar {
-			width: 100%;
-			background: var(--backgroundColor);
-		}
+
 		/* OWL Carousel v1 */
 		.fa1x {
 			font-size: 1.7rem;
