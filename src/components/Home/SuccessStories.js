@@ -10,7 +10,6 @@ import { MdArrowForward, MdArrowBack, MdClose } from 'react-icons/md';
 
 const SuccessStories = () => {
 	return (
-
 				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>

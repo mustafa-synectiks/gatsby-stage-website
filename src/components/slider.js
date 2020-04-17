@@ -205,7 +205,8 @@ microsoft cloud service provider,
 					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
 					<Partners />
 				</div>
-	<div>
+				<SuccessStories/>
+	{/* <div>
 				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
@@ -326,7 +327,7 @@ microsoft cloud service provider,
 						</div>
 					</div>
 				</div>
-	</div>
+	</div> */}
 				<div>
 					<GetInTouch />
 				</div>

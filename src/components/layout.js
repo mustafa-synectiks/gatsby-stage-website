@@ -142,64 +142,6 @@ const Layout = ({ children }) => {
 				]
 			});
 		});
-		// Logo Slider
-		// /Case Study Ends
-
-		//
-		//
-		// $(document).ready(function(e) {
-		// 	var owl = $('#owl-demo').data('owlCarousel');
-
-		// 	function owlInitialize() {
-		// 		if ($(window).width() > 576) {
-		// 			owl.owlCarousel();
-		// 		} else {
-		// 			owl.destroy();
-		// 		}
-		// 	}
-
-		// 	// owlInitialize();
-
-		// 	$(window).resize(function() {
-		// 		owlInitialize();
-		// 	});
-		// });
-
-		//
-		// $(function() {
-		// 	var owl = $('#owl-demo').data('owlCarousel');
-		// 	var time = 6; // time in seconds
-
-		// 	var $progressBar, $bar, $elem, isPause, tick, percentTime;
-		// 	owlOptions = {
-		// 		slideSpeed: 500,
-		// 		paginationSpeed: 500,
-		// 		singleItem: true,
-		// 		afterInit: progressBar,
-		// 		afterMove: moved,
-		// 		startDragging: pauseOnDragging,
-		// 		afterAction: function() {
-		// 			if (owl) {
-		// 				var item = owl.currentItem;
-		// 				$('h3').removeClass('animated fadeInRight');
-		// 				$('.owl-item')
-		// 					.not('.cloned')
-		// 					.eq(item)
-		// 					.find('h3')
-		// 					.addClass('animated delay-1s slow fadeInRight');
-		// 				$('p').removeClass('animated fadeInRight');
-		// 				$('.owl-item').not('.cloned').eq(item).find('p').addClass('animated delay-2s slow fadeInRight');
-		// 			}
-		// 		}
-		// 	};
-		// 	//Init progressBar where elem is $("#owl-demo")
-		// 	function progressBar(elem) {
-		// 		$elem = elem;
-		// 		//build progress bar elements
-		// 		buildProgressBar();
-		// 		//start counting
-		// 		start();
-		// 	}
 
 		// OWL V1.3
 
@@ -290,7 +232,7 @@ const Layout = ({ children }) => {
 				start();
 			}
 
-			//create div#progressBar and div#bar then prepend to $("#owl-demo")
+
 			function buildProgressBar() {
 				// if ($('#progressBar').length === 0) {
 				$progressBar = $('<div>', {
@@ -299,13 +241,9 @@ const Layout = ({ children }) => {
 				$bar = $('<div>', {
 					id: 'bar'
 				});
-				// var apend = $progressBar.append($bar).appendTo($elem);
-				// $progbar = document.getElementById('progbar');
-				// $progressBar.append($bar).insertAfter($elem);
+
 				$progressBar.append($bar).appendTo($elem);
-				// $progressBar.insertAdjacentElement('afterbegin', apend);
-				// 'beforebegin', tempDiv;
-				// }
+
 			}
 
 			function start() {
