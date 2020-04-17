@@ -925,7 +925,7 @@ ul.tabList.nav.flex-column {
 	width: 25%;
 }
   .w16 {
-	width: 50%;
+	width: 25%;
 }
 
 	.w-85 {
@@ -1044,7 +1044,7 @@ ul.tabList.nav.flex-column {
 	width: 8%;
 }
   .w16 {
-	width: 8%;
+	width: 10%;
 }
   	.whbd7 {
 		width: 7%;

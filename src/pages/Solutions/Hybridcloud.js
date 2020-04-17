@@ -87,7 +87,7 @@ const Hybridcloud = () => {
 					<div className=''>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light expand='lg' className='topNav'>
+								<Navbar color='light' light expand='xl' className='topNav'>
 									<NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										{/* <FaBars className='navbar-toggler-icon' /> */}
 										<AiOutlineMenu

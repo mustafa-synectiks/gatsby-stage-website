@@ -52,91 +52,69 @@ const Layout = ({ children }) => {
 				$('#othersource').hide();
 			}
 		});
-
-		$(document).ready(function() {
-  var $slider = $('.slider');
-  var $progressBar = $('.progress');
-  var $progressBarLabel = $( '.slider__label' );
-
-  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
-
-    $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
-
-    $progressBarLabel.text( calc + '% completed' );
-  });
-
-  $slider.slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 400
-  });
-});
 		// /Case Study Starts
 		// jQuery(function($) {
-		// $(document).ready(function() {
-		// 	var $slider = $('.slider');
-		// 	var $progressBar = $('.progress');
-		// 	var $progressBarLabel = $('.slider__label');
+		$(document).ready(function() {
+			var $slider = $('.slider');
+			var $progressBar = $('.progress');
+			var $progressBarLabel = $('.slider__label');
 
-		// 	$slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-		// 		var calc = nextSlide / (slick.slideCount - 1) * 100;
+			$slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+				var calc = nextSlide / (slick.slideCount - 1) * 100;
 
-		// 		$progressBar.css('background-size', calc + '% 100%').attr('aria-valuenow', calc);
+				$progressBar.css('background-size', calc + '% 100%').attr('aria-valuenow', calc);
 
-		// 		$progressBarLabel.text(calc + '% completed');
-		// 	});
+				$progressBarLabel.text(calc + '% completed');
+			});
 
-		// 	$slider.slick({
-		// 		slidesToShow: 2,
-		// 		slidesToScroll: 1,
-		// 		speed: 400,
-		// 		nextArrow: $('.prevbtn'),
-		// 		prevArrow: $('.nextbtn'),
-		// 		responsive: [
-		// 			{
-		// 				breakpoint: 1024,
-		// 				settings: {
-		// 					slidesToShow: 2,
-		// 					slidesToScroll: 1,
-		// 					centerMode: true
-		// 				}
-		// 			},
-		// 			{
-		// 				breakpoint: 800,
-		// 				settings: {
-		// 					slidesToShow: 2,
-		// 					slidesToScroll: 1,
-		// 					infinite: true
-		// 				}
-		// 			},
-		// 			{
-		// 				breakpoint: 600,
-		// 				settings: {
-		// 					slidesToShow: 1,
-		// 					slidesToScroll: 1,
-		// 					centerMode: false,
-		// 					infinite: true,
-		// 					mobileFirst: true
-		// 				}
-		// 			},
-		// 			{
-		// 				breakpoint: 480,
-		// 				settings: {
-		// 					centerMode: false,
-		// 					slidesToShow: 1,
-		// 					mobileFirst: true,
-		// 					slidesToScroll: 1,
-		// 					infinite: true,
-		// 					autoplay: false,
-		// 					autoplaySpeed: 2000
-		// 				}
-		// 			}
-		// 		]
-		// 	});
-		// });
+			$slider.slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				speed: 400,
+				nextArrow: $('.prevbtn'),
+				prevArrow: $('.nextbtn'),
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							centerMode: true
+						}
+					},
+					{
+						breakpoint: 800,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							infinite: true
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							centerMode: false,
+							infinite: true,
+							mobileFirst: true
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							centerMode: false,
+							slidesToShow: 1,
+							mobileFirst: true,
+							slidesToScroll: 1,
+							infinite: true,
+							autoplay: false,
+							autoplaySpeed: 2000
+						}
+					}
+				]
+			});
+		});
 
 		// Logo Slider
 		$(document).ready(function() {

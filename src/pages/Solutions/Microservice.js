@@ -51,7 +51,7 @@ const onTop = () => {
 						<h1 className='mt-2 mt-md-4'>Microservices</h1>
 						<Row className='position-relative'>
 							<div className='col-sm-12 col-md-12'>
-								<Navbar color='light' light='light' expand='lg' className='topNav'>
+								<Navbar color='light' light='light' expand='xl' className='topNav'>
 									{/* <NavbarToggler onClick={toggleNavbar} className='mr-2'>
 										<FaBars className='navbar-toggler-icon' />
 										<span className='my-1 mx-2 close'>X</span>
@@ -539,9 +539,9 @@ const onTop = () => {
 												applications to cloud and microservices architecture, can help make the
 												process seamless. Let us help you make the shift so you can capitalize
 												on business opportunities faster.
-												<br />SYNECTIKS has a flexible and effective way of migrating monolithic
-												applications to microservices, which includes the following steps:
 											</p>
+												<p>SYNECTIKS has a flexible and effective way of migrating monolithic
+												applications to microservices, which includes the following steps:</p>
 											<img src={ms7} alt='migrating monolithic ' className='my-0 mt-md-4 microIm imgshadow' />
 										</div>
 										<div>
