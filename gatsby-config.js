@@ -58,6 +58,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-s3`,
 			options: {
+				// bucketName: 'synectiks-testwebsite',
 				bucketName: 'synectiks-latest-website',
 				protocol: 'https',
 				hostname: 'synectiks.com'
