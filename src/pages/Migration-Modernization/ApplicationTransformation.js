@@ -55,7 +55,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Synectiks application transformation services close the gap between what your current applications can do and what the cloud native services and microservices architecture makes them capable of. That could be greater efficiency, scale, performance and resilience. But it could also mean entirely new capabilities that create lasting advantage, generate value and drive better outcomes for your customers and your employees." />
-		<link rel='canonical' href='https://www.synectiks.com/application-transformation/index.html'/>
+		<link rel='canonical' href='https://synectiks.com/application-transformation/index.html'/>
 		</Helmet>
 			<ApplicationTransformationWrapper>
 				<SEO title='Application Transformation' />

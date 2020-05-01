@@ -3,7 +3,7 @@ module.exports = {
 		title: `Synectiks - Cloud Solutions`,
 		description: `As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.`,
 		author: `Synectiks`,
-		siteUrl: `https://synectiks.com/`
+		siteUrl: `https://synectiks.com`
 	},
 	pathPrefix: '/next',
 	plugins: [
@@ -44,7 +44,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
-				host: 'https://synectiks.com/',
+				host: 'https://synectiks.com',
 				sitemap: 'https://synectiks.com/sitemap.xml',
 				policy: [ { userAgent: '*', allow: '/' } ]
 			}

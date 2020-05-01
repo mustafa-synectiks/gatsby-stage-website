@@ -8,7 +8,7 @@ const GetInTouch = () => {
 				<div className='container bgBlue py-2 p-md-4 d-flex flex-column align-items-center flex-md-row justify-content-around my-4 my-md-0'>
 					<div className='cstrip_text'>
 						<h3 className='text-white text-center text-md-left'>
-							Want to know how to evaluate your business?
+							To make your IT agile, modern, and scalable!
 						</h3>
 					</div>
 					<a

@@ -75,7 +75,7 @@ const Hybridcloud = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Synectiks can enable your enterprise journey to hybrid IT, regardless of your starting point."/>
-		<link rel='canonical' href='https://www.synectiks.com/hybrid-cloud/index.html'/>
+		<link rel='canonical' href='https://synectiks.com/hybrid-cloud/index.html'/>
 		</Helmet>
 			<SEO title='Hybrid Cloud' />
 			<HybridWrapper>

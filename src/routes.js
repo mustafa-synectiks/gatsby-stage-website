@@ -8,7 +8,6 @@ module.exports = [
 		path: '/devops-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/DevopsTransformation.js`)
 	},
-
 	{
 		path: '/privacy-policy/index.html',
 		component: path.resolve(`src/pages/Mails/privacypolicy.js`)

@@ -20,7 +20,7 @@ export class Featured extends React.Component {
 			<Layout>
 				<FeaturedWrapper>
 				<Helmet>
-				<link rel='canonical' href='https://www.synectiks.com/featured/index.html'/>
+				<link rel='canonical' href='https://synectiks.com/featured/index.html'/>
 				</Helmet>
 					<div className='bg-lightgrey'>
 						<SEO title='Featured' />
@@ -40,7 +40,7 @@ export class Featured extends React.Component {
 											<a
 												href='https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-DevOps-Strategies.pdf'
 												target='_blank'
-												rel='noopener noreferrer'>
+												rel='noopener noreferrer dofollow'>
 												Learn more <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -63,7 +63,7 @@ export class Featured extends React.Component {
 											<a
 												href='https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Enterprise-Transformation.pdf'
 												target='_blank'
-												rel='noopener noreferrer'>
+												rel='noopener noreferrer dofollow'>
 												Learn more <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -90,7 +90,7 @@ export class Featured extends React.Component {
 												<a
 													href='https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Microservice-Platform.pdf'
 													target='_blank'
-													rel='noopener noreferrer'>
+													rel='noopener noreferrer dofollow'>
 													Learn more <i className='fa fa-arrow-right' />
 												</a>
 											</div>
@@ -113,7 +113,7 @@ export class Featured extends React.Component {
 												<a
 													href='https://synectiks-website.s3.amazonaws.com/doc/Synectiks-Open-Platform.pdf'
 													target='_blank'
-													rel='noopener noreferrer'>
+													rel='noopener noreferrer dofollow'>
 													Learn more <i className='fa fa-arrow-right' />
 												</a>
 											</div>

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Social from './social-icons';
 import logo from '../images/Synectiks Logo/synectiks-text-logo.png';
+import { MdArrowForward, MdArrowBack, MdClose } from 'react-icons/md';
 import './layout.css';
 export class Footer extends React.Component {
 	render() {
@@ -25,6 +26,19 @@ export class Footer extends React.Component {
 						</a>
 					</p>
 				</div> */}
+				<div className=''>
+					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
+						<p className='mb-1 pt-1 px-3 fsize08'>
+							We use cookies to make sure you have better experience on our website. Read about how we use
+							cookies in our
+							<a className='navfont Footerbg' href='/privacy-policy/index.html'>
+								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
+							</a>
+
+						</p>
+						<MdClose className='closeBtn' type='submit' id='hide'/>
+					</div>
+				</div>
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 mx-md-4 px-2 px-md-0'>
@@ -94,7 +108,8 @@ export class Footer extends React.Component {
 
 export default Footer;
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.div`{
+
 .footaddleft{
 	text-align: left;
 }
@@ -126,10 +141,48 @@ const FooterWrapper = styled.div`
 	.m5t {
 		margin-top: 5px;
 	}
-	.fsize08 {
-		font-size: 10px;
-	}
+
+	.prvtpolicy{
+	height:45px;
+	line-height: 10px;
+	margin-top:0px;
+	padding: 0px 30px;
+#hide{
+	position: absolute;
+	top:0;
+	right:0;
+	padding: 10px;
+	font-size: 2.5rem;
+	margin-top: 5px;
+}
+}
+.navfont{
+	position:relative;
+	top:0px;
+	font-size:8px;
+}
+
+.fsize08{
+	font-size:8px;
+	position:relative;
+	top:0px;
+}
+}
 	@media (min-width: 576px) {
+				.navfont,.fsize08{
+	font-size:16px;
+	position: relative;
+    top:0%;
+}
+			.prvtpolicy{
+	height:40px;
+	padding: 0;
+#hide{
+	position: absolute;
+	top:0;
+	right:0;
+}
+}
 		.ptext {
 			text-align: justify;
 		}

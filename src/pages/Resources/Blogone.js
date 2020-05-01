@@ -13,7 +13,7 @@ const BlogOne = (props) => {
 	return (
 			<html {...props.htmlAttributes}>
 			<head>
-			<link rel='canonical' href='https://www.synectiks.com/microservices-transformation/index.html'/>
+			<link rel='canonical' href='https://synectiks.com/microservices-transformation/index.html'/>
 	</head>
 			<body {...props.bodyAttributes}>
 				{props.preBodyComponents}

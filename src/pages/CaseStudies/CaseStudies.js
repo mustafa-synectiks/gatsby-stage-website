@@ -29,8 +29,11 @@ const CaseStudies = () => {
 	// const data = useStaticQuery(getImages);
 	return (
 		<Layout>
-			<SEO title='Case Studies' />
 			<CaseStudiesWrapper>
+		{/* <Helmet>
+		<link rel='canonical' href='https://synectiks.com/casestudy/index.html'/>
+		<Helmet/> */}
+			<SEO title='Case Studies' />
 				<div className='text-justify'>
 					<BreadCrumbs title='Home' subtitle='Case Studies' pageTitle='Case Studies' />
 				</div>
@@ -43,7 +46,7 @@ const CaseStudies = () => {
 									<div className='text-group align-self-center p-2 bgWhite'>
 										<h3 className=''>Software Defined Transformation</h3>
 										<p className='pr-5'>AWS Cloud migration for a large motor industry.</p>{' '}
-										<a href='/software-defined/index.html' className='noLine fw300'>
+										<a href='https://synectiks.com/software-defined/index.html' className='noLine fw300'>
 											Read More <i className='fa fa-arrow-right' />
 										</a>
 									</div>
@@ -57,7 +60,7 @@ const CaseStudies = () => {
 											<p className='pr-2 pr-md-5'>
 												Highly Scalable extremely customizable realtime monitoring platform.
 											</p>
-											<a href='/realtime/index.html' className='noLine fw300'>
+											<a href='https://synectiks.com/realtime/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -73,7 +76,7 @@ const CaseStudies = () => {
 												Petabytes of storage migration for a large financial company with zero
 												down.
 											</p>{' '}
-											<a href='/storage-migration/index.html' className='noLine fw300'>
+											<a href='https://synectiks.com/storage-migration/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -90,7 +93,7 @@ const CaseStudies = () => {
 											<p className='pr-5'>
 												Complete network Backbone design with highest security for retail.
 											</p>
-											<a href='/network-design/index.html' className='noLine fw300'>
+											<a href='https://synectiks.com/network-design/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -106,7 +109,7 @@ const CaseStudies = () => {
 											<p className='pr-5'>
 												Moving Bigdata workloads to aggregated platform for a large telco.
 											</p>{' '}
-											<a href='/storagetier/index.html' className='noLine fw300'>
+											<a href='https://synectiks.com/storagetier/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>
@@ -122,7 +125,7 @@ const CaseStudies = () => {
 												Lightweight disaster recovery platform for indian Defense.
 												<br />
 											</p>
-											<a href='/disaster-recovery/index.html' className='noLine fw300'>
+											<a href='https://synectiks.com/disaster-recovery/index.html' className='noLine fw300'>
 												Read More <i className='fa fa-arrow-right' />
 											</a>
 										</div>

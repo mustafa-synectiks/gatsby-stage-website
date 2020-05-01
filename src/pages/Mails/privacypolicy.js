@@ -15,7 +15,7 @@ export class Privacypolicy extends React.Component {
 			<Layout className='bg-lightgrey'>
 			<PrivacyWrapper>
 				<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/privacy-policy/index.html'/>
+			<link rel='canonical' href='https://synectiks.com/privacy-policy/index.html'/>
 			</Helmet>
 				<SEO title="SYNECTIKS - Privacy Policy"
 				description='This Privacy Policy describes how Synectiks Inc. and its affiliates ("Synectiks," "we," "our" or "us") collect, use and share information in connection with your use of our websites (including www.synectiks.com), services and applications (collectively, the "Services"). This Privacy Policy (the "Privacy Policy") does not apply to information our customers may process when using our Services.'/>
@@ -41,7 +41,7 @@ export class Privacypolicy extends React.Component {
 					<p>
 						We recommend that you read this Privacy Policy in full to ensure you are fully informed. If you
 						have any questions about this Privacy Policy or Synectiks data collection, use and disclosure
-						practices, please contact us at <a href='mailto:info@synectiks.com'>info@synectiks.com.</a>
+						practices, please contact us at <a href='mailto:info@synectiks.com'  rel="nofollow">info@synectiks.com.</a>
 					</p>
 					<p>
 						<ol type='1'>
@@ -406,7 +406,7 @@ export class Privacypolicy extends React.Component {
 							</h3>
 							<p>
 								If you are a registered user, you may access certain information associated with your
-								Account by logging into our Services or emailing <a href='mailto:info@synectiks.com'>info@synectiks.com</a>.
+								Account by logging into our Services or emailing <a href='mailto:info@synectiks.com' rel="nofollow">info@synectiks.com</a>.
 								If you terminate your Account, any public activity on your Account prior to deletion may
 								remain stored on our servers and may remain accessible to the public.
 							</p>
@@ -449,7 +449,7 @@ export class Privacypolicy extends React.Component {
 								Synectiks does not knowingly collect information from children under the age of 13 and
 								children under 13 are prohibited from using our Services. If you learn that a child has
 								provided us with personal information in violation of this Privacy Policy, you can alert
-								us at <a href='mailto:info@synectiks.com'>info@synectiks.com</a>.
+								us at <a href='mailto:info@synectiks.com'  rel="nofollow">info@synectiks.com</a>.
 							</p>
 							<h3>
 								<li>International Data Transfers</li>
@@ -476,7 +476,7 @@ export class Privacypolicy extends React.Component {
 							</h3>
 							<p>
 								If you have any questions or concerns about this Privacy Policy, please feel free to
-								email us at&nbsp; <a href='mailto:info@synectiks.com'>
+								email us at&nbsp; <a href='mailto:info@synectiks.com'  rel="nofollow">
 									info@synectiks.com
 								</a>.
 							</p>

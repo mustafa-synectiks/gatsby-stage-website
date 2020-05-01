@@ -20,7 +20,7 @@ const CaseStudy = () => {
 			<SEO title='Case Studies' />
 			<CaseStudyWrapper>
 			<Helmet>
-			<link rel='canonical' href='https://www.synectiks.com/casestudy/index.html'/>
+			<link rel='canonical' href='https://synectiks.com/casestudy/index.html'/>
 			</Helmet>
 				<div className='text-justify'>
 					<BreadCrumbs title='Home' subtitle='What We Do' pageTitle='Case Studies' />
@@ -29,7 +29,7 @@ const CaseStudy = () => {
 				<div className='content'>
 					<div className='d-flex flex-column flex-md-row justify-content-between mb-2 mb-md-5'>
 						<div className='w-450 box-shadow'>
-							<a href='/software-defined/index.html' className='noLine fw300'>
+							<a href='https://synectiks.com/software-defined/index.html' className='noLine fw300'>
 								<div className=''>
 									<img src={SDFT} alt='Software Defined' />
 									<div className='text-group align-self-center p-2 bgWhite'>
@@ -45,7 +45,7 @@ const CaseStudy = () => {
 							</a>
 						</div>
 						<div className='w-450 box-shadow'>
-							<a href='/realtime/index.html' className='noLine fw300'>
+							<a href='https://synectiks.com/realtime/index.html' className='noLine fw300'>
 								<div className=''>
 									<img src={RM} alt='Realtime' />
 									<div className='text-group align-self-center p-2 bgWhite'>
@@ -62,7 +62,7 @@ const CaseStudy = () => {
 						</div>
 
 						<div className='w-450 box-shadow'>
-							<a href='/storage-migration/index.html' className='noLine fw300'>
+							<a href='https://synectiks.com/storage-migration/index.html' className='noLine fw300'>
 								<div className=''>
 									<img src={SM} alt='Storage Migration' />{' '}
 									<div className='text-group align-self-center p-1 p-md-2 bgWhite'>
@@ -79,7 +79,7 @@ const CaseStudy = () => {
 						</div>
 					</div>
 					<div className='d-flex flex-column flex-md-row justify-content-between my-2 my-md-5'>
-						<a href='/network-design/index.html' className='noLine fw300'>
+						<a href='https://synectiks.com/network-design/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
 									<img src={ND} alt='Network Design' />{' '}
@@ -96,7 +96,7 @@ const CaseStudy = () => {
 							</div>
 						</a>
 
-						<a href='/storage-tier/index.html' className='noLine fw300'>
+						<a href='https://synectiks.com/storage-tier/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
 									<img src={ST} alt='Storage Tier' className='h46' />
@@ -113,7 +113,7 @@ const CaseStudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/disaster-recovery/index.html' className='noLine fw300'>
+						<a href='https://synectiks.com/disaster-recovery/index.html' className='noLine fw300'>
 							<div className='w-450 box-shadow'>
 								<div className=''>
 									<img src={DR} alt='Disaster Recovery' />

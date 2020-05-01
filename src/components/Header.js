@@ -30,7 +30,6 @@ const Header = () => {
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='ml-auto'>
 								<NavDropdown title='What we Do' id='basic-nav-dropdown'>
-									{/* <NavDropdown.Item href='/whysynectiks/index.html'>Why Synectiks</NavDropdown.Item> */}
 									<NavDropdown.Item href='/area-expertise/index.html'>
 										Area Of Expertise
 									</NavDropdown.Item>
@@ -75,6 +74,69 @@ const Header = () => {
 				</Navbar>
 			</div>
 		</HeaderNav>
+		// <HeaderNav>
+		// 	{/* <div className=''> */}
+		// 	<div className='FixedHeader'>
+		// 		<div className='bg-top pt-2 pl-md-0 py-md-1'>
+		// 			<Topbar />
+		// 		</div>
+		// 		<Navbar expand='lg' className='z pl-3 pr-3 px-md-5'>
+		// 			<Container fluid={true}>
+		// 				<Navbar.Brand href='https://synectiks.com'>
+		// 					<img src={logo} alt='synectiks' />
+		// 				</Navbar.Brand>
+		// 				<Navbar.Toggle className='navbar-toggler-right' aria-controls='basic-navbar-nav'>
+		// 					{/* <span className='navbar-toggler-icon' /> */}
+		// 					<AiOutlineMenu className='navbar-toggler-icon' />
+		// 					<AiOutlineClose className='my-1 mx-2 close' />
+		// 				</Navbar.Toggle>
+		// 				<Navbar.Collapse id='basic-navbar-nav'>
+		// 					<Nav className='ml-auto'>
+		// 						<NavDropdown title='What we Do' id='basic-nav-dropdown'>
+		// 							<NavDropdown.Item href='https://synectiks.com/area-expertise/index.html'>
+		// 								Area Of Expertise
+		// 							</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/casestudy/index.html'>Case Studies</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 						<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
+
+		// 							<NavDropdown.Item href='https://synectiks.com/infrastructure/index.html'>
+		// 								Infrastructure Transformation
+		// 							</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/application-transformation/index.html'>
+		// 								Application Transformation
+		// 							</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/devops-transformation/index.html'>
+		// 								DevOps Transformation
+		// 							</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 						<NavDropdown title='Solutions' id='basic-nav-dropdown'>
+		// 							<NavDropdown.Item href='https://synectiks.com/microservices/index.html'>Microservices</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 						<NavDropdown title='Services' id='basic-nav-dropdown'>
+		// 							<NavDropdown.Item href='https://synectiks.com/office-migration/index.html'>
+		// 								O365 Migration
+		// 							</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/private-cloud-hosting-services/index.html'>
+		// 								Private Cloud Hosting
+		// 							</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 						<NavDropdown title='Resources' id='basic-nav-dropdown'>
+		// 							<NavDropdown.Item href='https://synectiks.com/featured/index.html'>Featured</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/blog/index.html'>Blog</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 						<NavDropdown title='Company' id='basic-nav-dropdown'>
+		// 							<NavDropdown.Item href='https://synectiks.com/about-us/index.html'>About Us</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/careers/index.html'>Careers</NavDropdown.Item>
+		// 							<NavDropdown.Item href='https://synectiks.com/Contact-us.html'>Contact Us</NavDropdown.Item>
+		// 						</NavDropdown>
+		// 					</Nav>
+		// 				</Navbar.Collapse>
+		// 			</Container>
+		// 		</Navbar>
+		// 	</div>
+		// </HeaderNav>
 	);
 };
 

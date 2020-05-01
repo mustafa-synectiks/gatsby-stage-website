@@ -11,7 +11,7 @@ const Blog = () => {
 		<Layout>
 			<BlogWrapper>
 			<Helmet>
- 			<link rel='canonical' href='https://www.synectiks.com/blog/index.html'/>
+ 			<link rel='canonical' href='https://synectiks.com/blog/index.html'/>
 			</Helmet>
 				<SEO title='Blogs' />
 				<div className=''>

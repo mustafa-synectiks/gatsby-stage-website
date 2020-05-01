@@ -18,7 +18,7 @@ export class OfficeMigraton extends React.Component {
 			<Layout>
 			<Helmet>
 			<meta name='description' content="Microsoft is the recognized leader in cloud productivity solutions for business with Office 365 transforming the workplace experience. With a certified team of Microsoft Partner Professionals, SYNECTIKS delivers on all Microsoft Cloud Solutions, including Office 365, SharePoint, Skype for Business, Teams, Power BI, Microsoft 365 (Office 365 + Enterprise Mobility + Security) and Azure."/>
-			<link rel='canonical' href='https://www.synectiks.com/office-migration/index.html'/>
+			<link rel='canonical' href='https://synectiks.com/office-migration/index.html'/>
 			</Helmet>
 				<OfficeMigratonWrapper>
 					<SEO title='Office 365' />

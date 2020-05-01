@@ -15,9 +15,11 @@ export class Careers extends React.Component {
 		this.toggle = this.toggle.bind(this);
 		this.toggle2 = this.toggle2.bind(this);
 		this.toggle3 = this.toggle3.bind(this);
+		this.toggle4 = this.toggle4.bind(this);
 		this.state = { collapse: false };
 		this.state = { collapse2: false };
 		this.state = { collapse3: false };
+		this.state = { collapse4: false };
 	}
 	toggle() {
 		this.setState((state) => ({ collapse: !state.collapse }));
@@ -27,6 +29,9 @@ export class Careers extends React.Component {
 	}
 	toggle3() {
 		this.setState((state) => ({ collapse3: !state.collapse3 }));
+	}
+	toggle4() {
+		this.setState((state) => ({ collapse4: !state.collapse4 }));
 	}
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -101,6 +106,38 @@ export class Careers extends React.Component {
 									<p className='lineHeight-24 borderbtm-grey-1px my-md-3'>
 										<h2>Open positions in all locations</h2>
 									</p>
+										<div>
+										<div>
+											<Button
+												color='primary'
+												className='career-btn text-left'
+												onClick={this.toggle4}
+												style={{ marginBottom: '1rem' }}>
+												Infrastructure&nbsp;Engineer
+											</Button>
+											<Collapse isOpen={this.state.collapse4} className='pb-3'>
+												<Card>
+													<CardBody>
+														<p className='ptext'>
+															<b>
+																Infrastructure Engineer<br />
+																Master's with 3 years experience or Bachelors with 5 years experience.<br
+																/>
+																Major: CS, Applied CS or equivalent.<br/> Other suitable qualifications acceptable -
+															</b>
+															<br />
+															 Princeton, NJ. Job entails working with & requires experience including: EMC, Hitachi, NetApp, AIX, Linux, Windows, Solaris, Shell Scripting, Python, NFS, CIFS, TCP/IP, emcopy, rsync, SnapMirror, RoboCopy & Data ONTAP. Must have experience in planning, designing & implementing cross-platform NAS data migration projects. Relocation & travel to unanticipated locations within USA possible.<br />
+															<b>Send resumes to </b>info@synectiks.com<br />
+															<b>
+																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
+																215, Princeton, NJ 08540.
+															</b>
+														</p>
+													</CardBody>
+												</Card>
+											</Collapse>
+										</div>
+									</div>
 									<div>
 										<div>
 											<Button
@@ -116,8 +153,8 @@ export class Careers extends React.Component {
 														<p className='ptext'>
 															<b>
 																Sr. Systems Administrator<br />
-																Bachelor’s with 5 yrs exp.<br />
-																Major: CS, Bus Admin or equiv.<br />
+																Bachelor’s with 5 years experience.<br />
+																Major: CS, Bus Admin or equivalent.<br />
 																Other suitable qualifications acceptable –{' '}
 															</b>
 															<br />
@@ -159,9 +196,9 @@ export class Careers extends React.Component {
 														<p className='ptext'>
 															<b>
 																Lead Software Architect<br />
-																Master’s with 3 yrs experience.<br />
-																Bachelor’s with 5 yrs experience.<br />
-																Major: CS, Engg, Math or equiv.<br />
+																Master’s with 3 years experience.<br />
+																Bachelor’s with 5 years experience.<br />
+																Major: CS, Engg, Math or equivalent.<br />
 																Other suitable qualifications acceptable –{' '}
 															</b>
 															<br />
@@ -201,9 +238,9 @@ export class Careers extends React.Component {
 														<p className='ptext'>
 															<b>
 																Infrastructure Engineer<br />
-																Master’s with 3 yrs exp or Bachelor’s with 5 yrs exp.<br
+																Master’s with 3 years experience or Bachelor’s with 5 years experience.<br
 																/>
-																Major: CS, Engg, Math or equiv.<br />
+																Major: CS, Engg, Math or equivalent.<br />
 																Other suitable qualifications acceptable –{' '}
 															</b>
 															<br />

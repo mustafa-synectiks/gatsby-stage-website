@@ -56,7 +56,7 @@ const Slider = () => {
 	return (
 		<HomeWrapper>
 		<Helmet>
-		<link rel='content' href='https://www.synectiks.com/'/>
+		<link rel='canonical' href='https://synectiks.com'/>
 		  <meta name="keywords" content="cloud migration strategy,
 cloud migration services,
 aws cloud migration,
@@ -100,7 +100,6 @@ cloud servers providers,
 infrastructure cloud,
 microsoft cloud service provider,
 "/>
-<link rel='canonical' href='https://synectiks.com/'/>
 		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
 		</Helmet>
 			<div className='container-fluid'>
@@ -331,7 +330,7 @@ microsoft cloud service provider,
 				<div>
 					<GetInTouch />
 				</div>
-				<div className=''>
+				{/* <div className=''>
 					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
 						<p className='mb-1 pt-2 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
@@ -343,7 +342,7 @@ microsoft cloud service provider,
 						</p>
 						<MdClose className='closeBtn' type='submit' id='hide'/>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<Helmet>
 				<script
@@ -365,31 +364,8 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default Slider;
 
 const HomeWrapper = styled.section`{
-.navfont{
-	position:relative;
-	top:0px;
-	font-size:8px;
-}
 
-.fsize08{
-	font-size:8px;
-	position:relative;
-	top:5px;
-}
-.prvtpolicy{
-	height:45px;
-	line-height: 10px;
-	margin-top:0px;
-	padding: 0px 30px;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
-	padding: 10px;
-	font-size: 2.5rem;
-	margin-top: 5px;
-}
-}
+
 h1{
 	font-size: 1.875rem;
 }
@@ -583,20 +559,8 @@ p{
 			.caseText{
 		text-align: left;
 	}
-		.navfont,.fsize08{
-	font-size:16px;
-	position: relative;
-    top: 18%;
-}
-		.prvtpolicy{
-	height:40px;
-	padding: 0;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
-}
-}
+
+
 
 h1{
 	font-size: 3.2rem;

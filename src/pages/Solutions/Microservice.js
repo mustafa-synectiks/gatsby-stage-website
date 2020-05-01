@@ -40,7 +40,7 @@ const onTop = () => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="SYNECTIKS, a trusted partner with experience migrating monolithic applications to cloud and microservices architecture, can help make the process seamless. Let us help you make the shift so you can capitalize on business opportunities faster."/>
-		<link rel='canonical' href='https://www.vsynectiks.com/microservices/index.html'/>
+		<link rel='canonical' href='https://synectiks.com/microservices/index.html'/>
 		</Helmet>
 			<SEO title='Microservices'
 			 />

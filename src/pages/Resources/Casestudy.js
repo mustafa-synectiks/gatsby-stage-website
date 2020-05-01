@@ -20,7 +20,7 @@ const Casestudy = () => {
 					</div>
 
 					<div className='d-flex justify-content-around pt-1 flex-fill mt-3 align-items-center flex-col'>
-						<a href='/software-defined/index.html' className='noLine'>
+						<a href='https://synectiks.com/software-defined/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -42,7 +42,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/realtime/index.html' className='noLine'>
+						<a href='https://synectiks.com/realtime/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -63,7 +63,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/storage-migration/index.html' className='noLine'>
+						<a href='https://synectiks.com/storage-migration/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -89,7 +89,7 @@ const Casestudy = () => {
 						className='d-flex justify-content-around pt-2 flex-fill mt-3 pb-3 align-items-center flex-col'
 						data-aos='fade-up'
 						data-aos-duration='2000'>
-						<a href='/network-design/index.html' className='noLine'>
+						<a href='https://synectiks.com/network-design/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -105,7 +105,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/storagetier/index.html' className='noLine'>
+						<a href='https://synectiks.com/storagetier/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>
@@ -121,7 +121,7 @@ const Casestudy = () => {
 								</div>
 							</div>
 						</a>
-						<a href='/disaster-recovery/index.html' className='noLine'>
+						<a href='https://synectiks.com/disaster-recovery/index.html' className='noLine'>
 							<div className='p-3'>
 								<div className='border-grey-2px cs_boxshadow'>
 									<div className='img_zoom'>

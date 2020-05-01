@@ -13,7 +13,7 @@ const AreaOfExpertise = ({ location }) => {
 		<Layout>
 		<Helmet>
 		<meta name='description' content="Across our outcome-driven consulting and managed services, it's our open product driven software solutions, our deep expertise on modern application architecture and our cloud culture that makes the difference."/>
-		<link rel='canonical' href='https://www.synectiks.com/area-expertise/index.html'/>
+		<link rel='canonical' href='https://synectiks.com/area-expertise/index.html'/>
 		</Helmet>
 			<SEO title='Area of Expertise' />
 			<AreaOfExpertiseWrapper>
