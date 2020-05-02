@@ -20,8 +20,16 @@ const Layout = ({ children }) => {
 
 		// Cookie Strip
 		$(document).ready(function() {
-			$('#hide').click(function() {
-				$('.prvtpolicy').hide();
+			// $('#hide').click(function() {
+			// 	$('.prvtpolicy').hide();
+			// });
+			const showMsg = localStorage.getItem('showMsg');
+			if(showMsg !== 'false'){
+				$('.prvtpolicy').show();
+			}
+			$('#hide').on('click', function(){
+				$('.prvtpolicy').fadeOut('slow');
+				localStorage.setItem('showMsg', 'false');
 			});
 		});
 

@@ -40,9 +40,12 @@ export default function HTML(props) {
 				<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css' />
 				<script src='https://maps.google.com/maps/api/js?key=AIzaSyDzf6Gmc9u7rr2JHijOERAmC_j0gWYtR2c' />
 				<script
-					src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
-					integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
-					crossOrigin='anonymous'
+					// src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
+					// integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+					// crossOrigin='anonymous'
+					src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"
 				/>
 				{/* <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' /> */}
 				{/* slick slider script */}

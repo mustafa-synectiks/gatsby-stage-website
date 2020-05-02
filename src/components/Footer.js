@@ -145,6 +145,7 @@ const FooterWrapper = styled.div`{
 	line-height: 10px;
 	margin-top:0px;
 	padding: 0px 30px;
+	display: none;
 #hide{
 	position: absolute;
 	top:0;
@@ -175,6 +176,7 @@ const FooterWrapper = styled.div`{
 			.prvtpolicy{
 	height:40px;
 	padding: 0;
+	display: none;
 #hide{
 	position: absolute;
 	top:0;
