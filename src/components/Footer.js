@@ -26,7 +26,6 @@ export class Footer extends React.Component {
 						</a>
 					</p>
 				</div> */}
-				<div className=''>
 					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
 						<p className='mb-1 pt-1 px-3 fsize08'>
 							We use cookies to make sure you have better experience on our website. Read about how we use
@@ -38,7 +37,6 @@ export class Footer extends React.Component {
 						</p>
 						<MdClose className='closeBtn' type='submit' id='hide'/>
 					</div>
-				</div>
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 mx-md-4 px-2 px-md-0'>
