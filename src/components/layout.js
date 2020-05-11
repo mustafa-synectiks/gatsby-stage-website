@@ -23,14 +23,17 @@ const Layout = ({ children }) => {
 			// $('#hide').click(function() {
 			// 	$('.prvtpolicy').hide();
 			// });
-			const showMsg = localStorage.getItem('showMsg');
+			const showMsg = sessionStorage.getItem('showMsg');
 			if(showMsg !== 'false'){
 				$('.prvtpolicy').show();
 			}
 			$('#hide').on('click', function(){
 				$('.prvtpolicy').fadeOut('slow');
-				localStorage.setItem('showMsg', 'false');
+				sessionStorage.setItem('showMsg', 'false');
 			});
+			// $(window).unload(function(){
+			// 	localStorage.clear(showMsg);
+			// })
 		});
 
 		$(document).ready(function() {
