@@ -344,9 +344,9 @@ const onTop = () => {
 											<div>
 												<h3>Accelerated Migration</h3>
 												<p className='ptext'>
-													With synectiks Xformation platform, companies can take advantage of
+													With Synectiks Xformation platform, companies can take advantage of
 													an API-driven cloud architecture and get moving faster. Synectiks
-													open xformation platform offers App/ Delivery/ Automation blocks
+													open Xformation platform offers App/ Delivery/ Automation blocks
 													based on cloud native services that customers can leverage to build
 													application and services rapidly with adequate security and
 													governance.
@@ -357,7 +357,7 @@ const onTop = () => {
 											<div>
 												<h3>Delivery Pipeline</h3>
 												<p className='ptext'>
-													Synectiks xformation platform comes with industry standard CI/CD
+													Synectiks Xformation platform comes with industry standard CI/CD
 													blueprint infrastructure provisioning and validation, container
 													driven services delivery across clouds, functional testing,
 													performance testing and security testing and stagewise production
@@ -372,12 +372,12 @@ const onTop = () => {
 											</div>
 											<div>
 												<h3>Redevelopment – Microservices Based App Development</h3>
-												Synectiks application development service offering allow customers to
+												Synectiks application development service offering allows customers to
 												realize the real benefit of using cloud native services and boosting
 												innovation agility. The offerings involves application redevelopment to
 												implement use cases for batch processing, workflow processing ,
 												transient server less functionality or container based microservices.
-												Synectiks open xformation platform offers App/ Delivery/ Automation
+												Synectiks open Xformation platform offers App/ Delivery/ Automation
 												blocks based on cloud native services that customers can leverage to
 												build application and services rapidly. A typical microservice based
 												enterprise application component diagram is below:

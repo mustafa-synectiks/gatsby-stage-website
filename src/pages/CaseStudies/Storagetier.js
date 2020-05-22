@@ -47,7 +47,7 @@ const Storagetier = () => {
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
 							<h4>Technologies</h4>
-							<p> AWS, Infrastructure as a code, microservices, devops</p>
+							<p> AWS, Infrastructure as a code, microservices, DevOps</p>
 						</div>
 					</div>
 					<div>

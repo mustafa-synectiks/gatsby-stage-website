@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 import '../../components/layout.css';
 import styled from 'styled-components';
 import self from '../../images/ManagedBackup/Self Service Portal.png';
-import cloudImaged from '../../images/ManagedBackup/Backup.png';
+import cloudImaged from '../../images/ManagedBackup/Backup.jpg';
 import security from '../../images/ManagedBackup/Security.png';
 import geolocation from '../../images/ManagedBackup/MultipleSecureGeoLocations.png';
 import backupStorage from '../../images/ManagedBackup/BackupStorage.png';
@@ -109,7 +109,7 @@ const onTop = () => {
 												</div>
 												<div className='w-100 ml-md-auto' data-aos='fade-up'>
 													<img
-														class='w75 ml-md-5'
+														class='w75 ml-md-auto'
 														src={HostedInfra}
 														width='100%'
 														alt='Hosted Infrastructure'
@@ -254,7 +254,7 @@ const onTop = () => {
 											</div>
 											<div className='w-100 ml-md-auto' data-aos='fade-up'>
 												<img
-													class='w75 ml-md-5 box-shadow'
+													class='w75 ml-md-auto box-shadow'
 													src={cloudImaged}
 													width='100%'
 													alt='Hosted Infrastructure'
@@ -547,7 +547,7 @@ const PrimaryCloudHostingWrapper = styled.div`
 
 	@media (min-width: 576px) {
 		.w75 {
-			width: 65%;
+			width: 85%;
 		}
 		.pcenter {
 			text-align: left;

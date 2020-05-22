@@ -276,7 +276,7 @@ const onTop = () => {
 													<div className='Durple d-flex align-items-center'>
 														<ul className='pt-3 DurpleLight ulfont ulht w-100'>
 															<li>Scripted Build</li>
-															<li>Continous Integration</li>
+															<li>Continuous Integration</li>
 															<li>Dedicated build & release server</li>
 															<li>Multiplatform packages</li>
 															<li>Basic test automation</li>
@@ -289,7 +289,7 @@ const onTop = () => {
 													<div className='Durple d-flex align-items-center'>
 														<ul className='pt-3 DurpleLight ulfont ulht38	 w-100'>
 															<li>Basic test automation</li>
-															<li>Continous tests integration</li>
+															<li>Continuous tests integration</li>
 															<li>Risk based manual tests</li>
 														</ul>
 													</div>
@@ -366,7 +366,7 @@ const onTop = () => {
 															<li>Dedicated tools team</li>
 															<li>Remove boundary(Dev & Ops)</li>
 															<li>Deploy disconnected from release</li>
-															<li>Continous improvement</li>
+															<li>Continuous improvement</li>
 															<li>Component ownership</li>
 															<li>Decentralized decisions</li>
 														</ul>
@@ -402,7 +402,7 @@ const onTop = () => {
 													</div>
 													<div className='Doperate'>
 														<ul className='pt-3 DellowLight ulfont ulht38 w-100'>
-															<li>Automated hyberscale cluster & cloud provisioning</li>
+															<li>Automated hyperscale cluster & cloud provisioning</li>
 															<li>Elastic auto provisioning</li>
 															<li>Resilience scripts</li>
 															<li>Dynamic vdms/ VDss provisioning</li>
@@ -436,7 +436,7 @@ const onTop = () => {
 														<ul className='pt-3 DreenLight ulfont ulht w-100'>
 															<li>Zero touch deployment</li>
 															<li>Elastic automation cluster</li>
-															<li>Parallel continous delivery</li>
+															<li>Parallel  continuous delivery</li>
 															<li>
 																Containerized build environments for different language
 															</li>
@@ -447,16 +447,16 @@ const onTop = () => {
 														<ul className='pt-3 DreenLight ulfont ulht38 w-100'>
 															<li>Service wise test results consolidation</li>
 															<li>Tests Trend analytics</li>
-															<li>Continous tests in production</li>
+															<li>Continuous tests in production</li>
 														</ul>
 													</div>
 													<div className='Doperate'>
 														<ul className='pt-3 DreenLight ulfont ulht38 w-100'>
 															<li>Hardware / Os / App server / license agnostics</li>
-															<li>Continous security / Audit / Billing</li>
+															<li>Continuous security / Audit / Billing</li>
 															<li>
 																Centralized tools for monitoring different environments,
-																products, services, cluds
+																products, services, clouds
 															</li>
 														</ul>
 													</div>

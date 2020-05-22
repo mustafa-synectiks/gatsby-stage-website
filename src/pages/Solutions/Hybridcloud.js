@@ -377,7 +377,7 @@ const Hybridcloud = () => {
 															Backup and disaster recovery is the most common use case as
 															it serves two primary benefits. First, it allows you to use
 															a non-production workload as a proof-of-concept for your
-															initial entr into a cloud environment. Second, it allows you
+															initial entry into a cloud environment. Second, it allows you
 															to create immediate value for your organization by elevating
 															and testing your business continuity strategy.
 														</p>

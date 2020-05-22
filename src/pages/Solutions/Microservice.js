@@ -248,7 +248,7 @@ const onTop = () => {
 														<li>Composability / Reusability / Ease of maintenance</li>
 														<li>
 															Autonomy of teams, culture of change, deploy more, deploy
-															faster, deploy better. Ownership and devops culture.
+															faster, deploy better. Ownership and DevOps culture.
 														</li>
 														<li>Failure isolation and resiliency</li>
 														<li>Better scaling (out) and optimizations</li>
@@ -409,7 +409,7 @@ const onTop = () => {
 															<div className='devops col'>
 																<div>
 																	<h4 className='btn bgOrange py-0 text-light'>
-																		Devops
+																		DevOps
 																	</h4>
 																</div>
 																<div className='d-flex'>

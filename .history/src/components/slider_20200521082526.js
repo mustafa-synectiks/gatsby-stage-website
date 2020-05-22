@@ -115,7 +115,7 @@ microsoft cloud service provider,
 									deep expertise make your cloud transformation <br />
 									safe and agile.
 								</p>
-									<a className='animated delay-3s slow fadeInRight btn btn-primary'
+									<a className='animated delay-2s slow fadeInRight btn btn-primary'
 									href='https://synectiks.com/infrastructure/index.html'>
 									Learn More
 								</a>

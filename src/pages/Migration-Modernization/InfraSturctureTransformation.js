@@ -205,7 +205,7 @@ const Infrastructure = () => {
 													approach. Business need to lay the foundation for innovation by
 													forensically re-architecting the existing legacy environment in
 													support of business objectives. Whether that’s controlling costs,
-													supporting growth, driving efficiency or otherwise.{' '}
+													supporting growth, driving efficiency or otherwise.
 												</p>
 												<p className='ptext'>
 													Forward-looking IT organizations are modernizing and consolidating
@@ -245,7 +245,7 @@ const Infrastructure = () => {
 												<div className='d-flex'>
 													<div className='d-flex flex-column justify-content-around bgOrange'>
 														<div className='rotate bgOrange'>
-															<h6>Activites</h6>
+															<h6>Activities</h6>
 														</div>
 													</div>
 													<div className='d-flex flex-column flex-md-row justify-content-md-around bgBlueLight p-md-3'>
@@ -260,7 +260,7 @@ const Infrastructure = () => {
 																	<ul className='p-3'>
 																		<li>
 																			Aggregate computing, storage, network
-																			@software layer from any plublic/private
+																			@software layer from any public/private
 																			cloud
 																		</li>
 																		<li>Scale in/out as per need</li>
@@ -287,7 +287,7 @@ const Infrastructure = () => {
 														</div>
 														<div className='devops col'>
 															<div>
-																<h4 className='btn bgOrange py-0 text-light'>Devops</h4>
+																<h4 className='btn bgOrange py-0 text-light'>DevOps</h4>
 															</div>
 															<div className='d-flex'>
 																<div>

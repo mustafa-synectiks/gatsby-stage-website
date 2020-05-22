@@ -178,7 +178,7 @@ const Tabs = () => {
 											<p className='ptext  f-14 px-2 px-md-4'>
 												Make sure that every bit of your hardware environment is directly
 												supporting your business objectives. Transition from a hardware centric
-												to a software Defined organisation make huge difference in CapEx and
+												to a software Defined organization make huge difference in CapEx and
 												Opex.
 											</p>
 										</div>
@@ -191,7 +191,7 @@ const Tabs = () => {
 											<p className='ptext  f-14 px-4'>
 												Applications that power your enterprise are key to generating a strong
 												competitive advantage. Bring innovation, agility and outstanding
-												customer experience through moderm architectures and cloud first
+												customer experience through modern architectures and cloud first
 												approach.
 											</p>
 										</div>
@@ -210,18 +210,7 @@ const Tabs = () => {
 										</div>
 									</div>
 								</div>
-								{/* <div className='col-sm-12  p-1'>
-									<div className='py-1'>
-										<div className=''>
-											<h3 className='text-center heading-h3'>Data Transformation</h3>
-											<p className='ptext  f-14 px-2 px-md-4'>
-												Consolidate your unstructured, semi structure and strtucture data and
-												get maximum business insights & real time with minimal TCO of data
-												management and its governance.
-											</p>
-										</div>
-									</div>
-								</div> */}
+
 							</div>
 						</div>
 					</div>
@@ -302,9 +291,9 @@ const Tabs = () => {
 										</p>
 									</div>
 									<div className='hide' id='thc2'>
-										<h2 className=' text-center text-light'>Devops</h2>
+										<h2 className=' text-center text-light'>DevOps</h2>
 										<p className=' text-center'>
-											Empowering Organization to adopt Devops culture with through specialized
+											Empowering Organization to adopt DevOps culture with through specialized
 											people, tools and training.
 										</p>
 									</div>

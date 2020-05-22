@@ -161,9 +161,9 @@ const Hexagon = () => {
 							<p>Modernization traditional application and legacy infrastructure.</p>
 						</div>
 						<div className='hide' id='hc2'>
-							<h2>Devops</h2>
+							<h2>DevOps</h2>
 							<p>
-								Empowering Organization to adopt Devops culture with through specialized people, tools
+								Empowering Organization to adopt DevOps culture with through specialized people, tools
 								and training.
 							</p>
 						</div>

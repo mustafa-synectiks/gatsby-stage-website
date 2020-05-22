@@ -109,7 +109,7 @@ const onTop = () => {
 												</div>
 												<div className='w-100 ml-md-auto' data-aos='fade-up'>
 													<img
-														class='w75 ml-md-5'
+														class='w75 ml-md-3'
 														src={HostedInfra}
 														width='100%'
 														alt='Hosted Infrastructure'
@@ -254,7 +254,7 @@ const onTop = () => {
 											</div>
 											<div className='w-100 ml-md-auto' data-aos='fade-up'>
 												<img
-													class='w75 ml-md-5 box-shadow'
+													class='w75 ml-md-3 box-shadow'
 													src={cloudImaged}
 													width='100%'
 													alt='Hosted Infrastructure'

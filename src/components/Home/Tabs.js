@@ -132,7 +132,7 @@ const Tabs = () => {
 										<p className='f-14 px-2 px-md-4'>
 											Make sure that every bit of your hardware environment is directly supporting
 											your business objectives. Transition from a hardware centric to a software
-											Defined organisation make huge difference in CapEx and Opex.
+											Defined organization make huge difference in CapEx and Opex.
 										</p>
 									</div>
 								</div>
@@ -146,7 +146,7 @@ const Tabs = () => {
 										<p className='f-14 px-4'>
 											Applications that power your enterprise are key to generating a strong
 											competitive advantage. Bring innovation, agility and outstanding customer
-											experience through moderm architectures and cloud first approach.
+											experience through modern architectures and cloud first approach.
 										</p>
 									</div>
 								</div>

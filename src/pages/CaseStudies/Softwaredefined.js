@@ -29,8 +29,8 @@ const Softwaredefined = () => {
 					<div className='softwareDefined_image'>
 						<h3>Large Motor Company</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive
-							scalability and reliability across the organisation. We helped them with all the
+							The leadership took a decision to become Hardware/OS/Operation/vendor agnostic and achieve
+							scalability and reliability across the organization. We helped them with all the
 							technologies, training to make that happen. Our open platform helped them to become complete
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
@@ -51,7 +51,7 @@ const Softwaredefined = () => {
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
 							<h4>Technologies</h4>
-							<p classname='text-left'>AWS, Infrastructure as a code, microservices, devops</p>
+							<p classname='pleft'>AWS, Infrastructure as a code, microservices, DevOps</p>
 						</div>
 					</div>
 					<div>
@@ -175,15 +175,18 @@ export default Softwaredefined;
 const SoftwaredefinedWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
-		p {
-			text-align: left !important;
+	.pleft,p {
+			text-align: left;
 		}
 	}
 
 	@media screen and (min-width: 576px) {
 		padding: 3rem 4rem;
+		.pleft{
+			text-align: left !important;
+		}
 		p {
-			text-align: justify !important;
+			text-align: justify ;
 		}
 	}
 `;

@@ -17,8 +17,8 @@ const SuccessStories = () => {
 							<div className='col-sm-12 col-md-3'>
 								<div className='my-2 my-md-5 caseText'>
 									<h2 className='mb-2 mb-md-3'>Success Stories </h2>
-									<a href='' className='text-capitalize'>
-										View all success stories &nbsp; >{' '}
+									<a href='https://synectiks.com/casestudy/index.html' className='text-capitalize'>
+										View all success stories &nbsp; >
 									</a>
 								</div>
 								<div className='progressnumb'>

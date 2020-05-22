@@ -20,10 +20,10 @@ const Realtime = () => {
 					<CaseBreadCrumbs title='Home' casetitle='What We Do' subtitle='Case Studies' pageTitle='Realtime' />
 					<h1>Realtime Monitoring</h1>
 					<div className='realTime_image'>
-						<h3>Reliance Jio Casestudy</h3>
+						<h3>Reliance Jio Case study</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive
-							scalability and reliability across the organisation. We helped them with all the
+							The leadership took a decision to become hardware/OS/Operation/vendor agnostic and achieve
+							scalability and reliability across the organization. We helped them with all the
 							technologies, training to make that happen. Our open platform helped them to become complete
 							software defined, automate all operations. We helped them to learn to manage IT in most
 							modern way.
@@ -44,7 +44,7 @@ const Realtime = () => {
 						</div>
 						<div className='column w-100 px-1 px-5 redBorder'>
 							<h4>Technologies</h4>
-							<p>AWS, Infrastructure as a code, microservices, devops.</p>
+							<p>AWS, Infrastructure as a code, microservices, DevOps.</p>
 						</div>
 					</div>
 					<div>
@@ -63,7 +63,7 @@ const Realtime = () => {
 						</p>
 						<h4>Challenges</h4>
 						<p>
-							<b> Licenced Monitoring Software:</b> Reliance Jio was mostly using licensed products for
+							<b> Licensed Monitoring Software:</b> Reliance Jio was mostly using licensed products for
 							more than 30 applications to maintain a large amount of data. Most of these applications
 							were service based and big data related. They needed a customized open source tool to manage
 							and run tons of data via millions of network elements.{' '}

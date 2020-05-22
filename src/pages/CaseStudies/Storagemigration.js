@@ -26,7 +26,7 @@ const Storagemigration = () => {
 					<div className='softwareDefined_image'>
 						<h3>SAN connectivity via Synectiks Storage Network Solutions</h3>
 						<p className='blueBorder pl-2 pl-md-5 py-1 py-3'>
-							The leadership took a decision to become Harwdare/OS/Operation/vendor agnostic and achive
+							The leadership took a decision to become hardware/OS/Operation/vendor agnostic and achieve
 							scalability and reliability across the organisation. We helped them with all the
 							technologies, training to make that happen. Our open platform helped them to become complete
 							software defined, automate all operations. We helped them to learn to manage IT in most
@@ -60,14 +60,14 @@ const Storagemigration = () => {
 					<div className='softwareDefined_div d-flex flex-column flex-md-row justify-content-around py-1 py-md-5'>
 						<div className='column w-100 px-1 px-5 orangeBorder'>
 							<h4>Network Model</h4>
-							<p>
+							<p className='pleft'>
 								Our unique core-edge SAN network offering works best for the applications providing
 								availability and load balancing.
 							</p>
 						</div>
 						<div className='column w-100 px-1 px-5 blueBorder'>
 							<h4> Business Objective </h4>
-							<p>
+							<p className='pleft'>
 								Our strength in offering raw block devices of various sizes delivers best i/o response
 								time with a high-end performance of the applications. We design and implement 3 data
 								center, 4 data center block replications.
@@ -103,7 +103,7 @@ const Storagemigration = () => {
 						<div className='column w-100 px-1 px-5 redBorder'>
 							<h4> Active - Active Solutions</h4>
 							<p>
-								Our active/active solutions enable application clusters to work and maintain zero
+								Our active-active solutions enable application clusters to work and maintain zero
 								downtime.
 							</p>
 						</div>
@@ -111,7 +111,7 @@ const Storagemigration = () => {
 					<div>
 						<h4>
 							We follow ITIL process and methodologies to support various levels of supports for the
-							enterperises.
+							enterprises.
 						</h4>
 						<div className='d-flex flex-column flex-md-row'>
 							<div className='px-2 px-md-5'>
@@ -170,12 +170,15 @@ export default Storagemigration;
 const StorageWrapper = styled.div`
 	 {
 		padding: 2rem 1rem;
-		p {
+	.pleft,	p {
 			text-align: left;
 		}
 	}
 	@media (min-width: 576px) {
 		padding: 3rem 4rem;
+		.pleft{
+			text-align: left;
+		}
 		p {
 			text-align: justify;
 		}
