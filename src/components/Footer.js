@@ -26,17 +26,16 @@ export class Footer extends React.Component {
 						</a>
 					</p>
 				</div> */}
-					<div className='text-center fixed-bottom Footerbg prvtpolicy'>
-						<p className='mb-1 pt-1 px-3 fsize08'>
-							We use cookies to make sure you have better experience on our website. Read about how we use
-							cookies in our
-							<a className='navfont Footerbg' href='/privacy-policy/index.html'>
-								&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
-							</a>
-
-						</p>
-						<MdClose className='closeBtn' type='submit' id='hide'/>
-					</div>
+				<div className='text-center fixed-bottom Footerbg prvtpolicy'>
+					<p className='mb-1 pt-1 px-3 fsize08'>
+						We use cookies to make sure you have better experience on our website. Read about how we use
+						cookies in our
+						<a className='navfont Footerbg' href='/privacy-policy/index.html'>
+							&nbsp;<u>Privacy&nbsp;Policy.</u>&nbsp;
+						</a>
+					</p>
+					<MdClose className='closeBtn' type='submit' id='hide' />
+				</div>
 
 				<div className='d-sm-flex justify-content-sm-between d-md-flex  justify-content-md-center d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center bgFooter px-2 pt-2 px-md-5 pt-md-5'>
 					<div className='w-35vw mx-0 mx-md-4 px-2 px-md-0'>
@@ -67,7 +66,8 @@ export class Footer extends React.Component {
 						<p className='text-light mt-0 mt-md-3 footaddleft'>
 							Ground Floor, SK Feature, <br />Plot 105 & 106, Lumbini Layout,
 						</p>
-						<p className='text-light footaddleft'> Hitech City Main Rd, Gachibowli, Hyderabad 500032 </p>
+						<p className='text-light footaddleft'> Hitech City Main Rd, </p>
+						<p className='text-light footaddleft'> Gachibowli, Hyderabad 500032 </p>
 						<p className='text-light webText'>Office: +91 (40) 4857 4411</p>
 					</div>
 					<div className='w-35vw mx-0 ml-md-3 pl-1 pl-md- my-4 my-md-0'>
@@ -106,83 +106,84 @@ export class Footer extends React.Component {
 
 export default Footer;
 
-const FooterWrapper = styled.div`{
+const FooterWrapper = styled.div`
+	 {
+		.footaddleft {
+			text-align: left;
+		}
+		.webText {
+			webkit-text-fill-color: white;
+		}
+		.ptext {
+			text-align: left;
+		}
+		.w-65 {
+			width: 50%;
+		}
+		background: var(--textColor);
+		p {
+			font-size: 1rem;
+			line-height: 2.3;
+			margin-bottom: 0px;
+			font-style: normal;
+			font-weight: 200;
+		}
+		ul {
+			line-height: 2.3;
+			list-style: none;
+			font-size: 1rem;
+		}
+		a {
+			font-weight: 300;
+		}
+		.m5t {
+			margin-top: 5px;
+		}
 
-.footaddleft{
-	text-align: left;
-}
-	.webText {
-		webkit-text-fill-color: white;
-	}
-	.ptext {
-		text-align: left;
-	}
-	.w-65 {
-		width: 50%;
-	}
-	background: var(--textColor);
-	p {
-		font-size: 1rem;
-		line-height: 2.3;
-		margin-bottom: 0px;
-		font-style: normal;
-		font-weight: 200;
-	}
-	ul {
-		line-height: 2.3;
-		list-style: none;
-		font-size: 1rem;
-	}
-	a {
-		font-weight: 300;
-	}
-	.m5t {
-		margin-top: 5px;
-	}
+		.prvtpolicy {
+			height: 45px;
+			line-height: 10px;
+			margin-top: 0px;
+			padding: 0px 30px;
+			display: none;
+			#hide {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 10px;
+				font-size: 2.5rem;
+				margin-top: 5px;
+			}
+		}
+		.navfont {
+			position: relative;
+			top: 0px;
+			font-size: 8px;
+		}
 
-	.prvtpolicy{
-	height:45px;
-	line-height: 10px;
-	margin-top:0px;
-	padding: 0px 30px;
-	display: none;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
-	padding: 10px;
-	font-size: 2.5rem;
-	margin-top: 5px;
-}
-}
-.navfont{
-	position:relative;
-	top:0px;
-	font-size:8px;
-}
-
-.fsize08{
-	font-size:8px;
-	position:relative;
-	top:0px;
-}
-}
+		.fsize08 {
+			font-size: 8px;
+			position: relative;
+			top: 0px;
+		}
+	}
 	@media (min-width: 576px) {
-				.navfont,.fsize08{
-	font-size:16px;
-	position: relative;
-    top:0%;
-}
-			.prvtpolicy{
-	height:40px;
-	padding: 0;
-	display: none;
-#hide{
-	position: absolute;
-	top:0;
-	right:0;
-}
-}
+		.navfont,
+		.fsize08 {
+			font-size: 16px;
+			position: relative;
+			top: 0%;
+		}
+		.prvtpolicy {
+			height: 40px;
+			padding: 0;
+			display: none;
+			#hide {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
 		.ptext {
 			text-align: justify;
 		}

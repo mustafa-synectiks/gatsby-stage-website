@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './layout.css';
 import Jumbo from '../images/HomePage/Transformation.png';
 import circle2 from '../images/HomePage/Transformation.png';
-import circle3 from '../images/HomePage/Solutions.jpg';
+import circle3 from '../images/HomePage/Solutions.png';
 import tab1 from '../images/HomePage/Transformation_Icon.png';
 import tab2 from '../images/HomePage/OpenPlatform.png';
 import tab3 from '../images/HomePage/Solution.png';
@@ -31,7 +31,7 @@ import Tabs from './Home/Tabs';
 import Partners from './Home/Partners';
 import GetInTouch from './Home/Getintouch.js';
 import SEO from '../components/seo.js';
-import SuccessStories from './Home/SuccessStories'
+import SuccessStories from './Home/SuccessStories';
 import {
 	TabContent,
 	TabPane,
@@ -55,9 +55,11 @@ const Slider = () => {
 	};
 	return (
 		<HomeWrapper>
-		<Helmet>
-		<link rel='canonical' href='https://synectiks.com'/>
-		  <meta name="keywords" content="cloud migration strategy,
+			<Helmet>
+				<link rel='canonical' href='https://synectiks.com' />
+				<meta
+					name='keywords'
+					content='cloud migration strategy,
 cloud migration services,
 aws cloud migration,
 how will you design a aws cloud migration of a legacy system,
@@ -99,9 +101,13 @@ cloud infrastructure services,
 cloud servers providers,
 infrastructure cloud,
 microsoft cloud service provider,
-"/>
-		<meta name='description' content="As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive." />
-		</Helmet>
+'
+				/>
+				<meta
+					name='description'
+					content='As an Open Product based Cloud Solution provider, we help enterprises take advantage of public & private cloud and its infinite resources to migrate and modernize their business so that they outperform their peers by becoming truly disruptive.'
+				/>
+			</Helmet>
 			<div className='container-fluid'>
 				<div className='row'>
 					<div id='owl-demo' className='owl-carousel owl-theme'>
@@ -115,7 +121,8 @@ microsoft cloud service provider,
 									deep expertise make your cloud transformation <br />
 									safe and agile.
 								</p>
-									<a className='animated delay-3s slow fadeInRight btn btn-primary'
+								<a
+									className='animated delay-3s slow fadeInRight btn btn-primary'
 									href='https://synectiks.com/infrastructure/index.html'>
 									Learn More
 								</a>
@@ -176,7 +183,7 @@ microsoft cloud service provider,
 								</div>
 							</ScrollAnimation>
 							<ScrollAnimation animateIn='fadeInUp'>
-								<div className='circle'>
+								<div className='circlebig'>
 									<img src={circle2} alt='transformation' />
 								</div>
 							</ScrollAnimation>
@@ -208,8 +215,8 @@ microsoft cloud service provider,
 					<h2 className='text-capitalize textWhite pb-0 pb-md-3 text-center'>Our Partners</h2>
 					<Partners />
 				</div>
-				<SuccessStories/>
-	{/* <div>
+				<SuccessStories />
+				{/* <div>
 				<div className='container-fluid bgWhiteGradient px-3 py-1 px-md-5 py-md-4'>
 					<div className='row'>
 						<div className='content d-flex flex-column flex-md-row align-items-center'>
@@ -514,6 +521,16 @@ p{
 			margin-top: 1rem;
 		}
 	}
+	.circlebig {
+		width:100%;
+			border-radius: 50%;
+		img{
+			width:100%;
+			border-radius: 60%;
+			/* box-shadow: 0px 0px 0px 2px var(	--synectiksWhite); */
+			margin-top: 1rem;
+		}
+	}
 }
 
 .tabsFlex{
@@ -651,6 +668,15 @@ p{
 			img{
 				border-radius: 60%;
 				box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
+			}
+		}
+	.circlebig{
+			width:16rem;
+			height:16rem;
+			border-radius: 50%;
+			img{
+				border-radius: 60%;
+				/* box-shadow: 0px 0px 0px 2px var(	--synectiksWhite); */
 			}
 		}
 	}
@@ -1280,12 +1306,22 @@ color:var(--synectiksBlue);
 	flex-direction: row;
 	justify-content: space-around;
 	.circle{
-			width:20rem;
-			height:20rem;
+			width:22rem;
+			height:22rem;
 			border-radius: 50%;
 			img{
 				border-radius: 60%;
 				box-shadow: 0px 0px 0px 2px var(	--synectiksWhite);
+			}
+		}
+	.circlebig{
+			width:21.1em;
+			height:24rem;
+			border-radius: 50%;
+			margin-top: 15px;
+			img{
+				border-radius: 60%;
+				/* box-shadow: 0px 0px 0px 2px var(	--synectiksWhite); */
 			}
 		}
 	}

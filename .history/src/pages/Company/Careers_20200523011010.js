@@ -130,6 +130,7 @@ export class Careers extends React.Component {
 														</p>
 														<ul>
 													<p><b>Key Responsibilities</b></p>
+
 <li>Deliver a consistently high-quality components/plugins  which has a high “First Time Acceptance Rate” from the engineering leadership.</li>
 <li>Implement Framework and Libraries developed by Architect.</li>
 <li>Comply with engineering process playbooks.</li>
@@ -148,6 +149,7 @@ export class Careers extends React.Component {
 														</ul>
 														<ul>
 														<p><b>Candidate Requirements</b></p>
+
 <li>9+ years of hands-on software engineering experience in the following: Some of the technologies currently used within Engineering include Java, Scala, Kotlin, Python, Javascript, Typescript, React, Angular, SQL, Spring Boot, ElasticSearch, Docker, NoSQL DBs (Cassandra, Couchbase, MongoDB, DynamoDB), RDBMS (MS SQL, MySQL, PostgreSQL, Oracle), HTML, CSS, and a wide array of AWS services (Lambda, ECS, S3, SQS, Kinesis, DynamoDB, Neptune, Poly, etc..).</li>
 <li>5+ Years in hard core product development, developed features and modules from scratch, have contributed significantly in GitHub and Open Source ecosystem.</li>
 <li>Proficient leadership and analytical skills.</li>

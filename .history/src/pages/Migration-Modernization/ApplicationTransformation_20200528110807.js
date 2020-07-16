@@ -715,7 +715,7 @@ a#bgLLL.active  {
 }
 .one {
 	z-index: 99999;
-	background: transparent;
+	background: transparent !important;
 	width: 100%;
 }
 .one:hover {
@@ -863,7 +863,7 @@ ul.tabList.nav.flex-column {
 }
 	.one {
 	z-index: 99999;
-	background: transparent;
+	background: transparent !important;
 	width: auto;
 }
   .hybJumbo{

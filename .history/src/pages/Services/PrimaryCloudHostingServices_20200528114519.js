@@ -468,7 +468,6 @@ const PrimaryCloudHostingWrapper = styled.div`
 		font-size: 12px;
 		height: auto;
 		width: 100%;
-		color: white;
 	}
 	.imgHyb {
 		margin-right: 25px !important;

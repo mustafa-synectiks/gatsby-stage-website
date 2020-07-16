@@ -468,7 +468,6 @@ const PrimaryCloudHostingWrapper = styled.div`
 		font-size: 12px;
 		height: auto;
 		width: 100%;
-		color: white;
 	}
 	.imgHyb {
 		margin-right: 25px !important;
@@ -489,7 +488,7 @@ const PrimaryCloudHostingWrapper = styled.div`
     color: rgba(0,0,0,.9);
 }
 .navbar-light .navbar-nav .nav-link:hover {
- color:white;
+ color:white !important;
 }
 
 	ul.tabList.nav.flex-column {

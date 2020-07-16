@@ -876,7 +876,7 @@ a#bgLLL.active  {
 .one:hover {
 	z-index: 99999;
 	background: rgb(0,124,194);
-	color: var(--synectiksWhite);
+	width: 100%;
 }
 ul.tabList.nav.flex-column {
 	position: relative;

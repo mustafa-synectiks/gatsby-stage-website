@@ -863,7 +863,7 @@ ul.tabList.nav.flex-column {
 }
 	.one {
 	z-index: 99999;
-	background: transparent;
+	background: transparent !important;
 	width: auto;
 }
   .hybJumbo{

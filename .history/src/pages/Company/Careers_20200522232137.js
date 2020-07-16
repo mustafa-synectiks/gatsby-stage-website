@@ -16,7 +16,7 @@ export class Careers extends React.Component {
 		this.toggle2 = this.toggle2.bind(this);
 		this.toggle3 = this.toggle3.bind(this);
 		this.toggle4 = this.toggle4.bind(this);
-		this.toggle5 = this.toggle5.bind(this);
+		this.toggle5 = this.toggle4.bind(this);
 		this.state = { collapse: false };
 		this.state = { collapse2: false };
 		this.state = { collapse3: false };
@@ -36,7 +36,7 @@ export class Careers extends React.Component {
 		this.setState((state) => ({ collapse4: !state.collapse4 }));
 	}
 	toggle5() {
-		this.setState((state) => ({ collapse5: !state.collapse5 }));
+		this.setState((state) => ({ collapse4: !state.collapse5 }));
 	}
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -124,40 +124,21 @@ export class Careers extends React.Component {
 											<Collapse isOpen={this.state.collapse5} className='pb-3'>
 												<Card>
 													<CardBody>
-													<p><b>What You'll Be Doing</b></p>
 														<p className='ptext'>
-														As a Software Engineer, you will be a member of one of our central assembly line teams such as a component development and automation test team. You will be part of the  weekly product release cycles and thereby ensure that features/plugins development/bug fixing as quickly as possible for our clients and that you are constantly improving the quality of our products. You will have aggressive daily and weekly targets to work against and you can expect to receive daily and weekly feedback about your performance. The regular feedback is used to help you improve immediately and to help you resolve blockers which may be slowing down your performance.
+															<b>
+																Software Engineer<br />
+																Master's with 3 years experience or Bachelors with 5 years experience.<br
+																/>
+																Major: CS, Applied CS or equivalent.<br/> Other suitable qualifications acceptable -
+															</b>
+															<br />
+															 Princeton, NJ. Job entails working with & requires experience including: EMC, Hitachi, NetApp, AIX, Linux, Windows, Solaris, Shell Scripting, Python, NFS, CIFS, TCP/IP, emcopy, rsync, SnapMirror, RoboCopy & Data ONTAP. Must have experience in planning, designing & implementing cross-platform NAS data migration projects. Relocation & travel to unanticipated locations within USA possible.<br />
+															<b>Send resumes to </b>info@synectiks.com<br />
+															<b>
+																Synectiks Inc., Attn: HR, 300 Alexander Park Dr., Suite
+																215, Princeton, NJ 08540.
+															</b>
 														</p>
-														<ul>
-													<p><b>Key Responsibilities</b></p>
-<li>Deliver a consistently high-quality components/plugins  which has a high “First Time Acceptance Rate” from the engineering leadership.</li>
-<li>Implement Framework and Libraries developed by Architect.</li>
-<li>Comply with engineering process playbooks.</li>
-<li>Design APIs and Build RESTful Services.</li>
-<li>Develop and maintain CI-CD pipeline for our services to rapidly and safely deploy code and configuration.</li>
-<li>Ensuring that your output meets the teams quality bars before being passed on to further stages within the process.</li>
-<li>Meeting your goals, which are set by your manager, on a daily and weekly basis.</li>
-<li>Escalating issues to your manager as soon as a risk is identified or as soon as you are blocked in your work.</li>
-<li>Private/Public cloud provisioning/troubleshooting.</li>
-<li>Expertise and hands on experience on Linux/UNIX.</li>
-<li>Develop comprehensive monitoring solutions to provide full visibility to the different platform components using tools and services like Kubernetes, Prometheus, Grafana, ELK, and other similar tools.</li>
-<li>Integrate different components and develop new services with a focus on open source to allow a minimal friction developer interaction with the platform and application services.</li>
-<li>Experience creating automated tests as part of the development lifecycle.</li>
-<li>Full working knowledge of Git Version Control.</li>
-<li>Keep up to date with the latest Software Engineering trends.</li>
-														</ul>
-														<ul>
-														<p><b>Candidate Requirements</b></p>
-<li>9+ years of hands-on software engineering experience in the following: Some of the technologies currently used within Engineering include Java, Scala, Kotlin, Python, Javascript, Typescript, React, Angular, SQL, Spring Boot, ElasticSearch, Docker, NoSQL DBs (Cassandra, Couchbase, MongoDB, DynamoDB), RDBMS (MS SQL, MySQL, PostgreSQL, Oracle), HTML, CSS, and a wide array of AWS services (Lambda, ECS, S3, SQS, Kinesis, DynamoDB, Neptune, Poly, etc..).</li>
-<li>5+ Years in hard core product development, developed features and modules from scratch, have contributed significantly in GitHub and Open Source ecosystem.</li>
-<li>Proficient leadership and analytical skills.</li>
-<li>Ability/Passion to learn new languages and technologies as needed.</li>
-<li>Demonstrate success as a problem solver.</li>
-<li>Be a result oriented individual.</li>
-<li>Comfortable “working virtually” with teammates and customers around the world.</li>
-<li>Please share your GitHub or any open source product contribution link, this is must to have.</li>
-<li>Bachelor’s Degree in Engineering, Information Systems, Decision Sciences, Mathematics, Statistics or related field, or a combination of education and work experience that provides the necessary skills to perform the essential job functions.</li>
-														</ul>
 													</CardBody>
 												</Card>
 											</Collapse>

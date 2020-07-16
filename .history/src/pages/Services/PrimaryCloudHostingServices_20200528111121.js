@@ -59,7 +59,7 @@ const onTop = () => {
 						<h1>Private Cloud Hosting</h1>
 					</div>
 					<Row className='d-flex justify-content-start'>
-						<Navbar color='light' light='light' expand='md' className='topNav ml-n2'>
+						<Navbar color='light' light expand='md' className='topNav ml-n2'>
 							<NavbarToggler onClick={toggleNavbar} className='mr-2' />
 							<Collapse isOpen={!collapsed} navbar>
 								<Nav navbar className='bgWhite d-flex justify-content-between my-4 w-85'>
@@ -406,7 +406,6 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
 export default PrimaryCloudHosting;
 
 const PrimaryCloudHostingWrapper = styled.div`
-
 	.w75 {
 		width: 100%;
 	}
@@ -468,7 +467,6 @@ const PrimaryCloudHostingWrapper = styled.div`
 		font-size: 12px;
 		height: auto;
 		width: 100%;
-		color: white;
 	}
 	.imgHyb {
 		margin-right: 25px !important;
@@ -484,14 +482,8 @@ const PrimaryCloudHostingWrapper = styled.div`
 	.one:hover {
 	z-index: 99999;
 	background: rgb(0,124,194);
+	color: var(--synectiksWhite);
 }
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.9);
-}
-.navbar-light .navbar-nav .nav-link:hover {
- color:white;
-}
-
 	ul.tabList.nav.flex-column {
 		position: relative;
 		z-index: 99999;

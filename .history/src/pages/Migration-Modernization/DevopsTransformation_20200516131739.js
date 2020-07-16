@@ -1033,11 +1033,6 @@ padding:6rem 1rem;
 		background: white;
 		width: 100%;
 	}
-	.one:hover {
-	z-index: 99999;
-	background: rgb(0,124,194);
-	color: var(--synectiksWhite);
-}
 	ul.tabList.nav.flex-column {
 		position: relative;
 		z-index: 99999;
