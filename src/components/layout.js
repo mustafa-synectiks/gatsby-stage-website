@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
 			// 	$('.prvtpolicy').hide();
 			// });
 			const showMsg = sessionStorage.getItem('showMsg');
-			if(showMsg !== 'false'){
+			if (showMsg !== 'false') {
 				$('.prvtpolicy').show();
 			}
-			$('#hide').on('click', function(){
+			$('#hide').on('click', function() {
 				$('.prvtpolicy').hide();
 				// $('.prvtpolicy').fadeOut('slow');
 				sessionStorage.setItem('showMsg', 'false');
@@ -244,7 +244,6 @@ const Layout = ({ children }) => {
 				start();
 			}
 
-
 			function buildProgressBar() {
 				// if ($('#progressBar').length === 0) {
 				$progressBar = $('<div>', {
@@ -255,7 +254,6 @@ const Layout = ({ children }) => {
 				});
 
 				$progressBar.append($bar).appendTo($elem);
-
 			}
 
 			function start() {
@@ -305,6 +303,10 @@ const Layout = ({ children }) => {
 		$('.navbar-collapse a').click(function() {
 			$('.navbar-collapse').collapse('hide');
 		});
+
+		// if ($('nav').hasClass('navbar-expand-lg')) {
+		// 	$('nav').removeClass('navbar-expand-lg');
+		// }
 	});
 	return (
 		<div>

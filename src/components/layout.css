@@ -268,7 +268,7 @@ body {
 	background: #cbcbcb;
 	color: #252525;
 }
-.fw-500{
+.fw-500 {
 	font-weight: 500;
 }
 /* Devops Maturity Image Starts */
@@ -411,7 +411,22 @@ a#tab3:not(.active) .arrow-down {
 .l-0 {
 	line-height: 0;
 }
-
+.bk-managed {
+	display: flex;
+	width: 100%;
+	height: auto;
+	background-image: url("../images/Synectiks Logo/optamizecloud.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%, 100%;
+	background-position: center center;
+	color: white;
+}
+.psl {
+	padding-left: 4rem;
+}
+.psr {
+	padding-right: 4rem;
+}
 .social {
 	color: var(--synectiksWhite);
 	font-size: 20px;
@@ -1579,7 +1594,7 @@ textarea.has-error {
 .closeBtn {
 	background: transparent;
 	color: black;
-	border: 0px solid rgba(0,0,0,0);
+	border: 0px solid rgba(0, 0, 0, 0);
 }
 .input-feedback {
 	color: #be0a0a;
@@ -1759,9 +1774,15 @@ textarea.has-error {
 .w-22 {
 	width: 22%;
 }
-
+.w-aws-8 {
+	width: 8% !important;
+	margin-right: 5%;
+}
 .b-1 {
 	border: 5px solid rgb(233, 231, 231) !important;
+}
+.border-aws-1 {
+	border: 1px solid black;
 }
 #particles-js {
 	position: absolute;

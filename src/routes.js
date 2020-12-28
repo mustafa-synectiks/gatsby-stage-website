@@ -20,7 +20,11 @@ module.exports = [
 		path: '/office-migration/index.html',
 		component: path.resolve(`src/pages/Services/OfficeMigration.js`)
 	},
-		{
+	{
+		path: '/aws-managed-services/index.html',
+		component: path.resolve(`src/pages/Services/awsmanaged.js`)
+	},
+	{
 		path: '/hybrid-cloud/index.html',
 		component: path.resolve(`src/pages/Solutions/Hybridcloud.js`)
 	},
@@ -87,5 +91,5 @@ module.exports = [
 	{
 		path: '/application-transformation/index.html',
 		component: path.resolve(`src/pages/Migration-Modernization/ApplicationTransformation.js`)
-	},
+	}
 ];

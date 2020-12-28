@@ -8,7 +8,11 @@ export default function HTML(props) {
 				<meta charSet='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=0.86,
 				minimum-scale=0.9' />
-				<meta name="ahrefs-site-verification" content="8c6cee071ee9cd1825e173a97a51407ea7094e6a42d87c2e4929e464c037b969"/>
+				<meta name='google-site-verification' content='p4xW6QDqQI67l6Gpd6KyxS5TCSt-s3TKKVhmNGwHWLA' />
+				<meta
+					name='ahrefs-site-verification'
+					content='8c6cee071ee9cd1825e173a97a51407ea7094e6a42d87c2e4929e464c037b969'
+				/>
 				<meta name='format-detection' content='telephone=no' />
 				<meta httpEquiv='x-ua-compatible' content='ie=edge' />
 				{/* <!-- Bootstrap --> */}
@@ -43,9 +47,9 @@ export default function HTML(props) {
 					src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
 					integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
 					crossOrigin='anonymous'
-	// 				src="https://code.jquery.com/jquery-3.5.0.js"
-  // integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
-  // crossOrigin="anonymous"
+					// 				src="https://code.jquery.com/jquery-3.5.0.js"
+					// integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+					// crossOrigin="anonymous"
 				/>
 				{/* <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' /> */}
 				{/* slick slider script */}
@@ -85,7 +89,6 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
         `
 					}}
 				/>
-
 			</body>
 		</html>
 	);

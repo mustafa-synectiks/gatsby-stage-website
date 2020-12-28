@@ -36,7 +36,6 @@ const Header = () => {
 									<NavDropdown.Item href='/casestudy/index.html'>Case Studies</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Migration & Modernization' id='basic-nav-dropdown'>
-
 									<NavDropdown.Item href='/infrastructure/index.html'>
 										Infrastructure Transformation
 									</NavDropdown.Item>
@@ -52,6 +51,9 @@ const Header = () => {
 									<NavDropdown.Item href='/hybrid-cloud/index.html'>Hybrid Cloud</NavDropdown.Item>
 								</NavDropdown>
 								<NavDropdown title='Services' id='basic-nav-dropdown'>
+									<NavDropdown.Item href='/aws-managed-services/index.html'>
+										AWS Managed Services
+									</NavDropdown.Item>
 									<NavDropdown.Item href='/office-migration/index.html'>
 										O365 Migration
 									</NavDropdown.Item>
